@@ -1,0 +1,18 @@
+{
+  "id": "C1-01",
+  "titulo": "Comprender las etapas del desarrollo infantil",
+  "descripcion": "Una guía para comprender el desarrollo físico, emocional, social y cognitivo desde la primera infancia hasta la adolescencia.",
+  "columna": "C",
+  "area": "C1",
+  "palabras_clave": [
+    "desarrollo infantil",
+    "primera infancia",
+    "adolescencia",
+    "desarrollo emocional",
+    "desarrollo cognitivo"
+  ],
+  "estado": "borrador",
+  "fecha_publicacion": "2026-11-07",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true
+}
