@@ -1,36 +1,382 @@
+
 <!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="CIBA: Crianza, Internet, Bienestar y Acompañamiento.">
-  <title>CIBA · En construcción</title>
+  <meta name="theme-color" content="#f5f0e7">
+  <meta name="description" content="CIBA: Crianza, Internet, Bienestar y Acompañamiento. Un espacio para orientar y acompañar a las familias.">
+  <title>CIBA — Un espacio para las familias</title>
   <link rel="stylesheet" href="assets/css/base.css">
+
   <style>
-    .portada { min-height: 100vh; display: grid; place-items: center; padding-block: 3rem; }
-    .contenido { width: min(100% - 2rem, 68rem); margin-inline: auto; }
-    .marca { color: var(--ciba-color-primario); font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 800; letter-spacing: .12em; margin: 0; }
-    .intro { max-width: 48rem; font-size: clamp(1.1rem, 2.5vw, 1.35rem); }
-    .columnas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: 1rem; margin-top: 2rem; }
-    .columna { border: 1px solid #ded8cf; border-radius: var(--ciba-radio); padding: 1.25rem; background: #fffdfa; }
-    .columna h2 { margin-top: 0; color: var(--ciba-color-primario); }
-    .estado { margin-top: 2rem; color: #625c54; font-size: .95rem; }
+    :root {
+      --fondo: #f5f0e7;
+      --papel: #fffdf8;
+      --tinta: #342f29;
+      --suave: #756c60;
+      --terracota: #a45e43;
+      --verde: #66745b;
+      --linea: #e4dbce;
+      --radio: 22px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--fondo);
+      color: var(--tinta);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    a { color: inherit; }
+
+    .pagina {
+      min-height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .pagina::before {
+      content: "";
+      position: absolute;
+      width: 440px;
+      height: 440px;
+      border: 1px solid #e7ddcf;
+      border-radius: 50%;
+      top: -270px;
+      right: -120px;
+      pointer-events: none;
+    }
+
+    .contenedor {
+      width: min(1160px, calc(100% - 56px));
+      margin: auto;
+    }
+
+    .barra {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--linea);
+      position: relative;
+      z-index: 1;
+    }
+
+    .nombre {
+      font-family: Arial, sans-serif;
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: .22em;
+      color: var(--terracota);
+    }
+
+    .lema {
+      font-size: 13px;
+      color: var(--suave);
+      letter-spacing: .04em;
+    }
+
+    .principal {
+      display: grid;
+      grid-template-columns: minmax(280px, .85fr) minmax(0, 1.4fr);
+      gap: clamp(40px, 7vw, 100px);
+      align-items: center;
+      padding-top: clamp(65px, 10vh, 110px);
+      padding-bottom: 75px;
+      position: relative;
+    }
+
+    .presentacion {
+      max-width: 430px;
+    }
+
+    .simbolo {
+      width: 112px;
+      height: 112px;
+      margin-bottom: 27px;
+      color: var(--terracota);
+    }
+
+    .marca {
+      font-family: Arial, sans-serif;
+      font-size: clamp(62px, 8vw, 92px);
+      font-weight: 800;
+      letter-spacing: .12em;
+      line-height: .95;
+      margin: 0 0 17px;
+      color: var(--terracota);
+    }
+
+    .submarca {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .19em;
+      line-height: 1.8;
+      text-transform: uppercase;
+      color: var(--verde);
+      margin: 0 0 27px;
+    }
+
+    h1 {
+      font-size: clamp(29px, 3.3vw, 42px);
+      line-height: 1.16;
+      font-weight: 400;
+      margin: 0 0 20px;
+    }
+
+    .intro {
+      color: var(--suave);
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.85;
+      max-width: 390px;
+      margin: 0;
+    }
+
+    .detalle {
+      width: 54px;
+      height: 2px;
+      background: var(--terracota);
+      margin-top: 29px;
+    }
+
+    .seccion-titulo {
+      margin: 0 0 23px;
+      font-size: 13px;
+      font-family: Arial, sans-serif;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--suave);
+    }
+
+    .columnas {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 17px;
+    }
+
+    .columna {
+      min-height: 220px;
+      background: var(--papel);
+      border: 1px solid var(--linea);
+      border-radius: var(--radio);
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .columna:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(63, 48, 34, .07);
+    }
+
+    .numero {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: .12em;
+      color: var(--terracota);
+    }
+
+    .columna h2 {
+      font-size: clamp(23px, 2.4vw, 29px);
+      font-weight: 400;
+      margin: 25px 0 10px;
+    }
+
+    .columna p {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--suave);
+      margin: 0;
+    }
+
+    .pie {
+      border-top: 1px solid var(--linea);
+      padding: 23px 0 30px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: var(--suave);
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .estado {
+      color: var(--verde);
+      letter-spacing: .04em;
+    }
+
+    @media (max-width: 760px) {
+      .contenedor {
+        width: min(100% - 36px, 560px);
+      }
+
+      .barra {
+        min-height: 70px;
+      }
+
+      .lema { display: none; }
+
+      .principal {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        padding-top: 52px;
+        padding-bottom: 50px;
+      }
+
+      .presentacion { max-width: 520px; }
+
+      .simbolo {
+        width: 85px;
+        height: 85px;
+        margin-bottom: 20px;
+      }
+
+      .marca { font-size: 68px; }
+
+      .columna {
+        min-height: 190px;
+        padding: 19px;
+      }
+
+      .pie {
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .columnas { grid-template-columns: 1fr; }
+      .columna { min-height: 160px; }
+      .marca { font-size: 59px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
   </style>
 </head>
+
 <body>
-  <main class="portada">
-    <div class="contenido">
-      <p class="marca" aria-label="CIBA">CIBA</p>
-      <h1>Crianza, Internet, Bienestar y Acompañamiento</h1>
-      <p class="intro">Un espacio para orientar, conectar y acompañar a las familias en los desafíos de la vida cotidiana y del mundo digital.</p>
-      <section class="columnas" aria-label="Áreas principales de CIBA">
-        <article class="columna"><h2>Crianza</h2><p>Información y recursos para acompañar cada etapa.</p></article>
-        <article class="columna"><h2>Internet</h2><p>Herramientas para navegar el entorno digital con confianza.</p></article>
-        <article class="columna"><h2>Bienestar</h2><p>Contenidos para cuidar el bienestar personal y familiar.</p></article>
-        <article class="columna"><h2>Acompañamiento</h2><p>Orientación y apoyo para encontrar próximos pasos.</p></article>
+  <div class="pagina">
+    <header class="barra contenedor">
+      <div class="nombre">CIBA</div>
+      <div class="lema">Un espacio para crecer, comprender y acompañar</div>
+    </header>
+
+    <main class="principal contenedor">
+      <section class="presentacion" aria-labelledby="titulo-principal">
+
+        <svg class="simbolo" viewBox="0 0 120 120"
+             fill="none" xmlns="http://www.w3.org/2000/svg"
+             role="img" aria-label="Espiral simbólica de CIBA">
+          <circle cx="60" cy="60" r="53" stroke="currentColor"
+                  stroke-width="1.5"/>
+          <path d="M60 14 C85 14 105 34 105 59
+                   C105 84 86 104 61 104
+                   C37 104 18 85 18 61
+                   C18 40 34 24 55 24
+                   C75 24 91 40 91 60
+                   C91 77 78 90 61 90
+                   C46 90 34 78 34 62
+                   C34 49 44 39 57 39
+                   C69 39 79 49 79 61
+                   C79 71 71 79 61 79
+                   C52 79 46 72 46 63
+                   C46 57 51 52 57 52"
+                stroke="currentColor" stroke-width="3"
+                stroke-linecap="round"/>
+          <circle cx="60" cy="60" r="4" fill="currentColor"/>
+        </svg>
+
+        <p class="marca">CIBA</p>
+        <p class="submarca">
+          Crianza · Internet · Bienestar · Acompañamiento
+        </p>
+
+        <h1 id="titulo-principal">
+          Acompañar a las familias también es construir futuro.
+        </h1>
+
+        <p class="intro">
+          Un espacio para orientar, conectar y acompañar a madres,
+          padres y familias en los desafíos de la vida cotidiana
+          y del mundo digital. Con información, recursos y
+          herramientas para crecer juntos.
+        </p>
+
+        <div class="detalle"></div>
       </section>
-      <p class="estado">Plataforma en desarrollo. Estamos preparando los contenidos y recursos.</p>
-    </div>
-  </main>
+
+      <section aria-labelledby="titulo-columnas">
+        <h2 class="seccion-titulo" id="titulo-columnas">
+          Explora nuestros espacios
+        </h2>
+
+        <div class="columnas">
+          <article class="columna">
+            <span class="numero">01 / C</span>
+            <div>
+              <h2>Crianza</h2>
+              <p>
+                Comprender, educar y acompañar cada etapa
+                del crecimiento.
+              </p>
+            </div>
+          </article>
+
+          <article class="columna">
+            <span class="numero">02 / I</span>
+            <div>
+              <h2>Internet</h2>
+              <p>
+                Convivir con la tecnología de forma segura,
+                consciente y responsable.
+              </p>
+            </div>
+          </article>
+
+          <article class="columna">
+            <span class="numero">03 / B</span>
+            <div>
+              <h2>Bienestar</h2>
+              <p>
+                Cuidar el bienestar personal, emocional
+                y familiar.
+              </p>
+            </div>
+          </article>
+
+          <article class="columna">
+            <span class="numero">04 / A</span>
+            <div>
+              <h2>Acompañamiento</h2>
+              <p>
+                Encontrar orientación, apoyo y caminos
+                para seguir adelante.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie contenedor">
+      <span>CIBA · Crianza, Internet, Bienestar y Acompañamiento</span>
+      <span class="estado">Plataforma en desarrollo</span>
+    </footer>
+  </div>
 </body>
 </html>
