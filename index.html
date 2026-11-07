@@ -4,260 +4,852 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f0e7">
-  <meta name="description" content="CIBA: Crianza, Internet, Bienestar y Acompañamiento. Un espacio para orientar y acompañar a las familias.">
-  <title>CIBA — Un espacio para las familias</title>
-  <link rel="stylesheet" href="assets/css/base.css">
+  <meta name="theme-color" content="#172b27">
+  <meta name="description" content="CIBA: Crianza, Internet, Bienestar y Acompañamiento. Un espacio cubano para las familias, el conocimiento y el futuro digital.">
+  <title>CIBA — Crecemos acompañándonos</title>
 
   <style>
     :root {
-      --fondo: #f5f0e7;
-      --papel: #fffdf8;
-      --tinta: #342f29;
-      --suave: #756c60;
-      --terracota: #a45e43;
-      --verde: #66745b;
-      --linea: #e4dbce;
+      --noche: #172b27;
+      --noche2: #203a33;
+      --verde: #526e56;
+      --verde-claro: #a9b99a;
+      --tierra: #a9583e;
+      --terracota: #c97855;
+      --oro: #d9b878;
+      --marfil: #f5f0e5;
+      --papel: #fffdf7;
+      --tinta: #29332d;
+      --suave: #73776d;
+      --linea: #e4ddcf;
+      --ancho: 1220px;
       --radio: 22px;
     }
 
     * { box-sizing: border-box; }
 
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
     body {
       margin: 0;
-      background: var(--fondo);
+      background: var(--marfil);
       color: var(--tinta);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    a { color: inherit; }
-
-    .pagina {
-      min-height: 100vh;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .pagina::before {
-      content: "";
-      position: absolute;
-      width: 440px;
-      height: 440px;
-      border: 1px solid #e7ddcf;
-      border-radius: 50%;
-      top: -270px;
-      right: -120px;
-      pointer-events: none;
-    }
+    a { color: inherit; text-decoration: none; }
+    button, input { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
 
     .contenedor {
-      width: min(1160px, calc(100% - 56px));
-      margin: auto;
+      width: min(var(--ancho), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    /* NAVEGACIÓN */
+
+    .cabecera {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(23,43,39,.96);
+      color: white;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(14px);
     }
 
     .barra {
-      min-height: 82px;
+      min-height: 78px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid var(--linea);
-      position: relative;
-      z-index: 1;
-    }
-
-    .nombre {
-      font-family: Arial, sans-serif;
-      font-size: 19px;
-      font-weight: 800;
-      letter-spacing: .22em;
-      color: var(--terracota);
-    }
-
-    .lema {
-      font-size: 13px;
-      color: var(--suave);
-      letter-spacing: .04em;
-    }
-
-    .principal {
-      display: grid;
-      grid-template-columns: minmax(280px, .85fr) minmax(0, 1.4fr);
-      gap: clamp(40px, 7vw, 100px);
-      align-items: center;
-      padding-top: clamp(65px, 10vh, 110px);
-      padding-bottom: 75px;
-      position: relative;
-    }
-
-    .presentacion {
-      max-width: 430px;
-    }
-
-    .simbolo {
-      width: 112px;
-      height: 112px;
-      margin-bottom: 27px;
-      color: var(--terracota);
+      gap: 25px;
     }
 
     .marca {
-      font-family: Arial, sans-serif;
-      font-size: clamp(62px, 8vw, 92px);
-      font-weight: 800;
-      letter-spacing: .12em;
-      line-height: .95;
-      margin: 0 0 17px;
-      color: var(--terracota);
-    }
-
-    .submarca {
-      font-family: Arial, sans-serif;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: .19em;
-      line-height: 1.8;
-      text-transform: uppercase;
-      color: var(--verde);
-      margin: 0 0 27px;
-    }
-
-    h1 {
-      font-size: clamp(29px, 3.3vw, 42px);
-      line-height: 1.16;
-      font-weight: 400;
-      margin: 0 0 20px;
-    }
-
-    .intro {
-      color: var(--suave);
-      font-family: Arial, sans-serif;
-      font-size: 15px;
-      line-height: 1.85;
-      max-width: 390px;
-      margin: 0;
-    }
-
-    .detalle {
-      width: 54px;
-      height: 2px;
-      background: var(--terracota);
-      margin-top: 29px;
-    }
-
-    .seccion-titulo {
-      margin: 0 0 23px;
-      font-size: 13px;
-      font-family: Arial, sans-serif;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: var(--suave);
-    }
-
-    .columnas {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 17px;
-    }
-
-    .columna {
-      min-height: 220px;
-      background: var(--papel);
-      border: 1px solid var(--linea);
-      border-radius: var(--radio);
-      padding: 25px;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform .2s ease, box-shadow .2s ease;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
     }
 
-    .columna:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 28px rgba(63, 48, 34, .07);
+    .marca-simbolo {
+      width: 43px;
+      height: 43px;
+      color: var(--oro);
     }
 
-    .numero {
-      font-family: Arial, sans-serif;
+    .marca-texto {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: .19em;
+      color: var(--marfil);
+    }
+
+    .marca-texto small {
+      display: block;
+      margin-top: 3px;
+      font-size: 8px;
+      font-weight: 600;
+      letter-spacing: .19em;
+      color: var(--oro);
+    }
+
+    .navegacion {
+      display: flex;
+      align-items: center;
+      gap: 25px;
       font-size: 12px;
-      letter-spacing: .12em;
-      color: var(--terracota);
+      font-weight: 700;
+      letter-spacing: .04em;
     }
 
-    .columna h2 {
-      font-size: clamp(23px, 2.4vw, 29px);
+    .navegacion a {
+      color: #e5e5d9;
+      transition: color .2s;
+    }
+
+    .navegacion a:hover { color: var(--oro); }
+
+    .boton-menu {
+      display: none;
+      color: white;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 12px;
+      padding: 9px 12px;
+      cursor: pointer;
+    }
+
+    /* PORTADA */
+
+    .hero {
+      position: relative;
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      color: white;
+      background:
+        radial-gradient(circle at 78% 30%, rgba(201,120,85,.22), transparent 35%),
+        linear-gradient(120deg, #172b27 0%, #203a33 58%, #34483a 100%);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: .16;
+      background-image:
+        linear-gradient(rgba(255,255,255,.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.12) 1px, transparent 1px);
+      background-size: 54px 54px;
+      mask-image: linear-gradient(90deg, transparent, black);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 520px;
+      height: 520px;
+      border: 1px solid rgba(217,184,120,.23);
+      border-radius: 50%;
+      right: -170px;
+      bottom: -290px;
+      box-shadow: 0 0 0 35px rgba(217,184,120,.035),
+                  0 0 0 75px rgba(217,184,120,.025);
+      pointer-events: none;
+    }
+
+    .hero-contenido {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: .92fr 1.08fr;
+      align-items: center;
+      gap: 45px;
+      padding-top: 75px;
+      padding-bottom: 85px;
+    }
+
+    .hero-texto { max-width: 540px; }
+
+    .sobrelinea {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--oro);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    .sobrelinea::before {
+      content: "";
+      width: 35px;
+      height: 1px;
+      background: var(--oro);
+    }
+
+    .hero h1 {
+      margin: 25px 0 22px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(43px, 5.5vw, 72px);
+      line-height: 1.03;
       font-weight: 400;
-      margin: 25px 0 10px;
+      letter-spacing: -.045em;
     }
 
-    .columna p {
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      line-height: 1.7;
-      color: var(--suave);
-      margin: 0;
+    .hero h1 em {
+      color: var(--oro);
+      font-weight: 400;
     }
 
-    .pie {
-      border-top: 1px solid var(--linea);
-      padding: 23px 0 30px;
+    .hero-descripcion {
+      max-width: 470px;
+      color: #d7ded3;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .hero-botones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 32px;
+    }
+
+    .boton {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 49px;
+      padding: 0 22px;
+      border-radius: 5px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      transition: transform .2s, background .2s;
+    }
+
+    .boton:hover { transform: translateY(-3px); }
+
+    .boton-dorado {
+      background: var(--oro);
+      color: var(--noche);
+    }
+
+    .boton-contorno {
+      border: 1px solid rgba(255,255,255,.4);
+      color: white;
+    }
+
+    .hero-imagen-marco {
+      position: relative;
+      min-height: 425px;
+      border: 1px solid rgba(217,184,120,.45);
+      padding: 11px;
+      border-radius: 48% 48% 8px 8px;
+      background: rgba(255,255,255,.06);
+      box-shadow: 0 30px 80px rgba(0,0,0,.28);
+    }
+
+    .hero-imagen {
+      position: absolute;
+      inset: 11px;
+      width: calc(100% - 22px);
+      height: calc(100% - 22px);
+      object-fit: cover;
+      border-radius: 48% 48% 4px 4px;
+      background:
+        linear-gradient(145deg, rgba(201,120,85,.2), rgba(23,43,39,.3)),
+        #526e56;
+    }
+
+    .imagen-sello {
+      position: absolute;
+      right: -17px;
+      bottom: 35px;
+      width: 118px;
+      height: 118px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 15px;
+      border-radius: 50%;
+      background: var(--oro);
+      color: var(--noche);
+      font-family: Georgia, serif;
+      font-size: 14px;
+      line-height: 1.25;
+      transform: rotate(8deg);
+      box-shadow: 0 12px 30px rgba(0,0,0,.2);
+    }
+
+    .hero-pie {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 3;
+      border-top: 1px solid rgba(255,255,255,.13);
+      color: #d7ded3;
+      font-size: 10px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .hero-pie .contenedor {
       display: flex;
       justify-content: space-between;
       gap: 20px;
+      padding-top: 17px;
+      padding-bottom: 17px;
+    }
+
+    /* BUSCADOR */
+
+    .busqueda {
+      position: relative;
+      z-index: 5;
+      margin-top: -1px;
+      padding: 35px 0;
+      background: var(--papel);
+      border-bottom: 1px solid var(--linea);
+    }
+
+    .busqueda-interior {
+      display: grid;
+      grid-template-columns: 1fr minmax(280px, 520px);
+      align-items: center;
+      gap: 30px;
+    }
+
+    .busqueda h2 {
+      margin: 0 0 6px;
+      font-family: Georgia, serif;
+      font-size: 25px;
+      font-weight: 400;
+    }
+
+    .busqueda p {
+      margin: 0;
       color: var(--suave);
-      font-family: Arial, sans-serif;
       font-size: 12px;
       line-height: 1.6;
     }
 
-    .estado {
-      color: var(--verde);
-      letter-spacing: .04em;
+    .busqueda-caja {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 7px 8px 7px 17px;
+      border: 1px solid var(--linea);
+      border-radius: 8px;
+      background: white;
     }
 
-    @media (max-width: 760px) {
-      .contenedor {
-        width: min(100% - 36px, 560px);
+    .busqueda-caja input {
+      width: 100%;
+      min-width: 0;
+      border: 0;
+      outline: 0;
+      padding: 10px 0;
+      color: var(--tinta);
+      font-size: 13px;
+      background: transparent;
+    }
+
+    .busqueda-caja button {
+      flex-shrink: 0;
+      border: 0;
+      border-radius: 5px;
+      padding: 12px 17px;
+      background: var(--noche);
+      color: white;
+      font-size: 10px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .resultados {
+      display: none;
+      padding: 25px 0 5px;
+    }
+
+    .resultados.visible { display: block; }
+
+    .resultados h3 {
+      font-family: Georgia, serif;
+      font-weight: 400;
+    }
+
+    .resultado-lista {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .resultado {
+      display: block;
+      padding: 17px;
+      border: 1px solid var(--linea);
+      border-radius: 10px;
+      background: var(--marfil);
+    }
+
+    .resultado strong {
+      display: block;
+      margin-bottom: 7px;
+      font-family: Georgia, serif;
+      font-size: 17px;
+      font-weight: 400;
+    }
+
+    .resultado span {
+      color: var(--suave);
+      font-size: 11px;
+      line-height: 1.6;
+    }
+
+    /* SECCIONES GENERALES */
+
+    .seccion {
+      padding: 92px 0;
+    }
+
+    .seccion-encabezado {
+      max-width: 680px;
+      margin-bottom: 38px;
+    }
+
+    .etiqueta {
+      color: var(--tierra);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .seccion h2.titulo {
+      margin: 14px 0;
+      font-family: Georgia, serif;
+      font-size: clamp(34px, 4vw, 48px);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -.03em;
+    }
+
+    .seccion-encabezado p {
+      color: var(--suave);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* LAS CUATRO COLUMNAS */
+
+    .columnas {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .columna {
+      position: relative;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      padding: 25px;
+      border-radius: var(--radio);
+      color: white;
+      background: var(--noche);
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .columna:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 20px 40px rgba(37,47,39,.16);
+    }
+
+    .columna:nth-child(2) { background: #38564e; }
+    .columna:nth-child(3) { background: #8c5944; }
+    .columna:nth-child(4) { background: #5c684e; }
+
+    .columna::after {
+      content: "";
+      position: absolute;
+      width: 190px;
+      height: 190px;
+      right: -85px;
+      top: -80px;
+      border: 1px solid rgba(255,255,255,.19);
+      border-radius: 50%;
+      box-shadow: 0 0 0 20px rgba(255,255,255,.035),
+                  0 0 0 42px rgba(255,255,255,.025);
+    }
+
+    .columna-numero {
+      color: var(--oro);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .16em;
+    }
+
+    .columna-letra {
+      font-family: Georgia, serif;
+      font-size: 76px;
+      line-height: 1;
+      color: rgba(255,255,255,.18);
+    }
+
+    .columna h3 {
+      margin: 12px 0 9px;
+      font-family: Georgia, serif;
+      font-size: 29px;
+      font-weight: 400;
+    }
+
+    .columna p {
+      margin: 0;
+      color: rgba(255,255,255,.77);
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .columna-ir {
+      margin-top: 22px;
+      color: var(--oro);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    /* ÁREAS Y ARTÍCULOS */
+
+    .areas {
+      background: #ebe5d8;
+    }
+
+    .areas-lista {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .area-card {
+      display: block;
+      padding: 23px;
+      border: 1px solid #ded5c6;
+      border-radius: 14px;
+      background: var(--papel);
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .area-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(40,40,30,.08);
+    }
+
+    .area-card small {
+      color: var(--tierra);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .13em;
+    }
+
+    .area-card h3 {
+      margin: 13px 0 8px;
+      font-family: Georgia, serif;
+      font-size: 23px;
+      font-weight: 400;
+    }
+
+    .area-card p {
+      margin: 0;
+      color: var(--suave);
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .estado-catalogo {
+      margin-top: 25px;
+      color: var(--suave);
+      font-size: 11px;
+    }
+
+    /* FILOSOFÍA */
+
+    .filosofia {
+      background: var(--papel);
+    }
+
+    .filosofia-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .filosofia-frase {
+      padding: 35px;
+      border-left: 3px solid var(--terracota);
+      background: var(--marfil);
+    }
+
+    .filosofia-frase blockquote {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: clamp(25px, 3vw, 37px);
+      line-height: 1.3;
+      color: var(--noche);
+    }
+
+    .filosofia-frase p {
+      margin: 20px 0 0;
+      color: var(--tierra);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .filosofia-texto p {
+      color: var(--suave);
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    /* NAYARA Y TUREY */
+
+    .personajes {
+      position: relative;
+      overflow: hidden;
+      background: var(--noche);
+      color: white;
+    }
+
+    .personajes::before {
+      content: "";
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      right: -180px;
+      top: -220px;
+      border: 1px solid rgba(217,184,120,.2);
+      border-radius: 50%;
+      box-shadow: 0 0 0 35px rgba(217,184,120,.035),
+                  0 0 0 75px rgba(217,184,120,.025);
+    }
+
+    .personajes .seccion-encabezado p { color: #c4cec4; }
+
+    .personajes-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .personaje {
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,.17);
+      border-radius: 15px;
+      background: rgba(255,255,255,.055);
+    }
+
+    .personaje .inicial {
+      color: var(--oro);
+      font-family: Georgia, serif;
+      font-size: 54px;
+    }
+
+    .personaje h3 {
+      margin: 8px 0;
+      font-family: Georgia, serif;
+      font-size: 27px;
+      font-weight: 400;
+    }
+
+    .personaje p {
+      max-width: 440px;
+      color: #c4cec4;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .personaje a {
+      display: inline-block;
+      margin-top: 13px;
+      color: var(--oro);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    /* CIERRE Y PIE */
+
+    .invitacion {
+      padding: 75px 0;
+      text-align: center;
+      background: #e6d9c5;
+    }
+
+    .invitacion h2 {
+      max-width: 720px;
+      margin: 0 auto 18px;
+      font-family: Georgia, serif;
+      font-size: clamp(34px, 4vw, 48px);
+      font-weight: 400;
+      line-height: 1.15;
+    }
+
+    .invitacion p {
+      max-width: 570px;
+      margin: 0 auto 25px;
+      color: #68695e;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .invitacion .boton {
+      background: var(--noche);
+      color: white;
+    }
+
+    .pie {
+      padding: 40px 0 25px;
+      background: #12231f;
+      color: #d4d9cf;
+    }
+
+    .pie-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 35px;
+      padding-bottom: 30px;
+    }
+
+    .pie h3 {
+      margin: 0 0 13px;
+      color: var(--oro);
+      font-family: Georgia, serif;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .pie p, .pie a {
+      color: #bdc8bc;
+      font-size: 11px;
+      line-height: 1.9;
+    }
+
+    .pie a:hover { color: var(--oro); }
+
+    .pie-final {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,.14);
+      color: #9eaa9e;
+      font-size: 10px;
+    }
+
+    .aviso {
+      padding: 12px 0;
+      color: #d7c8a9;
+      font-size: 10px;
+      line-height: 1.6;
+    }
+
+    /* ACCESIBILIDAD Y MÓVILES */
+
+    a:focus-visible, button:focus-visible, input:focus-visible {
+      outline: 3px solid var(--oro);
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-contenido {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
       }
 
-      .barra {
-        min-height: 70px;
-      }
+      .hero-imagen-marco { min-height: 350px; }
+      .columnas { grid-template-columns: repeat(2, 1fr); }
+      .areas-lista { grid-template-columns: repeat(2, 1fr); }
+      .navegacion { gap: 14px; }
+    }
 
-      .lema { display: none; }
+    @media (max-width: 680px) {
+      .contenedor { width: min(100% - 34px, 560px); }
 
-      .principal {
-        grid-template-columns: 1fr;
-        gap: 48px;
-        padding-top: 52px;
-        padding-bottom: 50px;
-      }
+      .barra { min-height: 68px; }
 
-      .presentacion { max-width: 520px; }
+      .boton-menu { display: block; }
 
-      .simbolo {
-        width: 85px;
-        height: 85px;
-        margin-bottom: 20px;
-      }
-
-      .marca { font-size: 68px; }
-
-      .columna {
-        min-height: 190px;
-        padding: 19px;
-      }
-
-      .pie {
+      .navegacion {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        padding: 20px 25px 25px;
         flex-direction: column;
-        gap: 5px;
+        align-items: flex-start;
+        background: var(--noche);
+        border-top: 1px solid rgba(255,255,255,.12);
       }
-    }
 
-    @media (max-width: 420px) {
-      .columnas { grid-template-columns: 1fr; }
-      .columna { min-height: 160px; }
-      .marca { font-size: 59px; }
+      .navegacion.abierta { display: flex; }
+
+      .hero { min-height: auto; }
+
+      .hero-contenido {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-top: 60px;
+        padding-bottom: 95px;
+      }
+
+      .hero h1 { font-size: clamp(43px, 13vw, 61px); }
+
+      .hero-imagen-marco {
+        min-height: 340px;
+        margin: 0 12px;
+      }
+
+      .hero-pie .contenedor {
+        flex-direction: column;
+        gap: 7px;
+      }
+
+      .busqueda-interior { grid-template-columns: 1fr; gap: 17px; }
+
+      .seccion { padding: 68px 0; }
+
+      .columnas, .areas-lista, .personajes-grid,
+      .filosofia-grid, .pie-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .columna { min-height: 245px; }
+
+      .resultado-lista { grid-template-columns: 1fr; }
+
+      .filosofia-grid { gap: 25px; }
+
+      .pie-final { flex-direction: column; gap: 8px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -270,113 +862,441 @@
 </head>
 
 <body>
-  <div class="pagina">
-    <header class="barra contenedor">
-      <div class="nombre">CIBA</div>
-      <div class="lema">Un espacio para crecer, comprender y acompañar</div>
-    </header>
 
-    <main class="principal contenedor">
-      <section class="presentacion" aria-labelledby="titulo-principal">
-
-        <svg class="simbolo" viewBox="0 0 120 120"
-             fill="none" xmlns="http://www.w3.org/2000/svg"
-             role="img" aria-label="Espiral simbólica de CIBA">
-          <circle cx="60" cy="60" r="53" stroke="currentColor"
-                  stroke-width="1.5"/>
-          <path d="M60 14 C85 14 105 34 105 59
-                   C105 84 86 104 61 104
-                   C37 104 18 85 18 61
-                   C18 40 34 24 55 24
-                   C75 24 91 40 91 60
-                   C91 77 78 90 61 90
-                   C46 90 34 78 34 62
-                   C34 49 44 39 57 39
-                   C69 39 79 49 79 61
-                   C79 71 71 79 61 79
-                   C52 79 46 72 46 63
-                   C46 57 51 52 57 52"
-                stroke="currentColor" stroke-width="3"
-                stroke-linecap="round"/>
-          <circle cx="60" cy="60" r="4" fill="currentColor"/>
+  <header class="cabecera">
+    <div class="barra contenedor">
+      <a class="marca" href="#inicio" aria-label="CIBA, inicio">
+        <svg class="marca-simbolo" viewBox="0 0 100 100" fill="none"
+             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M50 10 C75 10 91 28 91 50 C91 73 73 90 50 90 C27 90 10 73 10 50 C10 30 25 16 45 16 C64 16 81 31 81 50 C81 67 68 81 50 81 C34 81 21 68 21 51 C21 37 32 26 47 26 C61 26 72 37 72 51 C72 63 63 72 51 72 C40 72 31 63 31 52 C31 43 38 36 48 36"
+                stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="50" cy="50" r="4" fill="currentColor"/>
         </svg>
+        <span class="marca-texto">CIBA<small>CRECER · CONECTAR · ACOMPAÑAR</small></span>
+      </a>
 
-        <p class="marca">CIBA</p>
-        <p class="submarca">
-          Crianza · Internet · Bienestar · Acompañamiento
-        </p>
+      <button class="boton-menu" id="boton-menu"
+              aria-expanded="false" aria-controls="navegacion">
+        Menú ☰
+      </button>
 
-        <h1 id="titulo-principal">
-          Acompañar a las familias también es construir futuro.
-        </h1>
+      <nav class="navegacion" id="navegacion" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#explorar">Explorar</a>
+        <a href="#areas">Áreas</a>
+        <a href="#proyecto">El proyecto</a>
+        <a href="#nayara-turey">Nayara y Turey</a>
+      </nav>
+    </div>
+  </header>
 
-        <p class="intro">
-          Un espacio para orientar, conectar y acompañar a madres,
-          padres y familias en los desafíos de la vida cotidiana
-          y del mundo digital. Con información, recursos y
-          herramientas para crecer juntos.
-        </p>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-contenido contenedor">
+        <div class="hero-texto">
+          <div class="sobrelinea">Una comunidad que crece</div>
 
-        <div class="detalle"></div>
-      </section>
+          <h1>
+            Nuestras raíces.<br>
+            Nuestro presente.<br>
+            <em>Nuestro futuro.</em>
+          </h1>
 
-      <section aria-labelledby="titulo-columnas">
-        <h2 class="seccion-titulo" id="titulo-columnas">
-          Explora nuestros espacios
-        </h2>
+          <p class="hero-descripcion">
+            Un espacio cubano para acompañar a las familias en la crianza,
+            comprender el mundo digital, cuidar el bienestar y encontrar
+            orientación. Con conocimiento, sensibilidad y comunidad.
+          </p>
+
+          <div class="hero-botones">
+            <a class="boton boton-dorado" href="#explorar">Explorar CIBA</a>
+            <a class="boton boton-contorno" href="#proyecto">Conocer el proyecto</a>
+          </div>
+        </div>
+
+        <div class="hero-imagen-marco">
+          <img
+            class="hero-imagen"
+            src="assets/images/portada-ciba.webp"
+            alt="Familia cubana compartiendo un momento cotidiano en su hogar"
+            onerror="this.style.display='none'">
+          <div class="imagen-sello">De nuestras raíces nace el futuro</div>
+        </div>
+      </div>
+
+      <div class="hero-pie">
+        <div class="contenedor">
+          <span>Crianza · Internet · Bienestar · Acompañamiento</span>
+          <span>Una mirada humana en un mundo que cambia</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="busqueda" aria-label="Buscador de contenidos">
+      <div class="contenedor">
+        <div class="busqueda-interior">
+          <div>
+            <h2>¿Qué estás buscando?</h2>
+            <p>Explora temas, orientaciones, recursos y artículos de CIBA.</p>
+          </div>
+
+          <form class="busqueda-caja" id="form-busqueda" role="search">
+            <input id="consulta" type="search"
+                   placeholder="Escribe un tema o una pregunta..."
+                   aria-label="Buscar en CIBA">
+            <button type="submit">BUSCAR</button>
+          </form>
+        </div>
+
+        <div class="resultados" id="resultados" aria-live="polite">
+          <h3 id="resultados-titulo">Resultados</h3>
+          <div class="resultado-lista" id="resultado-lista"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="explorar">
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <span class="etiqueta">Cuatro caminos, un mismo propósito</span>
+          <h2 class="titulo">Todo lo que nos ayuda a crecer.</h2>
+          <p>
+            CIBA reúne cuatro grandes espacios de conocimiento y acompañamiento.
+            Cada uno aborda una dimensión esencial de la vida familiar.
+          </p>
+        </div>
 
         <div class="columnas">
-          <article class="columna">
-            <span class="numero">01 / C</span>
+          <a class="columna" href="#areas-c">
             <div>
-              <h2>Crianza</h2>
-              <p>
-                Comprender, educar y acompañar cada etapa
-                del crecimiento.
-              </p>
+              <div class="columna-numero">01 / C</div>
+              <div class="columna-letra">C</div>
             </div>
-          </article>
+            <div>
+              <h3>Crianza</h3>
+              <p>Comprender la infancia, educar con afecto y acompañar cada etapa del desarrollo.</p>
+              <div class="columna-ir">Explorar espacio ↗</div>
+            </div>
+          </a>
 
-          <article class="columna">
-            <span class="numero">02 / I</span>
+          <a class="columna" href="#areas-i">
             <div>
-              <h2>Internet</h2>
-              <p>
-                Convivir con la tecnología de forma segura,
-                consciente y responsable.
-              </p>
+              <div class="columna-numero">02 / I</div>
+              <div class="columna-letra">I</div>
             </div>
-          </article>
+            <div>
+              <h3>Internet</h3>
+              <p>Habitar el mundo digital con seguridad, pensamiento crítico y responsabilidad.</p>
+              <div class="columna-ir">Explorar espacio ↗</div>
+            </div>
+          </a>
 
-          <article class="columna">
-            <span class="numero">03 / B</span>
+          <a class="columna" href="#areas-b">
             <div>
-              <h2>Bienestar</h2>
-              <p>
-                Cuidar el bienestar personal, emocional
-                y familiar.
-              </p>
+              <div class="columna-numero">03 / B</div>
+              <div class="columna-letra">B</div>
             </div>
-          </article>
+            <div>
+              <h3>Bienestar</h3>
+              <p>Cuidar la salud emocional, los vínculos y la vida cotidiana de las familias.</p>
+              <div class="columna-ir">Explorar espacio ↗</div>
+            </div>
+          </a>
 
-          <article class="columna">
-            <span class="numero">04 / A</span>
+          <a class="columna" href="#areas-a">
             <div>
-              <h2>Acompañamiento</h2>
-              <p>
-                Encontrar orientación, apoyo y caminos
-                para seguir adelante.
-              </p>
+              <div class="columna-numero">04 / A</div>
+              <div class="columna-letra">A</div>
             </div>
+            <div>
+              <h3>Acompañamiento</h3>
+              <p>Encontrar orientación, herramientas y apoyo para los desafíos de cada día.</p>
+              <div class="columna-ir">Explorar espacio ↗</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion areas" id="areas">
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <span class="etiqueta">Conocimiento organizado para la vida real</span>
+          <h2 class="titulo">Entra en cada universo.</h2>
+          <p>
+            Las áreas y los contenidos publicados aparecerán aquí
+            automáticamente a medida que crezca la biblioteca de CIBA.
+          </p>
+        </div>
+
+        <div class="areas-lista" id="areas-lista">
+          <article class="area-card">
+            <small>CIBA · BIBLIOTECA</small>
+            <h3>Estamos preparando este espacio</h3>
+            <p>Pronto encontrarás aquí nuevas áreas y contenidos.</p>
           </article>
         </div>
-      </section>
-    </main>
 
-    <footer class="pie contenedor">
-      <span>CIBA · Crianza, Internet, Bienestar y Acompañamiento</span>
-      <span class="estado">Plataforma en desarrollo</span>
-    </footer>
-  </div>
+        <p class="estado-catalogo" id="estado-catalogo">
+          Biblioteca CIBA
+        </p>
+      </div>
+    </section>
+
+    <section class="seccion filosofia" id="proyecto">
+      <div class="contenedor filosofia-grid">
+        <div class="filosofia-frase">
+          <blockquote>
+            “Una familia acompañada tiene más herramientas para construir su propio camino”.
+          </blockquote>
+          <p>El espíritu de CIBA</p>
+        </div>
+
+        <div class="filosofia-texto">
+          <span class="etiqueta">Nuestra razón de ser</span>
+          <h2 class="titulo">Tecnología con raíces humanas.</h2>
+          <p>
+            CIBA nace de una convicción: las familias necesitan información
+            comprensible, orientación confiable y espacios donde sentirse
+            acompañadas.
+          </p>
+          <p>
+            Unimos conocimiento, cultura y herramientas digitales desde una
+            mirada cercana a nuestra realidad. No para sustituir a las familias,
+            sino para fortalecer sus capacidades y sus decisiones.
+          </p>
+          <p>
+            Creemos en una Cuba donde el conocimiento circule, las generaciones
+            dialoguen y cada niña, niño y adolescente encuentre mejores
+            oportunidades para desarrollarse.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion personajes" id="nayara-turey">
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <span class="etiqueta">Dos voces para acompañar</span>
+          <h2 class="titulo">Nayara y Turey.</h2>
+          <p>
+            Dos personajes simbólicos que representan a madres y padres.
+            Están aquí para ayudarte a explorar CIBA y acercarte a sus recursos.
+          </p>
+        </div>
+
+        <div class="personajes-grid">
+          <article class="personaje">
+            <div class="inicial">N.</div>
+            <h3>Nayara</h3>
+            <p>
+              Una voz cercana para explorar preguntas sobre crianza,
+              desarrollo, vínculos y vida familiar.
+            </p>
+            <a href="https://wa.me/5350861330?text=Hola%2C%20quiero%20orientaci%C3%B3n%20sobre%20un%20tema%20de%20CIBA">
+              Solicitar orientación ↗
+            </a>
+          </article>
+
+          <article class="personaje">
+            <div class="inicial">T.</div>
+            <h3>Turey</h3>
+            <p>
+              Un compañero para descubrir recursos, comprender el entorno
+              digital y encontrar caminos de acompañamiento.
+            </p>
+            <a href="https://wa.me/5350861330?text=Hola%2C%20quiero%20orientaci%C3%B3n%20sobre%20un%20tema%20de%20CIBA">
+              Solicitar orientación ↗
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="invitacion">
+      <div class="contenedor">
+        <span class="etiqueta">Este espacio también es tuyo</span>
+        <h2>Crecer es más hermoso cuando lo hacemos acompañados.</h2>
+        <p>
+          Explora, aprende, comparte y vuelve siempre que necesites
+          una orientación para tu familia.
+        </p>
+        <a class="boton" href="#explorar">Comenzar a explorar</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-grid">
+        <div>
+          <h3>CIBA</h3>
+          <p>
+            Crianza · Internet · Bienestar · Acompañamiento.
+            Una plataforma para las familias, construida desde una mirada
+            humana, cubana y digital.
+          </p>
+        </div>
+
+        <div>
+          <h3>Explorar</h3>
+          <p><a href="#explorar">Las cuatro columnas</a></p>
+          <p><a href="#areas">Áreas y contenidos</a></p>
+          <p><a href="#proyecto">Sobre CIBA</a></p>
+        </div>
+
+        <div>
+          <h3>Contacto</h3>
+          <p><a href="https://wa.me/5350861330">Orientación por WhatsApp</a></p>
+          <p><a href="#nayara-turey">Nayara y Turey</a></p>
+        </div>
+      </div>
+
+      <div class="pie-final">
+        <span>© CIBA · Un proyecto para crecer acompañándonos.</span>
+        <span>Hecho con raíces, conocimiento y futuro.</span>
+      </div>
+
+      <div class="aviso">
+        Los contenidos de CIBA son orientativos y no sustituyen la atención
+        profesional cuando esta sea necesaria.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const botonMenu = document.getElementById("boton-menu");
+      const navegacion = document.getElementById("navegacion");
+
+      botonMenu.addEventListener("click", () => {
+        const abierta = navegacion.classList.toggle("abierta");
+        botonMenu.setAttribute("aria-expanded", String(abierta));
+      });
+
+      navegacion.querySelectorAll("a").forEach(enlace => {
+        enlace.addEventListener("click", () => {
+          navegacion.classList.remove("abierta");
+          botonMenu.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      const areasLista = document.getElementById("areas-lista");
+      const estadoCatalogo = document.getElementById("estado-catalogo");
+      const formBusqueda = document.getElementById("form-busqueda");
+      const consulta = document.getElementById("consulta");
+      const resultados = document.getElementById("resultados");
+      const resultadosTitulo = document.getElementById("resultados-titulo");
+      const resultadoLista = document.getElementById("resultado-lista");
+
+      let paginas = [];
+      let areas = [];
+
+      const columnas = {
+        C: "Crianza",
+        I: "Internet",
+        B: "Bienestar",
+        A: "Acompañamiento"
+      };
+
+      function escapar(valor) {
+        return String(valor ?? "").replace(/[&<>"']/g, caracter => ({
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;"
+        })[caracter]);
+      }
+
+      function mostrarAreas() {
+        if (!areas.length) {
+          estadoCatalogo.textContent =
+            "La biblioteca está creciendo. Pronto encontrarás nuevas áreas y contenidos.";
+          return;
+        }
+
+        areasLista.innerHTML = areas.map(area => {
+          const letra = String(area.columna || "").toUpperCase();
+          const titulo = escapar(area.titulo || "Área CIBA");
+          const descripcion = escapar(area.descripcion || "");
+          const ruta = escapar(area.ruta_publica || "#areas");
+
+          return `
+            <a class="area-card" href="${ruta}">
+              <small>${escapar(columnas[letra] || "CIBA")} · ${escapar(area.id || "")}</small>
+              <h3>${titulo}</h3>
+              <p>${descripcion}</p>
+            </a>
+          `;
+        }).join("");
+
+        estadoCatalogo.textContent =
+          `${areas.length} áreas disponibles · ${paginas.length} contenidos publicados`;
+      }
+
+      function buscar(termino) {
+        const palabras = termino.toLocaleLowerCase("es")
+          .split(/\s+/).filter(Boolean);
+
+        if (!palabras.length) {
+          resultados.classList.remove("visible");
+          return;
+        }
+
+        const encontrados = paginas.filter(pagina => {
+          const texto = [
+            pagina.titulo,
+            pagina.descripcion,
+            pagina.id,
+            pagina.columna,
+            pagina.area,
+            ...(pagina.palabras_clave || [])
+          ].join(" ").toLocaleLowerCase("es");
+
+          return palabras.every(palabra => texto.includes(palabra));
+        });
+
+        resultados.classList.add("visible");
+        resultadosTitulo.textContent =
+          encontrados.length
+            ? `Encontramos ${encontrados.length} resultado(s)`
+            : "No encontramos resultados para esa búsqueda";
+
+        resultadoLista.innerHTML = encontrados.length
+          ? encontrados.map(pagina => `
+              <a class="resultado" href="${escapar(pagina.ruta_publica || "#areas")}">
+                <strong>${escapar(pagina.titulo || "Contenido CIBA")}</strong>
+                <span>${escapar(pagina.descripcion || "")}</span>
+              </a>
+            `).join("")
+          : `<p>Prueba con otras palabras o explora las cuatro columnas de CIBA.</p>`;
+      }
+
+      formBusqueda.addEventListener("submit", evento => {
+        evento.preventDefault();
+        buscar(consulta.value.trim());
+      });
+
+      fetch("data/catalogo.json")
+        .then(respuesta => {
+          if (!respuesta.ok) throw new Error("Catálogo no disponible");
+          return respuesta.json();
+        })
+        .then(catalogo => {
+          areas = Array.isArray(catalogo.areas) ? catalogo.areas : [];
+          paginas = Array.isArray(catalogo.paginas) ? catalogo.paginas : [];
+          mostrarAreas();
+        })
+        .catch(() => {
+          estadoCatalogo.textContent =
+            "La biblioteca se está preparando. Puedes explorar las cuatro columnas mientras tanto.";
+        });
+    })();
+  </script>
+
 </body>
 </html>
