@@ -1,0 +1,39 @@
+/* CIBA · base.css — variables y reset. Mobile-first. */
+:root {
+  --ciba-color-fondo: #faf8f5;
+  --ciba-color-texto: #1f1d1a;
+  --ciba-color-primario: #2f6f5e;
+  --ciba-color-acento: #c98a3b;
+  --ciba-color-error: #b23b3b;
+  --ciba-radio: 12px;
+  --ciba-espacio-1: 0.5rem;
+  --ciba-espacio-2: 1rem;
+  --ciba-espacio-3: 1.5rem;
+  --ciba-espacio-4: 2rem;
+  --ciba-fuente-base: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --ciba-contenedor-max: 72rem;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--ciba-fuente-base);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--ciba-color-texto);
+  background: var(--ciba-color-fondo);
+}
+img, picture, video { max-width: 100%; height: auto; display: block; }
+a { color: var(--ciba-color-primario); text-decoration: underline; }
+a:hover, a:focus-visible { color: var(--ciba-color-acento); }
+:focus-visible { outline: 2px solid var(--ciba-color-acento); outline-offset: 2px; }
+.contenedor {
+  width: 100%;
+  max-width: var(--ciba-contenedor-max);
+  margin-inline: auto;
+  padding-inline: var(--ciba-espacio-2);
+}
+.oculto-visual {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}

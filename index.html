@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CIBA: Crianza, Internet, Bienestar y Acompañamiento.">
+  <title>CIBA · En construcción</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <style>
+    .portada { min-height: 100vh; display: grid; place-items: center; padding-block: 3rem; }
+    .contenido { width: min(100% - 2rem, 68rem); margin-inline: auto; }
+    .marca { color: var(--ciba-color-primario); font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 800; letter-spacing: .12em; margin: 0; }
+    .intro { max-width: 48rem; font-size: clamp(1.1rem, 2.5vw, 1.35rem); }
+    .columnas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: 1rem; margin-top: 2rem; }
+    .columna { border: 1px solid #ded8cf; border-radius: var(--ciba-radio); padding: 1.25rem; background: #fffdfa; }
+    .columna h2 { margin-top: 0; color: var(--ciba-color-primario); }
+    .estado { margin-top: 2rem; color: #625c54; font-size: .95rem; }
+  </style>
+</head>
+<body>
+  <main class="portada">
+    <div class="contenido">
+      <p class="marca" aria-label="CIBA">CIBA</p>
+      <h1>Crianza, Internet, Bienestar y Acompañamiento</h1>
+      <p class="intro">Un espacio para orientar, conectar y acompañar a las familias en los desafíos de la vida cotidiana y del mundo digital.</p>
+      <section class="columnas" aria-label="Áreas principales de CIBA">
+        <article class="columna"><h2>Crianza</h2><p>Información y recursos para acompañar cada etapa.</p></article>
+        <article class="columna"><h2>Internet</h2><p>Herramientas para navegar el entorno digital con confianza.</p></article>
+        <article class="columna"><h2>Bienestar</h2><p>Contenidos para cuidar el bienestar personal y familiar.</p></article>
+        <article class="columna"><h2>Acompañamiento</h2><p>Orientación y apoyo para encontrar próximos pasos.</p></article>
+      </section>
+      <p class="estado">Plataforma en desarrollo. Estamos preparando los contenidos y recursos.</p>
+    </div>
+  </main>
+</body>
+</html>

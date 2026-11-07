@@ -1,0 +1,27 @@
+CIBA — PAQUETE FUNDACIONAL CONSOLIDADO 01.4
+
+Este paquete reúne la arquitectura de CIBA de la entrega 01.3 con las correcciones de seguridad 01.4 y una configuración de GitHub Pages que publica solamente dist/.
+
+IMPORTANTE
+- No reemplaces tu README.md actual.
+- Sí reemplaza el archivo .github/workflows/static.yml por el que viene aquí.
+- El paquete incluye una portada provisional: index.html. La portada visual definitiva, el buscador de Nayara y Turey y los contenidos de las cuatro columnas se desarrollarán en etapas posteriores.
+- El repositorio de GitHub sigue siendo público. Publicar solo dist/ impide que scripts/, docs/ y metadatos fuente se sirvan como parte del sitio web; no vuelve privado el repositorio.
+- No subas la carpeta dist/ ni los archivos __pycache__.
+
+PRUEBAS REALIZADAS EN ESTE ENTORNO
+- 67 pruebas automatizadas: todas pasaron.
+- Compilación de los módulos Python: correcta.
+- Validación del contenido inicial: correcta.
+- Construcción de dist/: correcta.
+- Se comprobó que dist/ contiene la portada, assets y los tres JSON públicos; no contiene scripts/ ni docs/.
+
+REQUISITOS
+Python 3.10 o superior. No se requieren dependencias externas para las pruebas ni para el build.
+
+COMANDOS (desde la carpeta raíz del proyecto)
+1) python -m unittest discover -s tests -t . -v
+2) python scripts/validate_content.py --src content
+3) python scripts/build_catalog.py --src content --out dist
+
+No se ha conectado ni modificado tu repositorio de GitHub desde aquí. Este paquete es la versión preparada para que la incorporemos paso a paso.

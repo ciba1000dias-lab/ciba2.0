@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ciba.local/meta.schema.json",
+  "title": "CIBA — contrato de referencia de meta.json (NO se ejecuta; fuente ejecutable: scripts/lib/meta_reader.py)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "titulo", "descripcion", "columna", "area",
+    "palabras_clave", "estado", "fecha_publicacion",
+    "mostrar_en_columna", "mostrar_en_area"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[CIBA][1-9][0-9]*-[0-9]{2}$" },
+    "titulo": { "type": "string", "minLength": 3, "maxLength": 120 },
+    "descripcion": { "type": "string", "minLength": 10, "maxLength": 300 },
+    "columna": { "type": "string", "enum": ["C", "I", "B", "A"] },
+    "area": { "type": "string", "pattern": "^[CIBA][1-9][0-9]*$" },
+    "palabras_clave": {
+      "type": "array",
+      "minItems": 1, "maxItems": 15,
+      "items": { "type": "string", "minLength": 2, "maxLength": 40 }
+    },
+    "estado": { "type": "string", "enum": ["borrador", "revision", "publicado", "archivado"] },
+    "fecha_publicacion": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+    "mostrar_en_columna": { "type": "boolean" },
+    "mostrar_en_area": { "type": "boolean" },
+    "media": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "videos": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["proveedor", "id"],
+            "properties": {
+              "proveedor": { "type": "string", "minLength": 1 },
+              "id": { "type": "string", "minLength": 1 },
+              "titulo": { "type": "string" }
+            }
+          }
+        },
+        "mapas": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["proveedor", "id"],
+            "properties": {
+              "proveedor": { "type": "string", "minLength": 1 },
+              "id": { "type": "string", "minLength": 1 },
+              "titulo": { "type": "string" }
+            }
+          }
+        },
+        "fotos": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["ruta"],
+            "properties": {
+              "ruta": {
+                "type": "string",
+                "pattern": "^(?!/)(?!.*\\.\\.)(?!.*://)[A-Za-z0-9_./-]+$"
+              },
+              "alt": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "enlaces_externos": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["titulo", "url"],
+        "properties": {
+          "titulo": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "format": "uri" },
+          "tipo": { "type": "string" }
+        }
+      }
+    },
+    "whatsapp_consulta": { "type": "boolean" }
+  }
+}

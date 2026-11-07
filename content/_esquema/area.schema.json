@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ciba.local/area.schema.json",
+  "title": "CIBA — contrato de referencia de area.json (NO se ejecuta; fuente ejecutable: scripts/lib/area_reader.py)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "titulo", "descripcion", "columna", "orden"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[CIBA][1-9][0-9]*$" },
+    "titulo": { "type": "string", "minLength": 3, "maxLength": 120 },
+    "descripcion": { "type": "string", "minLength": 10, "maxLength": 300 },
+    "columna": { "type": "string", "enum": ["C", "I", "B", "A"] },
+    "orden": { "type": "integer", "minimum": 0 }
+  }
+}
