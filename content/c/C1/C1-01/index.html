@@ -1,72 +1,141 @@
 
 <article class="articulo-crianza">
-  <style>
+ 
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: #f1ede4;
+    color: #39352e;
+    font-family: Arial, sans-serif;
+  }
+
+  .articulo-crianza {
+    max-width: 900px;
+    margin: 45px auto;
+    padding: 55px clamp(24px, 7vw, 78px);
+    background: #fffdf8;
+    border: 1px solid #e8dfd1;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px rgba(66, 52, 37, .08);
+    line-height: 1.85;
+    font-size: 17px;
+  }
+
+  .articulo-crianza .volver {
+    display: inline-block;
+    color: #956044;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 35px;
+  }
+
+  .articulo-crianza .volver:hover {
+    text-decoration: underline;
+  }
+
+  .articulo-crianza .etiqueta {
+    color: #748064;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    margin: 0 0 18px;
+  }
+
+  .articulo-crianza h1 {
+    color: #493d32;
+    font-family: Georgia, serif;
+    font-size: clamp(34px, 5vw, 52px);
+    line-height: 1.12;
+    font-weight: normal;
+    margin: 0 0 24px;
+    max-width: 720px;
+  }
+
+  .articulo-crianza .bajada {
+    color: #786e60;
+    font-family: Georgia, serif;
+    font-size: 21px;
+    line-height: 1.65;
+    margin-bottom: 38px;
+  }
+
+  .articulo-crianza h2 {
+    color: #986047;
+    font-family: Georgia, serif;
+    font-size: 29px;
+    line-height: 1.25;
+    font-weight: normal;
+    margin: 48px 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e9dfd1;
+  }
+
+  .articulo-crianza p {
+    margin: 0 0 20px;
+  }
+
+  .articulo-crianza .nota {
+    background: #f3f0e6;
+    border-left: 4px solid #9b674d;
+    padding: 23px 26px;
+    margin: 32px 0;
+    border-radius: 0 12px 12px 0;
+  }
+
+  .articulo-crianza ul {
+    padding-left: 25px;
+  }
+
+  .articulo-crianza li {
+    padding-left: 5px;
+    margin-bottom: 14px;
+  }
+
+  .articulo-crianza li::marker {
+    color: #9b674d;
+  }
+
+  .articulo-crianza strong {
+    color: #514438;
+  }
+
+  .articulo-crianza .cierre {
+    margin-top: 55px;
+    padding-top: 28px;
+    border-top: 1px solid #e5dbcd;
+    color: #68765b;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .articulo-crianza .cierre strong {
+    color: #68765b;
+    letter-spacing: .04em;
+  }
+
+  @media (max-width: 600px) {
     .articulo-crianza {
-      max-width: 850px;
-      margin: 0 auto;
-      padding: 35px 24px 70px;
-      color: #342f29;
-      font-family: Arial, sans-serif;
-      line-height: 1.8;
-    }
-
-    .articulo-crianza .volver {
-      color: #a45e43;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .articulo-crianza .etiqueta {
-      margin-top: 45px;
-      color: #66745b;
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-    }
-
-    .articulo-crianza h1 {
-      font-family: Georgia, serif;
-      font-size: clamp(32px, 5vw, 48px);
-      line-height: 1.15;
-      font-weight: normal;
-      margin: 15px 0;
-    }
-
-    .articulo-crianza .bajada {
-      color: #756c60;
-      font-size: 18px;
-      line-height: 1.7;
+      margin: 12px;
+      padding: 30px 22px 42px;
+      border-radius: 12px;
+      font-size: 16px;
     }
 
     .articulo-crianza h2 {
-      font-family: Georgia, serif;
-      font-size: 27px;
-      font-weight: normal;
-      margin-top: 42px;
-      color: #a45e43;
+      font-size: 25px;
     }
 
-    .articulo-crianza .nota {
-      background: #f5f0e7;
-      border-left: 4px solid #a45e43;
-      padding: 20px 24px;
-      margin: 28px 0;
-      border-radius: 0 12px 12px 0;
+    .articulo-crianza .bajada {
+      font-size: 18px;
     }
-
-    .articulo-crianza li {
-      margin-bottom: 12px;
-    }
-
-    .articulo-crianza .cierre {
-      margin-top: 45px;
-      padding-top: 25px;
-      border-top: 1px solid #e4dbce;
-      color: #66745b;
-    }
-  </style>
-
+  }
+</style>
   <a class="volver" href="../../../index.html">
     ← Volver a CIBA
   </a>
