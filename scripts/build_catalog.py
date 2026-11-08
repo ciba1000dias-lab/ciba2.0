@@ -1,4 +1,3 @@
-
 """Generador del catálogo CIBA con build atómico, allowlist y anti-symlink.
 
 Uso:
@@ -162,8 +161,15 @@ def _conectar_sistema_global(
         )
         return errores
 
-    # Evita insertar el mismo módulo dos veces.
-    if "data-ciba-global-script" in contenido or "ciba-global.js" in contenido:
+    # Solo considera integrado el sistema si existe una etiqueta SCRIPT
+    # real que cargue ciba-global.js. Los comentarios HTML no cuentan.
+    script_cargado = re.search(
+        r'<script\b(?=[^>]*\bsrc\s*=\s*["\'][^"\']*ciba-global\.js(?:[?#][^"\']*)?["\'])[^>]*>',
+        contenido,
+        flags=re.IGNORECASE,
+    )
+
+    if script_cargado:
         return errores
 
     script = raiz_publica / "assets" / "js" / "ciba-global.js"
@@ -392,7 +398,8 @@ def _construir_en_tmp(
     )
 
     if sistema_global_disponible:
-        # Incorporar el menú y buscador a todas las páginas generadas.
+        # Incorporar el menú y buscador a todas las páginas generadas,
+        # incluida la portada principal.
         paginas_html = sorted(tmp.rglob("index.html"))
 
         for archivo_html in paginas_html:
