@@ -4,214 +4,815 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4efe5">
-  <title>Crianza y desarrollo | CIBA</title>
-  <meta name="description" content="Un espacio para comprender el desarrollo infantil, fortalecer los vínculos y acompañar cada etapa de la vida.">
+  <meta name="theme-color" content="#172b27">
+  <meta name="description" content="CIBA Crianza: comprender la infancia, educar con afecto y acompañar cada etapa del desarrollo.">
+  <title>Crianza | CIBA — Crecemos acompañándonos</title>
 
   <style>
     :root {
-      --fondo: #f4efe5;
-      --tinta: #302d27;
-      --terracota: #a65d43;
-      --verde: #536b51;
-      --suave: #e8dfd0;
+      --noche: #172b27;
+      --noche2: #203a33;
+      --verde: #526e56;
+      --verde-claro: #a9b99a;
+      --tierra: #a9583e;
+      --terracota: #c97855;
+      --oro: #d9b878;
+      --marfil: #f5f0e5;
+      --papel: #fffdf7;
+      --tinta: #29332d;
+      --suave: #73776d;
+      --linea: #e4ddcf;
+      --ancho: 1220px;
     }
 
     * { box-sizing: border-box; }
 
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
     body {
       margin: 0;
-      background: var(--fondo);
+      background: var(--marfil);
       color: var(--tinta);
-      font-family: Georgia, serif;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    a { color: inherit; }
+    a { color: inherit; text-decoration: none; }
 
-    .volver {
-      display: inline-block;
-      margin: 28px 6%;
-      text-decoration: none;
-      color: var(--verde);
-      font: 600 13px Arial, sans-serif;
-      letter-spacing: 1px;
+    .contenedor {
+      width: min(var(--ancho), calc(100% - 48px));
+      margin-inline: auto;
     }
 
-    .hero {
-      min-height: 490px;
-      padding: 75px 8%;
+    /* CABECERA CIBA */
+
+    .cabecera {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(23,43,39,.97);
+      color: white;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(14px);
+    }
+
+    .barra {
+      min-height: 78px;
       display: flex;
       align-items: center;
-      background:
-        linear-gradient(90deg, rgba(30,35,27,.78), rgba(30,35,27,.12)),
-        url("../../../assets/images/columna-crianza.webp") center 42% / cover;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .marca {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .marca-simbolo {
+      width: 43px;
+      height: 43px;
+      color: var(--oro);
+    }
+
+    .marca-texto {
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: .19em;
+      color: var(--marfil);
+    }
+
+    .marca-texto small {
+      display: block;
+      margin-top: 3px;
+      font-size: 8px;
+      font-weight: 600;
+      letter-spacing: .19em;
+      color: var(--oro);
+    }
+
+    .navegacion {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .navegacion a {
+      color: #e5e5d9;
+    }
+
+    .navegacion a:hover { color: var(--oro); }
+
+    .boton-menu {
+      display: none;
+      padding: 9px 12px;
       color: white;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    /* PORTADA DE CRIANZA */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      color: white;
+      background:
+        radial-gradient(circle at 78% 25%, rgba(201,120,85,.22), transparent 35%),
+        linear-gradient(120deg, #172b27 0%, #203a33 58%, #34483a 100%);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: .13;
+      background-image:
+        linear-gradient(rgba(255,255,255,.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.12) 1px, transparent 1px);
+      background-size: 54px 54px;
+      mask-image: linear-gradient(90deg, transparent, black);
+      pointer-events: none;
     }
 
     .hero-contenido {
-      max-width: 680px;
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: .92fr 1.08fr;
+      align-items: center;
+      gap: 55px;
+      padding-top: 75px;
+      padding-bottom: 95px;
+    }
+
+    .sobrelinea {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--oro);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    .sobrelinea::before {
+      content: "";
+      width: 35px;
+      height: 1px;
+      background: var(--oro);
+    }
+
+    .hero h1 {
+      margin: 25px 0 22px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(45px, 5.5vw, 76px);
+      line-height: 1.03;
+      font-weight: 400;
+      letter-spacing: -.045em;
+    }
+
+    .hero h1 em {
+      color: var(--oro);
+      font-weight: 400;
+    }
+
+    .hero-descripcion {
+      max-width: 490px;
+      color: #d7ded3;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .hero-botones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 30px;
+    }
+
+    .boton {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 49px;
+      padding: 0 22px;
+      border-radius: 5px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      transition: transform .2s;
+    }
+
+    .boton:hover { transform: translateY(-3px); }
+
+    .boton-dorado {
+      background: var(--oro);
+      color: var(--noche);
+    }
+
+    .boton-contorno {
+      border: 1px solid rgba(255,255,255,.4);
+      color: white;
+    }
+
+    .hero-imagen-marco {
+      position: relative;
+      min-height: 440px;
+      border: 1px solid rgba(217,184,120,.45);
+      padding: 11px;
+      border-radius: 48% 48% 8px 8px;
+      background: rgba(255,255,255,.06);
+      box-shadow: 0 30px 80px rgba(0,0,0,.28);
+    }
+
+    .hero-imagen {
+      position: absolute;
+      inset: 11px;
+      width: calc(100% - 22px);
+      height: calc(100% - 22px);
+      object-fit: cover;
+      object-position: center 35%;
+      border-radius: 48% 48% 4px 4px;
+    }
+
+    .imagen-sello {
+      position: absolute;
+      right: -17px;
+      bottom: 35px;
+      width: 118px;
+      height: 118px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 15px;
+      border-radius: 50%;
+      background: var(--oro);
+      color: var(--noche);
+      font-family: Georgia, serif;
+      font-size: 14px;
+      line-height: 1.25;
+      transform: rotate(8deg);
+      box-shadow: 0 12px 30px rgba(0,0,0,.2);
+    }
+
+    .hero-pie {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-top: 1px solid rgba(255,255,255,.13);
+      color: #d7ded3;
+      font-size: 10px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .hero-pie .contenedor {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      padding-top: 17px;
+      padding-bottom: 17px;
+    }
+
+    /* INTRODUCCIÓN */
+
+    .seccion {
+      padding: 88px 0;
+    }
+
+    .introduccion-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 65px;
+      align-items: center;
     }
 
     .etiqueta {
-      font: 600 12px Arial, sans-serif;
-      letter-spacing: 3px;
+      color: var(--tierra);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .2em;
       text-transform: uppercase;
-      color: #ead2ad;
     }
 
-    h1 {
-      font-size: clamp(48px, 8vw, 88px);
-      line-height: .98;
-      font-weight: normal;
-      margin: 22px 0;
+    .titulo {
+      margin: 14px 0;
+      font-family: Georgia, serif;
+      font-size: clamp(34px, 4vw, 48px);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -.03em;
     }
 
-    .hero p {
-      font-size: 19px;
-      line-height: 1.7;
-      max-width: 570px;
+    .introduccion-texto p {
+      color: var(--suave);
+      font-size: 14px;
+      line-height: 1.9;
     }
 
-    .introduccion {
-      max-width: 850px;
-      margin: 85px auto;
-      padding: 0 25px;
-      text-align: center;
+    .frase {
+      padding: 35px;
+      border-left: 3px solid var(--terracota);
+      background: var(--papel);
     }
 
-    .introduccion h2 {
-      font-size: clamp(30px, 5vw, 46px);
-      font-weight: normal;
-      color: var(--terracota);
+    .frase blockquote {
+      margin: 0;
+      color: var(--noche);
+      font-family: Georgia, serif;
+      font-size: clamp(25px, 3vw, 36px);
+      line-height: 1.3;
     }
 
-    .introduccion p {
-      font-size: 19px;
-      line-height: 1.8;
+    .frase p {
+      margin: 20px 0 0;
+      color: var(--tierra);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .15em;
+      text-transform: uppercase;
     }
 
-    .contenidos {
-      padding: 65px 8% 100px;
-      background: var(--suave);
+    /* BIBLIOTECA */
+
+    .biblioteca {
+      background: #ebe5d8;
     }
 
-    .contenidos h2 {
-      font-size: clamp(32px, 5vw, 48px);
-      font-weight: normal;
-      margin-bottom: 12px;
-    }
-
-    .subtitulo {
-      font: 15px Arial, sans-serif;
-      color: #686257;
+    .encabezado-seccion {
+      max-width: 680px;
       margin-bottom: 38px;
     }
 
-    .tarjeta {
-      display: block;
-      max-width: 760px;
-      padding: 30px;
-      background: var(--fondo);
+    .encabezado-seccion p {
+      color: var(--suave);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .articulo {
+      display: grid;
+      grid-template-columns: 90px 1fr auto;
+      align-items: center;
+      gap: 25px;
+      padding: 28px;
+      border: 1px solid #ded5c6;
       border-radius: 14px;
-      text-decoration: none;
-      border-left: 5px solid var(--terracota);
-      transition: transform .25s, box-shadow .25s;
+      background: var(--papel);
+      transition: transform .2s, box-shadow .2s;
     }
 
-    .tarjeta:hover {
+    .articulo:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 30px #40372a18;
+      box-shadow: 0 12px 28px rgba(40,40,30,.08);
     }
 
-    .numero {
-      color: var(--terracota);
-      font: 12px Arial, sans-serif;
-      letter-spacing: 2px;
-    }
-
-    .tarjeta h3 {
+    .articulo-numero {
+      width: 76px;
+      height: 76px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--noche);
+      color: var(--oro);
+      font-family: Georgia, serif;
       font-size: 27px;
-      font-weight: normal;
-      margin: 15px 0 10px;
     }
 
-    .tarjeta p {
-      font-size: 16px;
+    .articulo small {
+      color: var(--tierra);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .13em;
+    }
+
+    .articulo h3 {
+      margin: 10px 0;
+      color: var(--noche);
+      font-family: Georgia, serif;
+      font-size: 25px;
+      font-weight: 400;
+    }
+
+    .articulo p {
+      margin: 0;
+      color: var(--suave);
+      font-size: 13px;
       line-height: 1.7;
     }
 
-    .abrir {
-      display: inline-block;
-      margin-top: 12px;
-      color: var(--verde);
-      font: 600 12px Arial, sans-serif;
-      letter-spacing: 1px;
+    .articulo-ir {
+      color: var(--tierra);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      white-space: nowrap;
     }
 
-    footer {
-      padding: 35px 8%;
+    /* CIERRE */
+
+    .cierre {
+      padding: 75px 0;
       text-align: center;
-      font: 12px Arial, sans-serif;
-      color: #756d61;
+      background: #e6d9c5;
     }
 
-    @media(max-width:600px) {
-      .hero { min-height: 430px; padding: 55px 7%; }
-      .introduccion { margin: 60px auto; }
-      .contenidos { padding: 55px 7%; }
-      .tarjeta { padding: 23px; }
+    .cierre h2 {
+      max-width: 720px;
+      margin: 14px auto 18px;
+      color: var(--noche);
+      font-family: Georgia, serif;
+      font-size: clamp(34px, 4vw, 48px);
+      font-weight: 400;
+      line-height: 1.15;
+    }
+
+    .cierre p {
+      max-width: 570px;
+      margin: 0 auto 25px;
+      color: #68695e;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .boton-noche {
+      background: var(--noche);
+      color: white;
+    }
+
+    /* PIE CIBA */
+
+    .pie {
+      padding: 40px 0 25px;
+      background: #12231f;
+      color: #d4d9cf;
+    }
+
+    .pie-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 35px;
+      padding-bottom: 30px;
+    }
+
+    .pie h3 {
+      margin: 0 0 13px;
+      color: var(--oro);
+      font-family: Georgia, serif;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .pie p, .pie a {
+      color: #bdc8bc;
+      font-size: 11px;
+      line-height: 1.9;
+    }
+
+    .pie-final {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,.14);
+      color: #9eaa9e;
+      font-size: 10px;
+    }
+
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--oro);
+      outline-offset: 4px;
+    }
+
+    /* MÓVILES */
+
+    @media (max-width: 900px) {
+      .hero-contenido {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+      }
+
+      .hero-imagen-marco { min-height: 350px; }
+    }
+
+    @media (max-width: 680px) {
+      .contenedor {
+        width: min(100% - 34px, 560px);
+      }
+
+      .barra { min-height: 68px; }
+
+      .boton-menu { display: block; }
+
+      .navegacion {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        padding: 20px 25px 25px;
+        flex-direction: column;
+        align-items: flex-start;
+        background: var(--noche);
+        border-top: 1px solid rgba(255,255,255,.12);
+      }
+
+      .navegacion.abierta { display: flex; }
+
+      .hero-contenido {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-top: 60px;
+        padding-bottom: 100px;
+      }
+
+      .hero h1 { font-size: clamp(43px, 13vw, 61px); }
+
+      .hero-imagen-marco {
+        min-height: 340px;
+        margin: 0 12px;
+      }
+
+      .hero-pie .contenedor {
+        flex-direction: column;
+        gap: 7px;
+      }
+
+      .seccion { padding: 65px 0; }
+
+      .introduccion-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .articulo {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .articulo-ir { white-space: normal; }
+
+      .pie-grid { grid-template-columns: 1fr; }
+
+      .pie-final {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <a class="volver" href="../../../index.html">← VOLVER A CIBA</a>
+  <header class="cabecera">
+    <div class="barra contenedor">
 
-  <header class="hero">
-    <div class="hero-contenido">
-      <div class="etiqueta">CIBA · COLUMNA C</div>
-      <h1>Crianza<br>y desarrollo</h1>
-      <p>
-        Comprender la infancia es aprender a acompañar la vida.
-        Un espacio para crecer, educar y fortalecer los vínculos
-        que nos unen.
-      </p>
+      <a class="marca" href="../../index.html" aria-label="Volver al inicio de CIBA">
+        <svg class="marca-simbolo" viewBox="0 0 100 100"
+             fill="none" xmlns="http://www.w3.org/2000/svg"
+             aria-hidden="true">
+          <circle cx="50" cy="50" r="45"
+                  stroke="currentColor" stroke-width="1.5"/>
+          <path d="M50 10 C75 10 91 28 91 50 C91 73 73 90 50 90 C27 90 10 73 10 50 C10 30 25 16 45 16 C64 16 81 31 81 50 C81 67 68 81 50 81 C34 81 21 68 21 51 C21 37 32 26 47 26 C61 26 72 37 72 51 C72 63 63 72 51 72 C40 72 31 63 31 52 C31 43 38 36 48 36"
+                stroke="currentColor" stroke-width="3"
+                stroke-linecap="round"/>
+          <circle cx="50" cy="50" r="4" fill="currentColor"/>
+        </svg>
+
+        <span class="marca-texto">
+          CIBA
+          <small>CRECER · CONECTAR · ACOMPAÑAR</small>
+        </span>
+      </a>
+
+      <button class="boton-menu" id="boton-menu"
+              aria-expanded="false" aria-controls="navegacion">
+        Menú ☰
+      </button>
+
+      <nav class="navegacion" id="navegacion">
+        <a href="../../index.html">Inicio CIBA</a>
+        <a href="#inicio">Crianza</a>
+        <a href="#biblioteca">Contenidos</a>
+        <a href="#proyecto">Nuestro propósito</a>
+      </nav>
+
     </div>
   </header>
 
-  <section class="introduccion">
-    <h2>Criar también es aprender</h2>
-    <p>
-      Cada niña y cada niño construye su propio camino.
-      Aquí encontrarás conocimientos, orientaciones y recursos
-      para comprender sus etapas de desarrollo, acompañar sus
-      descubrimientos y construir relaciones familiares más
-      saludables.
-    </p>
-  </section>
+  <main>
 
-  <main class="contenidos">
-    <h2>Explora este espacio</h2>
-    <p class="subtitulo">
-      Conocimientos y recursos para acompañar cada etapa.
-    </p>
+    <section class="hero" id="inicio">
+      <div class="hero-contenido contenedor">
 
-    <a class="tarjeta" href="C1-01/index.html">
-      <span class="numero">PRIMER CONTENIDO</span>
-      <h3>Comprender las etapas del desarrollo infantil</h3>
-      <p>
-        Una guía para comprender el desarrollo físico,
-        emocional, social y cognitivo desde la primera
-        infancia hasta la adolescencia.
-      </p>
-      <span class="abrir">EXPLORAR CONTENIDO →</span>
-    </a>
+        <div>
+          <div class="sobrelinea">CIBA · COLUMNA 01 / C</div>
+
+          <h1>
+            Criar es<br>
+            acompañar<br>
+            <em>la vida.</em>
+          </h1>
+
+          <p class="hero-descripcion">
+            Comprender la infancia, educar con afecto y acompañar
+            cada etapa del desarrollo. Un espacio para aprender,
+            descubrir y fortalecer los vínculos que nos unen.
+          </p>
+
+          <div class="hero-botones">
+            <a class="boton boton-dorado" href="#biblioteca">
+              Explorar contenidos
+            </a>
+            <a class="boton boton-contorno" href="../../index.html">
+              Volver a CIBA
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-imagen-marco">
+          <img
+            class="hero-imagen"
+            src="../../assets/images/columna-crianza.webp"
+            alt="Madre cubana jugando y aprendiendo con su hijo en el hogar">
+          <div class="imagen-sello">
+            De nuestras raíces nace el futuro
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-pie">
+        <div class="contenedor">
+          <span>Infancia · Educación · Familia · Desarrollo</span>
+          <span>Crecer también es aprender juntos</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="proyecto">
+      <div class="contenedor introduccion-grid">
+
+        <div class="introduccion-texto">
+          <span class="etiqueta">El universo de Crianza</span>
+          <h2 class="titulo">Cada infancia merece ser comprendida.</h2>
+
+          <p>
+            Cada niña y cada niño construye su propio camino.
+            Acompañar ese recorrido requiere atención, afecto,
+            conocimiento y respeto por sus ritmos.
+          </p>
+
+          <p>
+            En este espacio reunimos orientaciones y recursos
+            para comprender el desarrollo infantil, fortalecer
+            la convivencia familiar y descubrir nuevas maneras
+            de educar y crecer.
+          </p>
+        </div>
+
+        <div class="frase">
+          <blockquote>
+            “Acompañar una infancia es sembrar posibilidades
+            para toda una vida”.
+          </blockquote>
+          <p>El espíritu de Crianza · CIBA</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="seccion biblioteca" id="biblioteca">
+      <div class="contenedor">
+
+        <div class="encabezado-seccion">
+          <span class="etiqueta">Conocimiento para acompañar</span>
+          <h2 class="titulo">Explora los contenidos.</h2>
+          <p>
+            Ideas, conocimientos y orientaciones para comprender
+            mejor cada etapa del desarrollo y la vida familiar.
+          </p>
+        </div>
+
+        <a class="articulo" href="C1-01/">
+
+          <div class="articulo-numero">01</div>
+
+          <div>
+            <small>C1 · DESARROLLO INFANTIL</small>
+
+            <h3>Comprender las etapas del desarrollo infantil</h3>
+
+            <p>
+              Una guía para comprender el desarrollo físico,
+              emocional, social y cognitivo desde la primera
+              infancia hasta la adolescencia.
+            </p>
+          </div>
+
+          <span class="articulo-ir">LEER CONTENIDO →</span>
+
+        </a>
+
+      </div>
+    </section>
+
+    <section class="cierre">
+      <div class="contenedor">
+        <span class="etiqueta">Una comunidad que crece</span>
+
+        <h2>
+          Nadie tiene que aprender a criar en soledad.
+        </h2>
+
+        <p>
+          CIBA quiere ser un espacio cercano para descubrir,
+          aprender y encontrar acompañamiento en cada etapa
+          de la vida familiar.
+        </p>
+
+        <a class="boton boton-noche" href="../../index.html">
+          Regresar al universo CIBA
+        </a>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    CIBA · Conocimiento, cuidado y acompañamiento.
+  <footer class="pie">
+    <div class="contenedor">
+
+      <div class="pie-grid">
+
+        <div>
+          <h3>CIBA</h3>
+          <p>
+            Crianza, Internet, Bienestar y Acompañamiento.
+            Un espacio para crecer, conectar y acompañar.
+          </p>
+        </div>
+
+        <div>
+          <h3>Explorar</h3>
+          <p><a href="../../index.html">Inicio CIBA</a></p>
+          <p><a href="#biblioteca">Contenidos de Crianza</a></p>
+        </div>
+
+        <div>
+          <h3>Orientación</h3>
+          <p>
+            ¿Necesitas acompañamiento?
+            <a href="https://wa.me/5350861330">
+              Contactar con CIBA
+            </a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pie-final">
+        <span>CIBA · Crecer · Conectar · Acompañar</span>
+        <span>Un proyecto para las familias y su futuro.</span>
+      </div>
+
+    </div>
   </footer>
+
+  <script>
+    const botonMenu = document.getElementById("boton-menu");
+    const navegacion = document.getElementById("navegacion");
+
+    botonMenu.addEventListener("click", () => {
+      const abierta = navegacion.classList.toggle("abierta");
+      botonMenu.setAttribute("aria-expanded", abierta);
+    });
+
+    navegacion.querySelectorAll("a").forEach(enlace => {
+      enlace.addEventListener("click", () => {
+        navegacion.classList.remove("abierta");
+        botonMenu.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
 
 </body>
 </html>
