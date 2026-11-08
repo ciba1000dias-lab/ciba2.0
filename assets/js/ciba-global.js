@@ -508,12 +508,15 @@
           const datos = await obtenerCatalogo();
           const paginas = datos.paginas || [];
 
+          // La búsqueda incluye título, descripción,
+          // identificadores, área, subsección y palabras clave.
           const coincidencias = paginas.filter((pagina) => {
             const contenido = normalizar([
               pagina.titulo,
               pagina.descripcion,
               pagina.id,
               pagina.area,
+              pagina.subseccion,
               ...(pagina.palabras_clave || [])
             ].join(' '));
 
@@ -553,6 +556,18 @@
             );
 
             resultado.append(nombre, descripcion);
+
+            // Mostrar la subsección cuando esté declarada.
+            if (pagina.subseccion) {
+              resultado.appendChild(
+                elemento(
+                  'small',
+                  'ciba-global-subseccion',
+                  'Sección: ' + pagina.subseccion
+                )
+              );
+            }
+
             resultados.appendChild(resultado);
           });
         } catch (error) {
