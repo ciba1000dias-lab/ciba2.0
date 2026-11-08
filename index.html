@@ -1124,6 +1124,61 @@
   .busqueda-oraculo * {
     animation: none !important;
   }
+}/* CIBA — ALINEACIÓN Y PRESENCIA DEL NÚCLEO */
+
+.busqueda-caja {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 18px !important;
+  width: 100%;
+}
+
+.busqueda-oraculo {
+  position: relative !important;
+  flex: 0 0 82px !important;
+  width: 82px !important;
+  height: 82px !important;
+  margin: 0 !important;
+  align-self: center !important;
+  transform: none;
+  box-shadow:
+    0 0 18px rgba(182,107,73,.28),
+    0 0 38px rgba(217,184,120,.20);
+}
+
+.busqueda-caja input,
+.busqueda-caja #consulta {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  text-align: left !important;
+}
+
+.busqueda-caja button {
+  flex: 0 0 auto !important;
+}
+
+.busqueda-espiral {
+  width: 52px !important;
+  height: 52px !important;
+}
+
+@media (max-width: 600px) {
+  .busqueda-caja {
+    gap: 10px !important;
+  }
+
+  .busqueda-oraculo {
+    flex-basis: 64px !important;
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  .busqueda-espiral {
+    width: 42px !important;
+    height: 42px !important;
+  }
 }
   </style>
 </head>
