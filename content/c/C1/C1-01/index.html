@@ -1,146 +1,288 @@
 
-<article class="articulo-crianza">
- 
+<article class="ciba-articulo articulo-crianza">
+
 <style>
-  * {
+  .ciba-articulo {
+    --verde: #536b51;
+    --verde-oscuro: #203a32;
+    --terracota: #a65d43;
+    --marfil: #fffdf8;
+    --crema: #f4efe5;
+    --tinta: #302d27;
+    --suave: #786e60;
+    --borde: #e8dfd0;
+
+    box-sizing: border-box;
+    width: min(94%, 960px);
+    margin: 30px auto 65px;
+    padding: clamp(22px, 5vw, 58px);
+    color: var(--tinta);
+    background: var(--marfil);
+    border: 1px solid var(--borde);
+    border-top: 5px solid var(--verde);
+    border-radius: 14px;
+    box-shadow: 0 12px 36px rgba(38, 48, 38, .07);
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 1.85;
+  }
+
+  .ciba-articulo *,
+  .ciba-articulo *::before,
+  .ciba-articulo *::after {
     box-sizing: border-box;
   }
 
-  body {
-    margin: 0;
-    background: #f1ede4;
-    color: #39352e;
+  .ciba-articulo .navegacion-articulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 35px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid var(--borde);
     font-family: Arial, sans-serif;
   }
 
-  .articulo-crianza {
-    max-width: 900px;
-    margin: 45px auto;
-    padding: 55px clamp(24px, 7vw, 78px);
-    background: #fffdf8;
-    border: 1px solid #e8dfd1;
-    border-radius: 18px;
-    box-shadow: 0 12px 40px rgba(66, 52, 37, .08);
-    line-height: 1.85;
-    font-size: 17px;
-  }
-
-  .articulo-crianza .volver {
-    display: inline-block;
-    color: #956044;
+  .ciba-articulo .volver {
+    color: var(--verde);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
-    margin-bottom: 35px;
+    letter-spacing: .04em;
   }
 
-  .articulo-crianza .volver:hover {
+  .ciba-articulo .volver:hover {
+    color: var(--terracota);
     text-decoration: underline;
   }
 
-  .articulo-crianza .etiqueta {
-    color: #748064;
-    font-size: 12px;
+  .ciba-articulo .identidad {
+    color: var(--suave);
+    font-size: 11px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+  }
+
+  .ciba-articulo .cabecera-articulo {
+    padding: 30px clamp(20px, 4vw, 42px);
+    margin: 0 -10px 38px;
+    color: #fffdf8;
+    background: var(--verde-oscuro);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ciba-articulo .cabecera-articulo::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    right: -65px;
+    bottom: -100px;
+    border: 1px solid rgba(255,255,255,.17);
+    border-radius: 50%;
+    box-shadow:
+      0 0 0 18px rgba(255,255,255,.035),
+      0 0 0 38px rgba(255,255,255,.025);
+    pointer-events: none;
+  }
+
+  .ciba-articulo .etiqueta {
+    position: relative;
+    z-index: 1;
+    color: #d8c39a;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
     font-weight: bold;
-    letter-spacing: .16em;
+    letter-spacing: .17em;
     text-transform: uppercase;
     margin: 0 0 18px;
   }
 
-  .articulo-crianza h1 {
-    color: #493d32;
+  .ciba-articulo h1 {
+    position: relative;
+    z-index: 1;
+    color: #fffdf8;
     font-family: Georgia, serif;
-    font-size: clamp(34px, 5vw, 52px);
-    line-height: 1.12;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.15;
     font-weight: normal;
-    margin: 0 0 24px;
+    margin: 0 0 20px;
+    max-width: 740px;
+  }
+
+  .ciba-articulo .bajada {
+    position: relative;
+    z-index: 1;
+    color: #e8e2d5;
+    font-size: clamp(17px, 2.5vw, 20px);
+    line-height: 1.65;
+    margin: 0;
     max-width: 720px;
   }
 
-  .articulo-crianza .bajada {
-    color: #786e60;
-    font-family: Georgia, serif;
-    font-size: 21px;
-    line-height: 1.65;
-    margin-bottom: 38px;
+  .ciba-articulo .nota {
+    background: var(--crema);
+    border-left: 4px solid var(--terracota);
+    padding: 21px 24px;
+    margin: 30px 0;
+    border-radius: 0 10px 10px 0;
   }
 
-  .articulo-crianza h2 {
-    color: #986047;
+  .ciba-articulo h2 {
+    color: var(--terracota);
     font-family: Georgia, serif;
-    font-size: 29px;
-    line-height: 1.25;
+    font-size: clamp(24px, 3.5vw, 29px);
+    line-height: 1.3;
     font-weight: normal;
-    margin: 48px 0 16px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid #e9dfd1;
+    margin: 45px 0 17px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid var(--borde);
   }
 
-  .articulo-crianza p {
+  .ciba-articulo p {
     margin: 0 0 20px;
   }
 
-  .articulo-crianza .nota {
-    background: #f3f0e6;
-    border-left: 4px solid #9b674d;
-    padding: 23px 26px;
-    margin: 32px 0;
-    border-radius: 0 12px 12px 0;
-  }
-
-  .articulo-crianza ul {
+  .ciba-articulo ul {
     padding-left: 25px;
+    margin: 20px 0 28px;
   }
 
-  .articulo-crianza li {
+  .ciba-articulo li {
     padding-left: 5px;
-    margin-bottom: 14px;
+    margin-bottom: 13px;
   }
 
-  .articulo-crianza li::marker {
-    color: #9b674d;
+  .ciba-articulo li::marker {
+    color: var(--terracota);
   }
 
-  .articulo-crianza strong {
+  .ciba-articulo strong {
     color: #514438;
   }
 
-  .articulo-crianza .cierre {
+  .ciba-articulo .cita {
+    display: inline-block;
+    color: var(--terracota);
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 2px;
+  }
+
+  .ciba-articulo .cita:hover {
+    color: var(--verde);
+    text-decoration: underline;
+  }
+
+  .ciba-articulo .fuentes {
     margin-top: 55px;
-    padding-top: 28px;
-    border-top: 1px solid #e5dbcd;
-    color: #68765b;
-    text-align: center;
+    padding: 27px;
+    background: #f4f1e9;
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+  }
+
+  .ciba-articulo .fuentes h2 {
+    margin: 0 0 18px;
+    font-size: 25px;
+  }
+
+  .ciba-articulo .fuentes-intro {
+    color: var(--suave);
     font-size: 14px;
   }
 
-  .articulo-crianza .cierre strong {
-    color: #68765b;
-    letter-spacing: .04em;
+  .ciba-articulo .lista-fuentes {
+    padding-left: 22px;
+    margin-bottom: 0;
+  }
+
+  .ciba-articulo .lista-fuentes li {
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .ciba-articulo .lista-fuentes a {
+    color: var(--verde);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .ciba-articulo .fecha-revision {
+    margin-top: 20px;
+    color: var(--suave);
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+  }
+
+  .ciba-articulo .cierre {
+    margin-top: 48px;
+    padding-top: 25px;
+    border-top: 1px solid var(--borde);
+    color: var(--verde);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+  }
+
+  .ciba-articulo .cierre strong {
+    color: var(--verde);
+    letter-spacing: .06em;
+  }
+
+  .ciba-articulo .cierre p {
+    margin: 9px 0 0;
+    font-family: Georgia, serif;
+    font-style: italic;
   }
 
   @media (max-width: 600px) {
-    .articulo-crianza {
-      margin: 12px;
-      padding: 30px 22px 42px;
-      border-radius: 12px;
+    .ciba-articulo {
+      width: calc(100% - 20px);
+      margin: 14px auto 35px;
+      padding: 20px 18px 32px;
       font-size: 16px;
+      border-radius: 11px;
     }
 
-    .articulo-crianza h2 {
-      font-size: 25px;
+    .ciba-articulo .cabecera-articulo {
+      margin-left: -5px;
+      margin-right: -5px;
+      padding: 25px 20px;
     }
 
-    .articulo-crianza .bajada {
-      font-size: 18px;
+    .ciba-articulo .navegacion-articulo {
+      margin-bottom: 25px;
+    }
+
+    .ciba-articulo .nota {
+      padding: 18px;
+    }
+
+    .ciba-articulo .fuentes {
+      padding: 19px;
     }
   }
 </style>
-  <a class="volver" href="../../../index.html">
-    ← Volver a CIBA
-  </a>
 
-  <p class="etiqueta">Crianza · Desarrollo infantil</p>
+<nav class="navegacion-articulo" aria-label="Navegación del artículo">
+  <a class="volver" href="../index.html">
+    ← VOLVER A CRIANZA
+  </a>
+  <span class="identidad">CIBA · Conocimiento y acompañamiento</span>
+</nav>
+
+<header class="cabecera-articulo">
+  <p class="etiqueta">C · Crianza y desarrollo</p>
 
   <h1>Comprender las etapas del desarrollo infantil</h1>
 
@@ -149,119 +291,202 @@
     cómo crecen, sienten, aprenden y se relacionan nos ayuda
     a acompañarlos con respeto, paciencia y confianza.
   </p>
+</header>
 
-  <div class="nota">
-    <strong>Una idea fundamental:</strong>
-    el desarrollo infantil no es una carrera ni una competencia.
-    Los hitos del desarrollo sirven como referencias orientativas,
-    no como medidas del valor o potencial de un niño.
-  </div>
+<div class="nota">
+  <strong>Una idea fundamental:</strong>
+  el desarrollo infantil no es una carrera ni una competencia.
+  Los hitos del desarrollo sirven como referencias orientativas,
+  no como medidas del valor o potencial de un niño. Tampoco
+  deben utilizarse por sí solos para diagnosticar dificultades. 
+  <a class="cita" href="https://www.cdc.gov/act-early/milestones/key-points.html"
+     target="_blank" rel="noopener noreferrer" aria-label="Consultar fuente del CDC">°</a>
+</div>
 
-  <h2>¿Qué significa desarrollarse?</h2>
+<h2>¿Qué significa desarrollarse?</h2>
 
-  <p>
-    El desarrollo infantil es un proceso continuo que comienza
-    antes del nacimiento y evoluciona durante la niñez y la
-    adolescencia. En él intervienen factores biológicos,
-    emocionales, familiares, sociales y culturales.
+<p>
+  El desarrollo infantil es un proceso continuo que comienza
+  antes del nacimiento y evoluciona durante la niñez y la
+  adolescencia. En él intervienen factores biológicos,
+  emocionales, familiares, sociales y culturales.
+  <a class="cita" href="https://www.who.int/publications/i/item/9789241514064"
+     target="_blank" rel="noopener noreferrer" aria-label="Consultar marco de la OMS">°</a>
+</p>
+
+<p>
+  Para comprenderlo mejor, podemos observar distintas
+  dimensiones que se relacionan entre sí. No funcionan
+  de manera aislada: los avances en una pueden influir
+  en las demás.
+  <a class="cita" href="https://www.unicef.org/documents/care-child-development"
+     target="_blank" rel="noopener noreferrer" aria-label="Consultar fuente de UNICEF">°</a>
+</p>
+
+<h2>1. Desarrollo físico</h2>
+
+<p>
+  Incluye el crecimiento corporal, la coordinación, el
+  movimiento y el desarrollo de habilidades motoras.
+  También comprende aspectos relacionados con el descanso,
+  la alimentación y la salud.
+</p>
+
+<h2>2. Desarrollo cognitivo</h2>
+
+<p>
+  Se relaciona con la manera en que niñas y niños piensan,
+  recuerdan, exploran, resuelven problemas, desarrollan
+  el lenguaje y comprenden el mundo.
+</p>
+
+<h2>3. Desarrollo emocional</h2>
+
+<p>
+  Comprende el reconocimiento y la expresión de emociones,
+  la construcción de la autoestima y el aprendizaje gradual
+  de estrategias para afrontar situaciones difíciles.
+</p>
+
+<h2>4. Desarrollo social</h2>
+
+<p>
+  Se manifiesta en la capacidad de relacionarse, comunicarse,
+  compartir, establecer vínculos y comprender progresivamente
+  las necesidades y perspectivas de otras personas.
+</p>
+
+<h2>Las etapas del crecimiento</h2>
+
+<p>
+  Las siguientes etapas son agrupaciones generales que ayudan
+  a organizar la comprensión del desarrollo. Sus límites
+  no son universales ni representan una secuencia idéntica
+  para todos los niños.
+</p>
+
+<ul>
+  <li>
+    <strong>Primera infancia:</strong>
+    los primeros años de vida, fundamentales para establecer
+    vínculos, explorar el entorno y desarrollar habilidades
+    iniciales.
+  </li>
+  <li>
+    <strong>Edad preescolar:</strong>
+    se amplían el lenguaje, el juego simbólico, la curiosidad
+    y las primeras experiencias de autonomía.
+  </li>
+  <li>
+    <strong>Edad escolar:</strong>
+    adquieren mayor importancia el aprendizaje, las amistades,
+    la cooperación y la construcción de habilidades.
+  </li>
+  <li>
+    <strong>Adolescencia:</strong>
+    aparecen importantes transformaciones físicas, emocionales
+    y sociales, junto con la búsqueda de identidad y autonomía.
+  </li>
+</ul>
+
+<h2>¿Cómo podemos acompañar?</h2>
+
+<ul>
+  <li>Escuchar sin ridiculizar sus emociones.</li>
+  <li>Ofrecer afecto, seguridad y límites respetuosos.</li>
+  <li>Compartir tiempo de juego, conversación y aprendizaje.</li>
+  <li>Respetar las diferencias individuales y sus ritmos.</li>
+  <li>Consultar con profesionales cuando existan preocupaciones
+      sobre su desarrollo.</li>
+</ul>
+
+<p>
+  El juego, la comunicación y la respuesta sensible de las
+  personas cuidadoras son formas importantes de apoyar el
+  aprendizaje y el desarrollo infantil.
+  <a class="cita" href="https://www.unicef.org/documents/care-child-development"
+     target="_blank" rel="noopener noreferrer" aria-label="Consultar fuente de UNICEF">°</a>
+</p>
+
+<div class="nota">
+  <strong>¿Cuándo buscar orientación?</strong>
+  Si una familia observa pérdida de habilidades adquiridas,
+  dificultades persistentes o inquietudes sobre el desarrollo,
+  es recomendable conversar con un profesional de salud o
+  desarrollo infantil. El seguimiento y la evaluación
+  profesional permiten identificar si hacen falta apoyos.
+  <a class="cita" href="https://www.cdc.gov/act-early/about/developmental-monitoring-and-screening.html"
+     target="_blank" rel="noopener noreferrer" aria-label="Consultar recomendaciones del CDC">°</a>
+</div>
+
+<h2>Una crianza que acompaña, no que compara</h2>
+
+<p>
+  Comprender el desarrollo infantil nos invita a mirar a cada
+  niña y cada niño como una persona única. Nuestro papel no
+  consiste en exigir que todos crezcan de la misma manera,
+  sino en ofrecer oportunidades, protección, afecto y
+  acompañamiento.
+</p>
+
+<section class="fuentes" aria-labelledby="titulo-fuentes">
+  <h2 id="titulo-fuentes">Fuentes y referencias</h2>
+
+  <p class="fuentes-intro">
+    Referencias institucionales consultadas para contrastar
+    la información de este artículo. Los símbolos ° del texto
+    permiten abrir directamente las fuentes correspondientes.
   </p>
 
-  <p>
-    Para comprenderlo mejor, podemos observar cuatro grandes
-    dimensiones que se relacionan entre sí.
-  </p>
-
-  <h2>1. Desarrollo físico</h2>
-
-  <p>
-    Incluye el crecimiento corporal, la coordinación, el
-    movimiento y el desarrollo de habilidades motoras.
-    También comprende aspectos relacionados con el descanso,
-    la alimentación y la salud.
-  </p>
-
-  <h2>2. Desarrollo cognitivo</h2>
-
-  <p>
-    Se relaciona con la manera en que niñas y niños piensan,
-    recuerdan, exploran, resuelven problemas, desarrollan
-    el lenguaje y comprenden el mundo.
-  </p>
-
-  <h2>3. Desarrollo emocional</h2>
-
-  <p>
-    Comprende el reconocimiento y la expresión de emociones,
-    la construcción de la autoestima y el aprendizaje gradual
-    de estrategias para afrontar situaciones difíciles.
-  </p>
-
-  <h2>4. Desarrollo social</h2>
-
-  <p>
-    Se manifiesta en la capacidad de relacionarse, comunicarse,
-    compartir, establecer vínculos y comprender progresivamente
-    las necesidades y perspectivas de otras personas.
-  </p>
-
-  <h2>Las etapas del crecimiento</h2>
-
-  <ul>
-    <li>
-      <strong>Primera infancia:</strong>
-      los primeros años de vida, fundamentales para establecer
-      vínculos, explorar el entorno y desarrollar habilidades
-      iniciales.
+  <ol class="lista-fuentes">
+    <li id="fuente-oms">
+      <strong>Organización Mundial de la Salud (OMS).</strong>
+      <a href="https://www.who.int/publications/i/item/9789241514064"
+         target="_blank" rel="noopener noreferrer">
+        Nurturing care for early childhood development
+      </a>.
+      Marco de referencia sobre el desarrollo durante la primera infancia.
     </li>
-    <li>
-      <strong>Edad preescolar:</strong>
-      se amplían el lenguaje, el juego simbólico, la curiosidad
-      y las primeras experiencias de autonomía.
+
+    <li id="fuente-unicef">
+      <strong>UNICEF y OMS.</strong>
+      <a href="https://www.unicef.org/documents/care-child-development"
+         target="_blank" rel="noopener noreferrer">
+        Care for Child Development
+      </a>.
+      Orientaciones basadas en evidencia sobre aprendizaje temprano,
+      juego y cuidado receptivo.
     </li>
-    <li>
-      <strong>Edad escolar:</strong>
-      adquieren mayor importancia el aprendizaje, las amistades,
-      la cooperación y la construcción de habilidades.
+
+    <li id="fuente-cdc-hitos">
+      <strong>Centers for Disease Control and Prevention (CDC).</strong>
+      <a href="https://www.cdc.gov/act-early/milestones/key-points.html"
+         target="_blank" rel="noopener noreferrer">
+        Key Points about CDC's Developmental Milestone Checklists
+      </a>.
+      Alcance y límites de las listas de hitos del desarrollo.
     </li>
-    <li>
-      <strong>Adolescencia:</strong>
-      aparecen importantes transformaciones físicas, emocionales
-      y sociales, junto con la búsqueda de identidad y autonomía.
+
+    <li id="fuente-cdc-seguimiento">
+      <strong>Centers for Disease Control and Prevention (CDC).</strong>
+      <a href="https://www.cdc.gov/act-early/about/developmental-monitoring-and-screening.html"
+         target="_blank" rel="noopener noreferrer">
+        Developmental Monitoring and Screening
+      </a>.
+      Seguimiento del desarrollo, detección y orientación profesional.
     </li>
-  </ul>
+  </ol>
 
-  <h2>¿Cómo podemos acompañar?</h2>
-
-  <ul>
-    <li>Escuchar sin ridiculizar sus emociones.</li>
-    <li>Ofrecer afecto, seguridad y límites respetuosos.</li>
-    <li>Compartir tiempo de juego, conversación y aprendizaje.</li>
-    <li>Respetar las diferencias individuales y sus ritmos.</li>
-    <li>Consultar con profesionales cuando existan preocupaciones
-        sobre su desarrollo.</li>
-  </ul>
-
-  <div class="nota">
-    <strong>¿Cuándo buscar orientación?</strong>
-    Si una familia observa pérdida de habilidades adquiridas,
-    dificultades persistentes o inquietudes sobre el desarrollo,
-    es recomendable conversar con un profesional de salud o
-    desarrollo infantil. La detección temprana permite orientar
-    mejor los apoyos.
-  </div>
-
-  <h2>Una crianza que acompaña, no que compara</h2>
-
-  <p>
-    Comprender el desarrollo infantil nos invita a mirar a cada
-    niña y cada niño como una persona única. Nuestro papel no
-    consiste en exigir que todos crezcan de la misma manera,
-    sino en ofrecer oportunidades, protección, afecto y
-    acompañamiento.
+  <p class="fecha-revision">
+    Revisión de fuentes: 8 de noviembre de 2026.
+    Las referencias se ofrecen para ampliar la información;
+    no sustituyen la valoración individual de profesionales.
   </p>
+</section>
 
-  <div class="cierre">
-    <strong>CIBA · Crianza, Internet, Bienestar y Acompañamiento</strong>
-    <p>Crecer acompañados transforma el camino.</p>
-  </div>
+<footer class="cierre">
+  <strong>CIBA · Crianza, Internet, Bienestar y Acompañamiento</strong>
+  <p>Crecer acompañados transforma el camino.</p>
+</footer>
+
 </article>
