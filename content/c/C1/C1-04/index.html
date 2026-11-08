@@ -1,0 +1,204 @@
+<article class="ciba-articulo articulo-crianza">
+
+<style>
+.ciba-articulo {
+  --verde:#536b51; --verde-oscuro:#203a32; --terracota:#a65d43;
+  --marfil:#fffdf8; --crema:#f4efe5; --tinta:#302d27;
+  --suave:#786e60; --borde:#e8dfd0;
+  box-sizing:border-box; width:min(94%,960px); margin:30px auto 65px;
+  padding:clamp(22px,5vw,58px); color:var(--tinta); background:var(--marfil);
+  border:1px solid var(--borde); border-top:5px solid var(--verde);
+  border-radius:14px; box-shadow:0 12px 36px rgba(38,48,38,.07);
+  font-family:Georgia,serif; font-size:17px; line-height:1.85;
+}
+.ciba-articulo *, .ciba-articulo *::before, .ciba-articulo *::after {box-sizing:border-box}
+.ciba-articulo .navegacion-articulo {display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:35px;padding-bottom:17px;border-bottom:1px solid var(--borde);font-family:Arial,sans-serif}
+.ciba-articulo .volver {color:var(--verde);text-decoration:none;font-size:13px;font-weight:bold;letter-spacing:.04em}
+.ciba-articulo .volver:hover {color:var(--terracota);text-decoration:underline}
+.ciba-articulo .identidad {color:var(--suave);font-size:11px;letter-spacing:.13em;text-transform:uppercase}
+.ciba-articulo .cabecera-articulo {padding:30px clamp(20px,4vw,42px);margin:0 -10px 38px;color:var(--marfil);background:var(--verde-oscuro);border-radius:12px;position:relative;overflow:hidden}
+.ciba-articulo .cabecera-articulo::after {content:"";position:absolute;width:180px;height:180px;right:-65px;bottom:-100px;border:1px solid rgba(255,255,255,.17);border-radius:50%;box-shadow:0 0 0 18px rgba(255,255,255,.035),0 0 0 38px rgba(255,255,255,.025);pointer-events:none}
+.ciba-articulo .etiqueta {position:relative;z-index:1;color:#d8c39a;font-family:Arial,sans-serif;font-size:11px;font-weight:bold;letter-spacing:.17em;text-transform:uppercase;margin:0 0 18px}
+.ciba-articulo h1 {position:relative;z-index:1;color:var(--marfil);font-family:Georgia,serif;font-size:clamp(32px,5vw,48px);line-height:1.15;font-weight:normal;margin:0 0 20px;max-width:740px}
+.ciba-articulo .bajada {position:relative;z-index:1;color:#e8e2d5;font-size:clamp(17px,2.5vw,20px);line-height:1.65;margin:0;max-width:720px}
+.ciba-articulo h2 {color:var(--terracota);font-family:Georgia,serif;font-size:clamp(24px,3.5vw,29px);line-height:1.3;font-weight:normal;margin:45px 0 17px;padding-bottom:11px;border-bottom:1px solid var(--borde)}
+.ciba-articulo h3 {color:var(--verde);font-size:21px;font-weight:normal;margin:30px 0 12px}
+.ciba-articulo p {margin:0 0 20px}
+.ciba-articulo ul,.ciba-articulo ol {padding-left:25px;margin:20px 0 28px}
+.ciba-articulo li {padding-left:5px;margin-bottom:13px}
+.ciba-articulo li::marker {color:var(--terracota)}
+.ciba-articulo strong {color:#514438}
+.ciba-articulo .nota {background:var(--crema);border-left:4px solid var(--terracota);padding:21px 24px;margin:30px 0;border-radius:0 10px 10px 0}
+.ciba-articulo .cita {display:inline-block;color:var(--terracota);font-family:Arial,sans-serif;font-size:15px;font-weight:bold;text-decoration:none;padding:0 2px}
+.ciba-articulo .cita:hover {color:var(--verde);text-decoration:underline}
+.ciba-articulo .fuentes {margin-top:55px;padding:27px;background:#f4f1e9;border:1px solid var(--borde);border-radius:12px}
+.ciba-articulo .fuentes h2 {margin:0 0 18px;font-size:25px}
+.ciba-articulo .fuentes-intro {color:var(--suave);font-size:14px}
+.ciba-articulo .lista-fuentes {padding-left:22px;margin-bottom:0}
+.ciba-articulo .lista-fuentes li {margin-bottom:16px;font-size:15px;line-height:1.65}
+.ciba-articulo .lista-fuentes a {color:var(--verde);font-family:Arial,sans-serif;font-weight:bold;text-decoration:underline;text-underline-offset:3px}
+.ciba-articulo .fecha-revision {margin-top:20px;color:var(--suave);font-family:Arial,sans-serif;font-size:12px}
+.ciba-articulo .cierre {margin-top:48px;padding-top:25px;border-top:1px solid var(--borde);color:var(--verde);text-align:center;font-family:Arial,sans-serif;font-size:13px}
+.ciba-articulo .cierre strong {color:var(--verde);letter-spacing:.06em}
+.ciba-articulo .cierre p {margin:9px 0 0;font-family:Georgia,serif;font-style:italic}
+@media(max-width:600px) {
+ .ciba-articulo {width:calc(100% - 20px);margin:14px auto 35px;padding:20px 18px 32px;font-size:16px;border-radius:11px}
+ .ciba-articulo .cabecera-articulo {margin-left:-5px;margin-right:-5px;padding:25px 20px}
+ .ciba-articulo .navegacion-articulo {margin-bottom:25px}
+ .ciba-articulo .nota {padding:18px}
+ .ciba-articulo .fuentes {padding:19px}
+}
+</style>
+
+<nav class="navegacion-articulo" aria-label="Navegación del artículo">
+  <a class="volver" href="../index.html">← VOLVER A CRIANZA</a>
+  <span class="identidad">CIBA · Conocimiento y acompañamiento</span>
+</nav>
+
+<header class="cabecera-articulo">
+  <p class="etiqueta">C · Crianza y desarrollo</p>
+  <h1>Cómo alimentar a un bebé durante su primer año</h1>
+  <p class="bajada">Qué ofrecer desde el nacimiento hasta los doce meses, cuándo comenzar la alimentación complementaria y cómo acompañar cada etapa sin prisas ni presiones.</p>
+</header>
+
+<div class="nota">
+  <strong>La idea principal:</strong> durante los primeros seis meses, la recomendación general es alimentar al bebé exclusivamente con leche materna. Si no recibe leche materna, se utiliza una fórmula infantil adecuada. Alrededor de los seis meses, cuando muestra señales de preparación, comienzan los alimentos complementarios, mientras continúa la leche materna o la fórmula. <a class="cita" href="https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding" target="_blank" rel="noopener noreferrer" aria-label="Consultar recomendaciones de OMS y UNICEF">°</a>
+</div>
+
+<h2>Desde el nacimiento hasta los seis meses: la leche es su alimento</h2>
+
+<p>En esta etapa, el aparato digestivo y las habilidades para comer del bebé todavía están madurando. Por eso, durante los primeros seis meses no necesita papillas, jugos, agua, infusiones ni otros alimentos si recibe lactancia materna exclusiva. La leche materna aporta los nutrientes y líquidos que necesita en esta etapa. <a class="cita" href="https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding" target="_blank" rel="noopener noreferrer" aria-label="Consultar orientación de la OMS">°</a></p>
+
+<p>Cuando la lactancia materna no es posible o no se utiliza, la fórmula infantil apropiada para la edad es la alternativa indicada. La elección, preparación y cantidad deben seguir las instrucciones del producto y la orientación del personal de salud. No se debe diluir más de lo indicado, concentrarla ni sustituirla por leche de vaca, bebidas vegetales o preparaciones caseras.</p>
+
+<p>La alimentación responde a las señales del bebé. En lugar de imponer horarios rígidos o terminar cada toma a toda costa, observa cuándo busca alimentarse y cuándo muestra saciedad. Si tienes dudas sobre si está recibiendo suficiente leche, consulta su evolución de peso, crecimiento y pañales con el equipo de salud.</p>
+
+<h2>¿Cuándo puede empezar a probar otros alimentos?</h2>
+
+<p>La alimentación complementaria suele comenzar alrededor de los seis meses, cuando la leche por sí sola deja de cubrir todas las necesidades nutricionales y el bebé ha desarrollado habilidades para manejar alimentos. No se recomienda comenzar antes de los cuatro meses. La edad por sí sola no basta: también hay que observar su desarrollo. <a class="cita" href="https://www.who.int/publications/i/item/9789240081864" target="_blank" rel="noopener noreferrer" aria-label="Consultar guía de alimentación complementaria de la OMS">°</a> <a class="cita" href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html" target="_blank" rel="noopener noreferrer" aria-label="Consultar criterios de preparación del CDC">°</a></p>
+
+<p>Algunas señales que orientan sobre su preparación son:</p>
+<ul>
+  <li>Puede mantener la cabeza firme y controlar el cuello.</li>
+  <li>Se mantiene sentado con apoyo y conserva una postura estable.</li>
+  <li>Muestra interés por la comida y abre la boca cuando se le ofrece.</li>
+  <li>Puede llevar objetos a la boca y coordinar mejor los movimientos.</li>
+  <li>Traga parte del alimento en lugar de expulsarlo siempre con la lengua.</li>
+</ul>
+
+<p>Si el bebé nació prematuro, tiene dificultades de desarrollo, problemas para tragar, enfermedades o crecimiento insuficiente, el momento de comenzar y la forma de hacerlo deben individualizarse con su pediatra.</p>
+
+<h2>¿Con qué alimentos puedo comenzar?</h2>
+
+<p>No existe un único alimento obligatorio para empezar ni un orden universal que todas las familias deban seguir. Se pueden ofrecer alimentos variados, seguros y de buena calidad nutricional, prestando especial atención a los que aportan hierro y zinc. Entre ellos están las carnes bien cocidas y trituradas, el pescado sin espinas, el huevo bien cocido y las legumbres preparadas hasta quedar muy blandas. <a class="cita" href="https://www.who.int/publications/i/item/9789240081864" target="_blank" rel="noopener noreferrer" aria-label="Consultar recomendaciones de diversidad alimentaria de la OMS">°</a></p>
+
+<p>También pueden incorporarse vegetales y frutas, cereales y tubérculos. En el contexto familiar cubano pueden utilizarse, según disponibilidad y costumbre, calabaza, boniato, viandas bien cocidas, aguacate, plátano, frijoles o arroz, combinados con alimentos ricos en hierro y proteínas. Ningún alimento aislado debe convertirse en la base exclusiva de la dieta.</p>
+
+<ul>
+  <li><strong>Vegetales y frutas:</strong> calabaza, zanahoria bien cocida, boniato, aguacate, plátano o frutas maduras preparadas con textura segura.</li>
+  <li><strong>Fuentes de hierro y proteínas:</strong> carne, pollo, pescado sin espinas, huevo bien cocido y legumbres bien cocidas y trituradas.</li>
+  <li><strong>Cereales y tubérculos:</strong> avena, arroz y otros cereales, papa, boniato y otras viandas cocidas hasta quedar blandas.</li>
+  <li><strong>Otros alimentos apropiados:</strong> yogur natural sin azúcar y queso pasteurizado en pequeñas cantidades, si se toleran y forman parte de una dieta variada.</li>
+</ul>
+
+<p>Procura que las comidas no sean solamente caldos o purés muy aguados. Cuando el bebé está preparado, necesita alimentos con suficiente densidad nutricional y una textura adecuada a sus habilidades. Los alimentos ricos en hierro merecen atención especial durante esta etapa. <a class="cita" href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-encourage.html" target="_blank" rel="noopener noreferrer" aria-label="Consultar alimentos recomendados por el CDC">°</a></p>
+
+<h2>¿Cómo preparar la comida según su edad?</h2>
+
+<p>Al principio suelen aceptarse mejor los alimentos triturados, machacados o en puré espeso. No es necesario que todo permanezca completamente líquido. A medida que el bebé aprende a mover la lengua, masticar y tragar, se puede avanzar gradualmente hacia texturas más espesas, grumosas y blandas.</p>
+
+<p>Hacia los ocho meses, muchos bebés ya pueden manejar alimentos blandos que toman con las manos, siempre que su desarrollo lo permita y que estén preparados para reducir el riesgo de atragantamiento. No hay que esperar a que tenga dientes para ofrecer texturas apropiadas: las encías también participan en la trituración de alimentos blandos. <a class="cita" href="https://www.who.int/health-topics/complementary-feeding" target="_blank" rel="noopener noreferrer" aria-label="Consultar progresión de texturas de la OMS">°</a></p>
+
+<ul>
+  <li>Cocina bien los alimentos duros hasta que puedan aplastarse fácilmente con un tenedor.</li>
+  <li>Retira huesos, espinas, semillas duras y partes no comestibles.</li>
+  <li>Machaca o corta los alimentos según la habilidad del bebé; evita trozos duros, redondos o pegajosos.</li>
+  <li>No añadas sal, azúcar, miel ni condimentos picantes.</li>
+  <li>Prepara porciones pequeñas y conserva los alimentos de manera higiénica.</li>
+</ul>
+
+<h2>¿Cuánto debe comer y cuántas veces al día?</h2>
+
+<p>Al comenzar, las cantidades suelen ser pequeñas. El bebé está aprendiendo a reconocer sabores, mover la comida en la boca y tragar. No es necesario que termine un plato ni que coma una cantidad determinada en cada intento. La leche materna o la fórmula siguen siendo una parte fundamental de su alimentación durante todo el primer año.</p>
+
+<p>Como orientación poblacional, la OMS propone ofrecer alimentos complementarios dos o tres veces al día entre los seis y ocho meses, y aumentar gradualmente a tres o cuatro comidas diarias entre los nueve y once meses. La cantidad concreta depende del apetito, la evolución y las necesidades de cada niño. <a class="cita" href="https://www.who.int/health-topics/complementary-feeding" target="_blank" rel="noopener noreferrer" aria-label="Consultar frecuencia de comidas recomendada por la OMS">°</a></p>
+
+<p>Observa sus señales: abrir la boca, inclinarse hacia la comida o mostrar interés pueden indicar que quiere continuar. Girar la cabeza, cerrar la boca, empujar la cuchara o perder interés pueden indicar que está satisfecho. Acompaña sin forzar, distraer para que coma o introducir comida a la fuerza.</p>
+
+<h2>¿Qué hacer si rechaza un alimento?</h2>
+
+<p>Es frecuente que un bebé necesite varias oportunidades antes de aceptar un sabor o una textura. Que cierre la boca una vez no significa que nunca vaya a comer ese alimento. Puedes volver a ofrecerlo otro día, en una preparación segura y junto a otros alimentos que ya conoce.</p>
+
+<p>Durante las comidas, siéntalo en una posición estable y acompáñalo. Háblale con tranquilidad, deja que explore y acepta que al principio parte de la comida termine fuera de la boca. El objetivo no es que coma mucho en cada ocasión, sino que aprenda progresivamente a alimentarse.</p>
+
+<h2>¿Cómo introducir alimentos que pueden causar alergia?</h2>
+
+<p>Alimentos como el huevo, el pescado, el trigo, los lácteos y el maní pueden causar alergias. En general, no se recomienda retrasar innecesariamente la introducción de alimentos alergénicos una vez que el bebé está preparado para comenzar la alimentación complementaria. Ofrécelos en formas apropiadas para su edad y seguros para tragar; nunca maní entero ni una cucharada espesa de mantequilla de maní.</p>
+
+<p>Introduce los alimentos de manera que puedas identificar una posible reacción. Si el bebé tiene eccema grave, una alergia alimentaria conocida o antecedentes de reacción, consulta al pediatra antes de introducir maní u otros alimentos de riesgo. <a class="cita" href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html" target="_blank" rel="noopener noreferrer" aria-label="Consultar recomendaciones de introducción de alérgenos">°</a></p>
+
+<p>Si después de comer aparece dificultad para respirar, hinchazón de lengua o garganta, decaimiento intenso o una reacción generalizada, busca atención de emergencia. No intentes resolver una reacción grave en casa.</p>
+
+<h2>Alimentos y bebidas que debes evitar durante el primer año</h2>
+
+<ul>
+  <li><strong>Miel:</strong> no debe ofrecerse antes de los doce meses, ni siquiera en pequeñas cantidades o mezclada con otros alimentos, por el riesgo de botulismo infantil.</li>
+  <li><strong>Leche de vaca como bebida principal:</strong> no debe sustituir la leche materna o la fórmula antes de los doce meses. Algunos derivados pasteurizados, como yogur natural sin azúcar, pueden introducirse antes.</li>
+  <li><strong>Jugos:</strong> no se recomiendan antes de los doce meses. Es preferible ofrecer fruta entera con textura segura.</li>
+  <li><strong>Azúcar y sal añadidas:</strong> no son necesarias y conviene evitarlas.</li>
+  <li><strong>Alimentos no pasteurizados o crudos de riesgo:</strong> evita leche y derivados sin pasteurizar, huevos crudos y carnes o pescados insuficientemente cocidos.</li>
+  <li><strong>Bebidas vegetales:</strong> no sustituyen la leche materna ni la fórmula durante el primer año.</li>
+</ul>
+<p>Estas precauciones ayudan a reducir riesgos nutricionales, infecciosos y de intoxicación. <a class="cita" href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-avoid-or-limit.html" target="_blank" rel="noopener noreferrer" aria-label="Consultar alimentos y bebidas que deben evitarse">°</a> <a class="cita" href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html" target="_blank" rel="noopener noreferrer" aria-label="Consultar orientación sobre leche de vaca">°</a></p>
+
+<h2>Evitar atragantamientos: una precaución de todos los días</h2>
+
+<p>El bebé debe comer sentado y erguido, en una silla estable o en un lugar seguro, siempre bajo la vigilancia directa de una persona adulta. No le ofrezcas alimentos mientras gatea, camina, está acostado o viaja en un vehículo.</p>
+
+<p>Evita alimentos con alto riesgo de atragantamiento, como frutos secos enteros, palomitas de maíz, uvas enteras, trozos duros de zanahoria o manzana cruda, salchichas en rodajas, caramelos y cucharadas espesas de mantequilla de maní. La forma de cortar y preparar un alimento puede cambiar mucho su seguridad. <a class="cita" href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html" target="_blank" rel="noopener noreferrer" aria-label="Consultar prevención de atragantamientos">°</a></p>
+
+<div class="nota">
+  <strong>Importante:</strong> las arcadas pueden aparecer mientras el bebé aprende a manejar nuevas texturas, pero el atragantamiento puede impedirle respirar y es una emergencia. Las personas cuidadoras deben aprender primeros auxilios y maniobras de desobstrucción adecuadas para lactantes.
+</div>
+
+<h2>¿Qué cambia al acercarse a los doce meses?</h2>
+
+<p>Hacia el final del primer año, muchos bebés comen una variedad mayor de alimentos familiares adaptados en textura, tamaño y preparación. Pueden participar en algunas comidas de la familia y practicar tomar alimentos blandos con las manos y beber pequeños sorbos de agua en una taza adecuada.</p>
+
+<p>Al cumplir doce meses, el profesional de salud puede orientar la transición hacia leche de vaca entera pasteurizada como bebida, si corresponde al niño y a su contexto. La leche materna puede continuar tanto tiempo como madre y niño lo deseen. La fórmula infantil no debe reemplazarse por bebidas vegetales sin orientación nutricional individual. <a class="cita" href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html" target="_blank" rel="noopener noreferrer" aria-label="Consultar transición de leche después de los doce meses">°</a></p>
+
+<h2>¿Cuándo consultar al pediatra?</h2>
+
+<p>Solicita orientación si el bebé no logra avanzar con las texturas, tose o se atraganta repetidamente al comer, vomita con frecuencia, presenta diarrea persistente, rechaza de manera sostenida la alimentación o no está ganando peso como se espera. También consulta antes de hacer cambios importantes si nació prematuro o tiene una condición de salud que pueda afectar su alimentación.</p>
+
+<p>Si aparece dificultad respiratoria, pérdida de conciencia o una reacción alérgica grave, busca atención de emergencia.</p>
+
+<h2>Alimentar también es acompañar</h2>
+
+<p>Durante el primer año, alimentar a un bebé no consiste solamente en escoger alimentos. También significa aprender a reconocer sus señales, ofrecerle experiencias seguras, respetar su ritmo y construir una relación tranquila con la comida. La preparación de madres, padres y cuidadores forma parte de ese proceso: comprender qué necesita el niño ayuda a tomar decisiones cotidianas con más confianza y menos presión.</p>
+
+<p>La alimentación complementaria no es una carrera para que el bebé coma como un adulto. Es un aprendizaje gradual que se construye en familia, con alimentos disponibles, cuidados adecuados y acompañamiento profesional cuando sea necesario.</p>
+
+<section class="fuentes" aria-labelledby="titulo-fuentes">
+  <h2 id="titulo-fuentes">Fuentes y referencias</h2>
+  <p class="fuentes-intro">Documentos institucionales y científicos consultados para contrastar las recomendaciones de lactancia, alimentación complementaria, variedad de alimentos, prevención de alergias y seguridad. Los símbolos ° del texto permiten abrir la referencia correspondiente.</p>
+  <ol class="lista-fuentes">
+    <li><strong>Organización Mundial de la Salud (OMS), 2023.</strong> <a href="https://www.who.int/publications/i/item/9789240081864" target="_blank" rel="noopener noreferrer">WHO Guideline for complementary feeding of infants and young children 6–23 months of age</a>. Guía mundial basada en evidencia sobre alimentación complementaria.</li>
+    <li><strong>OMS, 2026.</strong> <a href="https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding" target="_blank" rel="noopener noreferrer">Infant and young child feeding</a>. Recomendaciones actualizadas sobre lactancia exclusiva, continuación de la lactancia y comienzo de alimentos complementarios.</li>
+    <li><strong>OMS.</strong> <a href="https://www.who.int/health-topics/complementary-feeding" target="_blank" rel="noopener noreferrer">Complementary feeding</a>. Orientaciones sobre frecuencia, variedad, consistencia y alimentación responsiva.</li>
+    <li><strong>Centers for Disease Control and Prevention (CDC), 2026.</strong> <a href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html" target="_blank" rel="noopener noreferrer">When, What, and How to Introduce Solid Foods</a>. Señales de preparación, primeros alimentos y alergénicos.</li>
+    <li><strong>CDC, 2026.</strong> <a href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-encourage.html" target="_blank" rel="noopener noreferrer">Foods and Drinks to Encourage</a>. Variedad alimentaria y bebidas adecuadas entre los seis y doce meses.</li>
+    <li><strong>CDC, 2026.</strong> <a href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-avoid-or-limit.html" target="_blank" rel="noopener noreferrer">Foods and Drinks to Avoid or Limit</a>. Miel, azúcares añadidos, sal, jugos y alimentos de riesgo.</li>
+    <li><strong>CDC, 2026.</strong> <a href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html" target="_blank" rel="noopener noreferrer">Choking Hazards</a>. Preparación de alimentos y prevención de atragantamientos.</li>
+    <li><strong>CDC, 2026.</strong> <a href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html" target="_blank" rel="noopener noreferrer">Cow’s Milk and Milk Alternatives</a>. Orientación sobre leche de vaca y bebidas alternativas después de los doce meses.</li>
+    <li><strong>García Fernández Y, Borges Damas L, Enríquez Nodarse D, Sánchez Machado R.</strong> <a href="https://revpediatria.sld.cu/index.php/ped/article/view/8169" target="_blank" rel="noopener noreferrer">Preparación parental en los primeros 1000 días del niño</a>. Revista Cubana de Pediatría. 2026;98. Referencia cubana para comprender la preparación parental y las competencias de cuidado durante esta etapa.</li>
+  </ol>
+  <p class="fecha-revision">Revisión documental: 8 de noviembre de 2026. Contenido educativo; no sustituye la valoración individual ni las indicaciones del equipo de salud.</p>
+</section>
+
+<footer class="cierre">
+  <strong>CIBA · Crianza, Internet, Bienestar y Acompañamiento</strong>
+  <p>Crecer acompañados transforma el camino.</p>
+</footer>
+
+</article>
