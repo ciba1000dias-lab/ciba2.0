@@ -5,7 +5,7 @@
   'use strict';
 
   const raiz = new URL('../../', import.meta.url);
-  const rutaDatos = new URL('assets/data/alimentos.json', raiz);
+  const rutaIndice = new URL('assets/data/alimentos.json', raiz);
 
   const normalizar = (valor) => String(valor || '')
     .normalize('NFD')
@@ -39,12 +39,16 @@
     const estado = raizUI.querySelector('#ciba-alimentos-estado');
 
     try {
-      const respuesta = await fetch(rutaDatos.href, { cache: 'no-cache' });
-      if (!respuesta.ok) throw new Error('No se pudo cargar la biblioteca.');
-      const datos = await respuesta.json();
-      if (!Array.isArray(datos.alimentos)) throw new Error('Datos de alimentos inválidos.');
-
-      const alimentos = datos.alimentos;
+      const respuesta = await fetch(rutaIndice.href, { cache: 'no-cache' });
+      if (!respuesta.ok) throw new Error('No se pudo cargar el índice de la biblioteca.');
+      const indice = await respuesta.json();
+      if (!Array.isArray(indice.archivos)) throw new Error('Índice de alimentos inválido.');
+      const grupos = await Promise.all(indice.archivos.map(async (archivo) => {
+        const r = await fetch(new URL(archivo, raiz).href, { cache: 'no-cache' });
+        if (!r.ok) throw new Error('No se pudo cargar: ' + archivo);
+        return r.json();
+      }));
+      const alimentos = grupos.flatMap((grupo) => Array.isArray(grupo.alimentos) ? grupo.alimentos : []);
       let categoriaActiva = 'Todos';
 
       function abrirDetalle(alimento, actualizarHash = true) {
@@ -158,7 +162,8 @@
 
       function renderizar() {
         const consulta = normalizar(buscador.value);
-        const visibles = alimentos.filter((alimento) => {
+        const terminos = consulta.split(/\\s+/).filter((t) => t.length > 1 && !['mi','el','la','los','las','un','una','puede','pueden','dar','comer','para','desde','cuando','como','que','es','de','del','y','a'].includes(t));
+        const visibles = alimentos.map((alimento) => {
           const coincideCategoria = categoriaActiva === 'Todos' || alimento.categoria === categoriaActiva;
           const texto = normalizar([
             alimento.nombre,
@@ -166,8 +171,11 @@
             alimento.resumen,
             ...(alimento.palabras_clave || [])
           ].join(' '));
-          return coincideCategoria && (!consulta || texto.includes(consulta));
-        });
+          const aciertos = terminos.filter((termino) => texto.includes(termino)).length;
+          return { alimento, coincideCategoria, puntuacion: terminos.length ? aciertos / terminos.length : 1 };
+        }).filter((item) => item.coincideCategoria && (!consulta || item.puntuacion >= 0.5))
+          .sort((a, b) => b.puntuacion - a.puntuacion)
+          .map((item) => item.alimento);
 
         lista.replaceChildren();
         visibles.forEach((alimento) => {
