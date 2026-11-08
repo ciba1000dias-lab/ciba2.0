@@ -1,0 +1,217 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4efe5">
+  <title>Crianza y desarrollo | CIBA</title>
+  <meta name="description" content="Un espacio para comprender el desarrollo infantil, fortalecer los vínculos y acompañar cada etapa de la vida.">
+
+  <style>
+    :root {
+      --fondo: #f4efe5;
+      --tinta: #302d27;
+      --terracota: #a65d43;
+      --verde: #536b51;
+      --suave: #e8dfd0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--fondo);
+      color: var(--tinta);
+      font-family: Georgia, serif;
+    }
+
+    a { color: inherit; }
+
+    .volver {
+      display: inline-block;
+      margin: 28px 6%;
+      text-decoration: none;
+      color: var(--verde);
+      font: 600 13px Arial, sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      min-height: 490px;
+      padding: 75px 8%;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg, rgba(30,35,27,.78), rgba(30,35,27,.12)),
+        url("../../../assets/images/columna-crianza.webp") center 42% / cover;
+      color: white;
+    }
+
+    .hero-contenido {
+      max-width: 680px;
+    }
+
+    .etiqueta {
+      font: 600 12px Arial, sans-serif;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #ead2ad;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 88px);
+      line-height: .98;
+      font-weight: normal;
+      margin: 22px 0;
+    }
+
+    .hero p {
+      font-size: 19px;
+      line-height: 1.7;
+      max-width: 570px;
+    }
+
+    .introduccion {
+      max-width: 850px;
+      margin: 85px auto;
+      padding: 0 25px;
+      text-align: center;
+    }
+
+    .introduccion h2 {
+      font-size: clamp(30px, 5vw, 46px);
+      font-weight: normal;
+      color: var(--terracota);
+    }
+
+    .introduccion p {
+      font-size: 19px;
+      line-height: 1.8;
+    }
+
+    .contenidos {
+      padding: 65px 8% 100px;
+      background: var(--suave);
+    }
+
+    .contenidos h2 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: normal;
+      margin-bottom: 12px;
+    }
+
+    .subtitulo {
+      font: 15px Arial, sans-serif;
+      color: #686257;
+      margin-bottom: 38px;
+    }
+
+    .tarjeta {
+      display: block;
+      max-width: 760px;
+      padding: 30px;
+      background: var(--fondo);
+      border-radius: 14px;
+      text-decoration: none;
+      border-left: 5px solid var(--terracota);
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px #40372a18;
+    }
+
+    .numero {
+      color: var(--terracota);
+      font: 12px Arial, sans-serif;
+      letter-spacing: 2px;
+    }
+
+    .tarjeta h3 {
+      font-size: 27px;
+      font-weight: normal;
+      margin: 15px 0 10px;
+    }
+
+    .tarjeta p {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .abrir {
+      display: inline-block;
+      margin-top: 12px;
+      color: var(--verde);
+      font: 600 12px Arial, sans-serif;
+      letter-spacing: 1px;
+    }
+
+    footer {
+      padding: 35px 8%;
+      text-align: center;
+      font: 12px Arial, sans-serif;
+      color: #756d61;
+    }
+
+    @media(max-width:600px) {
+      .hero { min-height: 430px; padding: 55px 7%; }
+      .introduccion { margin: 60px auto; }
+      .contenidos { padding: 55px 7%; }
+      .tarjeta { padding: 23px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a class="volver" href="../../../index.html">← VOLVER A CIBA</a>
+
+  <header class="hero">
+    <div class="hero-contenido">
+      <div class="etiqueta">CIBA · COLUMNA C</div>
+      <h1>Crianza<br>y desarrollo</h1>
+      <p>
+        Comprender la infancia es aprender a acompañar la vida.
+        Un espacio para crecer, educar y fortalecer los vínculos
+        que nos unen.
+      </p>
+    </div>
+  </header>
+
+  <section class="introduccion">
+    <h2>Criar también es aprender</h2>
+    <p>
+      Cada niña y cada niño construye su propio camino.
+      Aquí encontrarás conocimientos, orientaciones y recursos
+      para comprender sus etapas de desarrollo, acompañar sus
+      descubrimientos y construir relaciones familiares más
+      saludables.
+    </p>
+  </section>
+
+  <main class="contenidos">
+    <h2>Explora este espacio</h2>
+    <p class="subtitulo">
+      Conocimientos y recursos para acompañar cada etapa.
+    </p>
+
+    <a class="tarjeta" href="C1-01/index.html">
+      <span class="numero">PRIMER CONTENIDO</span>
+      <h3>Comprender las etapas del desarrollo infantil</h3>
+      <p>
+        Una guía para comprender el desarrollo físico,
+        emocional, social y cognitivo desde la primera
+        infancia hasta la adolescencia.
+      </p>
+      <span class="abrir">EXPLORAR CONTENIDO →</span>
+    </a>
+  </main>
+
+  <footer>
+    CIBA · Conocimiento, cuidado y acompañamiento.
+  </footer>
+
+</body>
+</html>
