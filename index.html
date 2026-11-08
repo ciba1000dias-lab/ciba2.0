@@ -866,6 +866,124 @@
   object-position: center 35%;
   border-radius: 12px;
   margin-top: 14px;
+}/* CIBA — NÚCLEO ANCESTRAL DEL BUSCADOR */
+
+.busqueda-herramienta {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+}
+
+.busqueda-oraculo {
+  position: relative;
+  flex: 0 0 58px;
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(169,88,62,.35);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(217,184,120,.28), rgba(82,110,86,.08));
+  color: #a9583e;
+  transition: .35s;
+}
+
+.busqueda-oraculo::before,
+.busqueda-oraculo::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 1px solid rgba(169,88,62,.3);
+  border-radius: 50%;
+  animation: orbita-ciba 18s linear infinite;
+}
+
+.busqueda-oraculo::after {
+  inset: 11px;
+  border-color: rgba(82,110,86,.4);
+  animation-duration: 12s;
+  animation-direction: reverse;
+}
+
+.busqueda-espiral {
+  position: relative;
+  z-index: 1;
+  width: 34px;
+  height: 34px;
+  animation: respirar-ciba 5s ease-in-out infinite;
+}
+
+.busqueda-espiral path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-dasharray: 145;
+  animation: pulso-espiral 8s ease-in-out infinite;
+}
+
+.busqueda-punto {
+  position: absolute;
+  z-index: 2;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #d9b878;
+  box-shadow: 0 0 8px rgba(201,120,85,.65);
+}
+
+.busqueda-punto.uno { top: 5px; left: 27px; }
+.busqueda-punto.dos { right: 5px; bottom: 18px; width: 4px; height: 4px; }
+.busqueda-punto.tres { left: 9px; bottom: 9px; width: 3px; height: 3px; }
+
+.busqueda-caja {
+  flex: 1;
+  min-width: 0;
+}
+
+.busqueda-caja:focus-within {
+  border-color: rgba(169,88,62,.65);
+  box-shadow: 0 0 0 3px rgba(201,120,85,.10);
+}
+
+.busqueda-activa .busqueda-oraculo {
+  border-color: rgba(169,88,62,.8);
+  box-shadow: 0 0 0 5px rgba(201,120,85,.12), 0 0 22px rgba(201,120,85,.2);
+  transform: scale(1.04);
+}
+
+.busqueda-procesando .busqueda-oraculo {
+  animation: despertar-ciba .85s ease-in-out 2;
+}
+
+@keyframes orbita-ciba {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes respirar-ciba {
+  0%, 100% { transform: scale(.94); opacity: .82; }
+  50% { transform: scale(1.07); opacity: 1; }
+}
+
+@keyframes pulso-espiral {
+  0%, 100% { stroke-dashoffset: 0; }
+  50% { stroke-dashoffset: 24; }
+}
+
+@keyframes despertar-ciba {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(201,120,85,.08); }
+  50% { box-shadow: 0 0 0 9px rgba(201,120,85,.18), 0 0 28px rgba(201,120,85,.3); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .busqueda-oraculo::before,
+  .busqueda-oraculo::after,
+  .busqueda-espiral,
+  .busqueda-espiral path,
+  .busqueda-procesando .busqueda-oraculo {
+    animation: none !important;
+  }
 }
   </style>
 </head>
