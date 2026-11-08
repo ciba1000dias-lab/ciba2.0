@@ -23,6 +23,7 @@ from lib.media import copiar_media_autorizada, verificar_destino_sin_extranos
 from lib.meta_reader import leer_meta
 from lib.paths import COLUMNAS_CARPETAS_OFICIALES
 from lib.safety import es_ruta_segura, listar_directorios_seguros, iterar_arbol_seguro
+from lib.meta_reader import leer_meta
 from validate_content import validar
 
 
@@ -142,11 +143,90 @@ def _copiar_pagina_publica(
     return errores
 
 
+def _asegurar_documento_responsivo(contenido: str) -> str:
+    """Asegura que cada página pública tenga estructura HTML y viewport móvil."""
+
+    # Si el archivo es un fragmento HTML, convertirlo en un documento completo.
+    # Esto evita que el navegador móvil utilice un ancho de escritorio.
+    tiene_html = re.search(
+        r"<html\b",
+        contenido,
+        flags=re.IGNORECASE,
+    )
+
+    if not tiene_html:
+        contenido = (
+            "<!doctype html>\n"
+            '<html lang="es">\n'
+            "<head>\n"
+            '  <meta charset="utf-8">\n'
+            '  <meta name="viewport" content="width=device-width, initial-scale=1">\n'
+            "  <title>CIBA</title>\n"
+            "</head>\n"
+            "<body>\n"
+            f"{contenido}\n"
+            "</body>\n"
+            "</html>\n"
+        )
+        return contenido
+
+    # Si ya es un documento completo, comprobar si tiene viewport.
+    tiene_viewport = re.search(
+        r"<meta\b(?=[^>]*\bname\s*=\s*['\"]viewport['\"])[^>]*>",
+        contenido,
+        flags=re.IGNORECASE,
+    )
+
+    if tiene_viewport:
+        return contenido
+
+    etiqueta_viewport = (
+        '<meta name="viewport" content="width=device-width, initial-scale=1">'
+    )
+
+    cierre_head = re.search(
+        r"</head\s*>",
+        contenido,
+        flags=re.IGNORECASE,
+    )
+
+    if cierre_head:
+        contenido = (
+            contenido[:cierre_head.start()]
+            + "  "
+            + etiqueta_viewport
+            + "\n"
+            + contenido[cierre_head.start():]
+        )
+        return contenido
+
+    apertura_html = re.search(
+        r"<html\b[^>]*>",
+        contenido,
+        flags=re.IGNORECASE,
+    )
+
+    if apertura_html:
+        cabecera = (
+            "\n<head>\n"
+            '  <meta charset="utf-8">\n'
+            f"  {etiqueta_viewport}\n"
+            "</head>\n"
+        )
+        contenido = (
+            contenido[:apertura_html.end()]
+            + cabecera
+            + contenido[apertura_html.end():]
+        )
+
+    return contenido
+
+
 def _conectar_sistema_global(
     archivo_html: Path,
     raiz_publica: Path,
 ) -> list[ValidationError]:
-    """Añade el módulo global a una página pública."""
+    """Prepara el documento móvil y añade el módulo global a una página pública."""
     errores: list[ValidationError] = []
 
     try:
@@ -161,6 +241,9 @@ def _conectar_sistema_global(
         )
         return errores
 
+    # Preparar primero la estructura HTML y la configuración para móviles.
+    contenido = _asegurar_documento_responsivo(contenido)
+
     # Solo considera integrado el sistema si existe una etiqueta SCRIPT
     # real que cargue ciba-global.js. Los comentarios HTML no cuentan.
     script_cargado = re.search(
@@ -170,6 +253,16 @@ def _conectar_sistema_global(
     )
 
     if script_cargado:
+        try:
+            archivo_html.write_text(contenido, encoding="utf-8")
+        except (OSError, UnicodeError) as exc:
+            errores.append(
+                ValidationError(
+                    str(archivo_html),
+                    "integración global",
+                    f"no se pudo guardar: {exc}",
+                )
+            )
         return errores
 
     script = raiz_publica / "assets" / "js" / "ciba-global.js"
@@ -398,8 +491,8 @@ def _construir_en_tmp(
     )
 
     if sistema_global_disponible:
-        # Incorporar el menú y buscador a todas las páginas generadas,
-        # incluida la portada principal.
+        # Incorporar el menú, el buscador y la configuración móvil
+        # a todas las páginas generadas, incluida la portada.
         paginas_html = sorted(tmp.rglob("index.html"))
 
         for archivo_html in paginas_html:
