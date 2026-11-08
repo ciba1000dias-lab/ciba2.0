@@ -1,0 +1,348 @@
+<article class="ciba-articulo articulo-crianza">
+
+<style>
+.ciba-articulo {
+  --verde: #536b51;
+  --verde-oscuro: #203a32;
+  --terracota: #a65d43;
+  --marfil: #fffdf8;
+  --crema: #f4efe5;
+  --tinta: #302d27;
+  --suave: #786e60;
+  --borde: #e8dfd0;
+  box-sizing: border-box;
+  width: min(94%, 960px);
+  margin: 30px auto 65px;
+  padding: clamp(22px, 5vw, 58px);
+  color: var(--tinta);
+  background: var(--marfil);
+  border: 1px solid var(--borde);
+  border-top: 5px solid var(--verde);
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(38,48,38,.07);
+  font-family: Georgia, serif;
+  font-size: 17px;
+  line-height: 1.85;
+}
+.ciba-articulo *, .ciba-articulo *::before, .ciba-articulo *::after { box-sizing: border-box; }
+.ciba-articulo .navegacion-articulo {
+  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;
+  margin-bottom:35px; padding-bottom:17px; border-bottom:1px solid var(--borde); font-family:Arial,sans-serif;
+}
+.ciba-articulo .volver { color:var(--verde); text-decoration:none; font-size:13px; font-weight:bold; letter-spacing:.04em; }
+.ciba-articulo .volver:hover { color:var(--terracota); text-decoration:underline; }
+.ciba-articulo .identidad { color:var(--suave); font-size:11px; letter-spacing:.13em; text-transform:uppercase; }
+.ciba-articulo .cabecera-articulo {
+  padding:30px clamp(20px,4vw,42px); margin:0 -10px 38px; color:var(--marfil);
+  background:var(--verde-oscuro); border-radius:12px; position:relative; overflow:hidden;
+}
+.ciba-articulo .cabecera-articulo::after {
+  content:""; position:absolute; width:180px; height:180px; right:-65px; bottom:-100px;
+  border:1px solid rgba(255,255,255,.17); border-radius:50%;
+  box-shadow:0 0 0 18px rgba(255,255,255,.035),0 0 0 38px rgba(255,255,255,.025); pointer-events:none;
+}
+.ciba-articulo .etiqueta {
+  position:relative; z-index:1; color:#d8c39a; font-family:Arial,sans-serif; font-size:11px;
+  font-weight:bold; letter-spacing:.17em; text-transform:uppercase; margin:0 0 18px;
+}
+.ciba-articulo h1 {
+  position:relative; z-index:1; color:var(--marfil); font-family:Georgia,serif;
+  font-size:clamp(32px,5vw,48px); line-height:1.15; font-weight:normal; margin:0 0 20px; max-width:740px;
+}
+.ciba-articulo .bajada {
+  position:relative; z-index:1; color:#e8e2d5; font-size:clamp(17px,2.5vw,20px);
+  line-height:1.65; margin:0; max-width:720px;
+}
+.ciba-articulo h2 {
+  color:var(--terracota); font-family:Georgia,serif; font-size:clamp(24px,3.5vw,29px);
+  line-height:1.3; font-weight:normal; margin:45px 0 17px; padding-bottom:11px; border-bottom:1px solid var(--borde);
+}
+.ciba-articulo h3 { color:var(--verde); font-size:21px; font-weight:normal; margin:30px 0 12px; }
+.ciba-articulo p { margin:0 0 20px; }
+.ciba-articulo ul,.ciba-articulo ol { padding-left:25px; margin:20px 0 28px; }
+.ciba-articulo li { padding-left:5px; margin-bottom:13px; }
+.ciba-articulo li::marker { color:var(--terracota); }
+.ciba-articulo strong { color:#514438; }
+.ciba-articulo .nota {
+  background:var(--crema); border-left:4px solid var(--terracota); padding:21px 24px;
+  margin:30px 0; border-radius:0 10px 10px 0;
+}
+.ciba-articulo .cita {
+  display:inline-block; color:var(--terracota); font-family:Arial,sans-serif; font-size:15px;
+  font-weight:bold; text-decoration:none; padding:0 2px;
+}
+.ciba-articulo .cita:hover { color:var(--verde); text-decoration:underline; }
+.ciba-articulo .fuentes {
+  margin-top:55px; padding:27px; background:#f4f1e9; border:1px solid var(--borde); border-radius:12px;
+}
+.ciba-articulo .fuentes h2 { margin:0 0 18px; font-size:25px; }
+.ciba-articulo .fuentes-intro { color:var(--suave); font-size:14px; }
+.ciba-articulo .lista-fuentes { padding-left:22px; margin-bottom:0; }
+.ciba-articulo .lista-fuentes li { margin-bottom:16px; font-size:15px; line-height:1.65; }
+.ciba-articulo .lista-fuentes a {
+  color:var(--verde); font-family:Arial,sans-serif; font-weight:bold;
+  text-decoration:underline; text-underline-offset:3px;
+}
+.ciba-articulo .fecha-revision { margin-top:20px; color:var(--suave); font-family:Arial,sans-serif; font-size:12px; }
+.ciba-articulo .cierre {
+  margin-top:48px; padding-top:25px; border-top:1px solid var(--borde); color:var(--verde);
+  text-align:center; font-family:Arial,sans-serif; font-size:13px;
+}
+.ciba-articulo .cierre strong { color:var(--verde); letter-spacing:.06em; }
+.ciba-articulo .cierre p { margin:9px 0 0; font-family:Georgia,serif; font-style:italic; }
+@media (max-width:600px) {
+  .ciba-articulo { width:calc(100% - 20px); margin:14px auto 35px; padding:20px 18px 32px; font-size:16px; border-radius:11px; }
+  .ciba-articulo .cabecera-articulo { margin-left:-5px; margin-right:-5px; padding:25px 20px; }
+  .ciba-articulo .navegacion-articulo { margin-bottom:25px; }
+  .ciba-articulo .nota { padding:18px; }
+  .ciba-articulo .fuentes { padding:19px; }
+}
+</style>
+
+<nav class="navegacion-articulo" aria-label="Navegación del artículo">
+  <a class="volver" href="../index.html">← VOLVER A CRIANZA</a>
+  <span class="identidad">CIBA · Conocimiento y acompañamiento</span>
+</nav>
+
+<header class="cabecera-articulo">
+  <p class="etiqueta">C · Crianza y desarrollo</p>
+  <h1>¿Cuántas horas debe dormir mi bebé según su edad?</h1>
+  <p class="bajada">
+    Una orientación sencilla para saber cuánto descanso necesitan los bebés y los niños pequeños,
+    cómo contar las siestas y qué hábitos ayudan a dormir de forma segura.
+  </p>
+</header>
+
+<div class="nota">
+  <strong>Respuesta rápida:</strong> si tu bebé tiene 7 meses, la recomendación general es que duerma
+  entre <strong>12 y 16 horas en total durante cada período de 24 horas</strong>, contando el sueño
+  nocturno y todas las siestas. No significa que deba dormir esas horas seguidas ni que todos los
+  bebés necesiten exactamente lo mismo.
+  <a class="cita" href="https://www.cdc.gov/sleep/about/" target="_blank" rel="noopener noreferrer" aria-label="Consultar recomendaciones del CDC">°</a>
+  <a class="cita" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5078711/" target="_blank" rel="noopener noreferrer" aria-label="Consultar consenso de la Academia Americana de Medicina del Sueño">°</a>
+</div>
+
+<h2>¿Cuántas horas de sueño necesita según la edad?</h2>
+
+<p>
+  Las necesidades cambian a medida que el niño crece. Estos rangos son referencias para el sueño
+  total de un día completo, no horarios rígidos que haya que cumplir minuto a minuto.
+</p>
+
+<ul>
+  <li><strong>Recién nacidos de 0 a 3 meses:</strong> alrededor de 14 a 17 horas al día. En esta etapa
+  todavía no existe un ritmo estable de día y noche y el sueño suele repartirse en períodos cortos.
+  <a class="cita" href="https://www.nichd.nih.gov/health/topics/sleep/conditioninfo/Pages/how-much.aspx" target="_blank" rel="noopener noreferrer" aria-label="Consultar información del NICHD">°</a></li>
+  <li><strong>Bebés de 4 a 12 meses:</strong> entre 12 y 16 horas en 24 horas, incluidas las siestas.
+  <a class="cita" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5078711/" target="_blank" rel="noopener noreferrer" aria-label="Consultar consenso de sueño infantil">°</a></li>
+  <li><strong>Niños de 1 a 2 años:</strong> entre 11 y 14 horas al día, contando las siestas.
+  <a class="cita" href="https://www.cdc.gov/sleep/about/" target="_blank" rel="noopener noreferrer" aria-label="Consultar tabla de sueño del CDC">°</a></li>
+  <li><strong>Niños de 3 a 5 años:</strong> entre 10 y 13 horas al día, incluidas las siestas si todavía las hacen.
+  <a class="cita" href="https://www.cdc.gov/sleep/about/" target="_blank" rel="noopener noreferrer" aria-label="Consultar tabla de sueño del CDC">°</a></li>
+</ul>
+
+<p>
+  Para los menores de 4 meses no existe un rango único respaldado por el consenso de la Academia
+  Americana de Medicina del Sueño; la cifra de 14 a 17 horas procede de recomendaciones de la
+  National Sleep Foundation recogidas por el Instituto Nacional de Salud Infantil y Desarrollo
+  Humano de Estados Unidos (NICHD). Por eso conviene interpretarla como una orientación amplia,
+  no como una obligación.
+  <a class="cita" href="https://www.nichd.nih.gov/health/topics/sleep/conditioninfo/Pages/how-much.aspx" target="_blank" rel="noopener noreferrer" aria-label="Consultar explicación de los rangos por edad">°</a>
+</p>
+
+<h2>Si mi bebé tiene 7 meses, ¿cómo cuento sus horas?</h2>
+
+<p>
+  A los 7 meses corresponde el rango de 4 a 12 meses: entre 12 y 16 horas de sueño sumando noche
+  y siestas. Para calcularlo, anota aproximadamente cuándo se duerme, cuándo despierta y cuánto
+  duran sus períodos de sueño durante el día.
+</p>
+
+<div class="nota">
+  <strong>Ejemplo práctico:</strong> si duerme unas 10 horas durante la noche y suma 3 horas en
+  dos o tres siestas, habrá dormido aproximadamente 13 horas en total. Esa cantidad está dentro
+  del rango orientativo. El ejemplo no significa que todos los bebés deban dormir 10 horas seguidas
+  ni hacer el mismo número de siestas.
+</div>
+
+<p>
+  Si una noche duerme menos y al día siguiente recupera parte del descanso, observa el conjunto
+  de varios días. Un registro sencillo puede ayudar a reconocer patrones sin convertir el sueño
+  en una fuente de presión para la familia.
+</p>
+
+<h2>¿Cuántas siestas debe hacer?</h2>
+
+<p>
+  No hay un número exacto de siestas que sirva para todos los bebés de una misma edad. Durante
+  el primer año, las siestas cambian en cantidad y duración: algunos bebés hacen varias siestas
+  cortas y otros empiezan gradualmente a concentrar el descanso en menos períodos.
+</p>
+
+<p>
+  En lugar de imponer un horario idéntico cada día, observa señales como bostezos, mirada perdida,
+  menor interés por jugar, frotarse los ojos o irritabilidad. Cuando aparezcan, puedes reducir
+  estímulos, acompañar al bebé y ofrecerle la oportunidad de dormir.
+</p>
+
+<p>
+  Si una siesta se retrasa o dura menos de lo habitual, no significa automáticamente que exista
+  un problema. Importan el descanso total, el bienestar del niño y la regularidad posible dentro
+  de la vida familiar.
+</p>
+
+<h2>¿Es normal que se despierte durante la noche?</h2>
+
+<p>
+  Sí. Los despertares nocturnos pueden formar parte del desarrollo normal, especialmente durante
+  el primer año. Un bebé puede despertarse para alimentarse, porque necesita contacto y consuelo,
+  por incomodidad o simplemente al pasar de una fase del sueño a otra.
+</p>
+
+<p>
+  Comprueba si tiene hambre, el pañal necesita atención, siente demasiado calor o frío, está
+  incómodo o presenta signos de enfermedad. Responde con calma y de una manera segura. No todos
+  los despertares indican que duerma poco ni que la familia esté haciendo algo mal.
+</p>
+
+<h2>¿Cómo puedo ayudarle a descansar mejor?</h2>
+
+<p>
+  Una rutina breve y repetida puede ayudar al bebé a reconocer que se acerca el momento de dormir.
+  No necesita ser complicada ni costosa. Lo importante es que resulte tranquila y posible de
+  mantener en casa.
+</p>
+
+<ul>
+  <li>Procura que el ambiente se vuelva más tranquilo al acercarse la hora de dormir.</li>
+  <li>Reduce los ruidos intensos, las luces fuertes y los juegos muy estimulantes.</li>
+  <li>Repite una secuencia sencilla: cambiar el pañal, poner ropa cómoda, alimentar si corresponde,
+      hablar suavemente o cantar y acostarlo.</li>
+  <li>Durante el día, ofrece oportunidades de luz natural, interacción y juego apropiado para su edad.</li>
+  <li>Si es posible, mantén horarios aproximados, pero adapta la rutina a las necesidades del bebé.</li>
+</ul>
+
+<p>
+  No hace falta comprar productos especiales para que un bebé duerma. Las rutinas deben ser
+  flexibles y respetuosas; si una estrategia aumenta el llanto o la tensión familiar, conviene
+  revisar cómo se está aplicando y pedir orientación si hace falta.
+</p>
+
+<h2>El sueño seguro es tan importante como las horas</h2>
+
+<p>
+  Además de cuánto duerme, importa dónde y en qué posición lo hace. Para cada sueño, coloca al
+  bebé <strong>boca arriba</strong>, sobre una superficie firme, plana y no inclinada, diseñada
+  para el descanso infantil, con una sábana ajustada.
+  <a class="cita" href="https://www.aap.org/en/patient-care/safe-sleep/" target="_blank" rel="noopener noreferrer" aria-label="Consultar recomendaciones de sueño seguro de la AAP">°</a>
+</p>
+
+<ul>
+  <li>Mantén la cuna o moisés libre de almohadas, juguetes, protectores acolchados y mantas sueltas.</li>
+  <li>Evita que duerma habitualmente en sofás, sillones, columpios o asientos de automóvil fuera del viaje.</li>
+  <li>Lo recomendado es que duerma en la habitación de las personas cuidadoras, pero en una superficie propia, separada.</li>
+  <li>No uses superficies inclinadas ni productos que no estén diseñados y aprobados para el sueño infantil.</li>
+</ul>
+
+<p>
+  Si el bebé se queda dormido en un asiento, columpio o dispositivo similar, trasládalo a una
+  superficie de sueño segura tan pronto como sea posible. Los dispositivos de transporte no
+  sustituyen una cuna o moisés adecuado.
+  <a class="cita" href="https://publications.aap.org/pediatrics/article/150/1/e2022057990/188304/Sleep-Related-Infant-Deaths-Updated-2022-Recommendations" target="_blank" rel="noopener noreferrer" aria-label="Consultar guía clínica de la Academia Americana de Pediatría">°</a>
+</p>
+
+<h2>¿Cómo saber si está descansando lo suficiente?</h2>
+
+<p>
+  Las horas recomendadas sirven como referencia, pero también hay que observar cómo se encuentra
+  el niño cuando está despierto. Puede ser útil preguntarse:
+</p>
+
+<ul>
+  <li>¿Se despierta y tiene períodos en los que está alerta e interesado en su entorno?</li>
+  <li>¿Puede jugar, alimentarse e interactuar de acuerdo con su edad?</li>
+  <li>¿Está irritable o somnoliento durante gran parte del día de manera persistente?</li>
+  <li>¿Sus horarios han cambiado mucho o el descanso se ha vuelto difícil de forma continua?</li>
+</ul>
+
+<p>
+  Si tienes dudas, registra durante varios días los períodos de sueño y coméntalos en la consulta
+  pediátrica. Ese registro puede aportar información más útil que comparar al bebé con otros niños.
+</p>
+
+<h2>¿Cuándo conviene consultar?</h2>
+
+<p>
+  Habla con su pediatra si observas ronquidos frecuentes, pausas en la respiración, jadeos,
+  respiración trabajosa durante el sueño, somnolencia excesiva durante el día o dificultades
+  persistentes para dormir que afectan al bienestar del niño o de la familia.
+  <a class="cita" href="https://publications.aap.org/pediatrics/article/153/3/e2023065480/196676/" target="_blank" rel="noopener noreferrer" aria-label="Consultar orientación pediátrica sobre sueño">°</a>
+</p>
+
+<div class="nota">
+  <strong>Busca atención de emergencia</strong> si el bebé presenta dificultad importante para
+  respirar, coloración azulada o grisácea, o no responde con normalidad. No esperes a completar
+  un registro de sueño ni a una consulta programada.
+</div>
+
+<h2>Una orientación, no una competencia</h2>
+
+<p>
+  Cada bebé tiene su propio ritmo y sus necesidades pueden variar. Las recomendaciones ayudan
+  a saber si el descanso está dentro de un rango saludable, pero no son una prueba que la familia
+  tenga que aprobar. Observa a tu hijo, crea condiciones seguras, acompaña sus despertares y
+  consulta cuando algo te preocupe.
+</p>
+
+<section class="fuentes" aria-labelledby="titulo-fuentes">
+  <h2 id="titulo-fuentes">Fuentes y referencias</h2>
+  <p class="fuentes-intro">
+    Referencias institucionales y científicas utilizadas para contrastar los rangos de sueño,
+    las orientaciones por edad y las recomendaciones de seguridad. Los símbolos ° del texto
+    permiten abrir la fuente correspondiente.
+  </p>
+  <ol class="lista-fuentes">
+    <li>
+      <strong>Centers for Disease Control and Prevention (CDC).</strong>
+      <a href="https://www.cdc.gov/sleep/about/" target="_blank" rel="noopener noreferrer">About Sleep</a>.
+      Tabla de horas de sueño recomendadas por grupos de edad.
+    </li>
+    <li>
+      <strong>Paruthi S. y colaboradores. American Academy of Sleep Medicine (2016).</strong>
+      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5078711/" target="_blank" rel="noopener noreferrer">
+        Consensus Statement of the American Academy of Sleep Medicine on the Recommended Amount of Sleep for Healthy Children
+      </a>.
+      Consenso científico sobre las horas de sueño recomendadas para niños de 4 meses a 18 años.
+    </li>
+    <li>
+      <strong>Eunice Kennedy Shriver National Institute of Child Health and Human Development (NICHD).</strong>
+      <a href="https://www.nichd.nih.gov/health/topics/sleep/conditioninfo/Pages/how-much.aspx" target="_blank" rel="noopener noreferrer">
+        How much sleep do I need?
+      </a>.
+      Recoge recomendaciones por edad y aclara la diferencia entre las recomendaciones para menores y mayores de cuatro meses.
+    </li>
+    <li>
+      <strong>American Academy of Pediatrics (AAP).</strong>
+      <a href="https://www.aap.org/en/patient-care/safe-sleep/" target="_blank" rel="noopener noreferrer">Safe Sleep</a>.
+      Recomendaciones para reducir los riesgos relacionados con el entorno de sueño infantil.
+    </li>
+    <li>
+      <strong>American Academy of Pediatrics (2022).</strong>
+      <a href="https://publications.aap.org/pediatrics/article/150/1/e2022057990/188304/Sleep-Related-Infant-Deaths-Updated-2022-Recommendations" target="_blank" rel="noopener noreferrer">
+        Sleep-Related Infant Deaths: Updated 2022 Recommendations for Reducing Infant Deaths in the Sleep Environment
+      </a>.
+      Guía clínica sobre posición, superficie y entorno de sueño seguro.
+    </li>
+  </ol>
+  <p class="fecha-revision">
+    Revisión de fuentes: 8 de noviembre de 2026. Este contenido es educativo y no sustituye
+    la valoración individual de profesionales de salud.
+  </p>
+</section>
+
+<footer class="cierre">
+  <strong>CIBA · Crianza, Internet, Bienestar y Acompañamiento</strong>
+  <p>Crecer acompañados transforma el camino.</p>
+</footer>
+
+</article>
