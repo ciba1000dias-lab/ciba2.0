@@ -10,9 +10,11 @@
 
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
+  const RUTA_ALIMENTOS = new URL('assets/data/alimentos.json', RAIZ);
   const RUTA_CSS = new URL('../css/ciba-global.css', import.meta.url);
 
   let catalogo = null;
+  let alimentos = null;
 
   const columnas = [
     { id: 'C', titulo: 'Crianza' },
@@ -77,6 +79,21 @@
 
     catalogo = await respuesta.json();
     return catalogo;
+  }
+
+  async function obtenerAlimentos() {
+    if (alimentos) return alimentos;
+
+    const respuesta = await fetch(RUTA_ALIMENTOS.href, {
+      cache: 'no-cache'
+    });
+
+    if (!respuesta.ok) {
+      throw new Error('No se pudo cargar la biblioteca de alimentos.');
+    }
+
+    alimentos = await respuesta.json();
+    return alimentos;
   }
 
   function cerrarMenu(panel, boton) {
@@ -506,10 +523,10 @@
 
         try {
           const datos = await obtenerCatalogo();
+          const datosAlimentos = await obtenerAlimentos().catch(() => ({ alimentos: [] }));
           const paginas = datos.paginas || [];
 
-          // La búsqueda incluye título, descripción,
-          // identificadores, área, subsección y palabras clave.
+          // Buscar tanto artículos como fichas de la biblioteca de alimentos.
           const coincidencias = paginas.filter((pagina) => {
             const contenido = normalizar([
               pagina.titulo,
@@ -519,13 +536,23 @@
               pagina.subseccion,
               ...(pagina.palabras_clave || [])
             ].join(' '));
+            return contenido.includes(consulta);
+          });
 
+          const coincidenciasAlimentos = (datosAlimentos.alimentos || []).filter((alimento) => {
+            const contenido = normalizar([
+              alimento.nombre,
+              alimento.categoria,
+              alimento.resumen,
+              ...(alimento.nombres_alternativos || []),
+              ...(alimento.palabras_clave || [])
+            ].join(' '));
             return contenido.includes(consulta);
           });
 
           resultados.replaceChildren();
 
-          if (!coincidencias.length) {
+          if (!coincidencias.length && !coincidenciasAlimentos.length) {
             resultados.appendChild(
               elemento(
                 'p',
@@ -536,35 +563,37 @@
             return;
           }
 
-          coincidencias.slice(0, 10).forEach((pagina) => {
+          coincidenciasAlimentos.slice(0, 10).forEach((alimento) => {
+            const destino = new URL(
+              'c/C1/index.html#alimento-' + encodeURIComponent(alimento.id),
+              RAIZ
+            ).href;
+            const resultado = enlace(
+              destino,
+              '',
+              'ciba-global-resultado'
+            );
+            const nombre = elemento('strong', '', alimento.nombre || 'Alimento');
+            const descripcion = elemento('small', '', alimento.resumen || 'Consultar ficha de alimento');
+            const seccion = elemento('small', 'ciba-global-subseccion', 'Biblioteca de alimentos · ' + (alimento.categoria || 'Alimentación'));
+            resultado.append(nombre, descripcion, seccion);
+            resultados.appendChild(resultado);
+          });
+
+          coincidencias.slice(0, Math.max(0, 10 - coincidenciasAlimentos.length)).forEach((pagina) => {
             const resultado = enlace(
               urlPublica(pagina.ruta_publica),
               '',
               'ciba-global-resultado'
             );
 
-            const nombre = elemento(
-              'strong',
-              '',
-              pagina.titulo || 'Contenido de CIBA'
-            );
-
-            const descripcion = elemento(
-              'small',
-              '',
-              pagina.descripcion || 'Explorar contenido'
-            );
-
+            const nombre = elemento('strong', '', pagina.titulo || 'Contenido de CIBA');
+            const descripcion = elemento('small', '', pagina.descripcion || 'Explorar contenido');
             resultado.append(nombre, descripcion);
 
-            // Mostrar la subsección cuando esté declarada.
             if (pagina.subseccion) {
               resultado.appendChild(
-                elemento(
-                  'small',
-                  'ciba-global-subseccion',
-                  'Sección: ' + pagina.subseccion
-                )
+                elemento('small', 'ciba-global-subseccion', 'Sección: ' + pagina.subseccion)
               );
             }
 
