@@ -128,8 +128,16 @@ def _construir_en_tmp(src: Path, tmp: Path, hoy: date | None) -> list[Validation
         rel_area = str(area_dir.relative_to(src))
         area_meta, errs_area = leer_area(area_dir / "area.json", rel_area)
         errores.extend(errs_area)
-        if area_meta is None:
+                if area_meta is None:
             continue
+
+        index_area = area_dir / "index.html"
+        if index_area.exists() or index_area.is_symlink():
+            destino_area = tmp / f"{letra.lower()}/{area_dir.name}"
+            errs_copia_area = _copiar_pagina_publica(
+                area_dir, destino_area, [], rel_area
+            )
+            errores.extend(errs_copia_area)
 
         areas_registradas.append(
             {**area_meta.datos, "ruta_publica": f"{letra.lower()}/{area_dir.name}/"}
