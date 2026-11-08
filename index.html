@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="es">
 <head>
@@ -49,7 +48,7 @@
       margin-inline: auto;
     }
 
-    /* NAVEGACIÓN */
+    /* CABECERA: CONSERVAMOS LA MARCA, EL MENÚ LO GESTIONA CIBA-GLOBAL.JS */
 
     .cabecera {
       position: sticky;
@@ -65,7 +64,7 @@
       min-height: 78px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
       gap: 25px;
     }
 
@@ -96,32 +95,6 @@
       font-weight: 600;
       letter-spacing: .19em;
       color: var(--oro);
-    }
-
-    .navegacion {
-      display: flex;
-      align-items: center;
-      gap: 25px;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: .04em;
-    }
-
-    .navegacion a {
-      color: #e5e5d9;
-      transition: color .2s;
-    }
-
-    .navegacion a:hover { color: var(--oro); }
-
-    .boton-menu {
-      display: none;
-      color: white;
-      background: transparent;
-      border: 1px solid rgba(255,255,255,.35);
-      border-radius: 12px;
-      padding: 9px 12px;
-      cursor: pointer;
     }
 
     /* PORTADA */
@@ -326,9 +299,13 @@
 
     .busqueda-interior {
       display: grid;
-      grid-template-columns: 1fr minmax(280px, 520px);
-      align-items: center;
-      gap: 30px;
+      grid-template-columns: 1fr;
+      justify-items: stretch;
+      text-align: left;
+    }
+
+    .busqueda-interior > div:first-child {
+      text-align: left;
     }
 
     .busqueda h2 {
@@ -347,16 +324,89 @@
 
     .busqueda-caja {
       display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
       align-items: center;
-      gap: 10px;
+      justify-content: flex-start;
+      gap: 20px;
+      width: 100%;
+      max-width: 100%;
+      margin: 24px 0 0;
       padding: 7px 8px 7px 17px;
       border: 1px solid var(--linea);
       border-radius: 8px;
       background: white;
     }
 
+    .busqueda-oraculo {
+      position: relative;
+      flex: 0 0 90px;
+      width: 90px;
+      height: 90px;
+      display: grid;
+      place-items: center;
+      margin: 0;
+      border-radius: 50%;
+      background: radial-gradient(circle, #e9d4ad 0%, #d8c49b 28%, transparent 72%);
+      animation: nucleo-vivo 3s ease-in-out infinite;
+    }
+
+    .busqueda-oraculo .orbita {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .busqueda-oraculo .orbita-externa {
+      inset: 1px;
+      border: 1px solid #a9583e;
+      border-left-color: transparent;
+      animation: orbita-viva 5s linear infinite;
+    }
+
+    .busqueda-oraculo .orbita-interna {
+      inset: 8px;
+      border: 1px dashed #71846a;
+      animation: orbita-viva 8s linear infinite reverse;
+    }
+
+    .busqueda-oraculo .busqueda-espiral {
+      display: block;
+      position: relative;
+      z-index: 2;
+      width: 52px;
+      height: 52px;
+      color: #8e4935;
+      animation: espiral-viva 12s linear infinite;
+    }
+
+    .busqueda-oraculo .busqueda-espiral path {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-dasharray: 150;
+      animation: luz-viva 3s ease-in-out infinite alternate;
+    }
+
+    .busqueda-oraculo .busqueda-punto {
+      position: absolute;
+      z-index: 3;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #bd7950;
+      box-shadow: 0 0 9px #d9b878;
+    }
+
+    .busqueda-oraculo .uno { top: 2px; left: 32px; }
+    .busqueda-oraculo .dos { right: 2px; top: 32px; }
+    .busqueda-oraculo .tres { left: 8px; bottom: 8px; }
+
     .busqueda-caja input {
-      width: 100%;
+      display: block;
+      flex: 1 1 auto;
+      width: auto;
       min-width: 0;
       border: 0;
       outline: 0;
@@ -364,10 +414,11 @@
       color: var(--tinta);
       font-size: 13px;
       background: transparent;
+      text-align: left;
     }
 
     .busqueda-caja button {
-      flex-shrink: 0;
+      flex: 0 0 auto;
       border: 0;
       border-radius: 5px;
       padding: 12px 17px;
@@ -376,6 +427,42 @@
       font-size: 10px;
       font-weight: 800;
       cursor: pointer;
+    }
+
+    .busqueda-caja:focus-within .busqueda-oraculo {
+      filter: brightness(1.3);
+      animation-duration: 1.8s;
+    }
+
+    .busqueda-caja:focus-within .busqueda-espiral {
+      animation-duration: 3s;
+    }
+
+    .busqueda-procesando .busqueda-oraculo {
+      animation-duration: 1s;
+      filter: brightness(1.5);
+    }
+
+    .busqueda-procesando .busqueda-espiral {
+      animation-duration: 1.5s;
+    }
+
+    @keyframes orbita-viva {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes espiral-viva {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes nucleo-vivo {
+      0%, 100% { transform: scale(.94); }
+      50% { transform: scale(1.08); }
+    }
+
+    @keyframes luz-viva {
+      from { stroke-dashoffset: 0; opacity: .65; }
+      to { stroke-dashoffset: 45; opacity: 1; }
     }
 
     .resultados {
@@ -508,6 +595,16 @@
       font-size: 76px;
       line-height: 1;
       color: rgba(255,255,255,.18);
+    }
+
+    .columna-imagen {
+      display: block;
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      object-position: center 35%;
+      border-radius: 12px;
+      margin-top: 14px;
     }
 
     .columna h3 {
@@ -788,30 +885,12 @@
       .hero-imagen-marco { min-height: 350px; }
       .columnas { grid-template-columns: repeat(2, 1fr); }
       .areas-lista { grid-template-columns: repeat(2, 1fr); }
-      .navegacion { gap: 14px; }
     }
 
     @media (max-width: 680px) {
       .contenedor { width: min(100% - 34px, 560px); }
 
       .barra { min-height: 68px; }
-
-      .boton-menu { display: block; }
-
-      .navegacion {
-        display: none;
-        position: absolute;
-        top: 68px;
-        left: 0;
-        right: 0;
-        padding: 20px 25px 25px;
-        flex-direction: column;
-        align-items: flex-start;
-        background: var(--noche);
-        border-top: 1px solid rgba(255,255,255,.12);
-      }
-
-      .navegacion.abierta { display: flex; }
 
       .hero { min-height: auto; }
 
@@ -836,6 +915,19 @@
 
       .busqueda-interior { grid-template-columns: 1fr; gap: 17px; }
 
+      .busqueda-caja { gap: 10px; }
+
+      .busqueda-oraculo {
+        flex-basis: 62px;
+        width: 62px;
+        height: 62px;
+      }
+
+      .busqueda-espiral {
+        width: 42px;
+        height: 42px;
+      }
+
       .seccion { padding: 68px 0; }
 
       .columnas, .areas-lista, .personajes-grid,
@@ -857,392 +949,20 @@
         scroll-behavior: auto !important;
         transition: none !important;
       }
+
+      .busqueda-oraculo,
+      .busqueda-oraculo *,
+      .busqueda-procesando .busqueda-oraculo {
+        animation: none !important;
+      }
     }
-.columna-imagen {
-  display: block;
-  width: 100%;
-  height: 190px;
-  object-fit: cover;
-  object-position: center 35%;
-  border-radius: 12px;
-  margin-top: 14px;
-/* CIBA — NÚCLEO ANCESTRAL VIVO */
-
-.busqueda-oraculo {
-  position: relative;
-  flex: 0 0 68px;
-  width: 68px;
-  height: 68px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  color: #b66b49;
-  background: radial-gradient(
-    circle,
-    rgba(217,184,120,.30) 0%,
-    rgba(82,110,86,.13) 48%,
-    transparent 72%
-  );
-  animation: nucleo-respira 4s ease-in-out infinite;
-  isolation: isolate;
-}
-
-/* Anillo exterior */
-.busqueda-oraculo::before {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  border: 1px solid rgba(182,107,73,.65);
-  border-radius: 50%;
-  border-top-color: transparent;
-  border-bottom-color: rgba(217,184,120,.9);
-  animation: anillo-gira 7s linear infinite;
-}
-
-/* Anillo interior */
-.busqueda-oraculo::after {
-  content: "";
-  position: absolute;
-  inset: 9px;
-  border: 1px dashed rgba(82,110,86,.65);
-  border-radius: 50%;
-  animation: anillo-gira 11s linear infinite reverse;
-}
-
-.busqueda-espiral {
-  position: relative;
-  z-index: 2;
-  width: 42px;
-  height: 42px;
-  animation: espiral-gira 12s linear infinite;
-  filter: drop-shadow(0 0 5px rgba(182,107,73,.45));
-}
-
-.busqueda-espiral path {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-dasharray: 160;
-  animation: espiral-luz 4s ease-in-out infinite alternate;
-}
-
-/* Partículas orbitales */
-.busqueda-punto {
-  position: absolute;
-  z-index: 3;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #d9b878;
-  box-shadow: 0 0 9px 2px rgba(217,184,120,.65);
-}
-
-.busqueda-punto.uno {
-  top: 0;
-  left: 31px;
-  animation: particula-uno 5s linear infinite;
-}
-
-.busqueda-punto.dos {
-  right: 1px;
-  top: 30px;
-  animation: particula-dos 6s linear infinite;
-}
-
-.busqueda-punto.tres {
-  left: 5px;
-  bottom: 8px;
-  width: 4px;
-  height: 4px;
-  animation: particula-tres 7s linear infinite;
-}
-
-/* El buscador despierta al recibir atención */
-.busqueda-caja:focus-within .busqueda-oraculo {
-  animation-duration: 1.8s;
-  filter: brightness(1.3);
-}
-
-.busqueda-caja:focus-within .busqueda-espiral {
-  animation-duration: 3s;
-}
-
-.busqueda-caja:focus-within .busqueda-oraculo::before {
-  animation-duration: 2s;
-}
-
-/* Movimiento mientras se procesa una búsqueda */
-.busqueda-procesando .busqueda-oraculo {
-  animation-duration: 1s;
-  filter: brightness(1.5);
-}
-
-.busqueda-procesando .busqueda-espiral {
-  animation-duration: 1.5s;
-}
-
-@keyframes nucleo-respira {
-  0%, 100% {
-    transform: scale(.94);
-    box-shadow: 0 0 10px rgba(182,107,73,.08);
-  }
-  50% {
-    transform: scale(1.08);
-    box-shadow: 0 0 28px rgba(182,107,73,.28);
-  }
-}
-
-@keyframes anillo-gira {
-  to { transform: rotate(360deg); }
-}
-
-@keyframes espiral-gira {
-  to { transform: rotate(360deg); }
-}
-
-@keyframes espiral-luz {
-  from { stroke-dashoffset: 0; opacity: .7; }
-  to { stroke-dashoffset: 45; opacity: 1; }
-}
-
-@keyframes particula-uno {
-  50% { transform: translate(9px, 8px) scale(1.5); }
-}
-
-@keyframes particula-dos {
-  50% { transform: translate(-9px, 9px) scale(.7); }
-}
-
-@keyframes particula-tres {
-  50% { transform: translate(8px, -10px) scale(1.6); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .busqueda-oraculo,
-  .busqueda-oraculo::before,
-  .busqueda-oraculo::after,
-  .busqueda-espiral,
-  .busqueda-espiral path,
-  .busqueda-punto {
-    animation: none !important;
-  }
-}
-  .busqueda-oraculo::before,
-  .busqueda-oraculo::after,
-  .busqueda-espiral,
-  .busqueda-espiral path,
-  .busqueda-procesando .busqueda-oraculo {
-    animation: none !important;
-  }
-}/* ÓRBITAS DEL NÚCLEO CIBA */
-
-.busqueda-oraculo {
-  position: relative;
-  width: 68px;
-  height: 68px;
-  flex: 0 0 68px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: radial-gradient(circle, #e9d4ad 0%, #d8c49b 28%, transparent 72%);
-  animation: nucleo-vivo 3s ease-in-out infinite;
-}
-
-.busqueda-oraculo .orbita {
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.busqueda-oraculo .orbita-externa {
-  inset: 1px;
-  border: 1px solid #a9583e;
-  border-left-color: transparent;
-  animation: orbita-viva 5s linear infinite;
-}
-
-.busqueda-oraculo .orbita-interna {
-  inset: 8px;
-  border: 1px dashed #71846a;
-  animation: orbita-viva 8s linear infinite reverse;
-}
-
-.busqueda-oraculo .busqueda-espiral {
-  display: block;
-  position: relative;
-  z-index: 2;
-  width: 42px;
-  height: 42px;
-  color: #8e4935;
-  animation: espiral-viva 12s linear infinite;
-}
-
-.busqueda-oraculo .busqueda-espiral path {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-dasharray: 150;
-  animation: luz-viva 3s ease-in-out infinite alternate;
-}
-
-.busqueda-oraculo .busqueda-punto {
-  position: absolute;
-  z-index: 3;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #bd7950;
-  box-shadow: 0 0 9px #d9b878;
-}
-
-.busqueda-oraculo .uno { top: 2px; left: 32px; }
-.busqueda-oraculo .dos { right: 2px; top: 32px; }
-.busqueda-oraculo .tres { left: 8px; bottom: 8px; }
-
-@keyframes orbita-viva {
-  to { transform: rotate(360deg); }
-}
-
-@keyframes espiral-viva {
-  to { transform: rotate(360deg); }
-}
-
-@keyframes nucleo-vivo {
-  0%, 100% { transform: scale(.94); }
-  50% { transform: scale(1.08); }
-}
-
-@keyframes luz-viva {
-  from { stroke-dashoffset: 0; opacity: .65; }
-  to { stroke-dashoffset: 45; opacity: 1; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .busqueda-oraculo,
-  .busqueda-oraculo * {
-    animation: none !important;
-  }
-}/* CIBA — ALINEACIÓN Y PRESENCIA DEL NÚCLEO */
-
-.busqueda-caja {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  gap: 18px !important;
-  width: 100%;
-}
-
-.busqueda-oraculo {
-  position: relative !important;
-  flex: 0 0 82px !important;
-  width: 82px !important;
-  height: 82px !important;
-  margin: 0 !important;
-  align-self: center !important;
-  transform: none;
-  box-shadow:
-    0 0 18px rgba(182,107,73,.28),
-    0 0 38px rgba(217,184,120,.20);
-}
-
-.busqueda-caja input,
-.busqueda-caja #consulta {
-  flex: 1 1 auto !important;
-  min-width: 0 !important;
-  text-align: left !important;
-}
-
-.busqueda-caja button {
-  flex: 0 0 auto !important;
-}
-
-.busqueda-espiral {
-  width: 52px !important;
-  height: 52px !important;
-}
-
-@media (max-width: 600px) {
-  .busqueda-caja {
-    gap: 10px !important;
-  }
-
-  .busqueda-oraculo {
-    flex-basis: 64px !important;
-    width: 64px !important;
-    height: 64px !important;
-  }
-
-  .busqueda-espiral {
-    width: 42px !important;
-    height: 42px !important;
-  }
-}
-/* BUSCADOR CIBA — DISTRIBUCIÓN DEFINITIVA */
-
-.busqueda-interior {
-  display: grid !important;
-  grid-template-columns: 1fr !important;
-  justify-items: stretch !important;
-  text-align: left !important;
-}
-
-.busqueda-interior > div:first-child {
-  text-align: left !important;
-}
-
-form.busqueda-caja {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: nowrap !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
-  gap: 20px !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 24px 0 0 !important;
-  text-align: left !important;
-}
-
-form.busqueda-caja .busqueda-oraculo {
-  display: grid !important;
-  flex: 0 0 90px !important;
-  width: 90px !important;
-  height: 90px !important;
-  margin: 0 !important;
-  justify-self: start !important;
-}
-
-form.busqueda-caja input#consulta {
-  display: block !important;
-  flex: 1 1 auto !important;
-  width: auto !important;
-  min-width: 0 !important;
-  text-align: left !important;
-}
-
-form.busqueda-caja button {
-  flex: 0 0 auto !important;
-}
-
-@media (max-width: 600px) {
-  form.busqueda-caja {
-    gap: 10px !important;
-  }
-
-  form.busqueda-caja .busqueda-oraculo {
-    flex-basis: 62px !important;
-    width: 62px !important;
-    height: 62px !important;
-  }
-}
-
   </style>
 </head>
 
 <body>
+
+  <!-- CABECERA: SE CONSERVA LA IDENTIDAD CIBA.
+       EL MENÚ PRINCIPAL LO INCORPORA ciba-global.js. -->
 
   <header class="cabecera">
     <div class="barra contenedor">
@@ -1256,19 +976,6 @@ form.busqueda-caja button {
         </svg>
         <span class="marca-texto">CIBA<small>CRECER · CONECTAR · ACOMPAÑAR</small></span>
       </a>
-
-      <button class="boton-menu" id="boton-menu"
-              aria-expanded="false" aria-controls="navegacion">
-        Menú ☰
-      </button>
-
-      <nav class="navegacion" id="navegacion" aria-label="Navegación principal">
-        <a href="#inicio">Inicio</a>
-        <a href="#explorar">Explorar</a>
-        <a href="#areas">Áreas</a>
-        <a href="#proyecto">El proyecto</a>
-        <a href="#nayara-turey">Nayara y Turey</a>
-      </nav>
     </div>
   </header>
 
@@ -1314,49 +1021,49 @@ form.busqueda-caja button {
       </div>
     </section>
 
-    
-<section class="busqueda" aria-label="Buscador de contenidos">
-  <div class="contenedor">
-    <div class="busqueda-interior">
+    <section class="busqueda" aria-label="Buscador de contenidos">
+      <div class="contenedor">
+        <div class="busqueda-interior">
 
-      <div>
-        <h2>¿Qué estás buscando?</h2>
-        <p>Explora temas, orientaciones, recursos y artículos de CIBA.</p>
-      </div>
+          <div>
+            <h2>¿Qué estás buscando?</h2>
+            <p>Explora temas, orientaciones, recursos y artículos de CIBA.</p>
+          </div>
 
-      <form class="busqueda-caja" id="form-busqueda" role="search">
+          <form class="busqueda-caja" id="form-busqueda" role="search">
 
-        <div class="busqueda-oraculo" aria-hidden="true">
-          <div class="orbita orbita-externa"></div>
-          <div class="orbita orbita-interna"></div>
+            <div class="busqueda-oraculo" aria-hidden="true">
+              <div class="orbita orbita-externa"></div>
+              <div class="orbita orbita-interna"></div>
 
-          <svg class="busqueda-espiral" viewBox="0 0 100 100">
-            <path d="M50 50 C50 35 70 38 70 52
-              C70 72 43 78 30 60
-              C10 32 43 10 66 20
-              C95 32 92 70 70 84
-              C42 103 8 78 13 45"/>
-          </svg>
+              <svg class="busqueda-espiral" viewBox="0 0 100 100">
+                <path d="M50 50 C50 35 70 38 70 52
+                  C70 72 43 78 30 60
+                  C10 32 43 10 66 20
+                  C95 32 92 70 70 84
+                  C42 103 8 78 13 45"/>
+              </svg>
 
-          <span class="busqueda-punto uno"></span>
-          <span class="busqueda-punto dos"></span>
-          <span class="busqueda-punto tres"></span>
+              <span class="busqueda-punto uno"></span>
+              <span class="busqueda-punto dos"></span>
+              <span class="busqueda-punto tres"></span>
+            </div>
+
+            <input id="consulta" type="search"
+              placeholder="Escribe un tema o una pregunta..."
+              aria-label="Buscar en CIBA">
+
+            <button type="submit">BUSCAR</button>
+          </form>
         </div>
 
-        <input id="consulta" type="search"
-          placeholder="Escribe un tema o una pregunta..."
-          aria-label="Buscar en CIBA">
+        <div class="resultados" id="resultados" aria-live="polite">
+          <h3 id="resultados-titulo">Resultados</h3>
+          <div class="resultado-lista" id="resultado-lista"></div>
+        </div>
+      </div>
+    </section>
 
-        <button type="submit">BUSCAR</button>
-      </form>
-    </div>
-
-    <div class="resultados" id="resultados" aria-live="polite">
-      <h3 id="resultados-titulo">Resultados</h3>
-      <div class="resultado-lista" id="resultado-lista"></div>
-    </div>
-  </div>
-</section>
     <section class="seccion" id="explorar">
       <div class="contenedor">
         <div class="seccion-encabezado">
@@ -1368,79 +1075,71 @@ form.busqueda-caja button {
           </p>
         </div>
 
-       
+        <div class="columnas">
 
+          <a class="columna" href="#areas">
+            <div>
+              <div class="columna-numero">01 / C</div>
+              <div class="columna-letra">C</div>
+              <img class="columna-imagen"
+                   src="assets/images/columna-crianza.webp"
+                   alt="Madre cubana jugando y aprendiendo con su hijo en el hogar">
+            </div>
+            <div>
+              <h3>Crianza</h3>
+              <p>Comprender la infancia, educar con afecto y acompañar cada etapa del desarrollo.</p>
+              <div class="columna-ir">Explorar espacio ↗</div>
+            </div>
+          </a>
 
-<div class="columnas">
+          <a class="columna" href="#areas">
+            <div>
+              <div class="columna-numero">02 / I</div>
+              <div class="columna-letra">I</div>
+              <img class="columna-imagen"
+                   src="assets/images/columna-internet.webp"
+                   alt="Joven cubana utilizando una computadora portátil y un teléfono móvil">
+            </div>
+            <div>
+              <h3>Internet</h3>
+              <p>Habitar el mundo digital con seguridad, pensamiento crítico y responsabilidad.</p>
+              <div class="columna-ir">Explorar espacio ↗</div>
+            </div>
+          </a>
 
-  <!-- C: CRIANZA -->
-  <a class="columna" href="#areas">
-    <div>
-      <div class="columna-numero">01 / C</div>
-      <div class="columna-letra">C</div>
-      <img class="columna-imagen"
-           src="assets/images/columna-crianza.webp"
-           alt="Madre cubana jugando y aprendiendo con su hijo en el hogar">
-    </div>
-    <div>
-      <h3>Crianza</h3>
-      <p>Comprender la infancia, educar con afecto y acompañar cada etapa del desarrollo.</p>
-      <div class="columna-ir">Explorar espacio ↗</div>
-    </div>
-  </a>
+          <a class="columna" href="#areas">
+            <div>
+              <div class="columna-numero">03 / B</div>
+              <div class="columna-letra">B</div>
+              <img class="columna-imagen"
+                   src="assets/images/columna-bienestar.webp"
+                   alt="Mujer cubana realizando ejercicios de estiramiento en un jardín tropical">
+            </div>
+            <div>
+              <h3>Bienestar</h3>
+              <p>Cuidar la salud emocional, los vínculos y la vida cotidiana de las familias.</p>
+              <div class="columna-ir">Explorar espacio ↗</div>
+            </div>
+          </a>
 
-  <!-- I: INTERNET -->
-  <a class="columna" href="#areas">
-    <div>
-      <div class="columna-numero">02 / I</div>
-      <div class="columna-letra">I</div>
-      <img class="columna-imagen"
-           src="assets/images/columna-internet.webp"
-           alt="Joven cubana utilizando una computadora portátil y un teléfono móvil">
-    </div>
-    <div>
-      <h3>Internet</h3>
-      <p>Habitar el mundo digital con seguridad, pensamiento crítico y responsabilidad.</p>
-      <div class="columna-ir">Explorar espacio ↗</div>
-    </div>
-  </a>
+          <a class="columna" href="#areas">
+            <div>
+              <div class="columna-numero">04 / A</div>
+              <div class="columna-letra">A</div>
+              <img class="columna-imagen"
+                   src="assets/images/columna-acompanamiento.webp"
+                   alt="Profesional cubana escuchando y orientando a una madre en un espacio comunitario">
+            </div>
+            <div>
+              <h3>Acompañamiento</h3>
+              <p>Encontrar orientación, herramientas y apoyo para los desafíos de cada día.</p>
+              <div class="columna-ir">Explorar espacio ↗</div>
+            </div>
+          </a>
 
-  <!-- B: BIENESTAR -->
-  <a class="columna" href="#areas">
-    <div>
-      <div class="columna-numero">03 / B</div>
-      <div class="columna-letra">B</div>
-      <img class="columna-imagen"
-           src="assets/images/columna-bienestar.webp"
-           alt="Mujer cubana realizando ejercicios de estiramiento en un jardín tropical">
-    </div>
-    <div>
-      <h3>Bienestar</h3>
-      <p>Cuidar la salud emocional, los vínculos y la vida cotidiana de las familias.</p>
-      <div class="columna-ir">Explorar espacio ↗</div>
-    </div>
-  </a>
-
-  <!-- A: ACOMPAÑAMIENTO -->
-  <a class="columna" href="#areas">
-    <div>
-      <div class="columna-numero">04 / A</div>
-      <div class="columna-letra">A</div>
-      <img class="columna-imagen"
-           src="assets/images/columna-acompanamiento.webp"
-           alt="Profesional cubana escuchando y orientando a una madre en un espacio comunitario">
-    </div>
-    <div>
-      <h3>Acompañamiento</h3>
-      <p>Encontrar orientación, herramientas y apoyo para los desafíos de cada día.</p>
-      <div class="columna-ir">Explorar espacio ↗</div>
-    </div>
-  </a>
-
-</div>
-</div>
-</section>
-
+        </div>
+      </div>
+    </section>
 
     <section class="seccion areas" id="areas">
       <div class="contenedor">
@@ -1591,21 +1290,6 @@ form.busqueda-caja button {
   <script>
     (() => {
       "use strict";
-
-      const botonMenu = document.getElementById("boton-menu");
-      const navegacion = document.getElementById("navegacion");
-
-      botonMenu.addEventListener("click", () => {
-        const abierta = navegacion.classList.toggle("abierta");
-        botonMenu.setAttribute("aria-expanded", String(abierta));
-      });
-
-      navegacion.querySelectorAll("a").forEach(enlace => {
-        enlace.addEventListener("click", () => {
-          navegacion.classList.remove("abierta");
-          botonMenu.setAttribute("aria-expanded", "false");
-        });
-      });
 
       const areasLista = document.getElementById("areas-lista");
       const estadoCatalogo = document.getElementById("estado-catalogo");
