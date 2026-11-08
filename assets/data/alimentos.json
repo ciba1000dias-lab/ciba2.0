@@ -129,7 +129,16 @@
           "utilidad": "Consulta de composición nutricional de alimentos."
         }
       ],
-      "estado": "piloto"
+      "estado": "piloto",
+      "imagenes": [
+        {
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Avocado_cut_into_two.jpg/1280px-Avocado_cut_into_two.jpg",
+          "alt": "Aguacate abierto por la mitad, con la semilla y la pulpa verde visibles.",
+          "autor": "Denis kasozi",
+          "licencia": "Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)",
+          "atribucion_url": "https://commons.wikimedia.org/wiki/File:Avocado_cut_into_two.jpg"
+        }
+      ]
     }
   ]
 }
