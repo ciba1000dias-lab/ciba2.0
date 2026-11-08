@@ -1180,6 +1180,65 @@
     height: 42px !important;
   }
 }
+/* BUSCADOR CIBA — DISTRIBUCIÓN DEFINITIVA */
+
+.busqueda-interior {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  justify-items: stretch !important;
+  text-align: left !important;
+}
+
+.busqueda-interior > div:first-child {
+  text-align: left !important;
+}
+
+form.busqueda-caja {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 20px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 24px 0 0 !important;
+  text-align: left !important;
+}
+
+form.busqueda-caja .busqueda-oraculo {
+  display: grid !important;
+  flex: 0 0 90px !important;
+  width: 90px !important;
+  height: 90px !important;
+  margin: 0 !important;
+  justify-self: start !important;
+}
+
+form.busqueda-caja input#consulta {
+  display: block !important;
+  flex: 1 1 auto !important;
+  width: auto !important;
+  min-width: 0 !important;
+  text-align: left !important;
+}
+
+form.busqueda-caja button {
+  flex: 0 0 auto !important;
+}
+
+@media (max-width: 600px) {
+  form.busqueda-caja {
+    gap: 10px !important;
+  }
+
+  form.busqueda-caja .busqueda-oraculo {
+    flex-basis: 62px !important;
+    width: 62px !important;
+    height: 62px !important;
+  }
+}
+
   </style>
 </head>
 
@@ -1255,45 +1314,49 @@
       </div>
     </section>
 
-    <section class="busqueda" aria-label="Buscador de contenidos">
-      <div class="contenedor">
-        <div class="busqueda-interior">
-          <div>
-            <h2>¿Qué estás buscando?</h2>
-            <p>Explora temas, orientaciones, recursos y artículos de CIBA.</p>
-          </div>
+    
+<section class="busqueda" aria-label="Buscador de contenidos">
+  <div class="contenedor">
+    <div class="busqueda-interior">
 
-          <form class="busqueda-caja" id="form-busqueda" role="search">
-           <div class="busqueda-oraculo" aria-hidden="true">
-  <div class="orbita orbita-externa"></div>
-  <div class="orbita orbita-interna"></div>
-
-  <svg class="busqueda-espiral" viewBox="0 0 100 100">
-    <path d="M50 50 C50 35 70 38 70 52
-    C70 72 43 78 30 60
-    C10 32 43 10 66 20
-    C95 32 92 70 70 84
-    C42 103 8 78 13 45"/>
-  </svg>
-
-  <span class="busqueda-punto uno"></span>
-  <span class="busqueda-punto dos"></span>
-  <span class="busqueda-punto tres"></span>
-</div>
-            <input id="consulta" type="search"
-                   placeholder="Escribe un tema o una pregunta..."
-                   aria-label="Buscar en CIBA">
-            <button type="submit">BUSCAR</button>
-          </form>
-        </div>
-
-        <div class="resultados" id="resultados" aria-live="polite">
-          <h3 id="resultados-titulo">Resultados</h3>
-          <div class="resultado-lista" id="resultado-lista"></div>
-        </div>
+      <div>
+        <h2>¿Qué estás buscando?</h2>
+        <p>Explora temas, orientaciones, recursos y artículos de CIBA.</p>
       </div>
-    </section>
 
+      <form class="busqueda-caja" id="form-busqueda" role="search">
+
+        <div class="busqueda-oraculo" aria-hidden="true">
+          <div class="orbita orbita-externa"></div>
+          <div class="orbita orbita-interna"></div>
+
+          <svg class="busqueda-espiral" viewBox="0 0 100 100">
+            <path d="M50 50 C50 35 70 38 70 52
+              C70 72 43 78 30 60
+              C10 32 43 10 66 20
+              C95 32 92 70 70 84
+              C42 103 8 78 13 45"/>
+          </svg>
+
+          <span class="busqueda-punto uno"></span>
+          <span class="busqueda-punto dos"></span>
+          <span class="busqueda-punto tres"></span>
+        </div>
+
+        <input id="consulta" type="search"
+          placeholder="Escribe un tema o una pregunta..."
+          aria-label="Buscar en CIBA">
+
+        <button type="submit">BUSCAR</button>
+      </form>
+    </div>
+
+    <div class="resultados" id="resultados" aria-live="polite">
+      <h3 id="resultados-titulo">Resultados</h3>
+      <div class="resultado-lista" id="resultado-lista"></div>
+    </div>
+  </div>
+</section>
     <section class="seccion" id="explorar">
       <div class="contenedor">
         <div class="seccion-encabezado">
