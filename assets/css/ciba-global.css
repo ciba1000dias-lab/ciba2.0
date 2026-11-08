@@ -1,3 +1,4 @@
+
 /* CIBA · DISEÑO GLOBAL
    Menú hamburguesa y buscador ancestral flotante
 */
@@ -73,7 +74,9 @@
   position: absolute;
   top: 58px;
   left: 0;
-  width: min(290px, calc(100vw - 36px));
+  width: min(300px, calc(100vw - 36px));
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
   padding: 22px;
   border: 1px solid rgba(217,184,120,.35);
   border-radius: 18px;
@@ -132,6 +135,43 @@
   color: var(--ciba-oro);
   font-family: Georgia, serif;
   font-size: 17px;
+}
+
+/* ÁREAS DESPLEGABLES */
+
+.ciba-global-grupo {
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(245,240,229,.13);
+}
+
+.ciba-global-grupo:last-child {
+  border-bottom: 0;
+}
+
+.ciba-global-grupo > .ciba-global-enlace {
+  border-bottom: 0;
+  font-weight: 700;
+}
+
+.ciba-global-subenlace {
+  position: relative;
+  margin-left: 43px;
+  padding: 8px 8px 8px 14px;
+  border-bottom: 0;
+  color: var(--ciba-verde-claro);
+  font-size: 13px;
+}
+
+.ciba-global-subenlace::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ciba-oro);
+  transform: translateY(-50%);
 }
 
 /* =================================
@@ -235,7 +275,7 @@
   pointer-events: none;
 }
 
-/* Panel de búsqueda */
+/* PANEL DE BÚSQUEDA */
 
 .ciba-global-panel-busqueda {
   position: absolute;
@@ -413,6 +453,10 @@
   .ciba-global-panel-busqueda {
     bottom: 82px;
     padding: 17px;
+  }
+
+  .ciba-global-panel {
+    width: min(290px, calc(100vw - 24px));
   }
 }
 
