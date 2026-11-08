@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -320,7 +321,7 @@
       text-transform: uppercase;
     }
 
-    /* BIBLIOTECA */
+    /* BIBLIOTECA DINÁMICA */
 
     .biblioteca {
       background: #ebe5d8;
@@ -335,6 +336,45 @@
       color: var(--suave);
       font-size: 14px;
       line-height: 1.8;
+    }
+
+    .biblioteca-grupo {
+      margin-top: 38px;
+    }
+
+    .biblioteca-grupo:first-child {
+      margin-top: 0;
+    }
+
+    .grupo-titulo {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-bottom: 18px;
+      color: var(--noche);
+      font-family: Georgia, serif;
+      font-size: 27px;
+      font-weight: 400;
+    }
+
+    .grupo-titulo::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--terracota);
+      flex-shrink: 0;
+    }
+
+    .grupo-cantidad {
+      color: var(--suave);
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      letter-spacing: .08em;
+    }
+
+    .biblioteca-lista {
+      display: grid;
+      gap: 13px;
     }
 
     .articulo {
@@ -394,6 +434,16 @@
       font-weight: 800;
       letter-spacing: .08em;
       white-space: nowrap;
+    }
+
+    .biblioteca-estado {
+      padding: 25px;
+      border: 1px solid #ded5c6;
+      border-radius: 12px;
+      background: var(--papel);
+      color: var(--suave);
+      font-size: 13px;
+      line-height: 1.8;
     }
 
     /* CIERRE */
@@ -659,25 +709,26 @@
           </p>
         </div>
 
-        <a class="articulo" href="C1-01/">
+        <div id="biblioteca-contenidos" aria-live="polite">
 
-          <div class="articulo-numero">01</div>
-
-          <div>
-            <small>C1 · DESARROLLO INFANTIL</small>
-
-            <h3>Comprender las etapas del desarrollo infantil</h3>
-
-            <p>
-              Una guía para comprender el desarrollo físico,
-              emocional, social y cognitivo desde la primera
-              infancia hasta la adolescencia.
-            </p>
+          <!-- Contenido inicial de respaldo mientras carga el catálogo. -->
+          <div class="biblioteca-lista">
+            <a class="articulo" href="C1-01/">
+              <div class="articulo-numero">01</div>
+              <div>
+                <small>C1 · DESARROLLO INFANTIL</small>
+                <h3>Comprender las etapas del desarrollo infantil</h3>
+                <p>
+                  Una guía para comprender el desarrollo físico,
+                  emocional, social y cognitivo desde la primera
+                  infancia hasta la adolescencia.
+                </p>
+              </div>
+              <span class="articulo-ir">LEER CONTENIDO →</span>
+            </a>
           </div>
 
-          <span class="articulo-ir">LEER CONTENIDO →</span>
-
-        </a>
+        </div>
 
       </div>
     </section>
@@ -742,6 +793,158 @@
 
     </div>
   </footer>
+
+  <script>
+    (() => {
+      const contenedor = document.getElementById('biblioteca-contenidos');
+
+      if (!contenedor) return;
+
+      function crearElemento(etiqueta, clase, texto) {
+        const elemento = document.createElement(etiqueta);
+
+        if (clase) elemento.className = clase;
+        if (texto !== undefined) elemento.textContent = texto;
+
+        return elemento;
+      }
+
+      function crearTarjeta(pagina) {
+        const enlace = crearElemento('a', 'articulo');
+        const ruta = String(pagina.ruta_publica || '').replace(/^\/+/, '');
+
+        enlace.href = '../../' + ruta;
+
+        const numero = String(pagina.id || '').split('-').pop();
+
+        enlace.appendChild(
+          crearElemento('div', 'articulo-numero', numero || 'C')
+        );
+
+        const contenido = crearElemento('div');
+
+        contenido.appendChild(
+          crearElemento(
+            'small',
+            '',
+            (pagina.id || 'CIBA') + ' · ' +
+            (pagina.subseccion || 'CONTENIDO GENERAL').toUpperCase()
+          )
+        );
+
+        contenido.appendChild(
+          crearElemento('h3', '', pagina.titulo || 'Artículo CIBA')
+        );
+
+        contenido.appendChild(
+          crearElemento('p', '', pagina.descripcion || '')
+        );
+
+        enlace.appendChild(contenido);
+
+        enlace.appendChild(
+          crearElemento('span', 'articulo-ir', 'LEER CONTENIDO →')
+        );
+
+        return enlace;
+      }
+
+      function mostrarArticulos(paginas) {
+        const grupos = new Map();
+
+        paginas.forEach((pagina) => {
+          const nombre = (
+            typeof pagina.subseccion === 'string' &&
+            pagina.subseccion.trim()
+          )
+            ? pagina.subseccion.trim()
+            : 'Contenidos generales';
+
+          if (!grupos.has(nombre)) {
+            grupos.set(nombre, []);
+          }
+
+          grupos.get(nombre).push(pagina);
+        });
+
+        const fragmento = document.createDocumentFragment();
+
+        grupos.forEach((articulos, nombre) => {
+          const grupo = crearElemento('section', 'biblioteca-grupo');
+
+          const titulo = crearElemento('h3', 'grupo-titulo');
+
+          titulo.appendChild(
+            document.createTextNode(nombre)
+          );
+
+          titulo.appendChild(
+            crearElemento(
+              'span',
+              'grupo-cantidad',
+              articulos.length +
+              (articulos.length === 1 ? ' ARTÍCULO' : ' ARTÍCULOS')
+            )
+          );
+
+          grupo.appendChild(titulo);
+
+          const lista = crearElemento('div', 'biblioteca-lista');
+
+          articulos.forEach((pagina) => {
+            lista.appendChild(crearTarjeta(pagina));
+          });
+
+          grupo.appendChild(lista);
+          fragmento.appendChild(grupo);
+        });
+
+        contenedor.replaceChildren(fragmento);
+      }
+
+      async function cargarBiblioteca() {
+        try {
+          const respuesta = await fetch('../../data/catalogo.json');
+
+          if (!respuesta.ok) {
+            throw new Error('No se pudo cargar el catálogo.');
+          }
+
+          const catalogo = await respuesta.json();
+
+          if (!Array.isArray(catalogo.paginas)) {
+            throw new Error('El catálogo no contiene páginas válidas.');
+          }
+
+          const articulos = catalogo.paginas.filter((pagina) =>
+            pagina.columna === 'C' &&
+            pagina.area === 'C1' &&
+            pagina.ruta_publica
+          );
+
+          if (articulos.length === 0) {
+            contenedor.replaceChildren(
+              crearElemento(
+                'p',
+                'biblioteca-estado',
+                'Estamos preparando los primeros contenidos de esta área. Pronto encontrarás aquí nuevos artículos.'
+              )
+            );
+
+            return;
+          }
+
+          mostrarArticulos(articulos);
+
+        } catch (error) {
+          console.error('CIBA: no se pudo cargar la biblioteca.', error);
+          // El contenido inicial de respaldo permanece visible.
+        }
+      }
+
+      cargarBiblioteca();
+    })();
+  </script>
 
 </body>
 </html>
