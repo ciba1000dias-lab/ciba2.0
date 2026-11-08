@@ -19,8 +19,8 @@
     "preparación parental",
     "nutrición infantil"
   ],
-  "estado": "borrador",
+  "estado": "publicado",
   "fecha_publicacion": "2026-11-08",
-  "mostrar_en_columna": false,
-  "mostrar_en_area": false
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true
 }
