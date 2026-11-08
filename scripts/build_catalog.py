@@ -1,4 +1,3 @@
-
 """Generador del catálogo CIBA con build atómico, allowlist y anti-symlink.
 
 Uso:
@@ -39,13 +38,16 @@ def _iter_areas(src: Path):
         carpeta_col = src / letra
         if not carpeta_col.is_dir() or carpeta_col.is_symlink():
             continue
+
         subdirs, _ = listar_directorios_seguros(carpeta_col, f"content/{letra}")
+
         for area_dir in subdirs:
             yield letra.upper(), area_dir
 
 
 def _iter_paginas(area_dir: Path):
     subdirs, _ = listar_directorios_seguros(area_dir, str(area_dir.name))
+
     for pag_dir in subdirs:
         yield pag_dir
 
@@ -53,6 +55,7 @@ def _iter_paginas(area_dir: Path):
 def _preparar(tmp: Path) -> None:
     if tmp.exists():
         shutil.rmtree(tmp)
+
     (tmp / "data").mkdir(parents=True, exist_ok=True)
 
 
@@ -93,9 +96,7 @@ def _copiar_pagina_publica(
     """Copia SOLO index.html y fotos autorizadas. Nada más. Sin symlinks."""
     errores: list[ValidationError] = []
 
-    ok, motivo = es_ruta_segura(
-        origen_pagina, origen_pagina / "index.html"
-    )
+    ok, motivo = es_ruta_segura(origen_pagina, origen_pagina / "index.html")
 
     if not ok:
         errores.append(ValidationError(rel_pagina, "index.html", motivo))
@@ -104,9 +105,7 @@ def _copiar_pagina_publica(
     index_origen = origen_pagina / "index.html"
 
     if not index_origen.is_file():
-        errores.append(
-            ValidationError(rel_pagina, "index.html", "ausente")
-        )
+        errores.append(ValidationError(rel_pagina, "index.html", "ausente"))
         return errores
 
     destino_pagina.mkdir(parents=True, exist_ok=True)
@@ -133,7 +132,9 @@ def _copiar_pagina_publica(
     }
 
     errs_clean = verificar_destino_sin_extranos(
-        destino_pagina, permitidos, rel_pagina
+        destino_pagina,
+        permitidos,
+        rel_pagina,
     )
     errores.extend(errs_clean)
 
@@ -141,10 +142,13 @@ def _copiar_pagina_publica(
 
 
 def _construir_en_tmp(
-    src: Path, tmp: Path, hoy: date | None
+    src: Path,
+    tmp: Path,
+    hoy: date | None,
 ) -> list[ValidationError]:
 
     errores: list[ValidationError] = []
+
     esquema = src / "_esquema"
 
     columnas_cfg, errs_cols = leer_columnas(
@@ -163,14 +167,14 @@ def _construir_en_tmp(
         rel_area = str(area_dir.relative_to(src))
 
         area_meta, errs_area = leer_area(
-            area_dir / "area.json", rel_area
+            area_dir / "area.json",
+            rel_area,
         )
         errores.extend(errs_area)
 
         if area_meta is None:
             continue
 
-        # Publicar también la portada propia de cada área.
         index_area = area_dir / "index.html"
 
         if index_area.exists() or index_area.is_symlink():
@@ -195,7 +199,9 @@ def _construir_en_tmp(
             rel_pag = str(pag_dir.relative_to(src))
 
             pagina, errs_pag = leer_meta(
-                pag_dir / "meta.json", rel_pag, hoy=hoy
+                pag_dir / "meta.json",
+                rel_pag,
+                hoy=hoy,
             )
             errores.extend(errs_pag)
 
@@ -261,7 +267,10 @@ def _construir_en_tmp(
 
     (tmp / "data" / "areas.json").write_text(
         json.dumps(
-            {"version": 1, "areas": catalogo["areas"]},
+            {
+                "version": 1,
+                "areas": catalogo["areas"],
+            },
             ensure_ascii=False,
             indent=2,
         ),
@@ -288,7 +297,9 @@ def _construir_en_tmp(
             except OSError as exc:
                 errores.append(
                     ValidationError(
-                        "index.html", "portada", f"copia fallida: {exc}"
+                        "index.html",
+                        "portada",
+                        f"copia fallida: {exc}",
                     )
                 )
 
@@ -351,7 +362,10 @@ def _instalar_atomico(tmp: Path, out: Path) -> list[str]:
 
 
 def construir(
-    src: Path, out: Path, *, hoy: date | None = None
+    src: Path,
+    out: Path,
+    *,
+    hoy: date | None = None,
 ) -> int:
 
     errores = validar(src, hoy=hoy)
@@ -372,7 +386,8 @@ def construir(
 
     try:
         errs_build = _construir_en_tmp(src, tmp, hoy)
-    except Exception as exc:
+
+    except Exception as exc:  # noqa: BLE001
         print(f"ERROR de build: {exc}", file=sys.stderr)
         traceback.print_exc()
         shutil.rmtree(tmp, ignore_errors=True)
@@ -392,6 +407,7 @@ def construir(
     if errs_install:
         for e in errs_install:
             print(e, file=sys.stderr)
+
         return 1
 
     print(
