@@ -1,0 +1,191 @@
+<!--
+CIBA · PLANTILLA MAESTRA DE FICHAS DE ALIMENTOS
+Documento de trabajo. No publicar directamente desde docs/.
+Ejemplo editorial: AGUACATE.
+Antes de publicar: sustituir rutas de imágenes, revisar enlaces,
+comprobar fuentes y añadir solo un video de YouTube verificado.
+Identidad: verde noche · verde natural · terracota · marfil · tierra.
+-->
+<article class="ciba-alimento" id="aguacate">
+<style>
+.ciba-alimento{
+  --verde:#536b51;--noche:#203a32;--terracota:#a65d43;
+  --marfil:#fffdf8;--crema:#f4efe5;--tinta:#302d27;
+  --suave:#786e60;--borde:#e8dfd0;
+  box-sizing:border-box;width:min(94%,960px);margin:28px auto 60px;
+  padding:clamp(20px,5vw,54px);color:var(--tinta);background:var(--marfil);
+  border:1px solid var(--borde);border-top:5px solid var(--verde);
+  border-radius:14px;box-shadow:0 12px 36px rgba(38,48,38,.07);
+  font:17px/1.8 Georgia,serif
+}
+.ciba-alimento *,.ciba-alimento *:before,.ciba-alimento *:after{box-sizing:border-box}
+.ciba-alimento .nav{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  margin-bottom:28px;padding-bottom:15px;border-bottom:1px solid var(--borde);
+  font: bold 12px Arial,sans-serif;letter-spacing:.05em}
+.ciba-alimento a{color:var(--verde)}
+.ciba-alimento .eyebrow{font: bold 11px Arial,sans-serif;letter-spacing:.16em;
+  text-transform:uppercase;color:#d8c39a;margin:0 0 14px}
+.ciba-alimento .hero{background:var(--noche);color:var(--marfil);padding:28px;
+  border-radius:12px}
+.ciba-alimento h1{font:normal clamp(34px,5vw,48px)/1.12 Georgia,serif;
+  color:var(--marfil);margin:0 0 12px}
+.ciba-alimento .lead{color:#e8e2d5;font-size:19px;margin:0}
+.ciba-alimento .hero-image{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;
+  border-radius:10px;margin-top:22px;background:#e8dfd0}
+.ciba-alimento .chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.ciba-alimento .chip{font:12px Arial,sans-serif;background:var(--crema);
+  color:var(--verde);padding:7px 11px;border-radius:20px}
+.ciba-alimento h2{font:normal clamp(23px,3.5vw,29px)/1.3 Georgia,serif;
+  color:var(--terracota);margin:38px 0 14px;padding-bottom:9px;
+  border-bottom:1px solid var(--borde)}
+.ciba-alimento h3{font:normal 20px Georgia,serif;color:var(--verde);margin:24px 0 8px}
+.ciba-alimento p{margin:0 0 16px}
+.ciba-alimento ul{padding-left:23px;margin:12px 0 22px}
+.ciba-alimento li{margin-bottom:10px;padding-left:4px}
+.ciba-alimento li::marker{color:var(--terracota)}
+.ciba-alimento .note{background:var(--crema);border-left:4px solid var(--terracota);
+  border-radius:0 9px 9px 0;padding:18px 21px;margin:22px 0}
+.ciba-alimento .age-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ciba-alimento .age{background:#f7f4ed;border:1px solid var(--borde);
+  border-radius:10px;padding:15px}
+.ciba-alimento .age strong{display:block;color:var(--verde);margin-bottom:7px}
+.ciba-alimento .recipe{border:1px solid var(--borde);border-radius:11px;
+  padding:18px;margin:14px 0}
+.ciba-alimento .recipe h3{margin-top:0}
+.ciba-alimento .media{background:var(--crema);border:1px solid var(--borde);
+  border-radius:12px;padding:18px;margin:24px 0}
+.ciba-alimento .video-link{display:inline-block;padding:10px 14px;border-radius:7px;
+  background:var(--noche);color:white;text-decoration:none;font: bold 13px Arial,sans-serif}
+.ciba-alimento .sources{background:#f4f1e9;border:1px solid var(--borde);
+  border-radius:12px;padding:22px;margin-top:40px}
+.ciba-alimento .sources h2{margin-top:0}
+.ciba-alimento .sources li{font-size:14px;line-height:1.6}
+.ciba-alimento .cite{font: bold 14px Arial,sans-serif;color:var(--terracota);
+  text-decoration:none;padding:0 2px}
+.ciba-alimento .closing{text-align:center;color:var(--verde);font:13px Arial,sans-serif;
+  border-top:1px solid var(--borde);padding-top:22px;margin-top:35px}
+@media(max-width:650px){
+ .ciba-alimento{width:calc(100% - 18px);padding:18px;margin:12px auto 30px;font-size:16px}
+ .ciba-alimento .hero{padding:21px}
+ .ciba-alimento .age-grid{grid-template-columns:1fr}
+}
+</style>
+
+<nav class="nav" aria-label="Navegación">
+  <a href="../index.html">← VOLVER A ALIMENTACIÓN</a>
+  <span>CIBA · BIBLIOTECA DE ALIMENTOS</span>
+</nav>
+
+<header class="hero">
+  <p class="eyebrow">FRUTAS · FICHA DE ALIMENTO</p>
+  <h1>Aguacate</h1>
+  <p class="lead">Cómo elegirlo, prepararlo y ofrecerlo de forma segura durante la alimentación complementaria.</p>
+  <!-- Sustituir por fotografía propia optimizada y alojada en el repositorio. -->
+  <img class="hero-image" src="[RUTA_IMAGEN_PRINCIPAL]" alt="Aguacate maduro abierto por la mitad, con pulpa verde y semilla visible">
+</header>
+
+<div class="chips" aria-label="Características">
+  <span class="chip">Fruta</span>
+  <span class="chip">Grasas insaturadas</span>
+  <span class="chip">Fibra</span>
+  <span class="chip">Textura blanda al madurar</span>
+</div>
+
+<h2>¿Qué es y qué aporta?</h2>
+<p>El aguacate es una fruta de pulpa cremosa. A diferencia de muchas frutas, aporta una cantidad apreciable de grasa, principalmente monoinsaturada. También contiene fibra, folato y potasio. Su composición exacta cambia según la variedad y el grado de madurez. <a class="cite" href="https://fdc.nal.usda.gov/food-search/" target="_blank" rel="noopener noreferrer" aria-label="Consultar composición en USDA FoodData Central">°</a></p>
+<p>Puede formar parte de una alimentación variada. No es un medicamento ni previene o cura por sí solo enfermedades. Su textura madura permite aplastarlo fácilmente con un tenedor.</p>
+
+<div class="note"><strong>Idea práctica:</strong> el aguacate no necesita azúcar, sal, miel ni condimentos para ofrecérselo al bebé. La pulpa madura puede aplastarse y servirse sola o mezclada con otro alimento ya conocido.</div>
+
+<h2>¿Desde qué edad puede ofrecerse?</h2>
+<p>Como otros alimentos complementarios, puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para comer: controla la cabeza y el cuello, se mantiene sentado con apoyo, lleva objetos a la boca y puede tragar el alimento. No se recomienda iniciar sólidos antes de los 4 meses. <a class="cite" href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html" target="_blank" rel="noopener noreferrer" aria-label="Consultar orientación de CDC">°</a></p>
+<p>Antes de comenzar la alimentación complementaria, la leche materna o la fórmula infantil siguen siendo el alimento principal. La recomendación general es iniciar los alimentos complementarios alrededor de los 6 meses y continuar ofreciendo leche materna o fórmula. <a class="cite" href="https://www.who.int/publications/i/item/9789240081864" target="_blank" rel="noopener noreferrer" aria-label="Consultar guía de OMS">°</a></p>
+
+<h2>Cómo ofrecerlo según la etapa</h2>
+<div class="age-grid">
+  <section class="age">
+    <strong>Alrededor de 6–8 meses</strong>
+    Pulpa bien madura, aplastada hasta una consistencia suave. Si hace falta, puede aligerarse con un poco de leche materna, fórmula preparada o agua potable.
+  </section>
+  <section class="age">
+    <strong>Alrededor de 9–11 meses</strong>
+    Puede ofrecerse aplastado con pequeños grumos blandos o en tiras anchas y blandas que el bebé pueda agarrar, siempre según sus habilidades.
+  </section>
+  <section class="age">
+    <strong>Desde los 12 meses</strong>
+    Puede incorporarse aplastado, en trozos pequeños y blandos o como parte de preparaciones familiares con poca sal y sin azúcares añadidos.
+  </section>
+</div>
+<p>Las edades son orientativas, no una prueba de desarrollo. La textura debe avanzar según las habilidades del niño y siempre con supervisión. <a class="cite" href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/tastes-and-textures.html" target="_blank" rel="noopener noreferrer" aria-label="Consultar guía de texturas de CDC">°</a></p>
+
+<h2>Preparación segura</h2>
+<ul>
+  <li>Lavarse las manos y lavar la superficie exterior del aguacate antes de abrirlo.</li>
+  <li>Elegir una pieza madura, sin moho ni zonas dañadas o con olor desagradable.</li>
+  <li>Retirar la cáscara y la semilla; ofrecer únicamente la pulpa.</li>
+  <li>Aplastar con un tenedor hasta conseguir la textura adecuada para el bebé.</li>
+  <li>Sentar al niño erguido y mantener a una persona adulta pendiente durante toda la comida.</li>
+  <li>No ofrecer trozos duros, grandes o resbaladizos que el niño no pueda manejar con seguridad.</li>
+</ul>
+<div class="note"><strong>Prevención del atragantamiento:</strong> la postura, el tamaño y la textura importan. El bebé debe comer sentado y supervisado; adapta cada preparación a sus capacidades. <a class="cite" href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html" target="_blank" rel="noopener noreferrer" aria-label="Consultar prevención de atragantamientos">°</a></div>
+
+<h2>Ideas sencillas para prepararlo</h2>
+<section class="recipe">
+  <h3>1. Aguacate aplastado</h3>
+  <p><strong>Ingredientes:</strong> pulpa de aguacate maduro.</p>
+  <p><strong>Preparación:</strong> retirar cáscara y semilla, aplastar muy bien con un tenedor y servir de inmediato. Ajustar la consistencia a la habilidad del bebé.</p>
+  <p><strong>Etapa:</strong> desde el inicio de la alimentación complementaria, si el bebé está preparado.</p>
+</section>
+<section class="recipe">
+  <h3>2. Aguacate con plátano fruta</h3>
+  <p><strong>Ingredientes:</strong> pulpa de aguacate y plátano fruta maduro.</p>
+  <p><strong>Preparación:</strong> aplastar ambos ingredientes hasta lograr la textura que el niño maneje. No añadir azúcar ni miel.</p>
+  <p><strong>Etapa:</strong> cuando ambos alimentos se hayan introducido y tolerado por separado.</p>
+</section>
+<section class="recipe">
+  <h3>3. Aguacate con boniato cocido</h3>
+  <p><strong>Ingredientes:</strong> aguacate maduro y boniato bien cocido.</p>
+  <p><strong>Preparación:</strong> aplastar y mezclar. Añadir un poco de agua potable o leche habitual del bebé si se necesita suavizar la preparación.</p>
+  <p><strong>Etapa:</strong> desde la alimentación complementaria, una vez que los ingredientes se hayan ofrecido por separado.</p>
+</section>
+
+<h2>Precauciones</h2>
+<ul>
+  <li>El aguacate puede provocar reacciones alérgicas, aunque no es uno de los alérgenos alimentarios más comunes. Si aparecen ronchas generalizadas, hinchazón, vómitos repetidos, tos o dificultad respiratoria, busca atención médica; ante dificultad para respirar o hinchazón de lengua o garganta, es una urgencia.</li>
+  <li>Si el bebé tiene alergias conocidas, eccema grave o antecedentes de reacciones alimentarias, consulta con su profesional de salud sobre la introducción de alimentos.</li>
+  <li>No añadas sal, azúcar ni miel. La miel está contraindicada antes de los 12 meses por el riesgo de botulismo infantil. <a class="cite" href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-avoid-or-limit.html" target="_blank" rel="noopener noreferrer" aria-label="Consultar alimentos que deben evitarse">°</a></li>
+  <li>Si el aguacate se mezcla con otros ingredientes, conserva y manipula la preparación de forma higiénica. Desecha los restos que hayan estado en contacto con la saliva del bebé.</li>
+</ul>
+
+<h2>Conservación en casa</h2>
+<p>El aguacate cortado se oscurece al contacto con el aire. Para la alimentación infantil es preferible preparar una pequeña cantidad justo antes de servir. Si guardas pulpa que no ha tocado la cuchara o la boca del bebé, refrigérala pronto en un recipiente limpio y tapado y úsala en un plazo breve; descártala si cambia de olor, aspecto o textura. Sigue las normas locales de seguridad alimentaria y no dejes alimentos perecederos a temperatura ambiente durante periodos prolongados.</p>
+
+<!--
+VIDEO DE YOUTUBE:
+Solo activar cuando se haya comprobado un video específico del canal.
+Sustituir [URL_VIDEO_VERIFICADO] y [TITULO_VIDEO].
+Si no existe un video realmente relacionado, eliminar este bloque.
+-->
+<section class="media">
+  <h2>Video relacionado</h2>
+  <p>Próximamente: video de Solo Sin Receta sobre el aguacate o una preparación que lo incluya, si encontramos una coincidencia directa.</p>
+  <a class="video-link" href="[URL_VIDEO_VERIFICADO]" target="_blank" rel="noopener noreferrer">Ver video en YouTube</a>
+</section>
+
+<section class="sources" aria-labelledby="fuentes-aguacate">
+  <h2 id="fuentes-aguacate">Fuentes y referencias</h2>
+  <ol>
+    <li><strong>USDA.</strong> <a href="https://fdc.nal.usda.gov/food-search/" target="_blank" rel="noopener noreferrer">FoodData Central</a>. Base de datos para consultar composición nutricional del aguacate. °</li>
+    <li><strong>CDC.</strong> <a href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html" target="_blank" rel="noopener noreferrer">When, What, and How to Introduce Solid Foods</a>. Señales de preparación y métodos de introducción. °</li>
+    <li><strong>OMS.</strong> <a href="https://www.who.int/publications/i/item/9789240081864" target="_blank" rel="noopener noreferrer">Guideline for complementary feeding of infants and young children 6–23 months of age</a>. Recomendaciones generales de alimentación complementaria. °</li>
+    <li><strong>CDC.</strong> <a href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/tastes-and-textures.html" target="_blank" rel="noopener noreferrer">Tastes and Textures</a>. Progresión de texturas según desarrollo. °</li>
+    <li><strong>CDC.</strong> <a href="https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html" target="_blank" rel="noopener noreferrer">Choking Hazards</a>. Prevención de atragantamientos. °</li>
+  </ol>
+  <p><small>Revisión documental del borrador: 8 de noviembre de 2026. Antes de publicar, comprobar nuevamente todos los enlaces y revisar el contenido con fuentes pediátricas y nutricionales aplicables.</small></p>
+</section>
+
+<footer class="closing">
+  <strong>CIBA · Crianza, Internet, Bienestar y Acompañamiento</strong>
+  <p>Crecer acompañados transforma el camino.</p>
+</footer>
+</article>
