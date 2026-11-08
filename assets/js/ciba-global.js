@@ -513,7 +513,7 @@
 
         const consulta = normalizar(entrada.value);
         if (!consulta) return;
-        const terminos = consulta.split(/\\s+/).filter((t) => t.length > 1 && !['mi','el','la','los','las','un','una','puede','pueden','dar','comer','para','desde','cuando','como','que','es','de','del','y','a','esta','este'].includes(t));
+        const terminos = consulta.split(/\s+/).filter((t) => t.length > 1 && !['mi','el','la','los','las','un','una','puede','pueden','dar','comer','para','desde','cuando','como','que','es','de','del','y','a','esta','este'].includes(t));
 
         resultados.replaceChildren(
           elemento(
