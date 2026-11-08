@@ -56,23 +56,30 @@
         const resumen = crear('p', 'ciba-alimento-resumen', alimento.resumen);
         cabecera.append(etiqueta, titulo, resumen);
 
-        if (alimento.imagen_principal?.url) {
+        const galeria = crear('div', 'ciba-alimento-galeria');
+        const fotografias = [
+          alimento.imagen_principal,
+          ...(alimento.imagenes || [])
+        ].filter((foto) => foto && foto.url);
+
+        fotografias.forEach((foto) => {
           const marco = crear('figure', 'ciba-alimento-foto');
           const img = document.createElement('img');
-          img.src = alimento.imagen_principal.url;
-          img.alt = alimento.imagen_principal.alt || alimento.nombre;
+          img.src = foto.url;
+          img.alt = foto.alt || alimento.nombre;
           img.loading = 'lazy';
           img.decoding = 'async';
           marco.appendChild(img);
 
-          if (alimento.imagen_principal.autor) {
+          if (foto.autor) {
             const creditos = crear('figcaption', '', '');
-            creditos.append('Fotografía: ' + alimento.imagen_principal.autor + ' · ');
-            enlazar(creditos, alimento.imagen_principal.atribucion_url, alimento.imagen_principal.licencia || 'Licencia');
+            creditos.append('Fotografía: ' + foto.autor + ' · ');
+            enlazar(creditos, foto.atribucion_url, foto.licencia || 'Licencia');
             marco.appendChild(creditos);
           }
-          detalle.appendChild(marco);
-        }
+          galeria.appendChild(marco);
+        });
+        if (fotografias.length) detalle.appendChild(galeria);
 
         detalle.appendChild(cabecera);
 
