@@ -1,3 +1,4 @@
+
 """Generador del catálogo CIBA con build atómico, allowlist y anti-symlink.
 
 Uso:
@@ -9,6 +10,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import shutil
 import sys
 import traceback
@@ -137,6 +139,76 @@ def _copiar_pagina_publica(
         rel_pagina,
     )
     errores.extend(errs_clean)
+
+    return errores
+
+
+def _conectar_sistema_global(
+    archivo_html: Path,
+    raiz_publica: Path,
+) -> list[ValidationError]:
+    """Añade el módulo global a una página pública."""
+    errores: list[ValidationError] = []
+
+    try:
+        contenido = archivo_html.read_text(encoding="utf-8")
+    except (OSError, UnicodeError) as exc:
+        errores.append(
+            ValidationError(
+                str(archivo_html),
+                "integración global",
+                f"no se pudo leer: {exc}",
+            )
+        )
+        return errores
+
+    # Evita insertar el mismo módulo dos veces.
+    if "data-ciba-global-script" in contenido or "ciba-global.js" in contenido:
+        return errores
+
+    script = raiz_publica / "assets" / "js" / "ciba-global.js"
+
+    if not script.is_file():
+        errores.append(
+            ValidationError(
+                str(archivo_html),
+                "integración global",
+                "no existe assets/js/ciba-global.js en la publicación",
+            )
+        )
+        return errores
+
+    ruta_relativa = Path(
+        os.path.relpath(script, archivo_html.parent)
+    ).as_posix()
+
+    etiqueta = (
+        f'<script type="module" src="{ruta_relativa}" '
+        'data-ciba-global-script></script>'
+    )
+
+    cierre = re.search(r"</body\s*>", contenido, flags=re.IGNORECASE)
+
+    if cierre:
+        contenido = (
+            contenido[:cierre.start()]
+            + etiqueta
+            + "\n"
+            + contenido[cierre.start():]
+        )
+    else:
+        contenido += "\n" + etiqueta + "\n"
+
+    try:
+        archivo_html.write_text(contenido, encoding="utf-8")
+    except (OSError, UnicodeError) as exc:
+        errores.append(
+            ValidationError(
+                str(archivo_html),
+                "integración global",
+                f"no se pudo guardar: {exc}",
+            )
+        )
 
     return errores
 
@@ -303,8 +375,44 @@ def _construir_en_tmp(
                     )
                 )
 
+    # Copiar los recursos compartidos del proyecto.
     errs_assets = _copiar_assets(src.parent, tmp)
     errores.extend(errs_assets)
+
+    # Verificar que los dos recursos globales estén disponibles.
+    script_global = tmp / "assets" / "js" / "ciba-global.js"
+    css_global = tmp / "assets" / "css" / "ciba-global.css"
+
+    if not script_global.is_file():
+        errores.append(
+            ValidationError(
+                "assets/js/ciba-global.js",
+                "sistema global",
+                "archivo ausente",
+            )
+        )
+
+    if not css_global.is_file():
+        errores.append(
+            ValidationError(
+                "assets/css/ciba-global.css",
+                "sistema global",
+                "archivo ausente",
+            )
+        )
+
+    if errores:
+        return errores
+
+    # Incorporar el menú y buscador a todas las páginas generadas.
+    paginas_html = sorted(tmp.rglob("index.html"))
+
+    for archivo_html in paginas_html:
+        errs_global = _conectar_sistema_global(
+            archivo_html,
+            tmp,
+        )
+        errores.extend(errs_global)
 
     return errores
 
