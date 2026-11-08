@@ -1035,6 +1035,95 @@
   .busqueda-procesando .busqueda-oraculo {
     animation: none !important;
   }
+}/* ÓRBITAS DEL NÚCLEO CIBA */
+
+.busqueda-oraculo {
+  position: relative;
+  width: 68px;
+  height: 68px;
+  flex: 0 0 68px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: radial-gradient(circle, #e9d4ad 0%, #d8c49b 28%, transparent 72%);
+  animation: nucleo-vivo 3s ease-in-out infinite;
+}
+
+.busqueda-oraculo .orbita {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.busqueda-oraculo .orbita-externa {
+  inset: 1px;
+  border: 1px solid #a9583e;
+  border-left-color: transparent;
+  animation: orbita-viva 5s linear infinite;
+}
+
+.busqueda-oraculo .orbita-interna {
+  inset: 8px;
+  border: 1px dashed #71846a;
+  animation: orbita-viva 8s linear infinite reverse;
+}
+
+.busqueda-oraculo .busqueda-espiral {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  color: #8e4935;
+  animation: espiral-viva 12s linear infinite;
+}
+
+.busqueda-oraculo .busqueda-espiral path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 150;
+  animation: luz-viva 3s ease-in-out infinite alternate;
+}
+
+.busqueda-oraculo .busqueda-punto {
+  position: absolute;
+  z-index: 3;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #bd7950;
+  box-shadow: 0 0 9px #d9b878;
+}
+
+.busqueda-oraculo .uno { top: 2px; left: 32px; }
+.busqueda-oraculo .dos { right: 2px; top: 32px; }
+.busqueda-oraculo .tres { left: 8px; bottom: 8px; }
+
+@keyframes orbita-viva {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes espiral-viva {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes nucleo-vivo {
+  0%, 100% { transform: scale(.94); }
+  50% { transform: scale(1.08); }
+}
+
+@keyframes luz-viva {
+  from { stroke-dashoffset: 0; opacity: .65; }
+  to { stroke-dashoffset: 45; opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .busqueda-oraculo,
+  .busqueda-oraculo * {
+    animation: none !important;
+  }
 }
   </style>
 </head>
@@ -1120,16 +1209,18 @@
           </div>
 
           <form class="busqueda-caja" id="form-busqueda" role="search">
-            <div class="busqueda-oraculo" aria-hidden="true">
+           <div class="busqueda-oraculo" aria-hidden="true">
+  <div class="orbita orbita-externa"></div>
+  <div class="orbita orbita-interna"></div>
+
   <svg class="busqueda-espiral" viewBox="0 0 100 100">
-    <path d="M50 50
-      C50 38 68 38 68 51
-      C68 72 35 76 28 53
-      C17 18 70 7 84 40
-      C101 80 53 101 21 78
-      C-9 48 17 5 55 9
-      C88 12 100 42 91 66"/>
+    <path d="M50 50 C50 35 70 38 70 52
+    C70 72 43 78 30 60
+    C10 32 43 10 66 20
+    C95 32 92 70 70 84
+    C42 103 8 78 13 45"/>
   </svg>
+
   <span class="busqueda-punto uno"></span>
   <span class="busqueda-punto dos"></span>
   <span class="busqueda-punto tres"></span>
