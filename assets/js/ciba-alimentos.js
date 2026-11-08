@@ -162,7 +162,7 @@
 
       function renderizar() {
         const consulta = normalizar(buscador.value);
-        const terminos = consulta.split(/\\s+/).filter((t) => t.length > 1 && !['mi','el','la','los','las','un','una','puede','pueden','dar','comer','para','desde','cuando','como','que','es','de','del','y','a'].includes(t));
+        const terminos = consulta.split(/\s+/).filter((t) => t.length > 1 && !['mi','el','la','los','las','un','una','puede','pueden','dar','comer','para','desde','cuando','como','que','es','de','del','y','a'].includes(t));
         const visibles = alimentos.map((alimento) => {
           const coincideCategoria = categoriaActiva === 'Todos' || alimento.categoria === categoriaActiva;
           const texto = normalizar([
