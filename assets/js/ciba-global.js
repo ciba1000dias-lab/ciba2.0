@@ -84,15 +84,16 @@
   async function obtenerAlimentos() {
     if (alimentos) return alimentos;
 
-    const respuesta = await fetch(RUTA_ALIMENTOS.href, {
-      cache: 'no-cache'
-    });
-
-    if (!respuesta.ok) {
-      throw new Error('No se pudo cargar la biblioteca de alimentos.');
-    }
-
-    alimentos = await respuesta.json();
+    const respuesta = await fetch(RUTA_ALIMENTOS.href, { cache: 'no-cache' });
+    if (!respuesta.ok) throw new Error('No se pudo cargar el índice de alimentos.');
+    const indice = await respuesta.json();
+    if (!Array.isArray(indice.archivos)) throw new Error('Índice de alimentos inválido.');
+    const grupos = await Promise.all(indice.archivos.map(async (archivo) => {
+      const r = await fetch(new URL(archivo, RAIZ).href, { cache: 'no-cache' });
+      if (!r.ok) throw new Error('No se pudo cargar ' + archivo);
+      return r.json();
+    }));
+    alimentos = { alimentos: grupos.flatMap((grupo) => Array.isArray(grupo.alimentos) ? grupo.alimentos : []) };
     return alimentos;
   }
 
@@ -512,6 +513,7 @@
 
         const consulta = normalizar(entrada.value);
         if (!consulta) return;
+        const terminos = consulta.split(/\\s+/).filter((t) => t.length > 1 && !['mi','el','la','los','las','un','una','puede','pueden','dar','comer','para','desde','cuando','como','que','es','de','del','y','a','esta','este'].includes(t));
 
         resultados.replaceChildren(
           elemento(
@@ -536,10 +538,11 @@
               pagina.subseccion,
               ...(pagina.palabras_clave || [])
             ].join(' '));
-            return contenido.includes(consulta);
+            const aciertos = terminos.filter((termino) => contenido.includes(termino)).length;
+            return terminos.length ? aciertos / terminos.length >= 0.5 : contenido.includes(consulta);
           });
 
-          const coincidenciasAlimentos = (datosAlimentos.alimentos || []).filter((alimento) => {
+          const coincidenciasAlimentos = (datosAlimentos.alimentos || []).map((alimento) => {
             const contenido = normalizar([
               alimento.nombre,
               alimento.categoria,
@@ -547,8 +550,9 @@
               ...(alimento.nombres_alternativos || []),
               ...(alimento.palabras_clave || [])
             ].join(' '));
-            return contenido.includes(consulta);
-          });
+            const aciertos = terminos.filter((termino) => contenido.includes(termino)).length;
+            return { alimento, puntuacion: terminos.length ? aciertos / terminos.length : (contenido.includes(consulta) ? 1 : 0) };
+          }).filter((item) => item.puntuacion >= 0.5).sort((a,b) => b.puntuacion-a.puntuacion).map((item) => item.alimento);
 
           resultados.replaceChildren();
 
