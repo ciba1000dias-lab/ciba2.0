@@ -1,7 +1,6 @@
-// CIBA · GLOBAL
-// Menú de navegación y buscador ancestral flotante.
 
-import { CIBA } from './core/config.js';
+// CIBA · SISTEMA GLOBAL
+// Navegación principal y buscador ancestral.
 
 (() => {
   'use strict';
@@ -9,30 +8,30 @@ import { CIBA } from './core/config.js';
   if (window.__CIBA_GLOBAL_INICIADO__) return;
   window.__CIBA_GLOBAL_INICIADO__ = true;
 
-  // Raíz real del proyecto, incluso desde páginas interiores.
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_CSS = new URL('../css/ciba-global.css', import.meta.url);
 
   let catalogo = null;
 
-  // ---------------------------------------
-  // HERRAMIENTAS
-  // ---------------------------------------
+  const columnas = [
+    { id: 'C', titulo: 'Crianza' },
+    { id: 'I', titulo: 'Internet' },
+    { id: 'B', titulo: 'Bienestar' },
+    { id: 'A', titulo: 'Acompañamiento' }
+  ];
 
   function elemento(etiqueta, clase, texto) {
     const nodo = document.createElement(etiqueta);
-
     if (clase) nodo.className = clase;
     if (texto !== undefined) nodo.textContent = texto;
-
     return nodo;
   }
 
   function enlace(ruta, texto, clase = '') {
-    const a = elemento('a', clase, texto);
-    a.href = ruta;
-    return a;
+    const nodo = elemento('a', clase, texto);
+    nodo.href = ruta;
+    return nodo;
   }
 
   function normalizar(texto) {
@@ -50,6 +49,11 @@ import { CIBA } from './core/config.js';
     ).href;
   }
 
+  function esPortada() {
+    const actual = window.location.pathname.replace(/index\.html$/, '');
+    return actual === RAIZ.pathname;
+  }
+
   function cargarEstilos() {
     if (document.getElementById('ciba-global-css')) return;
 
@@ -57,7 +61,6 @@ import { CIBA } from './core/config.js';
     css.id = 'ciba-global-css';
     css.rel = 'stylesheet';
     css.href = RUTA_CSS.href;
-
     document.head.appendChild(css);
   }
 
@@ -76,9 +79,56 @@ import { CIBA } from './core/config.js';
     return catalogo;
   }
 
-  // ---------------------------------------
-  // MENÚ HAMBURGUESA
-  // ---------------------------------------
+  function cerrarMenu(panel, boton) {
+    panel.classList.remove('abierto');
+    boton.setAttribute('aria-expanded', 'false');
+    boton.setAttribute('aria-label', 'Abrir menú de navegación');
+  }
+
+  function crearSubmenu(titulo, opciones, panel) {
+    const grupo = elemento('div', 'ciba-global-grupo');
+
+    const encabezado = elemento(
+      'a',
+      'ciba-global-enlace',
+      titulo
+    );
+
+    encabezado.href = '#';
+    encabezado.setAttribute('aria-expanded', 'false');
+
+    const lista = elemento('div', 'ciba-global-submenu');
+    lista.hidden = true;
+
+    encabezado.addEventListener('click', (evento) => {
+      evento.preventDefault();
+
+      const abierto = !lista.hidden;
+      lista.hidden = abierto;
+      encabezado.setAttribute('aria-expanded', String(!abierto));
+    });
+
+    opciones.forEach((opcion) => {
+      const item = elemento(
+        'a',
+        'ciba-global-enlace ciba-global-subenlace',
+        opcion
+      );
+
+      item.href = '#';
+      item.setAttribute('aria-disabled', 'true');
+      item.title = 'Apartado en preparación';
+
+      item.addEventListener('click', (evento) => {
+        evento.preventDefault();
+      });
+
+      lista.appendChild(item);
+    });
+
+    grupo.append(encabezado, lista);
+    panel.appendChild(grupo);
+  }
 
   function crearMenu() {
     if (document.querySelector('.ciba-global-menu')) return;
@@ -99,35 +149,27 @@ import { CIBA } from './core/config.js';
     panel.id = 'ciba-menu-panel';
     panel.setAttribute('aria-label', 'Navegación principal');
 
-    const titulo = elemento(
-      'h2',
-      'ciba-global-menu-titulo',
-      'EXPLORA CIBA'
+    panel.appendChild(
+      elemento('h2', 'ciba-global-menu-titulo', 'EXPLORA CIBA')
     );
 
-    panel.appendChild(titulo);
-
-    const inicio = enlace(
-      new URL('index.html', RAIZ).href,
-      'Inicio',
-      'ciba-global-enlace'
+    // INICIO
+    panel.appendChild(
+      enlace(
+        new URL('index.html', RAIZ).href,
+        'Inicio CIBA',
+        'ciba-global-enlace'
+      )
     );
 
-    panel.appendChild(inicio);
-
-    const columnas = [
-      { id: 'C', titulo: 'Crianza' },
-      { id: 'I', titulo: 'Internet' },
-      { id: 'B', titulo: 'Bienestar' },
-      { id: 'A', titulo: 'Acompañamiento' }
-    ];
-
+    // CUATRO COLUMNAS
     columnas.forEach((columna) => {
       const grupo = elemento('div', 'ciba-global-grupo');
 
       const encabezado = elemento(
         'a',
-        'ciba-global-enlace'
+        'ciba-global-enlace',
+        ''
       );
 
       encabezado.href = new URL('index.html#areas', RAIZ).href;
@@ -138,17 +180,66 @@ import { CIBA } from './core/config.js';
         columna.id
       );
 
-      const nombre = elemento(
-        'span',
-        '',
-        columna.titulo
-      );
+      const nombre = elemento('span', '', columna.titulo);
 
       encabezado.append(letra, nombre);
       grupo.appendChild(encabezado);
-
       panel.appendChild(grupo);
     });
+
+    // NAYARA Y TUREY
+    const dudas = enlace(
+      '#',
+      'Las dudas de Nayara y Turey',
+      'ciba-global-enlace'
+    );
+
+    dudas.setAttribute('aria-disabled', 'true');
+    dudas.title = 'Página en preparación';
+
+    dudas.addEventListener('click', (evento) => {
+      evento.preventDefault();
+    });
+
+    panel.appendChild(dudas);
+
+    // BUSCADOR
+    const buscar = enlace(
+      '#',
+      'BUSCADOR CIBA',
+      'ciba-global-enlace'
+    );
+
+    buscar.addEventListener('click', (evento) => {
+      evento.preventDefault();
+      cerrarMenu(panel, boton);
+
+      if (esPortada()) {
+        abrirBuscadorDePortada();
+      } else {
+        const oraculo = document.querySelector(
+          '.ciba-global-oraculo'
+        );
+
+        if (oraculo) oraculo.click();
+      }
+    });
+
+    panel.appendChild(buscar);
+
+    // SOBRE EL PROYECTO
+    crearSubmenu(
+      'Sobre el proyecto',
+      ['Desarrolladores del proyecto'],
+      panel
+    );
+
+    // CONFIGURACIÓN
+    crearSubmenu(
+      'Configuración',
+      ['Licencia Creative Commons'],
+      panel
+    );
 
     boton.addEventListener('click', () => {
       const abierto = panel.classList.toggle('abierto');
@@ -156,35 +247,37 @@ import { CIBA } from './core/config.js';
       boton.setAttribute('aria-expanded', String(abierto));
       boton.setAttribute(
         'aria-label',
-        abierto ? 'Cerrar menú de navegación' : 'Abrir menú de navegación'
+        abierto
+          ? 'Cerrar menú de navegación'
+          : 'Abrir menú de navegación'
       );
     });
 
     panel.addEventListener('click', (evento) => {
-      if (evento.target.closest('a')) {
-        panel.classList.remove('abierto');
-        boton.setAttribute('aria-expanded', 'false');
+      if (
+        evento.target.closest('a') &&
+        !evento.target.closest('.ciba-global-grupo > a')
+      ) {
+        cerrarMenu(panel, boton);
       }
     });
 
     document.addEventListener('click', (evento) => {
       if (!contenedor.contains(evento.target)) {
-        panel.classList.remove('abierto');
-        boton.setAttribute('aria-expanded', 'false');
+        cerrarMenu(panel, boton);
       }
     });
 
     document.addEventListener('keydown', (evento) => {
       if (evento.key === 'Escape') {
-        panel.classList.remove('abierto');
-        boton.setAttribute('aria-expanded', 'false');
+        cerrarMenu(panel, boton);
       }
     });
 
     contenedor.append(boton, panel);
     document.body.appendChild(contenedor);
 
-    // Completar los enlaces con las áreas publicadas.
+    // Conectar cada columna con su primera área disponible.
     obtenerCatalogo()
       .then((datos) => {
         const grupos = panel.querySelectorAll(
@@ -193,39 +286,57 @@ import { CIBA } from './core/config.js';
 
         columnas.forEach((columna, indice) => {
           const grupo = grupos[indice];
+          if (!grupo) return;
+
           const encabezado = grupo.querySelector('a');
 
-          const areas = (datos.areas || []).filter(
-            (area) => area.columna === columna.id
-          );
+          const areas = (datos.areas || [])
+            .filter((area) => area.columna === columna.id)
+            .sort((a, b) => (a.orden || 0) - (b.orden || 0));
 
           if (areas.length) {
             encabezado.href = urlPublica(
               areas[0].ruta_publica
             );
           }
-
-          areas.forEach((area) => {
-            const subenlace = enlace(
-              urlPublica(area.ruta_publica),
-              area.titulo,
-              'ciba-global-enlace ciba-global-subenlace'
-            );
-
-            grupo.appendChild(subenlace);
-          });
         });
       })
       .catch((error) => {
-        console.warn('CIBA: no se pudieron cargar las áreas.', error);
+        console.warn(
+          'CIBA: no se pudieron cargar las rutas de las columnas.',
+          error
+        );
       });
   }
 
-  // ---------------------------------------
-  // BUSCADOR ANCESTRAL
-  // ---------------------------------------
+  function abrirBuscadorDePortada() {
+    const formulario = document.querySelector(
+      '#form-busqueda, form.busqueda, .busqueda form'
+    );
+
+    const entrada = document.querySelector(
+      '#consulta, input[type="search"]'
+    );
+
+    const destino = formulario ||
+      document.querySelector('.busqueda');
+
+    if (destino) {
+      destino.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      });
+    }
+
+    if (entrada) {
+      setTimeout(() => entrada.focus(), 400);
+    }
+  }
 
   function crearBuscador() {
+    // La portada conserva su buscador normal.
+    if (esPortada()) return;
+
     if (document.querySelector('.ciba-global-buscador')) return;
 
     const contenedor = elemento(
@@ -244,9 +355,15 @@ import { CIBA } from './core/config.js';
       'Abrir buscador ancestral de CIBA'
     );
     boton.setAttribute('aria-expanded', 'false');
-    boton.setAttribute('aria-controls', 'ciba-busqueda-panel');
+    boton.setAttribute(
+      'aria-controls',
+      'ciba-busqueda-panel'
+    );
 
-    const orbita = elemento('span', 'ciba-global-orbita');
+    const orbita = elemento(
+      'span',
+      'ciba-global-orbita'
+    );
 
     const svg = document.createElementNS(
       'http://www.w3.org/2000/svg',
@@ -282,7 +399,10 @@ import { CIBA } from './core/config.js';
     );
 
     panel.id = 'ciba-busqueda-panel';
-    panel.setAttribute('aria-label', 'Buscador de CIBA');
+    panel.setAttribute(
+      'aria-label',
+      'Buscador de CIBA'
+    );
 
     const cabecera = elemento(
       'div',
@@ -302,7 +422,10 @@ import { CIBA } from './core/config.js';
     );
 
     cerrar.type = 'button';
-    cerrar.setAttribute('aria-label', 'Cerrar buscador');
+    cerrar.setAttribute(
+      'aria-label',
+      'Cerrar buscador'
+    );
 
     cabecera.append(titulo, cerrar);
 
@@ -318,7 +441,10 @@ import { CIBA } from './core/config.js';
 
     entrada.type = 'search';
     entrada.placeholder = '¿Qué deseas encontrar?';
-    entrada.setAttribute('aria-label', 'Buscar en CIBA');
+    entrada.setAttribute(
+      'aria-label',
+      'Buscar en CIBA'
+    );
     entrada.autocomplete = 'off';
     entrada.required = true;
 
@@ -329,7 +455,6 @@ import { CIBA } from './core/config.js';
     );
 
     enviar.type = 'submit';
-
     formulario.append(entrada, enviar);
 
     const resultados = elemento(
@@ -350,7 +475,7 @@ import { CIBA } from './core/config.js';
       panel.classList.add('abierto');
       boton.setAttribute('aria-expanded', 'true');
 
-      setTimeout(() => entrada.focus(), 100);
+      setTimeout(() => entrada.focus(), 150);
     }
 
     boton.addEventListener('click', () => {
@@ -363,86 +488,89 @@ import { CIBA } from './core/config.js';
 
     cerrar.addEventListener('click', cerrarPanel);
 
-    formulario.addEventListener('submit', async (evento) => {
-      evento.preventDefault();
+    formulario.addEventListener(
+      'submit',
+      async (evento) => {
+        evento.preventDefault();
 
-      const consulta = normalizar(entrada.value);
-
-      if (!consulta) return;
-
-      resultados.replaceChildren(
-        elemento(
-          'p',
-          'ciba-global-mensaje',
-          'Consultando el conocimiento de CIBA...'
-        )
-      );
-
-      try {
-        const datos = await obtenerCatalogo();
-        const paginas = datos.paginas || [];
-
-        const coincidencias = paginas.filter((pagina) => {
-          const contenido = normalizar([
-            pagina.titulo,
-            pagina.descripcion,
-            pagina.id,
-            pagina.area,
-            ...(pagina.palabras_clave || [])
-          ].join(' '));
-
-          return contenido.includes(consulta);
-        });
-
-        resultados.replaceChildren();
-
-        if (!coincidencias.length) {
-          resultados.appendChild(
-            elemento(
-              'p',
-              'ciba-global-mensaje',
-              'No encontramos coincidencias. Prueba con otras palabras.'
-            )
-          );
-
-          return;
-        }
-
-        coincidencias.slice(0, 10).forEach((pagina) => {
-          const resultado = enlace(
-            urlPublica(pagina.ruta_publica),
-            '',
-            'ciba-global-resultado'
-          );
-
-          const nombre = elemento(
-            'strong',
-            '',
-            pagina.titulo || 'Contenido de CIBA'
-          );
-
-          const descripcion = elemento(
-            'small',
-            '',
-            pagina.descripcion || 'Explorar contenido'
-          );
-
-          resultado.append(nombre, descripcion);
-          resultados.appendChild(resultado);
-        });
-
-      } catch (error) {
-        console.error('CIBA: error en el buscador.', error);
+        const consulta = normalizar(entrada.value);
+        if (!consulta) return;
 
         resultados.replaceChildren(
           elemento(
             'p',
             'ciba-global-mensaje',
-            'No pudimos consultar el catálogo. Inténtalo de nuevo.'
+            'Consultando el conocimiento de CIBA...'
           )
         );
+
+        try {
+          const datos = await obtenerCatalogo();
+          const paginas = datos.paginas || [];
+
+          const coincidencias = paginas.filter((pagina) => {
+            const contenido = normalizar([
+              pagina.titulo,
+              pagina.descripcion,
+              pagina.id,
+              pagina.area,
+              ...(pagina.palabras_clave || [])
+            ].join(' '));
+
+            return contenido.includes(consulta);
+          });
+
+          resultados.replaceChildren();
+
+          if (!coincidencias.length) {
+            resultados.appendChild(
+              elemento(
+                'p',
+                'ciba-global-mensaje',
+                'No encontramos coincidencias. Prueba con otras palabras.'
+              )
+            );
+            return;
+          }
+
+          coincidencias.slice(0, 10).forEach((pagina) => {
+            const resultado = enlace(
+              urlPublica(pagina.ruta_publica),
+              '',
+              'ciba-global-resultado'
+            );
+
+            const nombre = elemento(
+              'strong',
+              '',
+              pagina.titulo || 'Contenido de CIBA'
+            );
+
+            const descripcion = elemento(
+              'small',
+              '',
+              pagina.descripcion || 'Explorar contenido'
+            );
+
+            resultado.append(nombre, descripcion);
+            resultados.appendChild(resultado);
+          });
+        } catch (error) {
+          console.error(
+            'CIBA: error en el buscador.',
+            error
+          );
+
+          resultados.replaceChildren(
+            elemento(
+              'p',
+              'ciba-global-mensaje',
+              'No pudimos consultar el catálogo. Inténtalo de nuevo.'
+            )
+          );
+        }
       }
-    });
+    );
 
     document.addEventListener('click', (evento) => {
       if (!contenedor.contains(evento.target)) {
@@ -451,18 +579,12 @@ import { CIBA } from './core/config.js';
     });
 
     document.addEventListener('keydown', (evento) => {
-      if (evento.key === 'Escape') {
-        cerrarPanel();
-      }
+      if (evento.key === 'Escape') cerrarPanel();
     });
 
     contenedor.append(boton, etiqueta, panel);
     document.body.appendChild(contenedor);
   }
-
-  // ---------------------------------------
-  // INICIO
-  // ---------------------------------------
 
   function iniciar() {
     cargarEstilos();
@@ -473,11 +595,12 @@ import { CIBA } from './core/config.js';
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', iniciar, {
-      once: true
-    });
+    document.addEventListener(
+      'DOMContentLoaded',
+      iniciar,
+      { once: true }
+    );
   } else {
     iniciar();
   }
-
 })();
