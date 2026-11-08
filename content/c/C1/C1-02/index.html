@@ -1,0 +1,813 @@
+
+<article class="ciba-articulo articulo-crianza">
+
+<style>
+  .ciba-articulo {
+    --verde: #536b51;
+    --verde-oscuro: #203a32;
+    --terracota: #a65d43;
+    --marfil: #fffdf8;
+    --crema: #f4efe5;
+    --tinta: #302d27;
+    --suave: #786e60;
+    --borde: #e8dfd0;
+
+    box-sizing: border-box;
+    width: min(94%, 960px);
+    margin: 30px auto 65px;
+    padding: clamp(22px, 5vw, 58px);
+    color: var(--tinta);
+    background: var(--marfil);
+    border: 1px solid var(--borde);
+    border-top: 5px solid var(--verde);
+    border-radius: 14px;
+    box-shadow: 0 12px 36px rgba(38, 48, 38, .07);
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 1.85;
+  }
+
+  .ciba-articulo *,
+  .ciba-articulo *::before,
+  .ciba-articulo *::after {
+    box-sizing: border-box;
+  }
+
+  .ciba-articulo .navegacion-articulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 35px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid var(--borde);
+    font-family: Arial, sans-serif;
+  }
+
+  .ciba-articulo .volver {
+    color: var(--verde);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: .04em;
+  }
+
+  .ciba-articulo .volver:hover {
+    color: var(--terracota);
+    text-decoration: underline;
+  }
+
+  .ciba-articulo .identidad {
+    color: var(--suave);
+    font-size: 11px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+  }
+
+  .ciba-articulo .cabecera-articulo {
+    padding: 30px clamp(20px, 4vw, 42px);
+    margin: 0 -10px 38px;
+    color: #fffdf8;
+    background: var(--verde-oscuro);
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ciba-articulo .cabecera-articulo::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    right: -65px;
+    bottom: -100px;
+    border: 1px solid rgba(255,255,255,.17);
+    border-radius: 50%;
+    box-shadow:
+      0 0 0 18px rgba(255,255,255,.035),
+      0 0 0 38px rgba(255,255,255,.025);
+    pointer-events: none;
+  }
+
+  .ciba-articulo .etiqueta {
+    position: relative;
+    z-index: 1;
+    color: #d8c39a;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: .17em;
+    text-transform: uppercase;
+    margin: 0 0 18px;
+  }
+
+  .ciba-articulo h1 {
+    position: relative;
+    z-index: 1;
+    color: #fffdf8;
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.15;
+    font-weight: normal;
+    margin: 0 0 20px;
+    max-width: 740px;
+  }
+
+  .ciba-articulo .bajada {
+    position: relative;
+    z-index: 1;
+    color: #e8e2d5;
+    font-size: clamp(17px, 2.5vw, 20px);
+    line-height: 1.65;
+    margin: 0;
+    max-width: 720px;
+  }
+
+  .ciba-articulo .nota {
+    background: var(--crema);
+    border-left: 4px solid var(--terracota);
+    padding: 21px 24px;
+    margin: 30px 0;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .ciba-articulo h2 {
+    color: var(--terracota);
+    font-family: Georgia, serif;
+    font-size: clamp(24px, 3.5vw, 29px);
+    line-height: 1.3;
+    font-weight: normal;
+    margin: 45px 0 17px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid var(--borde);
+  }
+
+  .ciba-articulo h3 {
+    color: var(--verde);
+    font-size: 21px;
+    font-weight: normal;
+    margin: 30px 0 12px;
+  }
+
+  .ciba-articulo p {
+    margin: 0 0 20px;
+  }
+
+  .ciba-articulo ul,
+  .ciba-articulo ol {
+    padding-left: 25px;
+    margin: 20px 0 28px;
+  }
+
+  .ciba-articulo li {
+    padding-left: 5px;
+    margin-bottom: 13px;
+  }
+
+  .ciba-articulo li::marker {
+    color: var(--terracota);
+  }
+
+  .ciba-articulo strong {
+    color: #514438;
+  }
+
+  .ciba-articulo .cita {
+    display: inline-block;
+    color: var(--terracota);
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 2px;
+  }
+
+  .ciba-articulo .cita:hover {
+    color: var(--verde);
+    text-decoration: underline;
+  }
+
+  .ciba-articulo .fuentes {
+    margin-top: 55px;
+    padding: 27px;
+    background: #f4f1e9;
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+  }
+
+  .ciba-articulo .fuentes h2 {
+    margin: 0 0 18px;
+    font-size: 25px;
+  }
+
+  .ciba-articulo .fuentes-intro {
+    color: var(--suave);
+    font-size: 14px;
+  }
+
+  .ciba-articulo .lista-fuentes {
+    padding-left: 22px;
+    margin-bottom: 0;
+  }
+
+  .ciba-articulo .lista-fuentes li {
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .ciba-articulo .lista-fuentes a {
+    color: var(--verde);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .ciba-articulo .fecha-revision {
+    margin-top: 20px;
+    color: var(--suave);
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+  }
+
+  .ciba-articulo .cierre {
+    margin-top: 48px;
+    padding-top: 25px;
+    border-top: 1px solid var(--borde);
+    color: var(--verde);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+  }
+
+  .ciba-articulo .cierre strong {
+    color: var(--verde);
+    letter-spacing: .06em;
+  }
+
+  .ciba-articulo .cierre p {
+    margin: 9px 0 0;
+    font-family: Georgia, serif;
+    font-style: italic;
+  }
+
+  @media (max-width: 600px) {
+    .ciba-articulo {
+      width: calc(100% - 20px);
+      margin: 14px auto 35px;
+      padding: 20px 18px 32px;
+      font-size: 16px;
+      border-radius: 11px;
+    }
+
+    .ciba-articulo .cabecera-articulo {
+      margin-left: -5px;
+      margin-right: -5px;
+      padding: 25px 20px;
+    }
+
+    .ciba-articulo .navegacion-articulo {
+      margin-bottom: 25px;
+    }
+
+    .ciba-articulo .nota {
+      padding: 18px;
+    }
+
+    .ciba-articulo .fuentes {
+      padding: 19px;
+    }
+  }
+</style>
+
+<nav class="navegacion-articulo" aria-label="Navegación del artículo">
+  <a class="volver" href="../index.html">
+    ← VOLVER A CRIANZA
+  </a>
+  <span class="identidad">CIBA · Conocimiento y acompañamiento</span>
+</nav>
+
+<header class="cabecera-articulo">
+  <p class="etiqueta">C · Crianza y desarrollo</p>
+
+  <h1>El apego y la construcción de vínculos seguros</h1>
+
+  <p class="bajada">
+    Sentirse protegido, escuchado y acompañado constituye
+    una base importante para crecer. Los vínculos afectivos
+    se construyen día a día, mediante pequeños encuentros
+    de cuidado, confianza y disponibilidad.
+  </p>
+</header>
+
+<div class="nota">
+  <strong>Una idea fundamental:</strong>
+  un vínculo seguro no nace de la perfección de quien cuida.
+  Se construye mediante experiencias repetidas de afecto,
+  protección y respuesta sensible. Las personas cuidadoras
+  también necesitan descanso, apoyo y comprensión.
+  <a class="cita"
+     href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13036395/"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Consultar revisión científica sobre sensibilidad del cuidador">°</a>
+</div>
+
+<h2>¿Qué es el apego?</h2>
+
+<p>
+  El apego es el vínculo afectivo que lleva a niñas y niños
+  a buscar cercanía, protección y consuelo en determinadas
+  personas cuidadoras, especialmente cuando sienten miedo,
+  malestar, cansancio o inseguridad.
+</p>
+
+<p>
+  No es simplemente cariño, obediencia o dependencia.
+  Es una relación que ofrece seguridad emocional y ayuda
+  al niño a afrontar situaciones difíciles mientras va
+  descubriendo el mundo que lo rodea.
+  <a class="cita"
+     href="https://www.ncbi.nlm.nih.gov/books/NBK356196/"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Consultar información científica sobre el apego infantil">°</a>
+</p>
+
+<p>
+  El apego tampoco es una característica aislada del niño.
+  Se comprende dentro de una relación concreta, construida
+  a partir de las experiencias compartidas entre el niño
+  y sus figuras de cuidado.
+</p>
+
+<h2>¿Cómo se construye un vínculo seguro?</h2>
+
+<p>
+  Durante los primeros años, los niños expresan sus
+  necesidades de distintas maneras: lloran, miran,
+  sonríen, buscan contacto, señalan objetos, emiten sonidos
+  o se acercan a una persona conocida.
+</p>
+
+<p>
+  Cuando una persona cuidadora observa esas señales,
+  intenta comprenderlas y responde de manera adecuada,
+  el niño va acumulando experiencias de confianza.
+  <a class="cita"
+     href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13036395/"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Consultar investigación sobre sensibilidad del cuidador">°</a>
+</p>
+
+<p>
+  No se trata de adivinar siempre lo que necesita ni de
+  satisfacer inmediatamente cada deseo. Se trata de
+  mantener una disposición afectuosa y atenta, adaptada
+  a la edad, las circunstancias y las necesidades
+  particulares de cada niño.
+</p>
+
+<h2>La seguridad como base para explorar</h2>
+
+<p>
+  Una relación de apego segura puede funcionar de dos
+  maneras complementarias.
+</p>
+
+<h3>Un lugar al que regresar</h3>
+
+<p>
+  Cuando el niño siente miedo, cansancio o tristeza,
+  puede buscar a su persona cuidadora para recibir
+  consuelo, protección y acompañamiento.
+</p>
+
+<h3>Un punto de partida para descubrir</h3>
+
+<p>
+  Cuando se siente tranquilo, puede explorar objetos,
+  jugar, conocer personas y probar nuevas habilidades,
+  sabiendo que cuenta con alguien a quien acudir
+  cuando necesite ayuda.
+</p>
+
+<p>
+  Esta combinación de protección y exploración se conoce
+  como base segura. No significa que el niño nunca
+  experimente miedo o angustia, sino que dispone de
+  una relación a la que puede recurrir.
+  <a class="cita"
+     href="https://www.ncbi.nlm.nih.gov/books/NBK588774/"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Consultar revisión sobre relaciones de apego">°</a>
+</p>
+
+<h2>Las pequeñas interacciones también construyen vínculos</h2>
+
+<p>
+  Muchas experiencias importantes ocurren en momentos
+  cotidianos: alimentar, vestir, bañar, consolar, jugar,
+  conversar o acompañar al niño mientras observa algo
+  que despierta su curiosidad.
+</p>
+
+<p>
+  El Centro para el Desarrollo Infantil de la Universidad
+  de Harvard describe estas interacciones como intercambios
+  de ida y vuelta. El niño expresa una señal y la persona
+  adulta responde con atención, palabras, gestos o contacto
+  afectuoso.
+  <a class="cita"
+     href="https://developingchild.harvard.edu/key-concept/serve-and-return/"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Consultar el concepto de interacciones de ida y vuelta de Harvard">°</a>
+</p>
+
+<p>
+  Por ejemplo, un bebé señala una luz. La persona cuidadora
+  mira hacia ella y comenta: «¡Mira qué brillante!».
+  El bebé sonríe y vuelve a mirar. Ese pequeño intercambio
+  es una oportunidad para compartir atención, comunicación
+  y cercanía.
+</p>
+
+<p>
+  UNICEF también destaca la importancia de observar,
+  interpretar y responder apropiadamente a las señales
+  infantiles durante el juego y las actividades cotidianas.
+  <a class="cita"
+     href="https://www.unicef.org/documents/care-child-development"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Consultar el programa de cuidado para el desarrollo infantil de UNICEF">°</a>
+</p>
+
+<h2>¿Qué necesita un niño de sus personas cuidadoras?</h2>
+
+<p>
+  No existe una fórmula única para todas las familias.
+  Sin embargo, algunas experiencias ayudan a construir
+  relaciones afectivas protectoras:
+</p>
+
+<ul>
+  <li>
+    <strong>Disponibilidad:</strong>
+    intentar estar presentes cuando el niño necesita
+    atención, ayuda o consuelo.
+  </li>
+
+  <li>
+    <strong>Sensibilidad:</strong>
+    observar sus gestos, expresiones y comportamientos
+    para comprender qué podría estar necesitando.
+  </li>
+
+  <li>
+    <strong>Afecto:</strong>
+    expresar cariño mediante palabras, miradas,
+    gestos y contacto físico respetuoso.
+  </li>
+
+  <li>
+    <strong>Protección:</strong>
+    ofrecer un entorno seguro y actuar para evitar
+    situaciones de daño.
+  </li>
+
+  <li>
+    <strong>Previsibilidad:</strong>
+    procurar rutinas y respuestas suficientemente
+    estables que ayuden al niño a comprender su entorno.
+  </li>
+
+  <li>
+    <strong>Respeto:</strong>
+    reconocer que cada niño tiene temperamento,
+    necesidades y ritmos propios.
+  </li>
+</ul>
+
+<h2>¿Quiénes pueden construir vínculos de apego?</h2>
+
+<p>
+  El apego no pertenece exclusivamente a la madre.
+  Un niño puede construir relaciones afectivas importantes
+  con distintas personas que participan de manera estable
+  y sensible en su cuidado.
+</p>
+
+<p>
+  El padre, los abuelos, otros familiares, las personas
+  cuidadoras y determinados adultos de referencia pueden
+  formar parte de su red de protección y confianza.
+</p>
+
+<p>
+  Lo importante no es competir por ocupar el primer lugar,
+  sino ofrecer al niño relaciones seguras, respetuosas
+  y suficientemente estables.
+</p>
+
+<h2>¿Qué ocurre cuando las personas adultas se equivocan?</h2>
+
+<p>
+  Todas las personas cuidadoras pueden sentirse cansadas,
+  distraídas, preocupadas o sobrepasadas. En ocasiones
+  interpretan mal una señal, pierden la paciencia o no
+  consiguen responder como hubieran querido.
+</p>
+
+<p>
+  Un vínculo seguro no exige una respuesta perfecta
+  en cada momento. También se construye cuando la persona
+  adulta reconoce lo ocurrido, recupera la calma y vuelve
+  a acercarse al niño con afecto y disposición para reparar
+  el desencuentro.
+</p>
+
+<p>
+  Una disculpa sencilla, una conversación adecuada a la
+  edad, un abrazo si el niño lo acepta o un momento de juego
+  compartido pueden ayudar a restablecer la conexión.
+</p>
+
+<div class="nota">
+  <strong>Recordemos:</strong>
+  cuidar bien no significa no equivocarse nunca.
+  Significa procurar relaciones protectoras, reconocer
+  las dificultades y buscar maneras de volver a conectar.
+</div>
+
+<h2>El apego no debe utilizarse para etiquetar a los niños</h2>
+
+<p>
+  En la investigación científica se describen distintos
+  patrones de apego. Estas categorías proceden de métodos
+  de observación especializados y permiten estudiar
+  determinadas características de las relaciones.
+</p>
+
+<p>
+  No son etiquetas que una familia deba asignar a un niño
+  observando un comportamiento aislado. Tampoco permiten
+  determinar por sí solas su personalidad, su futuro
+  o la calidad de toda una familia.
+</p>
+
+<p>
+  Un niño que llora al separarse, que necesita más consuelo
+  o que prefiere explorar por su cuenta no debe ser
+  diagnosticado a partir de esas conductas.
+  La edad, el temperamento, el contexto y las experiencias
+  también importan.
+</p>
+
+<p>
+  La investigación contemporánea recomienda comprender
+  las relaciones de apego desde una perspectiva amplia,
+  sin convertir sus categorías en juicios sobre las
+  personas cuidadoras.
+  <a class="cita"
+     href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13102048/"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Consultar revisión profesional sobre teoría e investigación del apego">°</a>
+</p>
+
+<h2>¿Cómo fortalecer el vínculo en la vida cotidiana?</h2>
+
+<ul>
+  <li>
+    Dedicar algunos momentos del día a compartir atención
+    sin distracciones.
+  </li>
+
+  <li>
+    Observar qué despierta el interés del niño y acompañar
+    su curiosidad.
+  </li>
+
+  <li>
+    Escuchar y reconocer sus emociones, incluso cuando
+    no podamos satisfacer lo que solicita.
+  </li>
+
+  <li>
+    Ofrecer consuelo cuando experimente miedo, frustración
+    o tristeza.
+  </li>
+
+  <li>
+    Mantener límites claros y respetuosos, sin recurrir
+    a humillaciones ni amenazas.
+  </li>
+
+  <li>
+    Procurar rutinas de cuidado que aporten tranquilidad
+    y previsibilidad.
+  </li>
+
+  <li>
+    Compartir las responsabilidades de crianza y permitir
+    que el niño construya vínculos con otras personas
+    cuidadoras de confianza.
+  </li>
+
+  <li>
+    Buscar apoyo cuando el cansancio, el estrés o las
+    dificultades familiares hagan más complicado cuidar.
+  </li>
+</ul>
+
+<h2>Las personas cuidadoras también necesitan cuidado</h2>
+
+<p>
+  La construcción de vínculos seguros no depende solamente
+  de la voluntad individual. Las condiciones de vida,
+  el descanso, la salud, los recursos económicos, las
+  redes familiares y el apoyo comunitario influyen en
+  las posibilidades de ofrecer cuidados sensibles.
+</p>
+
+<p>
+  Por eso, acompañar a la infancia también implica
+  acompañar a quienes cuidan. Pedir ayuda, compartir
+  responsabilidades y contar con espacios de apoyo
+  no son señales de debilidad.
+</p>
+
+<p>
+  Harvard destaca que las dificultades económicas,
+  los problemas de salud y la falta de apoyo pueden
+  hacer más difícil mantener interacciones sensibles
+  y constantes. Fortalecer las condiciones de vida
+  de las familias también favorece el desarrollo infantil.
+  <a class="cita"
+     href="https://developingchild.harvard.edu/key-concept/serve-and-return/"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Consultar información de Harvard sobre relaciones y apoyo a cuidadores">°</a>
+</p>
+
+<div class="nota">
+  <strong>¿Cuándo buscar orientación?</strong>
+
+  <p>
+    Si existen dificultades persistentes en la relación,
+    experiencias de violencia, rechazo intenso, situaciones
+    traumáticas o un malestar emocional que afecta la vida
+    familiar, puede ser útil consultar con profesionales
+    de salud mental, pediatría o desarrollo infantil.
+  </p>
+
+  <p>
+    La orientación profesional debe comprender las
+    circunstancias de cada familia y ofrecer apoyo
+    sin culpabilizar ni emitir conclusiones apresuradas.
+  </p>
+</div>
+
+<h2>Un vínculo que se construye cada día</h2>
+
+<p>
+  Los vínculos seguros no se fabrican siguiendo una lista
+  de instrucciones ni aparecen de un día para otro.
+  Se desarrollan mediante muchas experiencias compartidas:
+  una mirada atenta, una respuesta afectuosa, una mano
+  que acompaña, una palabra que tranquiliza y una persona
+  que procura estar disponible.
+</p>
+
+<p>
+  Cada familia tiene su propia historia y sus desafíos.
+  Lo importante es avanzar hacia relaciones donde niñas
+  y niños puedan sentirse protegidos, reconocidos y libres
+  para descubrir el mundo con confianza.
+</p>
+
+<p>
+  Criar también es aprender a relacionarnos. Y en ese
+  aprendizaje, tanto los niños como las personas adultas
+  merecen respeto, comprensión y acompañamiento.
+</p>
+
+<section class="fuentes" aria-labelledby="titulo-fuentes">
+
+  <h2 id="titulo-fuentes">Fuentes y referencias</h2>
+
+  <p class="fuentes-intro">
+    Referencias científicas e institucionales consultadas
+    para contrastar los contenidos de este artículo.
+    Los símbolos ° permiten acceder a las fuentes
+    relacionadas con las afirmaciones.
+  </p>
+
+  <ol class="lista-fuentes">
+
+    <li>
+      <strong>
+        Nivison, M. D. y colaboradores (2026).
+      </strong>
+      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13036395/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Annual Research Review: The role of caregiver
+        sensitivity in children's developmental outcomes
+        – an umbrella review.
+      </a>
+      Journal of Child Psychology and Psychiatry.
+      Revisión de revisiones científicas sobre la relación
+      entre sensibilidad del cuidado, seguridad del apego
+      y resultados del desarrollo.
+    </li>
+
+    <li>
+      <strong>
+        Center on the Developing Child, Harvard University.
+      </strong>
+      <a href="https://developingchild.harvard.edu/key-concept/serve-and-return/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Serve and Return.
+      </a>
+      Explicación científica de las interacciones
+      de ida y vuelta entre niños pequeños y adultos
+      cuidadores, y su importancia para el desarrollo.
+    </li>
+
+    <li>
+      <strong>UNICEF y Organización Mundial de la Salud.</strong>
+      <a href="https://www.unicef.org/documents/care-child-development"
+         target="_blank"
+         rel="noopener noreferrer">
+        Care for Child Development.
+      </a>
+      Orientaciones basadas en evidencia sobre cuidado
+      sensible, juego, comunicación y respuesta a las
+      señales infantiles. Incluye adaptación para
+      América Latina y el Caribe.
+    </li>
+
+    <li>
+      <strong>National Center for Biotechnology Information.</strong>
+      <a href="https://www.ncbi.nlm.nih.gov/books/NBK356196/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Introduction to Children's Attachment.
+      </a>
+      Revisión introductoria sobre teoría del apego,
+      base segura y relaciones entre cuidadores y niños.
+    </li>
+
+    <li>
+      <strong>National Institute for Health and Care Research.</strong>
+      <a href="https://www.ncbi.nlm.nih.gov/books/NBK588774/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Routinely Used Interventions to Improve Attachment
+        in Infants and Young Children: Scientific Summary.
+      </a>
+      Síntesis científica sobre el apego infantil y
+      las intervenciones dirigidas a fortalecer las
+      relaciones de cuidado.
+    </li>
+
+    <li>
+      <strong>
+        Practitioner Review (2026).
+      </strong>
+      <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13102048/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Clinical Insights from Attachment Theory and
+        Research for Professionals Working with Young
+        Children and Their Families.
+      </a>
+      Revisión sobre aplicaciones profesionales de la
+      teoría del apego, sus alcances y las precauciones
+      necesarias al interpretar sus categorías.
+    </li>
+
+  </ol>
+
+  <p class="fecha-revision">
+    Revisión de fuentes: 8 de noviembre de 2026.
+    Las referencias se ofrecen para ampliar la información
+    y no sustituyen la orientación profesional individual.
+  </p>
+
+</section>
+
+<footer class="cierre">
+  <strong>CIBA · Crianza, Internet, Bienestar y Acompañamiento</strong>
+  <p>Crecer acompañados transforma el camino.</p>
+</footer>
+
+</article>
