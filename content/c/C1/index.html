@@ -586,6 +586,52 @@
         transition: none !important;
       }
     }
+  
+    /* BIBLIOTECA DE ALIMENTOS CIBA */
+    #ciba-alimentos .alimentos-cabecera { max-width: 760px; margin-bottom: 28px; }
+    #ciba-alimentos .alimentos-cabecera .etiqueta { color: var(--tierra); }
+    #ciba-alimentos .alimentos-cabecera h2 { margin: 12px 0; }
+    #ciba-alimentos .alimentos-buscador { display:flex; gap:10px; margin:22px 0 15px; }
+    #ciba-alimentos-buscar { width:100%; min-height:52px; padding:0 17px; border:1px solid var(--linea); border-radius:7px; background:var(--papel); color:var(--tinta); font:inherit; }
+    #ciba-alimentos-categorias { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 12px; }
+    #ciba-alimentos .ciba-alimentos-filtro { border:1px solid var(--linea); border-radius:22px; padding:8px 13px; background:var(--papel); color:var(--verde); cursor:pointer; font-size:12px; }
+    #ciba-alimentos .ciba-alimentos-filtro.activo { background:var(--noche); border-color:var(--noche); color:white; }
+    #ciba-alimentos-estado { color:var(--suave); font-size:13px; margin:10px 0 18px; }
+    #ciba-alimentos-lista { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:15px; }
+    #ciba-alimentos .ciba-alimento-tarjeta { display:flex; flex-direction:column; overflow:hidden; padding:0; text-align:left; border:1px solid var(--linea); border-radius:11px; background:var(--papel); color:var(--tinta); cursor:pointer; transition:transform .2s,box-shadow .2s; }
+    #ciba-alimentos .ciba-alimento-tarjeta:hover { transform:translateY(-3px); box-shadow:0 10px 24px rgba(32,58,51,.09); }
+    #ciba-alimentos .ciba-alimento-tarjeta img { display:block; width:100%; height:170px; object-fit:cover; background:var(--crema); }
+    #ciba-alimentos .ciba-alimento-tarjeta-texto { display:grid; gap:7px; padding:16px; }
+    #ciba-alimentos .ciba-alimento-tarjeta-texto small { color:var(--tierra); font-size:10px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    #ciba-alimentos .ciba-alimento-tarjeta-texto strong { color:var(--noche); font:normal 23px Georgia,serif; }
+    #ciba-alimentos .ciba-alimento-tarjeta-texto span { color:var(--suave); font-size:13px; line-height:1.6; }
+    #ciba-alimentos-detalle { margin-top:26px; padding:clamp(18px,4vw,34px); border:1px solid var(--linea); border-top:4px solid var(--verde); border-radius:12px; background:var(--papel); }
+    #ciba-alimentos-detalle[hidden], #ciba-alimentos-lista[hidden] { display:none; }
+    #ciba-alimentos .ciba-alimento-foto { margin:0 0 22px; }
+    #ciba-alimentos .ciba-alimento-foto img { width:100%; max-height:390px; object-fit:cover; border-radius:9px; }
+    #ciba-alimentos .ciba-alimento-foto figcaption { margin-top:7px; color:var(--suave); font-size:11px; }
+    #ciba-alimentos .ciba-alimento-etiqueta { color:var(--tierra); font-size:10px; font-weight:800; letter-spacing:.15em; text-transform:uppercase; }
+    #ciba-alimentos .ciba-alimento-detalle-cabecera h3 { margin:7px 0; color:var(--noche); font:normal clamp(30px,5vw,42px) Georgia,serif; }
+    #ciba-alimentos .ciba-alimento-resumen { color:var(--suave); font-size:16px; }
+    #ciba-alimentos .ciba-alimento-bloque { margin:26px 0; }
+    #ciba-alimentos .ciba-alimento-bloque h4, #ciba-alimentos .ciba-alimento-fuentes h4, #ciba-alimentos .ciba-alimento-video h4 { margin:0 0 10px; color:var(--tierra); font:normal 22px Georgia,serif; }
+    #ciba-alimentos .ciba-alimento-bloque p, #ciba-alimentos .ciba-alimento-bloque li { line-height:1.75; }
+    #ciba-alimentos .ciba-alimento-bloque li { margin-bottom:10px; }
+    #ciba-alimentos .ciba-alimento-bloque strong { color:var(--verde); }
+    #ciba-alimentos .ciba-alimento-ingredientes { color:var(--suave); font-size:13px; }
+    #ciba-alimentos .ciba-alimento-video, #ciba-alimentos .ciba-alimento-fuentes { margin-top:24px; padding:20px; border-radius:10px; background:var(--marfil); }
+    #ciba-alimentos .ciba-alimento-video-pendiente { padding:14px; border-left:3px solid var(--oro); background:var(--marfil); color:var(--suave); font-size:13px; }
+    #ciba-alimentos .ciba-alimentos-volver { min-height:44px; padding:0 16px; border:0; border-radius:6px; background:var(--noche); color:white; cursor:pointer; font-weight:700; }
+    @media(max-width:600px) {
+      #ciba-alimentos-lista { grid-template-columns:1fr 1fr; gap:10px; }
+      #ciba-alimentos .ciba-alimento-tarjeta img { height:125px; }
+      #ciba-alimentos .ciba-alimento-tarjeta-texto { padding:12px; }
+      #ciba-alimentos .ciba-alimento-tarjeta-texto strong { font-size:19px; }
+    }
+    @media(max-width:390px) {
+      #ciba-alimentos-lista { grid-template-columns:1fr; }
+    }
+
   </style>
 </head>
 
@@ -694,6 +740,24 @@
           <p>El espíritu de Crianza · CIBA</p>
         </div>
 
+      </div>
+    </section>
+
+
+    <section class="seccion" id="biblioteca-alimentos">
+      <div class="contenedor" id="ciba-alimentos">
+        <div class="alimentos-cabecera">
+          <span class="etiqueta">Recurso práctico · CIBA Crianza</span>
+          <h2 class="titulo">Biblioteca de alimentos.</h2>
+          <p>Conoce alimentos habituales, sus propiedades, cómo prepararlos y de qué manera ofrecerlos según la etapa de desarrollo. Estamos incorporando las fichas progresivamente.</p>
+        </div>
+        <div class="alimentos-buscador">
+          <input id="ciba-alimentos-buscar" type="search" placeholder="Busca un alimento: aguacate, mango, boniato..." aria-label="Buscar alimentos">
+        </div>
+        <div id="ciba-alimentos-categorias" aria-label="Filtrar por categoría"></div>
+        <p id="ciba-alimentos-estado" aria-live="polite">Cargando alimentos...</p>
+        <div id="ciba-alimentos-lista"></div>
+        <section id="ciba-alimentos-detalle" hidden aria-live="polite"></section>
       </div>
     </section>
 
@@ -946,5 +1010,6 @@
     })();
   </script>
 
+<script type="module" src="../../assets/js/ciba-alimentos.js"></script>
 </body>
 </html>
