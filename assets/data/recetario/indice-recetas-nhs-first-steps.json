@@ -3285,15 +3285,16 @@
       "recomendacion_automatica": false,
       "ingredientes_referenciados": "puerro, zanahoria, papa, habichuelas, pollo, brócoli, queso crema",
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "El índice resume puerro, zanahoria, papa, habichuelas, pollo, brócoli y queso crema; edad de origen: 10 meses.",
-          "Cocinar el pollo completamente y picarlo muy fino; vegetales blandos, sin hebras duras de puerro o habichuelas. Ajustar la textura con humedad suficiente.",
-          "Revisar leche, sodio del queso crema y cocción/conservación del pollo; faltan cantidades y método completo."
+          "Se consultó la receta completa NHS: 10–12 meses, 4 porciones, pollo, puerro, zanahoria, papa, habichuelas, brócoli y queso crema; cocción indicada de unos 20 minutos y triturado/picado final.",
+          "El método indica cocinar pollo y vegetales juntos hasta que estén cocidos; CIBA debe exigir comprobación de cocción completa del pollo y cortar/triturar para eliminar fibras de puerro/habichuela. El brócoli se sirve como alimento para agarrar y debe estar muy tierno.",
+          "Incluye queso crema: revisar pasteurización y sodio. La receta original indica congelar sobrantes; CIBA debe validar enfriamiento, congelación, descongelación y recalentamiento seguros."
         ],
         "decision": "no_aprobada_no_publicable",
         "requiere_revision_profesional": true,
-        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+        "alcance_revision": "Se cotejaron ingredientes, edad, cantidades y pasos publicados por NHS; queda pendiente validación profesional y adaptación de seguridad al contexto CIBA.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -3314,15 +3315,16 @@
       "recomendacion_automatica": false,
       "ingredientes_referenciados": "frijoles blancos en conserva sin sal ni azúcar añadidos, ajo, menta, aceite de oliva, breadstick",
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "El índice resume frijoles blancos en conserva sin sal ni azúcar añadidos, ajo, menta, aceite de oliva y breadstick; edad de origen: 6 meses.",
-          "Triturar los frijoles hasta una crema suave; el pan tipo breadstick puede ser duro, seco o quebradizo y requiere evaluación de forma/textura antes de ofrecerlo. No ofrecer palitos duros.",
-          "Revisar trigo/gluten, sodio residual de la conserva y receta completa; la ficha no confirma la adaptación del pan para lactantes."
+          "Se consultó la receta completa NHS: 6 meses o más; frijoles blancos en conserva sin sal/azúcar añadidos, ajo, menta y aceite; la mezcla se cocina 5–10 minutos y se tritura hasta suave.",
+          "La receta ofrece breadstick cortado en longitudes de dedo, pero puede ser duro/seco; el propio NHS propone sustituirlo por bastones de zanahoria cocida blanda. CIBA debe preferir esa alternativa segura según habilidades del bebé y evitar pan duro.",
+          "Revisar sodio residual de conserva, intensidad del ajo y almacenamiento refrigerado indicado; no se recomienda automáticamente sin revisar textura y porción."
         ],
         "decision": "no_aprobada_no_publicable",
         "requiere_revision_profesional": true,
-        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+        "alcance_revision": "Se cotejaron ingredientes, edad, cantidades, método y alternativa de acompañamiento en la página original; pendiente revisión profesional CIBA.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -3344,15 +3346,16 @@
       "recomendacion_automatica": false,
       "ingredientes_referenciados": "cebolla, ajo, brócoli, tomate, lentejas rojas, queso crema, pasta, maíz tierno",
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "El índice resume cebolla, ajo, brócoli, tomate, lentejas rojas, queso crema, pasta y maíz tierno; edad de origen: 7 meses.",
-          "Cocer pasta, lentejas y vegetales hasta muy blandos; triturar/aplastar maíz y brócoli para evitar granos o piezas firmes. Servir húmedo y adaptar longitud/tamaño de pasta.",
-          "Revisar trigo y leche como alérgenos, sodio del queso y forma del maíz; confirmar cantidades y método."
+          "Se consultó la receta completa NHS: 7–9 meses; pasta, lentejas rojas, brócoli, tomate, cebolla, ajo, queso crema y una mazorca baby por porción; la salsa y pasta se cocinan por separado y se trituran/aplastan hasta suave con grumos blandos.",
+          "El NHS sirve la mazorca baby cocida como alimento para agarrar. CIBA debe revisar tamaño, forma y ternura; si hay riesgo de atragantamiento, adaptar u omitir y ofrecer vegetales blandos en formato seguro. Pasta debe quedar muy blanda y en textura apropiada.",
+          "Contiene trigo y leche; revisar alérgenos, sodio del queso crema y posibles ingredientes añadidos de tomate en conserva. La porción individual y las cantidades están explicitadas, pero requieren adaptación local."
         ],
         "decision": "no_aprobada_no_publicable",
         "requiere_revision_profesional": true,
-        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+        "alcance_revision": "Se cotejaron ingredientes, edad, cantidades y los siete pasos publicados por NHS; pendiente evaluación profesional y adaptación de formato del maíz.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -3374,15 +3377,16 @@
       "recomendacion_automatica": false,
       "ingredientes_referenciados": "boniato, cebolla, garbanzos, garam masala, huevo, aceite vegetal",
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "El índice resume boniato, cebolla, garbanzos, garam masala, huevo y aceite; edad de origen: 6 meses.",
-          "Cocer boniato y garbanzos hasta muy blandos; aplastar completamente. Las tortitas no deben quedar secas, duras, compactas ni con bordes tostados rígidos; huevo completamente cocido.",
-          "Revisar huevo como alérgeno, sal de mezclas de especias y textura interior/exterior de la tortita; método y cantidades pendientes."
+          "Se consultó la receta completa NHS: 6 meses o más; boniato, cebolla, garbanzos en conserva sin sal/azúcar añadidos, garam masala, huevo y aceite; rinde aproximadamente 15 tortitas.",
+          "El método cuece el boniato, aplasta con garbanzos, incorpora huevo y forma tortitas aplanadas; deben cocinarse por ambos lados hasta estar completamente cocidas. CIBA debe verificar centro bien cocido y textura blanda, no seca ni compacta.",
+          "Contiene huevo; revisar alérgeno, sal de la mezcla de especias y textura/diámetro de las tortitas. El formato final debe adaptarse a las habilidades del bebé."
         ],
         "decision": "no_aprobada_no_publicable",
         "requiere_revision_profesional": true,
-        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+        "alcance_revision": "Se cotejaron ingredientes, edad, cantidades, forma y método de cocción completos; pendiente revisión profesional CIBA.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -3405,15 +3409,16 @@
       "recomendacion_automatica": false,
       "ingredientes_referenciados": "cebolla, pimiento rojo, boniato, habichuelas, tomate, frijoles rojos, mantequilla de maní, chile en polvo, pan integral",
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "El índice resume cebolla, pimiento, boniato, habichuelas, tomate, frijoles rojos, mantequilla de maní, chile en polvo y pan integral; edad de origen: 7 meses.",
-          "Cocer legumbres y vegetales hasta muy blandos y aplastar; diluir la mantequilla de maní para que no quede espesa o pegajosa. Omitir chile en la porción infantil y adaptar el pan.",
-          "Revisar maní como alérgeno, trigo, sodio de legumbres y textura del pan; confirmar si la receta original añade sal u otros ingredientes."
+          "Se consultó la receta completa NHS: 7–9 meses; cebolla, pimiento, boniato, habichuelas, tomate, frijoles rojos, mantequilla de maní, chile en polvo, agua y pan integral; cocción aproximada de 20 minutos y triturado con grumos blandos.",
+          "Incluye maní, alérgeno que debe introducirse de forma segura y sin pasta espesa; la receta usa una cantidad pequeña de mantequilla de maní. Verificar que la mezcla quede bien diluida y sin pegajosidad. Omitir/ajustar chile para la adaptación individual.",
+          "El pan se ofrece en dedos; revisar textura para que no quede seco/duro. Confirmar que las habichuelas y frijoles estén muy tiernos y que se aplasten/trituren; revisar trigo y sodio."
         ],
         "decision": "no_aprobada_no_publicable",
         "requiere_revision_profesional": true,
-        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+        "alcance_revision": "Se cotejaron ingredientes, cantidades, edad y pasos de la receta original; pendiente revisión profesional, especialmente maní, chile y textura del pan.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -3434,15 +3439,16 @@
       "recomendacion_automatica": false,
       "ingredientes_referenciados": "cebolla, cilantro, guisantes amarillos partidos, aceite, ajo, chile en polvo, cúrcuma",
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "El índice resume cebolla, cilantro, guisantes amarillos partidos, aceite, ajo, chile en polvo y cúrcuma; edad de origen: 6 meses.",
-          "Cocer los guisantes partidos hasta deshacerse y obtener una consistencia suave; ajustar espesor para evitar pasta seca o compacta. Omitir chile en la porción infantil si irrita o no es apropiado.",
-          "Revisar sal/caldo y método; el índice no indica si hay otros ingredientes ni permite confirmar textura final y cantidades."
+          "Se consultó la receta completa NHS: 6 meses o más; guisantes amarillos partidos, cebolla, cilantro, ajo, aceite, chile en polvo y cúrcuma; cocción de legumbres hasta tiernas y posterior triturado/aplastado.",
+          "El método cuece los guisantes partidos 20–30 minutos y luego hierve la mezcla; CIBA debe confirmar que queden completamente tiernos y que la consistencia sea suave con grumos blandos, sin pasta seca o espesa.",
+          "Revisar cantidad de chile, ausencia de sal/caldos salados y posible acompañamiento de arroz; si se usa arroz, aplicar normas estrictas de enfriamiento y conservación."
         ],
         "decision": "no_aprobada_no_publicable",
         "requiere_revision_profesional": true,
-        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+        "alcance_revision": "Se cotejaron ingredientes, cantidades, edad y método completo; pendiente revisión profesional CIBA.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -3463,15 +3469,16 @@
       "recomendacion_automatica": false,
       "ingredientes_referenciados": "huevo",
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "El índice identifica huevo; edad de origen: 6 meses.",
-          "El huevo debe estar completamente cocido, sin partes líquidas; adaptar la forma y textura para que sea fácil de agarrar y no quede seca, gomosa o dura.",
-          "Revisar si se acompaña de otros ingredientes/alérgenos en la receta original; confirmar método, porción y formato exactos."
+          "Se consultó la receta completa NHS: 6 meses o más; un huevo hervido 5 minutos, enfriado y cortado en cuatro cuartos longitudinales.",
+          "La instrucción de 5 minutos no demuestra por sí sola que el huevo quede completamente cuajado en todos los tamaños; CIBA debe verificar cocción completa y usar huevo seguro/pasteurizado según normativa aplicable, evitando partes líquidas si no se puede garantizar inocuidad.",
+          "El corte en cuatro dedos debe adaptarse a la capacidad de agarre y masticación; vigilar siempre al bebé sentado y supervisado. Huevo es alérgeno."
         ],
         "decision": "no_aprobada_no_publicable",
         "requiere_revision_profesional": true,
-        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+        "alcance_revision": "Se cotejaron ingrediente único, edad y pasos de preparación; queda una duda crítica de tiempo/cocción que impide aprobación automática y requiere validación profesional.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -3493,15 +3500,16 @@
       "recomendacion_automatica": false,
       "ingredientes_referenciados": "pimiento rojo, cebolla, paprika, chile suave, ajo, comino, pollo, pan pita, yogur natural",
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "El índice resume pimiento rojo, cebolla, paprika, chile suave, ajo, comino, pollo, pan pita y yogur natural; edad de origen: 7 meses.",
-          "Cocinar completamente el pollo y desmenuzarlo muy fino; vegetales blandos. Adaptar el pan pita para que no forme una masa pegajosa y usar yogur pasteurizado natural sin azúcar.",
-          "Revisar trigo y leche como alérgenos, sal de especias/salsas y cantidad de chile; confirmar textura y método completos."
+          "Se consultó la receta completa NHS: 7–9 meses; pollo, pimiento, cebolla, paprika, chile suave, ajo, comino, pan pita y yogur natural; el pollo y vegetales se cocinan 10–15 minutos y luego se trituran o aplastan con grumos blandos.",
+          "El paso de cocción indica que el pollo debe quedar completamente cocido; CIBA debe exigir comprobación objetiva y adaptar las tiras de pimiento/pita a textura y forma seguras. El yogur debe ser pasteurizado, natural y sin azúcar añadido.",
+          "Revisar trigo del pan pita y leche del yogur como alérgenos; evaluar chile y sodio de pan/especias. La receta permite conservar porciones congeladas: validar cadena de frío y recalentamiento."
         ],
         "decision": "no_aprobada_no_publicable",
         "requiere_revision_profesional": true,
-        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+        "alcance_revision": "Se cotejaron ingredientes, edad, cantidades y método completo; pendiente revisión profesional CIBA.",
+        "fuente_completa_consultada": true
       }
     },
     {
