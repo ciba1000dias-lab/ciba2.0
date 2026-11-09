@@ -79,3 +79,26 @@ a{color:inherit}
 
 .ciba-receta-demo{border-left-color:var(--tierra);background:#f6e8df}
 .ciba-receta-etiqueta-demo{display:inline-block;margin:0 0 9px!important;padding:6px 9px;border-radius:4px;background:#f6e8df;color:#8b3d2c!important;font-size:10px!important;font-weight:800;letter-spacing:.08em}
+
+
+/* Interfaz compacta: información contextual disponible sin ocupar espacio. */
+.ciba-receta-panel-compacto{padding:17px 20px}
+.ciba-receta-panel-compacto h2{display:flex;align-items:center;gap:7px;margin:0 0 12px;font-size:21px}
+.ciba-receta-campos-edad{grid-template-columns:1fr 1fr;align-items:end}
+.ciba-receta-campos-edad label{min-width:0}
+.ciba-receta-panel input[readonly]{background:#f3f0e8;color:var(--verde);font-weight:700}
+.ciba-receta-panel-alergias{padding:16px 20px}
+.ciba-receta-alergia-toggle{display:flex!important;align-items:center!important;grid-template-columns:auto 1fr auto;gap:10px!important;font-size:14px!important;cursor:pointer}
+.ciba-receta-alergia-toggle input{width:18px;height:18px;accent-color:var(--verde)}
+.ciba-receta-alergias-detalle{padding-top:14px}
+.ciba-info{display:inline-grid;flex:0 0 auto;width:19px;height:19px;place-items:center;padding:0;border:1px solid var(--oro);border-radius:50%;background:#fbf7ed;color:var(--tierra);font:700 14px Georgia,serif;cursor:help}
+.ciba-info:hover,.ciba-info:focus{background:var(--noche);color:#fff;outline:2px solid #d9b87866;outline-offset:2px}
+.ciba-receta-resultados #ciba-receta-mensaje{color:var(--suave);font-size:13px}
+.ciba-receta-nota{display:inline-flex;align-items:center;gap:8px;margin:8px 0;color:var(--suave);font-size:12px}
+.ciba-receta-nota .ciba-info{width:21px;height:21px}
+.ciba-receta-alerta-info{display:flex;align-items:center;gap:7px;margin-top:10px;color:var(--suave);font-size:12px}
+@media(max-width:620px){
+ .ciba-receta-campos-edad{grid-template-columns:1fr 1fr}
+ .ciba-receta-panel-compacto{padding:15px}
+ .ciba-receta-panel-compacto h2{font-size:19px}
+}
