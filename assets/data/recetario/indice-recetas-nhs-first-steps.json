@@ -1536,6 +1536,366 @@
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
       "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-fruity-sticks",
+      "nombre": "Fruity sticks",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/fruity-sticks/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "banana, yogur",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Fruta madura y blanda; adaptar forma; yogur pasteurizado."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-scrambly-eggs-muffins",
+      "nombre": "Scrambly eggs on muffins",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/scrambly-egg-on-muffins/",
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "ingredientes_referenciados": "huevo, leche, tomate, champiñones, muffin",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo",
+        "lacteos",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Huevo totalmente cuajado; tomate cortado y muffin en textura segura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-root-vegetable-mash",
+      "nombre": "Root vegetable mash",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/root-vegetable-mash/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "boniato, zanahoria",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Cocinar hasta que ambas verduras se aplasten sin esfuerzo."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-sweetcorn-chowder",
+      "nombre": "Sweetcorn chowder",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/sweetcorn-chowder/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "maíz, ajo, cebolla, leche entera",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Usa leche como ingrediente; no confundir con bebida láctea antes de 12 meses; maíz bien triturado."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-smashed-avocado-banana",
+      "nombre": "Smashed avocado and banana",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/smashed-avocado-and-banana/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "aguacate, banana",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Fruta madura y machacada; refrigerar y consumir pronto."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-peachy-cereal",
+      "nombre": "Peachy cereal",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/peachy-cereal/",
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "ingredientes_referenciados": "cereal de trigo, leche entera, melocotón",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Usa leche entera como ingrediente; no confundir con bebida antes de 12 meses; melocotón blando."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-falafel",
+      "nombre": "Falafel",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/falafel/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "garbanzos, tahini, limón, ajo",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres",
+        "sesamo"
+      ],
+      "alertas_revision": [
+        "Tahini contiene sésamo; garbanzos blandos y centro húmedo; no ofrecer bolas firmes."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-vegetable-biryani",
+      "nombre": "Vegetable biryani",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/vegetable-biryani/",
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "ingredientes_referenciados": "arroz, garbanzos, zanahoria, coliflor, guisantes",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres"
+      ],
+      "alertas_revision": [
+        "Garbanzos sin sal, blandos y aplastados; arroz y verduras bien cocidos."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-veggie-finger-foods",
+      "nombre": "Veggie finger foods",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/veggie-finger-foods/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "brócoli",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Servir muy blando, en forma adecuada a agarre y masticación."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-apple-blueberry-stew",
+      "nombre": "Apple and blueberry stew",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/apple-and-blueberry-stew/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "manzana, arándanos",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Cocinar fruta y bayas hasta ablandar; adaptar textura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-mixed-bean-hot-potato",
+      "nombre": "Mixed bean hot potato",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/mixed-bean-hot-potato/",
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "ingredientes_referenciados": "frijoles, papa, berenjena, calabacín, pimiento, maíz",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres"
+      ],
+      "alertas_revision": [
+        "Frijoles sin sal, muy cocidos y aplastados; maíz y vegetales blandos."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-veggie-biryani",
+      "nombre": "Veggie biryani",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/veggie-biryani/",
+      "edad_minima_fuente_meses": 10,
+      "edad_maxima_fuente_meses": 12,
+      "ingredientes_referenciados": "arroz, garbanzos, zanahoria, coliflor, guisantes",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres"
+      ],
+      "alertas_revision": [
+        "Garbanzos sin sal y blandos; arroz y verduras completamente cocidos."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-fish-curry",
+      "nombre": "Fish curry",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/fish-curry/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "bacalao, papa, plátano, tomate, guisantes, arroz",
+      "alergenos_o_grupos_a_verificar": [
+        "pescado"
+      ],
+      "alertas_revision": [
+        "Identificar especie, revisar mercurio/sodio, retirar espinas y cocinar por completo."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-egg-toast-tomatoes",
+      "nombre": "Egg and toast fingers with tomatoes",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/egg-and-toast-fingers-with-tomatoes/",
+      "edad_minima_fuente_meses": 10,
+      "edad_maxima_fuente_meses": 12,
+      "ingredientes_referenciados": "huevo, pan integral, tomate",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Cocción publicada de 5–6 minutos no garantiza huevo totalmente cocido; adaptar y validar; tomate pequeño."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-simple-baked-fish",
+      "nombre": "Simple baked fish",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/simple-baked-fish/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "salmón",
+      "alergenos_o_grupos_a_verificar": [
+        "pescado"
+      ],
+      "alertas_revision": [
+        "Cocinar por completo, desmenuzar y revisar espinas; considerar frecuencia y especie."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-fish-risotto-peas",
+      "nombre": "Fish risotto with peas",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/fish-risotto-with-peas/",
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "ingredientes_referenciados": "salmón, arroz, guisantes, cebolla, ajo, pimiento",
+      "alergenos_o_grupos_a_verificar": [
+        "pescado"
+      ],
+      "alertas_revision": [
+        "Salmón completamente cocido y sin espinas; arroz muy blando y textura húmeda."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-pasta-ratatouille",
+      "nombre": "Pasta ratatouille",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/pasta-ratatouille/",
+      "edad_minima_fuente_meses": 10,
+      "edad_maxima_fuente_meses": 12,
+      "ingredientes_referenciados": "abadejo, pasta, tomate, calabacín, champiñones",
+      "alergenos_o_grupos_a_verificar": [
+        "pescado",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Identificar especie, retirar espinas, cocinar pescado por completo y pasta blanda."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-spag-bol",
+      "nombre": "Spag bol",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/spag-bol/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "carne molida, tomate, cebolla, pimiento, champiñones, espagueti",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Carne completamente cocida y pasta blanda; adaptar porción y textura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-squash-lentil-soup",
+      "nombre": "Squash and lentil soup",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/squash-and-lentil-soup/",
+      "edad_minima_fuente_meses": 10,
+      "edad_maxima_fuente_meses": 12,
+      "ingredientes_referenciados": "calabaza, pimiento, cebolla, lentejas, pan integral",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Lentejas completamente cocidas y sopa húmeda; adaptar pan a habilidades."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-zesty-chicken-wrap",
+      "nombre": "Zesty chicken wrap",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/zesty-chicken-wrap/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "pollo, limón, pepino, lechuga, tortilla, queso crema",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Pollo totalmente cocido; revisar textura de vegetales y cortar wrap en piezas manejables."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
     }
   ]
 }
