@@ -61,3 +61,53 @@ test("descarta IDs inventados por el modelo", () => {
 test("rechaza una salida sin estructura reconocible", () => {
   assert.equal(validarResultado({ texto: "arroz" }, candidates), null);
 });
+
+
+import { readFileSync } from "node:fs";
+
+const recipeCatalog = JSON.parse(
+  readFileSync(new URL("../../assets/data/recetario/recetas.json", import.meta.url), "utf8")
+);
+
+const foodGroups = [
+  "frutas", "viandas", "vegetales", "legumbres", "cereales",
+  "carnes", "pescados", "leches", "yogures", "huevos-quesos"
+];
+
+const foodIds = new Set();
+for (const group of foodGroups) {
+  const data = JSON.parse(
+    readFileSync(new URL(`../../assets/data/alimentos/${group}.json`, import.meta.url), "utf8")
+  );
+  for (const food of data.alimentos) foodIds.add(food.id);
+}
+
+test("el catálogo piloto contiene recetas y fuentes identificadas", () => {
+  assert.ok(recipeCatalog.recetas.length >= 1);
+  assert.ok(recipeCatalog.fuentes.length >= 1);
+  assert.equal(new Set(recipeCatalog.recetas.map(recipe => recipe.id)).size, recipeCatalog.recetas.length);
+});
+
+test("todos los ingredientes de recetas existen en la biblioteca CIBA", () => {
+  for (const recipe of recipeCatalog.recetas) {
+    for (const ingredient of recipe.ingredientes) {
+      assert.ok(foodIds.has(ingredient.alimento_id), `${recipe.id}: alimento inexistente ${ingredient.alimento_id}`);
+    }
+  }
+});
+
+test("ninguna receta piloto se habilita sin revisión especializada", () => {
+  for (const recipe of recipeCatalog.recetas) {
+    assert.equal(recipe.publicable, false, recipe.id);
+    assert.equal(recipe.estado, "revision_especializada_pendiente", recipe.id);
+  }
+});
+
+test("todas las referencias declaradas resuelven a una fuente del catálogo", () => {
+  const sourceIds = new Set(recipeCatalog.fuentes.map(source => source.id));
+  for (const recipe of recipeCatalog.recetas) {
+    for (const sourceId of recipe.fuentes) {
+      assert.ok(sourceIds.has(sourceId), `${recipe.id}: fuente inexistente ${sourceId}`);
+    }
+  }
+});
