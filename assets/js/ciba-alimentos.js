@@ -187,7 +187,7 @@
           detalle.hidden = true;
           lista.hidden = false;
           if (actualizarHash) history.replaceState(null, '', location.pathname + location.search + '#biblioteca-alimentos');
-          raizUI.querySelector('#biblioteca-alimentos').scrollIntoView({ behavior: 'smooth' });
+          raizUI.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
         detalle.appendChild(volver);
 
