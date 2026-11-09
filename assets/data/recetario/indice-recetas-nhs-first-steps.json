@@ -1,7 +1,7 @@
 {
   "version": 1,
   "titulo": "Índice de recetas externas para revisión CIBA",
-  "nota": "Índice documental de 97 páginas NHS y 32 entradas First Steps. 78 fichas NHS tienen anotaciones preliminares individuales; 32 de 32 entradas First Steps tienen observaciones preliminares. Las anotaciones basadas en edad e ingredientes resumidos no sustituyen el cotejo de la receta completa, cantidades, método, textura ni revisión profesional. Todas las entradas permanecen deshabilitadas para publicación y recomendación automática.",
+  "nota": "Índice documental de 97 páginas NHS y 32 entradas First Steps. 86 fichas NHS tienen anotaciones preliminares individuales; 32 de 32 entradas First Steps tienen observaciones preliminares. Las anotaciones basadas en edad e ingredientes resumidos no sustituyen el cotejo de la receta completa, cantidades, método, textura ni revisión profesional. Todas las entradas permanecen deshabilitadas para publicación y recomendación automática.",
   "fuentes": [
     {
       "id": "nhs-best-start-97",
@@ -2854,9 +2854,20 @@
       "alertas_revision": [
         "Lentejas completamente cocidas y sopa húmeda; adaptar pan a habilidades."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume calabaza, pimiento, cebolla, lentejas y pan integral; edad de origen: 10 meses.",
+          "Cocer las lentejas y vegetales hasta quedar muy blandos; adaptar el pan y evitar tiras secas o duras. Ajustar la consistencia de la sopa para que no quede líquida si se ofrece con cuchara.",
+          "Revisar trigo/gluten, sodio de caldos y cantidad de fibra; el resumen no permite validar cantidades ni método."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-zesty-chicken-wrap",
@@ -2873,9 +2884,20 @@
       "alertas_revision": [
         "Pollo totalmente cocido; revisar textura de vegetales y cortar wrap en piezas manejables."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume pollo, limón, pepino, lechuga, tortilla y queso crema; edad de origen: 12 meses.",
+          "Cocinar completamente el pollo y cortarlo en fragmentos pequeños y húmedos; retirar partes duras del pepino y adaptar la tortilla para evitar masas compactas o tiras difíciles de manejar.",
+          "Revisar trigo, leche, sodio del queso/tortilla y textura de vegetales crudos; confirmar que la receta original no contenga piezas duras."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-beetroot-dip-pitta",
@@ -3086,10 +3108,21 @@
       "alertas_revision": [
         "La página indica 12 meses o más. No contiene tahini en la lista consultada; los tirabeques crudos pueden ser duros: adaptar/cocinar para evitar atragantamiento."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "garbanzos, limón, ajo, comino, agua, aceite de oliva, tirabeques"
+      "ingredientes_referenciados": "garbanzos, limón, ajo, comino, agua, aceite de oliva, tirabeques",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume garbanzos, limón, ajo, comino, agua, aceite de oliva y tirabeques; edad de origen: 12 meses.",
+          "Cocer y triturar bien los garbanzos; el hummus debe quedar suave y no espeso/pegajoso. Cocinar los tirabeques hasta textura segura y adaptar tamaño y forma al desarrollo.",
+          "Verificar tahini/sésamo u otros ingredientes no reflejados en el resumen; revisar sal y forma de los bastones vegetales."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-egg-mushroom-cups",
@@ -3105,10 +3138,21 @@
       "alertas_revision": [
         "La página indica 7–9 meses. Huevo completamente cuajado; tomates cherry cocidos y cortados; pan adaptado a textura segura."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "huevos, champiñones, perejil, tomates cherry, pan integral, aceite vegetal"
+      "ingredientes_referenciados": "huevos, champiñones, perejil, tomates cherry, pan integral, aceite vegetal",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume huevo, champiñones, perejil, tomates cherry, pan integral y aceite; edad de origen: 7 meses.",
+          "Huevo completamente cuajado; champiñones y tomate bien cocidos y muy blandos. Los tomates cherry deben cortarse y cocinarse/aplastarse, nunca servirse enteros. Adaptar el pan para evitar sequedad.",
+          "Revisar huevo y trigo como alérgenos, tamaño de la preparación horneada y sodio; cantidades y método completo pendientes."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-cinnamon-toasty-fingers",
@@ -3123,10 +3167,21 @@
       "alertas_revision": [
         "La página indica 7–9 meses. El pan tostado puede ser seco/duro; ajustar textura y ofrecer banana madura."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "pan integral, crema vegetal, canela, banana"
+      "ingredientes_referenciados": "pan integral, crema vegetal, canela, banana",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume pan integral, crema vegetal, canela y banana; edad de origen: 7 meses.",
+          "Banana madura y textura húmeda; el pan tostado puede quedar seco, duro o quebradizo, por lo que debe verificarse la textura final y adaptar forma/tamaño. No usar trozos duros.",
+          "Revisar trigo y composición de la crema vegetal; confirmar que no tenga sal/azúcar añadidos y que no se use miel."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-breakfast-eggs-tomato",
@@ -3142,10 +3197,21 @@
       "alertas_revision": [
         "La página indica 7–9 meses, pero propone huevo hervido 5–6 minutos, lo que no garantiza cocción completa. No recomendar hasta adaptar y validar cocción total."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "tomates cherry, huevo, pan integral, crema vegetal"
+      "ingredientes_referenciados": "tomates cherry, huevo, pan integral, crema vegetal",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume tomate cherry, huevo, pan integral y crema vegetal; edad de origen: 7 meses.",
+          "Cocinar completamente el huevo y el tomate; cortar/aplastar el tomate cherry para evitar forma redonda. Adaptar el pan para que no quede seco ni forme una masa pegajosa.",
+          "Revisar huevo y trigo como alérgenos, composición de la crema vegetal y sodio; verificar cantidades y método."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-fruity-stew",
@@ -3158,10 +3224,21 @@
       "alertas_revision": [
         "La página indica desde 6 meses. Manzana pelada, cocida hasta quedar completamente blanda y triturada; enfriar antes de servir."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "manzana, agua"
+      "ingredientes_referenciados": "manzana, agua",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume manzana y agua; edad de origen: 6 meses.",
+          "Cocinar la manzana hasta ablandarla por completo, retirar semillas y corazón, y aplastar/triturar hasta una textura apropiada. Comprobar temperatura antes de servir.",
+          "No añadir azúcar ni miel. Confirmar si la página original incluye otros ingredientes y revisar consistencia y porción."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-green-mash",
@@ -3174,10 +3251,21 @@
       "alertas_revision": [
         "La página indica desde 6 meses. Triturar hasta textura apropiada; no convertir leche de vaca en bebida antes de 12 meses."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "calabacín, guisantes; leche materna o fórmula para ajustar textura"
+      "ingredientes_referenciados": "calabacín, guisantes; leche materna o fórmula para ajustar textura",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume calabacín, guisantes y leche materna o fórmula para ajustar textura; edad de origen: 6 meses.",
+          "Cocer calabacín y guisantes hasta muy blandos y aplastar/triturar los guisantes para evitar piezas redondas. Usar leche materna extraída o fórmula preparada correctamente para ajustar la consistencia.",
+          "No añadir sal; verificar método, conservación de la leche/fórmula y textura final. El resumen no confirma cantidades."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-chicken-leek-hotpot",
