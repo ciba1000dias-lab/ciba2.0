@@ -9,6 +9,7 @@ const BANDAS = [
 
 const ALERGENOS_POR_ALIMENTO = {
   'leche-vaca': ['leche', 'lacteos'],
+  'leches-vegetales': ['soya'],
   'leche-chiva': ['leche', 'lacteos'],
   'leche-bufala': ['leche', 'lacteos'],
   'leche-camella': ['leche', 'lacteos'],
@@ -50,19 +51,19 @@ const ALERGENOS_POR_ALIMENTO = {
   'langosta': ['crustaceos'],
   'cangrejo': ['crustaceos'],
   'prolacsin-soya': ['soya'],
-  'frijol-negro': ['legumbres'],
-  'frijol-colorado': ['legumbres'],
-  'frijol-blanco': ['legumbres'],
-  'frijol-bayo': ['legumbres'],
-  'frijol-caballero': ['legumbres'],
-  'chicharo-seco': ['legumbres'],
-  'gandul': ['legumbres'],
-  'garbanzos': ['legumbres'],
-  'lentejas': ['legumbres'],
-  'chicharos': ['legumbres'],
-  'mani': ['mani', 'frutos-secos'],
-  'almendra': ['frutos-secos'],
-  'nuez': ['frutos-secos'],
+  'frijol-negro': ['frijoles'],
+  'frijol-colorado': ['frijoles'],
+  'frijol-blanco': ['frijoles'],
+  'frijol-bayo': ['frijoles'],
+  'frijol-caballero': ['frijoles'],
+  'chicharo-seco': ['chicharos'],
+  'gandul': ['gandul'],
+  'garbanzos': ['garbanzos'],
+  'lentejas': ['lentejas'],
+  'chicharos': ['chicharos'],
+  'mani': ['mani'],
+  'almendra': ['almendra'],
+  'nuez': ['nuez'],
   'ajonjoli': ['sesamo'],
   'trigo': ['trigo-gluten'],
   'pan': ['trigo-gluten'],
@@ -81,10 +82,16 @@ const ALIAS_ALERGENOS = [
   { key: 'crustaceos', terms: ['camaron', 'camarones', 'langosta', 'cangrejo', 'crustaceos'] },
   { key: 'soya', terms: ['soya', 'soja'] },
   { key: 'mani', terms: ['mani', 'cacahuete', 'cacahuate'] },
-  { key: 'frutos-secos', terms: ['almendra', 'nuez', 'avellana', 'anacardo', 'pistacho', 'frutos secos'] },
+  { key: 'almendra', terms: ['almendra', 'almendras'] },
+  { key: 'nuez', terms: ['nuez', 'nueces', 'avellana', 'anacardo', 'pistacho', 'frutos secos'] },
   { key: 'sesamo', terms: ['sesamo', 'ajonjoli'] },
   { key: 'trigo-gluten', terms: ['trigo', 'gluten', 'cebada', 'centeno'] },
-  { key: 'legumbres', terms: ['legumbres', 'frijol', 'frijoles', 'lentejas', 'garbanzos', 'chicharos', 'gandul'] }
+  { key: 'legumbres', terms: ['legumbres'] },
+  { key: 'frijoles', terms: ['frijol', 'frijoles', 'habichuela'] },
+  { key: 'lentejas', terms: ['lenteja', 'lentejas'] },
+  { key: 'garbanzos', terms: ['garbanzo', 'garbanzos'] },
+  { key: 'chicharos', terms: ['chicharo', 'chicharos'] },
+  { key: 'gandul', terms: ['gandul'] }
 ];
 
 function normalizar(texto) {
@@ -114,7 +121,7 @@ function alergenosDeReceta(receta) {
 
 function recetaVegetariana(receta) {
   const ids = (receta.ingredientes || []).map(i => i.alimento_id);
-  const categoriasAnimales = /pollo|pavo|res|cerdo|carne|pescado|atun|salmon|sardina|camaron|langosta|cangrejo|pulpo|calamar|ostion|cobo|higado/;
+  const categoriasAnimales = /pollo|gallina|pavo|res|cerdo|conejo|higado|corazon|carnero|lengua|pato|picadillo|mollejas|patas|salchichas|jamon|chorizo|carnes|rabo|costillas|mondongo|pargo|tilapia|sardina|atun|jurel|macarela|lisa|claria|merluza|camaron|cangrejo|langosta|bonito|pescado|tiburon|pulpo|calamar|cobo|ostiones/;
   return !ids.some(id => categoriasAnimales.test(id));
 }
 
