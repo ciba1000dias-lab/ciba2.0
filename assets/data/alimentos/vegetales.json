@@ -242,6 +242,654 @@
       ],
       "estado": "piloto",
       "imagenes": []
+    },
+    {
+      "id": "tomate",
+      "nombre": "Tomate",
+      "nombres_alternativos": [
+        "tomate de ensalada",
+        "tomate maduro",
+        "Solanum lycopersicum"
+      ],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Fruto carnoso que se utiliza como hortaliza en ensaladas, salsas y guisos. Para bebés se ofrece maduro y con textura adaptada.",
+      "descripcion": "El tomate aporta agua y contiene vitamina C y carotenoides, entre ellos licopeno. Su composición cambia según la variedad y el grado de madurez. No es necesario presentarlo como un alimento medicinal ni atribuirle beneficios terapéuticos.",
+      "propiedades": [
+        "Aporta agua.",
+        "Contiene vitamina C y carotenoides.",
+        "Su aporte nutricional varía con la variedad y la madurez."
+      ],
+      "beneficios": [
+        "Añade sabor, color y variedad a las comidas.",
+        "Puede ofrecerse cocido o, cuando la habilidad lo permita, crudo en una forma segura."
+      ],
+      "edad": "Puede ofrecerse cuando comienza la alimentación complementaria, generalmente alrededor de los 6 meses, si el bebé muestra señales de preparación. La edad por sí sola no basta: deben valorarse el control postural y la capacidad de manejar y tragar alimentos. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Al iniciar la alimentación complementaria",
+          "forma": "Elegir tomate maduro, lavar, retirar partes duras y cocinar hasta que esté muy blando; aplastar o triturar."
+        },
+        {
+          "etapa": "Cuando maneje alimentos blandos con más destreza",
+          "forma": "Ofrecer triturado, majado o en fragmentos muy blandos, sin piel suelta si dificulta la deglución."
+        },
+        {
+          "etapa": "Cuando mastique y manipule trozos pequeños con seguridad",
+          "forma": "Puede incorporarse a guisos o servirse en trozos pequeños y blandos; los tomates cherry o uva deben cortarse longitudinalmente en cuartos."
+        }
+      ],
+      "preparacion_segura": "Lavar bajo agua potable antes de cortar. Retirar tallo y partes dañadas. Evitar tomates pequeños enteros por riesgo de atragantamiento; adaptar piel y textura a la habilidad del niño.",
+      "recetas": [
+        {
+          "nombre": "Tomate cocido majado",
+          "etapa": "Al iniciar la alimentación complementaria",
+          "ingredientes": "Tomate maduro lavado y sin tallo",
+          "preparacion": "Cocinar hasta ablandar, retirar piel si queda suelta y aplastar hasta lograr una textura segura."
+        },
+        {
+          "nombre": "Salsa suave de tomate",
+          "etapa": "Cuando el tomate ya se haya probado por separado",
+          "ingredientes": "Tomate maduro y unas gotas de aceite vegetal",
+          "preparacion": "Cocinar sin sal añadida y triturar; usar una pequeña cantidad para acompañar otros alimentos."
+        },
+        {
+          "nombre": "Guiso suave de tomate y vegetales",
+          "etapa": "Cuando todos los ingredientes se hayan introducido por separado",
+          "ingredientes": "Tomate, zanahoria y habichuela tierna bien cocidos",
+          "preparacion": "Cocinar hasta que todo esté blando y aplastar o picar según las habilidades del niño."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer tomate verde o partes deterioradas.",
+        "Evitar añadir sal, azúcar, salsas comerciales saladas o condimentos picantes.",
+        "No ofrecer tomates cherry o uva enteros; cortarlos longitudinalmente en cuatro partes y adaptar la textura."
+      ],
+      "conservacion": "Guardar los tomates enteros en lugar fresco y ventilado según su madurez. Una vez cortados o cocinados, refrigerar pronto en recipiente limpio y utilizar en un plazo seguro; desechar si presentan olor, moho o deterioro.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tomato%20fruit.jpg?width=1280",
+        "alt": "Varios tomates maduros fotografiados de cerca.",
+        "autor": "Sivaanbrook",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Tomato_fruit.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "tomate para bebé",
+        "tomate maduro",
+        "tomate cocido",
+        "tomate triturado",
+        "salsa de tomate casera para bebés",
+        "cómo dar tomate a un bebé",
+        "desde cuándo puede comer tomate un bebé",
+        "tomate cherry atragantamiento",
+        "tomate de ensalada",
+        "Solanum lycopersicum",
+        "recetas con tomate para bebés"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para menores de dos años."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Foods and Drinks to Encourage",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-encourage.html",
+          "utilidad": "Variedad de alimentos desde alrededor de los seis meses y adaptación a las habilidades."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de formas y texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "Infant Nutrition and Feeding: A Guide for Use in the WIC and CSF Programs",
+          "url": "https://wicworks.fns.usda.gov/sites/default/files/media/document/infant-feeding-guide.pdf",
+          "utilidad": "Precauciones sobre nitratos en determinadas verduras y alimentos caseros para lactantes."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Nutrition Information for Raw Vegetables",
+          "url": "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/nutrition-information-raw-vegetables",
+          "utilidad": "Referencia de composición nutricional general de hortalizas crudas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Base de datos para consultar composición de alimentos y variaciones por preparación."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "zanahoria",
+      "nombre": "Zanahoria",
+      "nombres_alternativos": [
+        "Daucus carota",
+        "zanahoria amarilla",
+        "zanahoria naranja"
+      ],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Raíz comestible de color generalmente naranja, conocida por su contenido de carotenoides.",
+      "descripcion": "La zanahoria aporta fibra y carotenoides, incluido el betacaroteno, que el organismo puede convertir en vitamina A. También contiene agua y otros micronutrientes. El aporte varía según tamaño, variedad y cocción.",
+      "propiedades": [
+        "Contiene betacaroteno, precursor de la vitamina A.",
+        "Aporta fibra y agua.",
+        "Su composición cambia según la variedad y la preparación."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de vegetales y colores en la alimentación.",
+        "Cocinada hasta quedar muy blanda puede aplastarse o adaptarse a distintas texturas."
+      ],
+      "edad": "Puede ofrecerse cuando comienza la alimentación complementaria, generalmente alrededor de los 6 meses, si el bebé muestra señales de preparación. La edad por sí sola no basta: deben valorarse el control postural y la capacidad de manejar y tragar alimentos. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Al iniciar la alimentación complementaria",
+          "forma": "Pelar si la piel está dura, lavar, cortar y cocinar hasta que se aplaste fácilmente con un tenedor; hacer puré espeso."
+        },
+        {
+          "etapa": "Cuando maneje alimentos blandos con más destreza",
+          "forma": "Ofrecer majada o en bastones muy blandos y gruesos que el bebé pueda sujetar, siempre según su habilidad y bajo supervisión."
+        },
+        {
+          "etapa": "Cuando mastique y manipule trozos pequeños con seguridad",
+          "forma": "Servir cocida en trozos pequeños y blandos; no ofrecer rodajas crudas ni bastones duros."
+        }
+      ],
+      "preparacion_segura": "La zanahoria cruda y dura puede causar atragantamiento. Para lactantes, cocinar hasta que esté completamente blanda y adaptar el corte. Por su contenido potencial de nitratos, no ofrecer preparaciones caseras antes de que comience la alimentación complementaria alrededor de los 6 meses.",
+      "recetas": [
+        {
+          "nombre": "Puré de zanahoria",
+          "etapa": "Al iniciar la alimentación complementaria",
+          "ingredientes": "Zanahoria lavada y pelada",
+          "preparacion": "Cocinar completamente y aplastar o triturar con un poco de agua de cocción segura hasta obtener una textura espesa."
+        },
+        {
+          "nombre": "Zanahoria con boniato",
+          "etapa": "Cuando ambos alimentos se hayan probado por separado",
+          "ingredientes": "Zanahoria y boniato cocidos",
+          "preparacion": "Aplastar juntos hasta una textura húmeda y homogénea."
+        },
+        {
+          "nombre": "Zanahoria con pollo",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Zanahoria cocida y pollo completamente cocido",
+          "preparacion": "Desmenuzar el pollo muy fino, mezclar con la zanahoria y añadir humedad para facilitar la deglución."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer zanahoria cruda, dura, en rodajas ni en bastones rígidos a bebés pequeños.",
+        "No introducir antes del inicio de la alimentación complementaria; la zanahoria está entre las verduras que pueden contener nitratos.",
+        "Evitar añadir sal, azúcar o caldos concentrados."
+      ],
+      "conservacion": "Refrigerar las zanahorias cortadas y las preparaciones cocinadas en recipientes limpios; enfriar y guardar pronto. No dejar purés caseros a temperatura ambiente durante periodos prolongados.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Organic%20Carrot.jpg?width=1280",
+        "alt": "Zanahorias frescas de color naranja, con sus raíces visibles.",
+        "autor": "Akshaya govindasamy",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Organic_Carrot.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "zanahoria para bebé",
+        "puré de zanahoria",
+        "zanahoria cocida",
+        "zanahoria al vapor",
+        "betacaroteno",
+        "vitamina A",
+        "nitratos en zanahoria",
+        "cómo cocinar zanahoria para bebés",
+        "desde cuándo dar zanahoria",
+        "zanahoria cruda atragantamiento",
+        "Daucus carota"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para menores de dos años."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Foods and Drinks to Encourage",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-encourage.html",
+          "utilidad": "Variedad de alimentos desde alrededor de los seis meses y adaptación a las habilidades."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de formas y texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "Infant Nutrition and Feeding: A Guide for Use in the WIC and CSF Programs",
+          "url": "https://wicworks.fns.usda.gov/sites/default/files/media/document/infant-feeding-guide.pdf",
+          "utilidad": "Precauciones sobre nitratos en determinadas verduras y alimentos caseros para lactantes."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Nutrition Information for Raw Vegetables",
+          "url": "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/nutrition-information-raw-vegetables",
+          "utilidad": "Referencia de composición nutricional general de hortalizas crudas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Base de datos para consultar composición de alimentos y variaciones por preparación."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "remolacha",
+      "nombre": "Remolacha",
+      "nombres_alternativos": [
+        "betabel",
+        "betarraga",
+        "Beta vulgaris"
+      ],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Raíz de color rojo intenso que se consume cocida o rallada en preparaciones para adultos; para bebés requiere textura y preparación seguras.",
+      "descripcion": "La remolacha aporta folato, fibra y pigmentos llamados betalaínas, responsables de buena parte de su color. También contiene nitratos naturales, cuya concentración depende de las condiciones de cultivo. No debe describirse como desintoxicante ni como tratamiento para la anemia.",
+      "propiedades": [
+        "Aporta folato y fibra.",
+        "Contiene pigmentos vegetales llamados betalaínas.",
+        "Puede contener nitratos naturales en cantidades variables."
+      ],
+      "beneficios": [
+        "Aporta variedad de color y sabor a la alimentación.",
+        "Cocida hasta quedar blanda puede aplastarse y combinarse con otros alimentos."
+      ],
+      "edad": "Puede ofrecerse cuando comienza la alimentación complementaria, generalmente alrededor de los 6 meses, si el bebé muestra señales de preparación. La edad por sí sola no basta: deben valorarse el control postural y la capacidad de manejar y tragar alimentos. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Al iniciar la alimentación complementaria",
+          "forma": "Lavar, pelar y cocinar completamente hasta que esté muy blanda; aplastar o triturar en poca cantidad."
+        },
+        {
+          "etapa": "Cuando maneje alimentos blandos con más destreza",
+          "forma": "Ofrecer majada o en fragmentos muy blandos, sin cubos firmes ni rodajas resbaladizas."
+        },
+        {
+          "etapa": "Cuando mastique y manipule trozos pequeños con seguridad",
+          "forma": "Servir cocida, en trozos pequeños y blandos, según la habilidad para masticar."
+        }
+      ],
+      "preparacion_segura": "La remolacha puede contener nitratos. No ofrecer preparaciones caseras antes del inicio de la alimentación complementaria alrededor de los 6 meses. Lavar, cocinar completamente, enfriar y refrigerar pronto; no dejar purés a temperatura ambiente. Adaptar siempre la textura para evitar atragantamientos.",
+      "recetas": [
+        {
+          "nombre": "Puré de remolacha",
+          "etapa": "Al iniciar la alimentación complementaria",
+          "ingredientes": "Remolacha lavada y pelada",
+          "preparacion": "Hervir o cocinar al vapor hasta que esté muy blanda; aplastar y servir una pequeña cantidad."
+        },
+        {
+          "nombre": "Remolacha con papa",
+          "etapa": "Cuando ambos alimentos se hayan probado por separado",
+          "ingredientes": "Remolacha y papa cocidas",
+          "preparacion": "Aplastar hasta obtener una mezcla suave y húmeda."
+        },
+        {
+          "nombre": "Crema de remolacha y pollo",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Remolacha cocida y pollo completamente cocido",
+          "preparacion": "Triturar la remolacha y mezclar con pollo finamente desmenuzado y húmedo."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer remolacha cruda ni en trozos firmes a bebés pequeños.",
+        "No ofrecer preparaciones caseras antes de iniciar la alimentación complementaria; es una raíz que puede acumular nitratos.",
+        "El color rojizo de las heces u orina puede aparecer tras consumir remolacha y no siempre significa sangrado; si hay dudas o síntomas, consultar."
+      ],
+      "conservacion": "Conservar la raíz entera refrigerada o en un lugar fresco según su estado. Una vez cocida, refrigerar pronto en recipiente limpio y consumir en un plazo seguro. Desechar si hay signos de deterioro.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Beet%20root%20vegetable.jpg?width=1280",
+        "alt": "Raíces de remolacha enteras, de color rojo oscuro.",
+        "autor": "Tshrinivasan",
+        "licencia": "CC BY-SA 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Beet_root_vegetable.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "remolacha para bebé",
+        "betabel para bebé",
+        "betarraga",
+        "puré de remolacha",
+        "remolacha cocida",
+        "nitratos en remolacha",
+        "desde cuándo dar remolacha",
+        "cómo cocinar remolacha para bebés",
+        "remolacha y heces rojas",
+        "Beta vulgaris"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para menores de dos años."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Foods and Drinks to Encourage",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-encourage.html",
+          "utilidad": "Variedad de alimentos desde alrededor de los seis meses y adaptación a las habilidades."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de formas y texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "Infant Nutrition and Feeding: A Guide for Use in the WIC and CSF Programs",
+          "url": "https://wicworks.fns.usda.gov/sites/default/files/media/document/infant-feeding-guide.pdf",
+          "utilidad": "Precauciones sobre nitratos en determinadas verduras y alimentos caseros para lactantes."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Nutrition Information for Raw Vegetables",
+          "url": "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/nutrition-information-raw-vegetables",
+          "utilidad": "Referencia de composición nutricional general de hortalizas crudas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Base de datos para consultar composición de alimentos y variaciones por preparación."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "habichuela-tierna",
+      "nombre": "Habichuela tierna",
+      "nombres_alternativos": [
+        "habichuela verde",
+        "judía verde",
+        "vainita",
+        "ejote",
+        "Phaseolus vulgaris"
+      ],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Vaina verde tierna de frijol común que se consume cocida como hortaliza.",
+      "descripcion": "La habichuela tierna aporta fibra y contiene folato y otros micronutrientes. Su composición depende de la variedad y la preparación. Se diferencia de los frijoles secos: aquí se consume la vaina tierna, no el grano seco.",
+      "propiedades": [
+        "Aporta fibra y agua.",
+        "Contiene folato y otros micronutrientes en cantidades variables.",
+        "Es una fuente vegetal de textura que cambia mucho con la cocción."
+      ],
+      "beneficios": [
+        "Amplía la variedad de vegetales ofrecidos.",
+        "Cocinada hasta quedar muy blanda puede triturarse o picarse finamente."
+      ],
+      "edad": "Puede ofrecerse cuando comienza la alimentación complementaria, generalmente alrededor de los 6 meses, si el bebé muestra señales de preparación. La edad por sí sola no basta: deben valorarse el control postural y la capacidad de manejar y tragar alimentos. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Al iniciar la alimentación complementaria",
+          "forma": "Retirar extremos e hilos si los tiene, lavar y cocinar hasta que se deshaga al presionarla; triturar o aplastar."
+        },
+        {
+          "etapa": "Cuando maneje alimentos blandos con más destreza",
+          "forma": "Picar muy fina o aplastar; evitar vainas largas, fibrosas o con hebras."
+        },
+        {
+          "etapa": "Cuando mastique y manipule trozos pequeños con seguridad",
+          "forma": "Ofrecer picada en trozos pequeños y muy blandos, nunca cruda ni fibrosa."
+        }
+      ],
+      "preparacion_segura": "No ofrecer cruda ni poco cocida a bebés pequeños. Retirar hebras y extremos, cocinar completamente y cortar o triturar según la habilidad. Las habichuelas pueden contener nitratos naturales; no ofrecer preparaciones caseras antes del inicio de la alimentación complementaria alrededor de los 6 meses.",
+      "recetas": [
+        {
+          "nombre": "Habichuela tierna majada",
+          "etapa": "Al iniciar la alimentación complementaria",
+          "ingredientes": "Habichuela tierna fresca y agua potable",
+          "preparacion": "Lavar, retirar extremos y hebras, cocinar hasta que esté muy blanda y triturar."
+        },
+        {
+          "nombre": "Habichuela con papa",
+          "etapa": "Cuando ambos alimentos se hayan probado por separado",
+          "ingredientes": "Habichuela tierna y papa cocidas",
+          "preparacion": "Picar o aplastar finamente y mezclar hasta lograr una textura húmeda."
+        },
+        {
+          "nombre": "Guiso suave de habichuela y pollo",
+          "etapa": "Cuando todos los ingredientes se hayan introducido por separado",
+          "ingredientes": "Habichuela tierna, tomate maduro y pollo completamente cocidos",
+          "preparacion": "Cocinar hasta ablandar, retirar hebras y picar o aplastar de acuerdo con la habilidad del niño."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer vainas crudas, duras, largas o con hebras.",
+        "No ofrecer preparaciones caseras antes del inicio de la alimentación complementaria; las habichuelas pueden contener nitratos.",
+        "Evitar conservas con sal añadida; si se usan, revisar la etiqueta y enjuagar cuando corresponda."
+      ],
+      "conservacion": "Refrigerar las vainas frescas en recipiente o bolsa limpia y consumir mientras estén firmes. Una vez cocidas, enfriar y refrigerar pronto; no conservar a temperatura ambiente.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Green%20beans.jpg?width=1280",
+        "alt": "Habichuelas verdes frescas agrupadas después de la cosecha.",
+        "autor": "Lin dafni",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Green_beans.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "habichuela tierna para bebé",
+        "habichuela verde",
+        "vainitas",
+        "ejotes",
+        "judías verdes",
+        "habichuela cocida",
+        "puré de habichuelas tiernas",
+        "cómo preparar habichuelas para bebés",
+        "nitratos en habichuelas",
+        "Phaseolus vulgaris"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para menores de dos años."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Foods and Drinks to Encourage",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-encourage.html",
+          "utilidad": "Variedad de alimentos desde alrededor de los seis meses y adaptación a las habilidades."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de formas y texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "Infant Nutrition and Feeding: A Guide for Use in the WIC and CSF Programs",
+          "url": "https://wicworks.fns.usda.gov/sites/default/files/media/document/infant-feeding-guide.pdf",
+          "utilidad": "Precauciones sobre nitratos en determinadas verduras y alimentos caseros para lactantes."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Nutrition Information for Raw Vegetables",
+          "url": "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/nutrition-information-raw-vegetables",
+          "utilidad": "Referencia de composición nutricional general de hortalizas crudas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Base de datos para consultar composición de alimentos y variaciones por preparación."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "acelga",
+      "nombre": "Acelga",
+      "nombres_alternativos": [
+        "Beta vulgaris subsp. vulgaris",
+        "hojas de acelga",
+        "Swiss chard"
+      ],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza de hojas verdes y pencas claras o coloreadas que se consume cocida en sopas, guisos y otras preparaciones.",
+      "descripcion": "La acelga aporta fibra, folato y vitaminas, además de minerales en cantidades variables. Como otras hojas verdes, su composición depende del suelo, la variedad y la preparación. No debe presentarse como fuente suficiente de hierro ni como tratamiento de la anemia.",
+      "propiedades": [
+        "Aporta fibra y folato.",
+        "Contiene vitaminas y minerales en cantidades variables.",
+        "Las hojas y pencas tienen texturas diferentes y requieren preparación adecuada."
+      ],
+      "beneficios": [
+        "Permite variar las verduras de hoja en la alimentación.",
+        "Las hojas cocidas y picadas finamente pueden incorporarse a preparaciones húmedas."
+      ],
+      "edad": "Puede ofrecerse cuando comienza la alimentación complementaria, generalmente alrededor de los 6 meses, si el bebé muestra señales de preparación. La edad por sí sola no basta: deben valorarse el control postural y la capacidad de manejar y tragar alimentos. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Al iniciar la alimentación complementaria",
+          "forma": "Lavar hoja por hoja, retirar partes deterioradas y cocinar completamente; picar o triturar muy fino."
+        },
+        {
+          "etapa": "Cuando maneje alimentos blandos con más destreza",
+          "forma": "Retirar nervaduras gruesas si quedan fibrosas; picar finamente y mezclar con alimentos húmedos."
+        },
+        {
+          "etapa": "Cuando mastique y manipule trozos pequeños con seguridad",
+          "forma": "Ofrecer hojas y pencas muy bien cocidas, picadas pequeñas y sin fibras duras."
+        }
+      ],
+      "preparacion_segura": "Lavar cuidadosamente para retirar tierra. Cocinar hasta ablandar hojas y pencas; retirar nervaduras gruesas y picar finamente. No ofrecer hojas crudas, fibrosas o en tiras largas a bebés pequeños.",
+      "recetas": [
+        {
+          "nombre": "Acelga cocida y triturada",
+          "etapa": "Al iniciar la alimentación complementaria",
+          "ingredientes": "Hojas tiernas de acelga bien lavadas",
+          "preparacion": "Cocinar completamente y triturar o picar muy fino hasta lograr una textura segura."
+        },
+        {
+          "nombre": "Acelga con boniato",
+          "etapa": "Cuando ambos alimentos se hayan probado por separado",
+          "ingredientes": "Acelga y boniato cocidos",
+          "preparacion": "Retirar fibras duras y aplastar hasta obtener una mezcla húmeda."
+        },
+        {
+          "nombre": "Arroz suave con acelga y pollo",
+          "etapa": "Cuando todos los ingredientes se hayan introducido por separado",
+          "ingredientes": "Arroz bien cocido, acelga cocida y pollo completamente cocido",
+          "preparacion": "Picar muy fina la acelga, desmenuzar el pollo y mezclar con arroz húmedo, adaptando la textura."
+        }
+      ],
+      "precauciones": [
+        "Retirar nervaduras gruesas y fibras duras.",
+        "No ofrecer hojas crudas ni tiras largas que puedan resultar difíciles de manejar.",
+        "Evitar añadir sal, cubitos concentrados o embutidos salados."
+      ],
+      "conservacion": "Refrigerar las hojas frescas limpias y secas en recipiente adecuado. Cocinar pronto si están marchitas o deterioradas. Las preparaciones cocidas deben enfriarse y refrigerarse pronto.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/SwissChard.jpg?width=1280",
+        "alt": "Hojas verdes de acelga con pencas de distintos colores en un mercado.",
+        "autor": "Jonathunder",
+        "licencia": "CC BY-SA 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:SwissChard.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "acelga para bebé",
+        "hojas de acelga",
+        "acelga cocida",
+        "puré de acelga",
+        "acelga con boniato",
+        "cómo preparar acelga para bebés",
+        "desde cuándo dar acelga",
+        "Beta vulgaris",
+        "verduras de hoja verde"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para menores de dos años."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Foods and Drinks to Encourage",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-encourage.html",
+          "utilidad": "Variedad de alimentos desde alrededor de los seis meses y adaptación a las habilidades."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de formas y texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "Infant Nutrition and Feeding: A Guide for Use in the WIC and CSF Programs",
+          "url": "https://wicworks.fns.usda.gov/sites/default/files/media/document/infant-feeding-guide.pdf",
+          "utilidad": "Precauciones sobre nitratos en determinadas verduras y alimentos caseros para lactantes."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Nutrition Information for Raw Vegetables",
+          "url": "https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/nutrition-information-raw-vegetables",
+          "utilidad": "Referencia de composición nutricional general de hortalizas crudas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Base de datos para consultar composición de alimentos y variaciones por preparación."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
     }
   ]
 }
