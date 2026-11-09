@@ -111,3 +111,30 @@ test("todas las referencias declaradas resuelven a una fuente del catálogo", ()
     }
   }
 });
+
+
+test("rechaza alimentos que no pertenecen a la biblioteca oficial", () => {
+  const result = validarEntrada({
+    ingredients: "algo",
+    candidates: [{ id: "alimento-inventado", name: "Alimento inventado" }]
+  });
+  assert.equal(result.ok, false);
+});
+
+test("no permite cambiar el nombre oficial de un ID válido", () => {
+  const result = validarEntrada({
+    ingredients: "calabaza",
+    candidates: [{ id: "calabaza", name: "Chocolate" }]
+  });
+  assert.equal(result.ok, false);
+});
+
+test("usa los sinónimos oficiales y no los enviados por el navegador", () => {
+  const result = validarEntrada({
+    ingredients: "guineo",
+    candidates: [{ id: "platano-fruta", name: "Plátano fruta", aliases: ["nombre-falso"] }]
+  });
+  assert.equal(result.ok, true);
+  assert.ok(result.value.candidates[0].aliases.includes("banana"));
+  assert.ok(!result.value.candidates[0].aliases.includes("nombre-falso"));
+});
