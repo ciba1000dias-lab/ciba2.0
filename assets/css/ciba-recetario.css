@@ -1,0 +1,46 @@
+:root{--noche:#172b27;--verde:#526e56;--tierra:#a9583e;--oro:#d9b878;--marfil:#f5f0e5;--papel:#fffdf7;--tinta:#29332d;--suave:#73776d;--linea:#e4ddcf}
+*{box-sizing:border-box}
+body{margin:0;background:var(--marfil);color:var(--tinta);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit}
+.ciba-receta-contenedor{width:min(900px,calc(100% - 34px));margin-inline:auto}
+.ciba-receta-cabecera{background:var(--noche);color:var(--marfil);padding:18px 0}
+.ciba-receta-marca{display:inline-block;color:var(--marfil);font-size:22px;font-weight:900;letter-spacing:.2em;text-decoration:none}
+.ciba-receta-marca small{display:block;margin-top:4px;color:var(--oro);font-size:8px;letter-spacing:.18em}
+.ciba-receta-main{padding:26px 0 70px}
+.ciba-receta-volver{display:inline-block;margin:0 0 30px;color:var(--tierra);font-size:13px;font-weight:700;text-decoration:none}
+.ciba-receta-sobrelinea{margin:0;color:var(--tierra);font-size:10px;font-weight:800;letter-spacing:.2em}
+.ciba-receta-main h1{margin:10px 0 12px;color:var(--noche);font:normal clamp(42px,8vw,66px)/1.04 Georgia,serif;letter-spacing:-.04em}
+.ciba-receta-main h1 em{color:var(--tierra);font-weight:400}
+.ciba-receta-intro{max-width:690px;color:var(--suave);font-size:16px;line-height:1.8}
+.ciba-receta-aviso{margin:25px 0;padding:18px 20px;border-left:4px solid var(--oro);border-radius:8px;background:#eee7d8}
+.ciba-receta-aviso strong{color:var(--noche)}
+.ciba-receta-aviso p,.ciba-receta-disclaimer p{margin:7px 0 0;color:var(--suave);font-size:13px;line-height:1.7}
+.ciba-receta-form{display:grid;gap:16px}
+.ciba-receta-panel{position:relative;padding:24px;border:1px solid var(--linea);border-radius:13px;background:var(--papel);box-shadow:0 7px 24px #172b2708}
+.ciba-receta-numero{display:inline-grid;width:30px;height:30px;place-items:center;border:1px solid var(--oro);border-radius:50%;color:var(--tierra);font:normal 14px Georgia,serif}
+.ciba-receta-panel h2,.ciba-receta-resultados h2{margin:12px 0 7px;color:var(--noche);font:normal 27px Georgia,serif}
+.ciba-receta-ayuda{margin:0 0 18px;color:var(--suave);font-size:13px;line-height:1.7}
+.ciba-receta-campos-edad{display:grid;grid-template-columns:1.2fr auto .8fr .8fr;align-items:end;gap:12px}
+.ciba-receta-panel label{display:grid;gap:7px;color:var(--noche);font-size:12px;font-weight:700}
+.ciba-receta-o{padding-bottom:12px;color:var(--suave);font:italic 14px Georgia,serif}
+.ciba-receta-panel input:not([type=checkbox]),.ciba-receta-panel select,.ciba-receta-panel textarea{width:100%;min-height:46px;padding:11px 12px;border:1px solid #d7d0c3;border-radius:7px;background:#fff;color:var(--tinta);font:14px Arial,Helvetica,sans-serif}
+.ciba-receta-panel textarea{min-height:112px;resize:vertical;line-height:1.6}
+.ciba-receta-panel input:focus,.ciba-receta-panel select:focus,.ciba-receta-panel textarea:focus{outline:3px solid #d9b87866;border-color:var(--verde)}
+.ciba-receta-estado{margin:12px 0 0;color:var(--verde);font-size:12px}
+.ciba-receta-etiqueta{margin:12px 0 8px}
+.ciba-receta-contador{text-align:right;color:var(--suave);font-size:11px}
+.ciba-receta-opciones{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:15px 0}
+.ciba-receta-opciones label{display:flex;align-items:center;gap:9px;padding:11px;border:1px solid var(--linea);border-radius:7px;background:#fff;font-weight:500}
+.ciba-receta-opciones input{accent-color:var(--verde)}
+.ciba-receta-boton{min-height:54px;padding:0 22px;border:0;border-radius:7px;background:var(--noche);color:white;font-weight:800;cursor:pointer}
+.ciba-receta-boton:hover{background:var(--verde)}
+.ciba-receta-boton:disabled{opacity:.6;cursor:wait}
+.ciba-receta-privacidad{margin:-5px 2px 10px;color:var(--suave);font-size:11px;line-height:1.6}
+.ciba-receta-resultados{margin:26px 0;padding:24px;border:1px solid var(--linea);border-radius:13px;background:var(--papel)}
+.ciba-receta-lista{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}
+.ciba-receta-lista li{padding:9px 13px;border-radius:20px;background:#e8eee5;color:var(--noche);font-size:13px}
+.ciba-receta-desconocidos{margin:12px 0;color:var(--tierra);font-size:13px;line-height:1.6}
+.ciba-receta-pendiente{padding:12px;border-radius:7px;background:#f2ecdf;color:var(--suave);font-size:12px;line-height:1.6}
+.ciba-receta-disclaimer{margin-top:24px;padding:18px;border:1px solid var(--linea);border-radius:10px}
+.ciba-receta-disclaimer strong{color:var(--noche);font-size:13px}
+@media(max-width:620px){.ciba-receta-campos-edad{grid-template-columns:1fr 1fr}.ciba-receta-o{display:none}.ciba-receta-opciones{grid-template-columns:1fr}.ciba-receta-panel{padding:18px}.ciba-receta-panel h2{font-size:24px}}
