@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261109-10', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261109-11', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
