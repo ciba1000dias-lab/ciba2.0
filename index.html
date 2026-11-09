@@ -956,6 +956,56 @@
         animation: none !important;
       }
     }
+
+    /* CIBA · CARRUSEL DE RECURSOS DESTACADOS */
+    .recursos-destacados{background:linear-gradient(180deg,#f5f0e5 0%,#eee8da 100%)}
+    .recursos-carrusel{
+      display:grid;
+      grid-auto-flow:column;
+      grid-auto-columns:minmax(260px,31%);
+      gap:18px;
+      overflow-x:auto;
+      overscroll-behavior-inline:contain;
+      padding:8px 3px 20px;
+      scroll-snap-type:x mandatory;
+      scrollbar-width:thin;
+      scrollbar-color:var(--verde) transparent;
+    }
+    .recurso-destacado{
+      min-height:285px;
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+      padding:25px;
+      border:1px solid var(--linea);
+      border-radius:17px;
+      background:var(--papel);
+      box-shadow:0 8px 24px rgba(23,43,39,.06);
+      scroll-snap-align:start;
+      transition:transform .2s,box-shadow .2s,border-color .2s;
+    }
+    .recurso-destacado:hover{
+      transform:translateY(-4px);
+      border-color:var(--oro);
+      box-shadow:0 14px 30px rgba(23,43,39,.11);
+    }
+    .recurso-simbolo{
+      width:43px;height:43px;display:grid;place-items:center;
+      margin-bottom:18px;border:1px solid var(--oro);border-radius:50%;
+      color:var(--tierra);font:normal 25px Georgia,serif;
+    }
+    .recurso-destacado small{
+      color:var(--tierra);font-size:10px;font-weight:800;letter-spacing:.12em;
+    }
+    .recurso-destacado h3{
+      margin:10px 0;color:var(--noche);font:normal 25px Georgia,serif;line-height:1.2;
+    }
+    .recurso-destacado p{margin:0 0 18px;color:var(--suave);font-size:14px;line-height:1.65}
+    .recurso-ir{margin-top:auto;color:var(--verde);font-size:12px;font-weight:800;letter-spacing:.04em}
+    .recursos-ayuda{margin:4px 0 0;color:var(--suave);font-size:12px}
+    @media(max-width:760px){.recursos-carrusel{grid-auto-columns:minmax(245px,78%);gap:12px}.recurso-destacado{min-height:270px;padding:21px}}
+    @media(prefers-reduced-motion:reduce){.recurso-destacado{transition:none}}
+
   </style>
 </head>
 
@@ -1061,6 +1111,48 @@
           <h3 id="resultados-titulo">Resultados</h3>
           <div class="resultado-lista" id="resultado-lista"></div>
         </div>
+      </div>
+    </section>
+
+    <section class="seccion recursos-destacados" id="recursos-destacados" aria-labelledby="recursos-titulo">
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <span class="etiqueta">Herramientas para la vida cotidiana</span>
+          <h2 class="titulo" id="recursos-titulo">Recursos que vale la pena tener a mano.</h2>
+          <p>Accede directamente a bibliotecas, guías y orientaciones prácticas de CIBA.</p>
+        </div>
+
+        <div class="recursos-carrusel" role="list" aria-label="Recursos destacados de CIBA">
+          <a class="recurso-destacado" href="c/C1/alimentos/" role="listitem">
+            <span class="recurso-simbolo" aria-hidden="true">✿</span>
+            <small>BIBLIOTECA · ALIMENTACIÓN</small>
+            <h3>Biblioteca de alimentos</h3>
+            <p>Conoce los alimentos, sus propiedades y cómo ofrecerlos de forma segura según la edad.</p>
+            <span class="recurso-ir">Explorar biblioteca ↗</span>
+          </a>
+          <a class="recurso-destacado" href="c/C1/C1-04/" role="listitem">
+            <span class="recurso-simbolo" aria-hidden="true">◒</span>
+            <small>GUÍA PRÁCTICA · PRIMER AÑO</small>
+            <h3>Cómo alimentar a un bebé durante su primer año</h3>
+            <p>Una orientación para acompañar la alimentación desde el nacimiento hasta los 12 meses.</p>
+            <span class="recurso-ir">Leer guía ↗</span>
+          </a>
+          <a class="recurso-destacado" href="c/C1/C1-03/" role="listitem">
+            <span class="recurso-simbolo" aria-hidden="true">☾</span>
+            <small>GUÍA PRÁCTICA · DESCANSO</small>
+            <h3>¿Cuánto debe dormir mi bebé?</h3>
+            <p>Consulta las necesidades de sueño infantil según la etapa de desarrollo.</p>
+            <span class="recurso-ir">Consultar guía ↗</span>
+          </a>
+          <a class="recurso-destacado" href="c/C1/C1-01/" role="listitem">
+            <span class="recurso-simbolo" aria-hidden="true">⌁</span>
+            <small>DESARROLLO INFANTIL</small>
+            <h3>Comprender las etapas del desarrollo</h3>
+            <p>Descubre cómo evoluciona la infancia y qué esperar en cada etapa.</p>
+            <span class="recurso-ir">Explorar artículo ↗</span>
+          </a>
+        </div>
+        <p class="recursos-ayuda">Desliza hacia los lados para descubrir más recursos.</p>
       </div>
     </section>
 
