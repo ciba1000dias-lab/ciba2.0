@@ -3275,6 +3275,52 @@
         "cómo preparar cebolla para bebés"
       ],
       "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "berenjena",
+      "nombre": "Berenjena",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza que debe cocinarse hasta quedar muy blanda y ofrecerse picada o triturada.",
+      "palabras_clave": [
+        "berenjena",
+        "berenjena",
+        "vegetales para bebés"
+      ],
+      "nombres_alternativos": [
+        "Solanum melongena"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "calabacin",
+      "nombre": "Calabacín",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza de pulpa tierna; cocinar hasta que esté blanda y adaptar el corte a las habilidades.",
+      "palabras_clave": [
+        "calabacin",
+        "calabacín",
+        "vegetales para bebés"
+      ],
+      "nombres_alternativos": [
+        "Calabacita",
+        "Cucurbita pepo"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "brocoli",
+      "nombre": "Brócoli",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Vegetal que debe cocinarse hasta ablandar; deshacer floretes y tallos duros antes de ofrecer.",
+      "palabras_clave": [
+        "brocoli",
+        "brócoli",
+        "vegetales para bebés"
+      ],
+      "nombres_alternativos": [
+        "Brassica oleracea var. italica"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
     }
   ]
 }
