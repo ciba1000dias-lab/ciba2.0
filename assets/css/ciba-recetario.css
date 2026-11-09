@@ -91,8 +91,9 @@ a{color:inherit}
 .ciba-receta-alergia-toggle{display:flex!important;align-items:center!important;grid-template-columns:auto 1fr auto;gap:10px!important;font-size:14px!important;cursor:pointer}
 .ciba-receta-alergia-toggle input{width:18px;height:18px;accent-color:var(--verde)}
 .ciba-receta-alergias-detalle{padding-top:14px}
-.ciba-info{display:inline-grid;flex:0 0 auto;width:19px;height:19px;place-items:center;padding:0;border:1px solid var(--oro);border-radius:50%;background:#fbf7ed;color:var(--tierra);font:700 14px Georgia,serif;cursor:help}
-.ciba-info:hover,.ciba-info:focus{background:var(--noche);color:#fff;outline:2px solid #d9b87866;outline-offset:2px}
+.ciba-info{display:inline;flex:0 0 auto;width:auto;height:auto;margin:0;padding:0;border:0;background:transparent;color:#9b927f;font:normal 13px Georgia,serif;line-height:1;vertical-align:super;cursor:pointer;opacity:.78;touch-action:manipulation}
+.ciba-info:hover{color:var(--tierra);opacity:1}
+.ciba-info:focus-visible{outline:1px dotted #a99a78;outline-offset:2px}
 .ciba-receta-resultados #ciba-receta-mensaje{color:var(--suave);font-size:13px}
 .ciba-receta-nota{display:inline-flex;align-items:center;gap:8px;margin:8px 0;color:var(--suave);font-size:12px}
 .ciba-receta-nota .ciba-info{width:21px;height:21px}
@@ -110,29 +111,31 @@ a{color:inherit}
   position:fixed;
   z-index:10000;
   max-width:calc(100vw - 32px);
-  padding:14px 15px 11px;
-  border:1px solid var(--oro);
-  border-radius:10px;
-  background:var(--papel);
+  padding:12px 34px 12px 14px;
+  border:0;
+  border-left:2px solid #d9c99f;
+  border-radius:3px 7px 7px 3px;
+  background:#fffef9;
   color:var(--tinta);
-  box-shadow:0 10px 34px #172b2730;
+  box-shadow:0 5px 18px #172b2718;
 }
 .ciba-info-emergente p{
-  margin:0 0 10px;
-  color:var(--tinta);
-  font-size:13px;
-  line-height:1.6;
+  margin:0;
+  color:#55594f;
+  font-size:12px;
+  line-height:1.55;
 }
 .ciba-info-cerrar{
-  display:block;
-  margin-left:auto;
-  padding:6px 10px;
-  border:1px solid var(--linea);
-  border-radius:6px;
-  background:#f3f0e8;
-  color:var(--noche);
-  font-size:12px;
-  font-weight:700;
+  position:absolute;
+  top:5px;
+  right:7px;
+  width:22px;
+  height:22px;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:#8b887d;
+  font:normal 17px Arial,sans-serif;
   cursor:pointer;
 }
 .ciba-info-cerrar:focus-visible,.ciba-info:focus-visible{
