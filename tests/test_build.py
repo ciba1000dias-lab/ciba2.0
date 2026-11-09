@@ -213,5 +213,22 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(cat_inicial, cat_final)
 
 
+
+    def test_publica_paginas_auxiliares_sin_catalogarlas(self) -> None:
+        añadir_area(self.content, "c", "C1")
+        pagina = self.content / "c" / "C1" / "_paginas" / "alimentos" / "frutas"
+        pagina.mkdir(parents=True)
+        (pagina / "index.html").write_text(
+            "<!doctype html><html><body>Biblioteca de frutas</body></html>",
+            encoding="utf-8",
+        )
+
+        self.assertEqual(construir(self.content, self.out), 0)
+        self.assertTrue(
+            (self.out / "c" / "C1" / "alimentos" / "frutas" / "index.html").is_file()
+        )
+        self.assertEqual(self._leer_catalogo()["paginas"], [])
+
+
 if __name__ == "__main__":
     unittest.main()
