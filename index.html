@@ -1346,19 +1346,29 @@
       .recursos-track { animation:recursos-desplazamiento 90s linear infinite !important; }
     }
 
-    /* CIBA · pestañas cromáticas integradas en las columnas y persistentes al recorrer la página */
-    .ciba-columnas-barra{position:fixed;z-index:46;left:50%;bottom:18px;width:min(1120px,calc(100% - 40px));display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch;gap:clamp(7px,1.55vw,15px);padding:0;background:transparent;border:0;box-shadow:none;transform:translateX(-50%);opacity:0;pointer-events:none;transition:opacity .55s ease;will-change:top,left,width}
+    /* CIBA · navegación adaptativa: escritorio/tablet y móvil tienen geometrías independientes */
+    .ciba-columnas-barra{position:fixed;z-index:46;left:50%;bottom:18px;width:min(1120px,calc(100% - 40px));display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch;gap:clamp(7px,1.55vw,15px);padding:0;background:transparent;border:0;box-shadow:none;transform:translateX(-50%);opacity:0;pointer-events:none;transition:opacity .4s ease;will-change:top,left,width}
     .ciba-columnas-barra.visible{opacity:1;pointer-events:auto}
-    .ciba-columna-acceso{position:relative;isolation:isolate;min-width:0;min-height:48px;display:flex;align-items:center;justify-content:center;gap:9px;padding:9px 12px;border:1px solid rgba(255,255,255,.48);border-bottom:0;border-radius:var(--radio,22px) var(--radio,22px) 0 0;color:#fff;text-decoration:none;font-size:clamp(10px,1.3vw,13px);font-weight:750;letter-spacing:.015em;text-align:center;background:rgba(73,58,50,.62);-webkit-backdrop-filter:blur(12px) saturate(1.2);backdrop-filter:blur(12px) saturate(1.2);box-shadow:0 7px 20px rgba(73,58,50,.12),inset 0 1px 0 rgba(255,255,255,.26);transition:background .45s ease,box-shadow .45s ease,transform .45s ease,border-radius .55s ease}
-    .ciba-columna-acceso::before{content:"";position:absolute;z-index:-1;inset:0;border-radius:inherit;opacity:.58;transition:opacity .45s ease}
+    .ciba-columna-acceso{position:relative;isolation:isolate;min-width:0;min-height:48px;display:flex;align-items:center;justify-content:center;gap:9px;padding:9px 12px;border:1px solid rgba(255,255,255,.48);border-bottom:0;border-radius:var(--radio,22px) var(--radio,22px) 0 0;color:#fff;text-decoration:none;font-size:clamp(10px,1.3vw,13px);font-weight:750;letter-spacing:.015em;text-align:center;background:rgba(73,58,50,.62);-webkit-backdrop-filter:blur(12px) saturate(1.2);backdrop-filter:blur(12px) saturate(1.2);box-shadow:0 7px 20px rgba(73,58,50,.12),inset 0 1px 0 rgba(255,255,255,.26);transition:background .35s ease,box-shadow .35s ease,transform .35s ease,border-radius .4s ease}
+    .ciba-columna-acceso::before{content:"";position:absolute;z-index:-1;inset:0;border-radius:inherit;opacity:.7;transition:opacity .35s ease}
     .ciba-columna-acceso:nth-child(1)::before{background:#397653}.ciba-columna-acceso:nth-child(2)::before{background:#287B9A}.ciba-columna-acceso:nth-child(3)::before{background:#8C671F}.ciba-columna-acceso:nth-child(4)::before{background:#A9443B}
     .ciba-columna-acceso:hover,.ciba-columna-acceso:focus-visible{transform:translateY(-3px);box-shadow:0 10px 24px rgba(73,58,50,.18),inset 0 1px 0 rgba(255,255,255,.35)}
     .ciba-columna-acceso .letra{font-family:Georgia,serif;font-size:20px;line-height:1;opacity:.98}
-    .ciba-columnas-barra.en-movimiento .ciba-columna-acceso{background:rgba(73,58,50,.18);box-shadow:0 5px 17px rgba(73,58,50,.08),inset 0 1px 0 rgba(255,255,255,.35)}
-    .ciba-columnas-barra.en-movimiento .ciba-columna-acceso::before{opacity:.72}
-    .ciba-columnas-barra.en-cima .ciba-columna-acceso{min-height:39px;padding:6px 10px;border:1px solid rgba(255,255,255,.44);border-top:0;border-radius:0 0 var(--radio,22px) var(--radio,22px);background:rgba(73,58,50,.48);box-shadow:0 5px 18px rgba(73,58,50,.12),inset 0 -1px 0 rgba(255,255,255,.2);font-size:11px}
-    .ciba-columnas-barra.en-cima .ciba-columna-acceso::before{opacity:.78}.ciba-columnas-barra.en-cima .ciba-columna-acceso .letra{font-size:16px}
-    @media(max-width:600px){.ciba-columnas-barra{bottom:12px;width:calc(100% - 24px);gap:4px}.ciba-columna-acceso{min-height:45px;gap:4px;padding:6px 2px;flex-direction:column;font-size:9px}.ciba-columna-acceso .letra{font-size:17px}.ciba-columnas-barra.en-cima .ciba-columna-acceso{min-height:36px;padding:5px 2px;font-size:9px}.ciba-columnas-barra.en-cima .ciba-columna-acceso .letra{font-size:14px}}
+    .ciba-columnas-barra.en-movimiento .ciba-columna-acceso{background:rgba(73,58,50,.12);box-shadow:0 5px 17px rgba(73,58,50,.08),inset 0 1px 0 rgba(255,255,255,.35)}
+    .ciba-columnas-barra.en-movimiento .ciba-columna-acceso::before{opacity:.88}
+    .ciba-columnas-barra.en-cima .ciba-columna-acceso{min-height:39px;padding:6px 10px;border:1px solid rgba(255,255,255,.44);border-top:0;border-radius:0 0 var(--radio,22px) var(--radio,22px);background:rgba(73,58,50,.38);box-shadow:0 5px 18px rgba(73,58,50,.12),inset 0 -1px 0 rgba(255,255,255,.2);font-size:11px}
+    .ciba-columnas-barra.en-cima .ciba-columna-acceso::before{opacity:.9}.ciba-columnas-barra.en-cima .ciba-columna-acceso .letra{font-size:16px}
+    @media(max-width:760px){
+      .ciba-columnas-barra,.ciba-columnas-barra.visible{left:12px!important;right:12px!important;top:auto!important;bottom:12px!important;width:auto!important;transform:none!important;gap:4px;padding:5px;border:1px solid rgba(73,58,50,.16);border-radius:15px;background:rgba(255,252,245,.94);-webkit-backdrop-filter:blur(18px) saturate(1.25);backdrop-filter:blur(18px) saturate(1.25);box-shadow:0 8px 28px rgba(48,36,29,.2);opacity:1;pointer-events:auto;will-change:auto}
+      .ciba-columna-acceso,.ciba-columnas-barra.en-movimiento .ciba-columna-acceso,.ciba-columnas-barra.en-cima .ciba-columna-acceso{min-height:48px;gap:3px;flex-direction:column;padding:5px 2px;border:0;border-radius:9px;background:transparent;box-shadow:none;font-size:9px;line-height:1.1;white-space:nowrap}
+      .ciba-columna-acceso::before{border-radius:9px;opacity:.16}
+      .ciba-columna-acceso .letra,.ciba-columnas-barra.en-cima .ciba-columna-acceso .letra{font-size:18px}
+      .ciba-columna-acceso[aria-current="location"]::before{opacity:1}
+      .ciba-columna-acceso[aria-current="location"]{color:#fff;box-shadow:0 2px 9px rgba(73,58,50,.18)}
+      .ciba-columna-acceso:focus-visible{outline:2px solid #493A32;outline-offset:2px}
+      .ciba-columnas-barra.en-movimiento .ciba-columna-acceso::before{opacity:.16}
+      .ciba-columnas-barra.en-movimiento .ciba-columna-acceso[aria-current="location"]::before{opacity:1}
+    }
     @media(prefers-reduced-motion:reduce){.ciba-columnas-barra,.ciba-columna-acceso,.ciba-columna-acceso::before{transition:none}}
 
   </style>
@@ -2048,61 +2058,106 @@
         }
 
         const columnas = document.querySelector(".columnas");
-        if (columnas && !document.querySelector(".ciba-columnas-barra")) {
-          const barra = document.createElement("nav");
-          barra.className = "ciba-columnas-barra";
-          barra.setAttribute("aria-label", "Acceso rápido a las cuatro columnas de CIBA");
-          const nombres = [
-            {letra:"C",nombre:"Crianza",color:"#397653"},
-            {letra:"I",nombre:"Internet",color:"#287B9A"},
-            {letra:"B",nombre:"Bienestar",color:"#8C671F"},
-            {letra:"A",nombre:"Acompañamiento",color:"#A9443B"}
-          ];
-          nombres.forEach((item, i) => {
-            const enlace = document.createElement("a");
-            enlace.className = "ciba-columna-acceso";
-            enlace.href = "#areas";
-            enlace.setAttribute("aria-label", "Ir a " + item.nombre);
-            enlace.innerHTML = '<span class="letra">' + item.letra + '</span><span>' + item.nombre + '</span>';
-            barra.appendChild(enlace);
-          });
-          document.body.appendChild(barra);
+        if (!columnas || document.querySelector(".ciba-columnas-barra")) return;
 
-          let pendiente = false;
-          const actualizarBarra = () => {
-            pendiente = false;
-            const rect = columnas.getBoundingClientRect();
-            const cabecera = document.querySelector(".cabecera");
-            const limiteSuperior = Math.max(82, (cabecera?.getBoundingClientRect().bottom || 68) + 5);
-            const anchoPantalla = window.innerWidth;
+        const barra = document.createElement("nav");
+        barra.className = "ciba-columnas-barra";
+        barra.setAttribute("aria-label", "Acceso rápido a las cuatro columnas de CIBA");
+        const nombres = [
+          {letra:"C",nombre:"Crianza",id:"columna-crianza"},
+          {letra:"I",nombre:"Internet",id:"columna-internet"},
+          {letra:"B",nombre:"Bienestar",id:"columna-bienestar"},
+          {letra:"A",nombre:"Acompañamiento",id:"columna-acompanamiento"}
+        ];
+        const tarjetas = Array.from(columnas.querySelectorAll(".columna"));
+        nombres.forEach((item, i) => {
+          const tarjeta = tarjetas[i];
+          if (tarjeta) tarjeta.id = item.id;
+          const enlace = document.createElement("a");
+          enlace.className = "ciba-columna-acceso";
+          enlace.href = "#" + item.id;
+          enlace.setAttribute("aria-label", "Ir a " + item.nombre);
+          enlace.innerHTML = '<span class="letra">' + item.letra + '</span><span>' + item.nombre + '</span>';
+          barra.appendChild(enlace);
+        });
+        document.body.appendChild(barra);
+
+        const esMovil = window.matchMedia("(max-width: 760px)");
+        let pendiente = false;
+        let observador = null;
+
+        const actualizarBarra = () => {
+          pendiente = false;
+          if (esMovil.matches) {
             barra.classList.add("visible");
-            if (rect.top > window.innerHeight - 24) {
-              barra.classList.remove("en-movimiento", "en-cima");
-              barra.style.top = "auto";
-              barra.style.bottom = anchoPantalla <= 600 ? "12px" : "18px";
-              barra.style.left = "50%";
-              barra.style.width = anchoPantalla <= 600 ? "calc(100% - 24px)" : "min(1120px,calc(100% - 40px))";
-              return;
-            }
-            const posicion = Math.max(limiteSuperior, Math.min(rect.top, window.innerHeight - 58));
-            barra.style.bottom = "auto";
-            barra.style.top = posicion + "px";
-            barra.style.left = rect.left + "px";
-            barra.style.width = rect.width + "px";
-            barra.classList.add("en-movimiento");
-            barra.classList.toggle("en-cima", rect.bottom <= limiteSuperior + 12);
-          };
-          const programar = () => {
-            if (!pendiente) {
-              pendiente = true;
-              window.requestAnimationFrame(actualizarBarra);
-            }
-          };
-          window.addEventListener("scroll", programar, {passive:true});
-          window.addEventListener("resize", programar);
-          actualizarBarra();
-        }
+            barra.classList.remove("en-movimiento","en-cima");
+            barra.style.top = "auto";
+            barra.style.bottom = "12px";
+            barra.style.left = "12px";
+            barra.style.right = "12px";
+            barra.style.width = "auto";
+            barra.style.transform = "none";
+            return;
+          }
+
+          barra.style.right = "auto";
+          const rect = columnas.getBoundingClientRect();
+          const cabecera = document.querySelector(".cabecera");
+          const limiteSuperior = Math.max(82, (cabecera?.getBoundingClientRect().bottom || 68) + 5);
+          barra.classList.add("visible");
+
+          if (rect.top > window.innerHeight - 24) {
+            barra.classList.remove("en-movimiento","en-cima");
+            barra.style.top = "auto";
+            barra.style.bottom = "18px";
+            barra.style.left = "50%";
+            barra.style.width = "min(1120px,calc(100% - 40px))";
+            barra.style.transform = "translateX(-50%)";
+            return;
+          }
+
+          const posicion = Math.max(limiteSuperior, Math.min(rect.top, window.innerHeight - 58));
+          barra.style.bottom = "auto";
+          barra.style.top = posicion + "px";
+          barra.style.left = rect.left + "px";
+          barra.style.width = rect.width + "px";
+          barra.style.transform = "none";
+          barra.classList.add("en-movimiento");
+          barra.classList.toggle("en-cima", rect.bottom <= limiteSuperior + 12);
+        };
+
+        const programar = () => {
+          if (!pendiente) {
+            pendiente = true;
+            window.requestAnimationFrame(actualizarBarra);
+          }
+        };
+
+        const activarMovil = () => {
+          if (observador) observador.disconnect();
+          if (!esMovil.matches || !("IntersectionObserver" in window)) {
+            barra.querySelectorAll(".ciba-columna-acceso").forEach(a => a.removeAttribute("aria-current"));
+            return;
+          }
+          observador = new IntersectionObserver(entradas => {
+            const visibles = entradas.filter(e => e.isIntersecting).sort((a,b) => b.intersectionRatio-a.intersectionRatio);
+            if (!visibles.length) return;
+            const id = visibles[0].target.id;
+            barra.querySelectorAll(".ciba-columna-acceso").forEach(a => {
+              if (a.getAttribute("href") === "#" + id) a.setAttribute("aria-current","location");
+              else a.removeAttribute("aria-current");
+            });
+          }, {root:null,rootMargin:"-22% 0px -48% 0px",threshold:[0,.15,.3,.5,.7]});
+          tarjetas.forEach(t => observador.observe(t));
+        };
+
+        window.addEventListener("scroll", programar, {passive:true});
+        window.addEventListener("resize", () => { programar(); activarMovil(); });
+        esMovil.addEventListener?.("change", () => { activarMovil(); programar(); });
+        activarMovil();
+        actualizarBarra();
       };
+
       if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", iniciarCibaVisual, {once:true});
       } else {
