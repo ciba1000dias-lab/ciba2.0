@@ -1,0 +1,27 @@
+name: Test CIBA recipe Worker
+
+on:
+  push:
+    paths:
+      - "workers/ciba-recetario/**"
+      - ".github/workflows/test-recetario-worker.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: workers/ciba-recetario
+    steps:
+      - name: Obtener código
+        uses: actions/checkout@v4
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Ejecutar pruebas
+        run: npm test
