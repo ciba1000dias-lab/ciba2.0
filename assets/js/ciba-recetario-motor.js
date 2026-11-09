@@ -10,6 +10,7 @@ const BANDAS = [
 const ALERGENOS_POR_ALIMENTO = {
   'leche-vaca': ['leche', 'lacteos'],
   'leches-vegetales': ['soya'],
+  'avena': ['trigo-gluten'],
   'leche-chiva': ['leche', 'lacteos'],
   'leche-bufala': ['leche', 'lacteos'],
   'leche-camella': ['leche', 'lacteos'],
@@ -74,12 +75,12 @@ const ALERGENOS_POR_ALIMENTO = {
 };
 
 const ALIAS_ALERGENOS = [
-  { key: 'leche', terms: ['leche', 'proteina de leche', 'proteina de leche de vaca', 'caseina', 'suero de leche', 'lacteos', 'lacteo'] },
+  { key: 'leche', terms: ['leche', 'proteina de leche', 'proteina de leche de vaca', 'caseina', 'suero de leche', 'lacteos', 'lacteo', 'queso', 'yogur', 'yogurt'] },
   { key: 'lacteos', terms: ['lactosa', 'intolerancia a la lactosa'] },
   { key: 'huevo', terms: ['huevo', 'huevos', 'clara', 'yema'] },
   { key: 'pescado', terms: ['pescado', 'atun', 'salmon', 'sardina', 'merluza'] },
-  { key: 'moluscos', terms: ['pulpo', 'calamar', 'ostion', 'ostiones', 'cobo', 'moluscos'] },
-  { key: 'crustaceos', terms: ['camaron', 'camarones', 'langosta', 'cangrejo', 'crustaceos'] },
+  { key: 'moluscos', terms: ['pulpo', 'calamar', 'ostion', 'ostiones', 'cobo', 'moluscos', 'marisco', 'mariscos'] },
+  { key: 'crustaceos', terms: ['camaron', 'camarones', 'langosta', 'cangrejo', 'crustaceos', 'marisco', 'mariscos'] },
   { key: 'soya', terms: ['soya', 'soja'] },
   { key: 'mani', terms: ['mani', 'cacahuete', 'cacahuate'] },
   { key: 'almendra', terms: ['almendra', 'almendras'] },
@@ -148,8 +149,11 @@ export function evaluarRecetas({ recetas, ingredientesIds, edadMeses, restriccio
     if (!receta.adaptacion_por_edad || !receta.adaptacion_por_edad[edad.key]) return false;
     const obligatorios = (receta.ingredientes || []).filter(i => i.obligatorio !== false);
     if (!obligatorios.length || !obligatorios.every(i => ids.has(i.alimento_id))) return false;
-    if (seleccionadas.has('vegetariana') && !recetaVegetariana(receta)) return false;
+    if ((seleccionadas.has('vegetariana') || seleccionadas.has('vegana')) && !recetaVegetariana(receta)) return false;
     const presentes = alergenosDeReceta(receta);
+    if (seleccionadas.has('vegana') && (presentes.has('leche') || presentes.has('lacteos') || presentes.has('huevo'))) return false;
+    if (seleccionadas.has('sin-lacteos') && (presentes.has('leche') || presentes.has('lacteos'))) return false;
+    if (seleccionadas.has('sin-gluten') && presentes.has('trigo-gluten')) return false;
     if (alergenos.some(a => presentes.has(a))) return false;
     return true;
   });
