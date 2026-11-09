@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261109-6', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261109-7', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -181,6 +181,8 @@
     const actual = resolverColumnaActual();
     const colores = { C:'#397653', I:'#287B9A', B:'#8C671F', A:'#A9443B' };
     const cabecera = elemento('header','ciba-global-cabecera');
+    cabecera.dataset.columna = actual.id;
+    cabecera.style.setProperty('--ciba-columna-color', colores[actual.id] || '#493A32');
     cabecera.setAttribute('aria-label','Identidad y navegación de CIBA');
     const marca = elemento('a','ciba-global-marca','CIBA');
     marca.href = new URL('index.html',RAIZ).href;
