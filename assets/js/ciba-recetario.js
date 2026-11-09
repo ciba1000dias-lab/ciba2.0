@@ -1,6 +1,9 @@
 import { evaluarRecetas } from './ciba-recetario-motor.js';
 
 const API = 'https://damp-pine-fb21.ciba-1000dias-125.workers.dev/interpret';
+const MODO_DEMO = new URLSearchParams(window.location.search).get('demo') === '1';
+const avisoDemo = document.querySelector('#ciba-receta-demo-aviso');
+if (avisoDemo) avisoDemo.hidden = !MODO_DEMO;
 const INDICE_URL = new URL('../data/alimentos-busqueda.json', import.meta.url);
 const RECETAS_URL = new URL('../data/recetario/recetas.json', import.meta.url);
 const formulario = document.querySelector('#ciba-recetario-form');
@@ -155,7 +158,8 @@ function mostrarRecetas(data) {
     ingredientesIds: (data.recognizedFoods || []).map(item => item.id).filter(Boolean),
     edadMeses: edad,
     restricciones: obtenerRestricciones(),
-    detalleRestricciones: campoRestricciones.value
+    detalleRestricciones: campoRestricciones.value,
+    modoDemostracion: MODO_DEMO
   });
 
   const titulo = document.createElement('h3');
@@ -177,8 +181,12 @@ function mostrarRecetas(data) {
     aviso.textContent = 'Con una indicación clínica adicional, no ofrecemos combinaciones automáticas. Sigue el plan del equipo de salud.';
   } else if (decision.estado === 'catalogo_sin_aprobaciones') {
     aviso.textContent = 'El catálogo culinario contiene preparaciones en revisión especializada. Ninguna está habilitada todavía, así que no te mostraremos recetas improvisadas.';
+  } else if (decision.estado === 'sin_coincidencias_demo') {
+    aviso.textContent = 'No hay una preparación del catálogo demostrativo que reúna todos los ingredientes reconocidos y las condiciones indicadas. No añadiremos alimentos que no mencionaste.';
   } else if (decision.estado === 'sin_coincidencias') {
     aviso.textContent = 'No hay una preparación aprobada que reúna todos los ingredientes reconocidos y las condiciones indicadas. No añadiremos alimentos que no mencionaste.';
+  } else if (decision.estado === 'coincidencias_demo') {
+    aviso.textContent = 'MODO DEMOSTRACIÓN: estas coincidencias proceden de preparaciones reales del catálogo CIBA, pero siguen pendientes de revisión y aprobación profesional. Se muestran para demostrar el funcionamiento del asistente; no son recomendaciones de alimentación. Comprueba siempre los ingredientes y las restricciones.';
   } else {
     aviso.textContent = 'Estas preparaciones aprobadas coinciden con los ingredientes, la edad y las restricciones indicadas. Comprueba siempre las etiquetas y evita el contacto cruzado con alérgenos.';
   }
@@ -187,6 +195,12 @@ function mostrarRecetas(data) {
   for (const receta of decision.recetas) {
     const tarjeta = document.createElement('article');
     tarjeta.className = 'ciba-receta-tarjeta';
+    if (decision.modoDemostracion) {
+      const estadoDemo = document.createElement('p');
+      estadoDemo.className = 'ciba-receta-etiqueta-demo';
+      estadoDemo.textContent = 'BORRADOR · NO APROBADO';
+      tarjeta.appendChild(estadoDemo);
+    }
     const nombre = document.createElement('h4');
     nombre.textContent = receta.nombre;
     tarjeta.appendChild(nombre);
