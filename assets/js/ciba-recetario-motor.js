@@ -10,7 +10,6 @@ const BANDAS = [
 const ALERGENOS_POR_ALIMENTO = {
   'leche-vaca': ['leche', 'lacteos'],
   'leches-vegetales': ['soya'],
-  'avena': ['trigo-gluten'],
   'leche-chiva': ['leche', 'lacteos'],
   'leche-bufala': ['leche', 'lacteos'],
   'leche-camella': ['leche', 'lacteos'],
