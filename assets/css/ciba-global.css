@@ -674,3 +674,39 @@ body:not(.ciba-con-cabecera-global) > .ciba-global-menu .ciba-global-panel{
     left:0!important;right:auto!important;width:min(290px,calc(100vw - 24px))!important;
   }
 }
+
+
+/* CIBA · anclaje definitivo del panel: siempre dentro del viewport.
+   El panel deja de depender del ancho/posición del contenedor del botón. */
+.ciba-global-menu > .ciba-global-panel{
+  position:fixed!important;
+  left:12px!important;
+  right:auto!important;
+  width:min(310px,calc(100vw - 24px))!important;
+  max-width:calc(100vw - 24px)!important;
+  box-sizing:border-box!important;
+  margin:0!important;
+  z-index:10020!important;
+}
+body.ciba-con-cabecera-global .ciba-global-menu > .ciba-global-panel{
+  top:96px!important;
+  max-height:calc(100vh - 112px)!important;
+  max-height:calc(100dvh - 112px)!important;
+}
+body:not(.ciba-con-cabecera-global) > .ciba-global-menu > .ciba-global-panel{
+  top:146px!important;
+  max-height:calc(100vh - 162px)!important;
+  max-height:calc(100dvh - 162px)!important;
+}
+@media(max-width:600px){
+  body.ciba-con-cabecera-global .ciba-global-menu > .ciba-global-panel{
+    top:88px!important;
+    max-height:calc(100vh - 104px)!important;
+    max-height:calc(100dvh - 104px)!important;
+  }
+  body:not(.ciba-con-cabecera-global) > .ciba-global-menu > .ciba-global-panel{
+    top:136px!important;
+    max-height:calc(100vh - 152px)!important;
+    max-height:calc(100dvh - 152px)!important;
+  }
+}
