@@ -74,12 +74,12 @@ class TestRecetario(unittest.TestCase):
                 self.assertGreaterEqual(fuente["entradas_publicadas_minimo"], 1, fuente["id"])
             self.assertFalse(fuente["recomendacion_automatica"], fuente["id"])
 
-    def test_fuentes_generales_suman_151_entradas_documentadas(self) -> None:
+    def test_fuentes_generales_suman_181_entradas_documentadas(self) -> None:
         colecciones = self.fuentes_externas["colecciones"]
         generales = [f for f in colecciones if f["id"] in {
-            "nhs-best-start-97", "unicef-venezuela-2026", "first-steps-2023"
+            "nhs-best-start-97", "unicef-venezuela-2026", "first-steps-2023", "ins-peru-6-23m-2023"
         }]
-        self.assertEqual(sum(f["entradas_publicadas"] for f in generales), 151)
+        self.assertEqual(sum(f["entradas_publicadas"] for f in generales), 181)
         self.assertEqual(sum(f.get("entradas_publicadas_minimo", 0) for f in colecciones), 101)
 
     def test_indice_unicef_venezuela_contiene_22_preparaciones_no_publicables(self) -> None:
@@ -106,6 +106,21 @@ class TestRecetario(unittest.TestCase):
             self.assertFalse(receta["recomendacion_automatica"], receta["id"])
             self.assertEqual(receta["estado"], "pendiente_cotejo_individual", receta["id"])
             self.assertTrue(receta["url_fuente"].startswith("https://"), receta["id"])
+            self.assertTrue(receta["alertas_revision"], receta["id"])
+
+
+    def test_indice_ins_peru_contiene_30_preparaciones_bloqueadas(self) -> None:
+        externas = json.loads((DATA / "recetario" / "recetas-externas-ins-peru-2023.json").read_text(encoding="utf-8"))
+        recetas = externas["recetas"]
+        self.assertEqual(len(recetas), 30)
+        self.assertEqual(len({r["id"] for r in recetas}), 30)
+        self.assertEqual(sum(r["etapa_fuente_meses"] == "6-8" for r in recetas), 10)
+        self.assertEqual(sum(r["etapa_fuente_meses"] == "9-11" for r in recetas), 10)
+        self.assertEqual(sum(r["etapa_fuente_meses"] == "12-23" for r in recetas), 10)
+        for receta in recetas:
+            self.assertFalse(receta["publicable"], receta["id"])
+            self.assertFalse(receta["recomendacion_automatica"], receta["id"])
+            self.assertEqual(receta["estado"], "pendiente_cotejo_individual", receta["id"])
             self.assertTrue(receta["alertas_revision"], receta["id"])
 
     def test_fuentes_clinicas_se_mantienen_separadas(self) -> None:
