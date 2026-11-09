@@ -20,6 +20,7 @@ const propuestas = document.querySelector('#ciba-receta-propuestas');
 
 let alimentos = [];
 let recetas = [];
+let ultimoResultado = null;
 
 function normalizar(texto) {
   return String(texto || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
@@ -212,24 +213,81 @@ function mostrarRecetas(data) {
   }
 }
 
+function mostrarAclaraciones(terminos) {
+  desconocidos.replaceChildren();
+  for (const termino of terminos) {
+    const bloque = document.createElement('section');
+    bloque.className = 'ciba-receta-aclaracion';
+    const titulo = document.createElement('h3');
+    titulo.textContent = '¿A qué alimento te refieres con «' + termino + '»?';
+    bloque.appendChild(titulo);
+    const palabras = normalizar(termino).split(/[^a-z0-9]+/).filter(t => t.length >= 3);
+    const opciones = alimentos
+      .map(a => ({ alimento:a, puntuacion:puntuar(a, palabras) }))
+      .filter(x => x.puntuacion >= 3)
+      .sort((a,b) => b.puntuacion - a.puntuacion || a.alimento.nombre.localeCompare(b.alimento.nombre, 'es'))
+      .slice(0, 6);
+    if (!opciones.length) {
+      const ayuda = document.createElement('p');
+      ayuda.textContent = 'No encontramos una variedad suficientemente clara en la biblioteca. Puedes volver a escribir el ingrediente con más detalle.';
+      bloque.appendChild(ayuda);
+    } else {
+      const ayuda = document.createElement('p');
+      ayuda.textContent = 'Puede tratarse de distintas variedades. Elige la que tienes para identificarla correctamente:';
+      bloque.appendChild(ayuda);
+      const lista = document.createElement('div');
+      lista.className = 'ciba-receta-opciones-aclaracion';
+      for (const opcion of opciones) {
+        const botonOpcion = document.createElement('button');
+        botonOpcion.type = 'button';
+        botonOpcion.className = 'ciba-receta-opcion-aclaracion';
+        const nombre = document.createElement('strong');
+        nombre.textContent = opcion.alimento.nombre;
+        botonOpcion.appendChild(nombre);
+        if (opcion.alimento.resumen) {
+          const detalle = document.createElement('span');
+          detalle.textContent = opcion.alimento.resumen;
+          botonOpcion.appendChild(detalle);
+        }
+        botonOpcion.addEventListener('click', () => {
+          if (!ultimoResultado) return;
+          const yaExiste = (ultimoResultado.recognizedFoods || []).some(x => x.id === opcion.alimento.id);
+          if (!yaExiste) ultimoResultado.recognizedFoods = [...(ultimoResultado.recognizedFoods || []), {
+            id: opcion.alimento.id, name: opcion.alimento.nombre
+          }];
+          ultimoResultado.unknownTerms = (ultimoResultado.unknownTerms || []).filter(x => x !== termino);
+          mostrarResultado(ultimoResultado);
+        });
+        lista.appendChild(botonOpcion);
+      }
+      bloque.appendChild(lista);
+    }
+    desconocidos.appendChild(bloque);
+  }
+}
+
 function mostrarResultado(data) {
+  ultimoResultado = data;
   resultados.hidden = false;
   listaReconocidos.replaceChildren();
   const reconocidos = data.recognizedFoods || [];
   if (reconocidos.length) {
-    mensaje.textContent = 'La IA identificó estos alimentos. Comprueba que coincidan con lo que tienes:';
+    mensaje.textContent = 'Hemos identificado estos alimentos. Comprueba que coincidan con lo que tienes:';
     for (const item of reconocidos) {
       const li = document.createElement('li');
       li.textContent = item.name;
       listaReconocidos.appendChild(li);
     }
   } else {
-    mensaje.textContent = 'No pudimos confirmar ningún alimento de la biblioteca con suficiente seguridad.';
+    mensaje.textContent = 'Todavía necesitamos identificar los ingredientes que escribiste.';
   }
   const terminos = data.unknownTerms || [];
-  desconocidos.textContent = terminos.length
-    ? 'Necesitamos aclarar: ' + terminos.join(', ') + (data.clarification ? '. ' + data.clarification : '')
-    : (data.clarification || '');
+  if (terminos.length) {
+    mostrarAclaraciones(terminos);
+    propuestas.replaceChildren();
+    return;
+  }
+  desconocidos.textContent = data.clarification || '';
   if (reconocidos.length) mostrarRecetas(data);
   else propuestas.replaceChildren();
 }
