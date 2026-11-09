@@ -1361,7 +1361,29 @@
     @media(max-width:760px){.ciba-columnas-barra,.ciba-columnas-barra.visible{display:none!important}}
     @media(prefers-reduced-motion:reduce){.ciba-columnas-barra,.ciba-columna-acceso,.ciba-columna-acceso::before{transition:none}}
 
-  </style>
+  
+
+    /* CIBA · identidad cromática y ornamentos de las tarjetas de áreas */
+    .area-card{
+      display:flex;flex-direction:column;overflow:hidden;padding:0;min-height:220px;
+      border:1px solid rgba(73,58,50,.14);border-radius:16px;background:#F7F2E8;
+      box-shadow:0 7px 22px rgba(73,58,50,.055);text-decoration:none;
+      transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;
+    }
+    .area-card:hover{transform:translateY(-4px);box-shadow:0 15px 32px rgba(73,58,50,.12)}
+    .area-card-cabezal{position:relative;display:flex;flex-direction:column;gap:9px;padding:17px 21px 18px;color:#fff;isolation:isolate}
+    .area-card-cabezal::after{content:"";position:absolute;z-index:-1;right:-18px;top:-34px;width:112px;height:112px;border:1px solid rgba(255,255,255,.24);border-radius:50%;box-shadow:0 0 0 13px rgba(255,255,255,.07),0 0 0 28px rgba(255,255,255,.045)}
+    .area-card-cabezal small{color:rgba(255,255,255,.83);font-size:9px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+    .area-card-cabezal strong{max-width:90%;font:400 clamp(20px,2.2vw,25px)/1.15 Georgia,serif;color:#fff}
+    .area-card-cuerpo{position:relative;display:block;flex:1;overflow:hidden;padding:20px 21px 22px;background:#F7F2E8}
+    .area-card-descripcion{position:relative;z-index:1;display:block;max-width:88%;color:#655C51;font-size:12px;line-height:1.75}
+    .area-card-motivos{position:absolute;right:8px;bottom:7px;display:flex;align-items:center;gap:0;width:145px;height:74px;color:var(--area-color);opacity:.18;pointer-events:none}
+    .area-card-motivos svg{width:50%;height:100%;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+    .area-card[data-columna="C"]{--area-color:#397653}.area-card[data-columna="I"]{--area-color:#287B9A}.area-card[data-columna="B"]{--area-color:#8C671F}.area-card[data-columna="A"]{--area-color:#A9443B}
+    .area-card[data-columna="C"] .area-card-cabezal{background:#397653}.area-card[data-columna="I"] .area-card-cabezal{background:#287B9A}.area-card[data-columna="B"] .area-card-cabezal{background:#8C671F}.area-card[data-columna="A"] .area-card-cabezal{background:#A9443B}
+    .area-card:not([data-columna]) .area-card-cabezal{background:#493A32}
+    @media(max-width:680px){.area-card-cabezal{padding:15px 17px}.area-card-cuerpo{padding:17px}.area-card-descripcion{max-width:94%}.area-card-motivos{width:118px;opacity:.13}}
+</style>
 </head>
 
 <body>
@@ -1898,15 +1920,29 @@
 
         areasLista.innerHTML = areas.map(area => {
           const letra = String(area.columna || "").toUpperCase();
+          const columna = ["C", "I", "B", "A"].includes(letra) ? letra : "";
           const titulo = escapar(area.titulo || "Área CIBA");
           const descripcion = escapar(area.descripcion || "");
           const ruta = escapar(area.ruta_publica || "#areas");
+          const nombreColumna = escapar(columnas[letra] || "CIBA");
 
           return `
-            <a class="area-card" href="${ruta}">
-              <small>${escapar(columnas[letra] || "CIBA")} · ${escapar(area.id || "")}</small>
-              <h3>${titulo}</h3>
-              <p>${descripcion}</p>
+            <a class="area-card" data-columna="${columna}" href="${ruta}">
+              <span class="area-card-cabezal">
+                <small>${nombreColumna} · ${escapar(area.id || "")}</small>
+                <strong>${titulo}</strong>
+              </span>
+              <span class="area-card-cuerpo">
+                <span class="area-card-motivos" aria-hidden="true">
+                  <svg viewBox="0 0 100 70" focusable="false">
+                    <path d="M31 23 C20 13 9 17 13 28 C17 37 24 37 31 33 M68 23 C79 13 91 17 87 28 C83 37 76 37 69 33 M31 48 C19 58 10 53 14 43 C18 35 25 37 32 43 M68 48 C81 58 90 53 86 43 C82 35 75 37 68 43 M31 24 C38 16 62 16 69 24 L73 45 C68 57 38 57 27 45 Z M42 21 C42 10 58 10 58 21 M50 20 L50 12 M37 30 C44 25 57 25 64 30 M38 43 C46 48 55 48 63 43"/>
+                  </svg>
+                  <svg viewBox="0 0 100 70" focusable="false">
+                    <path d="M13 49 C22 48 29 48 35 52 C43 58 59 56 66 49 C73 42 72 31 65 25 C56 17 42 20 39 30 C36 40 47 46 54 40 C59 36 55 29 50 31 C47 32 48 36 51 36 M13 49 C12 43 17 38 24 38 C31 38 34 43 35 50 M69 48 C77 50 83 47 87 42 M80 39 L82 31 M88 39 L92 33"/>
+                  </svg>
+                </span>
+                <span class="area-card-descripcion">${descripcion}</span>
+              </span>
             </a>
           `;
         }).join("");
