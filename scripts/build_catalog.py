@@ -391,8 +391,8 @@ def _conectar_sistema_global(
     if script_cargado:
         etiqueta_existente = script_cargado.group(0)
         etiqueta_actualizada = re.sub(
-            r'(\\bsrc\\s*=\\s*["\'][^"\']*ciba-global\\.js)(?:[?#][^"\']*)?(["\'])',
-            r'\\1?v=20261109-2\\2',
+            r'(\bsrc\s*=\s*["\'][^"\']*ciba-global\.js)(?:[?#][^"\']*)?(["\'])',
+            r'\1?v=20261109-2\2',
             etiqueta_existente,
             flags=re.IGNORECASE,
         )
