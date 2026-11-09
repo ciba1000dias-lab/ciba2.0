@@ -11,10 +11,22 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261109-11', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261109-12', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
+  let menuAbierto = false;
+  let scrollOculto = false;
+  let transicionActiva = false;
+
+  function actualizarVisibilidadBuscador() {
+    const buscador = document.querySelector('.ciba-global-buscador');
+    if (!buscador) return;
+    buscador.classList.toggle(
+      'ciba-oraculo-oculto',
+      menuAbierto || scrollOculto || transicionActiva
+    );
+  }
 
   const columnas = [
     { id: 'C', titulo: 'Crianza' },
@@ -112,6 +124,8 @@
   }
 
   function cerrarMenu(panel, boton) {
+    menuAbierto = false;
+    actualizarVisibilidadBuscador();
     panel.classList.remove('abierto');
     boton.setAttribute('aria-expanded', 'false');
     boton.setAttribute('aria-label', 'Abrir menú de navegación');
@@ -411,6 +425,15 @@
 
     boton.addEventListener('click', () => {
       const abierto = panel.classList.toggle('abierto');
+      menuAbierto = abierto;
+
+      if (abierto) {
+        const panelBusqueda = document.querySelector('.ciba-global-panel-busqueda');
+        const botonBusqueda = document.querySelector('.ciba-global-oraculo');
+        if (panelBusqueda) panelBusqueda.classList.remove('abierto');
+        if (botonBusqueda) botonBusqueda.setAttribute('aria-expanded', 'false');
+      }
+      actualizarVisibilidadBuscador();
 
       boton.setAttribute('aria-expanded', String(abierto));
       boton.setAttribute(
@@ -799,7 +822,47 @@
     });
 
     contenedor.append(boton, etiqueta, panel);
+    contenedor.classList.add('ciba-oraculo-oculto');
     document.body.appendChild(contenedor);
+
+    // El oráculo aparece cuando el contenido inicial ya está asentado.
+    window.setTimeout(() => {
+      if (!menuAbierto && !scrollOculto && !transicionActiva) {
+        contenedor.classList.remove('ciba-oraculo-oculto');
+      }
+    }, 650);
+
+    // Al navegar a otra página o artículo, se desvanece antes del cambio.
+    document.addEventListener('click', (evento) => {
+      const ancla = evento.target.closest('a[href]');
+      if (!ancla || evento.defaultPrevented || evento.button !== 0 ||
+          evento.metaKey || evento.ctrlKey || evento.shiftKey || evento.altKey ||
+          ancla.target === '_blank') return;
+      const destino = new URL(ancla.href, window.location.href);
+      if (destino.origin !== window.location.origin ||
+          destino.pathname === window.location.pathname) return;
+      transicionActiva = true;
+      actualizarVisibilidadBuscador();
+    }, true);
+
+    // Al bajar se aparta de la lectura; al subir vuelve a estar disponible.
+    let ultimaPosicion = window.scrollY || 0;
+    window.addEventListener('scroll', () => {
+      if (menuAbierto) return;
+      const panelBusqueda = document.querySelector('.ciba-global-panel-busqueda');
+      if (panelBusqueda && panelBusqueda.classList.contains('abierto')) return;
+      const posicion = window.scrollY || 0;
+      const diferencia = posicion - ultimaPosicion;
+      if (posicion < 35) {
+        scrollOculto = false;
+      } else if (diferencia > 8 && posicion > 90) {
+        scrollOculto = true;
+      } else if (diferencia < -8) {
+        scrollOculto = false;
+      }
+      ultimaPosicion = posicion;
+      actualizarVisibilidadBuscador();
+    }, { passive: true });
   }
 
   function iniciar() {
