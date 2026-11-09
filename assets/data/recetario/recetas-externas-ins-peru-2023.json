@@ -1,0 +1,482 @@
+{
+  "version": 1,
+  "titulo": "Preparaciones indexadas del Recetario nutritivo del INS Perú (2023)",
+  "fuente": {
+    "id": "ins-peru-6-23m-2023",
+    "institucion": "Instituto Nacional de Salud del Perú",
+    "titulo": "Recetario nutritivo para niñas y niños de 6 a 23 meses",
+    "url": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+    "pdf": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+    "fecha_publicacion": "2023",
+    "autoras": [
+      "Rosa Victoria Salvatierra Ruiz",
+      "Luz Melchorita Cárdenas Achata"
+    ]
+  },
+  "nota": "Índice de 30 títulos extraídos del índice del documento oficial. No reproduce instrucciones ni cantidades. La edad por grupo refleja el índice de la fuente, no aprobación clínica individual. Todas las entradas están bloqueadas hasta revisión completa y adaptación al contexto cubano. Atención especial a hígado y vitamina A preformada, sangre de ave, pescado, alérgenos, texturas y seguridad alimentaria.",
+  "recetas": [
+    {
+      "id": "ins-peru-purecito-verde",
+      "nombre": "Purecito verde",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "6-8",
+      "ingredientes_mencionados_en_titulo_o_indice": "Purecito verde",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-zapallito-feliz",
+      "nombre": "Zapallito feliz",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "6-8",
+      "ingredientes_mencionados_en_titulo_o_indice": "Zapallito feliz",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-purecito-moreno",
+      "nombre": "Purecito moreno",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "6-8",
+      "ingredientes_mencionados_en_titulo_o_indice": "Purecito moreno",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-mazamorra-primaveral",
+      "nombre": "Mazamorra primaveral",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "6-8",
+      "ingredientes_mencionados_en_titulo_o_indice": "Mazamorra primaveral",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-flan-de-zapallo",
+      "nombre": "Flan de zapallo",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "6-8",
+      "ingredientes_mencionados_en_titulo_o_indice": "Flan de zapallo",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-suavecito-de-higado",
+      "nombre": "Suavecito de hígado",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "6-8",
+      "ingredientes_mencionados_en_titulo_o_indice": "Suavecito de hígado",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
+        "La fuente incluye preparaciones con hígado en esta etapa; revisar el contenido de vitamina A preformada y la frecuencia de consumo. No recomendar repetidamente ni de forma automática.",
+        "Revisar además que la cantidad de hígado no exceda la recomendación apropiada para lactantes."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-mazamorra-de-zanahoria",
+      "nombre": "Mazamorra de zanahoria",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "6-8",
+      "ingredientes_mencionados_en_titulo_o_indice": "Mazamorra de zanahoria",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-mazamorra-peruanita",
+      "nombre": "Mazamorra peruanita",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "6-8",
+      "ingredientes_mencionados_en_titulo_o_indice": "Mazamorra peruanita",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-purecito-arveja-higado",
+      "nombre": "Purecito de arveja con hígado",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "6-8",
+      "ingredientes_mencionados_en_titulo_o_indice": "Purecito de arveja con hígado",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
+        "La fuente incluye preparaciones con hígado en esta etapa; revisar el contenido de vitamina A preformada y la frecuencia de consumo. No recomendar repetidamente ni de forma automática.",
+        "Revisar además que la cantidad de hígado no exceda la recomendación apropiada para lactantes."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-pure-brillante",
+      "nombre": "Puré brillante",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "6-8",
+      "ingredientes_mencionados_en_titulo_o_indice": "Puré brillante",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-higado-primaveral",
+      "nombre": "Hígado primaveral",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "9-11",
+      "ingredientes_mencionados_en_titulo_o_indice": "Hígado primaveral",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
+        "La fuente incluye preparaciones con hígado en esta etapa; revisar el contenido de vitamina A preformada y la frecuencia de consumo. No recomendar repetidamente ni de forma automática."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-ajiaco-jardinera",
+      "nombre": "Ajiaco a la jardinera",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "9-11",
+      "ingredientes_mencionados_en_titulo_o_indice": "Ajiaco a la jardinera",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-zapallito-con-chispas",
+      "nombre": "Zapallito con chispas",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "9-11",
+      "ingredientes_mencionados_en_titulo_o_indice": "Zapallito con chispas",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-fideos-morenada",
+      "nombre": "Fideos a la morenada",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "9-11",
+      "ingredientes_mencionados_en_titulo_o_indice": "Fideos a la morenada",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-espesito-higado",
+      "nombre": "Espesito de hígado",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "9-11",
+      "ingredientes_mencionados_en_titulo_o_indice": "Espesito de hígado",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
+        "La fuente incluye preparaciones con hígado en esta etapa; revisar el contenido de vitamina A preformada y la frecuencia de consumo. No recomendar repetidamente ni de forma automática."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-tallarincitos-rojos",
+      "nombre": "Tallarincitos rojos",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "9-11",
+      "ingredientes_mencionados_en_titulo_o_indice": "Tallarincitos rojos",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-aji-pescado",
+      "nombre": "Ají de pescado",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "9-11",
+      "ingredientes_mencionados_en_titulo_o_indice": "Ají de pescado",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
+        "Las preparaciones de pescado requieren identificar especie, mercurio, espinas, cocción completa y alérgeno pescado."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-rayitos-sol",
+      "nombre": "Rayitos de sol",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "9-11",
+      "ingredientes_mencionados_en_titulo_o_indice": "Rayitos de sol",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-sudadito-pescado",
+      "nombre": "Sudadito de pescado",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "9-11",
+      "ingredientes_mencionados_en_titulo_o_indice": "Sudadito de pescado",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
+        "Las preparaciones de pescado requieren identificar especie, mercurio, espinas, cocción completa y alérgeno pescado."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-sangrecita-italiana",
+      "nombre": "Sangrecita a la italiana",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "9-11",
+      "ingredientes_mencionados_en_titulo_o_indice": "Sangrecita a la italiana",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
+        "Las preparaciones con sangrecita requieren confirmar procedencia sanitaria, manipulación higiénica y cocción completa; no extrapolar su aporte de hierro como indicación terapéutica."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-mix-verduras",
+      "nombre": "Mix de verduras",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "12-23",
+      "ingredientes_mencionados_en_titulo_o_indice": "Mix de verduras",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-solterito-lentejitas",
+      "nombre": "Solterito de lentejitas",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "12-23",
+      "ingredientes_mencionados_en_titulo_o_indice": "Solterito de lentejitas",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-tortilla-brillante",
+      "nombre": "Tortilla brillante",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "12-23",
+      "ingredientes_mencionados_en_titulo_o_indice": "Tortilla brillante",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-fiesta-verduras",
+      "nombre": "Fiesta de verduras",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "12-23",
+      "ingredientes_mencionados_en_titulo_o_indice": "Fiesta de verduras",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-higado-salsa-verde",
+      "nombre": "Hígado en salsa verde",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "12-23",
+      "ingredientes_mencionados_en_titulo_o_indice": "Hígado en salsa verde",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
+        "La fuente incluye preparaciones con hígado en esta etapa; revisar el contenido de vitamina A preformada y la frecuencia de consumo. No recomendar repetidamente ni de forma automática."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-pure-yuca-higado-arroz",
+      "nombre": "Puré de yuca con hígado frito y arroz",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "12-23",
+      "ingredientes_mencionados_en_titulo_o_indice": "Puré de yuca con hígado frito y arroz",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
+        "La fuente incluye preparaciones con hígado en esta etapa; revisar el contenido de vitamina A preformada y la frecuencia de consumo. No recomendar repetidamente ni de forma automática."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-pollo-brocoli-arroz",
+      "nombre": "Pollo con saltado de brócoli y arroz",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "12-23",
+      "ingredientes_mencionados_en_titulo_o_indice": "Pollo con saltado de brócoli y arroz",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-torrejita-antianemica",
+      "nombre": "Torrejita antianémica",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "12-23",
+      "ingredientes_mencionados_en_titulo_o_indice": "Torrejita antianémica",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-trigo-jardinera-higado",
+      "nombre": "Trigo a la jardinera con hígado",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "12-23",
+      "ingredientes_mencionados_en_titulo_o_indice": "Trigo a la jardinera con hígado",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
+        "La fuente incluye preparaciones con hígado en esta etapa; revisar el contenido de vitamina A preformada y la frecuencia de consumo. No recomendar repetidamente ni de forma automática."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-chaufa-sangrecita",
+      "nombre": "Chaufa de sangrecita",
+      "fuente_id": "ins-peru-6-23m-2023",
+      "url_fuente": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+      "pagina_fuente": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "etapa_fuente_meses": "12-23",
+      "ingredientes_mencionados_en_titulo_o_indice": "Chaufa de sangrecita",
+      "alertas_revision": [
+        "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
+        "Las preparaciones con sangrecita requieren confirmar procedencia sanitaria, manipulación higiénica y cocción completa; no extrapolar su aporte de hierro como indicación terapéutica."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    }
+  ]
+}
