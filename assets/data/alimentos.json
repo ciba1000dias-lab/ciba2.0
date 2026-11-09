@@ -29,7 +29,7 @@
     {
       "nombre": "Legumbres",
       "archivo": "assets/data/alimentos/legumbres.json",
-      "cantidad": 3,
+      "cantidad": 6,
       "slug": "legumbres"
     }
   ]
