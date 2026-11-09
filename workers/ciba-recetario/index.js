@@ -183,7 +183,7 @@ export default {
       "No inventes alimentos ni IDs. Solo puedes devolver IDs que aparezcan exactamente en la lista.",
       "Si un término es ambiguo, no lo adivines: inclúyelo en unknownTerms y formula una aclaración breve.",
       "No propongas recetas, cantidades, edades, consejos médicos ni sustituciones.",
-      "Devuelve exclusivamente JSON: {\\"recognizedIds\\":[\\"id\\"],\\"unknownTerms\\":[\\"texto\\"],\\"clarification\\":\\"pregunta o vacío\\"}."
+      `Devuelve exclusivamente JSON con las claves recognizedIds, unknownTerms y clarification; usa comillas dobles y no agregues texto adicional.`
     ].join("\n");
 
     try {
