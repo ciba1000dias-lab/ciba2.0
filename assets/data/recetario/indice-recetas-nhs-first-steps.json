@@ -37,13 +37,15 @@
       "publicable": false,
       "recomendacion_automatica": false,
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "La fuente indica 10–12 meses; huevo horneado con champiñones, perejil, tomate cocido y pan integral.",
-          "El NHS especifica que el huevo debe quedar completamente cocido y no líquido; tomates cocidos y aplastados, pan adaptado a textura y tamaño seguros."
+          "Se cotejó la página NHS completa: 10–12 meses, 8 porciones; contiene 5 huevos, champiñones, perejil, tomates cherry, pan integral y crema vegetal. Los huevos se hornean 10–15 minutos hasta quedar completamente cuajados; los tomates se cuecen con agua hasta ablandarse y se sirve una taza con pan tostado en tiras.",
+          "Verificar que la preparación de huevo quede totalmente cocida en el centro y que la porción sea apropiada; el tomate debe quedar muy blando y sin piezas redondas. Revisar textura del pan tostado para evitar fragmentos duros/secos, además de los alérgenos huevo y trigo. Revisar composición de la crema vegetal y adaptación de cantidades."
         ],
         "decision": "no_aprobada_no_publicable",
-        "requiere_revision_profesional": true
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Se cotejaron edad, cantidades, ingredientes y seis pasos de la receta original; pendiente validación profesional y adaptación de textura y porción.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -66,13 +68,15 @@
       "publicable": false,
       "recomendacion_automatica": false,
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "La fuente indica desde 6 meses; papa, puerro, champiñones, queso duro, huevo, harina y pan rallado, horneados.",
-          "Revisar sodio del queso; confirmar cocción completa del huevo; tortitas húmedas y blandas, sin costra dura ni empanizado seco; alérgenos lácteos, huevo y trigo."
+          "Se cotejó la receta NHS completa: desde 6 meses; rinde aproximadamente 10 tortitas. Incluye papa, puerro, champiñones, cebollino opcional, queso duro entero, huevo, aceite, harina y pan rallado. La papa se hierve y aplasta; puerro y champiñones se ablandan en sartén; las tortitas se empanan y hornean 15–20 minutos.",
+          "Contiene huevo, lácteos y trigo. El queso puede aportar sodio; comprobar que el huevo quede completamente cocido y que la tortita final sea blanda, húmeda y fácil de deshacer, sin costra dura ni centro compacto. La forma del tamaño de la palma propuesta por NHS necesita adaptación individual a las habilidades del bebé. Revisar refrigeración de sobrantes y descongelación completa."
         ],
         "decision": "no_aprobada_no_publicable",
-        "requiere_revision_profesional": true
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Se cotejaron edad, cantidades, ingredientes, forma, cocción, almacenamiento y siete pasos de la fuente; pendiente revisión profesional de textura, sodio y alérgenos.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -94,13 +98,15 @@
       "publicable": false,
       "recomendacion_automatica": false,
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "La fuente indica 10–12 meses; pollo, zanahoria, maíz y fideos de huevo cocidos en caldo.",
-          "El paso inicial de dorar pollo no basta: confirmar cocción completa hasta el centro; cortar fideos, triturar/aplastar maíz y adaptar zanahoria para evitar granos duros."
+          "Se cotejó la receta NHS completa: 10–12 meses, 4 porciones; contiene cebolla, zanahoria, pechuga de pollo, agua, aceite, maíz dulce en conserva y fideos de huevo. El método dora inicialmente el pollo, añade vegetales y agua, y cocina los fideos 5–10 minutos adicionales; indica comprobar que pollo, vegetales y fideos estén cocidos y triturar o cortar los fideos.",
+          "La receta no aporta una temperatura interna verificable para el pollo ni especifica una textura segura para los granos de maíz; CIBA debe exigir cocción completa del pollo y adaptar o triturar el maíz y los fideos para evitar atragantamiento. Contiene huevo y trigo potencial en fideos; revisar sodio de conserva, consistencia final, enfriamiento y congelación segura."
         ],
         "decision": "no_aprobada_no_publicable",
-        "requiere_revision_profesional": true
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Se cotejaron edad, cantidades, ingredientes y seis pasos completos; requiere validación profesional de cocción, textura del maíz y seguridad de conservación.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -121,13 +127,15 @@
       "publicable": false,
       "recomendacion_automatica": false,
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "La fuente indica desde 6 meses; plátano vianda horneado con aceite y yogur natural opcional.",
-          "Comprobar que el plátano quede completamente blando, no tostado duro; ofrecer textura apropiada y yogur pasteurizado natural sin azúcar."
+          "Se cotejó la receta NHS completa: desde 6 meses; 4 porciones. Incluye un plátano vianda, 1–2 cucharaditas de aceite y una cucharada de yogur natural entero. Se corta el plátano en rodajas diagonales gruesas y se hornea unos 20 minutos, volteándolo a mitad de cocción; se sirve enfriado con yogur para mojar.",
+          "El dorado de los bordes no garantiza por sí solo una textura blanda: comprobar que el interior se aplaste fácilmente y que no queden bordes secos, duros o correosos. Adaptar tamaño y forma del plátano a las habilidades del bebé; el yogur es lácteo y debe ser pasteurizado, natural y sin azúcar añadido. No inferir que todas las rodajas son seguras para todos los bebés."
         ],
         "decision": "no_aprobada_no_publicable",
-        "requiere_revision_profesional": true
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Se cotejaron edad, cantidades, ingredientes y cuatro pasos completos; pendiente evaluación profesional de textura, corte y adaptación por desarrollo oral-motor.",
+        "fuente_completa_consultada": true
       }
     },
     {
