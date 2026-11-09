@@ -901,7 +901,7 @@
         "leche de soya cubana"
       ],
       "categoria": "Leches",
-      "resumen": "Producto cubano a base de soya, descrito históricamente como suplemento alimentario para determinados niños con intolerancia a la lactosa. No equivale a una fórmula infantil.",
+      "resumen": "Producto cubano a base de soya, descrito históricamente como sustituto lácteo para determinados niños con intolerancia a la lactosa. Su indicación depende de la presentación y la edad autorizada en el envase.",
       "descripcion": "El Prolacsín (también escrito Prolacsin) es un producto cubano elaborado a base de soya, referido en fuentes periodísticas como sustituto lácteo destinado a niños con intolerancia a la lactosa. La información pública localizada no permite confirmar la formulación comercial vigente, su composición nutricional completa ni una pauta de reconstitución actual. Por eso, esta ficha no atribuye cantidades de nutrientes ni indica medidas de preparación sin disponer de la etiqueta del producto. Es importante distinguir la intolerancia a la lactosa —un problema relacionado con la digestión de ese azúcar— de la alergia a las proteínas de la leche de vaca (APLV), que es una reacción inmunológica. Que un producto no contenga lactosa no demuestra que sea adecuado para tratar una APLV.",
       "propiedades": [
         "Las fuentes consultadas describen el producto como elaborado a base de soya; no se ha podido verificar la fórmula nutricional vigente.",
@@ -912,15 +912,15 @@
         "Su uso se ha descrito históricamente en Cuba para determinados niños con intolerancia a la lactosa, bajo indicación y seguimiento especializado.",
         "No debe presentarse como tratamiento universal de la intolerancia a la lactosa ni como fórmula indicada para cualquier niño con APLV."
       ],
-      "edad": "No utilizar en menores de 12 meses como sustituto de leche materna o fórmula infantil. En niños mayores, su posible uso depende del diagnóstico, la formulación exacta y la indicación del gastroenterólogo o pediatra. La información periodística de 2019 señalaba que el acceso al producto se vinculaba a diagnóstico por gastroenterología pediátrica; esto no sustituye las indicaciones sanitarias vigentes.",
+      "edad": "No debe iniciarse ni utilizarse por cuenta propia para sustituir leche materna, fórmula infantil u otro tratamiento nutricional. En lactantes o niños pequeños, solo podría utilizarse si la presentación vigente está expresamente indicada para su edad y ha sido prescrita por el especialista. En niños mayores, la decisión también depende del diagnóstico y de la composición real del producto.",
       "preparacion_por_edades": [
         {
-          "etapa": "Menores de 12 meses",
-          "forma": "No utilizar como sustituto de leche materna ni de fórmula infantil. Si existe sospecha de intolerancia o alergia, la selección de una fórmula terapéutica debe realizarla el equipo de salud."
+          "etapa": "Lactantes menores de 12 meses",
+          "forma": "No sustituir leche materna ni fórmula infantil por iniciativa propia. Si un especialista prescribe una presentación específica de Prolacsín, comprobar que el envase autoriza expresamente esa edad y seguir la pauta clínica y las instrucciones exactas del fabricante."
         },
         {
-          "etapa": "Mayores de 12 meses",
-          "forma": "Usar únicamente si el profesional que atiende al niño confirma que la presentación concreta es apropiada. Seguir exactamente la etiqueta vigente; no improvisar proporciones, diluciones ni sustituciones."
+          "etapa": "Niños de 12 meses o más",
+          "forma": "Su posible uso depende del diagnóstico, la formulación y la indicación profesional. Preparar únicamente según la etiqueta vigente; no improvisar proporciones, diluciones ni sustituciones."
         }
       ],
       "preparacion_segura": "No es posible indicar una receta de reconstitución fiable sin comprobar la etiqueta del envase que se comercializa o distribuye actualmente. No inventar cucharadas, gramos ni volumen de agua. Antes de preparar, verificar ingredientes, tabla nutricional, edad indicada, proporción de mezcla, agua recomendada y conservación tras abrir o reconstituir.",
@@ -935,7 +935,7 @@
       "precauciones": [
         "La intolerancia a la lactosa y la alergia a las proteínas de la leche de vaca son problemas diferentes; no deben confundirse.",
         "Un producto a base de soya no es automáticamente apropiado para un niño con APLV: la soya también puede causar alergia y la elección depende de la edad y el cuadro clínico.",
-        "No es una fórmula infantil ni debe sustituir leche materna o fórmula infantil durante el primer año.",
+        "No asumir que todas las presentaciones de Prolacsín son fórmulas infantiles ni que pueden utilizarse a cualquier edad. Verificar la indicación expresa del envase y la prescripción.",
         "No se dispone aquí de una etiqueta actual verificable; confirmar composición, indicación, modo de preparación y conservación antes de recomendar su uso.",
         "La noticia de CiberCuba es de enero de 2019 y documenta una situación de producción y distribución de aquel momento, no la disponibilidad actual."
       ],
