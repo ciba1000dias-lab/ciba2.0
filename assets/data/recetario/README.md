@@ -4,12 +4,13 @@ Archivo de datos: `recetas.json`.
 
 ## Estado actual
 
-El catálogo contiene **15 preparaciones originales** de cocina doméstica cubana. Todas permanecen con:
+El catálogo operativo contiene **15 fichas completas** de preparaciones de cocina doméstica cubana. Las 15 fueron aprobadas expresamente por el especialista responsable del recetario en la revisión del 9 de noviembre de 2026 y tienen:
 
-- `publicable: false`
-- `estado: revision_especializada_pendiente`
+- `publicable: true`
+- `estado: aprobada`
+- `revision.estado: aprobada`
 
-Por tanto, ninguna receta aparece como recomendación hasta completar la revisión especializada, editorial y de seguridad. El catálogo incluye preparaciones de un ingrediente y combinaciones de viandas, cereales, vegetales, legumbres, pollo y huevo.
+Esta habilitación corresponde a las 15 fichas estructuradas que existen actualmente en `recetas.json`. Las otras preparaciones aceptadas en la planificación conversacional todavía no están incorporadas como fichas completas y no aparecerán en resultados hasta que tengan ingredientes vinculados, cantidades, preparación, adaptación por edad, alertas, fuentes y registro de aprobación. El catálogo permanece abierto a ampliaciones.
 
 ## Motor de selección
 
@@ -32,13 +33,11 @@ La identificación automática de alérgenos es conservadora y limitada a los al
 - Las referencias se almacenan una sola vez en el catálogo y cada receta las referencia por ID.
 - La IA no escribe recetas ni modifica ingredientes, cantidades o instrucciones.
 
-## Revisión pendiente
+## Alcance de la aprobación
 
-Un profesional cualificado en nutrición pediátrica debe revisar la pertinencia de ingredientes, cantidades, edades, texturas, combinaciones y recomendaciones. El equipo editorial debe revisar claridad y aplicabilidad en el contexto cubano. También se deben verificar los enlaces, las reglas automatizadas y los riesgos de contaminación cruzada antes de habilitar cualquier receta.
-
-Las fuentes citadas sustentan recomendaciones generales de alimentación complementaria y seguridad, no certifican cada receta individual ni sus cantidades.
+La aprobación registrada corresponde a las fichas actuales y a la valoración del especialista responsable del proyecto. No constituye una certificación externa ni sustituye la actualización periódica de fuentes, la comprobación de enlaces o la reevaluación si cambia una receta. Las fuentes citadas sustentan recomendaciones generales de alimentación complementaria y seguridad, no certifican por sí solas cada receta ni sus cantidades.
 
 
 ## Prototipo funcional
 
-La interfaz normal mantiene el filtro estricto: solo muestra registros con `publicable: true` y `estado: aprobada`. Para presentar el flujo completo con contenido real mientras las 15 preparaciones originales siguen en revisión, existe un modo de demostración activado únicamente con `?demo=1` en la URL del recetario. Este modo selecciona exclusivamente registros no publicables, conserva los filtros deterministas de edad, ingredientes y restricciones, y marca cada tarjeta como **BORRADOR · NO APROBADO**. La advertencia indica que el contenido sirve para demostrar la interacción y no para orientar la alimentación real. Activar el modo demo no cambia el catálogo, no modifica `publicable` y no autoriza recomendaciones. Las nuevas recetas se incorporan como registros independientes siguiendo este mismo esquema; el motor no requiere reescritura.
+La interfaz normal muestra únicamente registros aprobados. Después de reconocer los ingredientes, solicita confirmación y devuelve las recetas cuyos ingredientes obligatorios están todos presentes, filtradas por edad y restricciones. Si hay términos sin identificar, espera a que se aclaren; si no existe coincidencia, lo comunica sin inventar una receta ni añadir ingredientes. El modo `?demo=1` queda reservado para borradores futuros y no es necesario para el piloto operativo actual. Las nuevas recetas se incorporan como registros independientes siguiendo este mismo esquema; el motor no requiere reescritura.
