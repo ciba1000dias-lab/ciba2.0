@@ -1,0 +1,1074 @@
+{
+  "version": 1,
+  "biblioteca": "CIBA · Crianza · Alimentación",
+  "categoria": "Leches",
+  "alimentos": [
+    {
+      "id": "leche-vaca",
+      "nombre": "Leche de vaca",
+      "nombres_alternativos": [
+        "leche entera",
+        "leche pasteurizada",
+        "leche de vaca líquida"
+      ],
+      "categoria": "Leches",
+      "resumen": "Alimento fuente de proteínas, calcio y otros nutrientes; como bebida principal se reserva para después de los 12 meses.",
+      "descripcion": "La leche de vaca contiene agua, proteínas, grasas, lactosa, calcio y vitaminas en cantidades que dependen del tratamiento y la fortificación. Antes de los 12 meses no debe sustituir la leche materna ni la fórmula infantil: su composición no cubre las necesidades del lactante y puede aumentar ciertos riesgos. Después del año puede ofrecerse pasteurizada y sin azúcar añadida, según la alimentación y orientación sanitaria.",
+      "propiedades": [
+        "Aporta calcio y proteínas; algunos productos están fortificados con vitamina D.",
+        "La leche entera contiene grasa láctea; la elección de tipo y cantidad debe considerar la edad y la situación individual."
+      ],
+      "beneficios": [
+        "Después de los 12 meses puede contribuir al aporte de calcio y proteínas dentro de una dieta variada.",
+        "No es indispensable consumir leche de vaca si existe una alternativa nutricional adecuada indicada por profesionales."
+      ],
+      "edad": "Como bebida, no ofrecer antes de los 12 meses. Antes de esa edad pueden introducirse yogur natural y quesos pasteurizados como alimentos, en cantidades apropiadas, pero la leche materna o fórmula sigue siendo la bebida láctea principal. Desde los 12 meses puede ofrecerse leche de vaca pasteurizada, sin sabor y sin azúcar.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "No ofrecer como bebida ni usar para preparar biberones. Si se usa una pequeña cantidad en una receta, consultar las recomendaciones locales y mantener leche materna o fórmula como base; preferir alternativas seguras."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Puede utilizarse en pequeñas cantidades dentro de preparaciones cocinadas si el niño ya tolera lácteos, pero no como bebida principal antes del año."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer leche pasteurizada en vaso, en cantidades adecuadas, sin desplazar comidas ni lactancia. No usar leche cruda."
+        }
+      ],
+      "preparacion_segura": "Elegir leche pasteurizada o UHT correctamente envasada. No dar leche cruda o sin pasteurizar. Una vez abierto el envase, refrigerar y seguir el tiempo indicado en la etiqueta. No dejar la leche servida a temperatura ambiente durante períodos prolongados.",
+      "recetas": [
+        {
+          "nombre": "Avena preparada con leche materna o fórmula",
+          "etapa": "Para menores de 12 meses",
+          "ingredientes": "Avena bien cocida y leche materna extraída o fórmula preparada",
+          "preparacion": "Cocinar la avena con agua hasta ablandar; dejar entibiar y mezclar con leche materna o fórmula preparada según indicaciones."
+        },
+        {
+          "nombre": "Vaso de leche pasteurizada",
+          "etapa": "Desde los 12 meses",
+          "ingredientes": "Leche de vaca pasteurizada, sin azúcar",
+          "preparacion": "Servir en vaso limpio. Ofrecer como parte de la alimentación, sin sustituir comidas variadas."
+        }
+      ],
+      "precauciones": [
+        "La leche de vaca como bebida antes de los 12 meses puede desplazar nutrientes necesarios y no se recomienda como sustituto de leche materna o fórmula.",
+        "La leche y sus proteínas pueden causar alergia. La intolerancia a la lactosa no es lo mismo que alergia a la proteína de leche.",
+        "Evitar leche cruda, sin pasteurizar o de procedencia dudosa. En niños con alergia, no cambiar por bebidas vegetales sin orientación profesional."
+      ],
+      "conservacion": "Refrigerar la leche pasteurizada a la temperatura indicada por el fabricante y mantener el envase cerrado. No dejar fuera de frío más de 2 horas. La leche UHT cerrada puede conservarse según etiqueta; una vez abierta, refrigerar.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bowl%20milk%20glass.jpg?width=1280",
+        "alt": "Vaso con leche de vaca; imagen ilustrativa.",
+        "autor": "Manfred Heyde",
+        "licencia": "CC BY-SA 3.0 / CC BY-SA 2.5",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Bowl_milk_glass.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "leche de vaca",
+        "leche entera",
+        "leche para bebé",
+        "desde cuándo puede tomar leche",
+        "leche antes del año",
+        "leche después de los 12 meses",
+        "leche pasteurizada",
+        "leche UHT",
+        "alergia a la leche",
+        "intolerancia a la lactosa"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco de alimentación complementaria, diversidad y continuidad de lactancia."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria, alérgenos, texturas y productos lácteos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Seguridad de huevos, leche, quesos pasteurizados y prevención de infecciones."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Diferencia entre lácteos como alimentos y leche de vaca como bebida antes y después de los 12 meses."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Foods and Drinks to Avoid or Limit",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-avoid-or-limit.html",
+          "utilidad": "Evitar lácteos sin pasteurizar y bebidas de leche de vaca antes de los 12 meses."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "leche-chiva",
+      "nombre": "Leche de chiva (cabra)",
+      "nombres_alternativos": [
+        "leche de cabra",
+        "leche caprina"
+      ],
+      "categoria": "Leches",
+      "resumen": "Leche animal consumida en algunos hogares; no es una alternativa segura a la fórmula infantil.",
+      "descripcion": "Contiene agua, lactosa, proteínas y minerales. Su composición no la convierte en fórmula para lactantes. Las proteínas de cabra pueden reaccionar de forma cruzada con las de vaca en niños alérgicos.",
+      "propiedades": [
+        "Aporta proteínas, grasa y minerales; composición variable.",
+        "No es hipoalergénica ni equivalente a fórmula infantil."
+      ],
+      "beneficios": [
+        "Puede consumirse después del año si es pasteurizada y se tolera; no tiene ventaja universal."
+      ],
+      "edad": "No ofrecer como bebida antes de los 12 meses. Desde el año, solo pasteurizada.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Menores de 6 meses",
+          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+        },
+        {
+          "etapa": "De 6 a 11 meses",
+          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir pasteurizada, sin azúcar, en vaso. No diluir salvo instrucciones de etiqueta."
+        }
+      ],
+      "preparacion_segura": "No consumir cruda; hervir en casa no sustituye pasteurización validada.",
+      "recetas": [
+        {
+          "nombre": "Uso y preparación segura",
+          "etapa": "Según edad y etiqueta",
+          "ingredientes": "Leche de chiva (cabra)",
+          "preparacion": "Servir pasteurizada, sin azúcar, en vaso. No diluir salvo instrucciones de etiqueta."
+        }
+      ],
+      "precauciones": [
+        "No sustituye leche materna ni fórmula.",
+        "No es alternativa segura para alergia a leche de vaca.",
+        "Evitar leche cruda."
+      ],
+      "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bowl%20milk%20glass.jpg?width=1280",
+        "alt": "Imagen ilustrativa de un producto lácteo; no identifica necesariamente esta variedad o marca.",
+        "autor": "Manfred Heyde",
+        "licencia": "CC BY-SA 3.0 / CC BY-SA 2.5",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Bowl_milk_glass.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Leche de chiva (cabra)",
+        "leche de cabra",
+        "leche caprina",
+        "leche de chiva bebé",
+        "leche de cabra antes del año"
+      ],
+      "fuentes": [
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Edad de introducción de leche de vaca y bebidas alternativas."
+        },
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de leche cruda y productos no pasteurizados."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "leche-bufala",
+      "nombre": "Leche de búfala",
+      "nombres_alternativos": [
+        "leche bufalina",
+        "leche de bufala"
+      ],
+      "categoria": "Leches",
+      "resumen": "Leche animal con mayor concentración de grasa y sólidos que la leche bovina en muchas presentaciones.",
+      "descripcion": "Contiene proteínas, lactosa, grasa y minerales. La riqueza de sólidos no la hace adecuada para lactantes.",
+      "propiedades": [
+        "Suele tener más grasa y sólidos que leche de vaca.",
+        "No está formulada para necesidades del lactante."
+      ],
+      "beneficios": [
+        "Puede consumirse por mayores de 12 meses si es pasteurizada y se integra en dieta variada."
+      ],
+      "edad": "No ofrecer como bebida antes de los 12 meses; después, solo pasteurizada.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Menores de 6 meses",
+          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+        },
+        {
+          "etapa": "De 6 a 11 meses",
+          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir pasteurizada en vaso; no diluir para bebés."
+        }
+      ],
+      "preparacion_segura": "No usar leche cruda ni preparar fórmulas caseras.",
+      "recetas": [
+        {
+          "nombre": "Uso y preparación segura",
+          "etapa": "Según edad y etiqueta",
+          "ingredientes": "Leche de búfala",
+          "preparacion": "Servir pasteurizada en vaso; no diluir para bebés."
+        }
+      ],
+      "precauciones": [
+        "No sustituye leche materna o fórmula.",
+        "Puede causar alergia a proteínas lácteas.",
+        "Evitar consumo excesivo que desplace otros alimentos."
+      ],
+      "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bowl%20milk%20glass.jpg?width=1280",
+        "alt": "Imagen ilustrativa de un producto lácteo; no identifica necesariamente esta variedad o marca.",
+        "autor": "Manfred Heyde",
+        "licencia": "CC BY-SA 3.0 / CC BY-SA 2.5",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Bowl_milk_glass.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Leche de búfala",
+        "leche bufalina",
+        "leche de bufala",
+        "leche búfala niños",
+        "leche bufalina bebé"
+      ],
+      "fuentes": [
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Edad de introducción de leche de vaca y bebidas alternativas."
+        },
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de leche cruda y productos no pasteurizados."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "leche-camella",
+      "nombre": "Leche de camella",
+      "nombres_alternativos": [
+        "leche de camello",
+        "camel milk"
+      ],
+      "categoria": "Leches",
+      "resumen": "Leche consumida en otras regiones, poco habitual en Cuba; no es fórmula infantil ni tratamiento médico.",
+      "descripcion": "Su composición difiere de la leche bovina, pero no debe presentarse como sustituto de leche materna o fórmula. Los productos varían en tratamiento y control sanitario.",
+      "propiedades": [
+        "Contiene proteínas, grasa, lactosa y minerales variables.",
+        "Las afirmaciones terapéuticas no justifican su uso infantil."
+      ],
+      "beneficios": [
+        "No existe indicación pediátrica especial; en adultos, solo producto pasteurizado y trazable."
+      ],
+      "edad": "No ofrecer a menores de 12 meses. En niños mayores no recomendar como bebida habitual sin valoración; si se consume, pasteurizada.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Menores de 6 meses",
+          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+        },
+        {
+          "etapa": "De 6 a 11 meses",
+          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Consumir solo pasteurizada y según etiqueta; no preparar biberones."
+        }
+      ],
+      "preparacion_segura": "Evitar leche cruda por patógenos zoonóticos. No usar como tratamiento.",
+      "recetas": [
+        {
+          "nombre": "Uso y preparación segura",
+          "etapa": "Según edad y etiqueta",
+          "ingredientes": "Leche de camella",
+          "preparacion": "Consumir solo pasteurizada y según etiqueta; no preparar biberones."
+        }
+      ],
+      "precauciones": [
+        "No hay evidencia suficiente para recomendarla en lactantes.",
+        "No sustituye fórmula.",
+        "Evitar versiones crudas."
+      ],
+      "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bowl%20milk%20glass.jpg?width=1280",
+        "alt": "Imagen ilustrativa de un producto lácteo; no identifica necesariamente esta variedad o marca.",
+        "autor": "Manfred Heyde",
+        "licencia": "CC BY-SA 3.0 / CC BY-SA 2.5",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Bowl_milk_glass.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Leche de camella",
+        "leche de camello",
+        "camel milk",
+        "leche camella bebé",
+        "leche camello niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Edad de introducción de leche de vaca y bebidas alternativas."
+        },
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de leche cruda y productos no pasteurizados."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "leches-vegetales",
+      "nombre": "Bebidas vegetales",
+      "nombres_alternativos": [
+        "leche de almendra",
+        "leche de arroz",
+        "leche de avena",
+        "leche de coco",
+        "bebidas vegetales"
+      ],
+      "categoria": "Leches",
+      "resumen": "Bebidas de soya, avena, arroz, almendra, coco y otras; su composición varía y la mayoría no sustituye leche infantil.",
+      "descripcion": "No todas aportan suficiente proteína, grasa, calcio, vitamina D o energía. No confundir bebida vegetal comercial con fórmula infantil de soya regulada.",
+      "propiedades": [
+        "Composición variable según ingrediente y fortificación.",
+        "Muchas tienen menos proteína que leche de vaca; algunas llevan azúcar añadida."
+      ],
+      "beneficios": [
+        "Después del año, algunas bebidas fortificadas y sin azúcar pueden encajar en una dieta; elegir con criterio nutricional."
+      ],
+      "edad": "No ofrecer como bebida principal antes de los 12 meses. Después, valorar bebidas sin azúcar y fortificadas; la soya fortificada suele aportar más proteína.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Menores de 6 meses",
+          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+        },
+        {
+          "etapa": "De 6 a 11 meses",
+          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Agitar y servir según etiqueta. No añadir polvo o suplementos para convertirla en fórmula."
+        }
+      ],
+      "preparacion_segura": "No preparar bebidas caseras para sustituir leche de lactantes.",
+      "recetas": [
+        {
+          "nombre": "Uso y preparación segura",
+          "etapa": "Según edad y etiqueta",
+          "ingredientes": "Bebidas vegetales",
+          "preparacion": "Agitar y servir según etiqueta. No añadir polvo o suplementos para convertirla en fórmula."
+        }
+      ],
+      "precauciones": [
+        "No sustituye leche materna ni fórmula.",
+        "Bebidas de arroz no son opción preferente para niños pequeños.",
+        "Las caseras pueden ser pobres en nutrientes."
+      ],
+      "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bowl%20milk%20glass.jpg?width=1280",
+        "alt": "Imagen ilustrativa de un producto lácteo; no identifica necesariamente esta variedad o marca.",
+        "autor": "Manfred Heyde",
+        "licencia": "CC BY-SA 3.0 / CC BY-SA 2.5",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Bowl_milk_glass.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Bebidas vegetales",
+        "leche de almendra",
+        "leche de arroz",
+        "leche de avena",
+        "leche de coco",
+        "bebidas vegetales",
+        "bebidas vegetales bebé",
+        "leche almendra bebé",
+        "leche avena antes del año"
+      ],
+      "fuentes": [
+        {
+          "institucion": "AAP",
+          "titulo": "Recommended Drinks for Young Children Ages 0–5",
+          "url": "https://www.healthychildren.org/spanish/healthy-living/nutrition/paginas/Recommended-Drinks-for-Young-Children-Ages-0-5.aspx",
+          "utilidad": "Bebidas apropiadas y bebidas vegetales."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Edad de introducción de leche de vaca y bebidas alternativas."
+        },
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para alimentación complementaria."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "leche-polvo-entera",
+      "nombre": "Leche entera en polvo",
+      "nombres_alternativos": [
+        "leche en polvo amarillita",
+        "leche en polvo amarilla",
+        "leche entera deshidratada"
+      ],
+      "categoria": "Leches",
+      "resumen": "Leche deshidratada; no es fórmula infantil aunque se reconstituya.",
+      "descripcion": "Se obtiene retirando agua de leche. Conserva grasa láctea, pero no está adaptada a las necesidades de lactantes.",
+      "propiedades": [
+        "Aporta proteínas, lactosa, grasa y minerales.",
+        "La proporción de reconstitución depende de la etiqueta."
+      ],
+      "beneficios": [
+        "Puede utilizarse como leche alimentaria después de 12 meses si es producto seguro y correctamente preparado."
+      ],
+      "edad": "No ofrecer como bebida antes de los 12 meses. Desde el año, solo si la etiqueta indica leche entera de consumo general.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Menores de 6 meses",
+          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+        },
+        {
+          "etapa": "De 6 a 11 meses",
+          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Medir agua potable y añadir la cantidad exacta de polvo indicada por el fabricante. No estimar cucharadas."
+        }
+      ],
+      "preparacion_segura": "No usar para fórmula casera ni biberones de lactantes.",
+      "recetas": [
+        {
+          "nombre": "Uso y preparación segura",
+          "etapa": "Según edad y etiqueta",
+          "ingredientes": "Leche entera en polvo",
+          "preparacion": "Medir agua potable y añadir la cantidad exacta de polvo indicada por el fabricante. No estimar cucharadas."
+        }
+      ],
+      "precauciones": [
+        "No es leche maternizada.",
+        "No diluir ni concentrar.",
+        "No utilizar antes del año como bebida."
+      ],
+      "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bowl%20milk%20glass.jpg?width=1280",
+        "alt": "Imagen ilustrativa de un producto lácteo; no identifica necesariamente esta variedad o marca.",
+        "autor": "Manfred Heyde",
+        "licencia": "CC BY-SA 3.0 / CC BY-SA 2.5",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Bowl_milk_glass.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Leche entera en polvo",
+        "leche en polvo amarillita",
+        "leche en polvo amarilla",
+        "leche entera deshidratada",
+        "leche polvo amarilla bebé",
+        "preparar leche en polvo"
+      ],
+      "fuentes": [
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Edad de introducción de leche de vaca y bebidas alternativas."
+        },
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de leche cruda y productos no pasteurizados."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "leche-polvo-descremada",
+      "nombre": "Leche descremada en polvo",
+      "nombres_alternativos": [
+        "leche en polvo blanca",
+        "leche de diabético",
+        "leche desnatada en polvo"
+      ],
+      "categoria": "Leches",
+      "resumen": "Leche deshidratada con gran parte de la grasa retirada; «de diabético» no significa adecuada para bebés.",
+      "descripcion": "Aporta proteínas y lactosa, pero muy poca grasa láctea. La publicidad o denominación comercial no la convierte en producto infantil.",
+      "propiedades": [
+        "Proteínas y minerales, con poca grasa.",
+        "Puede contener lactosa y vitaminas añadidas."
+      ],
+      "beneficios": [
+        "Puede formar parte de la dieta de adultos; en niños pequeños solo con indicación individual."
+      ],
+      "edad": "No ofrecer como bebida habitual a menores de 2 años salvo indicación clínica. Nunca sustituye fórmula infantil.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Menores de 6 meses",
+          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+        },
+        {
+          "etapa": "De 6 a 11 meses",
+          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Reconstituir exactamente según etiqueta; no añadir azúcar ni preparar biberones."
+        }
+      ],
+      "preparacion_segura": "No asumir que «de diabético» significa apta para bebés.",
+      "recetas": [
+        {
+          "nombre": "Uso y preparación segura",
+          "etapa": "Según edad y etiqueta",
+          "ingredientes": "Leche descremada en polvo",
+          "preparacion": "Reconstituir exactamente según etiqueta; no añadir azúcar ni preparar biberones."
+        }
+      ],
+      "precauciones": [
+        "La grasa es importante en la dieta de niños pequeños.",
+        "No sustituye leche materna ni fórmula.",
+        "No usar para tratar diabetes infantil por cuenta propia."
+      ],
+      "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bowl%20milk%20glass.jpg?width=1280",
+        "alt": "Imagen ilustrativa de un producto lácteo; no identifica necesariamente esta variedad o marca.",
+        "autor": "Manfred Heyde",
+        "licencia": "CC BY-SA 3.0 / CC BY-SA 2.5",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Bowl_milk_glass.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Leche descremada en polvo",
+        "leche en polvo blanca",
+        "leche de diabético",
+        "leche desnatada en polvo",
+        "leche blanca en polvo bebé",
+        "leche diabético bebé",
+        "leche descremada niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Edad de introducción de leche de vaca y bebidas alternativas."
+        },
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de leche cruda y productos no pasteurizados."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "leche-evaporada",
+      "nombre": "Leche evaporada",
+      "nombres_alternativos": [
+        "leche evaporada en lata",
+        "leche concentrada sin azúcar"
+      ],
+      "categoria": "Leches",
+      "resumen": "Leche concentrada por eliminación parcial de agua; no es fórmula infantil.",
+      "descripcion": "Su concentración por volumen puede ser mayor que la leche común. Diluirla en casa no la convierte en fórmula para lactantes.",
+      "propiedades": [
+        "Contiene proteínas, lactosa, grasa y minerales concentrados.",
+        "Versiones y composición varían por marca."
+      ],
+      "beneficios": [
+        "Puede utilizarse como ingrediente culinario para mayores de 12 meses, según etiqueta."
+      ],
+      "edad": "No ofrecer como bebida ni usar en biberones antes de los 12 meses. Después, uso culinario moderado.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Menores de 6 meses",
+          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+        },
+        {
+          "etapa": "De 6 a 11 meses",
+          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Abrir y refrigerar lo no consumido. No diluir para alimentar bebés."
+        }
+      ],
+      "preparacion_segura": "No preparar fórmula casera ni confundir con leche condensada.",
+      "recetas": [
+        {
+          "nombre": "Uso y preparación segura",
+          "etapa": "Según edad y etiqueta",
+          "ingredientes": "Leche evaporada",
+          "preparacion": "Abrir y refrigerar lo no consumido. No diluir para alimentar bebés."
+        }
+      ],
+      "precauciones": [
+        "No sustituye leche materna o fórmula.",
+        "No preparar biberones con leche evaporada.",
+        "Revisar sal y composición."
+      ],
+      "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bowl%20milk%20glass.jpg?width=1280",
+        "alt": "Imagen ilustrativa de un producto lácteo; no identifica necesariamente esta variedad o marca.",
+        "autor": "Manfred Heyde",
+        "licencia": "CC BY-SA 3.0 / CC BY-SA 2.5",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Bowl_milk_glass.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Leche evaporada",
+        "leche evaporada en lata",
+        "leche concentrada sin azúcar",
+        "leche evaporada bebé",
+        "diluir leche evaporada"
+      ],
+      "fuentes": [
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Edad de introducción de leche de vaca y bebidas alternativas."
+        },
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de leche cruda y productos no pasteurizados."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "leche-condensada",
+      "nombre": "Leche condensada",
+      "nombres_alternativos": [
+        "leche condensada azucarada",
+        "condensada"
+      ],
+      "categoria": "Leches",
+      "resumen": "Producto lácteo concentrado con abundante azúcar añadida; se utiliza principalmente en postres.",
+      "descripcion": "Se elabora concentrando leche y añadiendo azúcar. No es una bebida láctea apropiada para lactantes ni una ración de leche.",
+      "propiedades": [
+        "Aporta energía y azúcar añadida concentradas.",
+        "No equivale a leche evaporada ni leche en polvo."
+      ],
+      "beneficios": [
+        "No tiene beneficio que justifique ofrecerla a bebés; puede evitarse en la infancia temprana."
+      ],
+      "edad": "No ofrecer a menores de 2 años; no utilizar como bebida infantil a ninguna edad. En mayores, solo ingrediente dulce ocasional.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Menores de 6 meses",
+          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+        },
+        {
+          "etapa": "De 6 a 11 meses",
+          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "No se reconstituye para consumo infantil. Si se usa en repostería, limitar la porción."
+        }
+      ],
+      "preparacion_segura": "No dar en biberón ni diluir para hacer leche infantil.",
+      "recetas": [
+        {
+          "nombre": "Uso y preparación segura",
+          "etapa": "Según edad y etiqueta",
+          "ingredientes": "Leche condensada",
+          "preparacion": "No se reconstituye para consumo infantil. Si se usa en repostería, limitar la porción."
+        }
+      ],
+      "precauciones": [
+        "Alto contenido de azúcar libre.",
+        "Nunca sustituye leche materna o fórmula.",
+        "Evitar como alimento para bebés."
+      ],
+      "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bowl%20milk%20glass.jpg?width=1280",
+        "alt": "Imagen ilustrativa de un producto lácteo; no identifica necesariamente esta variedad o marca.",
+        "autor": "Manfred Heyde",
+        "licencia": "CC BY-SA 3.0 / CC BY-SA 2.5",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Bowl_milk_glass.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Leche condensada",
+        "leche condensada azucarada",
+        "condensada",
+        "leche condensada bebé",
+        "condensada en biberón"
+      ],
+      "fuentes": [
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Edad de introducción de leche de vaca y bebidas alternativas."
+        },
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de leche cruda y productos no pasteurizados."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "calostro-vaca",
+      "nombre": "Calostro de vaca",
+      "nombres_alternativos": [
+        "calostro bovino",
+        "calostro bovino en polvo",
+        "suplemento de calostro"
+      ],
+      "categoria": "Leches",
+      "resumen": "Primera secreción mamaria bovina tras el parto; no es calostro humano ni suplemento infantil recomendado.",
+      "descripcion": "Contiene inmunoglobulinas y otros componentes propios del bovino. Los suplementos varían y no se puede extrapolar su función a los bebés humanos.",
+      "propiedades": [
+        "Componentes inmunológicos bovinos, alterados según procesamiento.",
+        "No cubre necesidades nutricionales del lactante."
+      ],
+      "beneficios": [
+        "No existe base suficiente para recomendarlo a bebés o niños sanos."
+      ],
+      "edad": "No ofrecer a lactantes ni recomendar como suplemento rutinario infantil; cualquier uso en menores debe ser evaluado por profesional.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Menores de 6 meses",
+          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+        },
+        {
+          "etapa": "De 6 a 11 meses",
+          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "No hay preparación doméstica recomendada para bebés. Seguir etiqueta solo para población indicada."
+        }
+      ],
+      "preparacion_segura": "Puede causar alergia láctea; evitar producto crudo o sin trazabilidad.",
+      "recetas": [
+        {
+          "nombre": "Uso y preparación segura",
+          "etapa": "Según edad y etiqueta",
+          "ingredientes": "Calostro de vaca",
+          "preparacion": "No hay preparación doméstica recomendada para bebés. Seguir etiqueta solo para población indicada."
+        }
+      ],
+      "precauciones": [
+        "No equivale al calostro humano.",
+        "No está indicado como suplemento infantil rutinario.",
+        "Desconfiar de promesas terapéuticas."
+      ],
+      "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bowl%20milk%20glass.jpg?width=1280",
+        "alt": "Imagen ilustrativa de un producto lácteo; no identifica necesariamente esta variedad o marca.",
+        "autor": "Manfred Heyde",
+        "licencia": "CC BY-SA 3.0 / CC BY-SA 2.5",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Bowl_milk_glass.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Calostro de vaca",
+        "calostro bovino",
+        "calostro bovino en polvo",
+        "suplemento de calostro",
+        "calostro bovino bebé",
+        "calostro vaca niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Edad de introducción de leche de vaca y bebidas alternativas."
+        },
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de leche cruda y productos no pasteurizados."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "prolacsin-soya",
+      "nombre": "Leche de soya Prolacsin",
+      "nombres_alternativos": [
+        "Prolacsin",
+        "prolacsín",
+        "leche de soya cubana"
+      ],
+      "categoria": "Leches",
+      "resumen": "Producto de soya mencionado por su uso en Cuba; composición y preparación deben confirmarse en el envase concreto.",
+      "descripcion": "El nombre no permite confirmar si es bebida lista, polvo reconstituible o mezcla fortificada. La ficha no atribuye composición ni proporciones sin etiqueta verificable.",
+      "propiedades": [
+        "La soya aporta proteína vegetal; calcio, vitamina D, azúcar y otros nutrientes dependen de la formulación.",
+        "No asumir que es fórmula infantil."
+      ],
+      "beneficios": [
+        "No recomendar como bebida para lactantes. En mayores de 12 meses, valorar solo tras comprobar composición y fortificación."
+      ],
+      "edad": "No ofrecer antes de 12 meses como sustituto de leche materna o fórmula. Después, la idoneidad depende de la presentación y la dieta.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Menores de 6 meses",
+          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+        },
+        {
+          "etapa": "De 6 a 11 meses",
+          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Preparar exclusivamente según etiqueta. CIBA no publicará medidas hasta verificar foto de ingredientes, tabla nutricional y modo de preparación."
+        }
+      ],
+      "preparacion_segura": "No usar para biberones ni sustituir fórmula. La soya puede causar alergia.",
+      "recetas": [
+        {
+          "nombre": "Uso y preparación segura",
+          "etapa": "Según edad y etiqueta",
+          "ingredientes": "Leche de soya Prolacsin",
+          "preparacion": "Preparar exclusivamente según etiqueta. CIBA no publicará medidas hasta verificar foto de ingredientes, tabla nutricional y modo de preparación."
+        }
+      ],
+      "precauciones": [
+        "Ficha pendiente de verificación de etiqueta cubana actual.",
+        "No es fórmula infantil salvo que el envase lo certifique expresamente.",
+        "No inventar proporciones."
+      ],
+      "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bowl%20milk%20glass.jpg?width=1280",
+        "alt": "Imagen ilustrativa de un producto lácteo; no identifica necesariamente esta variedad o marca.",
+        "autor": "Manfred Heyde",
+        "licencia": "CC BY-SA 3.0 / CC BY-SA 2.5",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Bowl_milk_glass.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Leche de soya Prolacsin",
+        "Prolacsin",
+        "prolacsín",
+        "leche de soya cubana",
+        "Prolacsin cómo preparar",
+        "Prolacsin para bebé",
+        "leche soya Cuba"
+      ],
+      "fuentes": [
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Edad de introducción de leche de vaca y bebidas alternativas."
+        },
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de leche cruda y productos no pasteurizados."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "formula-infantil",
+      "nombre": "Fórmula infantil (leche maternizada)",
+      "nombres_alternativos": [
+        "leche maternizada",
+        "fórmula de inicio",
+        "fórmula infantil en polvo",
+        "fórmula lista para tomar"
+      ],
+      "categoria": "Leches",
+      "resumen": "Producto formulado para lactantes cuando la lactancia materna no es posible, es insuficiente o se necesita suplementación indicada.",
+      "descripcion": "Hay fórmulas en polvo, líquidas listas para usar y concentradas, además de fórmulas especiales. No son intercambiables sin valorar edad, indicación y producto.",
+      "propiedades": [
+        "Aporta nutrientes en proporciones reguladas según el tipo.",
+        "No todas las fórmulas sirven para todos los bebés."
+      ],
+      "beneficios": [
+        "Puede ser alternativa nutricional adecuada cuando se necesita, con elección y seguimiento profesional."
+      ],
+      "edad": "Puede utilizarse desde el nacimiento cuando está indicada, según producto. No cambiar a fórmula especial por cuenta propia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Menores de 6 meses",
+          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+        },
+        {
+          "etapa": "De 6 a 11 meses",
+          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Higiene de manos y utensilios. Medir primero agua segura y añadir exactamente las medidas rasas indicadas. Nunca añadir agua o polvo extra; seguir etiqueta para temperatura, conservación y descarte."
+        }
+      ],
+      "preparacion_segura": "La fórmula en polvo no es estéril. Bebés menores de 2 meses, prematuros o inmunodeprimidos requieren precauciones adicionales frente a Cronobacter.",
+      "recetas": [
+        {
+          "nombre": "Uso y preparación segura",
+          "etapa": "Según edad y etiqueta",
+          "ingredientes": "Fórmula infantil (leche maternizada)",
+          "preparacion": "Higiene de manos y utensilios. Medir primero agua segura y añadir exactamente las medidas rasas indicadas. Nunca añadir agua o polvo extra; seguir etiqueta para temperatura, conservación y descarte."
+        }
+      ],
+      "precauciones": [
+        "Nunca diluir ni concentrar.",
+        "No preparar con leche común, evaporada, condensada o bebidas vegetales.",
+        "Desechar restos tras iniciar la toma y respetar tiempos.",
+        "No usar fórmulas caseras."
+      ],
+      "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bowl%20milk%20glass.jpg?width=1280",
+        "alt": "Imagen ilustrativa de un producto lácteo; no identifica necesariamente esta variedad o marca.",
+        "autor": "Manfred Heyde",
+        "licencia": "CC BY-SA 3.0 / CC BY-SA 2.5",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Bowl_milk_glass.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Fórmula infantil (leche maternizada)",
+        "leche maternizada",
+        "fórmula de inicio",
+        "fórmula infantil en polvo",
+        "fórmula lista para tomar",
+        "fórmula infantil preparación",
+        "leche maternizada cómo preparar"
+      ],
+      "fuentes": [
+        {
+          "institucion": "CDC",
+          "titulo": "Infant Formula Preparation and Storage",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/formula-feeding/preparation-and-storage.html",
+          "utilidad": "Preparación, higiene y conservación de fórmula infantil."
+        },
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de leche cruda y productos no pasteurizados."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    }
+  ]
+}

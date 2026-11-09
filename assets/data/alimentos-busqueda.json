@@ -1451,9 +1451,358 @@
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
     {
+      "id": "leche-vaca",
+      "nombre": "Leche de vaca",
+      "categoria": "Leches",
+      "resumen": "Alimento fuente de proteínas, calcio y otros nutrientes; como bebida principal se reserva para después de los 12 meses.",
+      "nombres_alternativos": [
+        "leche entera",
+        "leche pasteurizada",
+        "leche de vaca líquida"
+      ],
+      "palabras_clave": [
+        "leche de vaca",
+        "leche entera",
+        "leche para bebé",
+        "desde cuándo puede tomar leche",
+        "leche antes del año",
+        "leche después de los 12 meses",
+        "leche pasteurizada",
+        "leche UHT",
+        "alergia a la leche",
+        "intolerancia a la lactosa"
+      ],
+      "ruta_publica": "c/C1/alimentos/leches/"
+    },
+    {
+      "id": "leche-chiva",
+      "nombre": "Leche de chiva (cabra)",
+      "categoria": "Leches",
+      "resumen": "Leche animal consumida en algunos hogares; no es una alternativa segura a la fórmula infantil.",
+      "nombres_alternativos": [
+        "leche de cabra",
+        "leche caprina"
+      ],
+      "palabras_clave": [
+        "Leche de chiva (cabra)",
+        "leche de cabra",
+        "leche caprina",
+        "leche de chiva bebé",
+        "leche de cabra antes del año"
+      ],
+      "ruta_publica": "c/C1/alimentos/leches/"
+    },
+    {
+      "id": "leche-bufala",
+      "nombre": "Leche de búfala",
+      "categoria": "Leches",
+      "resumen": "Leche animal con mayor concentración de grasa y sólidos que la leche bovina en muchas presentaciones.",
+      "nombres_alternativos": [
+        "leche bufalina",
+        "leche de bufala"
+      ],
+      "palabras_clave": [
+        "Leche de búfala",
+        "leche bufalina",
+        "leche de bufala",
+        "leche búfala niños",
+        "leche bufalina bebé"
+      ],
+      "ruta_publica": "c/C1/alimentos/leches/"
+    },
+    {
+      "id": "leche-camella",
+      "nombre": "Leche de camella",
+      "categoria": "Leches",
+      "resumen": "Leche consumida en otras regiones, poco habitual en Cuba; no es fórmula infantil ni tratamiento médico.",
+      "nombres_alternativos": [
+        "leche de camello",
+        "camel milk"
+      ],
+      "palabras_clave": [
+        "Leche de camella",
+        "leche de camello",
+        "camel milk",
+        "leche camella bebé",
+        "leche camello niños"
+      ],
+      "ruta_publica": "c/C1/alimentos/leches/"
+    },
+    {
+      "id": "leches-vegetales",
+      "nombre": "Bebidas vegetales",
+      "categoria": "Leches",
+      "resumen": "Bebidas de soya, avena, arroz, almendra, coco y otras; su composición varía y la mayoría no sustituye leche infantil.",
+      "nombres_alternativos": [
+        "leche de almendra",
+        "leche de arroz",
+        "leche de avena",
+        "leche de coco",
+        "bebidas vegetales"
+      ],
+      "palabras_clave": [
+        "Bebidas vegetales",
+        "leche de almendra",
+        "leche de arroz",
+        "leche de avena",
+        "leche de coco",
+        "bebidas vegetales",
+        "bebidas vegetales bebé",
+        "leche almendra bebé",
+        "leche avena antes del año"
+      ],
+      "ruta_publica": "c/C1/alimentos/leches/"
+    },
+    {
+      "id": "leche-polvo-entera",
+      "nombre": "Leche entera en polvo",
+      "categoria": "Leches",
+      "resumen": "Leche deshidratada; no es fórmula infantil aunque se reconstituya.",
+      "nombres_alternativos": [
+        "leche en polvo amarillita",
+        "leche en polvo amarilla",
+        "leche entera deshidratada"
+      ],
+      "palabras_clave": [
+        "Leche entera en polvo",
+        "leche en polvo amarillita",
+        "leche en polvo amarilla",
+        "leche entera deshidratada",
+        "leche polvo amarilla bebé",
+        "preparar leche en polvo"
+      ],
+      "ruta_publica": "c/C1/alimentos/leches/"
+    },
+    {
+      "id": "leche-polvo-descremada",
+      "nombre": "Leche descremada en polvo",
+      "categoria": "Leches",
+      "resumen": "Leche deshidratada con gran parte de la grasa retirada; «de diabético» no significa adecuada para bebés.",
+      "nombres_alternativos": [
+        "leche en polvo blanca",
+        "leche de diabético",
+        "leche desnatada en polvo"
+      ],
+      "palabras_clave": [
+        "Leche descremada en polvo",
+        "leche en polvo blanca",
+        "leche de diabético",
+        "leche desnatada en polvo",
+        "leche blanca en polvo bebé",
+        "leche diabético bebé",
+        "leche descremada niños"
+      ],
+      "ruta_publica": "c/C1/alimentos/leches/"
+    },
+    {
+      "id": "leche-evaporada",
+      "nombre": "Leche evaporada",
+      "categoria": "Leches",
+      "resumen": "Leche concentrada por eliminación parcial de agua; no es fórmula infantil.",
+      "nombres_alternativos": [
+        "leche evaporada en lata",
+        "leche concentrada sin azúcar"
+      ],
+      "palabras_clave": [
+        "Leche evaporada",
+        "leche evaporada en lata",
+        "leche concentrada sin azúcar",
+        "leche evaporada bebé",
+        "diluir leche evaporada"
+      ],
+      "ruta_publica": "c/C1/alimentos/leches/"
+    },
+    {
+      "id": "leche-condensada",
+      "nombre": "Leche condensada",
+      "categoria": "Leches",
+      "resumen": "Producto lácteo concentrado con abundante azúcar añadida; se utiliza principalmente en postres.",
+      "nombres_alternativos": [
+        "leche condensada azucarada",
+        "condensada"
+      ],
+      "palabras_clave": [
+        "Leche condensada",
+        "leche condensada azucarada",
+        "condensada",
+        "leche condensada bebé",
+        "condensada en biberón"
+      ],
+      "ruta_publica": "c/C1/alimentos/leches/"
+    },
+    {
+      "id": "calostro-vaca",
+      "nombre": "Calostro de vaca",
+      "categoria": "Leches",
+      "resumen": "Primera secreción mamaria bovina tras el parto; no es calostro humano ni suplemento infantil recomendado.",
+      "nombres_alternativos": [
+        "calostro bovino",
+        "calostro bovino en polvo",
+        "suplemento de calostro"
+      ],
+      "palabras_clave": [
+        "Calostro de vaca",
+        "calostro bovino",
+        "calostro bovino en polvo",
+        "suplemento de calostro",
+        "calostro bovino bebé",
+        "calostro vaca niños"
+      ],
+      "ruta_publica": "c/C1/alimentos/leches/"
+    },
+    {
+      "id": "prolacsin-soya",
+      "nombre": "Leche de soya Prolacsin",
+      "categoria": "Leches",
+      "resumen": "Producto de soya mencionado por su uso en Cuba; composición y preparación deben confirmarse en el envase concreto.",
+      "nombres_alternativos": [
+        "Prolacsin",
+        "prolacsín",
+        "leche de soya cubana"
+      ],
+      "palabras_clave": [
+        "Leche de soya Prolacsin",
+        "Prolacsin",
+        "prolacsín",
+        "leche de soya cubana",
+        "Prolacsin cómo preparar",
+        "Prolacsin para bebé",
+        "leche soya Cuba"
+      ],
+      "ruta_publica": "c/C1/alimentos/leches/"
+    },
+    {
+      "id": "formula-infantil",
+      "nombre": "Fórmula infantil (leche maternizada)",
+      "categoria": "Leches",
+      "resumen": "Producto formulado para lactantes cuando la lactancia materna no es posible, es insuficiente o se necesita suplementación indicada.",
+      "nombres_alternativos": [
+        "leche maternizada",
+        "fórmula de inicio",
+        "fórmula infantil en polvo",
+        "fórmula lista para tomar"
+      ],
+      "palabras_clave": [
+        "Fórmula infantil (leche maternizada)",
+        "leche maternizada",
+        "fórmula de inicio",
+        "fórmula infantil en polvo",
+        "fórmula lista para tomar",
+        "fórmula infantil preparación",
+        "leche maternizada cómo preparar"
+      ],
+      "ruta_publica": "c/C1/alimentos/leches/"
+    },
+    {
+      "id": "yogur-natural",
+      "nombre": "Yogur natural",
+      "categoria": "Yogures y leches fermentadas",
+      "resumen": "Leche fermentada que puede formar parte de la alimentación complementaria si es pasteurizada, natural y sin azúcar añadido.",
+      "nombres_alternativos": [
+        "yogurt natural",
+        "yogur sin azúcar",
+        "yogur entero natural"
+      ],
+      "palabras_clave": [
+        "yogur natural",
+        "yogurt",
+        "yogur para bebé",
+        "yogur desde los 6 meses",
+        "yogur sin azúcar",
+        "yogur pasteurizado",
+        "yogur y alergia a la leche",
+        "yogur con frutas",
+        "probióticos"
+      ],
+      "ruta_publica": "c/C1/alimentos/yogures/"
+    },
+    {
+      "id": "yogur-chiva",
+      "nombre": "Yogur de leche de chiva",
+      "categoria": "Yogures y leches fermentadas",
+      "resumen": "Leche caprina fermentada; requiere pasteurización y comparte riesgos de alergia de otros lácteos.",
+      "nombres_alternativos": [
+        "yogur de cabra",
+        "yogurt de chiva",
+        "yogurt de cabra"
+      ],
+      "palabras_clave": [
+        "Yogur de leche de chiva",
+        "yogur de cabra",
+        "yogurt de chiva",
+        "yogurt de cabra",
+        "yogur chiva bebé",
+        "yogur cabra para bebé"
+      ],
+      "ruta_publica": "c/C1/alimentos/yogures/"
+    },
+    {
+      "id": "yogur-probiotico",
+      "nombre": "Yogur probiótico",
+      "categoria": "Yogures y leches fermentadas",
+      "resumen": "Yogur que declara microorganismos vivos; los efectos dependen de cepas y no se pueden generalizar.",
+      "nombres_alternativos": [
+        "yogurt probiótico",
+        "yogur con probióticos",
+        "cultivos vivos"
+      ],
+      "palabras_clave": [
+        "Yogur probiótico",
+        "yogurt probiótico",
+        "yogur con probióticos",
+        "cultivos vivos",
+        "yogur probiótico bebé",
+        "probióticos yogur niños"
+      ],
+      "ruta_publica": "c/C1/alimentos/yogures/"
+    },
+    {
+      "id": "yogur-vasito-pascual",
+      "nombre": "Yogur comercial de vasito (tipo Pascual)",
+      "categoria": "Yogures y leches fermentadas",
+      "resumen": "Categoría de yogures comerciales individuales; azúcar e ingredientes dependen de la variedad y etiqueta.",
+      "nombres_alternativos": [
+        "yogur Pascual",
+        "yogurt de vasito",
+        "yogur saborizado"
+      ],
+      "palabras_clave": [
+        "Yogur comercial de vasito (tipo Pascual)",
+        "yogur Pascual",
+        "yogurt de vasito",
+        "yogur saborizado",
+        "yogur Pascual bebé",
+        "yogur vasito para bebé"
+      ],
+      "ruta_publica": "c/C1/alimentos/yogures/"
+    },
+    {
+      "id": "kefir-natural",
+      "nombre": "Kéfir natural",
+      "categoria": "Yogures y leches fermentadas",
+      "resumen": "Leche fermentada mediante cultivos de kéfir; elegir producto pasteurizado, natural y sin azúcar añadido.",
+      "nombres_alternativos": [
+        "kefir",
+        "kéfir de leche",
+        "leche fermentada con kefir"
+      ],
+      "palabras_clave": [
+        "kéfir",
+        "kefir",
+        "kéfir natural",
+        "kefir de leche",
+        "kéfir para niños",
+        "kéfir para bebé",
+        "leche fermentada",
+        "probióticos",
+        "kéfir casero"
+      ],
+      "ruta_publica": "c/C1/alimentos/yogures/"
+    },
+    {
       "id": "huevo-gallina",
       "nombre": "Huevo de gallina",
-      "categoria": "Huevos y lácteos",
+      "categoria": "Huevos y quesos",
       "resumen": "Alimento versátil que aporta proteínas y varios micronutrientes; debe ofrecerse completamente cocido.",
       "nombres_alternativos": [
         "huevo",
@@ -1476,12 +1825,12 @@
         "colina",
         "alimentación complementaria"
       ],
-      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
+      "ruta_publica": "c/C1/alimentos/huevos-quesos/"
     },
     {
       "id": "huevo-codorniz",
       "nombre": "Huevo de codorniz",
-      "categoria": "Huevos y lácteos",
+      "categoria": "Huevos y quesos",
       "resumen": "Huevo pequeño de composición similar al de gallina; requiere la misma atención a la cocción completa y a la alergia.",
       "nombres_alternativos": [
         "huevos de codorniz",
@@ -1498,59 +1847,12 @@
         "huevo de codorniz para niños",
         "huevo duro"
       ],
-      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
-    },
-    {
-      "id": "leche-vaca",
-      "nombre": "Leche de vaca",
-      "categoria": "Huevos y lácteos",
-      "resumen": "Alimento fuente de proteínas, calcio y otros nutrientes; como bebida principal se reserva para después de los 12 meses.",
-      "nombres_alternativos": [
-        "leche entera",
-        "leche pasteurizada",
-        "leche de vaca líquida"
-      ],
-      "palabras_clave": [
-        "leche de vaca",
-        "leche entera",
-        "leche para bebé",
-        "desde cuándo puede tomar leche",
-        "leche antes del año",
-        "leche después de los 12 meses",
-        "leche pasteurizada",
-        "leche UHT",
-        "alergia a la leche",
-        "intolerancia a la lactosa"
-      ],
-      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
-    },
-    {
-      "id": "yogur-natural",
-      "nombre": "Yogur natural",
-      "categoria": "Huevos y lácteos",
-      "resumen": "Leche fermentada que puede formar parte de la alimentación complementaria si es pasteurizada, natural y sin azúcar añadido.",
-      "nombres_alternativos": [
-        "yogurt natural",
-        "yogur sin azúcar",
-        "yogur entero natural"
-      ],
-      "palabras_clave": [
-        "yogur natural",
-        "yogurt",
-        "yogur para bebé",
-        "yogur desde los 6 meses",
-        "yogur sin azúcar",
-        "yogur pasteurizado",
-        "yogur y alergia a la leche",
-        "yogur con frutas",
-        "probióticos"
-      ],
-      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
+      "ruta_publica": "c/C1/alimentos/huevos-quesos/"
     },
     {
       "id": "queso-fresco-pasteurizado",
       "nombre": "Queso fresco pasteurizado",
-      "categoria": "Huevos y lácteos",
+      "categoria": "Huevos y quesos",
       "resumen": "Queso blando y húmedo; para niños pequeños debe elaborarse con leche pasteurizada y tener poca sal.",
       "nombres_alternativos": [
         "queso fresco",
@@ -1568,12 +1870,12 @@
         "calcio",
         "proteína"
       ],
-      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
+      "ruta_publica": "c/C1/alimentos/huevos-quesos/"
     },
     {
       "id": "queso-blanco",
       "nombre": "Queso blanco",
-      "categoria": "Huevos y lácteos",
+      "categoria": "Huevos y quesos",
       "resumen": "Nombre amplio para quesos claros de distintas recetas; su sal, humedad y pasteurización varían según el producto.",
       "nombres_alternativos": [
         "queso blanco",
@@ -1589,12 +1891,12 @@
         "queso de leche cruda",
         "queso para niños"
       ],
-      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
+      "ruta_publica": "c/C1/alimentos/huevos-quesos/"
     },
     {
       "id": "requeson",
       "nombre": "Requesón",
-      "categoria": "Huevos y lácteos",
+      "categoria": "Huevos y quesos",
       "resumen": "Producto lácteo fresco y húmedo, de textura granulosa o cremosa; elegir versión pasteurizada y baja en sal.",
       "nombres_alternativos": [
         "requeson",
@@ -1612,30 +1914,7 @@
         "requesón pasteurizado",
         "queso fresco"
       ],
-      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
-    },
-    {
-      "id": "kefir-natural",
-      "nombre": "Kéfir natural",
-      "categoria": "Huevos y lácteos",
-      "resumen": "Leche fermentada mediante cultivos de kéfir; elegir producto pasteurizado, natural y sin azúcar añadido.",
-      "nombres_alternativos": [
-        "kefir",
-        "kéfir de leche",
-        "leche fermentada con kefir"
-      ],
-      "palabras_clave": [
-        "kéfir",
-        "kefir",
-        "kéfir natural",
-        "kefir de leche",
-        "kéfir para niños",
-        "kéfir para bebé",
-        "leche fermentada",
-        "probióticos",
-        "kéfir casero"
-      ],
-      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
+      "ruta_publica": "c/C1/alimentos/huevos-quesos/"
     }
   ]
 }

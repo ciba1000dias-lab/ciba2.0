@@ -1,0 +1,554 @@
+{
+  "version": 1,
+  "biblioteca": "CIBA · Crianza · Alimentación",
+  "categoria": "Huevos y quesos",
+  "alimentos": [
+    {
+      "id": "huevo-gallina",
+      "nombre": "Huevo de gallina",
+      "nombres_alternativos": [
+        "huevo",
+        "huevos",
+        "huevo entero",
+        "clara",
+        "yema"
+      ],
+      "categoria": "Huevos",
+      "resumen": "Alimento versátil que aporta proteínas y varios micronutrientes; debe ofrecerse completamente cocido.",
+      "descripcion": "El huevo de gallina contiene proteínas de buena calidad, colina, vitamina B12, selenio y otros nutrientes. La composición cambia según el tamaño y la alimentación de la gallina. Clara y yema pueden introducirse juntas, bien cocidas, cuando comienza la alimentación complementaria.",
+      "propiedades": [
+        "Aporta proteínas y colina, nutriente que participa en funciones celulares y del sistema nervioso.",
+        "Contiene vitamina B12, selenio y otros micronutrientes; la cantidad depende del tamaño."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de alimentos ricos en proteínas y puede formar parte de una alimentación diversa.",
+        "Es un alérgeno frecuente; introducirlo temprano, en forma bien cocida y segura, permite identificar tolerancia sin retrasar innecesariamente su incorporación."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir huevo completamente cocido, en pequeña cantidad y textura segura. Si tiene eccema grave o una reacción alérgica previa, consultar al profesional de salud sobre la introducción.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer huevo entero bien cocido, aplastado o triturado y humedecido con agua, leche materna o fórmula ya preparada. No dar huevo crudo, pasado por agua ni con clara o yema líquida."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer huevo bien cocido desmenuzado, en tortilla muy tierna o mezclado con vegetales blandos. Ajustar el tamaño y la humedad a la habilidad del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en trozos blandos y pequeños, siempre completamente cocidos. Evitar preparaciones secas, duras o con bordes tostados."
+        }
+      ],
+      "preparacion_segura": "Cocinar hasta que clara y yema estén firmes. En tortillas y revueltos, evitar partes líquidas. No lavar los huevos antes de guardarlos; mantenerlos refrigerados si así se comercializan y evitar contacto de cáscara sucia con alimentos listos para comer. Lavarse las manos y limpiar superficies tras manipular huevo crudo.",
+      "recetas": [
+        {
+          "nombre": "Huevo cocido majado",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Huevo fresco, agua y una cucharadita de vegetal cocido",
+          "preparacion": "Hervir hasta que clara y yema estén firmes. Retirar la cáscara, aplastar muy fino y humedecer hasta lograr textura blanda."
+        },
+        {
+          "nombre": "Tortilla suave de vegetales",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Huevo, calabaza o acelga cocida y unas gotas de aceite",
+          "preparacion": "Batir, mezclar con vegetales blandos y cocinar por completo por ambos lados, sin dejar zonas líquidas."
+        }
+      ],
+      "precauciones": [
+        "El huevo es un alérgeno importante. Introducirlo como alimento nuevo y observar reacciones; ronchas generalizadas, hinchazón, vómitos repetidos o tos requieren valoración. Dificultad respiratoria, hinchazón de lengua o desmayo son una urgencia.",
+        "No ofrecer huevo crudo o poco cocido, mayonesa casera con huevo crudo ni masas sin cocinar a bebés y niños pequeños.",
+        "La cáscara no debe entrar en contacto con alimentos listos para comer. Evitar trozos secos o gomosos que dificulten la deglución."
+      ],
+      "conservacion": "Mantener refrigerado. No dejar huevos ni preparaciones con huevo a temperatura ambiente más de 2 horas (1 hora con calor superior a 32 °C). Refrigerar pronto las sobras en recipiente poco profundo y consumirlas en 3–4 días. Desechar si hubo dudas sobre la cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chicken%20egg.jpg?width=1280",
+        "alt": "Huevo de gallina entero sobre fondo neutro.",
+        "autor": "Javier8aflores",
+        "licencia": "CC BY-SA 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Chicken_egg.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "huevo",
+        "huevo para bebé",
+        "huevo desde los 6 meses",
+        "cómo cocinar huevo para bebé",
+        "alergia al huevo",
+        "clara y yema",
+        "tortilla para bebé",
+        "huevo duro",
+        "huevo cocido",
+        "proteína",
+        "colina",
+        "alimentación complementaria"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco de alimentación complementaria, diversidad y continuidad de lactancia."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria, alérgenos, texturas y productos lácteos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Seguridad de huevos, leche, quesos pasteurizados y prevención de infecciones."
+        },
+        {
+          "institucion": "USDA FSIS",
+          "titulo": "How do you handle and store eggs safely?",
+          "url": "https://ask.fsis.usda.gov/article/How-do-you-handle-and-store-eggs-safely",
+          "utilidad": "Cocción completa, higiene, refrigeración y conservación de preparaciones con huevo."
+        },
+        {
+          "institucion": "American Academy of Pediatrics",
+          "titulo": "When to Introduce Egg, Peanut Butter & Other Common Food Allergens to a Baby",
+          "url": "https://www.healthychildren.org/English/healthy-living/nutrition/Pages/when-to-introduce-egg-peanut-butter-and-other-common-food-allergens-to-your-baby-food-allergy-prevention-tips.aspx",
+          "utilidad": "Introducción de alérgenos y precauciones en lactantes con eccema grave o reacciones previas."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "huevo-codorniz",
+      "nombre": "Huevo de codorniz",
+      "nombres_alternativos": [
+        "huevos de codorniz",
+        "huevo pequeño",
+        "huevitos de codorniz"
+      ],
+      "categoria": "Huevos",
+      "resumen": "Huevo pequeño de composición similar al de gallina; requiere la misma atención a la cocción completa y a la alergia.",
+      "descripcion": "El huevo de codorniz aporta proteínas, grasas y micronutrientes. Por unidad es más pequeño que el de gallina, pero no es menos alergénico ni tiene propiedades medicinales especiales. Su tamaño puede hacerlo atractivo como bocado redondo, por lo que debe adaptarse cuidadosamente para evitar atragantamiento.",
+      "propiedades": [
+        "Aporta proteínas, grasas y micronutrientes; las cantidades varían según el tamaño y la alimentación del ave.",
+        "No existe evidencia de que sea un tratamiento para alergias, asma u otras enfermedades."
+      ],
+      "beneficios": [
+        "Puede ampliar la variedad de alimentos, pero no ofrece una ventaja imprescindible frente al huevo de gallina.",
+        "Contiene proteínas de huevo capaces de provocar alergia; no debe considerarse hipoalergénico."
+      ],
+      "edad": "Puede introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria, siempre completamente cocido y adaptado a una textura segura. No es necesario introducir huevo de codorniz si el niño ya consume huevo de gallina sin problemas.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Cocinar hasta que clara y yema estén firmes; pelar y aplastar muy bien. No ofrecer entero."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Servir aplastado o picado finamente y mezclado con alimentos húmedos. No ofrecerlo redondo ni entero."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Puede servirse picado en trozos pequeños y blandos. Evitar ofrecerlo entero por su forma redondeada."
+        }
+      ],
+      "preparacion_segura": "Hervir hasta que la clara y la yema estén completamente firmes. Pelar y cortar o aplastar para eliminar la forma esférica. No servir crudo, tibio o con centro líquido.",
+      "recetas": [
+        {
+          "nombre": "Huevo de codorniz majado",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Huevo de codorniz, agua y puré de calabaza",
+          "preparacion": "Hervir completamente, pelar, aplastar y mezclar con puré húmedo."
+        },
+        {
+          "nombre": "Tortillita de codorniz",
+          "etapa": "Para niños que ya manejan picados",
+          "ingredientes": "Huevos de codorniz batidos y vegetales cocidos",
+          "preparacion": "Cocinar completamente en una tortilla fina y suave; cortar en tiras cortas o trocitos blandos."
+        }
+      ],
+      "precauciones": [
+        "Puede causar alergia igual que el huevo de gallina; no usarlo como sustituto seguro en caso de alergia al huevo.",
+        "Por su tamaño redondo, ofrecerlo entero supone riesgo de atragantamiento. Aplastar o cortar siempre según la habilidad del niño.",
+        "Evitar preparaciones crudas o poco cocidas y mantener higiene al manipular cáscaras."
+      ],
+      "conservacion": "Refrigerar según las indicaciones del proveedor. Mantener separados de alimentos listos para consumir. Los huevos cocidos deben enfriarse pronto, refrigerarse y consumirse en pocos días.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Quail%20eggs%20(1).jpg?width=1280",
+        "alt": "Varios huevos pequeños de codorniz con cáscara moteada.",
+        "autor": "Fumikas Sagisavas",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Quail_eggs_(1).jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "huevo de codorniz",
+        "huevos de codorniz",
+        "huevo pequeño",
+        "huevo para bebé",
+        "alergia al huevo",
+        "cómo preparar huevo de codorniz",
+        "huevo de codorniz para niños",
+        "huevo duro"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco de alimentación complementaria, diversidad y continuidad de lactancia."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria, alérgenos, texturas y productos lácteos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Seguridad de huevos, leche, quesos pasteurizados y prevención de infecciones."
+        },
+        {
+          "institucion": "USDA FSIS",
+          "titulo": "How do you handle and store eggs safely?",
+          "url": "https://ask.fsis.usda.gov/article/How-do-you-handle-and-store-eggs-safely",
+          "utilidad": "Cocción completa, higiene, refrigeración y conservación de preparaciones con huevo."
+        },
+        {
+          "institucion": "American Academy of Pediatrics",
+          "titulo": "When to Introduce Egg, Peanut Butter & Other Common Food Allergens to a Baby",
+          "url": "https://www.healthychildren.org/English/healthy-living/nutrition/Pages/when-to-introduce-egg-peanut-butter-and-other-common-food-allergens-to-your-baby-food-allergy-prevention-tips.aspx",
+          "utilidad": "Introducción de alérgenos y precauciones en lactantes con eccema grave o reacciones previas."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "queso-fresco-pasteurizado",
+      "nombre": "Queso fresco pasteurizado",
+      "nombres_alternativos": [
+        "queso fresco",
+        "queso fresco de leche pasteurizada",
+        "queso blanco fresco"
+      ],
+      "categoria": "Quesos",
+      "resumen": "Queso blando y húmedo; para niños pequeños debe elaborarse con leche pasteurizada y tener poca sal.",
+      "descripcion": "El queso fresco es un queso poco madurado, con humedad elevada. Aporta proteínas y calcio, pero el sodio puede variar mucho. La denominación no garantiza por sí sola que la leche haya sido pasteurizada ni que el producto sea bajo en sal: revisar etiqueta, origen y conservación.",
+      "propiedades": [
+        "Aporta proteínas y calcio en cantidades variables según elaboración y humedad.",
+        "Puede contener bastante sodio; comparar etiquetas y elegir la opción menos salada."
+      ],
+      "beneficios": [
+        "Puede complementar la alimentación con proteínas y calcio cuando está hecho con leche pasteurizada.",
+        "No es necesario añadir queso a todas las comidas; la variedad de alimentos importa más que un producto aislado."
+      ],
+      "edad": "Puede introducirse alrededor de los 6 meses como alimento si está elaborado con leche pasteurizada, tiene poca sal y se ofrece en textura segura. Evitar quesos frescos artesanales de leche cruda o de procedencia no verificable.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Aplastar o mezclar una pequeña cantidad de queso pasteurizado bajo en sal con puré húmedo; comprobar que no queden grumos gomosos."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer desmenuzado fino o mezclado con vegetales blandos. Evitar cubos grandes y pegajosos."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir rallado fino o en tiras delgadas y blandas; evitar cubos grandes, redondos o bloques duros."
+        }
+      ],
+      "preparacion_segura": "Verificar que la etiqueta indique leche pasteurizada. Mantener refrigerado, respetar fecha y consumir pronto tras abrir. No ofrecer queso casero elaborado con leche cruda ni producto de origen dudoso.",
+      "recetas": [
+        {
+          "nombre": "Puré de viandas con queso fresco",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Boniato o papa cocida y pequeña cantidad de queso fresco pasteurizado bajo en sal",
+          "preparacion": "Aplastar la vianda hasta textura segura y mezclar con el queso desmenuzado fino."
+        },
+        {
+          "nombre": "Tostadita blanda con queso",
+          "etapa": "Para niños que ya manejan alimentos en tiras",
+          "ingredientes": "Pan blando apropiado y queso fresco pasteurizado bajo en sal",
+          "preparacion": "Extender una capa fina de queso y cortar el pan en tiras pequeñas, sin bordes duros o tostados."
+        }
+      ],
+      "precauciones": [
+        "Los quesos elaborados con leche cruda pueden transmitir bacterias peligrosas; elegir pasteurizados.",
+        "El queso puede aportar mucho sodio. No ofrecer porciones grandes ni usarlo para salar la comida.",
+        "Evitar cubos, bolas o trozos elásticos que puedan atascarse. La leche es un alérgeno importante."
+      ],
+      "conservacion": "Refrigerar a 4 °C o menos, bien envuelto y separado de alimentos crudos. Seguir etiqueta y consumir dentro del plazo tras apertura. Desechar si presenta moho no propio del producto, olor anormal o pérdida de cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Queso%20fresco.JPG?width=1280",
+        "alt": "Queso fresco blanco, de textura suave, cortado en porciones.",
+        "autor": "Geoff",
+        "licencia": "CC BY-SA 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Queso_fresco.JPG"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "queso fresco",
+        "queso pasteurizado",
+        "queso fresco para bebé",
+        "queso desde los 6 meses",
+        "queso bajo en sal",
+        "queso de leche cruda",
+        "queso para niños",
+        "calcio",
+        "proteína"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco de alimentación complementaria, diversidad y continuidad de lactancia."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria, alérgenos, texturas y productos lácteos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Seguridad de huevos, leche, quesos pasteurizados y prevención de infecciones."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Diferencia entre lácteos como alimentos y leche de vaca como bebida antes y después de los 12 meses."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Foods and Drinks to Avoid or Limit",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-avoid-or-limit.html",
+          "utilidad": "Evitar lácteos sin pasteurizar y bebidas de leche de vaca antes de los 12 meses."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "queso-blanco",
+      "nombre": "Queso blanco",
+      "nombres_alternativos": [
+        "queso blanco",
+        "queso blanco salado",
+        "queso blanco tipo latino"
+      ],
+      "categoria": "Quesos",
+      "resumen": "Nombre amplio para quesos claros de distintas recetas; su sal, humedad y pasteurización varían según el producto.",
+      "descripcion": "En Cuba y otros países del Caribe, «queso blanco» puede referirse a variedades frescas o semiduras, con diferencias importantes de sal, humedad y elaboración. No es una composición única. La ficha se refiere al queso blanco comercial de origen verificable; no debe suponerse que todo queso blanco es pasteurizado ni bajo en sodio.",
+      "propiedades": [
+        "Aporta proteínas y calcio, pero la composición depende de la variedad y del proceso.",
+        "El sodio puede ser elevado, especialmente en quesos salados o conservados en salmuera."
+      ],
+      "beneficios": [
+        "Puede formar parte de la alimentación familiar en pequeñas porciones si es pasteurizado y bajo en sal.",
+        "No es imprescindible para cubrir calcio o proteínas y no debe desplazar otros alimentos."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses si está hecho con leche pasteurizada, tiene poca sal y se adapta la textura. Si no se conoce el tipo de leche, el proceso o la procedencia, no ofrecerlo a niños pequeños.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Rallar muy fino o desmenuzar y mezclar poca cantidad con puré húmedo; evitar trozos secos o elásticos."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer pequeñas hebras finas mezcladas con alimentos blandos. No dar cubos ni bloques."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir rallado o en tiras delgadas, blandas y fáciles de masticar. Evitar trozos grandes y redondos."
+        }
+      ],
+      "preparacion_segura": "Leer etiqueta y confirmar leche pasteurizada. Si es muy salado, no usar para la porción infantil. Refrigerar y manipular con utensilios limpios. No asumir que un queso artesanal o vendido sin etiqueta es seguro.",
+      "recetas": [
+        {
+          "nombre": "Vianda con queso blanco rallado",
+          "etapa": "Para niños que ya han probado lácteos",
+          "ingredientes": "Boniato cocido y una pequeña cantidad de queso blanco pasteurizado bajo en sal",
+          "preparacion": "Aplastar el boniato y añadir el queso rallado fino; evitar exceso de sal."
+        },
+        {
+          "nombre": "Tortilla suave con queso blanco",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Huevo, vegetales cocidos y una pequeña cantidad de queso blanco",
+          "preparacion": "Cocinar el huevo por completo y añadir queso pasteurizado rallado fino, sin salar adicionalmente."
+        }
+      ],
+      "precauciones": [
+        "«Queso blanco» no identifica una receta ni garantiza pasteurización. Revisar etiqueta y origen.",
+        "Algunos quesos blancos tienen mucha sal; limitar cantidad y evitar añadir sal a la comida.",
+        "La leche es un alérgeno importante. Evitar trozos duros, grandes o gomosos."
+      ],
+      "conservacion": "Refrigerar según etiqueta, preferiblemente a 4 °C o menos. Mantener protegido de contaminación cruzada y consumir dentro del plazo indicado tras abrir. No dejar en salmuera casera o a temperatura ambiente.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/White%20cheese.jpg?width=1280",
+        "alt": "Queso blanco de textura firme y clara, en porciones.",
+        "autor": "E4024",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:White_cheese.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "queso blanco",
+        "queso blanco cubano",
+        "queso blanco para bebé",
+        "queso salado",
+        "queso pasteurizado",
+        "queso de leche cruda",
+        "queso para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco de alimentación complementaria, diversidad y continuidad de lactancia."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria, alérgenos, texturas y productos lácteos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Seguridad de huevos, leche, quesos pasteurizados y prevención de infecciones."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Diferencia entre lácteos como alimentos y leche de vaca como bebida antes y después de los 12 meses."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Foods and Drinks to Avoid or Limit",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-avoid-or-limit.html",
+          "utilidad": "Evitar lácteos sin pasteurizar y bebidas de leche de vaca antes de los 12 meses."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "requeson",
+      "nombre": "Requesón",
+      "nombres_alternativos": [
+        "requeson",
+        "ricotta",
+        "queso ricota",
+        "queso de suero"
+      ],
+      "categoria": "Quesos",
+      "resumen": "Producto lácteo fresco y húmedo, de textura granulosa o cremosa; elegir versión pasteurizada y baja en sal.",
+      "descripcion": "El requesón se elabora a partir del suero de leche o de mezclas lácteas, según la tradición local. Puede ser suave y húmedo, con proteínas y calcio variables. No debe confundirse con cualquier queso fresco: su elaboración y composición dependen del fabricante.",
+      "propiedades": [
+        "Aporta proteínas y calcio en cantidades variables.",
+        "Suele tener textura húmeda, pero el sodio y la grasa dependen de la receta y marca."
+      ],
+      "beneficios": [
+        "Puede añadir variedad y textura suave a comidas infantiles si está pasteurizado y sin exceso de sal.",
+        "Combina con vegetales o frutas sin necesidad de azúcar o sal añadida."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses como alimento si está elaborado con leche pasteurizada, sin azúcar añadida y con poca sal. No sustituye leche materna ni fórmula.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Mezclar una pequeña cantidad con puré de vegetales o fruta ya introducida hasta lograr textura homogénea y húmeda."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer mezclado con alimentos blandos; revisar que no tenga grumos secos o compactos."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en pequeñas cucharadas o mezclado en preparaciones, evitando bolas compactas o porciones pegajosas."
+        }
+      ],
+      "preparacion_segura": "Comprar requesón pasteurizado, mantener refrigerado y usar utensilios limpios. Evitar producto artesanal de procedencia desconocida o hecho con leche cruda. No añadir azúcar, miel ni sal.",
+      "recetas": [
+        {
+          "nombre": "Requesón con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Requesón pasteurizado bajo en sal y calabaza cocida",
+          "preparacion": "Aplastar la calabaza y mezclar con el requesón hasta obtener consistencia suave."
+        },
+        {
+          "nombre": "Crema de requesón y fruta bomba",
+          "etapa": "Para niños que ya aceptan lácteos y fruta",
+          "ingredientes": "Requesón pasteurizado y fruta bomba madura sin semillas",
+          "preparacion": "Aplastar la fruta y mezclar con requesón; servir frío y recién preparado."
+        }
+      ],
+      "precauciones": [
+        "La leche es un alérgeno importante. No ofrecer en caso de alergia a la proteína de leche sin indicación clínica.",
+        "Confirmar pasteurización: los quesos frescos y húmedos pueden contaminarse si se elaboran con leche cruda.",
+        "Elegir bajo en sodio y evitar bolas compactas o grumos pegajosos."
+      ],
+      "conservacion": "Conservar siempre refrigerado y seguir fecha de caducidad. Por su humedad, una vez abierto debe consumirse pronto según etiqueta. Desechar si se rompe la cadena de frío o cambia olor, color o textura.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cottage%20Cheese.jpg?width=1280",
+        "alt": "Requesón o queso tipo cottage en un recipiente.",
+        "autor": "Stu Spivack",
+        "licencia": "CC BY-SA 2.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Cottage_Cheese.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "requesón",
+        "requeson",
+        "ricotta",
+        "ricota",
+        "queso de suero",
+        "requesón para bebé",
+        "requesón pasteurizado",
+        "queso fresco"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco de alimentación complementaria, diversidad y continuidad de lactancia."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria, alérgenos, texturas y productos lácteos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Seguridad de huevos, leche, quesos pasteurizados y prevención de infecciones."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Diferencia entre lácteos como alimentos y leche de vaca como bebida antes y después de los 12 meses."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Foods and Drinks to Avoid or Limit",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-avoid-or-limit.html",
+          "utilidad": "Evitar lácteos sin pasteurizar y bebidas de leche de vaca antes de los 12 meses."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    }
+  ]
+}

@@ -9,7 +9,9 @@
     "assets/data/alimentos/cereales.json",
     "assets/data/alimentos/carnes.json",
     "assets/data/alimentos/pescados.json",
-    "assets/data/alimentos/huevos-lacteos.json"
+    "assets/data/alimentos/leches.json",
+    "assets/data/alimentos/yogures.json",
+    "assets/data/alimentos/huevos-quesos.json"
   ],
   "categorias": [
     {
@@ -55,10 +57,22 @@
       "slug": "pescados"
     },
     {
-      "nombre": "Huevos y lácteos",
-      "archivo": "assets/data/alimentos/huevos-lacteos.json",
-      "cantidad": 8,
-      "slug": "huevos-lacteos"
+      "nombre": "Leches",
+      "archivo": "assets/data/alimentos/leches.json",
+      "cantidad": 12,
+      "slug": "leches"
+    },
+    {
+      "nombre": "Yogures y leches fermentadas",
+      "archivo": "assets/data/alimentos/yogures.json",
+      "cantidad": 5,
+      "slug": "yogures"
+    },
+    {
+      "nombre": "Huevos y quesos",
+      "archivo": "assets/data/alimentos/huevos-quesos.json",
+      "cantidad": 5,
+      "slug": "huevos-quesos"
     }
   ]
 }

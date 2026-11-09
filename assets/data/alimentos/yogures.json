@@ -1,0 +1,487 @@
+{
+  "version": 1,
+  "biblioteca": "CIBA · Crianza · Alimentación",
+  "categoria": "Yogures y leches fermentadas",
+  "alimentos": [
+    {
+      "id": "yogur-natural",
+      "nombre": "Yogur natural",
+      "nombres_alternativos": [
+        "yogurt natural",
+        "yogur sin azúcar",
+        "yogur entero natural"
+      ],
+      "categoria": "Yogures y leches fermentadas",
+      "resumen": "Leche fermentada que puede formar parte de la alimentación complementaria si es pasteurizada, natural y sin azúcar añadido.",
+      "descripcion": "El yogur se obtiene por fermentación de la leche mediante cultivos bacterianos. Aporta proteínas, calcio y otros nutrientes; su contenido de lactosa puede ser menor que el de la leche, pero no está libre de proteínas lácteas. Para niños pequeños conviene elegir yogur pasteurizado, natural, sin miel, edulcorantes ni azúcar añadida.",
+      "propiedades": [
+        "Aporta proteínas y calcio; el contenido depende de la leche utilizada y del proceso.",
+        "Contiene cultivos vivos en algunos productos, pero no debe presentarse como tratamiento de enfermedades ni como sustituto de atención médica."
+      ],
+      "beneficios": [
+        "Puede añadir variedad y nutrientes a la alimentación complementaria desde alrededor de los 6 meses, si es pasteurizado y sin azúcar.",
+        "Su textura cremosa facilita mezclarlo con frutas ya introducidas y preparadas de forma segura."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses como alimento, no como sustituto de leche materna o fórmula. Elegir yogur natural pasteurizado y sin azúcar añadida. Evitar yogures con miel antes de los 12 meses y productos con trozos duros o grandes.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer una pequeña cantidad de yogur natural pasteurizado, sin azúcar, solo o mezclado con fruta ya tolerada y triturada."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Servir espeso con fruta madura aplastada o trocitos muy blandos, según habilidades."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer en recipiente o cuchara, sin azúcar añadido. Revisar que no contenga trozos duros, granola, frutos secos enteros ni miel antes del año."
+        }
+      ],
+      "preparacion_segura": "Comprar yogur elaborado con leche pasteurizada y conservar refrigerado. No usar productos vencidos, envases hinchados o con señales de deterioro. Evitar la contaminación cruzada con cucharas usadas.",
+      "recetas": [
+        {
+          "nombre": "Yogur con fruta madura",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Yogur natural pasteurizado y mango o fruta bomba ya introducida",
+          "preparacion": "Aplastar la fruta hasta la textura apropiada y mezclar con yogur sin azúcar."
+        },
+        {
+          "nombre": "Crema fría de yogur y calabaza",
+          "etapa": "Para niños que ya aceptan varias texturas",
+          "ingredientes": "Yogur natural, calabaza cocida y unas gotas de aceite",
+          "preparacion": "Mezclar calabaza bien cocida y fría con yogur; servir recién preparado y refrigerado hasta el momento de consumo."
+        }
+      ],
+      "precauciones": [
+        "La leche es un alérgeno importante; el yogur no es seguro para un niño con alergia a la proteína de leche de vaca.",
+        "Evitar miel antes de los 12 meses y azúcares añadidos en menores de 2 años.",
+        "Elegir producto pasteurizado. No ofrecer envases con trozos de frutos secos, semillas enteras o granola que puedan provocar atragantamiento."
+      ],
+      "conservacion": "Conservar refrigerado y respetar la fecha de caducidad. No dejar fuera de frío más de 2 horas. Usar utensilio limpio y no devolver al envase el sobrante que estuvo en contacto con la saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plain%20Yogurt.jpg?width=1280",
+        "alt": "Porción de yogur natural blanco en un recipiente.",
+        "autor": "Alabama Extension",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Plain_Yogurt.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "yogur natural",
+        "yogurt",
+        "yogur para bebé",
+        "yogur desde los 6 meses",
+        "yogur sin azúcar",
+        "yogur pasteurizado",
+        "yogur y alergia a la leche",
+        "yogur con frutas",
+        "probióticos"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco de alimentación complementaria, diversidad y continuidad de lactancia."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria, alérgenos, texturas y productos lácteos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Seguridad de huevos, leche, quesos pasteurizados y prevención de infecciones."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Diferencia entre lácteos como alimentos y leche de vaca como bebida antes y después de los 12 meses."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Foods and Drinks to Avoid or Limit",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-avoid-or-limit.html",
+          "utilidad": "Evitar lácteos sin pasteurizar y bebidas de leche de vaca antes de los 12 meses."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "yogur-chiva",
+      "nombre": "Yogur de leche de chiva",
+      "nombres_alternativos": [
+        "yogur de cabra",
+        "yogurt de chiva",
+        "yogurt de cabra"
+      ],
+      "categoria": "Yogures y leches fermentadas",
+      "resumen": "Leche caprina fermentada; requiere pasteurización y comparte riesgos de alergia de otros lácteos.",
+      "descripcion": "La fermentación modifica lactosa y textura, pero no elimina necesariamente proteínas alergénicas de cabra.",
+      "propiedades": [
+        "Aporta proteínas, grasa y calcio; composición variable.",
+        "No es hipoalergénico."
+      ],
+      "beneficios": [
+        "Puede formar parte de la alimentación complementaria si es pasteurizado, natural y sin azúcar."
+      ],
+      "edad": "Como alimento desde alrededor de 6 meses si está preparado para sólidos; no es bebida principal.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Menores de 6 meses",
+          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+        },
+        {
+          "etapa": "De 6 a 11 meses",
+          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir natural, pasteurizado, sin azúcar ni miel; se puede mezclar con fruta blanda."
+        }
+      ],
+      "preparacion_segura": "No usar yogur casero de leche cruda; no sustituye leche materna o fórmula.",
+      "recetas": [
+        {
+          "nombre": "Uso y preparación segura",
+          "etapa": "Según edad y etiqueta",
+          "ingredientes": "Yogur de leche de chiva",
+          "preparacion": "Servir natural, pasteurizado, sin azúcar ni miel; se puede mezclar con fruta blanda."
+        }
+      ],
+      "precauciones": [
+        "Puede causar alergia; no es alternativa segura para alergia a leche de vaca.",
+        "No miel antes de 12 meses.",
+        "Evitar versiones azucaradas."
+      ],
+      "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plain%20Yogurt.jpg?width=1280",
+        "alt": "Imagen ilustrativa de un producto lácteo; no identifica necesariamente esta variedad o marca.",
+        "autor": "Alabama Extension",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Plain_Yogurt.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Yogur de leche de chiva",
+        "yogur de cabra",
+        "yogurt de chiva",
+        "yogurt de cabra",
+        "yogur chiva bebé",
+        "yogur cabra para bebé"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de leche cruda y productos no pasteurizados."
+        },
+        {
+          "institucion": "AAP",
+          "titulo": "Recommended Drinks for Young Children Ages 0–5",
+          "url": "https://www.healthychildren.org/spanish/healthy-living/nutrition/paginas/Recommended-Drinks-for-Young-Children-Ages-0-5.aspx",
+          "utilidad": "Bebidas apropiadas y bebidas vegetales."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "yogur-probiotico",
+      "nombre": "Yogur probiótico",
+      "nombres_alternativos": [
+        "yogurt probiótico",
+        "yogur con probióticos",
+        "cultivos vivos"
+      ],
+      "categoria": "Yogures y leches fermentadas",
+      "resumen": "Yogur que declara microorganismos vivos; los efectos dependen de cepas y no se pueden generalizar.",
+      "descripcion": "No todos los cultivos tienen el mismo efecto. La palabra probiótico no garantiza prevención ni tratamiento de enfermedades.",
+      "propiedades": [
+        "Puede contener cultivos vivos; cepas y cantidades varían.",
+        "Azúcar y composición dependen de marca."
+      ],
+      "beneficios": [
+        "Puede ser un alimento lácteo más; no se necesita un producto probiótico especial para todos los niños."
+      ],
+      "edad": "Como alimento desde alrededor de 6 meses si es natural, pasteurizado y sin azúcar. No usar suplementos para tratar enfermedades sin indicación.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Menores de 6 meses",
+          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+        },
+        {
+          "etapa": "De 6 a 11 meses",
+          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir refrigerado según etiqueta; revisar ingredientes y azúcar."
+        }
+      ],
+      "preparacion_segura": "No atribuir cura de cólicos, diarrea, alergias o infecciones sin evidencia específica.",
+      "recetas": [
+        {
+          "nombre": "Uso y preparación segura",
+          "etapa": "Según edad y etiqueta",
+          "ingredientes": "Yogur probiótico",
+          "preparacion": "Servir refrigerado según etiqueta; revisar ingredientes y azúcar."
+        }
+      ],
+      "precauciones": [
+        "No todos los probióticos tienen igual efecto.",
+        "Evitar azúcar añadida en menores de 2 años.",
+        "No sustituye tratamiento ni leche materna/fórmula."
+      ],
+      "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plain%20Yogurt.jpg?width=1280",
+        "alt": "Imagen ilustrativa de un producto lácteo; no identifica necesariamente esta variedad o marca.",
+        "autor": "Alabama Extension",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Plain_Yogurt.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Yogur probiótico",
+        "yogurt probiótico",
+        "yogur con probióticos",
+        "cultivos vivos",
+        "yogur probiótico bebé",
+        "probióticos yogur niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de leche cruda y productos no pasteurizados."
+        },
+        {
+          "institucion": "AAP",
+          "titulo": "Recommended Drinks for Young Children Ages 0–5",
+          "url": "https://www.healthychildren.org/spanish/healthy-living/nutrition/paginas/Recommended-Drinks-for-Young-Children-Ages-0-5.aspx",
+          "utilidad": "Bebidas apropiadas y bebidas vegetales."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "yogur-vasito-pascual",
+      "nombre": "Yogur comercial de vasito (tipo Pascual)",
+      "nombres_alternativos": [
+        "yogur Pascual",
+        "yogurt de vasito",
+        "yogur saborizado"
+      ],
+      "categoria": "Yogures y leches fermentadas",
+      "resumen": "Categoría de yogures comerciales individuales; azúcar e ingredientes dependen de la variedad y etiqueta.",
+      "descripcion": "El formato o marca no identifica una composición única. Revisar si es yogur o postre lácteo, azúcar, fruta, edulcorantes y tratamiento térmico.",
+      "propiedades": [
+        "Aporta nutrientes lácteos si realmente es yogur; azúcar y fortificación varían.",
+        "El envase infantil no garantiza idoneidad."
+      ],
+      "beneficios": [
+        "Preferir yogur natural pasteurizado sin azúcar; las variedades saborizadas no son primera elección."
+      ],
+      "edad": "Desde alrededor de 6 meses solo si se confirma que es yogur pasteurizado sin azúcar añadida; revisar cada variedad.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Menores de 6 meses",
+          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+        },
+        {
+          "etapa": "De 6 a 11 meses",
+          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Abrir y servir con cuchara limpia; conservar según etiqueta."
+        }
+      ],
+      "preparacion_segura": "No atribuir composición o edad recomendada a una variedad sin foto de ingredientes y tabla nutricional.",
+      "recetas": [
+        {
+          "nombre": "Uso y preparación segura",
+          "etapa": "Según edad y etiqueta",
+          "ingredientes": "Yogur comercial de vasito (tipo Pascual)",
+          "preparacion": "Abrir y servir con cuchara limpia; conservar según etiqueta."
+        }
+      ],
+      "precauciones": [
+        "Revisar azúcar, edulcorantes, alérgenos y fecha.",
+        "No confundir postre lácteo con yogur natural.",
+        "No sustituye leche materna ni fórmula."
+      ],
+      "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plain%20Yogurt.jpg?width=1280",
+        "alt": "Imagen ilustrativa de un producto lácteo; no identifica necesariamente esta variedad o marca.",
+        "autor": "Alabama Extension",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Plain_Yogurt.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Yogur comercial de vasito (tipo Pascual)",
+        "yogur Pascual",
+        "yogurt de vasito",
+        "yogur saborizado",
+        "yogur Pascual bebé",
+        "yogur vasito para bebé"
+      ],
+      "fuentes": [
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de leche cruda y productos no pasteurizados."
+        },
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para alimentación complementaria."
+        },
+        {
+          "institucion": "AAP",
+          "titulo": "Recommended Drinks for Young Children Ages 0–5",
+          "url": "https://www.healthychildren.org/spanish/healthy-living/nutrition/paginas/Recommended-Drinks-for-Young-Children-Ages-0-5.aspx",
+          "utilidad": "Bebidas apropiadas y bebidas vegetales."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "kefir-natural",
+      "nombre": "Kéfir natural",
+      "nombres_alternativos": [
+        "kefir",
+        "kéfir de leche",
+        "leche fermentada con kefir"
+      ],
+      "categoria": "Yogures y leches fermentadas",
+      "resumen": "Leche fermentada mediante cultivos de kéfir; elegir producto pasteurizado, natural y sin azúcar añadido.",
+      "descripcion": "El kéfir de leche se obtiene al fermentar leche con cultivos de bacterias y levaduras. Puede contener microorganismos vivos, pero la composición cambia entre productos y procesos. No es un medicamento ni está demostrado que prevenga o cure enfermedades en niños. Para la infancia, priorizar producto comercial elaborado con leche pasteurizada, sin azúcar y con cadena de frío controlada.",
+      "propiedades": [
+        "Aporta proteínas y calcio propios de la leche; el contenido depende de la elaboración.",
+        "La fermentación modifica parte de la lactosa y aporta cultivos microbianos, pero no garantiza que sea adecuado para todas las personas."
+      ],
+      "beneficios": [
+        "Puede aportar variedad entre los lácteos fermentados cuando el niño ya consume lácteos pasteurizados.",
+        "No es necesario para la salud intestinal y no sustituye tratamientos ni leche materna o fórmula."
+      ],
+      "edad": "Como criterio prudente para esta biblioteca, ofrecer kéfir natural pasteurizado después de los 12 meses y en pequeñas cantidades, si el niño tolera lácteos. No usar kéfir casero ni fermentaciones de procedencia o higiene desconocidas en lactantes.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "No se recomienda como bebida para lactantes; mantener leche materna o fórmula como leche principal y elegir yogur natural pasteurizado si se desea introducir un lácteo."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Si se consulta su uso antes del año, hacerlo con el pediatra; no sustituir leche materna o fórmula por kéfir."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer pequeñas cantidades de kéfir comercial natural, sin azúcar y elaborado con leche pasteurizada; no desplazar agua ni comidas."
+        }
+      ],
+      "preparacion_segura": "Elegir producto comercial refrigerado con etiqueta clara de pasteurización y fecha vigente. Evitar preparaciones caseras para lactantes, leche cruda y fermentos que hayan permanecido a temperatura ambiente sin control. No añadir miel antes de los 12 meses.",
+      "recetas": [
+        {
+          "nombre": "Kéfir con fruta madura",
+          "etapa": "Después de los 12 meses",
+          "ingredientes": "Kéfir natural pasteurizado y fruta madura ya tolerada",
+          "preparacion": "Mezclar una pequeña cantidad con fruta aplastada y servir frío; no añadir azúcar ni miel."
+        },
+        {
+          "nombre": "Batido espeso sin azúcar",
+          "etapa": "Para niños mayores de 12 meses",
+          "ingredientes": "Kéfir natural, plátano maduro y avena bien cocida",
+          "preparacion": "Triturar hasta textura espesa. Servir en taza y no usar como sustituto de una comida completa."
+        }
+      ],
+      "precauciones": [
+        "Contiene proteínas de leche y puede provocar alergia. La fermentación no elimina este riesgo.",
+        "No se ha establecido que el kéfir sea necesario ni que trate diarrea, alergias o problemas digestivos infantiles.",
+        "Evitar kéfir casero o hecho con leche cruda en lactantes y niños pequeños; puede haber contaminación, fermentación irregular y trazas de alcohol.",
+        "No ofrecer antes de los 12 meses como bebida ni sustituir leche materna o fórmula."
+      ],
+      "conservacion": "Mantener refrigerado y seguir estrictamente las indicaciones del fabricante. No dejar fuera de frío más de 2 horas. No consumir envases hinchados, con gas u olor anormal no esperado, ni productos vencidos.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kefir.jpg?width=1280",
+        "alt": "Kéfir de leche blanco junto a algunos gránulos de cultivo.",
+        "autor": "Manuel Almagro Rivas",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Kefir.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "kéfir",
+        "kefir",
+        "kéfir natural",
+        "kefir de leche",
+        "kéfir para niños",
+        "kéfir para bebé",
+        "leche fermentada",
+        "probióticos",
+        "kéfir casero"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco de alimentación complementaria, diversidad y continuidad de lactancia."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria, alérgenos, texturas y productos lácteos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Seguridad de huevos, leche, quesos pasteurizados y prevención de infecciones."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Cow's Milk and Milk Alternatives",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
+          "utilidad": "Diferencia entre lácteos como alimentos y leche de vaca como bebida antes y después de los 12 meses."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Foods and Drinks to Avoid or Limit",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-avoid-or-limit.html",
+          "utilidad": "Evitar lácteos sin pasteurizar y bebidas de leche de vaca antes de los 12 meses."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    }
+  ]
+}

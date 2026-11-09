@@ -292,5 +292,15 @@ Estas fuentes son un punto de partida. Cada ficha llevará referencias específi
 
 ## Avance de implementación de la biblioteca
 - Grupos publicados y conectados al índice: frutas, viandas, vegetales y hortalizas, legumbres, cereales, carnes y pescados/mariscos.
-- Grupo «Huevos y lácteos»: 8 fichas creadas en `assets/data/alimentos/huevos-lacteos.json`, con página de grupo y entradas del buscador general.
+- La categoría inicial «Huevos y lácteos» se reorganiza en tres grupos: Leches (12 fichas), Yogures y leches fermentadas (5 fichas), y Huevos y quesos (5 fichas).
 - La ficha de kéfir se limita a producto comercial pasteurizado y consumo después de los 12 meses como criterio prudente; no se recomienda kéfir casero para lactantes.
+
+
+## Criterio especial para leches y productos lácteos
+- La biblioteca documenta productos de consumo real en Cuba aunque no sean apropiados para lactantes. La presencia de una ficha no constituye recomendación.
+- Leches animales corrientes, bebidas vegetales, leche en polvo común, evaporada y condensada no sustituyen leche materna ni fórmula infantil en menores de 12 meses.
+- La fórmula infantil es una categoría aparte: seguir exactamente las instrucciones del fabricante; nunca diluir, concentrar ni improvisar fórmulas caseras.
+- La leche descremada no se recomienda como bebida habitual para niños pequeños sin indicación profesional; «de diabético» no significa adecuada para lactantes.
+- Yogures pasteurizados naturales sin azúcar pueden incorporarse como alimento complementario alrededor de los 6 meses, sin sustituir leche materna o fórmula.
+- Prolacsin y yogures comerciales tipo Pascual requieren verificar etiqueta local, ingredientes, tabla nutricional y modo de preparación antes de afirmar composición o proporciones.
+- Las imágenes de estas nuevas fichas son ilustrativas generales y deberán sustituirse por fotografías específicas verificadas.
