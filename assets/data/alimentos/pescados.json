@@ -1,0 +1,2382 @@
+{
+  "version": 1,
+  "biblioteca": "CIBA · Crianza · Alimentación",
+  "categoria": "Pescados, mariscos, conservas y preparaciones",
+  "alimentos": [
+    {
+      "id": "pargo",
+      "nombre": "Pargo",
+      "nombres_alternativos": [
+        "pargo rojo",
+        "pargo de mar",
+        "Lutjanidae"
+      ],
+      "categoria": "Pescados",
+      "resumen": "Pescado marino de carne blanca; el nombre pargo agrupa varias especies y no identifica por sí solo una especie concreta.",
+      "descripcion": "El pargo es un nombre común aplicado a distintos peces de la familia Lutjanidae. Aporta proteínas y, según la especie, cantidades variables de grasas omega-3 y micronutrientes. Conviene identificar la especie y el origen cuando se evalúen recomendaciones de mercurio.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Retirar piel, espinas y espinas pequeñas con mucho cuidado. Cocinar completamente y desmenuzar revisando la carne con los dedos antes de ofrecer. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "La fotografía es representativa de un pargo rojo, pero el nombre comercial cubano puede abarcar otras especies. No asumir que todos los pargos comparten idéntica clasificación de mercurio.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Red_Snapper_fish.jpg?width=1280",
+        "alt": "Red snapper, imagen representativa de un pez vendido con el nombre común de pargo.",
+        "autor": "Jeevitha VM",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Red_Snapper_fish.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Pargo",
+        "pargo rojo",
+        "pargo de mar",
+        "Lutjanidae",
+        "pargo",
+        "pescado para bebé",
+        "pargo para niños",
+        "espinas de pescado",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "tilapia",
+      "nombre": "Tilapia",
+      "nombres_alternativos": [
+        "tilapia de cultivo",
+        "Oreochromis",
+        "pescado blanco"
+      ],
+      "categoria": "Pescados",
+      "resumen": "Pescado de carne suave y sabor delicado, frecuente en sistemas de cultivo.",
+      "descripcion": "La tilapia aporta proteínas y suele tener poca grasa. La composición cambia según especie, alimentación y crianza. La FDA la incluye entre las opciones bajas en mercurio.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Cocinar hasta que la carne esté opaca y se separe fácilmente; retirar absolutamente todas las espinas y desmenuzar. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "Elegir producto de procedencia controlada y mantener la cadena de frío. Revisar espinas en cada porción.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Liat_Portal_for_Foodie_Disorder_-_Whole_raw_tilapia_fish.jpg?width=1280",
+        "alt": "Tilapia entera cruda en una bandeja.",
+        "autor": "HaJunkiyada",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Liat_Portal_for_Foodie_Disorder_-_Whole_raw_tilapia_fish.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Tilapia",
+        "tilapia de cultivo",
+        "Oreochromis",
+        "pescado blanco",
+        "tilapia",
+        "pescado blanco",
+        "tilapia para bebé",
+        "pescado bajo en mercurio",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "sardina",
+      "nombre": "Sardina",
+      "nombres_alternativos": [
+        "sardinas",
+        "Sardina",
+        "pescado azul"
+      ],
+      "categoria": "Pescados",
+      "resumen": "Pescado pequeño y graso que aporta proteínas, vitamina B12 y omega-3.",
+      "descripcion": "La sardina es una fuente de proteínas, vitamina B12 y grasas omega-3. Si se consume con espinas blandas comestibles, también puede aportar calcio; para niños pequeños deben retirarse o triturarse de forma segura.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente si es fresca. Retirar cabeza, vísceras y espinas; aplastar cuidadosamente las espinas blandas de la conserva y revisar textura. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "Las sardinas están entre las opciones bajas en mercurio de la FDA. En conserva, comparar sodio y escurrir si es necesario.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Group_of_Sardine_fish.jpg?width=1280",
+        "alt": "Grupo de sardinas frescas.",
+        "autor": "Hariprasad Shetty10",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Group_of_Sardine_fish.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Sardina",
+        "sardinas",
+        "Sardina",
+        "pescado azul",
+        "sardina",
+        "sardinas",
+        "sardina para bebé",
+        "pescado azul",
+        "omega 3",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "atun",
+      "nombre": "Atún",
+      "nombres_alternativos": [
+        "atún fresco",
+        "atún en filete",
+        "Thunnus"
+      ],
+      "categoria": "Pescados",
+      "resumen": "Pescado de varias especies; el mercurio depende mucho de cuál sea.",
+      "descripcion": "El atún aporta proteínas y nutrientes como vitamina B12 y selenio. No existe una recomendación única para todos los atunes: el atún claro enlatado (a menudo listado/skipjack) es una mejor opción que el atún blanco/albacora; el patudo se encuentra entre las opciones a evitar para niños.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente para niños pequeños. Desmenuzar y revisar espinas, aunque los filetes suelen tener menos que pescados pequeños. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "No trasladar la recomendación del atún claro enlatado a cualquier filete o especie de atún. Evitar patudo/bigeye; limitar según especie y guía local.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yellowfin_tuna.jpg?width=1280",
+        "alt": "Atún de aleta amarilla fotografiado por NOAA.",
+        "autor": "William B. Folsom, NMFS/NOAA",
+        "licencia": "Dominio público",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Yellowfin_tuna.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Atún",
+        "atún fresco",
+        "atún en filete",
+        "Thunnus",
+        "atún",
+        "atún para niños",
+        "atún en lata",
+        "atún claro",
+        "albacora",
+        "patudo",
+        "mercurio atún",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "jurel",
+      "nombre": "Jurel",
+      "nombres_alternativos": [
+        "chicharro",
+        "Trachurus",
+        "jurel de mar"
+      ],
+      "categoria": "Pescados",
+      "resumen": "Pescado azul de tamaño y contenido graso variables según especie.",
+      "descripcion": "El jurel aporta proteínas y grasas poliinsaturadas. El nombre común puede corresponder a varias especies de Trachurus; conviene identificarlo para interpretar mejor la información nutricional y de contaminantes.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente, separar la carne del espinazo y retirar las espinas laterales y pequeñas. Ofrecer desmenuzado y húmedo. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "No confundir automáticamente jurel con macarela rey. Revisar especie, origen y espinas.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jurel_%28Trachurus_trachurus%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2023-07-28%2C_DD_43.jpg?width=1280",
+        "alt": "Jurel atlántico (Trachurus trachurus) fotografiado bajo el agua.",
+        "autor": "Diego Delso",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Jurel_(Trachurus_trachurus),_Parque_natural_de_la_Arrábida,_Portugal,_2023-07-28,_DD_43.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Jurel",
+        "chicharro",
+        "Trachurus",
+        "jurel de mar",
+        "jurel",
+        "chicharro",
+        "pescado azul",
+        "jurel para bebé",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "macarela",
+      "nombre": "Macarela",
+      "nombres_alternativos": [
+        "caballa",
+        "macarela común",
+        "mackerel"
+      ],
+      "categoria": "Pescados",
+      "resumen": "Nombre común ambiguo que puede referirse a especies con recomendaciones de mercurio muy diferentes.",
+      "descripcion": "Macarela o caballa no identifica una sola especie. La caballa del Atlántico figura entre las opciones bajas en mercurio; la caballa española tiene otra categoría y la macarela rey (king mackerel) debe evitarse en niños. La ficha no asigna una recomendación hasta identificar la especie.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Pedir el nombre de la especie o verificar etiqueta/procedencia. Cocinar completamente y retirar cuidadosamente todas las espinas. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer macarela rey a niños. No clasificar una macarela sin identificarla; las categorías FDA varían por especie.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mackerel_fish.jpg?width=1280",
+        "alt": "Ejemplares de caballa o macarela; la fotografía no determina por sí sola la especie.",
+        "autor": "Hariprasad Shetty10",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Mackerel_fish.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Macarela",
+        "caballa",
+        "macarela común",
+        "mackerel",
+        "macarela",
+        "caballa",
+        "macarela rey",
+        "king mackerel",
+        "mercurio macarela",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "lisa",
+      "nombre": "Lisa",
+      "nombres_alternativos": [
+        "lisa de mar",
+        "mújol",
+        "Mugilidae",
+        "Mugil cephalus"
+      ],
+      "categoria": "Pescados",
+      "resumen": "Pescado costero conocido como lisa o mújol; el nombre puede abarcar varias especies.",
+      "descripcion": "La lisa aporta proteínas y, según la especie y la temporada, grasas en cantidades variables. El término común puede referirse a distintas especies de Mugilidae.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente; retirar espinas del lomo, costillas y aletas. Desmenuzar con cuidado y humedecer para evitar fibras secas. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "La imagen corresponde a Mugil cephalus, pero no todos los pescados llamados lisa son necesariamente esa especie. Verificar procedencia y espinas.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mugil_cephalus_%28Flathead_grey_mullet%29_%2824407%29.jpg?width=1280",
+        "alt": "Lisa o mújol de cabeza plana (Mugil cephalus).",
+        "autor": "Afsarnayakkan",
+        "licencia": "Licencia CC pendiente de confirmación en Commons",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Mugil_cephalus_(Flathead_grey_mullet)_(24407).jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Lisa",
+        "lisa de mar",
+        "mújol",
+        "Mugilidae",
+        "Mugil cephalus",
+        "lisa",
+        "mújol",
+        "pescado de costa",
+        "lisa para bebé",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "claria",
+      "nombre": "Claria",
+      "nombres_alternativos": [
+        "pez gato africano",
+        "bagre africano",
+        "Clarias gariepinus"
+      ],
+      "categoria": "Pescados",
+      "resumen": "Pez de agua dulce introducido y criado en Cuba; conocido por su resistencia y carne firme.",
+      "descripcion": "La claria (frecuentemente Clarias gariepinus) es un pez gato de agua dulce. Aporta proteínas; la calidad y seguridad dependen de las condiciones del agua y del sistema de crianza.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Comprar solo de origen controlado, cocinar completamente y revisar con especial cuidado las espinas y estructuras cartilaginosas. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "No consumir peces capturados en aguas contaminadas o de origen desconocido. La ficha no sustituye controles sanitarios del producto.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/African_catfish_-_Congo_River.jpg?width=1280",
+        "alt": "Bagre africano del género Clarias.",
+        "autor": "Autoría de Commons por verificar",
+        "licencia": "Licencia por verificar",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:African_catfish_-_Congo_River.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Claria",
+        "pez gato africano",
+        "bagre africano",
+        "Clarias gariepinus",
+        "claria",
+        "clarias",
+        "pez gato",
+        "bagre africano",
+        "pescado de agua dulce",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "merluza",
+      "nombre": "Merluza",
+      "nombres_alternativos": [
+        "hake",
+        "pescadilla",
+        "Merluccius"
+      ],
+      "categoria": "Pescados",
+      "resumen": "Pescado blanco de sabor suave y carne que se desmenuza con facilidad.",
+      "descripcion": "La merluza aporta proteínas y suele ser baja en grasa. Las especies del género Merluccius no deben confundirse con cualquier pescado blanco comercializado con nombres parecidos.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente, separar la carne de la espina central y revisar las espinas finas antes de servir. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "Elegir merluza bien conservada y sin señales de descongelación repetida. Retirar todas las espinas.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hake_fish.jpg?width=1280",
+        "alt": "Merluza fotografiada entera.",
+        "autor": "Don miraj",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Hake_fish.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Merluza",
+        "hake",
+        "pescadilla",
+        "Merluccius",
+        "merluza",
+        "hake",
+        "pescadilla",
+        "merluza para bebé",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "camaron",
+      "nombre": "Camarón",
+      "nombres_alternativos": [
+        "camarones",
+        "gamba",
+        "langostino"
+      ],
+      "categoria": "Mariscos",
+      "resumen": "Crustáceo que aporta proteínas y puede causar alergia alimentaria.",
+      "descripcion": "El camarón aporta proteínas, vitamina B12, yodo y otros minerales. Es un crustáceo y uno de los alérgenos alimentarios importantes. La FDA lo incluye entre las opciones bajas en mercurio.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Cocinar hasta que esté opaco y firme; retirar cabeza, caparazón, cola y vena intestinal. Picar o triturar según la habilidad del niño; nunca ofrecer entero. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "Introducir bien cocido y en pequeña cantidad, de forma apropiada para la edad; observar reacciones alérgicas. Evitar camarón crudo o semicrudo.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Raw_shrimp.jpg?width=1280",
+        "alt": "Camarones crudos pelados.",
+        "autor": "Fumikas Sagisavas",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Raw_shrimp.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Camarón",
+        "camarones",
+        "gamba",
+        "langostino",
+        "camarón",
+        "camarones",
+        "gamba",
+        "mariscos",
+        "alergia al camarón",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "cangrejo",
+      "nombre": "Cangrejo",
+      "nombres_alternativos": [
+        "jaiba",
+        "cangrejo moro",
+        "carne de cangrejo"
+      ],
+      "categoria": "Mariscos",
+      "resumen": "Crustáceo cuya carne requiere retirar caparazón y fragmentos duros.",
+      "descripcion": "La carne de cangrejo aporta proteínas, vitamina B12 y minerales. El nombre común abarca varias especies. El cangrejo moro (Menippe mercenaria) está sujeto a régimen de autorización pesquera en Cuba.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente, extraer solo la carne y revisar que no queden fragmentos de caparazón. Picar muy fino y mezclar con alimento húmedo. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer carne de cangrejo cruda. Respetar la regulación cubana para el cangrejo moro y adquirir productos de procedencia autorizada.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Crab_photo.jpg?width=1280",
+        "alt": "Cangrejo fotografiado en ambiente costero.",
+        "autor": "Tony D'Silva",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Crab_photo.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Cangrejo",
+        "jaiba",
+        "cangrejo moro",
+        "carne de cangrejo",
+        "cangrejo",
+        "jaiba",
+        "cangrejo moro",
+        "carne de cangrejo",
+        "mariscos",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "langosta",
+      "nombre": "Langosta",
+      "nombres_alternativos": [
+        "langosta espinosa del Caribe",
+        "Panulirus argus",
+        "crustáceo"
+      ],
+      "categoria": "Mariscos",
+      "resumen": "Crustáceo marino de carne firme; su captura y comercialización están reguladas en Cuba.",
+      "descripcion": "La langosta espinosa del Caribe (Panulirus argus) aporta proteínas y minerales. En Cuba su extracción y comercialización están sujetas a autorización estatal; la ficha no promueve compra informal.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente, retirar caparazón, patas y partes duras; ofrecer únicamente la carne, muy picada o triturada y húmeda. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "Comprar solo por canales autorizados y respetar vedas y tallas legales. Crustáceo alergénico; cocinar completamente y retirar fragmentos de caparazón.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Panulirus_argus_NOAA.jpg?width=1280",
+        "alt": "Langosta espinosa del Caribe (Panulirus argus).",
+        "autor": "SEFSC Pascagoula Laboratory; Collection of Brandi Noble, NOAA/NMFS/SEFSC",
+        "licencia": "Dominio público",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Panulirus_argus_NOAA.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Langosta",
+        "langosta espinosa del Caribe",
+        "Panulirus argus",
+        "crustáceo",
+        "langosta",
+        "langosta espinosa",
+        "langosta del Caribe",
+        "Panulirus argus",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "bonito",
+      "nombre": "Bonito",
+      "nombres_alternativos": [
+        "bonito atlántico",
+        "Sarda sarda",
+        "bonito de mar"
+      ],
+      "categoria": "Pescados",
+      "resumen": "Pez pelágico de la familia de los túnidos; el nombre común puede variar por región.",
+      "descripcion": "El bonito atlántico (Sarda sarda) aporta proteínas y grasas omega-3. No debe confundirse con el listado o skipjack utilizado en algunas conservas de atún claro. Las recomendaciones de mercurio dependen de la especie exacta.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente y retirar espinas y piel. Desmenuzar y revisar con los dedos antes de ofrecer. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "No asumir que todo producto etiquetado bonito tiene la misma especie o nivel de mercurio. Verificar nombre científico o etiqueta.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/FMIB_43251_Bonito_%28Sarda_sarda%29.jpeg?width=1280",
+        "alt": "Lámina histórica de bonito atlántico (Sarda sarda).",
+        "autor": "State of New York Forest, Fish, and Game Commission",
+        "licencia": "Dominio público",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:FMIB_43251_Bonito_(Sarda_sarda).jpeg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Bonito",
+        "bonito atlántico",
+        "Sarda sarda",
+        "bonito de mar",
+        "bonito",
+        "Sarda sarda",
+        "pescado azul",
+        "bonito para bebé",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "pescado-enlatado",
+      "nombre": "Pescado enlatado",
+      "nombres_alternativos": [
+        "pescado en conserva",
+        "sardinas en lata",
+        "atún en lata",
+        "conservas de pescado"
+      ],
+      "categoria": "Conservas y preparaciones",
+      "resumen": "Conservas de sardina, atún y otras especies; la especie y el sodio importan.",
+      "descripcion": "El pescado enlatado puede ser práctico y aportar proteínas; las sardinas con espinas blandas aportan calcio. El contenido de sodio, aceite y mercurio depende del producto y de la especie. No todas las latas contienen el mismo pescado.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Leer la etiqueta y reconocer especie, sodio, aceite y fecha. Para niños pequeños, retirar espinas duras, aplastar las blandas y desmenuzar; escurrir si el producto tiene mucho sodio. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "Preferir opciones con menos sodio y sin salsas muy saladas. Para atún, distinguir claro/skipjack, albacora y patudo. Desechar latas abombadas, con fugas, muy oxidadas o dañadas; refrigerar sobrantes en recipiente limpio, no en la lata abierta.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sardines_in_a_can.jpg?width=1280",
+        "alt": "Sardinas en conserva dentro de una lata abierta.",
+        "autor": "Jules",
+        "licencia": "CC BY 2.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Sardines_in_a_can.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Pescado enlatado",
+        "pescado en conserva",
+        "sardinas en lata",
+        "atún en lata",
+        "conservas de pescado",
+        "pescado enlatado",
+        "pescado en lata",
+        "sardinas en lata",
+        "atún en lata",
+        "conservas de pescado",
+        "comida enlatada",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "croquetas-pescado",
+      "nombre": "Croquetas de pescado",
+      "nombres_alternativos": [
+        "croqueta de pescado",
+        "frituras de pescado",
+        "pescado empanizado"
+      ],
+      "categoria": "Conservas y preparaciones",
+      "resumen": "Preparación elaborada con pescado, masa o puré, empanizado y fritura; no equivale al pescado fresco.",
+      "descripcion": "Las croquetas pueden contener pescado, harina, leche, huevo, pan rallado y sal. Su composición cambia mucho entre las caseras y las industriales. Las versiones comerciales suelen tener más sodio y grasa y pueden contener alérgenos múltiples.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Para la familia, elaborar con pescado bien cocido y sin espinas, poca sal y cocción completa. Para niños pequeños, ofrecer el interior suave y húmedo en textura adecuada; evitar la cubierta dura, seca o muy crujiente. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer croquetas comerciales como alimento habitual del bebé: revisar sodio, alérgenos y textura. No ofrecer piezas enteras redondas ni exterior duro/crujiente por riesgo de atragantamiento.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fish_Cakes_%2849849478523%29.jpg?width=1280",
+        "alt": "Tortitas de pescado caseras, imagen ilustrativa de una preparación de pescado.",
+        "autor": "Ross Dunn",
+        "licencia": "Licencia por confirmar en Commons",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Fish_Cakes_(49849478523).jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Croquetas de pescado",
+        "croqueta de pescado",
+        "frituras de pescado",
+        "pescado empanizado",
+        "croquetas de pescado",
+        "croqueta",
+        "croquetas",
+        "frituras de pescado",
+        "pescado empanizado",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "tiburon",
+      "nombre": "Tiburón",
+      "nombres_alternativos": [
+        "carne de tiburón",
+        "shark"
+      ],
+      "categoria": "Pescados · advertencia",
+      "resumen": "Ficha informativa con advertencia: no se recomienda para niños por su alto contenido de mercurio.",
+      "descripcion": "Los tiburones son peces cartilaginosos grandes y longevos. La FDA/EPA incluye el tiburón entre las especies con los niveles más altos de mercurio y recomienda evitarlo para niños y personas embarazadas o lactantes. Esta ficha tiene finalidad educativa, no de promoción alimentaria.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "No se recomienda para niños: la FDA/EPA incluye el tiburón entre las especies con niveles más altos de mercurio. Para alimentación complementaria, elegir pescados de menor mercurio.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Infancia",
+          "forma": "No ofrecer. Elegir especies de menor mercurio."
+        }
+      ],
+      "preparacion_segura": "Evitar el consumo de tiburón en niños. Cocinar no elimina el mercurio. La recomendación se refiere a la especie y no se corrige mediante limpieza o fritura.",
+      "recetas": [],
+      "precauciones": [
+        "Evitar el consumo de tiburón en niños. Cocinar no elimina el mercurio. La recomendación se refiere a la especie y no se corrige mediante limpieza o fritura.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Shark_meat_in_supermarket.jpg?width=1280",
+        "alt": "Filetes de tiburón en un mercado; imagen documental, no recomendación de consumo.",
+        "autor": "Kanohara",
+        "licencia": "Dominio público",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Shark_meat_in_supermarket.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Tiburón",
+        "carne de tiburón",
+        "shark",
+        "tiburón",
+        "carne de tiburón",
+        "mercurio tiburón",
+        "pescados que evitar",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "pulpo",
+      "nombre": "Pulpo",
+      "nombres_alternativos": [
+        "octopus",
+        "pulpo común"
+      ],
+      "categoria": "Mariscos",
+      "resumen": "Molusco cefalópodo de carne firme que necesita cocción adecuada para ablandarse.",
+      "descripcion": "El pulpo aporta proteínas, vitamina B12 y minerales. Su textura puede resultar elástica y difícil de masticar si no se cocina hasta quedar muy tierno.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente hasta que esté muy tierno. Retirar partes duras y cortar o triturar finamente; nunca ofrecer tentáculos enteros o trozos gomosos. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer pulpo crudo, semicrudo ni gomoso. Adaptar cuidadosamente la textura y supervisar mientras come.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Octopus_sea_food.jpg?width=1280",
+        "alt": "Preparación culinaria de pulpo.",
+        "autor": "Bramfab",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Octopus_sea_food.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Pulpo",
+        "octopus",
+        "pulpo común",
+        "pulpo",
+        "octopus",
+        "pulpo para bebé",
+        "mariscos",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "calamar",
+      "nombre": "Calamar",
+      "nombres_alternativos": [
+        "jibia",
+        "squid",
+        "calamares"
+      ],
+      "categoria": "Mariscos",
+      "resumen": "Molusco cefalópodo que puede quedar gomoso si no se cocina correctamente.",
+      "descripcion": "El calamar aporta proteínas, vitamina B12 y minerales. La textura final depende del corte y del tiempo de cocción.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente hasta que esté tierno. Retirar pluma interna, pico, vísceras y partes duras; picar muy fino. No ofrecer anillas enteras. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "Evitar calamar crudo y anillas enteras por textura gomosa y riesgo de atragantamiento. Introducir bien cocido y observar posibles reacciones alérgicas.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Raw_squid.jpg?width=1280",
+        "alt": "Calamar crudo limpio.",
+        "autor": "Vee Satayamas",
+        "licencia": "CC BY 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Raw_squid.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Calamar",
+        "jibia",
+        "squid",
+        "calamares",
+        "calamar",
+        "calamares",
+        "jibia",
+        "squid",
+        "anillas de calamar",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "cobo",
+      "nombre": "Cobo",
+      "nombres_alternativos": [
+        "caracol reina",
+        "cobo rosado",
+        "Lobatus gigas",
+        "Aliger gigas"
+      ],
+      "categoria": "Mariscos",
+      "resumen": "Molusco grande del Caribe conocido como caracol reina; su extracción está regulada.",
+      "descripcion": "El cobo (Lobatus gigas, también citado como Aliger gigas) es un caracol marino del Caribe. Su carne es rica en proteínas, pero la especie está sometida a regulación pesquera y su captura/comercialización requiere autorización en Cuba.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Solo considerar producto de procedencia legal y con control sanitario. Cocinar completamente y picar la carne hasta que quede muy tierna; su textura puede ser firme. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "No recolectar ni comprar de origen informal. Respetar autorizaciones, vedas y tallas. No ofrecer crudo ni en trozos duros o gomosos.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Queen_Conch_%28Lobatus_gigas%29.jpg?width=1280",
+        "alt": "Caracol reina del Caribe (Lobatus gigas).",
+        "autor": "Daniel Neal",
+        "licencia": "CC BY 2.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Queen_Conch_(Lobatus_gigas).jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Cobo",
+        "caracol reina",
+        "cobo rosado",
+        "Lobatus gigas",
+        "Aliger gigas",
+        "cobo",
+        "caracol reina",
+        "Lobatus gigas",
+        "Aliger gigas",
+        "caracol marino",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "ostiones",
+      "nombre": "Ostiones",
+      "nombres_alternativos": [
+        "ostión de mangle",
+        "ostra",
+        "Crassostrea rhizophorae"
+      ],
+      "categoria": "Mariscos",
+      "resumen": "Moluscos bivalvos filtradores; deben proceder de aguas y canales de comercialización controlados.",
+      "descripcion": "Los ostiones aportan proteínas, vitamina B12, zinc y otros minerales. Como bivalvos filtradores, pueden concentrar microorganismos y contaminantes del agua donde crecen. La especie cubana citada en el reglamento es Crassostrea rhizophorae.",
+      "propiedades": [
+        "Aporta proteínas; las cantidades de grasa, vitaminas y minerales varían según la especie y la parte comestible.",
+        "La composición nutricional depende de la especie, el tamaño, la alimentación, el origen y el método de preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
+        "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
+      ],
+      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
+          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+        }
+      ],
+      "preparacion_segura": "Ofrecer únicamente bien cocidos; nunca crudos o apenas abiertos al vapor. Picar finamente y adaptar la textura. Retirar fragmentos de concha. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "recetas": [
+        {
+          "nombre": "Pescado o marisco bien cocido y desmenuzado",
+          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
+          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
+          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+        },
+        {
+          "nombre": "Guiso familiar suave",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
+          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+        }
+      ],
+      "precauciones": [
+        "Para niños pequeños, evitar ostiones crudos: pueden transmitir infecciones graves. Adquirir solo por canales autorizados y con control sanitario. Respetar las restricciones pesqueras cubanas.",
+        "Pescado y mariscos pueden causar alergia. Introducir una variedad cada vez y observar posibles síntomas; ante dificultad respiratoria, hinchazón de lengua o desmayo, buscar atención urgente.",
+        "No ofrecer pescado crudo, ceviche, sushi con pescado crudo ni mariscos poco cocidos a niños pequeños.",
+        "Revisar espinas, conchas, caparazón, picos y partes duras. El niño debe comer sentado y bajo supervisión."
+      ],
+      "conservacion": "Mantener refrigerado a 4 °C o menos y separado de alimentos listos para comer. Descongelar en refrigeración, no sobre la mesa. Cocinar pronto; refrigerar sobrantes en recipientes poco profundos y consumirlos en un plazo seguro. No dejar alimentos perecederos a temperatura ambiente durante más de 2 horas (1 hora con calor ambiental superior a 32 °C).",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fresh_Oysters.jpg?width=1280",
+        "alt": "Ostiones frescos abiertos; la imagen muestra ejemplares del género Isognomon, no necesariamente la especie cubana.",
+        "autor": "Urville86",
+        "licencia": "CC BY-SA 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Fresh_Oysters.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "Ostiones",
+        "ostión de mangle",
+        "ostra",
+        "Crassostrea rhizophorae",
+        "ostión",
+        "ostiones",
+        "ostra",
+        "ostión de mangle",
+        "Crassostrea rhizophorae",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad de alimentos y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Introducción de alimentos y adaptación a habilidades."
+        },
+        {
+          "institucion": "FDA/EPA",
+          "titulo": "Advice about Eating Fish",
+          "url": "https://www.fda.gov/food/consumers/advice-about-eating-fish",
+          "utilidad": "Clasificación de pescados por mercurio; diferencias entre especies y recomendaciones para niños."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "Selecting and Serving Fresh and Frozen Seafood Safely",
+          "url": "https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-fresh-and-frozen-seafood-safely",
+          "utilidad": "Selección y manipulación segura de pescados y mariscos."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Mayor vulnerabilidad de menores de cinco años a infecciones alimentarias."
+        },
+        {
+          "institucion": "Gaceta Oficial de Cuba",
+          "titulo": "Decreto 1 de 2019, Reglamento de la Ley 129 «Ley de Pesca»",
+          "url": "https://faolex.fao.org/docs/pdf/cub194447.pdf",
+          "utilidad": "Régimen especial de protección y autorizaciones para determinadas especies pesqueras en Cuba."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    }
+  ]
+}
