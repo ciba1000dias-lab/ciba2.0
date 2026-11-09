@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261109-8', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261109-9', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -164,7 +164,7 @@
 
   function resolverColumnaActual() {
     const ruta = window.location.pathname;
-    const coincidencia = ruta.match(/\/c\/([CIBA])\d?\//i);
+    const coincidencia = ruta.match(/\/(?:c|i|b|a)\/([CIBA])\d?\//i);
     let id = coincidencia ? coincidencia[1].toUpperCase() : '';
     if (!id) {
       const articulo = document.querySelector('.ciba-articulo');
@@ -187,6 +187,7 @@
 
     const actual = resolverColumnaActual();
     const colores = { C:'#397653', I:'#287B9A', B:'#8C671F', A:'#A9443B' };
+    if (actual.id) document.body.dataset.cibaColumna = actual.id.toLowerCase();
     const cabecera = elemento('header','ciba-global-cabecera');
     cabecera.dataset.columna = actual.id;
     cabecera.style.setProperty('--ciba-columna-color', colores[actual.id] || '#493A32');
