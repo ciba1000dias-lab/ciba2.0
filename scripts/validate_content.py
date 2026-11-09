@@ -135,6 +135,12 @@ def validar(src: Path, *, hoy: date | None = None) -> list[ValidationError]:
             errores.extend(errs_pag_dir)
 
             for carpeta_pag in subdirs_pag:
+                if carpeta_pag.name == "_paginas":
+                    ok_aux, motivo_aux = es_ruta_segura(src, carpeta_pag)
+                    if not ok_aux:
+                        errores.append(ValidationError(str(carpeta_pag.relative_to(src)), "ruta", motivo_aux))
+                    continue
+
                 rel_pag = str(carpeta_pag.relative_to(src))
                 ok, motivo = es_ruta_segura(src, carpeta_pag)
                 if not ok:
