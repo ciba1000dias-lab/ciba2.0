@@ -220,7 +220,7 @@
 
   function crearAccesoCabecera(cabecera) {
     const acceso = enlace(
-      urlPublica('plataforma/mi-cuenta/acceso/'),
+      urlPublica('plataforma/mi-cuenta/acceso/index.html'),
       'INICIAR SESIÓN',
       'ciba-global-login'
     );
@@ -420,7 +420,7 @@
       const lista=elemento('div','ciba-global-submenu');lista.hidden=true;
       encabezado.addEventListener('click',(evento)=>{evento.preventDefault();const abierto=!lista.hidden;lista.hidden=abierto;encabezado.setAttribute('aria-expanded',String(!abierto));});
       lista.appendChild(enlace(urlPublica('plataforma/'+seccion[0]+'/'),'Ver sección completa','ciba-global-enlace ciba-global-subenlace'));
-      if (seccion[0] === 'mi-cuenta') lista.appendChild(enlace(urlPublica('plataforma/mi-cuenta/acceso/'),'Acceder a mi cuenta','ciba-global-enlace ciba-global-subenlace'));
+      if (seccion[0] === 'mi-cuenta') lista.appendChild(enlace(urlPublica('plataforma/mi-cuenta/acceso/index.html'),'Acceder a mi cuenta','ciba-global-enlace ciba-global-subenlace'));
       seccion[4].forEach(apartado=>lista.appendChild(enlace(urlPublica('plataforma/'+seccion[0]+'/'+apartado[0]+'/'),apartado[1],'ciba-global-enlace ciba-global-subenlace')));
       grupo.append(encabezado,lista);panel.appendChild(grupo);
     });
