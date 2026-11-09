@@ -648,3 +648,29 @@ body:not(.ciba-con-cabecera-global) > .ciba-global-menu{
 @media(max-width:380px){
   .ciba-global-cabecera > .ciba-global-menu{right:128px!important}
 }
+
+
+/* CIBA · corrección de anclaje del menú y su panel en todas las pantallas */
+body:not(.ciba-con-cabecera-global) > .ciba-global-menu{
+  left:12px!important;right:auto!important;
+}
+body:not(.ciba-con-cabecera-global) > .ciba-global-menu .ciba-global-panel{
+  left:0!important;right:auto!important;
+  width:min(310px,calc(100vw - 24px))!important;
+  max-width:calc(100vw - 24px)!important;
+  box-sizing:border-box;
+}
+.ciba-global-cabecera > .ciba-global-menu .ciba-global-panel{
+  left:auto!important;right:0!important;
+  width:min(310px,calc(100vw - 24px))!important;
+  max-width:calc(100vw - 24px)!important;
+  box-sizing:border-box;
+}
+@media(max-width:600px){
+  body:not(.ciba-con-cabecera-global) > .ciba-global-menu{
+    left:12px!important;right:auto!important;top:78px!important;
+  }
+  body:not(.ciba-con-cabecera-global) > .ciba-global-menu .ciba-global-panel{
+    left:0!important;right:auto!important;width:min(290px,calc(100vw - 24px))!important;
+  }
+}
