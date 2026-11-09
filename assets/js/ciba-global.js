@@ -164,7 +164,7 @@
 
   function resolverColumnaActual() {
     const ruta = window.location.pathname;
-    const coincidencia = ruta.match(/\\/c\\/([CIBA])\\d?\\//i);
+    const coincidencia = ruta.match(/\/c\/([CIBA])\d?\//i);
     let id = coincidencia ? coincidencia[1].toUpperCase() : '';
     if (!id) {
       const articulo = document.querySelector('.ciba-articulo');
@@ -233,7 +233,7 @@
       if (!ancla || evento.defaultPrevented || evento.button !== 0 || evento.metaKey || evento.ctrlKey || evento.shiftKey || evento.altKey) return;
       const destino = new URL(ancla.href,window.location.href);
       const actual = resolverColumnaActual().id;
-      const siguiente = (destino.pathname.match(/\\/c\\/([CIBA])\\d?\\//i) || [])[1]?.toUpperCase();
+      const siguiente = (destino.pathname.match(/\/c\/([CIBA])\d?\//i) || [])[1]?.toUpperCase();
       if (!siguiente || !actual || siguiente === actual || destino.origin !== location.origin) return;
       evento.preventDefault();
       const velo = elemento('div','ciba-transicion-columnas');
