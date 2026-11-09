@@ -2874,6 +2874,120 @@
         }
       ],
       "estado": "piloto"
+    },
+    {
+      "id": "pera",
+      "nombre": "Pera",
+      "nombres_alternativos": [
+        "peral",
+        "Pyrus communis"
+      ],
+      "categoria": "Frutas",
+      "resumen": "Fruta de pulpa jugosa que aporta agua y fibra; su firmeza varía con la madurez.",
+      "descripcion": "Fruta de pulpa jugosa que aporta agua y fibra; su firmeza varía con la madurez. Su textura depende de la variedad y madurez.",
+      "propiedades": [
+        "Aporta agua y fibra alimentaria.",
+        "Contribuye a la variedad de frutas en la alimentación complementaria."
+      ],
+      "beneficios": [
+        "Amplía la variedad de sabores y texturas.",
+        "Puede ofrecerse adaptada a las habilidades de masticación; no sustituye una alimentación variada."
+      ],
+      "edad": "Puede ofrecerse desde alrededor de los 6 meses cuando el bebé muestra señales de preparación para la alimentación complementaria.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Muy madura y blanda, o cocida si está firme; aplastada o triturada."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aplastada con pequeños grumos blandos o en piezas muy blandas, según habilidades."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "En piezas blandas y manejables; evitar trozos duros y formas redondas."
+        }
+      ],
+      "preparacion_segura": [
+        "Lavar la fruta antes de pelarla o cortarla.",
+        "Retirar corazón, semillas, tallos y partes duras.",
+        "Si está firme, cocinar hasta que se aplaste fácilmente.",
+        "Adaptar la textura y mantener supervisión directa durante la comida."
+      ],
+      "recetas": [],
+      "precauciones": [
+        "No ofrecer trozos duros de manzana o pera a lactantes.",
+        "El niño debe comer sentado y bajo supervisión adulta.",
+        "No añadir miel antes de los 12 meses ni azúcar."
+      ],
+      "conservacion": "Preparar en condiciones higiénicas; refrigerar pronto la porción no servida y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": null,
+      "video_youtube": null,
+      "palabras_clave": [
+        "pera",
+        "pera para bebé",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "cómo preparar pera para bebés"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "manzana",
+      "nombre": "Manzana",
+      "nombres_alternativos": [
+        "Apple",
+        "Malus domestica"
+      ],
+      "categoria": "Frutas",
+      "resumen": "Fruta que aporta agua y fibra; debe ablandarse mediante cocción para evitar ofrecer trozos duros a lactantes.",
+      "descripcion": "Fruta que aporta agua y fibra; debe ablandarse mediante cocción para evitar ofrecer trozos duros a lactantes. Su textura depende de la variedad y madurez.",
+      "propiedades": [
+        "Aporta agua y fibra alimentaria.",
+        "Contribuye a la variedad de frutas en la alimentación complementaria."
+      ],
+      "beneficios": [
+        "Amplía la variedad de sabores y texturas.",
+        "Puede ofrecerse adaptada a las habilidades de masticación; no sustituye una alimentación variada."
+      ],
+      "edad": "Puede ofrecerse desde alrededor de los 6 meses cuando el bebé muestra señales de preparación para la alimentación complementaria.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocida hasta quedar muy blanda y triturada o aplastada; sin piel, corazón ni semillas."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aplastada con pequeños grumos blandos o en piezas muy blandas, según habilidades."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "En piezas blandas y manejables; evitar trozos duros y formas redondas."
+        }
+      ],
+      "preparacion_segura": [
+        "Lavar la fruta antes de pelarla o cortarla.",
+        "Retirar corazón, semillas, tallos y partes duras.",
+        "Si está firme, cocinar hasta que se aplaste fácilmente.",
+        "Adaptar la textura y mantener supervisión directa durante la comida."
+      ],
+      "recetas": [],
+      "precauciones": [
+        "No ofrecer trozos duros de manzana o pera a lactantes.",
+        "El niño debe comer sentado y bajo supervisión adulta.",
+        "No añadir miel antes de los 12 meses ni azúcar."
+      ],
+      "conservacion": "Preparar en condiciones higiénicas; refrigerar pronto la porción no servida y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": null,
+      "video_youtube": null,
+      "palabras_clave": [
+        "manzana",
+        "manzana para bebé",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "cómo preparar manzana para bebés"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
     }
   ]
 }
