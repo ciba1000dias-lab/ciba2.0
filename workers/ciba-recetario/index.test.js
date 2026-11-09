@@ -3,7 +3,8 @@ import assert from "node:assert/strict";
 import {
   validarEntrada,
   extraerJSON,
-  validarResultado
+  validarResultado,
+  reconocerCoincidenciasExactas
 } from "./index.js";
 
 const candidates = [
@@ -145,4 +146,19 @@ test("usa los sinónimos oficiales y no los enviados por el navegador", () => {
   assert.equal(result.ok, true);
   assert.ok(result.value.candidates[0].aliases.some(alias => alias.includes("banana") || alias.includes("guineo")));
   assert.ok(!result.value.candidates[0].aliases.includes("nombre-falso"));
+});
+
+
+test("reconoce arroz, calabaza y pollo sin depender de la respuesta del modelo", () => {
+  const result = reconocerCoincidenciasExactas("Arroz calabaza y pollo", [
+    { id: "arroz", name: "Arroz", aliases: ["arroz blanco", "arroz integral"] },
+    { id: "calabaza", name: "Calabaza", aliases: ["auyama", "zapallo"] },
+    { id: "pollo", name: "Pollo", aliases: ["carne de pollo", "pechuga"] }
+  ]);
+  assert.deepEqual(result.recognizedFoods, [
+    { id: "arroz", name: "Arroz" },
+    { id: "calabaza", name: "Calabaza" },
+    { id: "pollo", name: "Pollo" }
+  ]);
+  assert.deepEqual(result.unmatchedTerms, []);
 });
