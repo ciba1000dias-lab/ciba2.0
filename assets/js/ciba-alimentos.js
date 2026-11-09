@@ -135,6 +135,7 @@
         throw new Error('La página de alimentos debe indicar el grupo que va a cargar.');
       }
       let categoriaActiva = 'Todos';
+      const imagenesFallidas = new Set();
 
       function abrirDetalle(alimento, actualizarHash = true, claveSeccion = '') {
         detalle.replaceChildren();
@@ -186,6 +187,7 @@
           const img = document.createElement('img');
           configurarImagen(img, foto, 960, [640, 960]);
           img.sizes = '(max-width: 720px) 100vw, 720px';
+          img.addEventListener('error', () => marco.remove(), { once: true });
           marco.appendChild(img);
 
           if (foto.autor) {
@@ -297,25 +299,52 @@
           .map((item) => item.alimento);
 
         lista.replaceChildren();
+        const conFoto = crear('section', 'ciba-alimentos-seccion ciba-alimentos-con-foto');
+        const sinFoto = crear('section', 'ciba-alimentos-seccion ciba-alimentos-otros');
+        const rejillaFotos = crear('div', 'ciba-alimentos-rejilla');
+        const rejillaOtros = crear('div', 'ciba-alimentos-rejilla-otros');
+
         visibles.forEach((alimento) => {
-          const tarjeta = crear('button', 'ciba-alimento-tarjeta');
+          const tieneFoto = Boolean(alimento.imagen_principal?.url) && !imagenesFallidas.has(alimento.id);
+          const tarjeta = crear('button', tieneFoto ? 'ciba-alimento-tarjeta' : 'ciba-alimento-tarjeta ciba-alimento-sin-foto');
           tarjeta.type = 'button';
           tarjeta.setAttribute('aria-label', 'Abrir ficha de ' + alimento.nombre);
 
-          if (alimento.imagen_principal?.url) {
+          if (tieneFoto) {
             const img = document.createElement('img');
             configurarImagen(img, alimento.imagen_principal, 640, [320, 640]);
             img.sizes = '(max-width: 600px) 50vw, 220px';
+            img.addEventListener('error', () => {
+              if (!imagenesFallidas.has(alimento.id)) {
+                imagenesFallidas.add(alimento.id);
+                renderizar();
+              }
+            }, { once: true });
             tarjeta.appendChild(img);
           }
           const texto = crear('span', 'ciba-alimento-tarjeta-texto');
-          texto.appendChild(crear('small', '', alimento.categoria));
-          texto.appendChild(crear('strong', '', alimento.nombre));
-          texto.appendChild(crear('span', '', alimento.resumen));
+          if (tieneFoto) {
+            texto.appendChild(crear('small', '', alimento.categoria));
+            texto.appendChild(crear('strong', '', alimento.nombre));
+            texto.appendChild(crear('span', '', alimento.resumen));
+          } else {
+            texto.appendChild(crear('strong', '', alimento.nombre));
+          }
           tarjeta.appendChild(texto);
           tarjeta.addEventListener('click', () => abrirDetalle(alimento, true, resolverSeccion(buscador.value)?.clave || ''));
-          lista.appendChild(tarjeta);
+          (tieneFoto ? rejillaFotos : rejillaOtros).appendChild(tarjeta);
         });
+
+        if (rejillaFotos.children.length) {
+          conFoto.appendChild(crear('h3', 'ciba-alimentos-subtitulo', 'Con fotografía'));
+          conFoto.appendChild(rejillaFotos);
+          lista.appendChild(conFoto);
+        }
+        if (rejillaOtros.children.length) {
+          sinFoto.appendChild(crear('h3', 'ciba-alimentos-subtitulo', 'Otros'));
+          sinFoto.appendChild(rejillaOtros);
+          lista.appendChild(sinFoto);
+        }
 
         estado.textContent = visibles.length
           ? visibles.length + (visibles.length === 1 ? ' alimento disponible' : ' alimentos disponibles')
