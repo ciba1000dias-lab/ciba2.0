@@ -1383,30 +1383,13 @@
     .area-card[data-columna="C"] .area-card-cabezal{background:#397653}.area-card[data-columna="I"] .area-card-cabezal{background:#287B9A}.area-card[data-columna="B"] .area-card-cabezal{background:#8C671F}.area-card[data-columna="A"] .area-card-cabezal{background:#A9443B}
     .area-card:not([data-columna]) .area-card-cabezal{background:#493A32}
     @media(max-width:680px){.area-card-cabezal{padding:15px 17px}.area-card-cuerpo{padding:17px}.area-card-descripcion{max-width:94%}.area-card-motivos{width:118px;opacity:.13}}
-    /* CIBA · colores puros de las cuatro columnas principales */
-    .columnas > .columna:nth-child(1) {
-      background-color:#397653 !important;
+    /* CIBA · superficies sólidas de las cuatro tarjetas principales.
+       El color se fija también en el atributo inline de cada tarjeta. */
+    .columnas > .columna {
       background-image:none !important;
+      background-blend-mode:normal !important;
+      border:1px solid rgba(255,255,255,.24) !important;
       box-shadow:0 10px 24px rgba(0,0,0,.10) !important;
-      border-color:rgba(255,255,255,.24) !important;
-    }
-    .columnas > .columna:nth-child(2) {
-      background-color:#287B9A !important;
-      background-image:none !important;
-      box-shadow:0 10px 24px rgba(0,0,0,.10) !important;
-      border-color:rgba(255,255,255,.24) !important;
-    }
-    .columnas > .columna:nth-child(3) {
-      background-color:#8C671F !important;
-      background-image:none !important;
-      box-shadow:0 10px 24px rgba(0,0,0,.10) !important;
-      border-color:rgba(255,255,255,.24) !important;
-    }
-    .columnas > .columna:nth-child(4) {
-      background-color:#A9443B !important;
-      background-image:none !important;
-      box-shadow:0 10px 24px rgba(0,0,0,.10) !important;
-      border-color:rgba(255,255,255,.24) !important;
     }
     .columnas > .columna:hover {
       box-shadow:0 14px 30px rgba(0,0,0,.16) !important;
@@ -1669,7 +1652,7 @@
 
         <div class="columnas">
 
-          <a class="columna" href="#areas">
+          <a class="columna" href="#areas" style="background:#397653;background-image:none;box-shadow:0 10px 24px rgba(0,0,0,.10);">
             <div>
               <div class="columna-numero">01 / C</div>
               <div class="columna-letra">C</div>
@@ -1684,7 +1667,7 @@
             </div>
           </a>
 
-          <a class="columna" href="#areas">
+          <a class="columna" href="#areas" style="background:#287B9A;background-image:none;box-shadow:0 10px 24px rgba(0,0,0,.10);">
             <div>
               <div class="columna-numero">02 / I</div>
               <div class="columna-letra">I</div>
@@ -1699,7 +1682,7 @@
             </div>
           </a>
 
-          <a class="columna" href="#areas">
+          <a class="columna" href="#areas" style="background:#8C671F;background-image:none;box-shadow:0 10px 24px rgba(0,0,0,.10);">
             <div>
               <div class="columna-numero">03 / B</div>
               <div class="columna-letra">B</div>
@@ -1714,7 +1697,7 @@
             </div>
           </a>
 
-          <a class="columna" href="#areas">
+          <a class="columna" href="#areas" style="background:#A9443B;background-image:none;box-shadow:0 10px 24px rgba(0,0,0,.10);">
             <div>
               <div class="columna-numero">04 / A</div>
               <div class="columna-letra">A</div>
