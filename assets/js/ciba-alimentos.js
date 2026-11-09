@@ -87,8 +87,10 @@
 
         detalle.appendChild(cabecera);
 
-        const seccion = (nombre, contenido) => {
+        const seccion = (nombre, contenido, clave) => {
           const bloque = crear('section', 'ciba-alimento-bloque');
+          bloque.id = 'alimento-' + alimento.id + '--' + clave;
+          bloque.tabIndex = -1;
           bloque.appendChild(crear('h4', '', nombre));
           if (Array.isArray(contenido)) {
             const ul = crear('ul');
@@ -109,18 +111,20 @@
           detalle.appendChild(bloque);
         };
 
-        seccion('¿Qué es y qué aporta?', alimento.descripcion);
-        seccion('Propiedades', alimento.propiedades);
-        seccion('¿Qué beneficios aporta?', alimento.beneficios);
-        seccion('¿Desde qué edad puede ofrecerse?', alimento.edad);
-        seccion('Preparación según la etapa', alimento.preparacion_por_edades);
-        seccion('Preparación segura', alimento.preparacion_segura);
-        seccion('Recetas sencillas', alimento.recetas);
-        seccion('Precauciones', alimento.precauciones);
-        seccion('Conservación', alimento.conservacion);
+        seccion('¿Qué es y qué aporta?', alimento.descripcion, 'descripcion');
+        seccion('Propiedades', alimento.propiedades, 'propiedades');
+        seccion('¿Qué beneficios aporta?', alimento.beneficios, 'beneficios');
+        seccion('¿Desde qué edad puede ofrecerse?', alimento.edad, 'edad');
+        seccion('Preparación según la etapa', alimento.preparacion_por_edades, 'preparacion');
+        seccion('Preparación segura', alimento.preparacion_segura, 'seguridad');
+        seccion('Recetas sencillas', alimento.recetas, 'recetas');
+        seccion('Precauciones', alimento.precauciones, 'precauciones');
+        seccion('Conservación', alimento.conservacion, 'conservacion');
 
         if (alimento.video_youtube?.url) {
           const video = crear('section', 'ciba-alimento-video');
+          video.id = 'alimento-' + alimento.id + '--video';
+          video.tabIndex = -1;
           video.appendChild(crear('h4', '', 'Video relacionado de Solo Sin Receta'));
           enlazar(video, alimento.video_youtube.url, alimento.video_youtube.titulo || 'Ver video en YouTube');
           detalle.appendChild(video);
@@ -131,6 +135,8 @@
 
         if (Array.isArray(alimento.fuentes) && alimento.fuentes.length) {
           const fuentes = crear('section', 'ciba-alimento-fuentes');
+          fuentes.id = 'alimento-' + alimento.id + '--fuentes';
+          fuentes.tabIndex = -1;
           fuentes.appendChild(crear('h4', '', 'Fuentes y referencias'));
           const ul = crear('ul');
           alimento.fuentes.forEach((fuente) => {
@@ -221,8 +227,20 @@
 
       const hash = decodeURIComponent(location.hash.replace(/^#/, ''));
       if (hash.startsWith('alimento-')) {
-        const alimento = alimentos.find((a) => a.id === hash.slice(9));
-        if (alimento) abrirDetalle(alimento, false);
+        const destino = hash.slice(9);
+        const separador = destino.indexOf('--');
+        const idAlimento = separador >= 0 ? destino.slice(0, separador) : destino;
+        const claveSeccion = separador >= 0 ? destino.slice(separador + 2) : '';
+        const alimento = alimentos.find((a) => a.id === idAlimento);
+        if (alimento) {
+          abrirDetalle(alimento, false);
+          if (claveSeccion) {
+            setTimeout(() => {
+              const objetivo = document.getElementById('alimento-' + idAlimento + '--' + claveSeccion);
+              if (objetivo) objetivo.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 80);
+          }
+        }
       }
     } catch (error) {
       console.error('CIBA: biblioteca de alimentos no disponible.', error);
