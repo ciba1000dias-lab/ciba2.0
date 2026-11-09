@@ -49,6 +49,18 @@ function actualizarEdad() {
     return;
   }
   estadoEdad.dataset.meses = String(meses);
+  // Refleja también la edad calculada en el campo visible, no solo en el texto de estado.
+  if (campoFecha.value) {
+    if (meses < 12) {
+      campoEdad.value = String(meses);
+      unidadEdad.value = 'meses';
+      campoEdad.max = '59';
+    } else {
+      campoEdad.value = String(Math.floor(meses / 12));
+      unidadEdad.value = 'anos';
+      campoEdad.max = '4';
+    }
+  }
   const texto = meses === 1 ? '1 mes' : meses < 12 ? meses + ' meses' :
     Math.floor(meses / 12) + (Math.floor(meses / 12) === 1 ? ' año' : ' años') +
     (meses % 12 ? ' y ' + (meses % 12) + (meses % 12 === 1 ? ' mes' : ' meses') : '');
