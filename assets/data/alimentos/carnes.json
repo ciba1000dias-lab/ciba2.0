@@ -1,7 +1,7 @@
 {
   "version": 1,
   "biblioteca": "CIBA · Crianza · Alimentación",
-  "categoria": "Carnes y aves",
+  "categoria": "Carnes, vísceras y embutidos",
   "alimentos": [
     {
       "id": "pollo",
@@ -68,11 +68,11 @@
       ],
       "conservacion": "Mantener refrigerada a 4 °C o menos y separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar en porciones pequeñas. Refrigerar las sobras cocidas en recipientes poco profundos y tapados; no dejarlas a temperatura ambiente durante periodos prolongados.",
       "imagen_principal": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chicken%20Meat.jpg?width=1280",
-        "alt": "Fotografía ilustrativa de pollo.",
-        "autor": "Gaurav Dhwaj Khadka",
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Muslos%20de%20pollo%2C%20comprados%20en%20la%20carnicer%C3%ADa.jpg?width=1280",
+        "alt": "Muslos y cuartos traseros de pollo frescos, fotografiados en una carnicería.",
+        "autor": "Juan Emilio Prades Bel",
         "licencia": "CC BY-SA 4.0",
-        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Chicken_Meat.jpg"
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Muslos_de_pollo%2C_comprados_en_la_carnicer%C3%ADa.jpg"
       },
       "video_youtube": null,
       "palabras_clave": [
@@ -132,9 +132,9 @@
         },
         {
           "institucion": "Wikimedia Commons",
-          "titulo": "File:Chicken Meat.jpg",
-          "url": "https://commons.wikimedia.org/wiki/File:Chicken_Meat.jpg",
-          "utilidad": "Fotografía ilustrativa; consultar la página original para autoría y licencia."
+          "titulo": "File:Muslos de pollo, comprados en la carnicería.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Muslos_de_pollo%2C_comprados_en_la_carnicer%C3%ADa.jpg",
+          "utilidad": "Fotografía de muslos y cuartos traseros de pollo; autoría y licencia."
         }
       ],
       "estado": "publicado",
@@ -1583,6 +1583,810 @@
           "titulo": "File:Duck meat.jpg",
           "url": "https://commons.wikimedia.org/wiki/File:Duck_meat.jpg",
           "utilidad": "Fotografía ilustrativa; consultar la página original para autoría y licencia."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "picadillo",
+      "nombre": "Picadillo",
+      "nombres_alternativos": [
+        "picadillo cubano",
+        "carne molida",
+        "picadillo de res",
+        "picadillo de cerdo",
+        "picadillo de pollo",
+        "picadillo mixto"
+      ],
+      "categoria": "Preparaciones de carne",
+      "resumen": "Preparación muy presente en la cocina cubana, elaborada con carne molida y un sofrito que puede incluir tomate y vegetales.",
+      "descripcion": "El picadillo no es una especie de carne: es una preparación que puede hacerse con res, cerdo, pollo o mezclas. En la cocina cubana suele llevar sofrito; pueden añadirse vegetales. La ficha distingue las carnes molidas y sus temperaturas de cocción.",
+      "propiedades": [
+        "Aporta proteínas; su composición nutricional depende de la parte del animal y del método de cocción.",
+        "Puede aportar vitaminas del grupo B y minerales; las cantidades varían según el corte y la preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos de origen animal dentro de una alimentación diversa.",
+        "No es necesario consumir grandes cantidades ni ofrecer siempre el mismo tipo de carne."
+      ],
+      "edad": "La carne bien cocida puede incorporarse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, si el bebé muestra señales de preparación. La textura y la retirada de partes duras son esenciales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar hasta quedar muy tierna; retirar huesos, piel dura, membranas, cartílagos y grasa dura. Triturar muy fino y humedecer en una preparación espesa."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer finamente picada o desmenuzada, muy tierna y húmeda, adaptada a las habilidades del bebé. Revisar que no queden partes duras."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir picada o en piezas pequeñas y blandas, según la capacidad de masticación. Evitar trozos gomosos, secos o con huesos."
+        }
+      ],
+      "preparacion_segura": "Cocinar removiendo hasta que toda la carne molida alcance su temperatura segura: 71 °C para res o cerdo; 74 °C si contiene pollo. Mantener húmedo y separar la porción infantil antes de añadir sal.",
+      "recetas": [
+        {
+          "nombre": "Preparación suave con vegetales",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Carne bien cocida y vegetales blandos sin sal añadida",
+          "preparacion": "Cocinar completamente, retirar partes no comestibles y triturar o picar hasta lograr una textura húmeda y segura."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer cruda ni poco cocida. Usar termómetro cuando sea posible; todas las aves y sus vísceras deben alcanzar 74 °C en el centro.",
+        "Retirar huesos, cartílagos, membranas duras y fragmentos que puedan causar atragantamiento. Ofrecer con el niño sentado y supervisado."
+      ],
+      "conservacion": "Mantener refrigerada a 4 °C o menos, separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar. Refrigerar las sobras cocidas en recipientes poco profundos.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cuban%20Picadillo.jpg?width=1280",
+        "alt": "Plato de picadillo cubano servido con arroz y frijoles negros.",
+        "autor": "MinerCRx",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Cuban_Picadillo.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "picadillo cubano",
+        "carne molida",
+        "picadillo de res",
+        "picadillo de cerdo",
+        "picadillo de pollo",
+        "picadillo mixto",
+        "Picadillo",
+        "picadillo para bebés",
+        "picadillo para niños",
+        "picadillo con papa",
+        "picadillo con tomate",
+        "picadillo con vegetales",
+        "carne molida cubana"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Carcinogenicity of the consumption of red meat and processed meat",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat",
+          "utilidad": "Definición y evidencia sobre carnes procesadas; la clasificación describe la fuerza de la evidencia, no equipara el riesgo con el de otras sustancias."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones alimentarias en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "FoodSafety.gov",
+          "titulo": "Cook to a Safe Minimum Internal Temperature",
+          "url": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+          "utilidad": "Temperaturas internas seguras para carnes, aves y vísceras."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Fotografía de referencia",
+          "url": "https://commons.wikimedia.org/wiki/File:Cuban_Picadillo.jpg",
+          "utilidad": "Autoría y licencia de la fotografía."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "mollejas-pollo",
+      "nombre": "Mollejas de pollo",
+      "nombres_alternativos": [
+        "molleja de pollo",
+        "mollejas",
+        "menudos de pollo",
+        "menudencias de pollo",
+        "pedrejón",
+        "piedrecilla"
+      ],
+      "categoria": "Vísceras",
+      "resumen": "Víscera muscular del aparato digestivo del ave, firme y de cocción más prolongada que otras piezas.",
+      "descripcion": "Las mollejas o estómagos musculares del pollo se consumen en guisos y otras preparaciones. Aportan proteínas y minerales, pero su textura puede quedar muy firme o gomosa si no se cocinan lo suficiente.",
+      "propiedades": [
+        "Aporta proteínas; su composición nutricional depende de la parte del animal y del método de cocción.",
+        "Puede aportar vitaminas del grupo B y minerales; las cantidades varían según el corte y la preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos de origen animal dentro de una alimentación diversa.",
+        "No es necesario consumir grandes cantidades ni ofrecer siempre el mismo tipo de carne."
+      ],
+      "edad": "La carne bien cocida puede incorporarse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, si el bebé muestra señales de preparación. La textura y la retirada de partes duras son esenciales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar hasta quedar muy tierna; retirar huesos, piel dura, membranas, cartílagos y grasa dura. Triturar muy fino y humedecer en una preparación espesa."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer finamente picada o desmenuzada, muy tierna y húmeda, adaptada a las habilidades del bebé. Revisar que no queden partes duras."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir picada o en piezas pequeñas y blandas, según la capacidad de masticación. Evitar trozos gomosos, secos o con huesos."
+        }
+      ],
+      "preparacion_segura": "Limpiar y retirar membranas o partes duras. Cocinar completamente hasta que estén muy tiernas; las vísceras de ave deben alcanzar 74 °C. Para bebés, triturar o picar muy fino; no ofrecer trozos elásticos.",
+      "recetas": [
+        {
+          "nombre": "Preparación suave con vegetales",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Carne bien cocida y vegetales blandos sin sal añadida",
+          "preparacion": "Cocinar completamente, retirar partes no comestibles y triturar o picar hasta lograr una textura húmeda y segura."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer cruda ni poco cocida. Usar termómetro cuando sea posible; todas las aves y sus vísceras deben alcanzar 74 °C en el centro.",
+        "Retirar huesos, cartílagos, membranas duras y fragmentos que puedan causar atragantamiento. Ofrecer con el niño sentado y supervisado."
+      ],
+      "conservacion": "Mantener refrigerada a 4 °C o menos, separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar. Refrigerar las sobras cocidas en recipientes poco profundos.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chicken%20gizzards.jpg?width=1280",
+        "alt": "Mollejas de pollo crudas, limpias y listas para preparar.",
+        "autor": "Harald the Bard",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Chicken_gizzards.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "molleja de pollo",
+        "mollejas",
+        "menudos de pollo",
+        "menudencias de pollo",
+        "pedrejón",
+        "piedrecilla",
+        "Mollejas de pollo",
+        "mollejas para bebés",
+        "mollejas guisadas",
+        "menudos",
+        "vísceras de pollo"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Carcinogenicity of the consumption of red meat and processed meat",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat",
+          "utilidad": "Definición y evidencia sobre carnes procesadas; la clasificación describe la fuerza de la evidencia, no equipara el riesgo con el de otras sustancias."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones alimentarias en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "FoodSafety.gov",
+          "titulo": "Cook to a Safe Minimum Internal Temperature",
+          "url": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+          "utilidad": "Temperaturas internas seguras para carnes, aves y vísceras."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Fotografía de referencia",
+          "url": "https://commons.wikimedia.org/wiki/File:Chicken_gizzards.jpg",
+          "utilidad": "Autoría y licencia de la fotografía."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "patas-cerdo",
+      "nombre": "Patas de cerdo",
+      "nombres_alternativos": [
+        "patas de puerco",
+        "manitas de cerdo",
+        "manos de cerdo",
+        "pies de cerdo",
+        "patitas de puerco"
+      ],
+      "categoria": "Partes y cortes",
+      "resumen": "Parte del cerdo rica en piel, tejido conectivo y huesos, utilizada en guisos y preparaciones tradicionales.",
+      "descripcion": "Las patas de cerdo contienen piel, tendones, cartílagos, tejido conectivo y huesos. Suelen cocinarse durante bastante tiempo hasta ablandarse. No deben describirse como una fuente equivalente a un corte magro: la composición depende de cuánto tejido y piel se consuma.",
+      "propiedades": [
+        "Aporta proteínas; su composición nutricional depende de la parte del animal y del método de cocción.",
+        "Puede aportar vitaminas del grupo B y minerales; las cantidades varían según el corte y la preparación."
+      ],
+      "beneficios": [
+        "Puede contribuir a la variedad de alimentos de origen animal dentro de una alimentación diversa.",
+        "No es necesario consumir grandes cantidades ni ofrecer siempre el mismo tipo de carne."
+      ],
+      "edad": "La carne bien cocida puede incorporarse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, si el bebé muestra señales de preparación. La textura y la retirada de partes duras son esenciales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar hasta quedar muy tierna; retirar huesos, piel dura, membranas, cartílagos y grasa dura. Triturar muy fino y humedecer en una preparación espesa."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer finamente picada o desmenuzada, muy tierna y húmeda, adaptada a las habilidades del bebé. Revisar que no queden partes duras."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir picada o en piezas pequeñas y blandas, según la capacidad de masticación. Evitar trozos gomosos, secos o con huesos."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente hasta que los tejidos estén muy blandos. Retirar todos los huesos pequeños, fragmentos duros y partes gomosas. Para niños pequeños, no ofrecer la pata con huesos ni piel elástica; aprovechar solo carne muy tierna y picada.",
+      "recetas": [
+        {
+          "nombre": "Preparación suave con vegetales",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Carne bien cocida y vegetales blandos sin sal añadida",
+          "preparacion": "Cocinar completamente, retirar partes no comestibles y triturar o picar hasta lograr una textura húmeda y segura."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer cruda ni poco cocida. Usar termómetro cuando sea posible; todas las aves y sus vísceras deben alcanzar 74 °C en el centro.",
+        "Retirar huesos, cartílagos, membranas duras y fragmentos que puedan causar atragantamiento. Ofrecer con el niño sentado y supervisado."
+      ],
+      "conservacion": "Mantener refrigerada a 4 °C o menos, separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar. Refrigerar las sobras cocidas en recipientes poco profundos.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Raw%20pig's%20trotters.jpg?width=1280",
+        "alt": "Patas de cerdo crudas antes de su preparación.",
+        "autor": "Fumikas Sagisavas",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Raw_pig's_trotters.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "patas de puerco",
+        "manitas de cerdo",
+        "manos de cerdo",
+        "pies de cerdo",
+        "patitas de puerco",
+        "Patas de cerdo",
+        "patas de cerdo para niños",
+        "patas de puerco guisadas",
+        "gelatina natural de patas"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Carcinogenicity of the consumption of red meat and processed meat",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat",
+          "utilidad": "Definición y evidencia sobre carnes procesadas; la clasificación describe la fuerza de la evidencia, no equipara el riesgo con el de otras sustancias."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones alimentarias en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "FoodSafety.gov",
+          "titulo": "Cook to a Safe Minimum Internal Temperature",
+          "url": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+          "utilidad": "Temperaturas internas seguras para carnes, aves y vísceras."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Fotografía de referencia",
+          "url": "https://commons.wikimedia.org/wiki/File:Raw_pig's_trotters.jpg",
+          "utilidad": "Autoría y licencia de la fotografía."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "salchichas-perros-calientes",
+      "nombre": "Salchichas y perros calientes",
+      "nombres_alternativos": [
+        "salchicha",
+        "salchichas",
+        "perro caliente",
+        "perros calientes",
+        "hot dog",
+        "frankfurter",
+        "vienesas"
+      ],
+      "categoria": "Embutidos y carnes procesadas",
+      "resumen": "Embutidos cocidos o ahumados, de composición variable y generalmente con bastante sodio.",
+      "descripcion": "Las salchichas y los productos para perros calientes se elaboran con carnes picadas o emulsionadas, agua, sal y otros ingredientes. Pueden contener mezclas de distintas carnes, almidones, conservantes y saborizantes. La receta depende de la marca.",
+      "propiedades": [
+        "Es un producto cárnico procesado; la receta y la proporción de carne pueden variar entre fabricantes.",
+        "Puede contener cantidades importantes de sodio, grasas, conservantes y otros ingredientes; revisar la etiqueta del producto concreto."
+      ],
+      "beneficios": [
+        "Aporta proteínas en cantidades variables, pero no ofrece ventajas que lo conviertan en sustituto preferente de carnes frescas, huevos, legumbres u otros alimentos poco procesados."
+      ],
+      "edad": "No se recomienda como alimento habitual durante la alimentación complementaria ni en la dieta cotidiana de niños pequeños. En menores de 2 años conviene priorizar alimentos frescos y preparaciones sin sal añadida. Para niños mayores, si la familia decide ofrecerlo, que sea ocasional y en pequeña cantidad, atendiendo a la etiqueta y a la textura.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alimentación complementaria y menores de 2 años",
+          "forma": "No se propone como opción habitual. Priorizar carnes frescas bien cocidas, huevo y legumbres sin exceso de sal."
+        },
+        {
+          "etapa": "Niños mayores",
+          "forma": "Si se consume ocasionalmente, ofrecer una porción pequeña y evitar combinarla con otros alimentos muy salados. En salchichas, nunca ofrecer rodajas redondas ni la pieza entera: pueden obstruir la vía aérea. Adaptar el corte a la edad y habilidad de masticación."
+        }
+      ],
+      "preparacion_segura": "Seguir las instrucciones de conservación y cocción de la etiqueta. Mantener refrigerados los productos que lo requieran y no consumir envases abombados, dañados, con fugas o fuera de fecha. Un producto listo para comer no debe confundirse con carne fresca.",
+      "recetas": [
+        {
+          "nombre": "Orientación de uso",
+          "etapa": "Información para la familia, no receta infantil",
+          "ingredientes": "Producto envasado y etiqueta del fabricante",
+          "preparacion": "Comparar sodio por porción, lista de ingredientes, fecha y condiciones de conservación. No utilizar estos productos como base frecuente de la alimentación infantil."
+        }
+      ],
+      "precauciones": [
+        "Las carnes procesadas incluyen productos transformados mediante salazón, curado, fermentación o ahumado; la categoría incluye salchichas, jamón y algunos productos enlatados. La composición varía entre marcas.",
+        "La OMS clasifica la carne procesada como carcinógena para los seres humanos por la evidencia disponible sobre consumo y cáncer colorrectal. Esta clasificación indica fuerza de evidencia, no que el riesgo de una porción aislada sea igual al de fumar.",
+        "Suelen aportar bastante sodio; limitar su frecuencia y no añadir sal a otras partes de la comida.",
+        "Las salchichas y perros calientes son un riesgo de atragantamiento si se ofrecen enteros o en rodajas circulares. No ofrecer a bebés; para niños mayores, adaptar el corte y supervisar."
+      ],
+      "conservacion": "Respetar la etiqueta del fabricante. Una vez abierto, refrigerar en recipiente limpio y cerrado, respetar el plazo indicado y no dejar a temperatura ambiente.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Frankfurter%20wurst.JPG?width=1280",
+        "alt": "Salchichas tipo frankfurter en un frasco; imagen ilustrativa.",
+        "autor": "KVDP",
+        "licencia": "Dominio público",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Frankfurter_wurst.JPG"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "salchicha",
+        "salchichas",
+        "perro caliente",
+        "perros calientes",
+        "hot dog",
+        "frankfurter",
+        "vienesas",
+        "Salchichas y perros calientes",
+        "salchichas para niños",
+        "perritos calientes",
+        "embutidos",
+        "salchicha de pollo",
+        "salchicha de cerdo"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Carcinogenicity of the consumption of red meat and processed meat",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat",
+          "utilidad": "Definición y evidencia sobre carnes procesadas; la clasificación describe la fuerza de la evidencia, no equipara el riesgo con el de otras sustancias."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones alimentarias en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Fotografía de referencia del producto",
+          "url": "https://commons.wikimedia.org/wiki/File:Frankfurter_wurst.JPG",
+          "utilidad": "La imagen es ilustrativa y no representa necesariamente una marca o formulación cubana."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "jamonada",
+      "nombre": "Jamonada",
+      "nombres_alternativos": [
+        "jamonada condimentada",
+        "jamonada especial condimentada",
+        "jamonada especial",
+        "jamonada cubana",
+        "fiambre tipo jamonada"
+      ],
+      "categoria": "Embutidos y carnes procesadas",
+      "resumen": "Fiambre o producto cárnico moldeado; existen variantes condimentadas y especiales con formulaciones distintas.",
+      "descripcion": "En Cuba se encuentran jamonadas de diferentes tipos, incluidas las condimentadas y las llamadas especiales condimentadas. El nombre comercial no permite conocer por sí solo la proporción de carne, grasa, almidones ni sodio: hay que revisar la etiqueta del fabricante.",
+      "propiedades": [
+        "Es un producto cárnico procesado; la receta y la proporción de carne pueden variar entre fabricantes.",
+        "Puede contener cantidades importantes de sodio, grasas, conservantes y otros ingredientes; revisar la etiqueta del producto concreto."
+      ],
+      "beneficios": [
+        "Aporta proteínas en cantidades variables, pero no ofrece ventajas que lo conviertan en sustituto preferente de carnes frescas, huevos, legumbres u otros alimentos poco procesados."
+      ],
+      "edad": "No se recomienda como alimento habitual durante la alimentación complementaria ni en la dieta cotidiana de niños pequeños. En menores de 2 años conviene priorizar alimentos frescos y preparaciones sin sal añadida. Para niños mayores, si la familia decide ofrecerlo, que sea ocasional y en pequeña cantidad, atendiendo a la etiqueta y a la textura.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alimentación complementaria y menores de 2 años",
+          "forma": "No se propone como opción habitual. Priorizar carnes frescas bien cocidas, huevo y legumbres sin exceso de sal."
+        },
+        {
+          "etapa": "Niños mayores",
+          "forma": "Si se consume ocasionalmente, ofrecer una porción pequeña y evitar combinarla con otros alimentos muy salados. En salchichas, nunca ofrecer rodajas redondas ni la pieza entera: pueden obstruir la vía aérea. Adaptar el corte a la edad y habilidad de masticación."
+        }
+      ],
+      "preparacion_segura": "Seguir las instrucciones de conservación y cocción de la etiqueta. Mantener refrigerados los productos que lo requieran y no consumir envases abombados, dañados, con fugas o fuera de fecha. Un producto listo para comer no debe confundirse con carne fresca.",
+      "recetas": [
+        {
+          "nombre": "Orientación de uso",
+          "etapa": "Información para la familia, no receta infantil",
+          "ingredientes": "Producto envasado y etiqueta del fabricante",
+          "preparacion": "Comparar sodio por porción, lista de ingredientes, fecha y condiciones de conservación. No utilizar estos productos como base frecuente de la alimentación infantil."
+        }
+      ],
+      "precauciones": [
+        "Las carnes procesadas incluyen productos transformados mediante salazón, curado, fermentación o ahumado; la categoría incluye salchichas, jamón y algunos productos enlatados. La composición varía entre marcas.",
+        "La OMS clasifica la carne procesada como carcinógena para los seres humanos por la evidencia disponible sobre consumo y cáncer colorrectal. Esta clasificación indica fuerza de evidencia, no que el riesgo de una porción aislada sea igual al de fumar.",
+        "Suelen aportar bastante sodio; limitar su frecuencia y no añadir sal a otras partes de la comida.",
+        "Las salchichas y perros calientes son un riesgo de atragantamiento si se ofrecen enteros o en rodajas circulares. No ofrecer a bebés; para niños mayores, adaptar el corte y supervisar."
+      ],
+      "conservacion": "Respetar la etiqueta del fabricante. Una vez abierto, refrigerar en recipiente limpio y cerrado, respetar el plazo indicado y no dejar a temperatura ambiente.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Slices%20of%20devon.jpg?width=1280",
+        "alt": "Lonchas de fiambre tipo luncheon meat; imagen genérica, no corresponde a una marca cubana.",
+        "autor": "WWGB",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Slices_of_devon.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "jamonada condimentada",
+        "jamonada especial condimentada",
+        "jamonada especial",
+        "jamonada cubana",
+        "fiambre tipo jamonada",
+        "Jamonada",
+        "jamonada para sándwich",
+        "fiambre",
+        "embutido"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Carcinogenicity of the consumption of red meat and processed meat",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat",
+          "utilidad": "Definición y evidencia sobre carnes procesadas; la clasificación describe la fuerza de la evidencia, no equipara el riesgo con el de otras sustancias."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones alimentarias en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Fotografía de referencia del producto",
+          "url": "https://commons.wikimedia.org/wiki/File:Slices_of_devon.jpg",
+          "utilidad": "La imagen es ilustrativa y no representa necesariamente una marca o formulación cubana."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "jamon-viking",
+      "nombre": "Jamón tipo viking",
+      "nombres_alternativos": [
+        "jamón viking",
+        "viking",
+        "jamon enlatado",
+        "jamón en conserva",
+        "carne enlatada tipo viking"
+      ],
+      "categoria": "Embutidos y carnes procesadas",
+      "resumen": "Producto cárnico enlatado conocido en Cuba como jamón viking; su composición depende del fabricante y la presentación.",
+      "descripcion": "El nombre jamón viking se usa para identificar un producto cárnico en conserva. No debe asumirse que todos los envases tienen la misma receta o proporción de carne: revisar ingredientes, sodio, grasas, fecha y condiciones de conservación.",
+      "propiedades": [
+        "Es un producto cárnico procesado; la receta y la proporción de carne pueden variar entre fabricantes.",
+        "Puede contener cantidades importantes de sodio, grasas, conservantes y otros ingredientes; revisar la etiqueta del producto concreto."
+      ],
+      "beneficios": [
+        "Aporta proteínas en cantidades variables, pero no ofrece ventajas que lo conviertan en sustituto preferente de carnes frescas, huevos, legumbres u otros alimentos poco procesados."
+      ],
+      "edad": "No se recomienda como alimento habitual durante la alimentación complementaria ni en la dieta cotidiana de niños pequeños. En menores de 2 años conviene priorizar alimentos frescos y preparaciones sin sal añadida. Para niños mayores, si la familia decide ofrecerlo, que sea ocasional y en pequeña cantidad, atendiendo a la etiqueta y a la textura.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alimentación complementaria y menores de 2 años",
+          "forma": "No se propone como opción habitual. Priorizar carnes frescas bien cocidas, huevo y legumbres sin exceso de sal."
+        },
+        {
+          "etapa": "Niños mayores",
+          "forma": "Si se consume ocasionalmente, ofrecer una porción pequeña y evitar combinarla con otros alimentos muy salados. En salchichas, nunca ofrecer rodajas redondas ni la pieza entera: pueden obstruir la vía aérea. Adaptar el corte a la edad y habilidad de masticación."
+        }
+      ],
+      "preparacion_segura": "Seguir las instrucciones de conservación y cocción de la etiqueta. Mantener refrigerados los productos que lo requieran y no consumir envases abombados, dañados, con fugas o fuera de fecha. Un producto listo para comer no debe confundirse con carne fresca.",
+      "recetas": [
+        {
+          "nombre": "Orientación de uso",
+          "etapa": "Información para la familia, no receta infantil",
+          "ingredientes": "Producto envasado y etiqueta del fabricante",
+          "preparacion": "Comparar sodio por porción, lista de ingredientes, fecha y condiciones de conservación. No utilizar estos productos como base frecuente de la alimentación infantil."
+        }
+      ],
+      "precauciones": [
+        "Las carnes procesadas incluyen productos transformados mediante salazón, curado, fermentación o ahumado; la categoría incluye salchichas, jamón y algunos productos enlatados. La composición varía entre marcas.",
+        "La OMS clasifica la carne procesada como carcinógena para los seres humanos por la evidencia disponible sobre consumo y cáncer colorrectal. Esta clasificación indica fuerza de evidencia, no que el riesgo de una porción aislada sea igual al de fumar.",
+        "Suelen aportar bastante sodio; limitar su frecuencia y no añadir sal a otras partes de la comida.",
+        "Las salchichas y perros calientes son un riesgo de atragantamiento si se ofrecen enteros o en rodajas circulares. No ofrecer a bebés; para niños mayores, adaptar el corte y supervisar."
+      ],
+      "conservacion": "Respetar la etiqueta del fabricante. Una vez abierto, refrigerar en recipiente limpio y cerrado, respetar el plazo indicado y no dejar a temperatura ambiente.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Can%20of%20Prem%20luncheon%20meat%2C%202025.jpg?width=1280",
+        "alt": "Lata de carne procesada en conserva; fotografía ilustrativa, no es jamón viking cubano.",
+        "autor": "Bagoto",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Can_of_Prem_luncheon_meat%2C_2025.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "jamón viking",
+        "viking",
+        "jamon enlatado",
+        "jamón en conserva",
+        "carne enlatada tipo viking",
+        "Jamón tipo viking",
+        "jamón viking para niños",
+        "viking cubano",
+        "carne enlatada",
+        "fiambre en conserva",
+        "jamon viking"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Carcinogenicity of the consumption of red meat and processed meat",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat",
+          "utilidad": "Definición y evidencia sobre carnes procesadas; la clasificación describe la fuerza de la evidencia, no equipara el riesgo con el de otras sustancias."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones alimentarias en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Fotografía de referencia del producto",
+          "url": "https://commons.wikimedia.org/wiki/File:Can_of_Prem_luncheon_meat%2C_2025.jpg",
+          "utilidad": "La imagen es ilustrativa y no representa necesariamente una marca o formulación cubana."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "jamon-condimentado",
+      "nombre": "Jamón condimentado",
+      "nombres_alternativos": [
+        "jamón condimentado cubano",
+        "jamon condimentado",
+        "jamón especiado",
+        "jamón procesado condimentado"
+      ],
+      "categoria": "Embutidos y carnes procesadas",
+      "resumen": "Producto de jamón o fiambre sazonado, con contenido de sal y composición variables.",
+      "descripcion": "La denominación jamón condimentado puede abarcar productos distintos según el fabricante. Algunos son cocidos y otros curados o ahumados; no se debe inferir su método de elaboración sin leer la etiqueta.",
+      "propiedades": [
+        "Es un producto cárnico procesado; la receta y la proporción de carne pueden variar entre fabricantes.",
+        "Puede contener cantidades importantes de sodio, grasas, conservantes y otros ingredientes; revisar la etiqueta del producto concreto."
+      ],
+      "beneficios": [
+        "Aporta proteínas en cantidades variables, pero no ofrece ventajas que lo conviertan en sustituto preferente de carnes frescas, huevos, legumbres u otros alimentos poco procesados."
+      ],
+      "edad": "No se recomienda como alimento habitual durante la alimentación complementaria ni en la dieta cotidiana de niños pequeños. En menores de 2 años conviene priorizar alimentos frescos y preparaciones sin sal añadida. Para niños mayores, si la familia decide ofrecerlo, que sea ocasional y en pequeña cantidad, atendiendo a la etiqueta y a la textura.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alimentación complementaria y menores de 2 años",
+          "forma": "No se propone como opción habitual. Priorizar carnes frescas bien cocidas, huevo y legumbres sin exceso de sal."
+        },
+        {
+          "etapa": "Niños mayores",
+          "forma": "Si se consume ocasionalmente, ofrecer una porción pequeña y evitar combinarla con otros alimentos muy salados. En salchichas, nunca ofrecer rodajas redondas ni la pieza entera: pueden obstruir la vía aérea. Adaptar el corte a la edad y habilidad de masticación."
+        }
+      ],
+      "preparacion_segura": "Seguir las instrucciones de conservación y cocción de la etiqueta. Mantener refrigerados los productos que lo requieran y no consumir envases abombados, dañados, con fugas o fuera de fecha. Un producto listo para comer no debe confundirse con carne fresca.",
+      "recetas": [
+        {
+          "nombre": "Orientación de uso",
+          "etapa": "Información para la familia, no receta infantil",
+          "ingredientes": "Producto envasado y etiqueta del fabricante",
+          "preparacion": "Comparar sodio por porción, lista de ingredientes, fecha y condiciones de conservación. No utilizar estos productos como base frecuente de la alimentación infantil."
+        }
+      ],
+      "precauciones": [
+        "Las carnes procesadas incluyen productos transformados mediante salazón, curado, fermentación o ahumado; la categoría incluye salchichas, jamón y algunos productos enlatados. La composición varía entre marcas.",
+        "La OMS clasifica la carne procesada como carcinógena para los seres humanos por la evidencia disponible sobre consumo y cáncer colorrectal. Esta clasificación indica fuerza de evidencia, no que el riesgo de una porción aislada sea igual al de fumar.",
+        "Suelen aportar bastante sodio; limitar su frecuencia y no añadir sal a otras partes de la comida.",
+        "Las salchichas y perros calientes son un riesgo de atragantamiento si se ofrecen enteros o en rodajas circulares. No ofrecer a bebés; para niños mayores, adaptar el corte y supervisar."
+      ],
+      "conservacion": "Respetar la etiqueta del fabricante. Una vez abierto, refrigerar en recipiente limpio y cerrado, respetar el plazo indicado y no dejar a temperatura ambiente.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sliced%20cooked%20ham.jpg?width=1280",
+        "alt": "Lonchas de jamón cocido; fotografía ilustrativa.",
+        "autor": "Anna.Massini",
+        "licencia": "CC BY 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Sliced_cooked_ham.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "jamón condimentado cubano",
+        "jamon condimentado",
+        "jamón especiado",
+        "jamón procesado condimentado",
+        "Jamón condimentado",
+        "jamón para sándwich",
+        "jamón cocido",
+        "jamón curado",
+        "fiambre de jamón"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Carcinogenicity of the consumption of red meat and processed meat",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat",
+          "utilidad": "Definición y evidencia sobre carnes procesadas; la clasificación describe la fuerza de la evidencia, no equipara el riesgo con el de otras sustancias."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones alimentarias en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Fotografía de referencia del producto",
+          "url": "https://commons.wikimedia.org/wiki/File:Sliced_cooked_ham.jpg",
+          "utilidad": "La imagen es ilustrativa y no representa necesariamente una marca o formulación cubana."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "chorizo",
+      "nombre": "Chorizo",
+      "nombres_alternativos": [
+        "chorizos",
+        "chorizo cubano",
+        "chorizo condimentado",
+        "chorizo curado",
+        "chorizo fresco"
+      ],
+      "categoria": "Embutidos y carnes procesadas",
+      "resumen": "Embutido condimentado cuya receta puede variar: algunos son frescos y otros curados o ahumados.",
+      "descripcion": "El chorizo puede elaborarse con carne de cerdo u otras mezclas y condimentos como pimentón, ajo y sal. Es importante distinguir chorizo fresco, que necesita cocción completa, de chorizos curados o listos para consumir. Las recetas varían mucho.",
+      "propiedades": [
+        "Es un producto cárnico procesado; la receta y la proporción de carne pueden variar entre fabricantes.",
+        "Puede contener cantidades importantes de sodio, grasas, conservantes y otros ingredientes; revisar la etiqueta del producto concreto."
+      ],
+      "beneficios": [
+        "Aporta proteínas en cantidades variables, pero no ofrece ventajas que lo conviertan en sustituto preferente de carnes frescas, huevos, legumbres u otros alimentos poco procesados."
+      ],
+      "edad": "No se recomienda como alimento habitual durante la alimentación complementaria ni en la dieta cotidiana de niños pequeños. En menores de 2 años conviene priorizar alimentos frescos y preparaciones sin sal añadida. Para niños mayores, si la familia decide ofrecerlo, que sea ocasional y en pequeña cantidad, atendiendo a la etiqueta y a la textura.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alimentación complementaria y menores de 2 años",
+          "forma": "No se propone como opción habitual. Priorizar carnes frescas bien cocidas, huevo y legumbres sin exceso de sal."
+        },
+        {
+          "etapa": "Niños mayores",
+          "forma": "Si se consume ocasionalmente, ofrecer una porción pequeña y evitar combinarla con otros alimentos muy salados. En salchichas, nunca ofrecer rodajas redondas ni la pieza entera: pueden obstruir la vía aérea. Adaptar el corte a la edad y habilidad de masticación."
+        }
+      ],
+      "preparacion_segura": "Seguir las instrucciones de conservación y cocción de la etiqueta. Mantener refrigerados los productos que lo requieran y no consumir envases abombados, dañados, con fugas o fuera de fecha. Un producto listo para comer no debe confundirse con carne fresca.",
+      "recetas": [
+        {
+          "nombre": "Orientación de uso",
+          "etapa": "Información para la familia, no receta infantil",
+          "ingredientes": "Producto envasado y etiqueta del fabricante",
+          "preparacion": "Comparar sodio por porción, lista de ingredientes, fecha y condiciones de conservación. No utilizar estos productos como base frecuente de la alimentación infantil."
+        }
+      ],
+      "precauciones": [
+        "Las carnes procesadas incluyen productos transformados mediante salazón, curado, fermentación o ahumado; la categoría incluye salchichas, jamón y algunos productos enlatados. La composición varía entre marcas.",
+        "La OMS clasifica la carne procesada como carcinógena para los seres humanos por la evidencia disponible sobre consumo y cáncer colorrectal. Esta clasificación indica fuerza de evidencia, no que el riesgo de una porción aislada sea igual al de fumar.",
+        "Suelen aportar bastante sodio; limitar su frecuencia y no añadir sal a otras partes de la comida.",
+        "Las salchichas y perros calientes son un riesgo de atragantamiento si se ofrecen enteros o en rodajas circulares. No ofrecer a bebés; para niños mayores, adaptar el corte y supervisar."
+      ],
+      "conservacion": "Respetar la etiqueta del fabricante. Una vez abierto, refrigerar en recipiente limpio y cerrado, respetar el plazo indicado y no dejar a temperatura ambiente.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/ChorizoBilbao.jpg?width=1280",
+        "alt": "Chorizo en piezas y lonchas; imagen ilustrativa de un tipo de chorizo.",
+        "autor": "Markoolio97",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:ChorizoBilbao.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "chorizos",
+        "chorizo cubano",
+        "chorizo condimentado",
+        "chorizo curado",
+        "chorizo fresco",
+        "Chorizo",
+        "chorizo para niños",
+        "chorizo de cerdo",
+        "embutido",
+        "longaniza",
+        "chorizo español"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Carcinogenicity of the consumption of red meat and processed meat",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat",
+          "utilidad": "Definición y evidencia sobre carnes procesadas; la clasificación describe la fuerza de la evidencia, no equipara el riesgo con el de otras sustancias."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones alimentarias en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Fotografía de referencia del producto",
+          "url": "https://commons.wikimedia.org/wiki/File:ChorizoBilbao.jpg",
+          "utilidad": "La imagen es ilustrativa y no representa necesariamente una marca o formulación cubana."
         }
       ],
       "estado": "publicado",
