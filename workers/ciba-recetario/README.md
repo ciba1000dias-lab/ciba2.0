@@ -22,3 +22,10 @@ El endpoint permite solicitudes CORS solo desde `https://ciba1000dias-lab.github
 ## Pruebas locales
 
 Desde este directorio, ejecutar `npm test` con Node.js 20 o posterior.
+
+
+## Estado real del despliegue (9 nov 2026)
+
+El Worker de Cloudflare ya existe, tiene el binding `AI` y superó una prueba manual de generación con Gemma 4. Sin embargo, el código que está publicado en Cloudflare sigue siendo el código de prueba con la ruta `?test=1`. El archivo `index.js` de este directorio es la siguiente versión preparada, pero **todavía no se ha desplegado**.
+
+No sustituir el Worker activo hasta revisar las pruebas y configurar límites de frecuencia. CORS no es un control de autenticación.
