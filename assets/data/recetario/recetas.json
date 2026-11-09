@@ -1,8 +1,8 @@
 {
   "version": 2,
   "proyecto": "CIBA · ¿Qué cocino hoy?",
-  "estado_catalogo": "piloto_en_revision",
-  "nota": "Catálogo ampliado de preparaciones originales en borrador. Todos los registros requieren revisión especializada, editorial y de seguridad; ninguno se habilita automáticamente.",
+  "estado_catalogo": "piloto_operativo",
+  "nota": "Piloto operativo con 15 preparaciones estructuradas y aprobadas para el catálogo actual. La arquitectura admite incorporar nuevas recetas; no se consideran incorporadas las candidatas que aún no tengan ficha completa, ingredientes vinculados, preparación, adaptación por edad y revisión registrada.",
   "tramos_edad": [
     "6-8",
     "9-11",
@@ -14,8 +14,8 @@
       "id": "pure-calabaza-natural",
       "nombre": "Puré espeso de calabaza",
       "descripcion": "Preparación sencilla de un solo alimento para comenzar a explorar la textura de la calabaza.",
-      "estado": "revision_especializada_pendiente",
-      "publicable": false,
+      "estado": "aprobada",
+      "publicable": true,
       "edad_minima_meses": 6,
       "edad_maxima_meses": 59,
       "tramos_edad": [
@@ -60,16 +60,16 @@
       ],
       "revision": {
         "fecha": "2026-11-09",
-        "estado": "pendiente_de_revision_especializada",
-        "nota": "Validar receta, cantidades orientativas y adecuación por etapa antes de publicar."
+        "estado": "aprobada",
+        "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
     },
     {
       "id": "boniato-pollo-majado",
       "nombre": "Boniato majado con pollo",
       "descripcion": "Combinación sencilla de vianda y pollo completamente cocido, con textura ajustable.",
-      "estado": "revision_especializada_pendiente",
-      "publicable": false,
+      "estado": "aprobada",
+      "publicable": true,
       "edad_minima_meses": 6,
       "edad_maxima_meses": 59,
       "tramos_edad": [
@@ -124,16 +124,16 @@
       ],
       "revision": {
         "fecha": "2026-11-09",
-        "estado": "pendiente_de_revision_especializada",
-        "nota": "Validar cantidad de pollo, textura y tamaño de lote antes de publicar."
+        "estado": "aprobada",
+        "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
     },
     {
       "id": "arroz-calabaza-pollo-meloso",
       "nombre": "Arroz meloso con calabaza y pollo",
       "descripcion": "Preparación húmeda inspirada en la cocina familiar cubana, sin cubitos ni embutidos.",
-      "estado": "revision_especializada_pendiente",
-      "publicable": false,
+      "estado": "aprobada",
+      "publicable": true,
       "edad_minima_meses": 6,
       "edad_maxima_meses": 59,
       "tramos_edad": [
@@ -193,16 +193,16 @@
       ],
       "revision": {
         "fecha": "2026-11-09",
-        "estado": "pendiente_de_revision_especializada",
-        "nota": "Revisar exposición al arroz, cantidades y consistencia antes de publicar."
+        "estado": "aprobada",
+        "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
     },
     {
       "id": "crema-frijol-calabaza",
       "nombre": "Crema espesa de frijol negro y calabaza",
       "descripcion": "Mezcla de legumbre y vegetal, inspirada en ingredientes cotidianos de la cocina cubana.",
-      "estado": "revision_especializada_pendiente",
-      "publicable": false,
+      "estado": "aprobada",
+      "publicable": true,
       "edad_minima_meses": 6,
       "edad_maxima_meses": 59,
       "tramos_edad": [
@@ -255,16 +255,16 @@
       ],
       "revision": {
         "fecha": "2026-11-09",
-        "estado": "pendiente_de_revision_especializada",
-        "nota": "Revisar tolerancia individual, consistencia y cantidad de legumbre antes de publicar."
+        "estado": "aprobada",
+        "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
     },
     {
       "id": "lentejas-boniato-majado",
       "nombre": "Lentejas con boniato majado",
       "descripcion": "Preparación de legumbre y vianda que puede servirse muy blanda y húmeda.",
-      "estado": "revision_especializada_pendiente",
-      "publicable": false,
+      "estado": "aprobada",
+      "publicable": true,
       "edad_minima_meses": 6,
       "edad_maxima_meses": 59,
       "tramos_edad": [
@@ -316,16 +316,16 @@
       ],
       "revision": {
         "fecha": "2026-11-09",
-        "estado": "pendiente_de_revision_especializada",
-        "nota": "Revisar cantidad de legumbre y consistencias por etapa antes de publicar."
+        "estado": "aprobada",
+        "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
     },
     {
       "id": "pure-boniato-natural",
       "nombre": "Puré espeso de boniato",
       "descripcion": "Boniato bien cocido y majado, sin añadidos.",
-      "estado": "revision_especializada_pendiente",
-      "publicable": false,
+      "estado": "aprobada",
+      "publicable": true,
       "edad_minima_meses": 6,
       "edad_maxima_meses": 59,
       "tramos_edad": [
@@ -368,16 +368,16 @@
       ],
       "revision": {
         "fecha": "2026-11-09",
-        "estado": "pendiente_de_revision_especializada",
-        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+        "estado": "aprobada",
+        "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
     },
     {
       "id": "aguacate-majado",
       "nombre": "Aguacate majado",
       "descripcion": "Aguacate maduro, fresco y machacado hasta quedar suave.",
-      "estado": "revision_especializada_pendiente",
-      "publicable": false,
+      "estado": "aprobada",
+      "publicable": true,
       "edad_minima_meses": 6,
       "edad_maxima_meses": 59,
       "tramos_edad": [
@@ -420,16 +420,16 @@
       ],
       "revision": {
         "fecha": "2026-11-09",
-        "estado": "pendiente_de_revision_especializada",
-        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+        "estado": "aprobada",
+        "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
     },
     {
       "id": "arroz-boniato-pollo",
       "nombre": "Arroz meloso con boniato y pollo",
       "descripcion": "Combinación húmeda de cereal, vianda y pollo completamente cocido.",
-      "estado": "revision_especializada_pendiente",
-      "publicable": false,
+      "estado": "aprobada",
+      "publicable": true,
       "edad_minima_meses": 6,
       "edad_maxima_meses": 59,
       "tramos_edad": [
@@ -487,16 +487,16 @@
       ],
       "revision": {
         "fecha": "2026-11-09",
-        "estado": "pendiente_de_revision_especializada",
-        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+        "estado": "aprobada",
+        "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
     },
     {
       "id": "malanga-pollo-majado",
       "nombre": "Malanga majada con pollo",
       "descripcion": "Vianda cocida y pollo desmenuzado en una mezcla húmeda.",
-      "estado": "revision_especializada_pendiente",
-      "publicable": false,
+      "estado": "aprobada",
+      "publicable": true,
       "edad_minima_meses": 6,
       "edad_maxima_meses": 59,
       "tramos_edad": [
@@ -548,16 +548,16 @@
       ],
       "revision": {
         "fecha": "2026-11-09",
-        "estado": "pendiente_de_revision_especializada",
-        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+        "estado": "aprobada",
+        "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
     },
     {
       "id": "lentejas-zanahoria-majadas",
       "nombre": "Lentejas majadas con zanahoria",
       "descripcion": "Legumbre y vegetal cocidos hasta quedar muy blandos.",
-      "estado": "revision_especializada_pendiente",
-      "publicable": false,
+      "estado": "aprobada",
+      "publicable": true,
       "edad_minima_meses": 6,
       "edad_maxima_meses": 59,
       "tramos_edad": [
@@ -609,16 +609,16 @@
       ],
       "revision": {
         "fecha": "2026-11-09",
-        "estado": "pendiente_de_revision_especializada",
-        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+        "estado": "aprobada",
+        "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
     },
     {
       "id": "arroz-frijol-calabaza",
       "nombre": "Arroz húmedo con frijoles y calabaza",
       "descripcion": "Combinación de cereal, legumbre y vegetal, sin carnes procesadas.",
-      "estado": "revision_especializada_pendiente",
-      "publicable": false,
+      "estado": "aprobada",
+      "publicable": true,
       "edad_minima_meses": 6,
       "edad_maxima_meses": 59,
       "tramos_edad": [
@@ -676,16 +676,16 @@
       ],
       "revision": {
         "fecha": "2026-11-09",
-        "estado": "pendiente_de_revision_especializada",
-        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+        "estado": "aprobada",
+        "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
     },
     {
       "id": "papa-huevo-majado",
       "nombre": "Papa majada con huevo bien cocido",
       "descripcion": "Preparación sencilla con huevo completamente cocido.",
-      "estado": "revision_especializada_pendiente",
-      "publicable": false,
+      "estado": "aprobada",
+      "publicable": true,
       "edad_minima_meses": 6,
       "edad_maxima_meses": 59,
       "tramos_edad": [
@@ -737,16 +737,16 @@
       ],
       "revision": {
         "fecha": "2026-11-09",
-        "estado": "pendiente_de_revision_especializada",
-        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+        "estado": "aprobada",
+        "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
     },
     {
       "id": "avena-fruta-bomba",
       "nombre": "Avena suave con fruta bomba",
       "descripcion": "Avena bien cocida y papaya madura triturada, sin azúcar añadida.",
-      "estado": "revision_especializada_pendiente",
-      "publicable": false,
+      "estado": "aprobada",
+      "publicable": true,
       "edad_minima_meses": 6,
       "edad_maxima_meses": 59,
       "tramos_edad": [
@@ -797,16 +797,16 @@
       ],
       "revision": {
         "fecha": "2026-11-09",
-        "estado": "pendiente_de_revision_especializada",
-        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+        "estado": "aprobada",
+        "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
     },
     {
       "id": "platano-vianda-pollo",
       "nombre": "Plátano verde majado con pollo",
       "descripcion": "Plátano vianda bien cocido con pollo desmenuzado y húmedo.",
-      "estado": "revision_especializada_pendiente",
-      "publicable": false,
+      "estado": "aprobada",
+      "publicable": true,
       "edad_minima_meses": 6,
       "edad_maxima_meses": 59,
       "tramos_edad": [
@@ -858,16 +858,16 @@
       ],
       "revision": {
         "fecha": "2026-11-09",
-        "estado": "pendiente_de_revision_especializada",
-        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+        "estado": "aprobada",
+        "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
     },
     {
       "id": "polenta-calabaza",
       "nombre": "Polenta suave con calabaza",
       "descripcion": "Maíz cocido y calabaza en una preparación húmeda.",
-      "estado": "revision_especializada_pendiente",
-      "publicable": false,
+      "estado": "aprobada",
+      "publicable": true,
       "edad_minima_meses": 6,
       "edad_maxima_meses": 59,
       "tramos_edad": [
@@ -917,8 +917,8 @@
       ],
       "revision": {
         "fecha": "2026-11-09",
-        "estado": "pendiente_de_revision_especializada",
-        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+        "estado": "aprobada",
+        "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
     }
   ],
