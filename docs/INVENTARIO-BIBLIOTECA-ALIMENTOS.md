@@ -10,7 +10,7 @@ La lista combina alimentos cotidianos, alimentos estacionales y otros conocidos 
 
 Los sinónimos y nombres regionales se guardarán como nombres alternativos dentro de una misma ficha; no se contarán como alimentos diferentes. Las variedades solo tendrán ficha propia si cambian de forma relevante su composición, uso culinario o seguridad.
 
-## Inventario actualizado: 158 entradas (incluye preparaciones y categorías de productos)
+## Inventario actualizado: 172 entradas (incluye preparaciones y categorías de productos)
 
 ### 1. Frutas — 25
 1. Aguacate
@@ -181,7 +181,7 @@ Los sinónimos y nombres regionales se guardarán como nombres alternativos dent
 2. Queso blanco
 3. Requesón
 
-### 9. Aceites, semillas y frutos secos — 13
+### 12. Aceites, semillas y frutos secos — 13
 1. Aceite de oliva
 2. Aceite de girasol
 3. Aceite de soya
@@ -196,7 +196,7 @@ Los sinónimos y nombres regionales se guardarán como nombres alternativos dent
 12. Semillas de calabaza
 13. Semillas de girasol
 
-### 10. Hierbas y condimentos — 12
+### 13. Hierbas y condimentos — 12
 1. Cilantro
 2. Perejil
 3. Orégano
@@ -210,7 +210,7 @@ Los sinónimos y nombres regionales se guardarán como nombres alternativos dent
 11. Pimienta negra
 12. Culantro
 
-**Total: 158 entradas en el inventario original; la nueva clasificación incorpora 15 productos adicionales y reorganiza los ya existentes.**
+**Total: 172 entradas. La nueva clasificación incorpora 15 productos netos adicionales y reorganiza los ya existentes.**
 
 ## Nueva clasificación editorial de leches, yogures y huevos
 
