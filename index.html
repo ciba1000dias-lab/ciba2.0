@@ -1254,6 +1254,174 @@
       .ciba-paisaje * { animation: none !important; }
     }
 
+
+    /* CIBA · segunda evolución visual: luz, vidrio y naturaleza cubana */
+    .hero {
+      isolation: isolate;
+      background:
+        radial-gradient(ellipse at 78% 24%, rgba(255,255,255,.72), transparent 34%),
+        radial-gradient(ellipse at 18% 74%, rgba(57,118,83,.15), transparent 38%),
+        radial-gradient(ellipse at 88% 88%, rgba(40,123,154,.13), transparent 32%),
+        linear-gradient(130deg,#FBF6EA 0%,#F0E4D0 54%,#E7D8C0 100%);
+    }
+    .hero::before { opacity:.40; mix-blend-mode:multiply; }
+    .hero-contenido { position:relative; z-index:4; }
+    .hero-imagen-marco {
+      position:relative;
+      overflow:hidden;
+      backdrop-filter:blur(18px) saturate(1.15);
+      -webkit-backdrop-filter:blur(18px) saturate(1.15);
+      background:rgba(255,252,245,.34);
+      box-shadow:0 30px 75px rgba(73,58,50,.18), inset 0 1px 0 rgba(255,255,255,.72), 0 0 50px rgba(198,155,82,.15);
+    }
+    .hero-imagen { filter:saturate(1.08) contrast(1.02); }
+    .imagen-sello {
+      backdrop-filter:blur(16px) saturate(1.2);
+      -webkit-backdrop-filter:blur(16px) saturate(1.2);
+      background:rgba(73,58,50,.78);
+      border:1px solid rgba(255,255,255,.38);
+    }
+    .hero-pie { backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); }
+
+    /* Halo solar y motivos cubanos dibujados en SVG */
+    .ciba-paisaje { height:min(76%,520px); bottom:8px; opacity:.68; z-index:2; }
+    .ciba-paisaje .palma { stroke-width:3; }
+    .ciba-paisaje .ave { fill:rgba(169,68,59,.24); stroke:#A9443B; stroke-width:2.3; }
+    .ciba-paisaje .jicotea { fill:rgba(57,118,83,.18); stroke:#397653; stroke-width:2; }
+    .ciba-paisaje .polimita { fill:rgba(255,252,245,.46); stroke:#A9443B; stroke-width:2.2; }
+    .ciba-paisaje .concha { fill:rgba(198,155,82,.12); stroke:#8D5742; stroke-width:2; }
+    .ciba-paisaje .cola-tocororo { fill:none; stroke:#A9443B; stroke-width:3; stroke-linecap:round; }
+    .ciba-paisaje .pluma { fill:rgba(40,123,154,.14); stroke:#287B9A; stroke-width:1.5; }
+    .ciba-paisaje .brillo { fill:rgba(255,255,255,.7); stroke:rgba(198,155,82,.8); stroke-width:1; }
+    .hero::after { z-index:1; }
+    .motivo-fondo {
+      backdrop-filter:blur(1px);
+      box-shadow:0 0 0 18px rgba(198,155,82,.08),0 0 0 39px rgba(40,123,154,.055),0 0 55px rgba(198,155,82,.12);
+    }
+    .hero-texto { text-shadow:0 1px 0 rgba(255,255,255,.28); }
+    .sobrelinea { text-shadow:0 0 18px rgba(198,155,82,.18); }
+
+    /* Más vidrio y luz, sin perder contraste de lectura */
+    .busqueda-interior,.area-card,.filosofia-frase,.personaje {
+      backdrop-filter:blur(14px);
+      -webkit-backdrop-filter:blur(14px);
+    }
+    .busqueda-interior {
+      background:rgba(255,252,245,.76);
+      border:1px solid rgba(255,255,255,.8);
+      box-shadow:0 18px 45px rgba(73,58,50,.08),inset 0 1px 0 rgba(255,255,255,.85);
+    }
+    .recursos-destacados {
+      background:
+        radial-gradient(ellipse at 15% 0%,rgba(57,118,83,.10),transparent 36%),
+        radial-gradient(ellipse at 90% 100%,rgba(40,123,154,.10),transparent 38%),
+        linear-gradient(180deg,#F8F2E7,#EEE4D4);
+    }
+    .recurso-destacado {
+      background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(248,242,231,.76));
+      border-color:rgba(255,255,255,.88);
+      backdrop-filter:blur(12px);
+      box-shadow:0 18px 38px rgba(73,58,50,.11),inset 0 1px 0 rgba(255,255,255,.9);
+    }
+    .recurso-visual {
+      background:linear-gradient(135deg,rgba(198,155,82,.20),rgba(57,118,83,.13),rgba(40,123,154,.12));
+    }
+
+    /* Carrusel verdaderamente infinito: dos grupos idénticos y movimiento constante */
+    .recursos-track { animation:recursos-desplazamiento 54s linear infinite !important; }
+    .recursos-carrusel:hover .recursos-track,
+    .recursos-carrusel:focus-within .recursos-track { animation-play-state:running !important; }
+    .recursos-carrusel:hover .recurso-destacado,
+    .recursos-carrusel:focus-within .recurso-destacado { animation-play-state:running !important; }
+    .recursos-track .recursos-grupo[aria-hidden="true"] a { pointer-events:none; }
+    .recursos-track .recursos-grupo[aria-hidden="true"] { user-select:none; }
+    @keyframes recursos-desplazamiento {
+      from { transform:translateX(0); }
+      to { transform:translateX(-50%); }
+    }
+    @media (max-width:760px) {
+      .recursos-track { animation-duration:64s !important; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      .recursos-track { animation:recursos-desplazamiento 90s linear infinite !important; }
+    }
+
+    /* Barra viva de las cuatro columnas: inferior y luego superior */
+    .ciba-columnas-barra {
+      position:fixed;
+      z-index:46;
+      left:50%;
+      bottom:14px;
+      width:min(920px,calc(100% - 28px));
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:7px;
+      padding:8px;
+      border:1px solid rgba(255,255,255,.60);
+      border-radius:22px;
+      background:rgba(73,58,50,.78);
+      box-shadow:0 16px 45px rgba(48,36,29,.24),inset 0 1px 0 rgba(255,255,255,.26);
+      backdrop-filter:blur(22px) saturate(1.35);
+      -webkit-backdrop-filter:blur(22px) saturate(1.35);
+      transform:translate(-50%,calc(100% + 28px));
+      opacity:0;
+      pointer-events:none;
+      transition:transform .55s cubic-bezier(.2,.8,.2,1),opacity .35s,top .4s,bottom .4s;
+    }
+    .ciba-columnas-barra.visible {
+      transform:translate(-50%,0);
+      opacity:1;
+      pointer-events:auto;
+    }
+    .ciba-columnas-barra.en-cima {
+      top:86px;
+      bottom:auto;
+      transform:translate(-50%,0);
+      border-radius:0 0 18px 18px;
+      width:min(920px,calc(100% - 28px));
+    }
+    .ciba-columna-acceso {
+      min-width:0;
+      min-height:48px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:8px 10px;
+      border:1px solid rgba(255,255,255,.24);
+      border-radius:14px;
+      color:#fff;
+      text-decoration:none;
+      font-size:clamp(10px,1.5vw,13px);
+      font-weight:750;
+      letter-spacing:.015em;
+      text-align:center;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.18);
+      transition:filter .2s,transform .2s,box-shadow .2s;
+    }
+    .ciba-columna-acceso:hover,.ciba-columna-acceso:focus-visible {
+      filter:brightness(1.14);
+      transform:translateY(-2px);
+      box-shadow:0 5px 18px rgba(0,0,0,.18),inset 0 1px 0 rgba(255,255,255,.25);
+    }
+    .ciba-columna-acceso:nth-child(1){background:rgba(57,118,83,.94)}
+    .ciba-columna-acceso:nth-child(2){background:rgba(40,123,154,.94)}
+    .ciba-columna-acceso:nth-child(3){background:rgba(140,103,31,.96)}
+    .ciba-columna-acceso:nth-child(4){background:rgba(169,68,59,.96)}
+    .ciba-columna-acceso .letra {font-family:Georgia,serif;font-size:19px;opacity:.92}
+    .ciba-columnas-barra.en-cima .ciba-columna-acceso {min-height:42px;border-radius:11px}
+    @media(max-width:600px) {
+      .ciba-columnas-barra {bottom:10px;gap:4px;padding:6px;border-radius:17px}
+      .ciba-columna-acceso {min-height:43px;gap:3px;padding:6px 3px;border-radius:11px;font-size:10px;flex-direction:column}
+      .ciba-columna-acceso .letra {font-size:15px;line-height:1}
+      .ciba-columnas-barra.en-cima {top:76px;width:calc(100% - 16px);gap:4px;padding:5px}
+      .ciba-columnas-barra.en-cima .ciba-columna-acceso {min-height:40px}
+      .ciba-paisaje {height:310px;bottom:0;opacity:.43}
+    }
+    @media(prefers-reduced-motion:reduce) {
+      .ciba-columnas-barra,.ciba-columna-acceso {transition:none}
+    }
+
   </style>
 </head>
 
@@ -1318,7 +1486,36 @@
           <path d="M-28 0 C-18 -18 -2 -18 10 -5 C20 7 10 20 -2 17 C-13 14 -12 2 -4 -2"/>
           <path d="M22 -18 Q42 -32 56 -15" opacity=".65"/>
         </g>
-      </svg>
+      
+        <g class="polimita" transform="translate(470 305)">
+          <path d="M-52 10 Q-49 -25 -20 -34 Q10 -45 34 -21 Q55 -1 38 20 Q19 42 -13 30 Q-35 22 -29 2 Q-24 -17 -4 -18 Q13 -19 19 -5 Q24 8 11 14 Q0 19 -6 9 Q-10 1 -2 -3"/>
+          <path d="M-53 12 Q-32 27 -5 31 Q22 35 42 18" opacity=".8"/>
+          <path d="M-43 -18 Q-20 -35 0 -34 M-25 20 Q-8 31 14 27" stroke="#287B9A" opacity=".8"/>
+          <circle cx="43" cy="9" r="3" fill="#493A32" stroke="none"/>
+          <path d="M48 1 Q57 -7 61 -2 M47 4 Q57 0 62 7" fill="none" stroke="#8D5742" stroke-width="1.5"/>
+        </g>
+        <g class="concha" transform="translate(690 315)">
+          <path d="M-35 17 Q-43 -19 -15 -39 Q13 -53 37 -27 Q54 -8 37 17Z"/>
+          <path d="M-34 17 Q-24 -11 -15 -39 M-18 22 Q-6 -8 -2 -46 M0 23 Q11 -4 14 -43 M18 20 Q31 -2 37 -27" fill="none" stroke="#8D5742" stroke-width="1.5"/>
+          <path d="M-36 17 Q0 29 38 17" fill="none" stroke="#8D5742" stroke-width="2"/>
+        </g>
+        <g class="pluma" transform="translate(1090 295)">
+          <path d="M0 0 Q35 -55 77 -44 Q64 -4 0 0Z"/>
+          <path d="M0 0 Q39 -28 77 -44 M29 -20 L43 -6 M48 -31 L58 -18" fill="none"/>
+        </g>
+        <g class="cola-tocororo" transform="translate(1010 235)">
+          <path d="M-4 8 Q22 26 42 47 Q55 62 75 67"/>
+          <path d="M9 17 Q38 34 57 55 M23 29 Q47 46 67 60"/>
+        </g>
+        <g class="brillo">
+          <circle cx="1188" cy="78" r="4"/><circle cx="1230" cy="155" r="2.5"/>
+          <circle cx="950" cy="95" r="3"/><circle cx="560" cy="120" r="3"/>
+          <path d="M1280 85v18 M1271 94h18 M790 78v14 M783 85h14" stroke="#C69B52" stroke-width="1.5"/>
+        </g>
+        <g class="palma" transform="translate(1380 18) scale(.78)">
+          <path d="M0 330 Q-5 205 5 100"/>
+          <path d="M5 100 Q-44 48 -91 70 Q-43 78 5 100 Q-15 31 -53 23 Q-20 54 5 100 Q27 31 63 24 Q31 60 5 100 Q69 65 103 87 Q51 88 5 100 Q73 121 78 157 Q43 127 5 100"/>
+        </g></svg>
       <div class="hero-contenido contenedor">
         <div class="hero-texto">
           <div class="sobrelinea">Una comunidad que crece</div>
@@ -1458,7 +1655,7 @@
             </div>
           </div>
         </div>
-        <p class="recursos-ayuda">Los recursos avanzan suavemente en un carrusel continuo. Puedes detenerlo al pasar el cursor o al enfocarlo; en pantallas táctiles, desliza para explorar.</p>
+        <p class="recursos-ayuda">Los recursos avanzan en un carrusel continuo. El recorrido se repite sin interrupciones; puedes abrir cualquier tarjeta para explorarla.</p>
       </div>
     </section>
 
@@ -1893,6 +2090,68 @@
       };
       actualizarMovimiento();
       movimientoReducido.addEventListener?.("change", actualizarMovimiento);
+    })();
+  </script>
+
+
+  <script>
+    (() => {
+      "use strict";
+      const iniciarCibaVisual = () => {
+        const track = document.querySelector(".recursos-track");
+        const grupo = track && track.querySelector(".recursos-grupo");
+        if (track && grupo && !track.querySelector('.recursos-grupo[aria-hidden="true"]')) {
+          const clon = grupo.cloneNode(true);
+          clon.setAttribute("aria-hidden", "true");
+          clon.setAttribute("inert", "");
+          clon.querySelectorAll("a").forEach(a => a.setAttribute("tabindex", "-1"));
+          track.appendChild(clon);
+        }
+
+        const columnas = document.querySelector(".columnas");
+        if (columnas && !document.querySelector(".ciba-columnas-barra")) {
+          const barra = document.createElement("nav");
+          barra.className = "ciba-columnas-barra";
+          barra.setAttribute("aria-label", "Acceso rápido a las cuatro columnas de CIBA");
+          const nombres = [
+            {letra:"C",nombre:"Crianza",color:"#397653"},
+            {letra:"I",nombre:"Internet",color:"#287B9A"},
+            {letra:"B",nombre:"Bienestar",color:"#8C671F"},
+            {letra:"A",nombre:"Acompañamiento",color:"#A9443B"}
+          ];
+          nombres.forEach((item, i) => {
+            const enlace = document.createElement("a");
+            enlace.className = "ciba-columna-acceso";
+            enlace.href = "#areas";
+            enlace.setAttribute("aria-label", "Ir a " + item.nombre);
+            enlace.innerHTML = '<span class="letra">' + item.letra + '</span><span>' + item.nombre + '</span>';
+            barra.appendChild(enlace);
+          });
+          document.body.appendChild(barra);
+
+          let pendiente = false;
+          const actualizarBarra = () => {
+            pendiente = false;
+            const rect = columnas.getBoundingClientRect();
+            barra.classList.add("visible");
+            barra.classList.toggle("en-cima", rect.bottom < 82);
+          };
+          const programar = () => {
+            if (!pendiente) {
+              pendiente = true;
+              window.requestAnimationFrame(actualizarBarra);
+            }
+          };
+          window.addEventListener("scroll", programar, {passive:true});
+          window.addEventListener("resize", programar);
+          actualizarBarra();
+        }
+      };
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", iniciarCibaVisual, {once:true});
+      } else {
+        iniciarCibaVisual();
+      }
     })();
   </script>
 
