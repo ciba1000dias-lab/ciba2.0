@@ -2,13 +2,19 @@
   "version": 1,
   "biblioteca": "CIBA · Crianza · Alimentación",
   "archivos": [
-    "assets/data/alimentos/frutas.json"
+    "assets/data/alimentos/frutas.json",
+    "assets/data/alimentos/viandas.json"
   ],
   "categorias": [
     {
       "nombre": "Frutas",
       "archivo": "assets/data/alimentos/frutas.json",
       "cantidad": 25
+    },
+    {
+      "nombre": "Viandas",
+      "archivo": "assets/data/alimentos/viandas.json",
+      "cantidad": 10
     }
   ]
 }
