@@ -1,16 +1,16 @@
-# Catálogo piloto del recetario CIBA
+# Catálogo ampliado del recetario CIBA
 
 Archivo de datos: `recetas.json`.
 
 ## Estado actual
 
-El catálogo operativo contiene **15 fichas completas** de preparaciones de cocina doméstica cubana. Las 15 fueron aprobadas expresamente por el especialista responsable del recetario en la revisión del 9 de noviembre de 2026 y tienen:
+El catálogo contiene **27 fichas completas y operativas**: las 15 preparaciones iniciales, diez preparaciones frutales aceptadas sin cambios (51–60) y las dos sustituciones aceptadas (61 y 66). Todas tienen:
 
 - `publicable: true`
 - `estado: aprobada`
 - `revision.estado: aprobada`
 
-Esta habilitación corresponde a las 15 fichas estructuradas que existen actualmente en `recetas.json`. Las otras preparaciones aceptadas en la planificación conversacional todavía no están incorporadas como fichas completas y no aparecerán en resultados hasta que tengan ingredientes vinculados, cantidades, preparación, adaptación por edad, alertas, fuentes y registro de aprobación. El catálogo permanece abierto a ampliaciones.
+La ampliación se realiza por etapas. Las preparaciones restantes de la lista 1–150 todavía no se incorporan como fichas completas; no deben anunciarse como disponibles hasta completar sus ingredientes vinculados, cantidades, preparación, adaptación por edad, alertas, fuentes y registro de aprobación.
 
 ## Motor de selección
 
