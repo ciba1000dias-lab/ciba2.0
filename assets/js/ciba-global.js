@@ -194,6 +194,38 @@
     return cabecera;
   }
 
+  function crearAccesoCabecera(cabecera) {
+    const acceso = enlace(
+      urlPublica('plataforma/mi-cuenta/acceso/'),
+      'INICIAR SESIÓN',
+      'ciba-global-login'
+    );
+    acceso.setAttribute('aria-label', 'Iniciar sesión en CIBA');
+    acceso.dataset.cibaLogin = 'true';
+    cabecera.appendChild(acceso);
+
+    // Cuando la autenticación esté configurada, ocultar el acceso a quien ya inició sesión.
+    (async () => {
+      try {
+        const config = await import(urlPublica('assets/js/ciba-auth-config.js'));
+        if (!config.SUPABASE_URL || !config.SUPABASE_ANON_KEY) return;
+        const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm');
+        const auth = createClient(config.SUPABASE_URL, config.SUPABASE_ANON_KEY, {
+          auth: { autoRefreshToken: true, persistSession: true, detectSessionInUrl: true }
+        });
+        const { data } = await auth.auth.getSession();
+        acceso.hidden = Boolean(data.session);
+        auth.auth.onAuthStateChange((_event, session) => {
+          acceso.hidden = Boolean(session);
+        });
+      } catch (error) {
+        console.warn('CIBA: no se pudo comprobar la sesión para la cabecera.', error);
+      }
+    })();
+
+    return acceso;
+  }
+
   function activarTransicionColumnas() {
     const colores = { C:'#397653', I:'#287B9A', B:'#8C671F', A:'#A9443B' };
     document.addEventListener('click', evento => {
@@ -219,6 +251,7 @@
 
     const cabeceraGlobal = crearCabeceraGlobal();
     const contenedor = elemento('div', 'ciba-global-menu');
+    crearAccesoCabecera(cabeceraGlobal || document.body);
 
     const boton = elemento('button', 'ciba-global-menu-boton');
     boton.type = 'button';
