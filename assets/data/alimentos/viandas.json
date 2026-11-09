@@ -1,0 +1,1212 @@
+{
+  "version": 1,
+  "biblioteca": "CIBA · Crianza · Alimentación",
+  "categoria": "Viandas",
+  "alimentos": [
+    {
+      "id": "boniato",
+      "nombre": "Boniato",
+      "nombres_alternativos": [
+        "batata",
+        "camote",
+        "Ipomoea batatas"
+      ],
+      "categoria": "Viandas",
+      "resumen": "Vianda de pulpa dulce, rica en almidón y fuente de fibra y carotenoides, según la variedad.",
+      "descripcion": "El boniato es una raíz tuberosa de sabor dulce. Aporta principalmente carbohidratos, además de fibra y pigmentos carotenoides; su composición cambia según la variedad y el color de la pulpa.",
+      "propiedades": [
+        "Aporta almidón y energía.",
+        "Las variedades anaranjadas aportan betacaroteno, precursor de vitamina A.",
+        "Contiene fibra alimentaria."
+      ],
+      "beneficios": [
+        "Su pulpa cocida queda blanda y puede triturarse con facilidad.",
+        "Permite ofrecer sabores y colores variados sin añadir azúcar."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente y aplastar sin piel hasta una crema espesa; no añadir sal."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer majado con grumos blandos o tiras muy suaves, sin partes duras ni piel suelta."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en trozos pequeños y blandos, dentro de una comida variada."
+        }
+      ],
+      "preparacion_segura": "Lavar antes de pelar; cocinar hasta que esté completamente tierno. Retirar partes duras y adaptar la textura. El bebé debe comer sentado y bajo supervisión.",
+      "recetas": [
+        {
+          "nombre": "Boniato majado",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Boniato bien cocido y agua potable o leche habitual del bebé",
+          "preparacion": "Aplastar hasta lograr una textura espesa y homogénea."
+        },
+        {
+          "nombre": "Boniato con pollo desmenuzado",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Boniato cocido y pollo completamente cocido",
+          "preparacion": "Mezclar el boniato majado con pollo muy fino y húmedo, sin huesos."
+        },
+        {
+          "nombre": "Boniato con calabaza",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Boniato y calabaza cocidos",
+          "preparacion": "Aplastar juntos hasta obtener la textura apropiada."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer trozos duros, secos o fritos.",
+        "Evitar añadir sal, azúcar o miel; nunca dar miel antes de los 12 meses.",
+        "Retirar partes dañadas, verdes o con moho."
+      ],
+      "conservacion": "Guardar cocido en recipiente limpio y tapado, refrigerar pronto y utilizar en pocos días. Desechar restos que hayan estado en contacto con la saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Boniatos.jpg?width=1280",
+        "alt": "Boniatos enteros, de piel marrón y pulpa anaranjada, fotografiados juntos.",
+        "autor": "Juan Emilio Prades Bel",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Boniatos.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "boniato cubano",
+        "batata para bebé",
+        "puré de boniato",
+        "boniato hervido",
+        "boniato al vapor",
+        "boniato para niño",
+        "boniato",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer boniato",
+        "cómo preparar boniato para bebés",
+        "desde cuándo dar boniato",
+        "recetas con boniato"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para la infancia."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientación general sobre alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y señales de preparación."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional de los alimentos."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "yuca",
+      "nombre": "Yuca",
+      "nombres_alternativos": [
+        "mandioca",
+        "cassava",
+        "Manihot esculenta"
+      ],
+      "categoria": "Viandas",
+      "resumen": "Raíz rica en almidón que debe pelarse y cocinarse completamente antes de consumir.",
+      "descripcion": "La yuca es una raíz tropical rica en carbohidratos. Contiene poca grasa y cantidades variables de fibra y micronutrientes. Algunas variedades contienen compuestos cianogénicos, por lo que nunca debe probarse cruda ni prepararse sin conocer y respetar el procesamiento seguro.",
+      "propiedades": [
+        "Aporta almidón y energía.",
+        "Su contenido de fibra depende de la variedad y preparación.",
+        "Aporta pequeñas cantidades de vitamina C y minerales."
+      ],
+      "beneficios": [
+        "Cocida hasta quedar muy blanda puede incorporarse a purés y platos familiares.",
+        "Aporta variedad de textura y sabor a las comidas."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Usar yuca dulce de procedencia conocida, pelar completamente, retirar la vena central si está fibrosa y hervir hasta que esté muy blanda; hacer puré."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer aplastada o en trozos muy blandos, sin fibras duras ni partes centrales fibrosas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en pequeñas porciones blandas, siempre bien cocida y sin fibras duras."
+        }
+      ],
+      "preparacion_segura": "No consumir cruda. Pelar y cocinar completamente; desechar el agua de cocción. No usar yuca amarga ni raíces de procedencia desconocida. Sentar al niño y supervisar.",
+      "recetas": [
+        {
+          "nombre": "Puré de yuca",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Yuca dulce pelada y agua potable",
+          "preparacion": "Hervir hasta que se deshaga, retirar la vena central y aplastar muy bien."
+        },
+        {
+          "nombre": "Yuca con calabaza",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Yuca y calabaza bien cocidas",
+          "preparacion": "Retirar fibras y aplastar hasta una mezcla húmeda y suave."
+        },
+        {
+          "nombre": "Yuca con pescado",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Yuca cocida y pescado sin espinas completamente cocido",
+          "preparacion": "Aplastar la yuca y mezclar con pescado desmenuzado minuciosamente."
+        }
+      ],
+      "precauciones": [
+        "La yuca cruda o insuficientemente procesada puede causar intoxicación por compuestos cianogénicos.",
+        "No ofrecer yuca amarga ni raíces de origen incierto; el simple remojo no sustituye el pelado y cocción adecuados.",
+        "Revisar cuidadosamente que no queden fibras duras ni espinas si se combina con pescado."
+      ],
+      "conservacion": "Conservar la raíz fresca en lugar fresco y ventilado por poco tiempo. La yuca pelada o cocida debe refrigerarse pronto en recipiente tapado. No utilizar si presenta deterioro.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ra%C3%ADz%20yuca.jpg?width=1280",
+        "alt": "Varias raíces de yuca frescas, de forma alargada y piel marrón.",
+        "autor": "Jose Jr romero 2004",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Ra%C3%ADz%20yuca.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "yuca para bebé",
+        "mandioca",
+        "cassava",
+        "yuca hervida",
+        "puré de yuca",
+        "yuca amarga",
+        "cómo cocinar yuca",
+        "yuca",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer yuca",
+        "cómo preparar yuca para bebés",
+        "desde cuándo dar yuca",
+        "recetas con yuca"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para la infancia."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientación general sobre alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y señales de preparación."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional de los alimentos."
+        },
+        {
+          "institucion": "USDA NRCS",
+          "titulo": "Cassava Plant Guide",
+          "url": "https://plants.usda.gov/DocumentLibrary/plantguide/pdf/pg_maes.pdf",
+          "utilidad": "Describe los compuestos cianogénicos de la yuca amarga y la necesidad de procesamiento y cocción adecuados."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "malanga",
+      "nombre": "Malanga",
+      "nombres_alternativos": [
+        "yautía",
+        "ocumo",
+        "Xanthosoma sagittifolium"
+      ],
+      "categoria": "Viandas",
+      "resumen": "Tubérculo feculento de textura cremosa al cocinarse; se consume siempre bien cocido.",
+      "descripcion": "En Cuba, el nombre malanga suele referirse a especies del género Xanthosoma. Es una vianda rica en almidón; aporta energía y pequeñas cantidades de fibra y micronutrientes. No debe confundirse con la malanga isleña, que pertenece a Colocasia.",
+      "propiedades": [
+        "Predominan los carbohidratos complejos en forma de almidón.",
+        "Aporta algo de fibra y minerales.",
+        "La composición varía según especie y preparación."
+      ],
+      "beneficios": [
+        "Al cocinarse completamente desarrolla una textura suave, útil para purés.",
+        "Puede combinarse con otros alimentos para diversificar la comida."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Pelar y hervir hasta que esté muy blanda; aplastar sin grumos duros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer majada con grumos blandos o trozos muy suaves adecuados a la habilidad del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Incorporar en sopas espesas, purés o trozos blandos."
+        }
+      ],
+      "preparacion_segura": "Pelar con utensilios limpios y cocinar completamente; nunca ofrecer cruda. Evitar contaminación cruzada y comprobar que no queden trozos duros.",
+      "recetas": [
+        {
+          "nombre": "Puré de malanga",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Malanga pelada y agua potable",
+          "preparacion": "Hervir hasta que esté muy blanda y aplastar."
+        },
+        {
+          "nombre": "Malanga con zanahoria",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Malanga y zanahoria cocidas",
+          "preparacion": "Aplastar o triturar hasta una textura espesa."
+        },
+        {
+          "nombre": "Crema de malanga y pollo",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Malanga y pollo completamente cocidos",
+          "preparacion": "Triturar la malanga y mezclar con pollo muy fino y húmedo."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer cruda ni poco cocida.",
+        "La irritación en boca y garganta puede ocurrir con tubérculos crudos o insuficientemente cocidos; cocinar hasta ablandar por completo.",
+        "Evitar preparaciones fritas, muy saladas o secas para bebés."
+      ],
+      "conservacion": "Mantener el tubérculo entero en un sitio fresco, seco y ventilado. Una vez pelado o cocido, refrigerar pronto en recipiente limpio y tapado.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Root%20vegetables%20%22Malanga%22%20at%20Cuban%20street%20market.jpg?width=1280",
+        "alt": "Tubérculos identificados como malanga en un mercado callejero cubano.",
+        "autor": "sarang",
+        "licencia": "Dominio público",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Root%20vegetables%20%22Malanga%22%20at%20Cuban%20street%20market.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "malanga para bebé",
+        "malanga blanca",
+        "yautía",
+        "ocumo",
+        "puré de malanga",
+        "malanga hervida",
+        "malanga",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer malanga",
+        "cómo preparar malanga para bebés",
+        "desde cuándo dar malanga",
+        "recetas con malanga"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para la infancia."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientación general sobre alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y señales de preparación."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional de los alimentos."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "malanga-islena",
+      "nombre": "Malanga isleña",
+      "nombres_alternativos": [
+        "malanga colocasia",
+        "taro",
+        "Colocasia esculenta"
+      ],
+      "categoria": "Viandas",
+      "resumen": "Tubérculo de pulpa clara y almidonada, diferente de la malanga del género Xanthosoma.",
+      "descripcion": "La malanga isleña corresponde a Colocasia esculenta. Es una vianda rica en almidón que debe cocinarse completamente. Sus tejidos contienen oxalatos de calcio que pueden irritar la boca y la garganta cuando está cruda o poco cocida.",
+      "propiedades": [
+        "Aporta principalmente carbohidratos en forma de almidón.",
+        "Contiene fibra y minerales en cantidades variables.",
+        "La composición cambia con la variedad y el método de cocción."
+      ],
+      "beneficios": [
+        "Bien cocida ofrece una textura blanda que puede triturarse.",
+        "Amplía la variedad de viandas en la alimentación familiar."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Pelar y hervir completamente; triturar hasta una crema suave."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer aplastada con grumos muy blandos si el bebé maneja esa textura."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir bien cocida, en trozos pequeños y blandos."
+        }
+      ],
+      "preparacion_segura": "No probar cruda ni poco cocida. Pelar con cuidado y hervir hasta que esté completamente tierna; descartar si produce picor o irritación.",
+      "recetas": [
+        {
+          "nombre": "Puré de malanga isleña",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Malanga isleña pelada y agua potable",
+          "preparacion": "Hervir completamente y aplastar hasta una textura suave."
+        },
+        {
+          "nombre": "Malanga isleña con boniato",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Malanga isleña y boniato cocidos",
+          "preparacion": "Aplastar ambos ingredientes hasta lograr una mezcla húmeda."
+        },
+        {
+          "nombre": "Crema de vianda",
+          "etapa": "Cuando los ingredientes se hayan introducido por separado",
+          "ingredientes": "Malanga isleña, calabaza y agua potable",
+          "preparacion": "Cocinar por completo y triturar hasta una crema espesa."
+        }
+      ],
+      "precauciones": [
+        "Cruda o poco cocida puede causar irritación por cristales de oxalato de calcio.",
+        "No ofrecer hojas ni otras partes de la planta como sustituto del tubérculo sin preparación específica.",
+        "Si aparece irritación oral tras comerla, suspender y consultar."
+      ],
+      "conservacion": "Refrigerar pronto una vez cocida, en recipiente limpio y tapado. Desechar porciones que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Taro%20Root%2C%20Eddoe%20or%20Colocasia%20Esculenta.jpg?width=1280",
+        "alt": "Tubérculos de Colocasia esculenta, conocidos como taro o malanga isleña.",
+        "autor": "SarKaLay",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Taro%20Root%2C%20Eddoe%20or%20Colocasia%20Esculenta.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "malanga isleña bebé",
+        "malanga colocasia",
+        "taro",
+        "Colocasia esculenta",
+        "puré de malanga isleña",
+        "malanga isleña",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer malanga isleña",
+        "cómo preparar malanga isleña para bebés",
+        "desde cuándo dar malanga isleña",
+        "recetas con malanga isleña"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para la infancia."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientación general sobre alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y señales de preparación."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional de los alimentos."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "name",
+      "nombre": "Ñame",
+      "nombres_alternativos": [
+        "Dioscorea",
+        "mapuey",
+        "yam"
+      ],
+      "categoria": "Viandas",
+      "resumen": "Tubérculo feculento que aporta energía y se consume después de cocinarse completamente.",
+      "descripcion": "El ñame comprende varias especies del género Dioscorea. Su composición varía entre especies y cultivares, pero suele aportar principalmente almidón, además de cantidades variables de fibra y micronutrientes.",
+      "propiedades": [
+        "Aporta carbohidratos complejos y energía.",
+        "Puede aportar fibra, potasio y vitamina C en cantidades variables.",
+        "La composición depende de la especie y la variedad."
+      ],
+      "beneficios": [
+        "Cocido queda blando y se puede aplastar para preparar purés.",
+        "Ayuda a diversificar las viandas y las preparaciones familiares."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Pelar y hervir hasta que esté muy blando; aplastar sin partes fibrosas."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer majado o en trozos blandos que se deshagan fácilmente."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en cubos pequeños y blandos o incorporado a platos familiares."
+        }
+      ],
+      "preparacion_segura": "Identificar correctamente la especie comestible; pelar y cocinar por completo. No consumir especies silvestres desconocidas.",
+      "recetas": [
+        {
+          "nombre": "Ñame majado",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Ñame comestible pelado y agua potable",
+          "preparacion": "Hervir hasta ablandar completamente y aplastar."
+        },
+        {
+          "nombre": "Ñame con zanahoria",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Ñame y zanahoria cocidos",
+          "preparacion": "Aplastar hasta obtener una mezcla suave."
+        },
+        {
+          "nombre": "Ñame con pollo",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Ñame cocido y pollo bien cocido",
+          "preparacion": "Mezclar el ñame majado con pollo finamente desmenuzado y húmedo."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer crudo ni usar tubérculos silvestres de especie desconocida.",
+        "Evitar trozos secos, duros o fritos.",
+        "Ajustar la textura y supervisar mientras come."
+      ],
+      "conservacion": "Guardar entero en lugar fresco, seco y ventilado. Refrigerar pronto una vez pelado o cocido.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuber%20of%20yam.jpg?width=1280",
+        "alt": "Tubérculo de ñame entero, de piel marrón rugosa.",
+        "autor": "Iyinolamercy",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Tuber%20of%20yam.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "ñame cubano",
+        "mapuey",
+        "yam",
+        "ñame para bebé",
+        "puré de ñame",
+        "vianda ñame",
+        "ñame",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer ñame",
+        "cómo preparar ñame para bebés",
+        "desde cuándo dar ñame",
+        "recetas con ñame"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para la infancia."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientación general sobre alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y señales de preparación."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional de los alimentos."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "papa",
+      "nombre": "Papa",
+      "nombres_alternativos": [
+        "patata",
+        "Solanum tuberosum"
+      ],
+      "categoria": "Viandas",
+      "resumen": "Tubérculo rico en almidón; aporta potasio y vitamina C en cantidades variables.",
+      "descripcion": "La papa es un tubérculo rico en almidón. Aporta energía y contiene potasio, vitamina C y otros micronutrientes. La composición depende de la variedad y de si se consume con piel; para bebés, la textura debe ser blanda y sin partes verdes.",
+      "propiedades": [
+        "Aporta almidón y energía.",
+        "Contiene potasio y vitamina C.",
+        "Aporta algo de fibra, especialmente si se consume con piel."
+      ],
+      "beneficios": [
+        "Su pulpa cocida se aplasta fácilmente.",
+        "Es versátil y puede combinarse con vegetales, legumbres o proteínas."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar hasta que esté completamente blanda y aplastar; retirar piel si queda dura."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer majada con grumos blandos o trozos suaves."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en trozos pequeños y blandos o en preparaciones familiares con poca sal."
+        }
+      ],
+      "preparacion_segura": "Retirar brotes y zonas verdes; no usar papas amargas, muy germinadas o deterioradas. Cocinar completamente.",
+      "recetas": [
+        {
+          "nombre": "Puré de papa",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Papa pelada y agua potable",
+          "preparacion": "Hervir hasta que esté muy blanda y aplastar."
+        },
+        {
+          "nombre": "Papa con calabaza",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Papa y calabaza cocidas",
+          "preparacion": "Aplastar hasta obtener una mezcla húmeda."
+        },
+        {
+          "nombre": "Papa con huevo bien cocido",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Papa cocida y huevo completamente cocido",
+          "preparacion": "Aplastar y mezclar, sin añadir sal."
+        }
+      ],
+      "precauciones": [
+        "Las zonas verdes y los brotes pueden contener niveles elevados de glicoalcaloides; retirarlos ampliamente o desechar la papa si está muy verde o amarga.",
+        "Evitar papas fritas, chips y preparaciones con mucha sal.",
+        "Adaptar siempre el tamaño y la textura."
+      ],
+      "conservacion": "Guardar en lugar fresco, oscuro, seco y ventilado; no refrigerar cruda si puede evitarse. Cocida, refrigerar pronto en recipiente tapado.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Potato%20tubers%20in%20pail.jpg?width=1280",
+        "alt": "Varias papas enteras con restos de tierra dentro de un recipiente.",
+        "autor": "Ruslan V. Albitsky (pauk)",
+        "licencia": "CC BY-SA 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Potato%20tubers%20in%20pail.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "papa para bebé",
+        "patata",
+        "puré de papa",
+        "papas hervidas",
+        "papa verde",
+        "cómo preparar papa",
+        "papa",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer papa",
+        "cómo preparar papa para bebés",
+        "desde cuándo dar papa",
+        "recetas con papa"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para la infancia."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientación general sobre alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y señales de preparación."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional de los alimentos."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "platano-vianda",
+      "nombre": "Plátano vianda",
+      "nombres_alternativos": [
+        "plátano macho",
+        "plátano verde",
+        "plantain",
+        "Musa"
+      ],
+      "categoria": "Viandas",
+      "resumen": "Plátano de pulpa firme que se consume cocido; aporta almidón y energía.",
+      "descripcion": "El plátano vianda se utiliza verde o maduro en preparaciones cocidas. Cuando está verde contiene más almidón resistente; al madurar, parte del almidón se transforma en azúcares. Aporta potasio y fibra en cantidades variables.",
+      "propiedades": [
+        "Aporta carbohidratos y energía.",
+        "Contiene potasio y algo de fibra.",
+        "La maduración modifica el tipo de carbohidrato y el sabor."
+      ],
+      "beneficios": [
+        "Puede ofrecerse cocido y aplastado en una textura adecuada.",
+        "Permite preparaciones familiares variadas sin necesidad de freír."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Pelar, hervir y aplastar hasta que no queden fibras ni grumos duros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer majado con grumos blandos o tiras muy suaves."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir cocido en trozos pequeños y blandos, no frito ni seco."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente y retirar fibras o partes duras; sentar al bebé y supervisar.",
+      "recetas": [
+        {
+          "nombre": "Plátano vianda majado",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Plátano vianda pelado y agua potable",
+          "preparacion": "Hervir hasta que esté blando y aplastar."
+        },
+        {
+          "nombre": "Plátano con boniato",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Plátano y boniato cocidos",
+          "preparacion": "Aplastar juntos hasta una textura húmeda."
+        },
+        {
+          "nombre": "Tortitas blandas al vapor",
+          "etapa": "Cuando el bebé maneje texturas más espesas",
+          "ingredientes": "Plátano vianda cocido y aplastado",
+          "preparacion": "Formar pequeñas porciones blandas y cocinar al vapor; no dorar hasta quedar crujientes."
+        }
+      ],
+      "precauciones": [
+        "Evitar tostones, chips y frituras para bebés pequeños por su textura dura y contenido de grasa y sal.",
+        "No ofrecer rodajas gruesas, secas o poco cocidas.",
+        "No añadir sal ni azúcar."
+      ],
+      "conservacion": "Mantener entero en lugar fresco y ventilado; la maduración continúa a temperatura ambiente. Una vez cocido, refrigerar pronto y tapado.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plantains.jpg?width=1280",
+        "alt": "Plátanos de cocinar exhibidos en una tienda de alimentos.",
+        "autor": "Daegis",
+        "licencia": "CC BY-SA 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Plantains.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "plátano macho",
+        "plátano verde",
+        "plátano vianda para bebé",
+        "tostones",
+        "puré de plátano verde",
+        "plátano hervido",
+        "plátano vianda",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer plátano vianda",
+        "cómo preparar plátano vianda para bebés",
+        "desde cuándo dar plátano vianda",
+        "recetas con plátano vianda"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para la infancia."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientación general sobre alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y señales de preparación."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional de los alimentos."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "platano-burro",
+      "nombre": "Plátano burro",
+      "nombres_alternativos": [
+        "burro",
+        "Musa ABB",
+        "bluggoe"
+      ],
+      "categoria": "Viandas",
+      "resumen": "Tipo de plátano de cocinar, de pulpa firme y uso frecuente en guisos y preparaciones hervidas.",
+      "descripcion": "El plátano burro es un tipo de plátano de cocinar, distinto del plátano fruta. Su aporte principal es almidón y energía, con potasio y fibra en cantidades variables. La textura y dulzor cambian con la maduración.",
+      "propiedades": [
+        "Aporta almidón y energía.",
+        "Contiene potasio y fibra en cantidades variables.",
+        "Su composición cambia durante la maduración."
+      ],
+      "beneficios": [
+        "Cocido puede integrarse en purés y platos familiares.",
+        "Ofrece otra variedad de plátano de cocinar para diversificar la dieta."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Pelar y cocinar hasta que la pulpa esté muy blanda; aplastar."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer majado con grumos blandos o trozos suaves adecuados a sus habilidades."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en trozos pequeños y blandos, siempre cocido."
+        }
+      ],
+      "preparacion_segura": "No ofrecer crudo ni en rodajas duras; cocinar completamente y supervisar.",
+      "recetas": [
+        {
+          "nombre": "Plátano burro hervido",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Plátano burro pelado y agua potable",
+          "preparacion": "Hervir hasta ablandar y aplastar."
+        },
+        {
+          "nombre": "Plátano burro con calabaza",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Plátano burro y calabaza cocidos",
+          "preparacion": "Aplastar hasta una consistencia húmeda."
+        },
+        {
+          "nombre": "Majado de plátano burro y pollo",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Plátano burro y pollo bien cocidos",
+          "preparacion": "Mezclar el plátano majado con pollo muy fino y húmedo."
+        }
+      ],
+      "precauciones": [
+        "No confundirlo con el plátano fruta ni ofrecerlo sin cocinar.",
+        "Evitar frituras, trozos secos o grandes y exceso de sal.",
+        "Supervisar siempre la comida."
+      ],
+      "conservacion": "Conservar entero en lugar ventilado y consumir según su maduración. Cocido, refrigerar pronto en recipiente tapado.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Plantain%20Plantain.jpg?width=1280",
+        "alt": "Plátanos de cocinar enteros, de piel verde amarillenta.",
+        "autor": "Menyea",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Plantain%20Plantain.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "plátano burro bebé",
+        "burro cubano",
+        "plátano para cocinar",
+        "plátano hervido",
+        "puré de plátano burro",
+        "plátano burro",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer plátano burro",
+        "cómo preparar plátano burro para bebés",
+        "desde cuándo dar plátano burro",
+        "recetas con plátano burro"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para la infancia."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientación general sobre alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y señales de preparación."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional de los alimentos."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "calabaza",
+      "nombre": "Calabaza",
+      "nombres_alternativos": [
+        "Cucurbita",
+        "auyama",
+        "zapallo"
+      ],
+      "categoria": "Viandas",
+      "resumen": "Hortaliza de pulpa suave que en la cocina cubana también se agrupa entre las viandas.",
+      "descripcion": "La calabaza aporta agua, fibra y carotenoides, especialmente en variedades de pulpa anaranjada. Su contenido energético suele ser menor que el de raíces y tubérculos ricos en almidón. En Cuba se utiliza tanto en sopas como en purés y guisos.",
+      "propiedades": [
+        "Aporta agua y fibra.",
+        "Las variedades anaranjadas contienen carotenoides.",
+        "Aporta vitaminas y minerales en cantidades variables."
+      ],
+      "beneficios": [
+        "Su pulpa cocida se vuelve blanda y fácil de aplastar.",
+        "Añade color y variedad a las comidas sin necesidad de azúcar."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Retirar cáscara y semillas; cocinar hasta ablandar y aplastar."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer majada o en trozos muy blandos, sin semillas ni cáscara dura."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en cubos pequeños blandos o en sopas espesas."
+        }
+      ],
+      "preparacion_segura": "Retirar cáscara, semillas y partes duras. Cocinar completamente y adaptar textura.",
+      "recetas": [
+        {
+          "nombre": "Puré de calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Calabaza sin cáscara ni semillas",
+          "preparacion": "Cocinar al vapor o hervir y aplastar."
+        },
+        {
+          "nombre": "Calabaza con malanga",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Calabaza y malanga cocidas",
+          "preparacion": "Aplastar hasta una crema espesa."
+        },
+        {
+          "nombre": "Crema de calabaza y pollo",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Calabaza y pollo completamente cocidos",
+          "preparacion": "Triturar la calabaza y mezclar con pollo muy fino y húmedo."
+        }
+      ],
+      "precauciones": [
+        "Retirar siempre semillas y cáscara dura.",
+        "Evitar sopas muy saladas, cubitos concentrados y azúcar añadida.",
+        "No dejar trozos grandes o duros."
+      ],
+      "conservacion": "Entera, conservar en lugar fresco, seco y ventilado. Una vez cortada, cubrir y refrigerar; cocinar y refrigerar pronto las porciones preparadas.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/CALABAZA.jpg?width=1280",
+        "alt": "Calabaza entera fotografiada en un huerto.",
+        "autor": "PEPE GADEIRAS",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:CALABAZA.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "calabaza para bebé",
+        "auyama",
+        "zapallo",
+        "puré de calabaza",
+        "crema de calabaza",
+        "calabaza hervida",
+        "calabaza",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer calabaza",
+        "cómo preparar calabaza para bebés",
+        "desde cuándo dar calabaza",
+        "recetas con calabaza"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para la infancia."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientación general sobre alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y señales de preparación."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional de los alimentos."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "chayote",
+      "nombre": "Chayote",
+      "nombres_alternativos": [
+        "tayota",
+        "güisquil",
+        "Sechium edule"
+      ],
+      "categoria": "Viandas",
+      "resumen": "Fruto de textura acuosa y suave que en algunas clasificaciones culinarias cubanas se incluye entre las viandas.",
+      "descripcion": "El chayote es un fruto comestible de bajo aporte energético y alto contenido de agua. Aporta fibra y pequeñas cantidades de vitaminas y minerales. Aunque botánicamente es un fruto, puede utilizarse como hortaliza o vianda en guisos y sopas.",
+      "propiedades": [
+        "Contiene mucha agua y pocas calorías.",
+        "Aporta fibra y pequeñas cantidades de vitamina C y folato.",
+        "Su sabor suave permite combinarlo con otros alimentos."
+      ],
+      "beneficios": [
+        "Cocido queda blando y se integra con facilidad en purés y guisos.",
+        "Ayuda a variar las texturas y los vegetales ofrecidos."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Pelar si la piel es dura; retirar semilla y cocinar hasta ablandar. Aplastar."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer majado o en trozos muy blandos, sin semilla dura."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en trozos pequeños cocidos, adaptados a la masticación."
+        }
+      ],
+      "preparacion_segura": "Lavar, retirar semilla y cocinar hasta que esté completamente blando; evitar trozos firmes.",
+      "recetas": [
+        {
+          "nombre": "Chayote majado",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Chayote lavado, pelado y sin semilla",
+          "preparacion": "Hervir o cocinar al vapor hasta ablandar y aplastar."
+        },
+        {
+          "nombre": "Chayote con boniato",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Chayote y boniato cocidos",
+          "preparacion": "Aplastar hasta obtener una mezcla húmeda."
+        },
+        {
+          "nombre": "Sopa espesa de chayote",
+          "etapa": "Cuando los ingredientes se hayan introducido por separado",
+          "ingredientes": "Chayote, zanahoria y pollo completamente cocidos",
+          "preparacion": "Cocinar y triturar parcialmente para una textura espesa, sin trozos duros."
+        }
+      ],
+      "precauciones": [
+        "Retirar la semilla y cualquier parte dura.",
+        "Evitar ofrecerlo crudo o en cubos firmes a bebés pequeños.",
+        "No añadir sal en exceso."
+      ],
+      "conservacion": "Refrigerar entero o cortado en recipiente limpio; una vez cocido, enfriar y refrigerar pronto.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Variedad%20de%20chayote.JPG?width=1280",
+        "alt": "Varios chayotes de diferentes formas y tamaños.",
+        "autor": "Katie Abrams",
+        "licencia": "CC BY 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Variedad%20de%20chayote.JPG"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "chayote para bebé",
+        "tayota",
+        "güisquil",
+        "Sechium edule",
+        "puré de chayote",
+        "sopa de chayote",
+        "chayote",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer chayote",
+        "cómo preparar chayote para bebés",
+        "desde cuándo dar chayote",
+        "recetas con chayote"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para la infancia."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientación general sobre alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y señales de preparación."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional de los alimentos."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    }
+  ]
+}
