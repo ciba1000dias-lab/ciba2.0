@@ -3321,6 +3321,32 @@
         "Brassica oleracea var. italica"
       ],
       "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "aceite-vegetal",
+      "nombre": "Aceite vegetal",
+      "categoria": "Grasas y aceites",
+      "resumen": "Grasa culinaria que se utiliza en pequeña cantidad y se incorpora a la preparación ya cocinada.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "aceite-vegetal",
+        "aceite vegetal",
+        "aceite para cocinar"
+      ],
+      "ruta_publica": null
+    },
+    {
+      "id": "aceite-oliva",
+      "nombre": "Aceite de oliva",
+      "categoria": "Grasas y aceites",
+      "resumen": "Grasa culinaria que se utiliza en pequeña cantidad y se incorpora a la preparación ya cocinada.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "aceite-oliva",
+        "aceite de oliva",
+        "aceite para cocinar"
+      ],
+      "ruta_publica": null
     }
   ]
 }
