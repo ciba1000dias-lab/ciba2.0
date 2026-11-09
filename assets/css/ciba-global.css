@@ -473,3 +473,57 @@ animation: none;
 transition: none;
 }
 }
+
+
+/* CIBA · menú global cacao y vidrio: sincronizado con la portada */
+:root {
+  --ciba-noche:#493A32;
+  --ciba-noche-2:#665044;
+  --ciba-verde:#397653;
+  --ciba-verde-claro:#DCE9D8;
+  --ciba-tierra:#8D5742;
+  --ciba-terracota:#B97858;
+  --ciba-oro:#C69B52;
+  --ciba-marfil:#F6F0E4;
+  --ciba-papel:#FFFCF5;
+  --ciba-tinta:#493A32;
+}
+.ciba-global-menu-boton,
+.ciba-global-panel,
+.ciba-global-etiqueta,
+.ciba-global-panel-busqueda {
+  background:rgba(73,58,50,.84);
+  -webkit-backdrop-filter:blur(22px) saturate(1.25);
+  backdrop-filter:blur(22px) saturate(1.25);
+  border-color:rgba(230,201,142,.48);
+  box-shadow:0 14px 40px rgba(48,36,29,.22),inset 0 1px 0 rgba(255,255,255,.15);
+}
+.ciba-global-menu-boton:hover { background:rgba(102,80,68,.92); }
+.ciba-global-menu-boton span { background:#FFF8EB; }
+.ciba-global-panel { background:rgba(73,58,50,.91); }
+.ciba-global-enlace:hover,.ciba-global-enlace:focus-visible { color:#F0D39B; }
+.ciba-global-letra { color:#E6C98E; border-color:rgba(230,201,142,.62); }
+.ciba-global-oraculo {
+  background:radial-gradient(circle at 32% 24%,rgba(198,155,82,.78),rgba(102,80,68,.94) 42%,rgba(73,58,50,.98) 78%);
+  border-color:rgba(240,211,155,.82);
+  box-shadow:0 0 0 5px rgba(198,155,82,.12),0 0 32px rgba(198,155,82,.30),0 9px 28px rgba(48,36,29,.28);
+  -webkit-backdrop-filter:blur(18px);
+  backdrop-filter:blur(18px);
+}
+.ciba-global-oraculo:hover {
+  box-shadow:0 0 0 8px rgba(198,155,82,.16),0 0 42px rgba(198,155,82,.42),0 9px 28px rgba(48,36,29,.28);
+}
+.ciba-global-espiral path { stroke:#F0D39B; filter:drop-shadow(0 0 5px rgba(240,211,155,.65)); }
+.ciba-global-orbita { border-color:rgba(240,211,155,.54); }
+.ciba-global-orbita::before,.ciba-global-orbita::after { background:#F0D39B; box-shadow:0 0 10px #F0D39B; }
+.ciba-global-etiqueta { color:#FFF8EB; }
+.ciba-global-busqueda-titulo { color:#F0D39B; }
+.ciba-global-cerrar { color:#FFF8EB; }
+.ciba-global-enviar { background:#A9443B; }
+.ciba-global-enviar:hover { background:#8D5742; }
+@media(max-width:480px) {
+  .ciba-global-oraculo { width:62px;height:62px; }
+  .ciba-global-buscador { bottom:88px;right:12px; }
+  .ciba-global-panel-busqueda { bottom:78px; }
+}
+
