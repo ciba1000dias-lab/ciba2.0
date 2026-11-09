@@ -55,7 +55,7 @@
       <section class="ciba-receta-panel" aria-labelledby="restricciones-titulo">
         <span class="ciba-receta-numero">03</span>
         <h2 id="restricciones-titulo">¿Hay alergias o restricciones que debamos tener presentes?</h2>
-        <p class="ciba-receta-ayuda">Esta información permanece en esta pantalla: todavía no se envía al servicio de IA ni se utiliza para seleccionar recetas.</p>
+        <p class="ciba-receta-ayuda">Esta información se procesa únicamente en este dispositivo para excluir preparaciones incompatibles. No se envía al servicio de IA.</p>
         <div class="ciba-receta-opciones">
           <label><input type="checkbox" name="restriccion" value="alergia"> Alergia alimentaria diagnosticada</label>
           <label><input type="checkbox" name="restriccion" value="intolerancia"> Intolerancia alimentaria</label>
@@ -63,7 +63,7 @@
           <label><input type="checkbox" name="restriccion" value="otra"> Otra indicación o restricción</label>
         </div>
         <label class="ciba-receta-etiqueta" for="ciba-restricciones-detalle">Detalles (opcional)</label>
-        <input id="ciba-restricciones-detalle" type="text" maxlength="240" placeholder="Ej.: alergia al huevo">
+        <input id="ciba-restricciones-detalle" type="text" maxlength="240" placeholder="Ej.: alergia diagnosticada al huevo; intolerancia a la lactosa">
       </section>
 
       <button class="ciba-receta-boton" id="ciba-receta-enviar" type="submit">Reconocer mis ingredientes <span aria-hidden="true">→</span></button>
@@ -74,12 +74,13 @@
       <h2>Lo que hemos reconocido</h2>
       <div id="ciba-receta-mensaje"></div>
       <ul id="ciba-receta-reconocidos" class="ciba-receta-lista"></ul>
-      <div id="ciba-receta-desconocidos"></div>
+      <div id="ciba-receta-desconocidos" class="ciba-receta-desconocidos"></div>
+      <div id="ciba-receta-propuestas"></div>
     </section>
 
     <aside class="ciba-receta-disclaimer">
       <strong>Alcance educativo</strong>
-      <p>Este recurso ofrece orientación educativa general y no sustituye la orientación del pediatra o de un profesional de nutrición. No está diseñado para atender alergias, enfermedades, dificultades de deglución ni dietas terapéuticas. Ante una indicación clínica individual, sigue las instrucciones del equipo de salud. El inicio de la alimentación complementaria alrededor de los 6 meses sigue la orientación de la <a href="https://www.who.int/publications/i/item/9789240081864" target="_blank" rel="noopener">OMS °</a> y las <a href="https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad" target="_blank" rel="noopener">Guías alimentarias de UNICEF Cuba °</a>.</p>
+      <p>Este recurso ofrece orientación educativa general y no sustituye la orientación del pediatra o de un profesional de nutrición. No sustituye un plan individual para alergias diagnosticadas, enfermedades, dificultades de deglución ni dietas terapéuticas. En caso de alergia, comprueba etiquetas y evita la contaminación cruzada; el sistema solo excluye los alérgenos que se hayan identificado expresamente. Ante una indicación clínica individual, sigue las instrucciones del equipo de salud. El inicio de la alimentación complementaria alrededor de los 6 meses sigue la orientación de la <a href="https://www.who.int/publications/i/item/9789240081864" target="_blank" rel="noopener">OMS °</a> y las <a href="https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad" target="_blank" rel="noopener">Guías alimentarias de UNICEF Cuba °</a>.</p>
     </aside>
   </main>
   <script type="module" src="../../../assets/js/ciba-recetario.js"></script>
