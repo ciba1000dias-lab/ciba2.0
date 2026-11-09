@@ -1449,6 +1449,193 @@
         "alimentación complementaria"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "huevo-gallina",
+      "nombre": "Huevo de gallina",
+      "categoria": "Huevos y lácteos",
+      "resumen": "Alimento versátil que aporta proteínas y varios micronutrientes; debe ofrecerse completamente cocido.",
+      "nombres_alternativos": [
+        "huevo",
+        "huevos",
+        "huevo entero",
+        "clara",
+        "yema"
+      ],
+      "palabras_clave": [
+        "huevo",
+        "huevo para bebé",
+        "huevo desde los 6 meses",
+        "cómo cocinar huevo para bebé",
+        "alergia al huevo",
+        "clara y yema",
+        "tortilla para bebé",
+        "huevo duro",
+        "huevo cocido",
+        "proteína",
+        "colina",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
+    },
+    {
+      "id": "huevo-codorniz",
+      "nombre": "Huevo de codorniz",
+      "categoria": "Huevos y lácteos",
+      "resumen": "Huevo pequeño de composición similar al de gallina; requiere la misma atención a la cocción completa y a la alergia.",
+      "nombres_alternativos": [
+        "huevos de codorniz",
+        "huevo pequeño",
+        "huevitos de codorniz"
+      ],
+      "palabras_clave": [
+        "huevo de codorniz",
+        "huevos de codorniz",
+        "huevo pequeño",
+        "huevo para bebé",
+        "alergia al huevo",
+        "cómo preparar huevo de codorniz",
+        "huevo de codorniz para niños",
+        "huevo duro"
+      ],
+      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
+    },
+    {
+      "id": "leche-vaca",
+      "nombre": "Leche de vaca",
+      "categoria": "Huevos y lácteos",
+      "resumen": "Alimento fuente de proteínas, calcio y otros nutrientes; como bebida principal se reserva para después de los 12 meses.",
+      "nombres_alternativos": [
+        "leche entera",
+        "leche pasteurizada",
+        "leche de vaca líquida"
+      ],
+      "palabras_clave": [
+        "leche de vaca",
+        "leche entera",
+        "leche para bebé",
+        "desde cuándo puede tomar leche",
+        "leche antes del año",
+        "leche después de los 12 meses",
+        "leche pasteurizada",
+        "leche UHT",
+        "alergia a la leche",
+        "intolerancia a la lactosa"
+      ],
+      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
+    },
+    {
+      "id": "yogur-natural",
+      "nombre": "Yogur natural",
+      "categoria": "Huevos y lácteos",
+      "resumen": "Leche fermentada que puede formar parte de la alimentación complementaria si es pasteurizada, natural y sin azúcar añadido.",
+      "nombres_alternativos": [
+        "yogurt natural",
+        "yogur sin azúcar",
+        "yogur entero natural"
+      ],
+      "palabras_clave": [
+        "yogur natural",
+        "yogurt",
+        "yogur para bebé",
+        "yogur desde los 6 meses",
+        "yogur sin azúcar",
+        "yogur pasteurizado",
+        "yogur y alergia a la leche",
+        "yogur con frutas",
+        "probióticos"
+      ],
+      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
+    },
+    {
+      "id": "queso-fresco-pasteurizado",
+      "nombre": "Queso fresco pasteurizado",
+      "categoria": "Huevos y lácteos",
+      "resumen": "Queso blando y húmedo; para niños pequeños debe elaborarse con leche pasteurizada y tener poca sal.",
+      "nombres_alternativos": [
+        "queso fresco",
+        "queso fresco de leche pasteurizada",
+        "queso blanco fresco"
+      ],
+      "palabras_clave": [
+        "queso fresco",
+        "queso pasteurizado",
+        "queso fresco para bebé",
+        "queso desde los 6 meses",
+        "queso bajo en sal",
+        "queso de leche cruda",
+        "queso para niños",
+        "calcio",
+        "proteína"
+      ],
+      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
+    },
+    {
+      "id": "queso-blanco",
+      "nombre": "Queso blanco",
+      "categoria": "Huevos y lácteos",
+      "resumen": "Nombre amplio para quesos claros de distintas recetas; su sal, humedad y pasteurización varían según el producto.",
+      "nombres_alternativos": [
+        "queso blanco",
+        "queso blanco salado",
+        "queso blanco tipo latino"
+      ],
+      "palabras_clave": [
+        "queso blanco",
+        "queso blanco cubano",
+        "queso blanco para bebé",
+        "queso salado",
+        "queso pasteurizado",
+        "queso de leche cruda",
+        "queso para niños"
+      ],
+      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
+    },
+    {
+      "id": "requeson",
+      "nombre": "Requesón",
+      "categoria": "Huevos y lácteos",
+      "resumen": "Producto lácteo fresco y húmedo, de textura granulosa o cremosa; elegir versión pasteurizada y baja en sal.",
+      "nombres_alternativos": [
+        "requeson",
+        "ricotta",
+        "queso ricota",
+        "queso de suero"
+      ],
+      "palabras_clave": [
+        "requesón",
+        "requeson",
+        "ricotta",
+        "ricota",
+        "queso de suero",
+        "requesón para bebé",
+        "requesón pasteurizado",
+        "queso fresco"
+      ],
+      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
+    },
+    {
+      "id": "kefir-natural",
+      "nombre": "Kéfir natural",
+      "categoria": "Huevos y lácteos",
+      "resumen": "Leche fermentada mediante cultivos de kéfir; elegir producto pasteurizado, natural y sin azúcar añadido.",
+      "nombres_alternativos": [
+        "kefir",
+        "kéfir de leche",
+        "leche fermentada con kefir"
+      ],
+      "palabras_clave": [
+        "kéfir",
+        "kefir",
+        "kéfir natural",
+        "kefir de leche",
+        "kéfir para niños",
+        "kéfir para bebé",
+        "leche fermentada",
+        "probióticos",
+        "kéfir casero"
+      ],
+      "ruta_publica": "c/C1/alimentos/huevos-lacteos/"
     }
   ]
 }

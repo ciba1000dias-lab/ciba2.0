@@ -10,7 +10,7 @@ La lista combina alimentos cotidianos, alimentos estacionales y otros conocidos 
 
 Los sinónimos y nombres regionales se guardarán como nombres alternativos dentro de una misma ficha; no se contarán como alimentos diferentes. Las variedades solo tendrán ficha propia si cambian de forma relevante su composición, uso culinario o seguridad.
 
-## Inventario de trabajo: 150 alimentos
+## Inventario actualizado: 157 entradas (incluye preparaciones y categorías de productos)
 
 ### 1. Frutas — 25
 1. Aguacate
@@ -259,3 +259,9 @@ Estas fuentes son un punto de partida. Cada ficha llevará referencias específi
 5. Implementar biblioteca y datos en el sitio, con validaciones y pruebas.
 6. Conectarla al buscador general y verificar resultados.
 7. Incorporar alimentos por tandas y revisar cada ficha.
+
+
+## Avance de implementación de la biblioteca
+- Grupos publicados y conectados al índice: frutas, viandas, vegetales y hortalizas, legumbres, cereales, carnes y pescados/mariscos.
+- Grupo «Huevos y lácteos»: 8 fichas creadas en `assets/data/alimentos/huevos-lacteos.json`, con página de grupo y entradas del buscador general.
+- La ficha de kéfir se limita a producto comercial pasteurizado y consumo después de los 12 meses como criterio prudente; no se recomienda kéfir casero para lactantes.

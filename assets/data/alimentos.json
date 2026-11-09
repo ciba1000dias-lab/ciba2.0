@@ -8,7 +8,8 @@
     "assets/data/alimentos/legumbres.json",
     "assets/data/alimentos/cereales.json",
     "assets/data/alimentos/carnes.json",
-    "assets/data/alimentos/pescados.json"
+    "assets/data/alimentos/pescados.json",
+    "assets/data/alimentos/huevos-lacteos.json"
   ],
   "categorias": [
     {
@@ -52,6 +53,12 @@
       "archivo": "assets/data/alimentos/pescados.json",
       "cantidad": 20,
       "slug": "pescados"
+    },
+    {
+      "nombre": "Huevos y lácteos",
+      "archivo": "assets/data/alimentos/huevos-lacteos.json",
+      "cantidad": 8,
+      "slug": "huevos-lacteos"
     }
   ]
 }
