@@ -172,6 +172,7 @@
       const equivalencias = { 'articulo-crianza':'C', 'articulo-internet':'I', 'articulo-bienestar':'B', 'articulo-acompanamiento':'A' };
       id = equivalencias[clase] || '';
     }
+    if (window.location.pathname.includes('/plataforma/')) return { id:'', titulo:'Plataforma' };
     return columnas.find(c => c.id === id) || { id:'', titulo:'Explora CIBA' };
   }
 
@@ -359,6 +360,7 @@
       const lista=elemento('div','ciba-global-submenu');lista.hidden=true;
       encabezado.addEventListener('click',(evento)=>{evento.preventDefault();const abierto=!lista.hidden;lista.hidden=abierto;encabezado.setAttribute('aria-expanded',String(!abierto));});
       lista.appendChild(enlace(urlPublica('plataforma/'+seccion[0]+'/'),'Ver sección completa','ciba-global-enlace ciba-global-subenlace'));
+      if (seccion[0] === 'mi-cuenta') lista.appendChild(enlace(urlPublica('plataforma/mi-cuenta/acceso/'),'Acceder a mi cuenta','ciba-global-enlace ciba-global-subenlace'));
       seccion[4].forEach(apartado=>lista.appendChild(enlace(urlPublica('plataforma/'+seccion[0]+'/'+apartado[0]+'/'),apartado[1],'ciba-global-enlace ciba-global-subenlace')));
       grupo.append(encabezado,lista);panel.appendChild(grupo);
     });
@@ -398,7 +400,8 @@
     });
 
     contenedor.append(boton, panel);
-    document.body.appendChild(contenedor);
+    if (cabeceraGlobal) cabeceraGlobal.appendChild(contenedor);
+    else document.body.appendChild(contenedor);
 
     // Conectar cada columna con su primera área disponible.
     obtenerCatalogo()

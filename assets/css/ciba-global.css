@@ -550,7 +550,7 @@ transition: none;
   background:linear-gradient(90deg,var(--ciba-columna-color),rgba(230,201,142,.7),transparent);
   box-shadow:0 0 12px var(--ciba-columna-color);
 }
-.ciba-global-menu{position:absolute;top:50%;left:16px;transform:translateY(-50%);z-index:2}
+.ciba-global-cabecera > .ciba-global-menu{position:absolute;top:50%;left:16px;transform:translateY(-50%);z-index:2}
 .ciba-global-cabecera .ciba-global-menu-boton{width:46px;height:46px}
 .ciba-global-cabecera .ciba-global-panel{top:56px}
 .ciba-con-cabecera-global{scroll-padding-top:88px}
