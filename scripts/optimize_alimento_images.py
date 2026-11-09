@@ -63,7 +63,7 @@ def convertir(datos: bytes, destino_base: Path) -> dict[str, str]:
             if perfil:
                 opciones["icc_profile"] = perfil
             copia.save(destino, **opciones)
-            variantes[str(ancho)] = destino.relative_to(destino_base.parents[3]).as_posix()
+            variantes[str(ancho)] = destino.relative_to(destino_base.parents[4]).as_posix()
         return variantes
 
 
