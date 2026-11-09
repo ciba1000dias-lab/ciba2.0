@@ -31,7 +31,8 @@ function edadEnMeses() {
   }
   if (campoEdad.value === '') return null;
   const valor = Number(campoEdad.value);
-  if (!Number.isInteger(valor) || valor < 0 || valor > 59) return null;
+  const maximo = unidadEdad.value === 'anos' ? 4 : 59;
+  if (!Number.isInteger(valor) || valor < 0 || valor > maximo) return null;
   return unidadEdad.value === 'anos' ? valor * 12 : valor;
 }
 
@@ -141,7 +142,11 @@ campoEdad.addEventListener('input', () => {
   if (campoEdad.value !== '') campoFecha.value = '';
   actualizarEdad();
 });
-unidadEdad.addEventListener('change', actualizarEdad);
+unidadEdad.addEventListener('change', () => {
+  campoEdad.max = unidadEdad.value === 'anos' ? '4' : '59';
+  campoEdad.placeholder = unidadEdad.value === 'anos' ? 'Ej. 2' : 'Ej. 8';
+  actualizarEdad();
+});
 campoIngredientes.addEventListener('input', () => {
   contador.textContent = String(campoIngredientes.value.length);
 });
