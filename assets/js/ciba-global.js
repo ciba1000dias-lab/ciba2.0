@@ -181,7 +181,7 @@
 
     // Las páginas de sección conservaban su cabecera antigua además de la global.
     // Retiramos solo esa cabecera superior para evitar que la marca aparezca duplicada.
-    document.querySelectorAll('body > header.cabecera').forEach((anterior) => {
+    document.querySelectorAll('header.cabecera').forEach((anterior) => {
       anterior.remove();
     });
 
