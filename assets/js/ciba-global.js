@@ -84,7 +84,7 @@
   async function obtenerAlimentos() {
     if (alimentos) return alimentos;
 
-    const respuesta = await fetch(RUTA_ALIMENTOS.href, { cache: 'force-cache' });
+    const respuesta = await fetch(RUTA_ALIMENTOS.href, { cache: 'no-cache' });
     if (!respuesta.ok) throw new Error('No se pudo cargar el índice de búsqueda de alimentos.');
     const indice = await respuesta.json();
     if (!Array.isArray(indice.alimentos)) throw new Error('Índice de búsqueda de alimentos inválido.');
