@@ -2520,6 +2520,407 @@
       ],
       "estado": "publicado",
       "imagenes": []
+    },
+    {
+      "id": "rabo-res",
+      "nombre": "Rabo de res",
+      "nombres_alternativos": [
+        "rabo",
+        "cola de res",
+        "cola de vaca",
+        "rabo de vaca",
+        "rabo guisado",
+        "rabo encendido"
+      ],
+      "categoria": "Partes y cortes",
+      "resumen": "Corte de la cola de res formado por segmentos con hueso, carne y tejido conectivo; se utiliza en guisos de cocción prolongada.",
+      "descripcion": "El rabo de res se corta en segmentos que contienen hueso, carne y tejido conectivo. En la cocina cubana se prepara guisado o en salsas de cocción lenta. La cantidad de carne aprovechable es menor que en un corte deshuesado y la grasa varía según la pieza y la preparación.",
+      "propiedades": [
+        "Aporta proteínas procedentes de la carne; la cantidad depende de la proporción de carne respecto al hueso.",
+        "Contiene tejido conectivo y grasa en proporciones variables; no debe presentarse como un corte magro."
+      ],
+      "beneficios": [
+        "Puede aportar variedad a las preparaciones de carne dentro de una alimentación diversa.",
+        "Su cocción prolongada permite obtener carne muy tierna que, una vez separada cuidadosamente del hueso, puede desmenuzarse."
+      ],
+      "edad": "La carne puede formar parte de la alimentación complementaria desde alrededor de los 6 meses si el bebé está preparado, pero el rabo exige especial cuidado por sus huesos, fragmentos pequeños y tejido gelatinoso. Nunca ofrecer el segmento con hueso al bebé o niño pequeño.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Solo ofrecer la carne muy tierna, separada por completo del hueso y de los tejidos duros, triturada o desmenuzada hasta una textura húmeda y segura. No ofrecer caldo como sustituto de la carne."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Carne sin huesos, membranas ni fragmentos duros, muy tierna y finamente desmenuzada; adaptar a las habilidades del bebé."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir carne deshuesada y picada o desmenuzada en trozos pequeños y blandos. Revisar minuciosamente que no queden astillas óseas."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente hasta que la carne se desprenda con facilidad. Retirar los segmentos óseos y revisar la carne con los dedos y a la vista para detectar astillas. Separar la porción infantil antes de añadir sal y condimentos picantes. No dar huesos para roer.",
+      "recetas": [
+        {
+          "nombre": "Rabo guisado, con adaptación infantil",
+          "etapa": "Preparación familiar; porción infantil adaptada",
+          "ingredientes": "Rabo de res, tomate, cebolla, ajo, pimiento y vegetales",
+          "preparacion": "Cocinar a fuego lento hasta ablandar. Antes de sazonar la preparación familiar, separar carne suficiente para el niño; retirar huesos y tejidos duros, desmenuzar muy fino y humedecer con vegetales cocidos."
+        }
+      ],
+      "precauciones": [
+        "El mayor riesgo para niños pequeños son los huesos, astillas, membranas y fragmentos gomosos: retirar todo cuidadosamente.",
+        "No ofrecer huesos para chupar o roer ni dejar que el niño manipule el segmento con hueso.",
+        "Mantener separado de alimentos listos para comer cuando esté crudo y cocinarlo completamente."
+      ],
+      "conservacion": "Refrigerar a 4 °C o menos y cocinar dentro del plazo recomendado para carne fresca o congelar. Descongelar en refrigeración, agua fría en envase hermético o microondas, nunca sobre la mesa. Refrigerar las sobras cocidas dentro de las 2 horas.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Australian%20oxtail%20(1).jpg?width=1280",
+        "alt": "Rabo de res crudo, cortado en segmentos con hueso.",
+        "autor": "Fumikas Sagisavas",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Australian_oxtail_(1).jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "rabo de res",
+        "rabo",
+        "cola de res",
+        "cola de vaca",
+        "rabo de vaca",
+        "rabo guisado",
+        "rabo encendido",
+        "rabo de res para niños",
+        "carne de rabo",
+        "rabo con papas"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientaciones sobre diversidad alimentaria y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "FoodSafety.gov",
+          "titulo": "Cook to a Safe Minimum Internal Temperature",
+          "url": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+          "utilidad": "Temperaturas internas seguras para carnes y alimentos de origen animal."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Australian oxtail (1).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Australian_oxtail_(1).jpg",
+          "utilidad": "Fotografía de rabo de res; Fumikas Sagisavas, CC0 1.0."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "costillas-cerdo",
+      "nombre": "Costillas de cerdo",
+      "nombres_alternativos": [
+        "costillas de puerco",
+        "costilla de cerdo",
+        "costillitas de puerco",
+        "costillas de cerdo guisadas",
+        "costillas ahumadas"
+      ],
+      "categoria": "Partes y cortes",
+      "resumen": "Corte del cerdo con huesos, carne y grasa variable, utilizado en guisos, sopas y asados.",
+      "descripcion": "Las costillas de cerdo incluyen hueso y capas de carne y grasa. En Cuba se preparan guisadas, asadas, en sopas y con viandas. La cantidad de grasa depende del corte y de cuánto tejido visible se retire.",
+      "propiedades": [
+        "Aportan proteínas y vitaminas del grupo B; el contenido de grasa varía con el corte y la preparación.",
+        "El hueso no es una parte comestible para los niños y no debe ofrecerse para roer."
+      ],
+      "beneficios": [
+        "Permiten variar las preparaciones de carne de cerdo.",
+        "Cuando se cocinan hasta quedar muy tiernas, la carne puede separarse del hueso y desmenuzarse para una textura adecuada."
+      ],
+      "edad": "La carne de cerdo bien cocida puede introducirse desde el inicio de la alimentación complementaria, alrededor de los 6 meses. Las costillas, sin embargo, nunca deben ofrecerse con hueso: retirar huesos, cartílagos y partes duras antes de servir.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Separar carne muy tierna del hueso, retirar grasa dura, cartílago y membranas; triturar o desmenuzar muy fino y humedecer."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Carne muy tierna, completamente deshuesada y desmenuzada en fibras cortas y húmedas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer picada o desmenuzada, sin huesos ni fragmentos duros, adaptada a la masticación del niño."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente. Separar la carne del hueso antes de llevarla a la mesa infantil y revisar que no queden astillas, cartílagos ni membranas. Evitar costillas ahumadas, curadas o muy saladas como opción habitual.",
+      "recetas": [
+        {
+          "nombre": "Costillas guisadas con vegetales",
+          "etapa": "Preparación familiar; porción infantil adaptada",
+          "ingredientes": "Costillas de cerdo, calabaza, zanahoria, tomate y cebolla",
+          "preparacion": "Guisar hasta que la carne esté muy tierna. Separar la porción infantil antes de añadir sal; deshuesar por completo y picar o triturar con vegetales."
+        }
+      ],
+      "precauciones": [
+        "Nunca ofrecer costillas con hueso a bebés o niños pequeños, ni siquiera si están blandas o cocidas durante mucho tiempo.",
+        "Retirar cartílagos, membranas y grasa dura; evitar trozos secos o fibrosos.",
+        "Las costillas ahumadas, curadas o muy saladas no son adecuadas como alimento habitual infantil."
+      ],
+      "conservacion": "Mantener crudas refrigeradas a 4 °C o menos, separadas de alimentos listos para comer. Cocinar pronto o congelar. Refrigerar las sobras cocidas dentro de las 2 horas en recipientes poco profundos.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pork-ribs%2001.jpg?width=1280",
+        "alt": "Costillas de cerdo crudas fotografiadas antes de cocinar.",
+        "autor": "Pannet",
+        "licencia": "CC BY 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Pork-ribs_01.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "costillas de cerdo",
+        "costillas de puerco",
+        "costilla de cerdo",
+        "costillitas de puerco",
+        "costillas guisadas",
+        "costillas asadas",
+        "costillas con papas",
+        "costillas para niños",
+        "carne de costilla"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientaciones sobre diversidad alimentaria y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "FoodSafety.gov",
+          "titulo": "Cook to a Safe Minimum Internal Temperature",
+          "url": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+          "utilidad": "Temperaturas internas seguras para carnes y alimentos de origen animal."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Pork-ribs 01.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pork-ribs_01.jpg",
+          "utilidad": "Fotografía de costillas de cerdo; Pannet, CC BY 4.0."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "mondongo-res",
+      "nombre": "Mondongo (tripa de res)",
+      "nombres_alternativos": [
+        "mondongo",
+        "tripa",
+        "tripa de res",
+        "panza de res",
+        "callos",
+        "mondongo de res",
+        "mondongo guisado",
+        "panza"
+      ],
+      "categoria": "Vísceras",
+      "resumen": "Estómago de res comestible, conocido como mondongo o tripa; requiere limpieza y cocción completa hasta quedar muy tierno.",
+      "descripcion": "El mondongo es tejido del estómago de la res, no intestino. Se conoce también como tripa o panza y se utiliza en sopas y guisos. Su textura puede ser elástica o gomosa si no se cocina lo suficiente; la preparación y limpieza dependen de cómo se comercialice.",
+      "propiedades": [
+        "Aporta proteínas; el contenido de grasa y otros nutrientes varía según la limpieza y el tipo de tejido.",
+        "No es equivalente nutricionalmente a un corte magro de carne muscular."
+      ],
+      "beneficios": [
+        "Amplía la variedad de alimentos y preparaciones tradicionales.",
+        "Cuando queda muy tierno puede picarse finamente para incorporarlo a un guiso."
+      ],
+      "edad": "No es una de las primeras opciones de proteína para bebés: su textura puede ser elástica y difícil de masticar. Si la familia decide ofrecerlo después del inicio de la alimentación complementaria, debe estar completamente cocido, muy blando, picado o triturado hasta eliminar la textura gomosa y ofrecido en una preparación húmeda.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Por su textura potencialmente gomosa, es preferible escoger carnes más fáciles de triturar. No ofrecer trozos de mondongo."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Solo si está extremadamente tierno y puede triturarse sin quedar elástico; ofrecer una pequeña cantidad finamente procesada y húmeda."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Picar muy fino y cocinar hasta que esté blando; evitar tiras largas, anillos, trozos correosos o gomosos."
+        }
+      ],
+      "preparacion_segura": "Comprar de una fuente confiable y seguir las instrucciones de limpieza del vendedor. Mantener refrigerado, lavar las manos y evitar salpicaduras o contaminación cruzada. Cocinar completamente hasta quedar muy tierno; para vísceras de res, alcanzar al menos 71 °C en el centro. Para niños pequeños, triturar o picar finamente y comprobar que no conserve elasticidad.",
+      "recetas": [
+        {
+          "nombre": "Mondongo guisado con vegetales",
+          "etapa": "Preparación familiar; no ofrecer en trozos a niños pequeños",
+          "ingredientes": "Mondongo limpio, tomate, cebolla, ajo, calabaza y zanahoria",
+          "preparacion": "Cocinar a fuego lento hasta que esté muy blando. Separar la porción infantil, picarla o triturarla hasta eliminar la textura gomosa y mezclar con vegetales cocidos. Sazonar la porción familiar aparte."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer trozos elásticos, gomosos, largos o correosos: pueden ser difíciles de masticar y aumentar el riesgo de atragantamiento.",
+        "Las vísceras deben cocinarse completamente; el USDA recomienda 71 °C para órganos y menudencias de res.",
+        "Evitar contaminación cruzada durante la limpieza y preparación."
+      ],
+      "conservacion": "Refrigerar a 4 °C o menos y cocinar pronto o congelar. Mantener separado de alimentos listos para comer. Refrigerar las sobras cocidas dentro de las 2 horas.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Beef%20tripes%20%F0%9F%90%82%F0%9F%90%82.jpg?width=1280",
+        "alt": "Mondongo o tripa de res cruda, limpia, antes de cocinar.",
+        "autor": "Fumikas Sagisavas",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Beef_tripes_%F0%9F%90%82%F0%9F%90%82.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "mondongo",
+        "tripa de res",
+        "tripa",
+        "panza de res",
+        "callos",
+        "mondongo de res",
+        "mondongo guisado",
+        "mondongo con papas",
+        "sopa de mondongo",
+        "vísceras de res"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientaciones sobre diversidad alimentaria y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "FoodSafety.gov",
+          "titulo": "Cook to a Safe Minimum Internal Temperature",
+          "url": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+          "utilidad": "Temperaturas internas seguras para carnes y alimentos de origen animal."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Beef tripes 🐂🐂.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Beef_tripes_%F0%9F%90%82%F0%9F%90%82.jpg",
+          "utilidad": "Fotografía de tripa de res; Fumikas Sagisavas, CC0 1.0."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "costillas-res",
+      "nombre": "Costillas de res",
+      "nombres_alternativos": [
+        "costilla de res",
+        "costillas de vaca",
+        "costilla de vaca",
+        "costillas de ternera",
+        "asado de tira"
+      ],
+      "categoria": "Partes y cortes",
+      "resumen": "Corte de res con hueso, carne y grasa variable, utilizado en caldos, sopas y guisos de cocción lenta.",
+      "descripcion": "Las costillas de res contienen hueso, carne y grasa en proporciones que dependen del corte. En guisos y caldos se cocinan durante bastante tiempo para ablandar la carne. La carne aprovechable debe separarse por completo de los huesos antes de ofrecerla a niños.",
+      "propiedades": [
+        "Aportan proteínas y vitaminas del grupo B; la grasa varía según el corte.",
+        "El hueso y los fragmentos óseos no son alimentos para bebés ni niños pequeños."
+      ],
+      "beneficios": [
+        "Permiten variar los cortes de carne de res en la cocina familiar.",
+        "La cocción prolongada puede ablandar la carne para desmenuzarla una vez retirada del hueso."
+      ],
+      "edad": "La carne de res bien cocida puede introducirse desde alrededor de los 6 meses si el bebé está preparado. En las costillas, retirar completamente huesos, astillas, cartílagos y tejidos duros antes de servir.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Carne muy tierna, separada del hueso y triturada o desmenuzada muy fina con humedad suficiente."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Carne deshuesada, sin cartílago ni membranas, desmenuzada en fibras cortas y blandas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir picada o desmenuzada en trozos pequeños y blandos, según las habilidades del niño."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente; para cortes enteros de res, la referencia de seguridad es 63 °C con reposo de 3 minutos, aunque la cocción lenta suele llevarlos más allá para ablandarlos. Retirar huesos y revisar astillas con cuidado. Separar la porción infantil antes de salar.",
+      "recetas": [
+        {
+          "nombre": "Costillas de res guisadas",
+          "etapa": "Preparación familiar; porción infantil adaptada",
+          "ingredientes": "Costillas de res, tomate, cebolla, ajo, zanahoria y viandas",
+          "preparacion": "Cocinar a fuego lento hasta ablandar. Separar la porción infantil, retirar todo el hueso y los tejidos duros y desmenuzar finamente con vegetales cocidos."
+        }
+      ],
+      "precauciones": [
+        "Nunca dar huesos para roer ni costillas con hueso a bebés o niños pequeños.",
+        "Retirar fragmentos óseos, cartílagos, membranas y partes duras.",
+        "Cocinar completamente y evitar contaminación cruzada con alimentos listos para comer."
+      ],
+      "conservacion": "Mantener crudas refrigeradas a 4 °C o menos y separadas de alimentos listos para comer. Cocinar pronto o congelar. Refrigerar las sobras dentro de las 2 horas.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Beef%20ribs%2C%20raw.jpg?width=1280",
+        "alt": "Costillas de res crudas.",
+        "autor": "FASTILY",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://footprint.tempolife.app/food-photos/beef-ribs-raw"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "costillas de res",
+        "costilla de res",
+        "costillas de vaca",
+        "costilla de vaca",
+        "costillas guisadas",
+        "sopa de costilla",
+        "asado de tira",
+        "costillas para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientaciones sobre diversidad alimentaria y alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "FoodSafety.gov",
+          "titulo": "Cook to a Safe Minimum Internal Temperature",
+          "url": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+          "utilidad": "Temperaturas internas seguras para carnes y alimentos de origen animal."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Beef ribs, raw (FASTILY)",
+          "url": "https://footprint.tempolife.app/food-photos/beef-ribs-raw",
+          "utilidad": "Fotografía atribuida a FASTILY, CC BY-SA 4.0, vía Wikimedia Commons."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
     }
   ]
 }
