@@ -41,9 +41,9 @@
       "slug": "cereales"
     },
     {
-      "nombre": "Carnes, vísceras y embutidos",
+      "nombre": "Carnes, vísceras, embutidos y conservas",
       "archivo": "assets/data/alimentos/carnes.json",
-      "cantidad": 20,
+      "cantidad": 21,
       "slug": "carnes"
     }
   ]

@@ -68,11 +68,11 @@
       ],
       "conservacion": "Mantener refrigerada a 4 °C o menos y separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar en porciones pequeñas. Refrigerar las sobras cocidas en recipientes poco profundos y tapados; no dejarlas a temperatura ambiente durante periodos prolongados.",
       "imagen_principal": {
-        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Muslos%20de%20pollo%2C%20comprados%20en%20la%20carnicer%C3%ADa.jpg?width=1280",
-        "alt": "Muslos y cuartos traseros de pollo frescos, fotografiados en una carnicería.",
-        "autor": "Juan Emilio Prades Bel",
-        "licencia": "CC BY-SA 4.0",
-        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Muslos_de_pollo%2C_comprados_en_la_carnicer%C3%ADa.jpg"
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Close-up%20of%20the%20chicken%20breast%20on%20a%20cutting%20board.jpg?width=1280",
+        "alt": "Pechuga de pollo cruda sobre una tabla de cocina, en primer plano.",
+        "autor": "Shixart1985",
+        "licencia": "CC BY 2.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Close-up_of_the_chicken_breast_on_a_cutting_board.jpg"
       },
       "video_youtube": null,
       "palabras_clave": [
@@ -132,9 +132,9 @@
         },
         {
           "institucion": "Wikimedia Commons",
-          "titulo": "File:Muslos de pollo, comprados en la carnicería.jpg",
-          "url": "https://commons.wikimedia.org/wiki/File:Muslos_de_pollo%2C_comprados_en_la_carnicer%C3%ADa.jpg",
-          "utilidad": "Fotografía de muslos y cuartos traseros de pollo; autoría y licencia."
+          "titulo": "File:Close-up of the chicken breast on a cutting board.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Close-up_of_the_chicken_breast_on_a_cutting_board.jpg",
+          "utilidad": "Fotografía de pechuga de pollo; autoría y licencia CC BY 2.0."
         }
       ],
       "estado": "publicado",
@@ -2387,6 +2387,128 @@
           "titulo": "Fotografía de referencia del producto",
           "url": "https://commons.wikimedia.org/wiki/File:ChorizoBilbao.jpg",
           "utilidad": "La imagen es ilustrativa y no representa necesariamente una marca o formulación cubana."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "carnes-enlatadas",
+      "nombre": "Spam y otras carnes enlatadas",
+      "nombres_alternativos": [
+        "Spam",
+        "carne enlatada",
+        "carne en conserva",
+        "carne de lata",
+        "carne prensada enlatada",
+        "luncheon meat",
+        "jamón enlatado",
+        "carne cocida enlatada",
+        "carne enlatada cubana",
+        "spam cubano",
+        "carne enlatada para apagones",
+        "conserva de carne",
+        "carne tipo spam",
+        "carne procesada en lata",
+        "lata de carne"
+      ],
+      "categoria": "Carnes procesadas y conservas",
+      "resumen": "Carnes cocidas y conservadas en lata, como Spam y productos tipo luncheon meat; prácticas para almacenar, pero suelen contener bastante sodio.",
+      "descripcion": "En Cuba, las carnes enlatadas pueden ganar presencia cuando hay interrupciones eléctricas o resulta difícil conservar alimentos frescos. Spam es una marca; también existen productos similares de distintas marcas y composiciones. No todas las latas contienen lo mismo: conviene revisar la lista de ingredientes, el sodio y la fecha de vencimiento.",
+      "propiedades": [
+        "Aportan proteínas, pero su composición depende del tipo de carne y de la formulación de cada producto.",
+        "Suelen contener bastante sodio; la cantidad cambia entre marcas y presentaciones.",
+        "Algunas incluyen grasa, almidones, azúcares, conservantes y otros ingredientes. Revisar la etiqueta en lugar de asumir que todos son iguales."
+      ],
+      "beneficios": [
+        "Su larga conservación sin refrigeración mientras la lata permanezca íntegra y cerrada puede resultar práctica ante cortes eléctricos.",
+        "Pueden aportar proteínas, aunque no sustituyen la variedad de carnes frescas, huevos, legumbres y otros alimentos."
+      ],
+      "edad": "No son una opción prioritaria para la alimentación complementaria ni para el consumo habitual de bebés y niños pequeños, principalmente por su contenido de sodio y por tratarse de carnes procesadas. Cuando la familia las consuma, es preferible que el bebé reciba otra fuente de proteína menos salada y adecuada a su etapa. Si se ofrece ocasionalmente a un niño mayor, revisar la etiqueta y adaptar muy bien la textura.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Bebés que comienzan la alimentación complementaria",
+          "forma": "Preferir carnes frescas bien cocidas, huevos o legumbres preparadas sin sal añadida. No utilizar las carnes enlatadas como sustituto habitual."
+        },
+        {
+          "etapa": "Niños pequeños",
+          "forma": "No convertirlas en una comida frecuente. Si se ofrecen de forma ocasional, elegir el producto con menos sodio disponible, retirar cualquier borde duro y picar muy fino; evitar rodajas redondas o trozos grandes."
+        },
+        {
+          "etapa": "Niños mayores",
+          "forma": "Servir porciones pequeñas y ocasionales dentro de una alimentación variada. Comparar el sodio por porción entre marcas y no añadir más sal a la comida."
+        }
+      ],
+      "preparacion_segura": "Comprobar que la lata esté íntegra, sin abombamiento, fugas, perforaciones ni corrosión importante; no probar el contenido si hay señales de deterioro. Respetar las instrucciones del fabricante. Después de abrirla, pasar el sobrante a un recipiente limpio con tapa, refrigerarlo pronto y seguir el plazo de conservación indicado en la etiqueta. No dejar el producto abierto a temperatura ambiente.",
+      "recetas": [
+        "No se proponen como base de recetas infantiles. Para las comidas de bebés y niños pequeños, es preferible utilizar carnes frescas bien cocidas, huevo o legumbres sin sal añadida.",
+        {
+          "nombre": "Uso ocasional en una comida familiar",
+          "etapa": "Para la familia, no como receta habitual infantil",
+          "ingredientes": "Una pequeña cantidad de carne enlatada y vegetales variados",
+          "preparacion": "Utilizar poca cantidad para dar sabor a una preparación familiar, sin añadir sal extra. Preparar aparte la porción del bebé con una fuente de proteína fresca y adecuada a su etapa."
+        }
+      ],
+      "precauciones": [
+        "El sodio puede ser elevado. Compare la información nutricional por porción y recuerde que el tamaño de las porciones cambia entre marcas.",
+        "Spam y muchos productos tipo luncheon meat son carnes procesadas. La OMS/IARC clasifica el consumo de carne procesada como carcinógeno para los seres humanos; esta clasificación identifica un peligro y no significa que una porción aislada tenga el mismo riesgo que fumar. La recomendación práctica es limitar su consumo habitual.",
+        "No deben desplazar de forma rutinaria alimentos frescos o mínimamente procesados ni convertirse en la proteína diaria de bebés y niños.",
+        "Evitar rodajas redondas, cubos grandes o fragmentos duros; si un niño mayor la consume, adaptar el corte a sus habilidades de masticación y supervisarlo mientras come.",
+        "Desechar latas abombadas, con fugas, perforadas o muy dañadas. Tras abrir, refrigerar el contenido en un recipiente limpio y tapado."
+      ],
+      "conservacion": "Mientras permanezca cerrada, conservar en un lugar fresco, seco y alejado del sol, respetando la fecha y las indicaciones del envase. Un corte eléctrico no obliga a desechar una lata cerrada e íntegra que se haya mantenido almacenada correctamente. Una vez abierta, necesita refrigeración: no dejarla horas sobre la mesa ni confiar en que el hecho de ser enlatada la hace estable después de abrir.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Spam%20and%20Great%20Value%20Luncheon%20Meat%20in%20cans.jpg?width=1280",
+        "alt": "Dos latas de carne tipo Spam y luncheon meat, fotografiadas lado a lado.",
+        "autor": "Ll1324",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Spam_and_Great_Value_Luncheon_Meat_in_cans.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "spam",
+        "carne enlatada",
+        "carne en conserva",
+        "carne de lata",
+        "carne prensada",
+        "luncheon meat",
+        "jamón enlatado",
+        "carne tipo spam",
+        "spam cubano",
+        "carne enlatada cubana",
+        "carne enlatada para apagones",
+        "comida para cortes eléctricos",
+        "alimentos para apagones",
+        "conserva de carne",
+        "carne procesada en lata",
+        "lata de carne",
+        "carne cocida enlatada",
+        "carnes enlatadas"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientaciones sobre alimentación complementaria y diversidad dietética."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones alimentarias para la primera infancia en el contexto cubano."
+        },
+        {
+          "institucion": "OMS / IARC",
+          "titulo": "Carcinogenicity of the consumption of red meat and processed meat",
+          "url": "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat",
+          "utilidad": "Clasificación de la carne procesada y explicación del significado de la clasificación."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Spam and Great Value Luncheon Meat in cans.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Spam_and_Great_Value_Luncheon_Meat_in_cans.jpg",
+          "utilidad": "Fotografía de dos latas de carne procesada; autor Ll1324, licencia CC0 1.0."
         }
       ],
       "estado": "publicado",

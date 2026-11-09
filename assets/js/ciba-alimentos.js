@@ -139,6 +139,36 @@
       function abrirDetalle(alimento, actualizarHash = true, claveSeccion = '') {
         detalle.replaceChildren();
 
+        const accesos = crear('nav', 'ciba-alimento-accesos');
+        accesos.setAttribute('aria-label', 'Accesos rápidos de navegación');
+
+        const volverLista = crear('button', 'ciba-alimento-acceso', '↩');
+        volverLista.type = 'button';
+        volverLista.title = 'Volver al listado de este grupo';
+        volverLista.setAttribute('aria-label', 'Volver al listado de este grupo de alimentos');
+        volverLista.addEventListener('click', () => {
+          detalle.hidden = true;
+          lista.hidden = false;
+          if (actualizarHash) history.replaceState(null, '', location.pathname + location.search + '#biblioteca-alimentos');
+          raizUI.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+
+        const crearAcceso = (simbolo, etiqueta, ruta) => {
+          const a = crear('a', 'ciba-alimento-acceso', simbolo);
+          a.href = new URL(ruta, raiz).href;
+          a.title = etiqueta;
+          a.setAttribute('aria-label', etiqueta);
+          return a;
+        };
+
+        accesos.append(
+          volverLista,
+          crearAcceso('◈', 'Ir a Alimentación', 'c/C1/alimentos/'),
+          crearAcceso('C', 'Ir a Crianza', 'c/C1/'),
+          crearAcceso('⌂', 'Ir al inicio de CIBA', 'index.html')
+        );
+        detalle.appendChild(accesos);
+
         const cabecera = crear('div', 'ciba-alimento-detalle-cabecera');
         const etiqueta = crear('p', 'ciba-alimento-etiqueta', alimento.categoria + ' · FICHA CIBA');
         const titulo = crear('h3', '', alimento.nombre);
@@ -239,16 +269,6 @@
           fuentes.appendChild(ul);
           detalle.appendChild(fuentes);
         }
-
-        const volver = crear('button', 'ciba-alimentos-volver', '← Volver a todos los alimentos');
-        volver.type = 'button';
-        volver.addEventListener('click', () => {
-          detalle.hidden = true;
-          lista.hidden = false;
-          if (actualizarHash) history.replaceState(null, '', location.pathname + location.search + '#biblioteca-alimentos');
-          raizUI.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-        detalle.appendChild(volver);
 
         lista.hidden = true;
         detalle.hidden = false;
