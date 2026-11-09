@@ -603,3 +603,16 @@ body:not(.ciba-con-cabecera-global) > .ciba-global-login{
   body:not(.ciba-con-cabecera-global) > .ciba-global-login{top:12px;right:12px;min-height:38px;padding:0 12px;font-size:9px}
 }
 @media(prefers-reduced-motion:reduce){.ciba-global-login{transition:none}}
+
+/* Reservar espacio real para el CTA sin desplazar el menú ni la identidad */
+.ciba-global-cabecera{padding-right:180px}
+@media(max-width:600px){
+  .ciba-global-cabecera{gap:12px;padding:9px 130px 9px 68px}
+  .ciba-global-contexto{font-size:15px;padding:7px 5px 7px 9px}
+}
+@media(max-width:380px){
+  .ciba-global-cabecera{gap:8px;padding-right:124px}
+  .ciba-global-marca{font-size:19px;letter-spacing:.14em}
+  .ciba-global-contexto{font-size:13px}
+  .ciba-global-cabecera > .ciba-global-login{min-height:35px;padding:0 9px;font-size:8px}
+}
