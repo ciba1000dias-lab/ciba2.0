@@ -256,6 +256,7 @@ function mostrarAclaraciones(terminos) {
             id: opcion.alimento.id, name: opcion.alimento.nombre
           }];
           ultimoResultado.unknownTerms = (ultimoResultado.unknownTerms || []).filter(x => x !== termino);
+          if (!ultimoResultado.unknownTerms.length) ultimoResultado.clarification = null;
           mostrarResultado(ultimoResultado);
         });
         lista.appendChild(botonOpcion);
