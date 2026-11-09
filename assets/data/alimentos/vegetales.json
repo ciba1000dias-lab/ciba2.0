@@ -961,6 +961,75 @@
       ],
       "estado": "piloto",
       "imagenes": []
+    },
+    {
+      "id": "cebolla",
+      "nombre": "Cebolla",
+      "nombres_alternativos": [
+        "Allium cepa"
+      ],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza aromática utilizada como ingrediente culinario; ofrecer bien cocida y en cantidad moderada.",
+      "descripcion": "La cebolla aporta sabor y permite elaborar preparaciones familiares sin recurrir a sal ni cubitos concentrados. Se utiliza como ingrediente y no como componente principal de la comida.",
+      "propiedades": [
+        "Aporta compuestos aromáticos y pequeñas cantidades de micronutrientes.",
+        "Contribuye al sabor de las preparaciones."
+      ],
+      "beneficios": [
+        "Ayuda a dar sabor a los alimentos sin añadir sal.",
+        "Cocinada queda blanda y puede incorporarse a guisos y purés."
+      ],
+      "edad": "Puede incorporarse cocinada en pequeñas cantidades desde el inicio de la alimentación complementaria, según tolerancia individual.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar hasta que esté completamente blanda y triturar junto con el resto de la preparación."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Cocinar hasta ablandar y picar muy finamente."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer bien cocida y picada en preparaciones húmedas."
+        }
+      ],
+      "preparacion_segura": [
+        "Retirar la piel seca y lavar antes de cortar.",
+        "Cocinar completamente hasta que esté blanda.",
+        "Evitar trozos grandes, crudos o firmes en lactantes."
+      ],
+      "recetas": [],
+      "precauciones": [
+        "Puede causar molestias digestivas en algunos niños; ajustar según tolerancia.",
+        "No utilizar sofritos con exceso de grasa ni añadir sal o cubitos."
+      ],
+      "conservacion": "Conservar entera en lugar fresco, seco y ventilado; una vez cortada, refrigerar en recipiente cerrado.",
+      "imagen_principal": null,
+      "video_youtube": null,
+      "palabras_clave": [
+        "cebolla",
+        "cebolla para bebé",
+        "cebolla cocida",
+        "cómo preparar cebolla para bebés",
+        "vegetales para alimentación complementaria"
+      ],
+      "fuentes": [
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco general de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación de alimentos complementarios."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
     }
   ]
 }
