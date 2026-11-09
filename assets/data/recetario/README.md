@@ -4,7 +4,7 @@ Archivo de datos: `recetas.json`.
 
 ## Estado actual
 
-El catálogo contiene **27 fichas completas y operativas**: las 15 preparaciones iniciales, diez preparaciones frutales aceptadas sin cambios (51–60) y las dos sustituciones aceptadas (61 y 66). Todas tienen:
+El catálogo contiene **35 fichas completas y operativas**: las 15 preparaciones iniciales, diez preparaciones frutales aceptadas sin cambios (51–60), las dos sustituciones aceptadas (61 y 66) y ocho fichas nuevas hasta la 75. La preparación 69 no se publica porque duplica la combinación de la 61. Todas tienen:
 
 - `publicable: true`
 - `estado: aprobada`
