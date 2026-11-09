@@ -728,6 +728,402 @@
       ],
       "estado": "piloto",
       "imagenes": []
+    },
+    {
+      "id": "frijol-bayo",
+      "nombre": "Frijol bayo",
+      "nombres_alternativos": [
+        "frijoles bayos",
+        "frijol beige",
+        "frijol canela",
+        "Phaseolus vulgaris"
+      ],
+      "categoria": "Legumbres",
+      "resumen": "Variedad de frijol común de tonalidad beige o canela; aporta proteína vegetal, fibra y folato.",
+      "descripcion": "El frijol bayo es un tipo de frijol común (Phaseolus vulgaris), cuyo tono y forma pueden variar según la semilla y la región. Aporta proteína vegetal, fibra, carbohidratos complejos, folato y minerales como hierro no hemo. La composición depende de la variedad y la preparación. La fotografía es una referencia de semillas de la especie, no una identificación del cultivar bayo.",
+      "propiedades": [
+        "Aporta proteína vegetal y fibra alimentaria.",
+        "Contiene folato, hierro no hemo y otros minerales en cantidades variables.",
+        "Aporta principalmente carbohidratos complejos y proteína."
+      ],
+      "beneficios": [
+        "Amplía la variedad de legumbres de la alimentación familiar.",
+        "Bien cocido y triturado permite preparar cremas, purés y guisos de textura adaptada."
+      ],
+      "edad": "Puede incorporarse alrededor de los 6 meses, cuando comienza la alimentación complementaria y el bebé muestra señales de preparación: controla la cabeza y el cuello y puede mantenerse sentado con apoyo. La leche materna o la fórmula continúan siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocidos y triturados hasta lograr una crema espesa y homogénea. Retirar pieles duras y comprobar que no queden granos enteros ni partes firmes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aplastar muy bien con un tenedor; dejar solo pequeños grumos muy blandos si el bebé ya los maneja con seguridad."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer bien cocidos y aplastados o machacados, adaptando la textura a las habilidades de masticación. Evitar granos duros o enteros."
+        }
+      ],
+      "preparacion_segura": "Revisar, lavar y remojar si así lo indica el producto. Desechar el agua de remojo, enjuagar y cocinar en agua potable hasta que todos los granos estén muy blandos. No ofrecer crudos ni poco cocidos. Para el bebé, triturar y retirar pieles o partes firmes.",
+      "recetas": [
+        {
+          "nombre": "Crema espesa de frijol bayo",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Frijoles bayos completamente cocidos y agua potable",
+          "preparacion": "Triturar hasta obtener una crema espesa, lisa y sin granos enteros."
+        },
+        {
+          "nombre": "Frijol bayo con calabaza",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Frijoles bayos y calabaza bien cocidos",
+          "preparacion": "Aplastar y mezclar hasta lograr una textura suave y húmeda."
+        },
+        {
+          "nombre": "Guiso familiar adaptado",
+          "etapa": "Desde los 12 meses, según habilidades",
+          "ingredientes": "Frijol bayo, arroz y vegetales bien cocidos",
+          "preparacion": "Separar la porción infantil antes de añadir sal; aplastar los granos y adaptar la consistencia."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer semillas crudas, duras ni insuficientemente cocidas.",
+        "Evitar granos enteros y firmes en lactantes por el riesgo de atragantamiento; adaptar la textura y supervisar la comida.",
+        "Preparar sin exceso de sal, cubitos concentrados, embutidos ni carnes procesadas."
+      ],
+      "conservacion": "Una vez cocidas, enfriar pronto y refrigerar en recipiente limpio y tapado. Separar la porción del bebé antes de servir y desechar los restos que hayan estado en contacto con su saliva. Seguir las indicaciones de conservación del envase para productos en conserva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Phaseolus%20vulgaris%20seeds.jpg?width=1280",
+        "alt": "Semillas de Phaseolus vulgaris; fotografía de referencia de la especie, no de un cultivar bayo específico.",
+        "autor": "Wilfredor",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Phaseolus_vulgaris_seeds.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "frijol bayo",
+        "frijoles bayos",
+        "frijol beige",
+        "frijol canela",
+        "phaseolus vulgaris",
+        "legumbres para bebés",
+        "mi bebé puede comer frijol bayo",
+        "cómo preparar frijol bayo para bebés",
+        "desde cuándo dar frijol bayo",
+        "puré de frijol bayo",
+        "recetas con frijol bayo"
+      ],
+      "fuentes": [
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para diversidad alimentaria y alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Referencia cubana para alimentación infantil."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Señales de preparación y adaptación de alimentos y texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamiento y adaptación segura."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Composición nutricional según variedad y preparación."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "frijol-caballero",
+      "nombre": "Frijol caballero (haba de Lima)",
+      "nombres_alternativos": [
+        "frijol de la tierra",
+        "haba de Lima",
+        "frijol lima",
+        "lima bean",
+        "Phaseolus lunatus"
+      ],
+      "categoria": "Legumbres",
+      "resumen": "Legumbre conocida en Cuba como frijol caballero; algunas variedades requieren especial cuidado por sus compuestos naturales.",
+      "descripcion": "En Cuba, el nombre frijol caballero se aplica a Phaseolus lunatus, también llamado haba de Lima o frijol de la tierra. Los nombres populares pueden variar y algunas fuentes cubanas también registran ese nombre para otras especies; esta ficha se refiere específicamente a Phaseolus lunatus. Sus semillas aportan proteína vegetal, fibra, almidón y minerales. Algunas variedades contienen glucósidos cianogénicos, por lo que nunca deben consumirse crudas ni prepararse de forma improvisada.",
+      "propiedades": [
+        "Aporta proteína vegetal y carbohidratos complejos.",
+        "Contiene fibra y minerales; la composición cambia según la variedad.",
+        "La especie puede contener linamarina y otros compuestos cianogénicos naturales, cuyo nivel varía entre variedades."
+      ],
+      "beneficios": [
+        "Permite incorporar otra legumbre tradicional y diversificar las comidas.",
+        "Cuando está correctamente procesado y completamente cocido, puede triturarse para preparaciones suaves."
+      ],
+      "edad": "Puede incorporarse alrededor de los 6 meses, cuando comienza la alimentación complementaria y el bebé muestra señales de preparación: controla la cabeza y el cuello y puede mantenerse sentado con apoyo. La leche materna o la fórmula continúan siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocidos y triturados hasta lograr una crema espesa y homogénea. Retirar pieles duras y comprobar que no queden granos enteros ni partes firmes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aplastar muy bien con un tenedor; dejar solo pequeños grumos muy blandos si el bebé ya los maneja con seguridad."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer bien cocidos y aplastados o machacados, adaptando la textura a las habilidades de masticación. Evitar granos duros o enteros."
+        }
+      ],
+      "preparacion_segura": "Identificar con certeza que se trata de Phaseolus lunatus destinado al consumo alimentario. Para semillas secas, revisar, lavar y remojar siguiendo instrucciones fiables; desechar el agua de remojo, enjuagar y hervir en abundante agua nueva hasta que estén completamente tiernas. Desechar el agua de cocción. No usar olla de cocción lenta ni consumir semillas o vainas crudas. Para lactantes, triturar por completo. Si no se conoce la variedad o procedencia, no ofrecerla.",
+      "recetas": [
+        {
+          "nombre": "Puré fino de frijol caballero",
+          "etapa": "Solo después de una cocción completa y segura",
+          "ingredientes": "Frijoles caballeros correctamente identificados y completamente cocidos",
+          "preparacion": "Desechar el agua de cocción y triturar con agua potable limpia hasta obtener una crema homogénea."
+        },
+        {
+          "nombre": "Frijol caballero con boniato",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Frijol caballero bien procesado y boniato cocido",
+          "preparacion": "Aplastar y mezclar hasta una textura húmeda y sin granos enteros."
+        },
+        {
+          "nombre": "Guiso familiar de haba de Lima",
+          "etapa": "Para niños mayores, según habilidades",
+          "ingredientes": "Haba de Lima completamente cocida y vegetales",
+          "preparacion": "Preparar solo con semillas identificadas y procesadas de forma segura; separar la porción infantil y adaptar la textura."
+        }
+      ],
+      "precauciones": [
+        "Nunca ofrecer frijol caballero crudo, poco cocido ni solo remojado: Phaseolus lunatus puede contener compuestos cianogénicos naturales.",
+        "El remojo por sí solo no garantiza su eliminación; se requiere cocción completa en abundante agua y desechar el agua de cocción.",
+        "No usar olla de cocción lenta para preparar semillas secas de esta especie.",
+        "El nombre popular puede designar especies distintas. No consumir semillas de identidad incierta ni semillas para siembra tratadas químicamente.",
+        "No ofrecer granos enteros o firmes a lactantes."
+      ],
+      "conservacion": "Una vez cocidas, enfriar pronto y refrigerar en recipiente limpio y tapado. Separar la porción del bebé antes de servir y desechar los restos que hayan estado en contacto con su saliva. Seguir las indicaciones de conservación del envase para productos en conserva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Phaseolus%20lunatus%20%28seeds%29.jpg?width=1280",
+        "alt": "Semillas de Phaseolus lunatus, especie conocida como haba de Lima y frijol caballero en Cuba.",
+        "autor": "Filo gèn'",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Phaseolus_lunatus_(seeds).jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "frijol caballero",
+        "frijoles caballeros",
+        "haba de Lima",
+        "habas de Lima",
+        "frijol de la tierra",
+        "frijol lima",
+        "phaseolus lunatus",
+        "mi bebé puede comer frijol caballero",
+        "cómo cocinar frijol caballero",
+        "preparación segura de haba de Lima",
+        "legumbres cubanas"
+      ],
+      "fuentes": [
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para diversidad alimentaria y alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Referencia cubana para alimentación infantil."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Señales de preparación y adaptación de alimentos y texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamiento y adaptación segura."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Composición nutricional según variedad y preparación."
+        },
+        {
+          "institucion": "Royal Botanic Gardens, Kew",
+          "titulo": "Plants of the World Online: Phaseolus lunatus",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:513918-1/general-information",
+          "utilidad": "Advierte que las habas de Lima contienen compuestos cianogénicos y no deben consumirse crudas."
+        },
+        {
+          "institucion": "Oregon State University Extension",
+          "titulo": "Is there cyanide in lima beans?",
+          "url": "https://extension.oregonstate.edu/ask-extension/featured/there-cyanide-lima-beans",
+          "utilidad": "Explica la presencia de linamarina y la importancia de hervirlas suficientemente en abundante agua."
+        },
+        {
+          "institucion": "Hammer et al. / Pl@ntUse",
+          "titulo": "Inventory of cultivated plants of Cuba",
+          "url": "https://plantuse.plantnet.org/en/Inventory_of_cultivated_plants_of_Cuba_%28Hammer_et_al.%2C_1992%29",
+          "utilidad": "Documenta Phaseolus lunatus y su nombre cubano frijol caballero; los nombres comunes pueden tener más de una correspondencia botánica."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "gandul",
+      "nombre": "Gandul",
+      "nombres_alternativos": [
+        "guandú",
+        "guandul",
+        "frijol de palo",
+        "frijol chícharo",
+        "quinchoncho",
+        "pigeon pea",
+        "Cajanus cajan"
+      ],
+      "categoria": "Legumbres",
+      "resumen": "Legumbre tropical conocida en Cuba y el Caribe; sus semillas aportan proteína vegetal, fibra y minerales.",
+      "descripcion": "El gandul (Cajanus cajan), también llamado guandú, guandul, frijol de palo o quinchoncho, es una legumbre tropical presente en distintas zonas del Caribe y documentada en Cuba. Sus semillas verdes o secas se utilizan en guisos y arroces. Aportan proteína vegetal, fibra, carbohidratos complejos y minerales; la composición varía con la madurez y el procesamiento.",
+      "propiedades": [
+        "Aporta proteína vegetal y fibra alimentaria.",
+        "Contiene carbohidratos complejos, folato y minerales en cantidades variables.",
+        "Las semillas secas requieren remojo opcional según el producto y cocción completa hasta quedar muy blandas."
+      ],
+      "beneficios": [
+        "Contribuye a la diversidad de legumbres y sabores en la alimentación familiar.",
+        "Puede incorporarse en purés y guisos una vez bien cocido y adaptado a la textura que el niño maneje."
+      ],
+      "edad": "Puede incorporarse alrededor de los 6 meses, cuando comienza la alimentación complementaria y el bebé muestra señales de preparación: controla la cabeza y el cuello y puede mantenerse sentado con apoyo. La leche materna o la fórmula continúan siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocidos y triturados hasta lograr una crema espesa y homogénea. Retirar pieles duras y comprobar que no queden granos enteros ni partes firmes."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aplastar muy bien con un tenedor; dejar solo pequeños grumos muy blandos si el bebé ya los maneja con seguridad."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer bien cocidos y aplastados o machacados, adaptando la textura a las habilidades de masticación. Evitar granos duros o enteros."
+        }
+      ],
+      "preparacion_segura": "Retirar semillas dañadas o impurezas, lavar y seguir las instrucciones del producto para el remojo. Cocinar en agua potable hasta que estén completamente blandas. No ofrecer crudas, germinadas sin tratamiento seguro ni semillas firmes. Para lactantes, triturar o aplastar muy bien.",
+      "recetas": [
+        {
+          "nombre": "Crema de gandul",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Gandules completamente cocidos y agua potable",
+          "preparacion": "Triturar hasta lograr una crema espesa, homogénea y sin semillas enteras."
+        },
+        {
+          "nombre": "Gandul con calabaza",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Gandul y calabaza bien cocidos",
+          "preparacion": "Aplastar o triturar juntos hasta una textura suave y húmeda."
+        },
+        {
+          "nombre": "Arroz con gandules adaptado",
+          "etapa": "Desde los 12 meses, según habilidades",
+          "ingredientes": "Arroz bien cocido, gandules muy blandos y vegetales",
+          "preparacion": "Separar la porción infantil antes de añadir sal; aplastar los gandules y adaptar el conjunto a la masticación."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer semillas crudas, duras ni insuficientemente cocidas.",
+        "Evitar granos enteros y firmes en lactantes por el riesgo de atragantamiento; adaptar la textura y supervisar la comida.",
+        "Preparar sin exceso de sal, cubitos concentrados, embutidos ni carnes procesadas."
+      ],
+      "conservacion": "Una vez cocidas, enfriar pronto y refrigerar en recipiente limpio y tapado. Separar la porción del bebé antes de servir y desechar los restos que hayan estado en contacto con su saliva. Seguir las indicaciones de conservación del envase para productos en conserva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gandul%20Cuban%201.jpg?width=1280",
+        "alt": "Planta y vainas de gandul documentadas en Cabacú, Baracoa, Cuba.",
+        "autor": "Sarang",
+        "licencia": "Dominio público (CC0)",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Gandul_Cuban_1.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "gandul",
+        "guandú",
+        "guandul",
+        "frijol de palo",
+        "frijol chícharo",
+        "quinchoncho",
+        "pigeon pea",
+        "cajanus cajan",
+        "gandules para bebés",
+        "mi bebé puede comer gandul",
+        "cómo preparar gandul para bebés",
+        "arroz con gandules",
+        "puré de gandul",
+        "legumbres cubanas"
+      ],
+      "fuentes": [
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco para diversidad alimentaria y alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Referencia cubana para alimentación infantil."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Señales de preparación y adaptación de alimentos y texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamiento y adaptación segura."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Composición nutricional según variedad y preparación."
+        },
+        {
+          "institucion": "US Food and Drug Administration",
+          "titulo": "MPM: V-11. Vegetables and Vegetable Products",
+          "url": "https://www.fda.gov/food/laboratory-methods-food/mpm-v-11-vegetables-and-vegetable-products",
+          "utilidad": "Incluye Cajanus cajan entre las legumbres y guisantes destinados al consumo alimentario."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Gandul Cuban 1.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Gandul_Cuban_1.jpg",
+          "utilidad": "Fotografía documentada en Baracoa, Cuba, que ilustra el gandul local."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
     }
   ]
 }
