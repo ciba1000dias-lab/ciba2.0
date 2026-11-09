@@ -97,6 +97,22 @@
     return alimentos;
   }
 
+  function resolverSeccion(consulta) {
+    const q = normalizar(consulta);
+    const reglas = [
+      { clave: 'recetas', etiqueta: 'Recetas sencillas', patrones: ['receta', 'recetas', 'que puedo cocinar'] },
+      { clave: 'precauciones', etiqueta: 'Precauciones', patrones: ['precaucion', 'precauciones', 'alergia', 'alergico', 'atragantamiento', 'peligro', 'riesgo', 'evitar'] },
+      { clave: 'conservacion', etiqueta: 'Conservación', patrones: ['conservar', 'conservacion', 'guardar', 'nevera', 'refrigerar', 'cuanto dura', 'congelar'] },
+      { clave: 'seguridad', etiqueta: 'Preparación segura', patrones: ['lavar', 'limpiar', 'cortar', 'quitar semillas', 'quitar cascara', 'seguro', 'segura'] },
+      { clave: 'edad', etiqueta: 'Edad de introducción', patrones: ['edad', 'desde cuando', 'a partir de cuando', 'cuando introducir', 'cuando puedo', 'meses puede'] },
+      { clave: 'preparacion', etiqueta: 'Preparación según la etapa', patrones: ['preparar', 'preparacion', 'como dar', 'como ofrecer', 'textura', 'trozos', 'pure', 'papilla', 'aplastar', 'triturar'] },
+      { clave: 'beneficios', etiqueta: 'Beneficios', patrones: ['beneficio', 'beneficios', 'para que sirve', 'es bueno', 'bueno para'] },
+      { clave: 'propiedades', etiqueta: 'Propiedades nutricionales', patrones: ['propiedad', 'propiedades', 'vitamina', 'vitaminas', 'nutriente', 'nutrientes', 'fibra', 'proteina', 'calorias', 'grasa'] },
+      { clave: 'video', etiqueta: 'Video relacionado', patrones: ['video', 'youtube', 'short'] }
+    ];
+    return reglas.find((regla) => regla.patrones.some((patron) => q.includes(patron))) || null;
+  }
+
   function cerrarMenu(panel, boton) {
     panel.classList.remove('abierto');
     boton.setAttribute('aria-expanded', 'false');
@@ -513,7 +529,9 @@
 
         const consulta = normalizar(entrada.value);
         if (!consulta) return;
-        const terminos = consulta.split(/\s+/).filter((t) => t.length > 1 && !['mi','el','la','los','las','un','una','puede','pueden','dar','comer','para','desde','cuando','como','que','es','de','del','y','a','esta','este'].includes(t));
+        const palabrasIgnoradas = new Set(['mi','mis','el','la','los','las','un','una','unos','unas','puede','pueden','puedo','podria','dar','darle','ofrecer','ofrecerle','comer','para','desde','cuando','como','que','es','de','del','y','a','esta','este','bebe','bebes','mes','meses','ano','anos']);
+        const terminos = consulta.split(/\s+/).filter((t) => t.length > 1 && !palabrasIgnoradas.has(t) && !/^\d+$/.test(t));
+        const seccionSolicitada = resolverSeccion(consulta);
 
         resultados.replaceChildren(
           elemento(
@@ -544,9 +562,24 @@
 
           const coincidenciasAlimentos = (datosAlimentos.alimentos || []).map((alimento) => {
             const contenido = normalizar([
-              alimento.nombre,
-              alimento.categoria,
-              alimento.resumen,
+              alimento.nombre, alimento.categoria, alimento.resumen,
+              'edad introduccion cuando desde que edad meses',
+              'preparacion preparar ofrecer dar textura trozos pure papilla triturar aplastar',
+              'seguridad seguro lavar limpiar cortar retirar semillas cascara',
+              'recetas receta cocinar',
+              'precauciones alergia atragantamiento riesgo evitar',
+              'conservacion conservar guardar refrigerar nevera congelar',
+              'beneficios beneficio bueno para que sirve',
+              'propiedades nutricionales vitaminas nutrientes fibra proteina calorias grasas',
+              'video youtube short',
+              JSON.stringify(alimento.edad || ''),
+              JSON.stringify(alimento.preparacion_por_edades || ''),
+              JSON.stringify(alimento.preparacion_segura || ''),
+              JSON.stringify(alimento.recetas || ''),
+              JSON.stringify(alimento.precauciones || ''),
+              JSON.stringify(alimento.conservacion || ''),
+              JSON.stringify(alimento.propiedades || ''),
+              JSON.stringify(alimento.beneficios || ''),
               ...(alimento.nombres_alternativos || []),
               ...(alimento.palabras_clave || [])
             ].join(' '));
@@ -568,8 +601,9 @@
           }
 
           coincidenciasAlimentos.slice(0, 10).forEach((alimento) => {
+            const ancla = seccionSolicitada ? '--' + seccionSolicitada.clave : '';
             const destino = new URL(
-              'c/C1/index.html#alimento-' + encodeURIComponent(alimento.id),
+              'c/C1/index.html#alimento-' + encodeURIComponent(alimento.id) + ancla,
               RAIZ
             ).href;
             const resultado = enlace(
@@ -579,7 +613,13 @@
             );
             const nombre = elemento('strong', '', alimento.nombre || 'Alimento');
             const descripcion = elemento('small', '', alimento.resumen || 'Consultar ficha de alimento');
-            const seccion = elemento('small', 'ciba-global-subseccion', 'Biblioteca de alimentos · ' + (alimento.categoria || 'Alimentación'));
+            const seccion = elemento(
+              'small',
+              'ciba-global-subseccion',
+              seccionSolicitada
+                ? 'Ir directamente a: ' + seccionSolicitada.etiqueta
+                : 'Abrir ficha · ' + (alimento.categoria || 'Alimentación')
+            );
             resultado.append(nombre, descripcion, seccion);
             resultados.appendChild(resultado);
           });
