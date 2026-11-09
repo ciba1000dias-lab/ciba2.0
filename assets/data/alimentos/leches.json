@@ -901,45 +901,45 @@
         "leche de soya cubana"
       ],
       "categoria": "Leches",
-      "resumen": "Producto de soya mencionado por su uso en Cuba; composición y preparación deben confirmarse en el envase concreto.",
-      "descripcion": "El nombre no permite confirmar si es bebida lista, polvo reconstituible o mezcla fortificada. La ficha no atribuye composición ni proporciones sin etiqueta verificable.",
+      "resumen": "Producto cubano a base de soya, descrito históricamente como suplemento alimentario para determinados niños con intolerancia a la lactosa. No equivale a una fórmula infantil.",
+      "descripcion": "El Prolacsín (también escrito Prolacsin) es un producto cubano elaborado a base de soya, referido en fuentes periodísticas como sustituto lácteo destinado a niños con intolerancia a la lactosa. La información pública localizada no permite confirmar la formulación comercial vigente, su composición nutricional completa ni una pauta de reconstitución actual. Por eso, esta ficha no atribuye cantidades de nutrientes ni indica medidas de preparación sin disponer de la etiqueta del producto. Es importante distinguir la intolerancia a la lactosa —un problema relacionado con la digestión de ese azúcar— de la alergia a las proteínas de la leche de vaca (APLV), que es una reacción inmunológica. Que un producto no contenga lactosa no demuestra que sea adecuado para tratar una APLV.",
       "propiedades": [
-        "La soya aporta proteína vegetal; calcio, vitamina D, azúcar y otros nutrientes dependen de la formulación.",
-        "No asumir que es fórmula infantil."
+        "Las fuentes consultadas describen el producto como elaborado a base de soya; no se ha podido verificar la fórmula nutricional vigente.",
+        "No deben suponerse su contenido de proteínas, grasas, calcio, hierro, vitaminas ni su grado de fortificación sin revisar el envase.",
+        "La soya también puede provocar alergia en algunos niños."
       ],
       "beneficios": [
-        "No recomendar como bebida para lactantes. En mayores de 12 meses, valorar solo tras comprobar composición y fortificación."
+        "Su uso se ha descrito históricamente en Cuba para determinados niños con intolerancia a la lactosa, bajo indicación y seguimiento especializado.",
+        "No debe presentarse como tratamiento universal de la intolerancia a la lactosa ni como fórmula indicada para cualquier niño con APLV."
       ],
-      "edad": "No ofrecer antes de 12 meses como sustituto de leche materna o fórmula. Después, la idoneidad depende de la presentación y la dieta.",
+      "edad": "No utilizar en menores de 12 meses como sustituto de leche materna o fórmula infantil. En niños mayores, su posible uso depende del diagnóstico, la formulación exacta y la indicación del gastroenterólogo o pediatra. La información periodística de 2019 señalaba que el acceso al producto se vinculaba a diagnóstico por gastroenterología pediátrica; esto no sustituye las indicaciones sanitarias vigentes.",
       "preparacion_por_edades": [
         {
-          "etapa": "Menores de 6 meses",
-          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+          "etapa": "Menores de 12 meses",
+          "forma": "No utilizar como sustituto de leche materna ni de fórmula infantil. Si existe sospecha de intolerancia o alergia, la selección de una fórmula terapéutica debe realizarla el equipo de salud."
         },
         {
-          "etapa": "De 6 a 11 meses",
-          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
-        },
-        {
-          "etapa": "Desde los 12 meses",
-          "forma": "Preparar exclusivamente según etiqueta. CIBA no publicará medidas hasta verificar foto de ingredientes, tabla nutricional y modo de preparación."
+          "etapa": "Mayores de 12 meses",
+          "forma": "Usar únicamente si el profesional que atiende al niño confirma que la presentación concreta es apropiada. Seguir exactamente la etiqueta vigente; no improvisar proporciones, diluciones ni sustituciones."
         }
       ],
-      "preparacion_segura": "No usar para biberones ni sustituir fórmula. La soya puede causar alergia.",
+      "preparacion_segura": "No es posible indicar una receta de reconstitución fiable sin comprobar la etiqueta del envase que se comercializa o distribuye actualmente. No inventar cucharadas, gramos ni volumen de agua. Antes de preparar, verificar ingredientes, tabla nutricional, edad indicada, proporción de mezcla, agua recomendada y conservación tras abrir o reconstituir.",
       "recetas": [
         {
-          "nombre": "Uso y preparación segura",
-          "etapa": "Según edad y etiqueta",
-          "ingredientes": "Leche de soya Prolacsin",
-          "preparacion": "Preparar exclusivamente según etiqueta. CIBA no publicará medidas hasta verificar foto de ingredientes, tabla nutricional y modo de preparación."
+          "nombre": "Preparación según el envase",
+          "etapa": "Solo cuando exista indicación profesional y etiqueta verificable",
+          "ingredientes": "Presentación exacta de Prolacsín y agua potable, si la etiqueta indica reconstitución",
+          "preparacion": "Seguir literalmente las instrucciones del fabricante. No usar instrucciones de otra leche en polvo ni modificar la concentración."
         }
       ],
       "precauciones": [
-        "Ficha pendiente de verificación de etiqueta cubana actual.",
-        "No es fórmula infantil salvo que el envase lo certifique expresamente.",
-        "No inventar proporciones."
+        "La intolerancia a la lactosa y la alergia a las proteínas de la leche de vaca son problemas diferentes; no deben confundirse.",
+        "Un producto a base de soya no es automáticamente apropiado para un niño con APLV: la soya también puede causar alergia y la elección depende de la edad y el cuadro clínico.",
+        "No es una fórmula infantil ni debe sustituir leche materna o fórmula infantil durante el primer año.",
+        "No se dispone aquí de una etiqueta actual verificable; confirmar composición, indicación, modo de preparación y conservación antes de recomendar su uso.",
+        "La noticia de CiberCuba es de enero de 2019 y documenta una situación de producción y distribución de aquel momento, no la disponibilidad actual."
       ],
-      "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
+      "conservacion": "Conservar y utilizar únicamente según las instrucciones del envase vigente. Si no se dispone de etiqueta legible, no establecer tiempos de conservación ni pautas de refrigeración por analogía con otros productos.",
       "imagen_principal": {
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Soy%20milk.jpg?width=1280",
         "alt": "Vaso de bebida de soya con granos de soya; imagen ilustrativa, no representa el envase ni la composición de Prolacsin.",
@@ -959,22 +959,28 @@
       ],
       "fuentes": [
         {
+          "institucion": "CiberCuba",
+          "titulo": "El Prolacsín, sustituto cubano de la leche para niños intolerantes a la lactosa, lleva tres meses perdido (18 de enero de 2019)",
+          "url": "https://www.cibercuba.com/noticias/2019-01-18-u1-e192519-s27061-prolacsin-sustituto-cubano-leche-ninos-intolerantes-lactosa",
+          "utilidad": "Fuente periodística sobre el origen a base de soya, su uso histórico en niños con intolerancia a la lactosa y la indicación por gastroenterología pediátrica; no confirma la fórmula ni la disponibilidad actuales."
+        },
+        {
+          "institucion": "Revista Cubana de Pediatría",
+          "titulo": "Alergia a las proteínas de la leche de vaca",
+          "url": "https://revpediatria.sld.cu/index.php/ped/article/view/391/141",
+          "utilidad": "Referencia clínica cubana aportada para diferenciar la alergia a las proteínas de la leche de vaca de otros problemas relacionados con los lácteos. El enlace no pudo recuperarse automáticamente durante esta revisión."
+        },
+        {
           "institucion": "CDC",
           "titulo": "Cow's Milk and Milk Alternatives",
           "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/cows-milk-and-milk-alternatives.html",
-          "utilidad": "Edad de introducción de leche de vaca y bebidas alternativas."
+          "utilidad": "Orientación sobre bebidas de leche y alternativas en menores de 12 meses; no valida Prolacsín como fórmula infantil."
         },
         {
-          "institucion": "OMS",
-          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months",
-          "url": "https://www.who.int/publications/i/item/9789240081864",
-          "utilidad": "Marco para alimentación complementaria."
-        },
-        {
-          "institucion": "CDC",
-          "titulo": "Safer Food Choices for Children Under 5 Years Old",
-          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
-          "utilidad": "Riesgos de leche cruda y productos no pasteurizados."
+          "institucion": "Pediatría Integral",
+          "titulo": "Alergia e intolerancia a la proteína de leche de vaca (2023)",
+          "url": "https://www.pediatriaintegral.es/publicacion-2023-03/alergia-e-intolerancia-a-la-proteina-de-leche-de-vaca/",
+          "utilidad": "Revisión clínica sobre APLV, reactividad cruzada y diferencias entre fórmulas terapéuticas y bebidas vegetales."
         }
       ],
       "estado": "publicado",
