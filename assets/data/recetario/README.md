@@ -37,7 +37,10 @@ La identificación automática de alérgenos es conservadora y limitada a los al
 
 La aprobación registrada corresponde a las fichas actuales y a la valoración del especialista responsable del proyecto. No constituye una certificación externa ni sustituye la actualización periódica de fuentes, la comprobación de enlaces o la reevaluación si cambia una receta. Las fuentes citadas sustentan recomendaciones generales de alimentación complementaria y seguridad, no certifican por sí solas cada receta ni sus cantidades.
 
+## Funcionamiento de la interfaz
 
-## Prototipo funcional
+La interfaz normal muestra únicamente registros aprobados. Después de reconocer los ingredientes, presenta directamente las preparaciones que coinciden con todos los ingredientes obligatorios, la edad y las restricciones indicadas; no añade una pantalla intermedia de confirmación. Si algún término no se reconoce con suficiente seguridad, solicita aclararlo antes de buscar preparaciones. Si no hay coincidencias, lo comunica sin inventar recetas ni añadir alimentos.
 
-La interfaz normal muestra únicamente registros aprobados. Después de reconocer los ingredientes, solicita confirmación y devuelve las recetas cuyos ingredientes obligatorios están todos presentes, filtradas por edad y restricciones. Si hay términos sin identificar, espera a que se aclaren; si no existe coincidencia, lo comunica sin inventar una receta ni añadir ingredientes. El modo `?demo=1` queda reservado para borradores futuros y no es necesario para el piloto operativo actual. Las nuevas recetas se incorporan como registros independientes siguiendo este mismo esquema; el motor no requiere reescritura.
+Las aclaraciones breves se muestran mediante controles `°`, que abren mensajes flotantes también en pantallas táctiles. La fecha de nacimiento se utiliza localmente para calcular la edad; la edad, las alergias y las restricciones no se envían al servicio de IA.
+
+El modo `?demo=1` queda reservado para borradores futuros y no es necesario para el piloto operativo actual. Las nuevas recetas se incorporan como registros independientes siguiendo este mismo esquema; el motor no requiere reescritura.
