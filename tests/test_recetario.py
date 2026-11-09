@@ -58,19 +58,21 @@ class TestRecetario(unittest.TestCase):
                 self.assertEqual(receta.get("estado"), "aprobada", receta["id"])
                 self.assertEqual(receta.get("revision", {}).get("estado"), "aprobada", receta["id"])
 
-    def test_catalogo_conserva_bloqueo_global(self) -> None:
-        if self.catalogo.get("estado_catalogo") != "publicado":
-            self.assertFalse(any(r.get("publicable") is True for r in self.catalogo["recetas"]))
-
-    def test_prototipo_demo_no_publica_ni_aprueba_borradores(self) -> None:
+    def test_piloto_operativo_solo_incluye_fichas_aprobadas(self) -> None:
+        self.assertEqual(self.catalogo.get("estado_catalogo"), "piloto_operativo")
         self.assertEqual(len(self.catalogo["recetas"]), 15)
-        self.assertTrue(all(r.get("publicable") is False for r in self.catalogo["recetas"]))
+        for receta in self.catalogo["recetas"]:
+            self.assertTrue(receta.get("publicable"), receta["id"])
+            self.assertEqual(receta.get("estado"), "aprobada", receta["id"])
+            self.assertEqual(receta.get("revision", {}).get("estado"), "aprobada", receta["id"])
+
+    def test_motor_filtra_por_ingredientes_edad_y_estado_aprobado(self) -> None:
         motor = (ROOT / "assets" / "js" / "ciba-recetario-motor.js").read_text(encoding="utf-8")
         interfaz = (ROOT / "assets" / "js" / "ciba-recetario.js").read_text(encoding="utf-8")
         self.assertIn("r.publicable === true && r.estado === 'aprobada'", motor)
-        self.assertIn("r.publicable === false && r.estado !== 'aprobada'", motor)
-        self.assertIn("get('demo') === '1'", interfaz)
-        self.assertIn("BORRADOR · NO APROBADO", interfaz)
+        self.assertIn("obligatorios.every(i => ids.has(i.alimento_id))", motor)
+        self.assertIn("adaptacion_por_edad[edad.key]", motor)
+        self.assertIn("mostrarRecetas(data)", interfaz)
 
 
     def test_fuentes_externas_tienen_enlaces_y_no_se_habilitan_sin_revision(self) -> None:
