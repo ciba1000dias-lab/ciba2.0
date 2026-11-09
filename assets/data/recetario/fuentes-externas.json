@@ -1,7 +1,7 @@
 {
   "version": 1,
   "proposito": "Índice de colecciones externas de recetas infantiles y familiares. No reproduce sus textos; conserva enlaces a las publicaciones originales.",
-  "nota_seguridad": "Los recuentos son entradas publicadas por cada fuente, no un recuento de recetas únicas. Antes de recomendar una receta individual hay que verificar su edad mínima, ingredientes, alérgenos, textura, atragantamiento, sal, azúcar, miel, mercurio, higiene y adecuación al contexto cubano.",
+  "nota_seguridad": "Los recuentos son entradas publicadas por cada fuente, no un recuento de recetas únicas. Antes de recomendar una receta individual hay que verificar su edad mínima, ingredientes, alérgenos, textura, atragantamiento, sal, azúcar, miel, mercurio, higiene y adecuación al contexto cubano. Los campos de recuento omitidos o nulos indican que la colección aún no ha sido contabilizada receta por receta; los recuentos mínimos no equivalen a recetas únicas.",
   "colecciones": [
     {
       "id": "nhs-best-start-97",
@@ -67,6 +67,153 @@
       "publico": "Niños de 1–5 años con necesidades especiales de aporte energético",
       "alcance": "Material especializado; no representa recomendaciones genéricas para todos los niños.",
       "uso_ciba": "Solo referencia especializada; excluido de las recomendaciones automáticas generales.",
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "unicef-mexico-nutrimovil-2026",
+      "institucion": "UNICEF México",
+      "titulo": "Cocinando aventuras: recetas saludables para niñas, niños y familias",
+      "url": "https://www.unicef.org/mexico/media/10676/file/Recetario%20del%20Nutrim%C3%B3vil.pdf",
+      "pagina": "https://www.unicef.org/mexico/informes/recetas-saludables-para-ninos-y-familias",
+      "idioma": "es",
+      "entradas_publicadas": null,
+      "publico": "Niños y niñas de educación primaria y sus familias",
+      "alcance": "Recetario Nutrimóvil de 47 páginas; incluye preparaciones económicas y accesibles. Algunas recetas contienen miel, sal y frutos secos; no es un recetario para lactantes.",
+      "uso_ciba": "Prioridad para escolares; revisar ingredientes y edades receta por receta. No usar indicaciones generales como autorización para bebés.",
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "unicef-mexico-escuelas-2025",
+      "institucion": "UNICEF México e Instituto Nacional de Salud Pública",
+      "titulo": "Recetario saludable para escuelas primarias",
+      "url": "https://www.unicef.org/mexico/informes/recetario-saludable-para-escuelas-primarias",
+      "idioma": "es",
+      "entradas_publicadas": null,
+      "publico": "Escolares de primaria, familias y comunidades educativas",
+      "alcance": "Recetas sostenibles con ingredientes frescos y locales, elaboradas con colaboración de una chef y el INSP.",
+      "uso_ciba": "Prioridad para edad escolar; extraer y cotejar recetas individuales.",
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "unicef-lac-crecer-sano-2019",
+      "institucion": "UNICEF América Latina y el Caribe",
+      "titulo": "El sabor del crecer sano",
+      "url": "https://www.unicef.org/lac/media/8266/file/PDF%20El%20sabor%20del%20crecer%20sano.pdf",
+      "pagina": "https://www.unicef.org/lac/informes/el-sabor-del-crecer-sano",
+      "idioma": "es",
+      "entradas_publicadas_minimo": 101,
+      "publico": "Niños, niñas, adolescentes y familias",
+      "alcance": "Más de 100 recetas de 19 chefs latinoamericanos para cocinar en familia; no es una guía de alimentación complementaria.",
+      "uso_ciba": "Fuente cultural y familiar; clasificar principalmente para niños mayores y adolescentes, nunca asumir aptitud para bebés.",
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "unicef-uruguay-meriendas-2019",
+      "institucion": "Ministerio de Salud Pública de Uruguay · UNICEF Uruguay",
+      "titulo": "Recetario de meriendas saludables",
+      "url": "https://www.unicef.org/uruguay/media/3991/file/Recetario%20de%20Meriendas%20saludables%20del%20Ministerio%20de%20Salud%20P%C3%BAblica.pdf",
+      "pagina": "https://www.unicef.org/uruguay/informes/recetario-de-meriendas",
+      "idioma": "es",
+      "entradas_publicadas": null,
+      "publico": "Escolares y familias",
+      "alcance": "Preparaciones caseras para meriendas escolares; el MSP declara el propósito de evitar excesos de grasas, azúcares y sal.",
+      "uso_ciba": "Prioridad para meriendas escolares; cotejar cada preparación y adaptar ingredientes al contexto cubano.",
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "unicef-el-salvador-fao-ops-2023",
+      "institucion": "UNICEF El Salvador · OPS/OMS · FAO",
+      "titulo": "Por Familias Más Saludables: Recetario",
+      "url": "https://www.unicef.org/elsalvador/informes/por-familias-mas-saludables-recetario",
+      "idioma": "es",
+      "entradas_publicadas": null,
+      "publico": "Familias y niños en edad escolar",
+      "alcance": "Recetas con alimentos accesibles, legumbres, hortalizas y productos de agricultura familiar.",
+      "uso_ciba": "Candidatas para cocina familiar; revisar edades y seguridad de cada receta.",
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "ins-peru-6-23m-2023",
+      "institucion": "Instituto Nacional de Salud del Perú",
+      "titulo": "Recetario nutritivo para niñas y niños de 6 a 23 meses",
+      "url": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
+      "idioma": "es",
+      "entradas_publicadas": null,
+      "publico": "Bebés de 6 a 23 meses",
+      "alcance": "Publicación institucional de 2023 con cartillas de recetas, preparación y tablas de aporte nutricional.",
+      "uso_ciba": "Fuente prioritaria para lactantes; verificar cada receta y la compatibilidad con guías cubanas vigentes.",
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "argentina-recetas-para-hacer-magia-2024",
+      "institucion": "Gobierno de Argentina · Equipo interdisciplinario de Alimentación Saludable en la Infancia",
+      "titulo": "Recetas para hacer magia",
+      "url": "https://www.argentina.gob.ar/noticias/recetas-saludables-para-ninas-y-ninos",
+      "idioma": "es",
+      "entradas_publicadas": null,
+      "publico": "Niños y niñas desde los 6 meses, considerando edad y condición de salud",
+      "alcance": "Material elaborado por equipos de nutrición, terapia ocupacional, aprendizaje y salud infantil, a partir de talleres con familias.",
+      "uso_ciba": "Fuente prioritaria para revisión individual; no trasladar indicaciones clínicas sin adaptación.",
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "aap-healthychildren-recetas",
+      "institucion": "American Academy of Pediatrics · HealthyChildren",
+      "titulo": "Recetas",
+      "url": "https://www.healthychildren.org/Spanish/healthy-living/nutrition/chop-chop-magazine/Paginas/default.aspx",
+      "idioma": "es",
+      "entradas_publicadas": null,
+      "publico": "Familias y niños; incluye alguna receta para bebés",
+      "alcance": "Colección de recetas familiares y una receta específica de puré para bebés; la mayoría no está clasificada para lactantes.",
+      "uso_ciba": "Revisar individualmente; separar receta infantil específica de recetas familiares generales.",
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nutrition-gov-usda-recetas",
+      "institucion": "USDA · Nutrition.gov · MyPlate · Team Nutrition",
+      "titulo": "Compilación de recetas saludables",
+      "url": "https://www.nutrition.gov/es/temas/comprando-cocinando-y-planeando-las-comidas/compilacion-de-recetas",
+      "idioma": "es-en",
+      "entradas_publicadas": null,
+      "publico": "Familias, niños y programas de alimentación",
+      "alcance": "Directorio institucional hacia MyPlate Kitchen, recetas estandarizadas de Team Nutrition, Food Hero y programas universitarios.",
+      "uso_ciba": "Directorio para descubrir recetas; cada receta debe registrarse desde su fuente primaria y evaluarse por edad.",
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "oshu-foodhero-recetas",
+      "institucion": "Oregon State University Extension · Food Hero",
+      "titulo": "Food Hero: recetas saludables y aprobadas por niños",
+      "url": "https://foodhero.org/",
+      "idioma": "es-en",
+      "entradas_publicadas": null,
+      "publico": "Familias y niños",
+      "alcance": "Colección universitaria de recetas económicas, prácticas y con actividades para niños; recetas probadas por educadores de nutrición.",
+      "uso_ciba": "Fuente de calidad para niños mayores; confirmar versión en español y adecuación de cada receta.",
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "cubahora-cocina-cuba-ninos",
+      "institucion": "Cubahora · Cocina de Cuba",
+      "titulo": "Recetas cubanas divertidas y nutritivas para niños",
+      "url": "https://www.cubahora.cu/blogs/cocina-de-cuba/recetas-cubanas-divertidas-y-nutritivas-para-ninos",
+      "idioma": "es",
+      "entradas_publicadas": null,
+      "publico": "Niños y familias",
+      "alcance": "Artículo de divulgación gastronómica cubana con preparaciones para niños; algunas requieren corrección de ingredientes y clasificación etaria.",
+      "uso_ciba": "Fuente local complementaria; no asumir validación pediátrica. Verificar y adaptar cada receta.",
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "guije-comidas-ninos-historico",
+      "institucion": "Guije · Biblioteca digital de cultura cubana",
+      "titulo": "Comidas para niños",
+      "url": "http://www.guije.com/libros/comidas/ninos/index.htm",
+      "idioma": "es",
+      "entradas_publicadas": null,
+      "publico": "Referencia histórica de cocina cubana",
+      "alcance": "Recopilación histórica de recetas infantiles vinculadas a publicaciones cubanas de mediados del siglo XX.",
+      "uso_ciba": "Patrimonio gastronómico y memoria culinaria; no utilizar como guía nutricional ni como recomendación automática.",
       "recomendacion_automatica": false
     }
   ]
