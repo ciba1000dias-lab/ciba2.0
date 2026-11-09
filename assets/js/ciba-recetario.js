@@ -366,6 +366,75 @@ function fechaLocalISO(fecha) {
   return anio + '-' + mes + '-' + dia;
 }
 
+
+/* Ayudas ° accesibles al toque: funcionan también en pantallas táctiles. */
+let ayudaActiva = null;
+let ayudaId = 0;
+
+function cerrarAyudaInfo(devolverFoco = false) {
+  if (!ayudaActiva) return;
+  const {panel, botonInfo} = ayudaActiva;
+  panel.remove();
+  botonInfo.setAttribute('aria-expanded', 'false');
+  botonInfo.removeAttribute('aria-controls');
+  ayudaActiva = null;
+  if (devolverFoco) botonInfo.focus();
+}
+
+function abrirAyudaInfo(botonInfo) {
+  const texto = (botonInfo.getAttribute('data-info') || botonInfo.getAttribute('title') || '').trim();
+  if (!texto) return;
+  if (ayudaActiva?.botonInfo === botonInfo) {
+    cerrarAyudaInfo();
+    return;
+  }
+  cerrarAyudaInfo();
+  const panel = document.createElement('div');
+  const id = 'ciba-ayuda-info-' + (++ayudaId);
+  panel.id = id;
+  panel.className = 'ciba-info-emergente';
+  panel.setAttribute('role', 'dialog');
+  panel.setAttribute('aria-label', botonInfo.getAttribute('aria-label') || 'Información');
+  const contenido = document.createElement('p');
+  contenido.textContent = texto;
+  const cerrar = document.createElement('button');
+  cerrar.type = 'button';
+  cerrar.className = 'ciba-info-cerrar';
+  cerrar.textContent = 'Cerrar';
+  cerrar.addEventListener('click', () => cerrarAyudaInfo(true));
+  panel.append(contenido, cerrar);
+  document.body.appendChild(panel);
+  const rect = botonInfo.getBoundingClientRect();
+  const ancho = Math.min(300, window.innerWidth - 32);
+  panel.style.width = ancho + 'px';
+  const alto = panel.offsetHeight;
+  const izquierda = Math.max(16, Math.min(rect.left, window.innerWidth - ancho - 16));
+  let arriba = rect.bottom + 9;
+  if (arriba + alto > window.innerHeight - 12 && rect.top - alto - 9 >= 12) {
+    arriba = rect.top - alto - 9;
+  }
+  panel.style.left = izquierda + 'px';
+  panel.style.top = Math.max(12, Math.min(arriba, window.innerHeight - alto - 12)) + 'px';
+  botonInfo.setAttribute('aria-expanded', 'true');
+  botonInfo.setAttribute('aria-controls', id);
+  ayudaActiva = {panel, botonInfo};
+}
+
+document.addEventListener('click', evento => {
+  const botonInfo = evento.target.closest?.('.ciba-info');
+  if (botonInfo) {
+    evento.preventDefault();
+    abrirAyudaInfo(botonInfo);
+    return;
+  }
+  if (ayudaActiva && !ayudaActiva.panel.contains(evento.target)) cerrarAyudaInfo();
+});
+document.addEventListener('keydown', evento => {
+  if (evento.key === 'Escape' && ayudaActiva) cerrarAyudaInfo(true);
+});
+window.addEventListener('resize', () => cerrarAyudaInfo());
+window.addEventListener('scroll', () => cerrarAyudaInfo(), true);
+
 campoFecha.max = fechaLocalISO(new Date());
 campoFecha.addEventListener('input', sincronizarFecha);
 campoFecha.addEventListener('change', sincronizarFecha);
