@@ -41,7 +41,7 @@ jobs:
         run: python scripts/build_catalog.py --src content --out dist
 
       - name: Optimizar fotografías piloto a WebP
-        run: python scripts/optimize_alimento_images.py --src dist --pilot
+        run: python scripts/optimize_alimento_images.py --src dist
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
