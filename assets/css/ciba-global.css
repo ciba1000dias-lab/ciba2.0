@@ -618,95 +618,139 @@ body:not(.ciba-con-cabecera-global) > .ciba-global-login{
 }
 
 
-/* CIBA · restauración prioritaria del menú hamburguesa
-   El logo conserva la izquierda; el menú ocupa el extremo derecho,
-   separado del acceso de usuario. */
-.ciba-global-cabecera{position:sticky;isolation:isolate;overflow:visible}
+/* CIBA · posicionamiento unificado del menú global
+   Portada: conserva el anclaje original.
+   Páginas interiores: menú a la izquierda de la cabecera,
+   acceso de cuenta a la derecha y panel dentro del viewport. */
+.ciba-global-cabecera{
+  position:sticky;
+  top:0;
+  z-index:10000;
+  isolation:isolate;
+  overflow:visible;
+  min-height:68px;
+  padding:9px 180px 9px 78px;
+}
 .ciba-global-cabecera > .ciba-global-menu{
-  position:absolute!important;top:50%!important;left:auto!important;
-  right:158px!important;z-index:10005!important;display:block!important;
-  visibility:visible!important;opacity:1!important;transform:translateY(-50%)!important;
-}
-.ciba-global-menu{z-index:10005!important;visibility:visible}
-.ciba-global-menu-boton{
-  position:relative;z-index:10006;display:flex!important;
-  visibility:visible!important;opacity:1!important;width:48px;height:48px;
-  pointer-events:auto
-}
-.ciba-global-panel{z-index:10007}
-body:not(.ciba-con-cabecera-global) > .ciba-global-menu{
-  position:fixed!important;top:88px!important;right:18px!important;
-  left:auto!important;z-index:10005!important
-}
-@media(max-width:600px){
-  .ciba-global-cabecera > .ciba-global-menu{right:139px!important}
-  .ciba-global-cabecera .ciba-global-menu-boton{width:42px;height:42px}
-  body:not(.ciba-con-cabecera-global) > .ciba-global-menu{
-    top:78px!important;right:12px!important
-  }
-}
-@media(max-width:380px){
-  .ciba-global-cabecera > .ciba-global-menu{right:128px!important}
-}
-
-
-/* CIBA · corrección de anclaje del menú y su panel en todas las pantallas */
-body:not(.ciba-con-cabecera-global) > .ciba-global-menu{
-  left:12px!important;right:auto!important;
-}
-body:not(.ciba-con-cabecera-global) > .ciba-global-menu .ciba-global-panel{
-  left:0!important;right:auto!important;
-  width:min(310px,calc(100vw - 24px))!important;
-  max-width:calc(100vw - 24px)!important;
-  box-sizing:border-box;
-}
-.ciba-global-cabecera > .ciba-global-menu .ciba-global-panel{
-  left:auto!important;right:0!important;
-  width:min(310px,calc(100vw - 24px))!important;
-  max-width:calc(100vw - 24px)!important;
-  box-sizing:border-box;
-}
-@media(max-width:600px){
-  body:not(.ciba-con-cabecera-global) > .ciba-global-menu{
-    left:12px!important;right:auto!important;top:78px!important;
-  }
-  body:not(.ciba-con-cabecera-global) > .ciba-global-menu .ciba-global-panel{
-    left:0!important;right:auto!important;width:min(290px,calc(100vw - 24px))!important;
-  }
-}
-
-
-/* CIBA · anclaje definitivo del panel: siempre dentro del viewport.
-   El panel deja de depender del ancho/posición del contenedor del botón. */
-.ciba-global-menu > .ciba-global-panel{
-  position:fixed!important;
-  left:12px!important;
+  position:absolute!important;
+  top:50%!important;
+  left:16px!important;
   right:auto!important;
+  bottom:auto!important;
+  transform:translateY(-50%)!important;
+  z-index:10005!important;
+  display:block!important;
+  width:auto!important;
+  margin:0!important;
+}
+.ciba-global-cabecera .ciba-global-menu-boton{
+  position:relative;
+  display:flex!important;
+  width:46px;
+  height:46px;
+  z-index:10006;
+  visibility:visible!important;
+  opacity:1!important;
+  pointer-events:auto;
+}
+.ciba-global-cabecera .ciba-global-panel{
+  position:absolute!important;
+  top:56px!important;
+  left:0!important;
+  right:auto!important;
+  bottom:auto!important;
   width:min(310px,calc(100vw - 24px))!important;
   max-width:calc(100vw - 24px)!important;
+  max-height:calc(100vh - 100px)!important;
+  max-height:calc(100dvh - 100px)!important;
   box-sizing:border-box!important;
   margin:0!important;
   z-index:10020!important;
 }
-body.ciba-con-cabecera-global .ciba-global-menu > .ciba-global-panel{
-  top:96px!important;
-  max-height:calc(100vh - 112px)!important;
-  max-height:calc(100dvh - 112px)!important;
+.ciba-global-cabecera > .ciba-global-login{
+  position:absolute;
+  top:50%;
+  right:18px;
+  z-index:10007;
+  transform:translateY(-50%);
 }
-body:not(.ciba-con-cabecera-global) > .ciba-global-menu > .ciba-global-panel{
-  top:146px!important;
-  max-height:calc(100vh - 162px)!important;
-  max-height:calc(100dvh - 162px)!important;
+body:not(.ciba-con-cabecera-global) > .ciba-global-menu{
+  position:fixed;
+  top:88px;
+  left:18px;
+  right:auto;
+  z-index:9998;
+}
+body:not(.ciba-con-cabecera-global) > .ciba-global-menu .ciba-global-panel{
+  position:absolute;
+  top:58px;
+  left:0;
+  right:auto;
+  width:min(300px,calc(100vw - 24px));
+  max-width:calc(100vw - 24px);
+  box-sizing:border-box;
+}
+body:not(.ciba-con-cabecera-global) > .ciba-global-login{
+  position:fixed;
+  top:17px;
+  right:18px;
+  z-index:10001;
 }
 @media(max-width:600px){
-  body.ciba-con-cabecera-global .ciba-global-menu > .ciba-global-panel{
-    top:88px!important;
-    max-height:calc(100vh - 104px)!important;
-    max-height:calc(100dvh - 104px)!important;
+  .ciba-global-cabecera{
+    min-height:68px;
+    gap:12px;
+    padding:9px 130px 9px 68px;
   }
-  body:not(.ciba-con-cabecera-global) > .ciba-global-menu > .ciba-global-panel{
-    top:136px!important;
-    max-height:calc(100vh - 152px)!important;
-    max-height:calc(100dvh - 152px)!important;
+  .ciba-global-cabecera > .ciba-global-menu{
+    left:12px!important;
   }
+  .ciba-global-cabecera .ciba-global-menu-boton{
+    width:42px;
+    height:42px;
+  }
+  .ciba-global-cabecera .ciba-global-panel{
+    top:52px!important;
+    width:min(290px,calc(100vw - 24px))!important;
+    max-width:calc(100vw - 24px)!important;
+    max-height:calc(100vh - 88px)!important;
+    max-height:calc(100dvh - 88px)!important;
+  }
+  .ciba-global-cabecera > .ciba-global-login{
+    right:10px;
+    min-height:37px;
+    padding:0 11px;
+    font-size:9px;
+    letter-spacing:.08em;
+  }
+  body:not(.ciba-con-cabecera-global) > .ciba-global-menu{
+    top:80px;
+    left:12px;
+  }
+  body:not(.ciba-con-cabecera-global) > .ciba-global-menu .ciba-global-panel{
+    width:min(290px,calc(100vw - 24px));
+  }
+  body:not(.ciba-con-cabecera-global) > .ciba-global-login{
+    top:12px;
+    right:12px;
+    min-height:38px;
+    padding:0 12px;
+    font-size:9px;
+  }
+}
+@media(max-width:380px){
+  .ciba-global-cabecera{
+    gap:8px;
+    padding-right:124px;
+  }
+  .ciba-global-marca{font-size:19px;letter-spacing:.14em}
+  .ciba-global-contexto{font-size:13px}
+  .ciba-global-cabecera > .ciba-global-login{
+    min-height:35px;
+    padding:0 9px;
+    font-size:8px;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .ciba-global-menu-boton{transition:none}
 }
