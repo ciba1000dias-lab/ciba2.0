@@ -62,6 +62,16 @@ class TestRecetario(unittest.TestCase):
         if self.catalogo.get("estado_catalogo") != "publicado":
             self.assertFalse(any(r.get("publicable") is True for r in self.catalogo["recetas"]))
 
+    def test_prototipo_demo_no_publica_ni_aprueba_borradores(self) -> None:
+        self.assertEqual(len(self.catalogo["recetas"]), 15)
+        self.assertTrue(all(r.get("publicable") is False for r in self.catalogo["recetas"]))
+        motor = (ROOT / "assets" / "js" / "ciba-recetario-motor.js").read_text(encoding="utf-8")
+        interfaz = (ROOT / "assets" / "js" / "ciba-recetario.js").read_text(encoding="utf-8")
+        self.assertIn("r.publicable === true && r.estado === 'aprobada'", motor)
+        self.assertIn("r.publicable === false && r.estado !== 'aprobada'", motor)
+        self.assertIn("get('demo') === '1'", interfaz)
+        self.assertIn("BORRADOR · NO APROBADO", interfaz)
+
 
     def test_fuentes_externas_tienen_enlaces_y_no_se_habilitan_sin_revision(self) -> None:
         colecciones = self.fuentes_externas["colecciones"]
