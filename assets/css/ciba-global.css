@@ -764,3 +764,29 @@ body:not(.ciba-con-cabecera-global) > .ciba-global-login{
 }
 .ciba-global-contexto{border-left-color:rgba(255,255,255,.72);text-shadow:0 1px 12px rgba(0,0,0,.12)}
 .ciba-global-contexto::after{background:linear-gradient(90deg,rgba(255,255,255,.7),rgba(255,255,255,.25),transparent);box-shadow:none}
+
+
+/* CIBA · identidad cromática de las secciones interiores
+   Crianza conserva su diseño verde original.
+   Las otras columnas sustituyen el cacao de sus portadas por su color oficial. */
+body[data-ciba-columna="i"] .hero{
+  background:
+    radial-gradient(ellipse at 80% 18%,rgba(255,255,255,.18),transparent 40%),
+    linear-gradient(130deg,#287B9A,#1D607B)!important;
+}
+body[data-ciba-columna="b"] .hero{
+  background:
+    radial-gradient(ellipse at 80% 18%,rgba(255,255,255,.18),transparent 40%),
+    linear-gradient(130deg,#8C671F,#674A17)!important;
+}
+body[data-ciba-columna="a"] .hero{
+  background:
+    radial-gradient(ellipse at 80% 18%,rgba(255,255,255,.18),transparent 40%),
+    linear-gradient(130deg,#A9443B,#7D302D)!important;
+}
+body[data-ciba-columna="i"] .pie,
+body[data-ciba-columna="i"] .foot{background:#174B60!important}
+body[data-ciba-columna="b"] .pie,
+body[data-ciba-columna="b"] .foot{background:#594014!important}
+body[data-ciba-columna="a"] .pie,
+body[data-ciba-columna="a"] .foot{background:#632824!important}
