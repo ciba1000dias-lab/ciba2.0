@@ -53,12 +53,13 @@
       if (url.hostname === 'upload.wikimedia.org' &&
           url.pathname.includes('/wikipedia/commons/') &&
           !url.pathname.includes('/thumb/')) {
-        const archivo = decodeURIComponent(url.pathname.split('/').pop());
-        const optimizada = new URL(
-          'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(archivo)
-        );
-        optimizada.searchParams.set('width', String(ancho));
-        return optimizada.href;
+        const partes = url.pathname.split('/wikipedia/commons/')[1].split('/');
+        const archivo = partes.pop();
+        const hash = partes.join('/');
+        url.pathname = '/wikipedia/commons/thumb/' + hash + '/' + archivo + '/' +
+          ancho + 'px-' + archivo;
+        url.search = '';
+        return url.href;
       }
     } catch (error) {
       console.warn('CIBA: no se pudo ajustar el tamaño de una imagen.', error);
