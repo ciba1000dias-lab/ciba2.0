@@ -21,12 +21,17 @@ function normalizar(texto) {
 
 function edadEnMeses() {
   if (campoFecha.value) {
-    const nacimiento = new Date(campoFecha.value + 'T12:00:00');
+    const partes = campoFecha.value.split('-').map(Number);
+    if (partes.length !== 3 || partes.some(n => !Number.isInteger(n))) return null;
+    const [anio, mes, dia] = partes;
+    const nacimiento = new Date(anio, mes - 1, dia);
     const hoy = new Date();
-    if (Number.isNaN(nacimiento.getTime()) || nacimiento > hoy) return null;
-    let meses = (hoy.getFullYear() - nacimiento.getFullYear()) * 12 +
-      (hoy.getMonth() - nacimiento.getMonth());
-    if (hoy.getDate() < nacimiento.getDate()) meses--;
+    nacimiento.setHours(0, 0, 0, 0);
+    hoy.setHours(0, 0, 0, 0);
+    if (nacimiento.getFullYear() !== anio || nacimiento.getMonth() !== mes - 1 ||
+        nacimiento.getDate() !== dia || nacimiento > hoy) return null;
+    let meses = (hoy.getFullYear() - anio) * 12 + (hoy.getMonth() - (mes - 1));
+    if (hoy.getDate() < dia) meses--;
     return Math.max(0, meses);
   }
   if (campoEdad.value === '') return null;
@@ -134,10 +139,21 @@ async function cargarAlimentos() {
   alimentos = datos.alimentos;
 }
 
-campoFecha.addEventListener('change', () => {
+function sincronizarFecha() {
   if (campoFecha.value) campoEdad.value = '';
   actualizarEdad();
-});
+}
+
+function fechaLocalISO(fecha) {
+  const anio = fecha.getFullYear();
+  const mes = String(fecha.getMonth() + 1).padStart(2, '0');
+  const dia = String(fecha.getDate()).padStart(2, '0');
+  return anio + '-' + mes + '-' + dia;
+}
+
+campoFecha.max = fechaLocalISO(new Date());
+campoFecha.addEventListener('input', sincronizarFecha);
+campoFecha.addEventListener('change', sincronizarFecha);
 campoEdad.addEventListener('input', () => {
   if (campoEdad.value !== '') campoFecha.value = '';
   actualizarEdad();
