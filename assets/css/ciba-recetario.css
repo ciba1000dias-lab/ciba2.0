@@ -102,3 +102,40 @@ a{color:inherit}
  .ciba-receta-panel-compacto{padding:15px}
  .ciba-receta-panel-compacto h2{font-size:19px}
 }
+
+
+/* Ventanas de ayuda °: abiertas mediante toque, no dependen del hover del navegador. */
+.ciba-info{cursor:pointer;touch-action:manipulation}
+.ciba-info-emergente{
+  position:fixed;
+  z-index:10000;
+  max-width:calc(100vw - 32px);
+  padding:14px 15px 11px;
+  border:1px solid var(--oro);
+  border-radius:10px;
+  background:var(--papel);
+  color:var(--tinta);
+  box-shadow:0 10px 34px #172b2730;
+}
+.ciba-info-emergente p{
+  margin:0 0 10px;
+  color:var(--tinta);
+  font-size:13px;
+  line-height:1.6;
+}
+.ciba-info-cerrar{
+  display:block;
+  margin-left:auto;
+  padding:6px 10px;
+  border:1px solid var(--linea);
+  border-radius:6px;
+  background:#f3f0e8;
+  color:var(--noche);
+  font-size:12px;
+  font-weight:700;
+  cursor:pointer;
+}
+.ciba-info-cerrar:focus-visible,.ciba-info:focus-visible{
+  outline:3px solid #d9b87899;
+  outline-offset:3px;
+}
