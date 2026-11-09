@@ -100,15 +100,17 @@
   function resolverSeccion(consulta) {
     const q = normalizar(consulta);
     const reglas = [
-      { clave: 'recetas', etiqueta: 'Recetas sencillas', patrones: ['receta', 'recetas', 'que puedo cocinar'] },
-      { clave: 'precauciones', etiqueta: 'Precauciones', patrones: ['precaucion', 'precauciones', 'alergia', 'alergico', 'atragantamiento', 'peligro', 'riesgo', 'evitar'] },
-      { clave: 'conservacion', etiqueta: 'Conservación', patrones: ['conservar', 'conservacion', 'guardar', 'nevera', 'refrigerar', 'cuanto dura', 'congelar'] },
-      { clave: 'seguridad', etiqueta: 'Preparación segura', patrones: ['lavar', 'limpiar', 'cortar', 'quitar semillas', 'quitar cascara', 'seguro', 'segura'] },
-      { clave: 'edad', etiqueta: 'Edad de introducción', patrones: ['edad', 'desde cuando', 'a partir de cuando', 'cuando introducir', 'cuando puedo', 'meses puede'] },
-      { clave: 'preparacion', etiqueta: 'Preparación según la etapa', patrones: ['preparar', 'preparacion', 'como dar', 'como ofrecer', 'textura', 'trozos', 'pure', 'papilla', 'aplastar', 'triturar'] },
+      { clave: 'edad', etiqueta: 'Edad de introducción', patrones: ['edad', 'desde cuando', 'a partir de cuando', 'cuando introducir', 'cuando puedo', 'meses puede', 'a que edad'] },
+      { clave: 'preparacion', etiqueta: 'Preparación según la etapa', patrones: ['preparar', 'preparacion', 'como dar', 'como ofrecer', 'textura', 'trozos', 'pure', 'papilla', 'aplastar', 'triturar', 'cortar para'] },
+      { clave: 'seguridad', etiqueta: 'Preparación segura', patrones: ['lavar', 'limpiar', 'quitar semillas', 'quitar cascara', 'seguro', 'segura', 'hueso'] },
+      { clave: 'precauciones', etiqueta: 'Precauciones', patrones: ['precaucion', 'precauciones', 'alergia', 'alergico', 'atragantamiento', 'peligro', 'riesgo', 'evitar', 'contraindicacion'] },
+      { clave: 'recetas', etiqueta: 'Recetas sencillas', patrones: ['receta', 'recetas', 'que puedo cocinar', 'cocinar', 'que puedo preparar'] },
+      { clave: 'conservacion', etiqueta: 'Conservación', patrones: ['conservar', 'conservacion', 'guardar', 'nevera', 'refrigerar', 'cuanto dura', 'congelar', 'almacenar'] },
       { clave: 'beneficios', etiqueta: 'Beneficios', patrones: ['beneficio', 'beneficios', 'para que sirve', 'es bueno', 'bueno para'] },
-      { clave: 'propiedades', etiqueta: 'Propiedades nutricionales', patrones: ['propiedad', 'propiedades', 'vitamina', 'vitaminas', 'nutriente', 'nutrientes', 'fibra', 'proteina', 'calorias', 'grasa'] },
-      { clave: 'video', etiqueta: 'Video relacionado', patrones: ['video', 'youtube', 'short'] }
+      { clave: 'propiedades', etiqueta: 'Propiedades nutricionales', patrones: ['propiedad', 'propiedades', 'vitamina', 'vitaminas', 'nutriente', 'nutrientes', 'fibra', 'proteina', 'calorias', 'grasa', 'composicion', 'nutricional'] },
+      { clave: 'fuentes', etiqueta: 'Fuentes y referencias', patrones: ['fuente', 'fuentes', 'referencia', 'referencias', 'bibliografia', 'evidencia'] },
+      { clave: 'video', etiqueta: 'Video relacionado', patrones: ['video', 'youtube', 'short'] },
+      { clave: 'descripcion', etiqueta: 'Información general', patrones: ['que es', 'informacion general', 'descripcion', 'describe'] }
     ];
     return reglas.find((regla) => regla.patrones.some((patron) => q.includes(patron))) || null;
   }
