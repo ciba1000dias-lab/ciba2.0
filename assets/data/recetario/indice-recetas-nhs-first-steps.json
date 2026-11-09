@@ -1297,6 +1297,245 @@
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
       "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-beef-curry-rice",
+      "nombre": "Beef curry with rice",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/beef-curry-with-rice/",
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "ingredientes_referenciados": "res, tomate, espinaca, arroz, guisantes",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "La fuente indica 7–9 meses; carne completamente cocida y muy tierna; adaptar textura y revisar especias."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-blueberry-porridge",
+      "nombre": "Blueberry porridge",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/blueberry-porridge/",
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "ingredientes_referenciados": "avena, leche, banana, frutos rojos, yogur",
+      "alergenos_o_grupos_a_verificar": [
+        "leche",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "La fuente indica 7–9 meses y usa leche como ingrediente; no confundir con bebida de leche de vaca antes de 12 meses. Cocinar frutos rojos hasta ablandar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-fruity-porridge",
+      "nombre": "Fruity porridge",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/fruity-porridge/",
+      "edad_minima_fuente_meses": 10,
+      "edad_maxima_fuente_meses": 12,
+      "ingredientes_referenciados": "avena, leche, banana, frutos rojos, yogur",
+      "alergenos_o_grupos_a_verificar": [
+        "leche",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "La fuente indica 10–12 meses y usa leche como ingrediente; aplicar la distinción entre ingrediente culinario y bebida láctea."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-tuna-mayo-jackets",
+      "nombre": "Tuna mayo jackets",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/tuna-mayo-jackets/",
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "ingredientes_referenciados": "papa, atún, mayonesa, yogur, zanahoria, pepino",
+      "alergenos_o_grupos_a_verificar": [
+        "pescado",
+        "huevo",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "La fuente indica 7–9 meses; verificar especie/frecuencia del atún por mercurio, sodio de conserva y seguridad de mayonesa; adaptar vegetales crudos."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-broccoli-puree",
+      "nombre": "Broccoli",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/broccoli/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "brócoli",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "La fuente indica desde 6 meses; cocinar hasta muy tierno y triturar o servir en forma segura según habilidades."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-cheesy-toast-cucumber",
+      "nombre": "Cheesy toast fingers and cucumber",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/cheesy-toast-fingers-and-cucumber/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "pan integral, queso crema, pepino",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "La fuente indica desde 6 meses; revisar textura del pan y cortar/preparar el pepino de forma segura, sin piezas duras."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-crustless-mini-quiche",
+      "nombre": "Crustless mini quiche",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/crustless-mini-quiche/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "huevo, leche, cebollino, pimiento, tomate",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "La fuente indica desde 6 meses; huevo completamente cuajado, textura húmeda y verduras blandas."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-chicken-noodles",
+      "nombre": "Chicken noodles",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/chicken-noodles/",
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "ingredientes_referenciados": "pollo, zanahoria, maíz, fideos de huevo",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "La fuente indica 7–9 meses; pollo completamente cocido, maíz blando y fideos cortados/adaptados."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-pasta-bolognese",
+      "nombre": "Pasta bolognese",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/pasta-bolognese/",
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "ingredientes_referenciados": "carne molida, tomate, cebolla, pimiento, champiñones, espagueti",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "La fuente indica 7–9 meses; carne molida completamente cocida y pasta blanda, cortada según habilidades."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-omelette-fingers",
+      "nombre": "Omelette fingers",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/omelette-fingers/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "huevo, cebolla, pimiento",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo"
+      ],
+      "alertas_revision": [
+        "La fuente indica desde 6 meses; comprobar que el huevo esté completamente cuajado y adaptar el tamaño de las tiras."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-scrambled-egg",
+      "nombre": "Scrambled egg",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/scrambled-egg/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "huevo, leche, aceite vegetal",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "La fuente indica desde 6 meses; cocinar hasta que el huevo esté completamente cuajado, sin partes líquidas."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-cheesy-pasta-peas",
+      "nombre": "Cheesy pasta and peas",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/cheesy-pasta-and-peas/",
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "ingredientes_referenciados": "macarrones, queso, tomate, leche, guisantes",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "La fuente indica 7–9 meses; pasta y guisantes muy blandos, controlar sodio del queso."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-leek-potato",
+      "nombre": "Leek and potato",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/leek-and-potato/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "papa, puerro, leche",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "La fuente indica desde 6 meses y permite leche como ingrediente; no presentarla como bebida láctea antes de 12 meses. Sin sal añadida."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
     }
   ]
 }
