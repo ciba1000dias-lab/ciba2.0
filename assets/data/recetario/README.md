@@ -1,46 +1,50 @@
-# Catálogo ampliado del recetario CIBA
+# Catálogo del recetario CIBA
 
-Archivo de datos: `recetas.json`.
+Archivo principal: `assets/data/recetario/recetas.json`.
 
-## Estado actual
+## Estado del catálogo
 
-El catálogo contiene **35 fichas completas y operativas**: las 15 preparaciones iniciales, diez preparaciones frutales aceptadas sin cambios (51–60), las dos sustituciones aceptadas (61 y 66) y ocho fichas nuevas hasta la 75. La preparación 69 no se publica porque duplica la combinación de la 61. Todas tienen:
+<badge>150 números registrados</badge>
 
-- `publicable: true`
-- `estado: aprobada`
-- `revision.estado: aprobada`
+- **147 fichas publicables** con ingredientes vinculados, preparación, adaptación por etapa, alérgenos, alertas, conservación y referencias.
+- **2 fichas bloqueadas:** n.º 30 y 83, ambas con hígado. No se habilitan hasta evaluar la vitamina A preformada y establecer cantidad y frecuencia seguras.
+- **1 número retirado:** n.º 69, duplicaba la combinación de mango y fruta bomba de la n.º 61. Se conserva como registro de trazabilidad, no aparece en resultados.
+- La numeración del 1 al 150 está completa y es estable mediante `numero_catalogo`; la interfaz puede ordenar por ese campo sin depender del orden alfabético de los identificadores.
 
-La ampliación se realiza por etapas. Las preparaciones restantes de la lista 1–150 todavía no se incorporan como fichas completas; no deben anunciarse como disponibles hasta completar sus ingredientes vinculados, cantidades, preparación, adaptación por edad, alertas, fuentes y registro de aprobación.
+Las preparaciones basadas en ideas de listas externas se han redactado como **versiones editoriales CIBA adaptadas al contexto cubano**, no como transcripciones literales ni como recetas avaladas individualmente por las instituciones citadas. Las fuentes sostienen criterios generales de alimentación complementaria, textura e inocuidad.
 
-## Motor de selección
+## Reglas de publicación
 
-El archivo `assets/js/ciba-recetario-motor.js` aplica reglas deterministas:
+- El motor solo recomienda registros con `publicable: true` y `estado: "aprobada"`.
+- La edad mínima se comprueba en meses; la textura se adapta a la etapa y a las habilidades reales.
+- Todos los ingredientes obligatorios deben estar identificados y presentes.
+- Las restricciones y alergias excluyen coincidencias incompatibles; la lectura de etiquetas y la prevención del contacto cruzado siguen siendo necesarias.
+- No se añaden sal, cubitos concentrados, azúcar ni miel antes de los 12 meses.
+- Los pescados se especifican por especie y requieren retirar todas las espinas.
+- Carnes y huevos deben cocinarse completamente. El pollo/pavo debe alcanzar 74 °C (165 °F); la carne molida de res, 71 °C (160 °F).
+- La leche materna extraída se añade después de cocinar y nunca se hierve.
+- Las preparaciones para BLW se ofrecen solo con postura, supervisión y forma/textura adecuadas a las habilidades; BLW no significa ofrecer piezas duras o redondas.
 
-- Solo acepta recetas con `publicable: true` y `estado: aprobada`.
-- Comprueba el rango de edad y la adaptación de textura correspondiente: 6–8, 9–11, 12–23 y 24–59 meses.
-- Exige que estén presentes todos los ingredientes obligatorios reconocidos.
-- Excluye recetas según el alérgeno específico identificado en el campo local de restricciones.
-- Aplica el filtro vegetariano y bloquea solicitudes con restricciones clínicas no especificadas.
-- No envía edad, alergias ni restricciones al servicio de IA. La IA solo interpreta el texto de ingredientes.
+## Optimización del recurso
 
-La identificación automática de alérgenos es conservadora y limitada a los alimentos y términos expresamente mapeados. No sustituye la lectura de etiquetas, la prevención del contacto cruzado ni un plan individual indicado por alergología/nutrición. Si la alergia o restricción no se puede identificar con claridad, el sistema no ofrece recetas.
+- Un único catálogo JSON; las fuentes institucionales se declaran una sola vez y las recetas las referencian por ID.
+- Identificadores estables de alimento y receta, con numeración editorial explícita.
+- Separación entre registros publicables y bloqueados; el buscador no expone los bloqueados.
+- La IA interpreta los ingredientes escritos, pero no crea recetas, cambia cantidades ni altera las reglas deterministas.
+- La fecha de nacimiento, la edad, las alergias y las restricciones se procesan localmente y no se envían al servicio de interpretación.
 
-## Diseño de datos
+## Criterios para dar por concluida esta etapa
 
-- Cada ingrediente usa el `id` estable de la biblioteca CIBA.
-- Las edades se expresan en meses y tramos.
-- Cada receta contiene adaptación de textura, advertencias, condiciones para combinar ingredientes y fuentes.
-- Las referencias se almacenan una sola vez en el catálogo y cada receta las referencia por ID.
-- La IA no escribe recetas ni modifica ingredientes, cantidades o instrucciones.
+1. Las 150 posiciones están registradas y numeradas.
+2. Las 147 fichas publicables pasan integridad de ingredientes, fuentes, adaptaciones y estado.
+3. Los tres registros no publicables quedan excluidos del buscador con motivo explícito.
+4. Las pruebas automáticas, construcción y despliegue de GitHub Pages finalizan correctamente.
+5. Se verifica en la web que el buscador muestra recetas por edad, ingredientes y restricciones, sin resultados inventados.
 
-## Alcance de la aprobación
+## Fuentes marco
 
-La aprobación registrada corresponde a las fichas actuales y a la valoración del especialista responsable del proyecto. No constituye una certificación externa ni sustituye la actualización periódica de fuentes, la comprobación de enlaces o la reevaluación si cambia una receta. Las fuentes citadas sustentan recomendaciones generales de alimentación complementaria y seguridad, no certifican por sí solas cada receta ni sus cantidades.
-
-## Funcionamiento de la interfaz
-
-La interfaz normal muestra únicamente registros aprobados. Después de reconocer los ingredientes, presenta directamente las preparaciones que coinciden con todos los ingredientes obligatorios, la edad y las restricciones indicadas; no añade una pantalla intermedia de confirmación. Si algún término no se reconoce con suficiente seguridad, solicita aclararlo antes de buscar preparaciones. Si no hay coincidencias, lo comunica sin inventar recetas ni añadir alimentos.
-
-Las aclaraciones breves se muestran mediante controles `°`, que abren mensajes flotantes también en pantallas táctiles. La fecha de nacimiento se utiliza localmente para calcular la edad; la edad, las alergias y las restricciones no se envían al servicio de IA.
-
-El modo `?demo=1` queda reservado para borradores futuros y no es necesario para el piloto operativo actual. Las nuevas recetas se incorporan como registros independientes siguiendo este mismo esquema; el motor no requiere reescritura.
+- [OMS: alimentación complementaria 6–23 meses](https://www.who.int/publications/i/item/9789240081864)
+- [UNICEF Cuba: Guías alimentarias para niñas y niños hasta 2 años](https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad)
+- [CDC: introducción de alimentos](https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html)
+- [CDC: riesgos de atragantamiento](https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html)
+- [CDC: pollo e inocuidad](https://www.cdc.gov/food-safety/foods/chicken.html)
