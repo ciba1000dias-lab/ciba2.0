@@ -89,6 +89,104 @@ def _copiar_paginas_estaticas(src: Path, tmp: Path) -> list[ValidationError]:
     return errores
 
 
+def _generar_indice_busqueda_alimentos(raiz_publica: Path) -> list[ValidationError]:
+    """Genera el índice ligero del buscador desde las fichas completas."""
+    errores: list[ValidationError] = []
+    ruta_indice = raiz_publica / "assets" / "data" / "alimentos.json"
+
+    if not ruta_indice.is_file():
+        return errores
+
+    try:
+        indice = _leer_json(ruta_indice)
+    except (OSError, json.JSONDecodeError) as exc:
+        return [ValidationError("assets/data/alimentos.json", "índice de alimentos", f"no se pudo leer: {exc}")]
+
+    categorias = indice.get("categorias", [])
+    if not isinstance(categorias, list):
+        return [ValidationError("assets/data/alimentos.json", "categorías", "se esperaba una lista")]
+
+    registros: list[dict] = []
+
+    for categoria in categorias:
+        if not isinstance(categoria, dict):
+            errores.append(ValidationError("assets/data/alimentos.json", "categoría", "registro inválido"))
+            continue
+
+        archivo = categoria.get("archivo")
+        slug = categoria.get("slug")
+        nombre_categoria = categoria.get("nombre", "")
+
+        if (
+            not isinstance(archivo, str)
+            or not archivo.startswith("assets/data/alimentos/")
+            or not archivo.endswith(".json")
+            or ".." in Path(archivo).parts
+        ):
+            errores.append(ValidationError("assets/data/alimentos.json", "archivo de grupo", "ruta no autorizada"))
+            continue
+
+        if not isinstance(slug, str) or not re.fullmatch(r"[a-z0-9-]+", slug):
+            errores.append(ValidationError("assets/data/alimentos.json", "slug de grupo", "slug ausente o inválido"))
+            continue
+
+        ruta_grupo = raiz_publica / archivo
+
+        try:
+            grupo = _leer_json(ruta_grupo)
+        except (OSError, json.JSONDecodeError) as exc:
+            errores.append(ValidationError(archivo, "grupo de alimentos", f"no se pudo leer: {exc}"))
+            continue
+
+        alimentos_grupo = grupo.get("alimentos", [])
+        if not isinstance(alimentos_grupo, list):
+            errores.append(ValidationError(archivo, "alimentos", "se esperaba una lista"))
+            continue
+
+        for alimento in alimentos_grupo:
+            if not isinstance(alimento, dict):
+                errores.append(ValidationError(archivo, "alimento", "registro inválido"))
+                continue
+
+            alimento_id = alimento.get("id")
+            nombre = alimento.get("nombre")
+
+            if not isinstance(alimento_id, str) or not isinstance(nombre, str):
+                errores.append(ValidationError(archivo, "alimento", "falta id o nombre"))
+                continue
+
+            registros.append(
+                {
+                    "id": alimento_id,
+                    "nombre": nombre,
+                    "categoria": alimento.get("categoria") or nombre_categoria,
+                    "resumen": alimento.get("resumen", ""),
+                    "nombres_alternativos": alimento.get("nombres_alternativos", []),
+                    "palabras_clave": alimento.get("palabras_clave", []),
+                    "ruta_publica": f"c/C1/alimentos/{slug}/",
+                }
+            )
+
+    if errores:
+        return errores
+
+    destino = raiz_publica / "assets" / "data" / "alimentos-busqueda.json"
+
+    try:
+        destino.write_text(
+            json.dumps(
+                {"version": 1, "alimentos": registros},
+                ensure_ascii=False,
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
+    except OSError as exc:
+        errores.append(ValidationError("assets/data/alimentos-busqueda.json", "escritura", f"falló: {exc}"))
+
+    return errores
+
+
 def _preparar(tmp: Path) -> None:
     if tmp.exists():
         shutil.rmtree(tmp)
@@ -512,6 +610,9 @@ def _construir_en_tmp(
     # Copiar los recursos compartidos del proyecto.
     errs_assets = _copiar_assets(src.parent, tmp)
     errores.extend(errs_assets)
+
+    # Generar índice ligero del buscador a partir de las fichas fuente.
+    errores.extend(_generar_indice_busqueda_alimentos(tmp))
 
     # Páginas auxiliares (bibliotecas y herramientas) fuera del catálogo editorial.
     errores.extend(_copiar_paginas_estaticas(src, tmp))
