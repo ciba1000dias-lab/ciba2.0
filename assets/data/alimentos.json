@@ -43,7 +43,7 @@
     {
       "nombre": "Carnes, vísceras, embutidos y conservas",
       "archivo": "assets/data/alimentos/carnes.json",
-      "cantidad": 21,
+      "cantidad": 25,
       "slug": "carnes"
     }
   ]
