@@ -1,7 +1,7 @@
 {
   "version": 1,
   "titulo": "Índice de recetas externas para revisión CIBA",
-  "nota": "Índice documental de 97 páginas NHS y 32 entradas First Steps. 86 fichas NHS tienen anotaciones preliminares individuales; 32 de 32 entradas First Steps tienen observaciones preliminares. Las anotaciones basadas en edad e ingredientes resumidos no sustituyen el cotejo de la receta completa, cantidades, método, textura ni revisión profesional. Todas las entradas permanecen deshabilitadas para publicación y recomendación automática.",
+  "nota": "Índice documental de 97 páginas NHS y 32 entradas First Steps. 97 de 97 fichas NHS tienen anotaciones preliminares individuales; 32 de 32 entradas First Steps tienen observaciones preliminares. Las anotaciones basadas en edad e ingredientes resumidos no sustituyen el cotejo de la receta completa, cantidades, método, textura ni revisión profesional. Todas las entradas permanecen deshabilitadas para publicación y recomendación automática.",
   "fuentes": [
     {
       "id": "nhs-best-start-97",
@@ -3280,10 +3280,21 @@
       "alertas_revision": [
         "La página indica 10–12 meses. Pollo completamente cocido, vegetales muy tiernos y queso crema moderado; revisar textura."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "puerro, zanahoria, papa, habichuelas, pollo, brócoli, queso crema"
+      "ingredientes_referenciados": "puerro, zanahoria, papa, habichuelas, pollo, brócoli, queso crema",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume puerro, zanahoria, papa, habichuelas, pollo, brócoli y queso crema; edad de origen: 10 meses.",
+          "Cocinar el pollo completamente y picarlo muy fino; vegetales blandos, sin hebras duras de puerro o habichuelas. Ajustar la textura con humedad suficiente.",
+          "Revisar leche, sodio del queso crema y cocción/conservación del pollo; faltan cantidades y método completo."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-beanie-dip-breadsticks",
@@ -3298,10 +3309,21 @@
       "alertas_revision": [
         "La página indica desde 6 meses. Frijoles cocidos y triturados; breadsticks pueden ser duros y representar riesgo: sustituir por vegetales cocidos blandos."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "frijoles blancos en conserva sin sal ni azúcar añadidos, ajo, menta, aceite de oliva, breadstick"
+      "ingredientes_referenciados": "frijoles blancos en conserva sin sal ni azúcar añadidos, ajo, menta, aceite de oliva, breadstick",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume frijoles blancos en conserva sin sal ni azúcar añadidos, ajo, menta, aceite de oliva y breadstick; edad de origen: 6 meses.",
+          "Triturar los frijoles hasta una crema suave; el pan tipo breadstick puede ser duro, seco o quebradizo y requiere evaluación de forma/textura antes de ofrecerlo. No ofrecer palitos duros.",
+          "Revisar trigo/gluten, sodio residual de la conserva y receta completa; la ficha no confirma la adaptación del pan para lactantes."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-vegetable-pasta",
@@ -3317,10 +3339,21 @@
       "alertas_revision": [
         "La página indica 7–9 meses. El maíz tierno entero puede ser difícil de manejar: adaptar o retirar; cocinar lentejas y pasta completamente; revisar sodio del queso."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "cebolla, ajo, brócoli, tomate, lentejas rojas, queso crema, pasta, maíz tierno"
+      "ingredientes_referenciados": "cebolla, ajo, brócoli, tomate, lentejas rojas, queso crema, pasta, maíz tierno",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume cebolla, ajo, brócoli, tomate, lentejas rojas, queso crema, pasta y maíz tierno; edad de origen: 7 meses.",
+          "Cocer pasta, lentejas y vegetales hasta muy blandos; triturar/aplastar maíz y brócoli para evitar granos o piezas firmes. Servir húmedo y adaptar longitud/tamaño de pasta.",
+          "Revisar trigo y leche como alérgenos, sodio del queso y forma del maíz; confirmar cantidades y método."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-sweet-potato-patties",
@@ -3336,10 +3369,21 @@
       "alertas_revision": [
         "La página indica desde 6 meses. Contiene huevo y garbanzo; cocinar por completo y asegurar que las tortitas queden blandas y se deshagan fácilmente."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "boniato, cebolla, garbanzos, garam masala, huevo, aceite vegetal"
+      "ingredientes_referenciados": "boniato, cebolla, garbanzos, garam masala, huevo, aceite vegetal",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume boniato, cebolla, garbanzos, garam masala, huevo y aceite; edad de origen: 6 meses.",
+          "Cocer boniato y garbanzos hasta muy blandos; aplastar completamente. Las tortitas no deben quedar secas, duras, compactas ni con bordes tostados rígidos; huevo completamente cocido.",
+          "Revisar huevo como alérgeno, sal de mezclas de especias y textura interior/exterior de la tortita; método y cantidades pendientes."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-african-stew",
@@ -3356,10 +3400,21 @@
       "alertas_revision": [
         "La página indica 7–9 meses. Contiene maní: solo mantequilla lisa bien diluida, nunca frutos secos enteros; revisar chile y textura del pan."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "cebolla, pimiento rojo, boniato, habichuelas, tomate, frijoles rojos, mantequilla de maní, chile en polvo, pan integral"
+      "ingredientes_referenciados": "cebolla, pimiento rojo, boniato, habichuelas, tomate, frijoles rojos, mantequilla de maní, chile en polvo, pan integral",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume cebolla, pimiento, boniato, habichuelas, tomate, frijoles rojos, mantequilla de maní, chile en polvo y pan integral; edad de origen: 7 meses.",
+          "Cocer legumbres y vegetales hasta muy blandos y aplastar; diluir la mantequilla de maní para que no quede espesa o pegajosa. Omitir chile en la porción infantil y adaptar el pan.",
+          "Revisar maní como alérgeno, trigo, sodio de legumbres y textura del pan; confirmar si la receta original añade sal u otros ingredientes."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-delicious-dhal",
@@ -3374,10 +3429,21 @@
       "alertas_revision": [
         "La página indica desde 6 meses. Cocinar guisantes partidos hasta que se deshagan; adaptar especias y textura; no añadir sal."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "cebolla, cilantro, guisantes amarillos partidos, aceite, ajo, chile en polvo, cúrcuma"
+      "ingredientes_referenciados": "cebolla, cilantro, guisantes amarillos partidos, aceite, ajo, chile en polvo, cúrcuma",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume cebolla, cilantro, guisantes amarillos partidos, aceite, ajo, chile en polvo y cúrcuma; edad de origen: 6 meses.",
+          "Cocer los guisantes partidos hasta deshacerse y obtener una consistencia suave; ajustar espesor para evitar pasta seca o compacta. Omitir chile en la porción infantil si irrita o no es apropiado.",
+          "Revisar sal/caldo y método; el índice no indica si hay otros ingredientes ni permite confirmar textura final y cantidades."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-egg-fingers",
@@ -3392,10 +3458,21 @@
       "alertas_revision": [
         "La página indica desde 6 meses, pero indica hervir el huevo 5 minutos. No recomendar hasta validar que quede completamente cocido; cortar y servir con textura segura."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "huevo"
+      "ingredientes_referenciados": "huevo",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice identifica huevo; edad de origen: 6 meses.",
+          "El huevo debe estar completamente cocido, sin partes líquidas; adaptar la forma y textura para que sea fácil de agarrar y no quede seca, gomosa o dura.",
+          "Revisar si se acompaña de otros ingredientes/alérgenos en la receta original; confirmar método, porción y formato exactos."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-mexican-chicken",
@@ -3411,10 +3488,21 @@
       "alertas_revision": [
         "La página indica 7–9 meses. Pollo completamente cocido; revisar especias y cortar/adaptar pan pita a textura segura."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "pimiento rojo, cebolla, paprika, chile suave, ajo, comino, pollo, pan pita, yogur natural"
+      "ingredientes_referenciados": "pimiento rojo, cebolla, paprika, chile suave, ajo, comino, pollo, pan pita, yogur natural",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume pimiento rojo, cebolla, paprika, chile suave, ajo, comino, pollo, pan pita y yogur natural; edad de origen: 7 meses.",
+          "Cocinar completamente el pollo y desmenuzarlo muy fino; vegetales blandos. Adaptar el pan pita para que no forme una masa pegajosa y usar yogur pasteurizado natural sin azúcar.",
+          "Revisar trigo y leche como alérgenos, sal de especias/salsas y cantidad de chile; confirmar textura y método completos."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-creamy-hotpot",
@@ -3429,10 +3517,21 @@
       "alertas_revision": [
         "La página indica 7–9 meses. Pollo completamente cocido, vegetales tiernos y textura húmeda; revisar sodio del queso."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "puerro, zanahoria, papa, habichuelas, pollo, brócoli, queso crema"
+      "ingredientes_referenciados": "puerro, zanahoria, papa, habichuelas, pollo, brócoli, queso crema",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume puerro, zanahoria, papa, habichuelas, pollo, brócoli y queso crema; edad de origen: 7 meses.",
+          "Cocinar pollo y vegetales hasta quedar muy blandos; picar pollo y retirar hebras fibrosas. Servir húmedo, con textura ajustada a la etapa.",
+          "Revisar leche, sodio del queso crema y cocción completa del pollo; el resumen no confirma cantidades ni método."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-cheesy-beans-toast",
@@ -3449,10 +3548,21 @@
       "alertas_revision": [
         "La página indica 7–9 meses. Triturar/aplastar bien los frijoles; revisar sodio del queso y textura del pan/pimiento."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "ensalada de cinco frijoles en conserva sin sal ni azúcar, queso duro, pan integral, crema vegetal, pimiento rojo"
+      "ingredientes_referenciados": "ensalada de cinco frijoles en conserva sin sal ni azúcar, queso duro, pan integral, crema vegetal, pimiento rojo",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume mezcla de cinco frijoles en conserva sin sal ni azúcar añadidos, queso duro, pan integral, crema vegetal y pimiento rojo; edad de origen: 7 meses.",
+          "Aplastar todos los frijoles para eliminar piezas enteras; cocinar el pimiento hasta muy blando. Adaptar el pan para que no quede seco/duro ni forme una masa compacta.",
+          "Revisar leche del queso, trigo y composición de crema vegetal; controlar sodio del queso y conserva. Confirmar textura y cantidades."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-lamb-curry",
@@ -3465,10 +3575,21 @@
       "alertas_revision": [
         "La página indica 7–9 meses. Cordero completamente cocido, tierno y finamente desmenuzado; revisar textura del arroz y brócoli."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
       "recomendacion_automatica": false,
-      "ingredientes_referenciados": "cebolla, ajo, tomate, cordero magro, cilantro molido, comino, agua, canela opcional, limón, arroz, brócoli"
+      "ingredientes_referenciados": "cebolla, ajo, tomate, cordero magro, cilantro molido, comino, agua, canela opcional, limón, arroz, brócoli",
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume cebolla, ajo, tomate, cordero magro, cilantro molido, comino, canela opcional, limón, arroz y brócoli; edad de origen: 7 meses.",
+          "Cocinar completamente el cordero y picarlo muy fino; arroz blando y húmedo, brócoli tierno y sin tallos duros. Ajustar especias y evitar sal añadida.",
+          "Verificar si la receta original contiene caldo/sal u otros alérgenos; revisar textura del arroz/carne y porciones. El resumen no basta para aprobar."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     }
   ]
 }
