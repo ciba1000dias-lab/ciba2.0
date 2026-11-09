@@ -10,7 +10,7 @@ La lista combina alimentos cotidianos, alimentos estacionales y otros conocidos 
 
 Los sinónimos y nombres regionales se guardarán como nombres alternativos dentro de una misma ficha; no se contarán como alimentos diferentes. Las variedades solo tendrán ficha propia si cambian de forma relevante su composición, uso culinario o seguridad.
 
-## Inventario actualizado: 157 entradas (incluye preparaciones y categorías de productos)
+## Inventario actualizado: 158 entradas (incluye preparaciones y categorías de productos)
 
 ### 1. Frutas — 25
 1. Aguacate
@@ -150,15 +150,36 @@ Los sinónimos y nombres regionales se guardarán como nombres alternativos dent
 19. Cobo (caracol reina; explicar regulación, procedencia legal y veda)
 20. Ostiones
 
-### 8. Huevos y lácteos — 8
+### 8. Huevos — 3
 1. Huevo de gallina
 2. Huevo de codorniz
-3. Leche de vaca
-4. Yogur natural
-5. Queso fresco pasteurizado
-6. Queso blanco
-7. Requesón
-8. Kéfir natural
+3. Huevo entero en polvo o deshidratado
+
+### 9. Leches — 12
+1. Leche de vaca
+2. Leche de chiva (cabra)
+3. Leche de búfala
+4. Leche de camella
+5. Leche entera en polvo («amarillita»)
+6. Leche descremada en polvo («blanca» o «de diabético»)
+7. Leche evaporada
+8. Leche condensada
+9. Bebidas vegetales
+10. Leche de soya Prolacsin
+11. Calostro de vaca
+12. Fórmula infantil («leche maternizada»)
+
+### 10. Yogures y leches fermentadas — 5
+1. Yogur natural
+2. Yogur de leche de chiva
+3. Yogur probiótico
+4. Yogur comercial de vasito (tipo Pascual)
+5. Kéfir natural
+
+### 11. Quesos — 3
+1. Queso fresco pasteurizado
+2. Queso blanco
+3. Requesón
 
 ### 9. Aceites, semillas y frutos secos — 13
 1. Aceite de oliva
@@ -189,7 +210,15 @@ Los sinónimos y nombres regionales se guardarán como nombres alternativos dent
 11. Pimienta negra
 12. Culantro
 
-**Total: 157 entradas.**
+**Total: 158 entradas en el inventario original; la nueva clasificación incorpora 15 productos adicionales y reorganiza los ya existentes.**
+
+## Nueva clasificación editorial de leches, yogures y huevos
+
+La biblioteca debe documentar todos los productos enumerados aunque algunos no sean apropiados para la infancia. Documentar su presencia y modo de consumo no equivale a recomendarlos. Las fichas deben distinguir con advertencias visibles: uso no recomendado en menores de 12 meses; uso posible en edades posteriores cuando exista respaldo; uso culinario frente a consumo como bebida; y productos que nunca deben sustituir leche materna o fórmula infantil. No se inventarán proporciones de reconstitución: se seguirá la etiqueta del producto concreto.
+
+El huevo entero en polvo/deshidratado tendrá ficha propia. Se diferenciará de clara y yema en polvo y de mezclas de huevo con leche, sal u otros ingredientes. La reconstitución dependerá del fabricante; el producto reconstituido se cocinará completamente para lactantes y niños pequeños, salvo que el envase y la autoridad sanitaria indiquen expresamente otra cosa para un producto pasteurizado específico. Se describirán higiene, almacenamiento en seco, uso inmediato tras reconstituir y conservación según etiqueta.
+
+La clasificación y el contenido de estos capítulos están en preparación; no deben contarse como fichas públicas hasta que existan sus archivos, imágenes con licencia comprobada, fuentes y despliegue verificado.
 
 ## Observaciones de depuración pendientes
 - «Boniato» y «batata» se tratarán como nombres alternativos cuando se refieran al mismo alimento en el uso local; no serán dos fichas.
