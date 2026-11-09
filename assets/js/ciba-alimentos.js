@@ -31,6 +31,57 @@
     return reglas.find((regla) => regla.patrones.some((patron) => q.includes(patron))) || null;
   }
 
+  function urlImagenOptimizada(original, ancho) {
+    if (!original) return '';
+    try {
+      const url = new URL(original);
+      const esWikimedia = /(^|\\.)wikimedia\\.org$/i.test(url.hostname);
+      if (!esWikimedia) return original;
+
+      if (url.pathname.includes('/wiki/Special:FilePath/')) {
+        url.searchParams.set('width', String(ancho));
+        return url.href;
+      }
+
+      const miniatura = url.pathname.match(/\\/(\\d+)px-([^/]+)$/);
+      if (miniatura) {
+        url.pathname = url.pathname.replace(/\\/\\d+px-/, '/' + ancho + 'px-');
+        url.search = '';
+        return url.href;
+      }
+
+      if (url.hostname === 'upload.wikimedia.org' &&
+          url.pathname.includes('/wikipedia/commons/') &&
+          !url.pathname.includes('/thumb/')) {
+        const archivo = decodeURIComponent(url.pathname.split('/').pop());
+        const optimizada = new URL(
+          'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(archivo)
+        );
+        optimizada.searchParams.set('width', String(ancho));
+        return optimizada.href;
+      }
+    } catch (error) {
+      console.warn('CIBA: no se pudo ajustar el tamaño de una imagen.', error);
+    }
+    return original;
+  }
+
+  function configurarImagen(img, foto, ancho, srcset) {
+    img.src = urlImagenOptimizada(foto.url, ancho);
+    if (srcset) {
+      img.srcset = srcset.map((tamano) =>
+        urlImagenOptimizada(foto.url, tamano) + ' ' + tamano + 'w'
+      ).join(', ');
+      img.sizes = '(max-width: 600px) 50vw, 220px';
+    }
+    img.alt = foto.alt || 'Fotografía de alimento';
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    img.fetchPriority = 'low';
+    img.width = ancho;
+    img.height = Math.round(ancho * 0.72);
+  }
+
   const crear = (tag, clase, texto) => {
     const nodo = document.createElement(tag);
     if (clase) nodo.className = clase;
@@ -94,10 +145,8 @@
         fotografias.forEach((foto) => {
           const marco = crear('figure', 'ciba-alimento-foto');
           const img = document.createElement('img');
-          img.src = foto.url;
-          img.alt = foto.alt || alimento.nombre;
-          img.loading = 'lazy';
-          img.decoding = 'async';
+          configurarImagen(img, foto, 960, [640, 960]);
+          img.sizes = '(max-width: 720px) 100vw, 720px';
           marco.appendChild(img);
 
           if (foto.autor) {
@@ -231,9 +280,8 @@
 
           if (alimento.imagen_principal?.url) {
             const img = document.createElement('img');
-            img.src = alimento.imagen_principal.url;
-            img.alt = alimento.imagen_principal.alt || alimento.nombre;
-            img.loading = 'lazy';
+            configurarImagen(img, alimento.imagen_principal, 640, [320, 640]);
+            img.sizes = '(max-width: 600px) 50vw, 220px';
             tarjeta.appendChild(img);
           }
           const texto = crear('span', 'ciba-alimento-tarjeta-texto');
