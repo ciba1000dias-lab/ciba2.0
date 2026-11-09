@@ -231,12 +231,7 @@
     // Cuando la autenticación esté configurada, ocultar el acceso a quien ya inició sesión.
     (async () => {
       try {
-        const config = await import(urlPublica('assets/js/ciba-auth-config.js'));
-        if (!config.SUPABASE_URL || !config.SUPABASE_ANON_KEY) return;
-        const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm');
-        const auth = createClient(config.SUPABASE_URL, config.SUPABASE_ANON_KEY, {
-          auth: { autoRefreshToken: true, persistSession: true, detectSessionInUrl: false }
-        });
+        const { supabase: auth } = await import(urlPublica('assets/js/ciba-supabase.js'));
         const { data } = await auth.auth.getSession();
         acceso.hidden = Boolean(data.session);
         auth.auth.onAuthStateChange((_event, session) => {
