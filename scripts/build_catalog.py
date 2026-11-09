@@ -652,6 +652,28 @@ def _construir_en_tmp(
             )
             errores.extend(errs_global)
 
+        # Refuerzo final: versionar todas las referencias del módulo global
+        # después de copiar portada y páginas auxiliares al artefacto.
+        for archivo_html in tmp.rglob("*.html"):
+            try:
+                html = archivo_html.read_text(encoding="utf-8")
+                html_actualizado = re.sub(
+                    r'(<script\\b[^>]*\\bsrc\\s*=\\s*["\'][^"\']*ciba-global\\.js)(?:[?#][^"\']*)?(["\'][^>]*>)',
+                    r'\\1?v=20261109-2\\2',
+                    html,
+                    flags=re.IGNORECASE,
+                )
+                if html_actualizado != html:
+                    archivo_html.write_text(html_actualizado, encoding="utf-8")
+            except (OSError, UnicodeError) as exc:
+                errores.append(
+                    ValidationError(
+                        str(archivo_html),
+                        "versionado del sistema global",
+                        f"no se pudo actualizar: {exc}",
+                    )
+                )
+
     return errores
 
 
