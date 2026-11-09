@@ -1301,6 +1301,42 @@
 
       let paginas = [];
       let areas = [];
+      let alimentos = null;
+
+      function normalizar(valor) {
+        return String(valor || "").normalize("NFD")
+          .replace(/[\\u0300-\\u036f]/g, "").toLowerCase().trim();
+      }
+
+      async function obtenerAlimentos() {
+        if (alimentos) return alimentos;
+        const indiceRespuesta = await fetch("assets/data/alimentos.json", { cache: "no-cache" });
+        if (!indiceRespuesta.ok) throw new Error("Índice de alimentos no disponible");
+        const indice = await indiceRespuesta.json();
+        const grupos = await Promise.all((indice.archivos || []).map(async archivo => {
+          const respuesta = await fetch(archivo, { cache: "no-cache" });
+          if (!respuesta.ok) throw new Error("Categoría no disponible: " + archivo);
+          return respuesta.json();
+        }));
+        alimentos = grupos.flatMap(grupo => Array.isArray(grupo.alimentos) ? grupo.alimentos : []);
+        return alimentos;
+      }
+
+      function resolverSeccion(termino) {
+        const q = normalizar(termino);
+        const reglas = [
+          ["recetas","Recetas sencillas",["receta","cocinar"]],
+          ["precauciones","Precauciones",["precaucion","alergia","atragantamiento","peligro","riesgo","evitar"]],
+          ["conservacion","Conservación",["conservar","guardar","nevera","refrigerar","cuanto dura","congelar"]],
+          ["seguridad","Preparación segura",["lavar","limpiar","cortar","quitar semillas","quitar cascara","seguro"]],
+          ["edad","Edad de introducción",["edad","desde cuando","a partir de cuando","cuando introducir","meses puede"]],
+          ["preparacion","Preparación según la etapa",["preparar","preparacion","como dar","como ofrecer","textura","trozos","pure","papilla","aplastar","triturar"]],
+          ["beneficios","Beneficios",["beneficio","para que sirve","es bueno"]],
+          ["propiedades","Propiedades nutricionales",["propiedad","vitamina","nutriente","fibra","proteina","caloria","grasa"]],
+          ["video","Video relacionado",["video","youtube","short"]]
+        ];
+        return reglas.find(regla => regla[2].some(patron => q.includes(patron)));
+      }
 
       const columnas = {
         C: "Crianza",
@@ -1345,42 +1381,76 @@
           `${areas.length} áreas disponibles · ${paginas.length} contenidos publicados`;
       }
 
-      function buscar(termino) {
-        const palabras = termino.toLocaleLowerCase("es")
-          .split(/\s+/).filter(Boolean);
-
-        if (!palabras.length) {
+      async function buscar(termino) {
+        const consultaNormalizada = normalizar(termino);
+        const ignoradas = new Set(["mi","mis","el","la","los","las","un","una","unos","unas","puede","pueden","puedo","podria","dar","darle","ofrecer","ofrecerle","comer","para","desde","cuando","como","que","es","de","del","y","a","esta","este","bebe","bebes","mes","meses","ano","anos"]);
+        const palabras = consultaNormalizada.split(/\\s+/).filter(p => p.length > 1 && !ignoradas.has(p) && !/^\\d+$/.test(p));
+        if (!consultaNormalizada) {
           resultados.classList.remove("visible");
           return;
         }
 
         const encontrados = paginas.filter(pagina => {
-          const texto = [
-            pagina.titulo,
-            pagina.descripcion,
-            pagina.id,
-            pagina.columna,
-            pagina.area,
-            ...(pagina.palabras_clave || [])
-          ].join(" ").toLocaleLowerCase("es");
-
-          return palabras.every(palabra => texto.includes(palabra));
+          const texto = normalizar([
+            pagina.titulo, pagina.descripcion, pagina.id, pagina.columna,
+            pagina.area, ...(pagina.palabras_clave || [])
+          ].join(" "));
+          const aciertos = palabras.filter(p => texto.includes(p)).length;
+          return palabras.length ? aciertos / palabras.length >= 0.5 : texto.includes(consultaNormalizada);
         });
 
-        resultados.classList.add("visible");
-        resultadosTitulo.textContent =
-          encontrados.length
-            ? `Encontramos ${encontrados.length} resultado(s)`
-            : "No encontramos resultados para esa búsqueda";
+        let encontradosAlimentos = [];
+        try {
+          const fichas = await obtenerAlimentos();
+          const seccion = resolverSeccion(consultaNormalizada);
+          encontradosAlimentos = fichas.map(alimento => {
+            const texto = normalizar([
+              alimento.nombre, alimento.categoria, alimento.resumen,
+              "edad introduccion cuando desde que edad meses",
+              "preparacion preparar ofrecer textura trozos pure papilla triturar aplastar",
+              "seguridad seguro lavar limpiar cortar retirar semillas cascara",
+              "recetas receta cocinar",
+              "precauciones alergia atragantamiento riesgo evitar",
+              "conservacion conservar guardar refrigerar nevera congelar",
+              "beneficios beneficio bueno para que sirve",
+              "propiedades nutricionales vitaminas nutrientes fibra proteina calorias grasas",
+              "video youtube short",
+              JSON.stringify(alimento.edad || ""),
+              JSON.stringify(alimento.preparacion_por_edades || ""),
+              JSON.stringify(alimento.preparacion_segura || ""),
+              JSON.stringify(alimento.recetas || ""),
+              JSON.stringify(alimento.precauciones || ""),
+              JSON.stringify(alimento.conservacion || ""),
+              JSON.stringify(alimento.propiedades || ""),
+              JSON.stringify(alimento.beneficios || ""),
+              ...(alimento.nombres_alternativos || []),
+              ...(alimento.palabras_clave || [])
+            ].join(" "));
+            const aciertos = palabras.filter(p => texto.includes(p)).length;
+            return { alimento, puntuacion: palabras.length ? aciertos / palabras.length : (texto.includes(consultaNormalizada) ? 1 : 0), seccion };
+          }).filter(item => item.puntuacion >= 0.5).sort((a,b) => b.puntuacion-a.puntuacion);
+        } catch (error) {
+          console.warn("CIBA: no se pudo consultar la biblioteca de alimentos.", error);
+        }
 
-        resultadoLista.innerHTML = encontrados.length
-          ? encontrados.map(pagina => `
-              <a class="resultado" href="${escapar(pagina.ruta_publica || "#areas")}">
-                <strong>${escapar(pagina.titulo || "Contenido CIBA")}</strong>
-                <span>${escapar(pagina.descripcion || "")}</span>
-              </a>
-            `).join("")
-          : `<p>Prueba con otras palabras o explora las cuatro columnas de CIBA.</p>`;
+        const tarjetasAlimentos = encontradosAlimentos.slice(0,10).map(item => {
+          const alimento = item.alimento;
+          const ancla = item.seccion ? "--" + item.seccion[0] : "";
+          const destino = "c/C1/index.html#alimento-" + encodeURIComponent(alimento.id) + ancla;
+          const etiqueta = item.seccion ? "Ir directamente a: " + item.seccion[1] : "Abrir ficha · " + (alimento.categoria || "Alimentación");
+          return `<a class="resultado" href="${escapar(destino)}"><strong>${escapar(alimento.nombre || "Alimento")}</strong><span>${escapar(alimento.resumen || "Consultar ficha de alimento")}</span><span>${escapar(etiqueta)}</span></a>`;
+        });
+        const tarjetasArticulos = encontrados.slice(0, Math.max(0,10-tarjetasAlimentos.length)).map(pagina =>
+          `<a class="resultado" href="${escapar(pagina.ruta_publica || "#areas")}"><strong>${escapar(pagina.titulo || "Contenido CIBA")}</strong><span>${escapar(pagina.descripcion || "")}</span></a>`
+        );
+        const tarjetas = [...tarjetasAlimentos, ...tarjetasArticulos];
+        resultados.classList.add("visible");
+        resultadosTitulo.textContent = tarjetas.length
+          ? `Encontramos ${tarjetas.length} resultado(s)`
+          : "No encontramos resultados para esa búsqueda";
+        resultadoLista.innerHTML = tarjetas.length
+          ? tarjetas.join("")
+          : "<p>Prueba con otras palabras o explora las cuatro columnas de CIBA.</p>";
       }
 
       formBusqueda.addEventListener("submit", evento => {
