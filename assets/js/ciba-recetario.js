@@ -207,7 +207,7 @@ formulario.addEventListener('submit', async (evento) => {
     const respuesta = await fetch(API, {
       method:'POST',
       headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({ingredients:text, candidates:candidatos})
+      body:JSON.stringify({ingredients:texto, candidates:candidatos})
     });
     const data = await respuesta.json();
     if (!respuesta.ok || !data.ok) throw new Error(data.error || 'No se pudo completar el reconocimiento.');
