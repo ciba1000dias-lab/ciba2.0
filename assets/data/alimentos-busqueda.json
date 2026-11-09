@@ -3242,6 +3242,23 @@
         "mi bebé puede comer manzana"
       ],
       "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "espinaca",
+      "nombre": "Espinaca",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza de hoja verde; ofrecer cocinada y picada o triturada según habilidades.",
+      "nombres_alternativos": [
+        "Spinacia oleracea"
+      ],
+      "palabras_clave": [
+        "espinaca",
+        "espinaca para bebé",
+        "vegetales de hoja verde",
+        "espinaca cocida",
+        "mi bebé puede comer espinaca"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
     }
   ]
 }
