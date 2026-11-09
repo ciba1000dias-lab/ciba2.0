@@ -3259,6 +3259,22 @@
         "mi bebé puede comer espinaca"
       ],
       "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "cebolla",
+      "nombre": "Cebolla",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Ingrediente aromático; ofrecer bien cocido y en cantidad moderada.",
+      "nombres_alternativos": [
+        "Allium cepa"
+      ],
+      "palabras_clave": [
+        "cebolla",
+        "cebolla para bebé",
+        "cebolla cocida",
+        "cómo preparar cebolla para bebés"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
     }
   ]
 }
