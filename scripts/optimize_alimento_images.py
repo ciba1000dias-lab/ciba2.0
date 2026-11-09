@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Prepara las imágenes locales de la biblioteca sin depender de servicios externos.
+"""Valida las imágenes de la biblioteca sin descargar archivos de Internet.
 
-La compilación nunca descarga fotografías de Internet. Las imágenes se incorporan
-previamente al repositorio, bajo assets/images/alimentos/. Si una ficha conserva
-una URL externa (Wikimedia, Pexels, etc.) o un archivo local inexistente, se
-omite su visualización sin detener el build. Los metadatos de autoría y licencia
-se conservan para facilitar la incorporación posterior de una imagen local.
+Las imágenes externas se conservan para que el navegador intente mostrarlas.
+Las imágenes locales solo se conservan si el archivo existe dentro de
+assets/images/alimentos/. Una imagen ausente se omite individualmente y nunca
+debe bloquear la compilación del sitio.
 """
 from __future__ import annotations
 
@@ -16,31 +15,28 @@ from pathlib import Path
 RUTA_LOCAL_PERMITIDA = "assets/images/alimentos/"
 
 
-def preparar_foto(foto: dict, raiz: Path) -> bool:
-    """Conserva solo imágenes locales existentes; nunca realiza solicitudes HTTP."""
+def preparar_foto(foto: dict, raiz: Path) -> str:
+    """Devuelve 'externa', 'local' o 'omitida', sin solicitudes HTTP."""
     url = foto.get("url", "")
     if not isinstance(url, str) or not url:
         foto["url"] = ""
         foto.pop("variantes", None)
         foto.pop("formato_local", None)
-        return False
+        return "omitida"
 
-    # Las URLs externas se conservan como referencia editorial, pero no se
-    # muestran ni se descargan durante el build.
+    # No descargar ni borrar imágenes externas: conservar su URL original.
     if url.startswith(("https://", "http://")):
-        foto.setdefault("url_original", url)
-        foto["url"] = ""
         foto.pop("variantes", None)
         foto.pop("formato_local", None)
-        return False
+        return "externa"
 
-    # Solo se permiten rutas relativas dentro del directorio oficial de imágenes.
+    # Solo se permiten rutas relativas dentro del directorio oficial.
     ruta = url.replace("\\", "/")
     if not ruta.startswith(RUTA_LOCAL_PERMITIDA) or ".." in Path(ruta).parts:
         foto["url"] = ""
         foto.pop("variantes", None)
         foto.pop("formato_local", None)
-        return False
+        return "omitida"
 
     archivo = (raiz / ruta).resolve()
     try:
@@ -49,19 +45,18 @@ def preparar_foto(foto: dict, raiz: Path) -> bool:
         foto["url"] = ""
         foto.pop("variantes", None)
         foto.pop("formato_local", None)
-        return False
+        return "omitida"
 
     if not archivo.is_file():
         foto["url"] = ""
         foto.pop("variantes", None)
         foto.pop("formato_local", None)
-        return False
+        return "omitida"
 
-    # Los archivos locales se sirven directamente. No hay conversión ni red.
     foto["url"] = ruta
     foto.pop("variantes", None)
     foto.pop("formato_local", None)
-    return True
+    return "local"
 
 
 def main() -> int:
@@ -78,6 +73,7 @@ def main() -> int:
     archivos = sorted(directorio.glob("*.json"))
     fichas = 0
     imagenes_locales = 0
+    imagenes_externas = 0
     imagenes_omitidas = 0
     errores: list[str] = []
 
@@ -100,8 +96,11 @@ def main() -> int:
                     if isinstance(foto, dict)
                 )
                 for foto in fotos:
-                    if preparar_foto(foto, raiz):
+                    estado = preparar_foto(foto, raiz)
+                    if estado == "local":
                         imagenes_locales += 1
+                    elif estado == "externa":
+                        imagenes_externas += 1
                     else:
                         imagenes_omitidas += 1
 
@@ -119,7 +118,8 @@ def main() -> int:
     print(
         f"Biblioteca preparada: {fichas} fichas; "
         f"{imagenes_locales} imágenes locales; "
-        f"{imagenes_omitidas} imágenes externas o ausentes omitidas. "
+        f"{imagenes_externas} imágenes externas conservadas; "
+        f"{imagenes_omitidas} imágenes ausentes omitidas. "
         "No se realizaron descargas de Internet."
     )
     return 0
