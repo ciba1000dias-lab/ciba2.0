@@ -9,7 +9,7 @@
     "paginas": 35,
     "fecha_publicacion": "2026-10"
   },
-  "nota": "Índice de títulos y metadatos editoriales; no reproduce instrucciones ni cantidades del documento original. Todas las entradas están pendientes de cotejo individual. La fuente presenta adaptaciones para 6–8, 9–11 y 12–24 meses; esto no equivale a aprobación clínica de cada preparación.",
+  "nota": "Las 22 preparaciones se cotejaron individualmente con sus fichas y recomendaciones por etapa en el PDF UNICEF Venezuela de octubre de 2026. Los hallazgos son una revisión preliminar editorial/de seguridad, no una aprobación clínica. Todas permanecen bloqueadas hasta revisión profesional y adaptación al contexto cubano. No se reproducen aquí instrucciones extensas ni se habilita recomendación automática.",
   "recetas": [
     {
       "id": "arepas-batata-queso",
@@ -30,9 +30,18 @@
       "alertas_revision": [
         "Revisar sodio del queso, textura interior y dureza de la corteza."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "La fuente especifica queso blanco bajo en sal y cocción de batata sin sal.",
+          "Para 6–8 meses se retira la corteza y se ofrece solo miga blanda triturada; revisar sodio del queso y alergia a lácteos."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "arepas-calabacin-pollo",
@@ -51,9 +60,18 @@
       "alertas_revision": [
         "Verificar cocción completa del pollo, fibras y textura de la arepa."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Pollo cocido sin sal, desmechado y combinado con calabacín y aguacate.",
+          "Confirmar cocción completa, retirar fibras largas y evitar corteza dura; adaptar la masa a textura húmeda."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "arepas-platano-carne",
@@ -72,9 +90,18 @@
       "alertas_revision": [
         "Verificar ternura de la carne, fibras y textura de la masa."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Plátano verde y carne de res cocida, desmechada y ablandada.",
+          "Revisar fibras de carne y corteza de arepa; ofrecer miga húmeda y triturada en 6–8 meses."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "arepas-yuca-huevo",
@@ -95,9 +122,18 @@
       "alertas_revision": [
         "Huevo completamente cocido; retirar fibra central de la yuca y revisar textura."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "La fuente indica yuca muy blanda, retirar fibra central y huevo revuelto completamente cocido.",
+          "Alergia al huevo; asegurar ausencia de partes crudas y adaptar consistencia de masa y aguacate."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "empanadas-platano-queso",
@@ -118,9 +154,18 @@
       "alertas_revision": [
         "Revisar corteza exterior dura, tamaño y sodio del queso."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Plátano maduro cocido y queso blanco bajo en sal; preparación asada, no frita.",
+          "La propia fuente excluye la capa exterior dura en menores; verificar sodio y alergia a lácteos."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "panquecas-auyama-queso",
@@ -142,9 +187,18 @@
       "alertas_revision": [
         "Huevo completamente cocido; revisar bordes tostados y queso bajo en sal."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Auyama cocida, huevo, harina y queso blanco bajo en sal; cocción hasta el centro.",
+          "Revisar alérgenos de huevo y lácteos; si se usa harina de trigo, también gluten; retirar bordes duros y confirmar cocción completa."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "arepas-colores-carne",
@@ -163,9 +217,18 @@
       "alertas_revision": [
         "Revisar vegetales incluidos, cocción de la carne y textura por edad."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Vegetales cocidos y triturados, carne molida cocida completamente y aguacate.",
+          "Comprobar que la carne no quede seca o en grumos compactos; retirar corteza dura y ajustar humedad por edad."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "arepas-ocumo-pollo",
@@ -184,9 +247,18 @@
       "alertas_revision": [
         "Verificar cocción completa del ocumo y pollo, y textura segura."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Ocumo y vegetales cocidos hasta ablandar; pollo cocido sin sal.",
+          "Verificar que el ocumo esté completamente cocido; eliminar fibras del pollo y corregir una instrucción de relleno que menciona carne molida aunque la receta usa pollo."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "panquecas-cambur-avena-queso",
@@ -207,9 +279,18 @@
       "alertas_revision": [
         "Revisar avena y posible contaminación cruzada con gluten; queso bajo en sal; cocción interior."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Incluye cambur, avena, huevo, queso bajo en sal y aceite; se indica cocción hasta quedar blanda por dentro.",
+          "Añadir alérgenos huevo y lácteos; comprobar cocción completa y que no queden bordes tostados o secos; verificar contaminación cruzada de avena con gluten."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "bollitos-maiz-carne",
@@ -228,9 +309,18 @@
       "alertas_revision": [
         "Revisar consistencia compacta, tamaño y cocción completa de la carne."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Bollitos alargados cocidos en agua sin sal y carne molida completamente cocida.",
+          "Revisar que el centro quede blando y húmedo; no ofrecer la pieza entera a lactantes pequeños y adaptar forma/tamaño."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "panquecas-zanahoria-avena-queso",
@@ -251,9 +341,18 @@
       "alertas_revision": [
         "Revisar avena, queso bajo en sal, humedad y cocción interior."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Zanahoria cocida o en puré, huevo, avena, queso y cocción hasta quedar blanda.",
+          "Alérgenos huevo y lácteos; verificar cocción interior, humedad y contaminación cruzada de avena."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "bollitos-maiz-caraotas-queso",
@@ -275,9 +374,18 @@
       "alertas_revision": [
         "Caraotas completamente cocidas y aplastadas; revisar queso, semillas y textura del bolito."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Caraotas cocidas sin sal, procesadas y sin piel en las etapas iniciales; guayaba sin semillas.",
+          "Revisar alérgeno lácteo, textura de bolitos, pieles de legumbre y eliminación completa de semillas de guayaba."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "cachapa-platano-carne",
@@ -296,9 +404,18 @@
       "alertas_revision": [
         "Revisar consistencia de la cachapa, fibras de carne y presentación de fruta."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Carne cocida sin sal y desmechada; plátano verde y lechosa madura.",
+          "La preparación contiene huevo aunque no aparezca en el título; añadir alérgeno huevo, asegurar cocción completa y retirar bordes duros."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "torticas-quinchoncho-queso-sardina",
@@ -321,9 +438,18 @@
       "alertas_revision": [
         "Verificar espinas, sodio del queso y sardina, cocción de legumbre y textura."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_revision_de_alergenos_y_pescado",
+        "hallazgos": [
+          "Contiene quinchoncho, huevo, queso y sardina; la fuente indica retirar espinas una a una y desmenuzar el pescado.",
+          "Añadir alérgenos huevo, pescado, lácteos y legumbres; verificar espinas residuales, sodio, cocción del quinchoncho y textura húmeda."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "pure-yuca-higado-aguacate",
@@ -342,9 +468,18 @@
       "alertas_revision": [
         "REVISIÓN PRIORITARIA: cuantificar hígado y vitamina A preformada; no recomendar hasta evaluación especializada."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "bloqueo_especializado",
+        "hallazgos": [
+          "Incluye 40–50 g de hígado por receta familiar y porciones infantiles con cucharadas de hígado.",
+          "El hígado concentra vitamina A preformada; no habilitar para ninguna etapa hasta evaluación de cantidad, frecuencia y exposición total por nutrición pediátrica."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "arroz-lentejas-queso",
@@ -366,9 +501,18 @@
       "alertas_revision": [
         "Revisar textura húmeda, lentejas blandas y sodio del queso."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Arroz y lentejas muy blandos, queso bajo en sal y lechosa sin semillas; la fuente pide triturar para los más pequeños.",
+          "Alérgenos lácteos y legumbres; no ofrecer arroz seco ni lentejas enteras en 6–8 meses; adaptar humedad y tamaño."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "pasta-carne-zanahoria",
@@ -389,9 +533,18 @@
       "alertas_revision": [
         "Pasta con trigo/gluten; cocción completa de carne y textura apropiada."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Pasta cocida blanda, carne molida cocida y zanahoria cocida hasta deshacerse al presionarla.",
+          "Contiene trigo/gluten; verificar carne completamente cocida, pasta bien blanda y trozos apropiados."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "tortilla-huevo-papa-espinaca",
@@ -412,9 +565,18 @@
       "alertas_revision": [
         "Huevo completamente cocido; papa blanda; revisar espinaca y tamaño de porción."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "La fuente indica huevo cuajado por ambos lados, papa blanda y espinaca escaldada y picada fina.",
+          "Alérgenos huevo y lácteos por queso; confirmar cocción completa, evitar costras duras y adaptar espinaca."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "helado-mango-leche-materna",
@@ -433,9 +595,18 @@
       "alertas_revision": [
         "REVISIÓN PRIORITARIA: higiene, extracción, conservación y congelación segura de leche materna; no usar como recomendación general hasta validar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_validacion_de_higiene_y_textura",
+        "hallazgos": [
+          "Mezcla mango con leche materna y congela en moldes; la fuente indica no recongelar leche descongelada ni la que el bebé probó.",
+          "Validar higiene, extracción, conservación y cadena de frío; el helado puede endurecerse y la paleta implica riesgo mecánico, no habilitar automáticamente."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "papilla-cambur-leche-materna",
@@ -454,9 +625,18 @@
       "alertas_revision": [
         "Verificar higiene y manipulación segura de leche materna; evitar calentamiento que destruya propiedades."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Preparación de dos ingredientes, se sirve recién hecha y añade la leche materna al final sin cocinarla.",
+          "Aplicar higiene de manos y utensilios y conservación segura de leche materna; adaptar densidad sin desplazar tomas lácteas."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "compota-mango",
@@ -475,9 +655,18 @@
       "alertas_revision": [
         "Revisar cocción/consistencia, higiene y ausencia de azúcar añadida."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Mango maduro triturado sin azúcar añadida; se permite cocinar si hace falta ablandar.",
+          "Verificar lavado, retirada de semilla/fibras y textura apropiada; no añadir azúcar ni convertirla en jugo."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "atol-auyama-leche-materna",
@@ -496,9 +685,18 @@
       "alertas_revision": [
         "REVISIÓN PRIORITARIA: método de cocción, temperatura y manipulación segura de leche materna."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion_con_control_de_textura",
+        "hallazgos": [
+          "Auyama cocida y triturada; leche materna añadida al final cuando la preparación está tibia.",
+          "No cocinar la leche materna; mantener consistencia espesa apropiada para alimentación complementaria y servir con cuchara/taza, no en biberón."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     }
   ]
 }
