@@ -128,13 +128,13 @@ Los sinónimos y nombres regionales se guardarán como nombres alternativos dent
 11. Lengua de res
 12. Pato
 
-### 7. Pescados y mariscos — 13
+### 7. Pescados, mariscos y preparaciones — 20
 1. Pargo
 2. Tilapia
 3. Sardina
 4. Atún
 5. Jurel
-6. Macarela
+6. Macarela (identificar especie; no confundir con macarela rey)
 7. Lisa
 8. Claria
 9. Merluza
@@ -142,6 +142,13 @@ Los sinónimos y nombres regionales se guardarán como nombres alternativos dent
 11. Cangrejo
 12. Langosta
 13. Bonito
+14. Pescado enlatado (distinguir sardina, atún y otras especies; revisar sodio y especie)
+15. Croquetas de pescado (preparación elaborada, no especie; describir versión casera y comercial)
+16. Tiburón (ficha informativa con advertencia destacada: evitar para niños por mercurio elevado)
+17. Pulpo
+18. Calamar
+19. Cobo (caracol reina; explicar regulación, procedencia legal y veda)
+20. Ostiones
 
 ### 8. Huevos y lácteos — 8
 1. Huevo de gallina
@@ -182,7 +189,7 @@ Los sinónimos y nombres regionales se guardarán como nombres alternativos dent
 11. Pimienta negra
 12. Culantro
 
-**Total: 150 entradas.**
+**Total: 157 entradas.**
 
 ## Observaciones de depuración pendientes
 - «Boniato» y «batata» se tratarán como nombres alternativos cuando se refieran al mismo alimento en el uso local; no serán dos fichas.
@@ -192,6 +199,10 @@ Los sinónimos y nombres regionales se guardarán como nombres alternativos dent
 - «Casabe» es un derivado de yuca; su ficha debe distinguirlo de la raíz y explicar que no sustituye una preparación fresca y húmeda en todas las recetas.
 - «Cereal infantil fortificado» es una categoría de producto, no una especie vegetal. Se mantiene porque tiene relevancia en alimentación infantil, pero su ficha describirá cómo leer etiquetas y no recomendará marcas.
 - «Bulgur», «kéfir», «jícama» y algunos pescados pueden ser menos habituales o de disponibilidad irregular. Se priorizarán solo si la revisión local confirma utilidad; de lo contrario se sustituirán por alimentos más presentes en los hogares cubanos.
+- Manatí y tonina (delfín nariz de botella) no se incorporan como alimentos ni tendrán recetas: el Decreto cubano de pesca incluye manatí y delfín entre las especies bajo régimen especial de protección. Pueden aparecer únicamente en un recuadro educativo de conservación, sin promover captura, compra o consumo.
+- Langosta, camarón, cangrejo moro, ostión y cobo tienen regulación pesquera específica en Cuba; las fichas deberán explicar que su disponibilidad legal depende de autorización, origen y vedas aplicables. No se debe sugerir captura o compra informal.
+- El tiburón se documentará con una advertencia clara sobre mercurio: la FDA lo sitúa entre las especies con niveles más altos y recomienda evitarlo para niños y personas embarazadas o lactantes. La ficha no lo presentará como opción infantil.
+- Las croquetas de pescado son una preparación, no un alimento básico ni una especie. Se explicarán ingredientes, alérgenos, sodio, fritura y textura; para bebés se priorizará pescado bien cocido, sin espinas y sin empanizado duro, no la croqueta comercial.
 - La clasificación es funcional para navegación, no una taxonomía botánica estricta. Algunos alimentos podrían cambiar de categoría sin crear duplicados.
 - Antes de dar el inventario por definitivo se contrastará con fuentes cubanas, profesionales locales y disponibilidad real. No se presentará la lista como estadística oficial de consumo.
 
@@ -226,6 +237,10 @@ Los sinónimos y nombres regionales se guardarán como nombres alternativos dent
 - UNICEF Cuba, *Salud y nutrición: prevención del sobrepeso y la obesidad en escolares* (referencia de grupos de alimentos, no guía para lactantes): https://www.unicef.org/cuba/media/5376/file/Salud%20y%20Nutrici%C3%B3n%20prevenci%C3%B3n%20del%20sobrepeso%20y%20la%20obesidad%20en%20escolares.pdf
 
 Estas fuentes son un punto de partida. Cada ficha llevará referencias específicas para sus afirmaciones y recomendaciones.
+
+- FDA/EPA, *Advice about Eating Fish*: clasificación por mercurio; incluye recomendaciones para niños y diferencia entre atún claro enlatado y atún blanco: https://www.fda.gov/food/consumers/advice-about-eating-fish
+- FDA, preguntas y respuestas sobre pescado y mercurio: https://www.fda.gov/food/consumers/questions-answers-fdaepa-advice-about-eating-fish-those-who-might-become-or-are-pregnant-or
+- Decreto cubano No. 1/2019, Reglamento de la Ley 129 «De Pesca» (referencia legal; confirmar siempre normativa vigente y resoluciones específicas): https://www.directoriocubano.com/servicios/gaceta-oficial/2020/ordinaria/11/
 
 ## Integración técnica prevista
 - Una sola página de biblioteca dentro de C · Crianza · Alimentación.
