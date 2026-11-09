@@ -40,7 +40,7 @@ jobs:
       - name: Construir sitio
         run: python scripts/build_catalog.py --src content --out dist
 
-      - name: Optimizar fotografías piloto a WebP
+      - name: Optimizar fotografías de la biblioteca a WebP
         run: python scripts/optimize_alimento_images.py --src dist
 
       - name: Configurar GitHub Pages
