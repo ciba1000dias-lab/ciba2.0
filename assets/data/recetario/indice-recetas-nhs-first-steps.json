@@ -2028,120 +2028,142 @@
       "nombre": "Hummus with veggie fingers",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/hummus-with-veggie-fingers/",
-      "edad_minima_fuente_meses": null,
+      "edad_minima_fuente_meses": 12,
       "edad_maxima_fuente_meses": null,
-      "alergenos_o_grupos_a_verificar": [],
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres"
+      ],
       "alertas_revision": [
-        "Edad, ingredientes y alérgenos por verificar en la página completa. Comprobar si contiene tahini/sésamo; usar textura lisa, sin sal añadida y vegetales seguros."
+        "La página indica 12 meses o más. No contiene tahini en la lista consultada; los tirabeques crudos pueden ser duros: adaptar/cocinar para evitar atragantamiento."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "garbanzos, limón, ajo, comino, agua, aceite de oliva, tirabeques"
     },
     {
       "id": "nhs-egg-mushroom-cups",
       "nombre": "Egg and mushroom cups",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/egg-and-mushroom-cups/",
-      "edad_minima_fuente_meses": null,
-      "edad_maxima_fuente_meses": null,
-      "alergenos_o_grupos_a_verificar": [],
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "alergenos_o_grupos_a_verificar": [
+        "huevo",
+        "trigo-gluten"
+      ],
       "alertas_revision": [
-        "Edad, ingredientes y alérgenos por verificar en la página completa. Huevo completamente cuajado; champiñones y verduras bien cocidos y finamente picados."
+        "La página indica 7–9 meses. Huevo completamente cuajado; tomates cherry cocidos y cortados; pan adaptado a textura segura."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "huevos, champiñones, perejil, tomates cherry, pan integral, aceite vegetal"
     },
     {
       "id": "nhs-cinnamon-toasty-fingers",
       "nombre": "Cinnamon toasty fingers",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/cinnamon-toasty-fingers/",
-      "edad_minima_fuente_meses": null,
-      "edad_maxima_fuente_meses": null,
-      "alergenos_o_grupos_a_verificar": [],
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten"
+      ],
       "alertas_revision": [
-        "Edad, ingredientes y alérgenos por verificar. Pan tostado puede ser seco o duro; adaptar textura."
+        "La página indica 7–9 meses. El pan tostado puede ser seco/duro; ajustar textura y ofrecer banana madura."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "pan integral, crema vegetal, canela, banana"
     },
     {
       "id": "nhs-breakfast-eggs-tomato",
       "nombre": "Breakfast eggs and tomato",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/breakfast-eggs-and-tomato/",
-      "edad_minima_fuente_meses": null,
-      "edad_maxima_fuente_meses": null,
-      "alergenos_o_grupos_a_verificar": [],
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "alergenos_o_grupos_a_verificar": [
+        "huevo",
+        "trigo-gluten"
+      ],
       "alertas_revision": [
-        "Edad, ingredientes y alérgenos por verificar. Huevo completamente cuajado; tomate cortado pequeño y blando."
+        "La página indica 7–9 meses, pero propone huevo hervido 5–6 minutos, lo que no garantiza cocción completa. No recomendar hasta adaptar y validar cocción total."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "tomates cherry, huevo, pan integral, crema vegetal"
     },
     {
       "id": "nhs-fruity-stew",
       "nombre": "Fruity stew",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/fruity-stew/",
-      "edad_minima_fuente_meses": null,
+      "edad_minima_fuente_meses": 6,
       "edad_maxima_fuente_meses": null,
       "alergenos_o_grupos_a_verificar": [],
       "alertas_revision": [
-        "Edad e ingredientes por verificar. Cocinar frutas hasta que estén completamente blandas; revisar tamaño, pieles y semillas."
+        "La página indica desde 6 meses. Manzana pelada, cocida hasta quedar completamente blanda y triturada; enfriar antes de servir."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "manzana, agua"
     },
     {
       "id": "nhs-green-mash",
       "nombre": "Green mash",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/green-mash/",
-      "edad_minima_fuente_meses": null,
+      "edad_minima_fuente_meses": 6,
       "edad_maxima_fuente_meses": null,
       "alergenos_o_grupos_a_verificar": [],
       "alertas_revision": [
-        "Edad e ingredientes por verificar. Cocinar verduras hasta muy tiernas; ajustar consistencia y evitar fibras o trozos duros."
+        "La página indica desde 6 meses. Triturar hasta textura apropiada; no convertir leche de vaca en bebida antes de 12 meses."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "calabacín, guisantes; leche materna o fórmula para ajustar textura"
     },
     {
       "id": "nhs-chicken-leek-hotpot",
       "nombre": "Chicken and leek hotpot",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/chicken-and-leek-hotpot/",
-      "edad_minima_fuente_meses": null,
-      "edad_maxima_fuente_meses": null,
-      "alergenos_o_grupos_a_verificar": [],
+      "edad_minima_fuente_meses": 10,
+      "edad_maxima_fuente_meses": 12,
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
       "alertas_revision": [
-        "Edad, ingredientes y alérgenos por verificar. Pollo completamente cocido, verduras tiernas y control de sodio."
+        "La página indica 10–12 meses. Pollo completamente cocido, vegetales muy tiernos y queso crema moderado; revisar textura."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "puerro, zanahoria, papa, habichuelas, pollo, brócoli, queso crema"
     },
     {
       "id": "nhs-beanie-dip-breadsticks",
       "nombre": "Beanie dip with breadsticks",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/beanie-dip-with-breadsticks/",
-      "edad_minima_fuente_meses": null,
+      "edad_minima_fuente_meses": 6,
       "edad_maxima_fuente_meses": null,
-      "alergenos_o_grupos_a_verificar": [],
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten"
+      ],
       "alertas_revision": [
-        "Edad, ingredientes y alérgenos por verificar. Legumbres muy blandas y sin sal; revisar dureza de breadsticks por riesgo de atragantamiento."
+        "La página indica desde 6 meses. Frijoles cocidos y triturados; breadsticks pueden ser duros y representar riesgo: sustituir por vegetales cocidos blandos."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "frijoles blancos en conserva sin sal ni azúcar añadidos, ajo, menta, aceite de oliva, breadstick"
     },
     {
       "id": "nhs-vegetable-pasta",
@@ -2151,134 +2173,164 @@
       "edad_minima_fuente_meses": 7,
       "edad_maxima_fuente_meses": 9,
       "alergenos_o_grupos_a_verificar": [
+        "lacteos",
         "trigo-gluten"
       ],
       "alertas_revision": [
-        "La página indica 7–9 meses. Pasta muy blanda, verduras cocidas y textura húmeda; verificar si contiene lácteos."
+        "La página indica 7–9 meses. El maíz tierno entero puede ser difícil de manejar: adaptar o retirar; cocinar lentejas y pasta completamente; revisar sodio del queso."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "cebolla, ajo, brócoli, tomate, lentejas rojas, queso crema, pasta, maíz tierno"
     },
     {
       "id": "nhs-sweet-potato-patties",
       "nombre": "Sweet potato patties",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/sweet-potato-patties/",
-      "edad_minima_fuente_meses": null,
+      "edad_minima_fuente_meses": 6,
       "edad_maxima_fuente_meses": null,
-      "alergenos_o_grupos_a_verificar": [],
+      "alergenos_o_grupos_a_verificar": [
+        "huevo",
+        "legumbres"
+      ],
       "alertas_revision": [
-        "Edad, ingredientes y alérgenos por verificar; patties deben quedar muy blandas y deshacerse fácilmente, sin costra dura."
+        "La página indica desde 6 meses. Contiene huevo y garbanzo; cocinar por completo y asegurar que las tortitas queden blandas y se deshagan fácilmente."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "boniato, cebolla, garbanzos, garam masala, huevo, aceite vegetal"
     },
     {
       "id": "nhs-african-stew",
       "nombre": "African stew",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/african-stew/",
-      "edad_minima_fuente_meses": null,
-      "edad_maxima_fuente_meses": null,
-      "alergenos_o_grupos_a_verificar": [],
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "alergenos_o_grupos_a_verificar": [
+        "maní",
+        "legumbres",
+        "trigo-gluten"
+      ],
       "alertas_revision": [
-        "Edad e ingredientes por verificar. Confirmar contenido de sal; legumbres muy blandas y sin piezas enteras duras."
+        "La página indica 7–9 meses. Contiene maní: solo mantequilla lisa bien diluida, nunca frutos secos enteros; revisar chile y textura del pan."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "cebolla, pimiento rojo, boniato, habichuelas, tomate, frijoles rojos, mantequilla de maní, chile en polvo, pan integral"
     },
     {
       "id": "nhs-delicious-dhal",
       "nombre": "Delicious dhal",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/delicious-dhal/",
-      "edad_minima_fuente_meses": null,
+      "edad_minima_fuente_meses": 6,
       "edad_maxima_fuente_meses": null,
-      "alergenos_o_grupos_a_verificar": [],
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres"
+      ],
       "alertas_revision": [
-        "Edad e ingredientes por verificar. Lentejas completamente cocidas y sin sal añadida; textura húmeda y apropiada para la etapa."
+        "La página indica desde 6 meses. Cocinar guisantes partidos hasta que se deshagan; adaptar especias y textura; no añadir sal."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "cebolla, cilantro, guisantes amarillos partidos, aceite, ajo, chile en polvo, cúrcuma"
     },
     {
       "id": "nhs-egg-fingers",
       "nombre": "Egg fingers",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/egg-fingers/",
-      "edad_minima_fuente_meses": null,
+      "edad_minima_fuente_meses": 6,
       "edad_maxima_fuente_meses": null,
-      "alergenos_o_grupos_a_verificar": [],
+      "alergenos_o_grupos_a_verificar": [
+        "huevo"
+      ],
       "alertas_revision": [
-        "Edad e ingredientes por verificar. Huevo completamente cocido y textura húmeda; adaptar forma y tamaño."
+        "La página indica desde 6 meses, pero indica hervir el huevo 5 minutos. No recomendar hasta validar que quede completamente cocido; cortar y servir con textura segura."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "huevo"
     },
     {
       "id": "nhs-mexican-chicken",
       "nombre": "Mexican chicken",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/mexican-chicken/",
-      "edad_minima_fuente_meses": null,
-      "edad_maxima_fuente_meses": null,
-      "alergenos_o_grupos_a_verificar": [],
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten",
+        "lacteos"
+      ],
       "alertas_revision": [
-        "Edad, ingredientes y alérgenos por verificar. Pollo completamente cocido; revisar especias, sodio y textura."
+        "La página indica 7–9 meses. Pollo completamente cocido; revisar especias y cortar/adaptar pan pita a textura segura."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "pimiento rojo, cebolla, paprika, chile suave, ajo, comino, pollo, pan pita, yogur natural"
     },
     {
       "id": "nhs-creamy-hotpot",
       "nombre": "Creamy hotpot",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/creamy-hotpot/",
-      "edad_minima_fuente_meses": null,
-      "edad_maxima_fuente_meses": null,
-      "alergenos_o_grupos_a_verificar": [],
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
       "alertas_revision": [
-        "Edad, ingredientes y alérgenos por verificar. Revisar lácteos y sodio; carnes y verduras completamente cocidas y tiernas."
+        "La página indica 7–9 meses. Pollo completamente cocido, vegetales tiernos y textura húmeda; revisar sodio del queso."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "puerro, zanahoria, papa, habichuelas, pollo, brócoli, queso crema"
     },
     {
       "id": "nhs-cheesy-beans-toast",
       "nombre": "Cheesy beans on toast",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/cheesy-beans-on-toast/",
-      "edad_minima_fuente_meses": null,
-      "edad_maxima_fuente_meses": null,
-      "alergenos_o_grupos_a_verificar": [],
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres",
+        "lacteos",
+        "trigo-gluten"
+      ],
       "alertas_revision": [
-        "Edad, ingredientes y alérgenos por verificar. Frijoles sin sal añadida y muy blandos; revisar sodio del queso y textura del pan."
+        "La página indica 7–9 meses. Triturar/aplastar bien los frijoles; revisar sodio del queso y textura del pan/pimiento."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "ensalada de cinco frijoles en conserva sin sal ni azúcar, queso duro, pan integral, crema vegetal, pimiento rojo"
     },
     {
       "id": "nhs-lamb-curry",
       "nombre": "Lamb curry",
       "fuente_id": "nhs-best-start-97",
       "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/lamb-curry/",
-      "edad_minima_fuente_meses": null,
-      "edad_maxima_fuente_meses": null,
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
       "alergenos_o_grupos_a_verificar": [],
       "alertas_revision": [
-        "Edad, ingredientes y alérgenos por verificar. Cordero completamente cocido y tierno; revisar sodio, picante y textura."
+        "La página indica 7–9 meses. Cordero completamente cocido, tierno y finamente desmenuzado; revisar textura del arroz y brócoli."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "ingredientes_referenciados": "cebolla, ajo, tomate, cordero magro, cilantro molido, comino, agua, canela opcional, limón, arroz, brócoli"
     }
   ]
 }
