@@ -38,6 +38,14 @@ class TestRecetario(unittest.TestCase):
             self.assertEqual(receta["edad_minima_meses"], 6, receta["id"])
             self.assertEqual(receta["edad_maxima_meses"], 59, receta["id"])
 
+    def test_variedades_de_platano_se_mantienen_diferenciadas(self) -> None:
+        por_id = {a["id"]: a for a in self.indice["alimentos"]}
+        self.assertIn("platano-fruta", por_id)
+        self.assertIn("platano-vianda", por_id)
+        self.assertNotEqual(por_id["platano-fruta"]["nombre"], por_id["platano-vianda"]["nombre"])
+        self.assertIn("banana", por_id["platano-fruta"]["nombres_alternativos"])
+        self.assertIn("plátano verde", por_id["platano-vianda"]["nombres_alternativos"])
+
     def test_todas_las_fuentes_estan_declaradas(self) -> None:
         for receta in self.catalogo["recetas"]:
             self.assertTrue(receta["fuentes"], receta["id"])
