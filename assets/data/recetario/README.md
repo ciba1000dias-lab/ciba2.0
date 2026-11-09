@@ -37,3 +37,8 @@ La identificación automática de alérgenos es conservadora y limitada a los al
 Un profesional cualificado en nutrición pediátrica debe revisar la pertinencia de ingredientes, cantidades, edades, texturas, combinaciones y recomendaciones. El equipo editorial debe revisar claridad y aplicabilidad en el contexto cubano. También se deben verificar los enlaces, las reglas automatizadas y los riesgos de contaminación cruzada antes de habilitar cualquier receta.
 
 Las fuentes citadas sustentan recomendaciones generales de alimentación complementaria y seguridad, no certifican cada receta individual ni sus cantidades.
+
+
+## Prototipo funcional
+
+La interfaz normal mantiene el filtro estricto: solo muestra registros con `publicable: true` y `estado: aprobada`. Para presentar el flujo completo con contenido real mientras las 15 preparaciones originales siguen en revisión, existe un modo de demostración activado únicamente con `?demo=1` en la URL del recetario. Este modo selecciona exclusivamente registros no publicables, conserva los filtros deterministas de edad, ingredientes y restricciones, y marca cada tarjeta como **BORRADOR · NO APROBADO**. La advertencia indica que el contenido sirve para demostrar la interacción y no para orientar la alimentación real. Activar el modo demo no cambia el catálogo, no modifica `publicable` y no autoriza recomendaciones. Las nuevas recetas se incorporan como registros independientes siguiendo este mismo esquema; el motor no requiere reescritura.
