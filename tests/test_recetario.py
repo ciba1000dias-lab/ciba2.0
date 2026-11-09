@@ -68,7 +68,10 @@ class TestRecetario(unittest.TestCase):
         self.assertEqual(len({f["id"] for f in colecciones}), len(colecciones))
         for fuente in colecciones:
             self.assertTrue(fuente["url"].startswith("https://"), fuente["id"])
-            self.assertGreater(fuente["entradas_publicadas"], 0, fuente["id"])
+            if fuente.get("entradas_publicadas") is not None:
+                self.assertGreater(fuente["entradas_publicadas"], 0, fuente["id"])
+            if fuente.get("entradas_publicadas_minimo") is not None:
+                self.assertGreaterEqual(fuente["entradas_publicadas_minimo"], 1, fuente["id"])
             self.assertFalse(fuente["recomendacion_automatica"], fuente["id"])
 
     def test_fuentes_generales_suman_151_entradas_documentadas(self) -> None:
@@ -77,12 +80,19 @@ class TestRecetario(unittest.TestCase):
             "nhs-best-start-97", "unicef-venezuela-2026", "first-steps-2023"
         }]
         self.assertEqual(sum(f["entradas_publicadas"] for f in generales), 151)
+        self.assertEqual(sum(f.get("entradas_publicadas_minimo", 0) for f in colecciones), 101)
 
     def test_fuentes_clinicas_se_mantienen_separadas(self) -> None:
         colecciones = {f["id"]: f for f in self.fuentes_externas["colecciones"]}
         for key in ("uhs-babies-specialist", "uhs-toddlers-specialist"):
             self.assertFalse(colecciones[key]["recomendacion_automatica"])
             self.assertIn("especializ", colecciones[key]["uso_ciba"].lower())
+
+    def test_fuentes_historicas_y_periodisticas_no_se_recomiendan_solas(self) -> None:
+        colecciones = {f["id"]: f for f in self.fuentes_externas["colecciones"]}
+        for key in ("cubahora-cocina-cuba-ninos", "guije-comidas-ninos-historico"):
+            self.assertFalse(colecciones[key]["recomendacion_automatica"])
+        self.assertIn("históric", colecciones["guije-comidas-ninos-historico"]["alcance"].lower())
 
 
 if __name__ == "__main__":
