@@ -194,6 +194,15 @@
       )
     );
 
+    // ACCESO DIRECTO A LA BIBLIOTECA DE ALIMENTOS
+    panel.appendChild(
+      enlace(
+        new URL('c/C1/alimentos/', RAIZ).href,
+        'Biblioteca de alimentos',
+        'ciba-global-enlace'
+      )
+    );
+
     // CUATRO COLUMNAS
     columnas.forEach((columna) => {
       const grupo = elemento('div', 'ciba-global-grupo');
