@@ -35,7 +35,7 @@
     if (!original) return '';
     try {
       const url = new URL(original);
-      const esWikimedia = /(^|\\.)wikimedia\\.org$/i.test(url.hostname);
+      const esWikimedia = /(^|\.)wikimedia\.org$/i.test(url.hostname);
       if (!esWikimedia) return original;
 
       if (url.pathname.includes('/wiki/Special:FilePath/')) {
@@ -43,9 +43,9 @@
         return url.href;
       }
 
-      const miniatura = url.pathname.match(/\\/(\\d+)px-([^/]+)$/);
+      const miniatura = url.pathname.match(/\/(\d+)px-([^/]+)$/);
       if (miniatura) {
-        url.pathname = url.pathname.replace(/\\/\\d+px-/, '/' + ancho + 'px-');
+        url.pathname = url.pathname.replace(/\/\d+px-/, '/' + ancho + 'px-');
         url.search = '';
         return url.href;
       }
