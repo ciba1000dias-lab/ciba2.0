@@ -1,7 +1,7 @@
 // CIBA · ÍNDICE LIGERO DE LA BIBLIOTECA DE ALIMENTOS
 (() => {
   'use strict';
-  const raiz = new URL('../../../', import.meta.url);
+  const raiz = new URL('../../', import.meta.url);
   const destino = document.getElementById('ciba-grupos');
   if (!destino) return;
   const normalizar = (s) => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
