@@ -76,3 +76,6 @@ a{color:inherit}
 .ciba-receta-fuentes-especializadas{margin-top:16px;padding-top:12px;border-top:1px solid var(--linea);color:var(--noche);font-size:13px}
 .ciba-receta-fuentes-especializadas summary{cursor:pointer;font-weight:700}
 .ciba-receta-fuentes-especializadas p,.ciba-receta-fuentes-especializadas li{color:var(--suave);font-size:12px;line-height:1.7}
+
+.ciba-receta-demo{border-left-color:var(--tierra);background:#f6e8df}
+.ciba-receta-etiqueta-demo{display:inline-block;margin:0 0 9px!important;padding:6px 9px;border-radius:4px;background:#f6e8df;color:#8b3d2c!important;font-size:10px!important;font-weight:800;letter-spacing:.08em}
