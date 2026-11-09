@@ -7,7 +7,8 @@
     "assets/data/alimentos/vegetales.json",
     "assets/data/alimentos/legumbres.json",
     "assets/data/alimentos/cereales.json",
-    "assets/data/alimentos/carnes.json"
+    "assets/data/alimentos/carnes.json",
+    "assets/data/alimentos/pescados.json"
   ],
   "categorias": [
     {
@@ -45,6 +46,12 @@
       "archivo": "assets/data/alimentos/carnes.json",
       "cantidad": 25,
       "slug": "carnes"
+    },
+    {
+      "nombre": "Pescados, mariscos y preparaciones",
+      "archivo": "assets/data/alimentos/pescados.json",
+      "cantidad": 20,
+      "slug": "pescados"
     }
   ]
 }
