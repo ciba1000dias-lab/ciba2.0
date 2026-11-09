@@ -1,13 +1,26 @@
 {
-  "id":"C1-05",
-  "titulo":"Alimentación durante la gestación",
-  "descripcion":"Una guía práctica y basada en evidencia para cuidar la nutrición materna, favorecer el desarrollo prenatal y adaptar las recomendaciones a la vida cotidiana.",
-  "columna":"C",
-  "area":"C1",
-  "palabras_clave":["alimentación durante el embarazo","nutrición materna","gestación","ácido fólico","hierro","seguridad alimentaria","primeros mil días","nutrición prenatal","embarazo saludable","suplementación","ganancia de peso","alimentos seguros"],
-  "estado":"publicado",
-  "fecha_publicacion":"2026-11-09",
-  "mostrar_en_columna":true,
-  "mostrar_en_area":true,
-  "subseccion":"Nutrición desde la concepción"
+  "id": "C1-05",
+  "titulo": "Alimentación durante la gestación",
+  "descripcion": "Una guía práctica y basada en evidencia para cuidar la nutrición materna, favorecer el desarrollo prenatal y adaptar las recomendaciones a la vida cotidiana.",
+  "columna": "C",
+  "area": "C1",
+  "palabras_clave": [
+    "alimentación durante el embarazo",
+    "nutrición materna",
+    "gestación",
+    "ácido fólico",
+    "hierro",
+    "seguridad alimentaria",
+    "primeros mil días",
+    "nutrición prenatal",
+    "embarazo saludable",
+    "suplementación",
+    "ganancia de peso",
+    "alimentos seguros"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-09",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "subseccion": "Alimentación durante la gestación"
 }
