@@ -1,0 +1,504 @@
+{
+  "version": 1,
+  "titulo": "Preparaciones individuales indexadas de Sus primeras cucharaditas",
+  "fuente": {
+    "id": "unicef-venezuela-2026",
+    "institucion": "UNICEF Venezuela",
+    "titulo": "Sus primeras cucharaditas: recetas para acompañar la alimentación complementaria del bebé",
+    "url": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+    "paginas": 35,
+    "fecha_publicacion": "2026-10"
+  },
+  "nota": "Índice de títulos y metadatos editoriales; no reproduce instrucciones ni cantidades del documento original. Todas las entradas están pendientes de cotejo individual. La fuente presenta adaptaciones para 6–8, 9–11 y 12–24 meses; esto no equivale a aprobación clínica de cada preparación.",
+  "recetas": [
+    {
+      "id": "arepas-batata-queso",
+      "nombre": "Arepas de batata con queso blanco",
+      "pagina_pdf_impresa": 20,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "batata, harina de maíz, queso blanco bajo en sal, aceite vegetal",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Revisar sodio del queso, textura interior y dureza de la corteza."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "arepas-calabacin-pollo",
+      "nombre": "Arepas de calabacín con pollo desmechado",
+      "pagina_pdf_impresa": 22,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "calabacín, harina de maíz, pollo, aguacate",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Verificar cocción completa del pollo, fibras y textura de la arepa."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "arepas-platano-carne",
+      "nombre": "Arepas de plátano verde con carne mechada",
+      "pagina_pdf_impresa": 24,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "plátano verde, harina de maíz, carne de res",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Verificar ternura de la carne, fibras y textura de la masa."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "arepas-yuca-huevo",
+      "nombre": "Arepas de yuca con huevo revuelto",
+      "pagina_pdf_impresa": 26,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "yuca, harina de maíz, huevo, aguacate",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo"
+      ],
+      "alertas_revision": [
+        "Huevo completamente cocido; retirar fibra central de la yuca y revisar textura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "empanadas-platano-queso",
+      "nombre": "Empanadas asadas con masa de plátano rellenas de queso",
+      "pagina_pdf_impresa": 28,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "plátano maduro, queso blanco, aceite",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Revisar corteza exterior dura, tamaño y sodio del queso."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "panquecas-auyama-queso",
+      "nombre": "Panquecas de auyama con queso",
+      "pagina_pdf_impresa": 30,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "auyama, huevo, harina de maíz o trigo, queso",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Huevo completamente cocido; revisar bordes tostados y queso bajo en sal."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "arepas-colores-carne",
+      "nombre": "Arepas de colores con carne molida",
+      "pagina_pdf_impresa": 32,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "harina de maíz, carne molida, vegetales (ver fuente)",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Revisar vegetales incluidos, cocción de la carne y textura por edad."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "arepas-ocumo-pollo",
+      "nombre": "Arepas de ocumo y vegetales con pollo desmechado",
+      "pagina_pdf_impresa": 34,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "ocumo, vegetales, pollo, harina de maíz (ver fuente)",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Verificar cocción completa del ocumo y pollo, y textura segura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "panquecas-cambur-avena-queso",
+      "nombre": "Panquecas de cambur y avena con queso blanco rallado",
+      "pagina_pdf_impresa": 36,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "cambur, avena, queso blanco",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Revisar avena y posible contaminación cruzada con gluten; queso bajo en sal; cocción interior."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "bollitos-maiz-carne",
+      "nombre": "Bollitos de maíz con carne molida",
+      "pagina_pdf_impresa": 38,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "maíz, carne molida",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Revisar consistencia compacta, tamaño y cocción completa de la carne."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "panquecas-zanahoria-avena-queso",
+      "nombre": "Panquecas de zanahoria y avena con queso blanco rallado",
+      "pagina_pdf_impresa": 40,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "zanahoria, avena, queso blanco",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Revisar avena, queso bajo en sal, humedad y cocción interior."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "bollitos-maiz-caraotas-queso",
+      "nombre": "Bollitos de maíz con caraotas y queso, con puré de guayaba",
+      "pagina_pdf_impresa": 42,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "maíz, caraotas, queso, guayaba",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos",
+        "legumbres"
+      ],
+      "alertas_revision": [
+        "Caraotas completamente cocidas y aplastadas; revisar queso, semillas y textura del bolito."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "cachapa-platano-carne",
+      "nombre": "Cachapa de plátano verde con carne desmechada y lechosa triturada",
+      "pagina_pdf_impresa": 44,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "plátano verde, carne desmechada, lechosa",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Revisar consistencia de la cachapa, fibras de carne y presentación de fruta."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "torticas-quinchoncho-queso-sardina",
+      "nombre": "Torticas de quinchoncho con queso blanco y sardina",
+      "pagina_pdf_impresa": 46,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "quinchoncho, queso blanco, sardina",
+      "alergenos_o_grupos_a_verificar": [
+        "pescado",
+        "lacteos",
+        "legumbres"
+      ],
+      "alertas_revision": [
+        "Verificar espinas, sodio del queso y sardina, cocción de legumbre y textura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "pure-yuca-higado-aguacate",
+      "nombre": "Puré de yuca con trozos de hígado y aguacate",
+      "pagina_pdf_impresa": 48,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "yuca, hígado, aguacate",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "REVISIÓN PRIORITARIA: cuantificar hígado y vitamina A preformada; no recomendar hasta evaluación especializada."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "arroz-lentejas-queso",
+      "nombre": "Arroz con lentejas y queso blanco con lechosa",
+      "pagina_pdf_impresa": 50,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "arroz, lentejas, queso blanco, lechosa",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos",
+        "legumbres"
+      ],
+      "alertas_revision": [
+        "Revisar textura húmeda, lentejas blandas y sodio del queso."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "pasta-carne-zanahoria",
+      "nombre": "Pasta con carne molida y zanahoria con cambur",
+      "pagina_pdf_impresa": 52,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "pasta, carne molida, zanahoria, cambur",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Pasta con trigo/gluten; cocción completa de carne y textura apropiada."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "tortilla-huevo-papa-espinaca",
+      "nombre": "Tortilla de huevo con papa y espinaca",
+      "pagina_pdf_impresa": 54,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "huevo, papa, espinaca",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo"
+      ],
+      "alertas_revision": [
+        "Huevo completamente cocido; papa blanda; revisar espinaca y tamaño de porción."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "helado-mango-leche-materna",
+      "nombre": "Helados de mango con leche materna",
+      "pagina_pdf_impresa": 56,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "mango, leche materna",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "REVISIÓN PRIORITARIA: higiene, extracción, conservación y congelación segura de leche materna; no usar como recomendación general hasta validar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "papilla-cambur-leche-materna",
+      "nombre": "Papilla de cambur con leche materna",
+      "pagina_pdf_impresa": 58,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "cambur, leche materna",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Verificar higiene y manipulación segura de leche materna; evitar calentamiento que destruya propiedades."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "compota-mango",
+      "nombre": "Compota de mango casera",
+      "pagina_pdf_impresa": 60,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "mango",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Revisar cocción/consistencia, higiene y ausencia de azúcar añadida."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "atol-auyama-leche-materna",
+      "nombre": "Atol de auyama con leche materna",
+      "pagina_pdf_impresa": 62,
+      "url_fuente": "https://www.unicef.org/venezuela/media/10256/file/RECETARIO%20DIGITAL%2015%20OCT%202026.pdf.pdf",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": 24,
+      "etapas_descritas_por_fuente": [
+        "6-8",
+        "9-11",
+        "12-24"
+      ],
+      "ingredientes_mencionados_en_titulo_o_indice": "auyama, leche materna",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "REVISIÓN PRIORITARIA: método de cocción, temperatura y manipulación segura de leche materna."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    }
+  ]
+}
