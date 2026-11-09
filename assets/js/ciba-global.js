@@ -212,6 +212,15 @@
       )
     );
 
+    // SUEÑO Y DESCANSO DURANTE LOS PRIMEROS DOS AÑOS
+    panel.appendChild(
+      enlace(
+        new URL('c/C1/C1-03/', RAIZ).href,
+        'Sueño infantil: horas y descanso seguro',
+        'ciba-global-enlace'
+      )
+    );
+
     // ACCESO DIRECTO AL RECETARIO INTERACTIVO
     panel.appendChild(
       enlace(
