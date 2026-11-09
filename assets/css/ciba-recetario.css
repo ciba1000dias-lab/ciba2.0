@@ -149,3 +149,13 @@ a{color:inherit}
 .ciba-receta-alergia-toggle>label{display:flex!important;flex:1;align-items:center;gap:10px;min-width:0;cursor:pointer}
 .ciba-receta-alergia-toggle>label span{font-size:14px;font-weight:500}
 .ciba-receta-alergia-toggle>.ciba-info{margin-left:4px}
+
+
+/* Identificador editorial estable de cada ficha del catálogo 1–150. */
+.ciba-receta-numero {
+  margin: 0 0 .35rem;
+  color: var(--ciba-verde, #426b5d);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+}
