@@ -50,3 +50,13 @@ a{color:inherit}
 .ciba-receta-tarjeta p,.ciba-receta-tarjeta li{color:var(--suave);font-size:13px;line-height:1.7}
 .ciba-receta-tarjeta ul{padding-left:20px}
 #ciba-receta-propuestas h3{margin:24px 0 10px;color:var(--noche);font:normal 24px Georgia,serif}
+
+
+.ciba-receta-aclaracion{margin:14px 0;padding:15px;border:1px solid var(--oro);border-radius:9px;background:#fbf7ed}
+.ciba-receta-aclaracion h3{margin:0 0 8px;color:var(--noche);font:normal 20px Georgia,serif}
+.ciba-receta-aclaracion p{margin:0 0 12px;color:var(--suave);font-size:13px;line-height:1.6}
+.ciba-receta-opciones-aclaracion{display:grid;gap:9px}
+.ciba-receta-opcion-aclaracion{display:grid;gap:5px;width:100%;padding:12px;text-align:left;border:1px solid var(--linea);border-radius:8px;background:#fff;color:var(--tinta);cursor:pointer}
+.ciba-receta-opcion-aclaracion:hover,.ciba-receta-opcion-aclaracion:focus{border-color:var(--verde);outline:2px solid #526e5633}
+.ciba-receta-opcion-aclaracion strong{color:var(--noche);font-size:14px}
+.ciba-receta-opcion-aclaracion span{color:var(--suave);font-size:12px;line-height:1.5;font-weight:400}
