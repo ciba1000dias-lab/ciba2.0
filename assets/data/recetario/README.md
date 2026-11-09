@@ -4,7 +4,7 @@ Archivo principal: `assets/data/recetario/recetas.json`.
 
 ## Estado del catálogo
 
-<badge>150 números registrados</badge>
+**150 números registrados**
 
 - **147 fichas publicables** con ingredientes vinculados, preparación, adaptación por etapa, alérgenos, alertas, conservación y referencias.
 - **2 fichas bloqueadas:** n.º 30 y 83, ambas con hígado. No se habilitan hasta evaluar la vitamina A preformada y establecer cantidad y frecuencia seguras.
