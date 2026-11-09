@@ -162,10 +162,61 @@
     panel.appendChild(grupo);
   }
 
+  function resolverColumnaActual() {
+    const ruta = window.location.pathname;
+    const coincidencia = ruta.match(/\\/c\\/([CIBA])\\d?\\//i);
+    let id = coincidencia ? coincidencia[1].toUpperCase() : '';
+    if (!id) {
+      const articulo = document.querySelector('.ciba-articulo');
+      const clase = articulo ? Array.from(articulo.classList).find(x => /^articulo-(crianza|internet|bienestar|acompanamiento)$/.test(x)) : '';
+      const equivalencias = { 'articulo-crianza':'C', 'articulo-internet':'I', 'articulo-bienestar':'B', 'articulo-acompanamiento':'A' };
+      id = equivalencias[clase] || '';
+    }
+    return columnas.find(c => c.id === id) || { id:'', titulo:'Explora CIBA' };
+  }
+
+  function crearCabeceraGlobal() {
+    if (esPortada() || document.querySelector('.ciba-global-cabecera')) return null;
+    const actual = resolverColumnaActual();
+    const colores = { C:'#397653', I:'#287B9A', B:'#8C671F', A:'#A9443B' };
+    const cabecera = elemento('header','ciba-global-cabecera');
+    cabecera.setAttribute('aria-label','Identidad y navegación de CIBA');
+    const marca = elemento('a','ciba-global-marca','CIBA');
+    marca.href = new URL('index.html',RAIZ).href;
+    marca.setAttribute('aria-label','Volver al inicio de CIBA');
+    const contexto = elemento('span','ciba-global-contexto',actual.titulo);
+    contexto.style.setProperty('--ciba-columna-color',colores[actual.id] || '#493A32');
+    contexto.dataset.columna = actual.id;
+    cabecera.append(marca,contexto);
+    document.body.insertBefore(cabecera,document.body.firstChild);
+    document.body.classList.add('ciba-con-cabecera-global');
+    return cabecera;
+  }
+
+  function activarTransicionColumnas() {
+    const colores = { C:'#397653', I:'#287B9A', B:'#8C671F', A:'#A9443B' };
+    document.addEventListener('click', evento => {
+      const ancla = evento.target.closest('a[href]');
+      if (!ancla || evento.defaultPrevented || evento.button !== 0 || evento.metaKey || evento.ctrlKey || evento.shiftKey || evento.altKey) return;
+      const destino = new URL(ancla.href,window.location.href);
+      const actual = resolverColumnaActual().id;
+      const siguiente = (destino.pathname.match(/\\/c\\/([CIBA])\\d?\\//i) || [])[1]?.toUpperCase();
+      if (!siguiente || !actual || siguiente === actual || destino.origin !== location.origin) return;
+      evento.preventDefault();
+      const velo = elemento('div','ciba-transicion-columnas');
+      velo.style.setProperty('--color-origen',colores[actual]);
+      velo.style.setProperty('--color-destino',colores[siguiente]);
+      velo.innerHTML = '<span class="ciba-transicion-luz"></span><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 50 C50 35 70 38 70 52 C70 72 43 78 30 60 C10 32 43 10 66 20 C95 32 92 70 70 84 C42 103 8 78 13 45"/></svg>';
+      document.body.appendChild(velo);
+      requestAnimationFrame(()=>velo.classList.add('activa'));
+      window.setTimeout(()=>{ window.location.href = destino.href; },680);
+    });
+  }
+
   function crearMenu() {
     if (document.querySelector('.ciba-global-menu')) return;
 
-    const contenedor = elemento('div', 'ciba-global-menu');
+    const cabeceraGlobal = crearCabeceraGlobal();\n    const contenedor = elemento('div', 'ciba-global-menu');
 
     const boton = elemento('button', 'ciba-global-menu-boton');
     boton.type = 'button';
