@@ -2,7 +2,7 @@
   "version": 2,
   "proyecto": "CIBA · ¿Qué cocino hoy?",
   "estado_catalogo": "ampliacion_progresiva",
-  "nota": "Catálogo en ampliación: fichas operativas aprobadas y registros pendientes se incorporan por etapas. Solo las fichas completas, con ingredientes vinculados y revisión registrada, se habilitan en el buscador.",
+  "nota": "Catálogo en ampliación progresiva. La preparación 69 se omite de resultados porque duplica la combinación de la 61 (mango con fruta bomba). Solo se habilitan fichas completas con ingredientes vinculados, adaptación por edad, alertas y revisión registrada.",
   "tramos_edad": [
     "6-8",
     "9-11",
@@ -61,6 +61,74 @@
         "estado": "aprobada",
         "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
+    },
+    {
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes_nuevos": "Ofrecer y comprobar la tolerancia de cada ingrediente por separado antes de combinarlos.",
+      "conservacion": "Preparar con higiene, servir recién hecho y refrigerar pronto la porción no servida. Desechar restos en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "unicef-cuba-2020"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Preparación incluida en el catálogo aprobado por el especialista responsable de CIBA; esta ficha concreta cantidades orientativas, preparación y adaptación por habilidades."
+      },
+      "id": "albondigas-blandas-pollo-avena-calabaza",
+      "nombre": "Albóndigas blandas de pollo",
+      "descripcion": "Pollo molido, avena y calabaza. Para lactantes se sirven aplastadas o desmenuzadas, nunca en bolitas redondas.",
+      "ingredientes": [
+        {
+          "alimento_id": "pollo",
+          "cantidad": "30",
+          "unidad": "gramos de pollo molido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "avena",
+          "cantidad": "1",
+          "unidad": "cucharada de avena molida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "calabaza",
+          "cantidad": "2",
+          "unidad": "cucharadas de calabaza cocida y majada",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Cocinar la calabaza hasta que esté muy blanda y aplastarla.",
+        "Mezclar con pollo molido y avena; dejar hidratar unos minutos.",
+        "Formar piezas pequeñas y aplanadas, no esferas compactas.",
+        "Cocinar completamente al horno o sartén, volteando para lograr cocción uniforme.",
+        "Comprobar que el centro alcance 74 °C (165 °F); textura blanda y húmeda."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "No ofrecer la pieza entera; desmenuzar y mezclar con calabaza hasta textura húmeda y homogénea.",
+        "9-11": "Desmenuzada o pieza aplanada muy blanda que se deshaga fácilmente, si las habilidades lo permiten.",
+        "12-23": "Piezas aplanadas, blandas y húmedas, nunca redondas ni compactas.",
+        "24-59": "Piezas pequeñas y blandas; evitar formas redondas compactas."
+      },
+      "alergenos": [],
+      "alertas": [
+        "El pollo molido debe alcanzar 74 °C (165 °F).",
+        "No servir bolitas redondas, duras, secas ni compactas a lactantes.",
+        "No añadir sal ni cubitos concentrados.",
+        "Evitar contaminación cruzada con pollo crudo."
+      ]
     },
     {
       "id": "arroz-boniato-pollo",
@@ -430,6 +498,77 @@
         "estado": "aprobada",
         "nota": "Preparación aceptada expresamente por el especialista responsable del recetario CIBA en el dictamen compartido el 9 de noviembre de 2026. La ficha técnica conserva cantidades domésticas orientativas y adaptación por habilidades."
       }
+    },
+    {
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes_nuevos": "Ofrecer y comprobar la tolerancia de cada ingrediente por separado antes de combinarlos.",
+      "conservacion": "Preparar con higiene, servir recién hecho y refrigerar pronto la porción no servida. Desechar restos en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "unicef-cuba-2020"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Preparación incluida en el catálogo aprobado por el especialista responsable de CIBA; esta ficha concreta cantidades orientativas, preparación y adaptación por habilidades."
+      },
+      "id": "bol-frutas-variadas",
+      "nombre": "Bol de frutas variadas",
+      "descripcion": "Mango, fruta bomba, plátano fruta y pera maduros; cada fruta debe haberse introducido previamente.",
+      "ingredientes": [
+        {
+          "alimento_id": "mango",
+          "cantidad": "2",
+          "unidad": "cucharadas de mango maduro",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "fruta-bomba",
+          "cantidad": "2",
+          "unidad": "cucharadas de fruta bomba madura",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "platano-fruta",
+          "cantidad": "2",
+          "unidad": "cucharadas de plátano fruta maduro",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "pera",
+          "cantidad": "2",
+          "unidad": "cucharadas de pera madura o cocida",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar las frutas; retirar pieles, semillas, corazón y partes duras.",
+        "Cocinar la pera si está firme; las demás frutas deben estar maduras y blandas.",
+        "Aplastar por separado o mezclar; no añadir azúcar ni miel."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Aplastar o triturar hasta textura espesa, húmeda y homogénea; sin trozos.",
+        "9-11": "Aplastar muy bien; permitir pequeños grumos blandos si ya los maneja.",
+        "12-23": "Majadas o en piezas blandas y alargadas adaptadas a sus habilidades; evitar formas redondas.",
+        "24-59": "Piezas blandas pequeñas, según habilidades."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No ofrecer como primera exposición simultánea a cuatro alimentos; introducirlos por separado.",
+        "Cocinar la pera si está firme.",
+        "No añadir azúcar ni miel antes de los 12 meses."
+      ]
     },
     {
       "id": "bol-mamey",
@@ -1119,6 +1258,65 @@
       }
     },
     {
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes_nuevos": "Ofrecer y comprobar la tolerancia de cada ingrediente por separado antes de combinarlos.",
+      "conservacion": "Preparar con higiene, servir recién hecho y refrigerar pronto la porción no servida. Desechar restos en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "unicef-cuba-2020"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Preparación incluida en el catálogo aprobado por el especialista responsable de CIBA; esta ficha concreta cantidades orientativas, preparación y adaptación por habilidades."
+      },
+      "id": "mamey-avena",
+      "nombre": "Mamey con avena suave",
+      "descripcion": "Mamey maduro con avena bien cocida, sin azúcar añadido.",
+      "ingredientes": [
+        {
+          "alimento_id": "mamey-colorado",
+          "cantidad": "1/4",
+          "unidad": "taza de pulpa de mamey maduro",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "avena",
+          "cantidad": "2",
+          "unidad": "cucharadas de avena seca",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar el mamey antes de abrirlo; retirar cáscara y semilla.",
+        "Cocinar la avena en agua hasta que quede muy blanda y cremosa.",
+        "Aplastar o triturar la pulpa y mezclar con la avena cocida.",
+        "Ajustar con agua potable hasta obtener consistencia húmeda, no pegajosa."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta textura espesa, homogénea y húmeda, sin grumos densos ni fibras.",
+        "9-11": "Aplastar muy bien; admitir grumos blandos pequeños si ya los maneja.",
+        "12-23": "Servir cremosa y húmeda, fácil de recoger con cuchara.",
+        "24-59": "Servir como merienda en consistencia apropiada."
+      },
+      "alergenos": [],
+      "alertas": [
+        "La avena debe quedar completamente cocida y húmeda, nunca seca ni compacta.",
+        "No añadir miel antes de los 12 meses ni azúcar añadido."
+      ]
+    },
+    {
       "id": "papa-huevo-majado",
       "nombre": "Papa majada con huevo bien cocido",
       "descripcion": "Preparación sencilla con huevo completamente cocido.",
@@ -1180,6 +1378,66 @@
       }
     },
     {
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes_nuevos": "Ofrecer y comprobar la tolerancia de cada ingrediente por separado antes de combinarlos.",
+      "conservacion": "Preparar con higiene, servir recién hecho y refrigerar pronto la porción no servida. Desechar restos en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "unicef-cuba-2020"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Preparación incluida en el catálogo aprobado por el especialista responsable de CIBA; esta ficha concreta cantidades orientativas, preparación y adaptación por habilidades."
+      },
+      "id": "pera-ciruela-majada",
+      "nombre": "Pera con ciruela majada",
+      "descripcion": "Pera y ciruela maduras, sin huesos ni fragmentos firmes.",
+      "ingredientes": [
+        {
+          "alimento_id": "pera",
+          "cantidad": "1/4",
+          "unidad": "pera madura",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "ciruela",
+          "cantidad": "1",
+          "unidad": "ciruela madura sin hueso",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar ambas frutas.",
+        "Retirar corazón y semillas de la pera y el hueso de la ciruela.",
+        "Si alguna fruta está firme, cocinar al vapor hasta que se aplaste fácilmente.",
+        "Aplastar o triturar y comprobar que no queden pieles duras ni fragmentos."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar si hace falta y triturar hasta mezcla homogénea, sin pieles ni fragmentos.",
+        "9-11": "Aplastar muy bien; permitir grumos blandos pequeños si ya los maneja.",
+        "12-23": "Ofrecer majada o en piezas muy blandas y manejables, sin hueso.",
+        "24-59": "Servir majada o en piezas blandas pequeñas."
+      },
+      "alergenos": [],
+      "alertas": [
+        "Retirar completamente el hueso de la ciruela.",
+        "No ofrecer pera ni ciruela duras en trozos.",
+        "No añadir azúcar ni miel antes de los 12 meses."
+      ]
+    },
+    {
       "id": "pera-majada",
       "nombre": "Pera majada",
       "descripcion": "Preparación de un solo alimento, sin azúcar ni sal añadidas, con textura adaptable al desarrollo infantil.",
@@ -1232,6 +1490,74 @@
         "estado": "aprobada",
         "nota": "Preparación aceptada expresamente por el especialista responsable del recetario CIBA en el dictamen compartido el 9 de noviembre de 2026. La ficha técnica conserva cantidades domésticas orientativas y adaptación por habilidades."
       }
+    },
+    {
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes_nuevos": "Ofrecer y comprobar la tolerancia de cada ingrediente por separado antes de combinarlos.",
+      "conservacion": "Preparar con higiene, servir recién hecho y refrigerar pronto la porción no servida. Desechar restos en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "unicef-cuba-2020"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Preparación incluida en el catálogo aprobado por el especialista responsable de CIBA; esta ficha concreta cantidades orientativas, preparación y adaptación por habilidades."
+      },
+      "id": "picadillo-res-calabaza",
+      "nombre": "Picadillo de res con calabaza",
+      "descripcion": "Carne de res molida con calabaza y cebolla bien cocidas.",
+      "ingredientes": [
+        {
+          "alimento_id": "res",
+          "cantidad": "30",
+          "unidad": "gramos de carne de res molida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "calabaza",
+          "cantidad": "1/4",
+          "unidad": "taza de calabaza sin piel ni semillas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "cebolla",
+          "cantidad": "1",
+          "unidad": "cucharadita de cebolla finamente picada",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar, pelar y retirar semillas de la calabaza.",
+        "Cocinar calabaza y cebolla en agua hasta que estén muy blandas.",
+        "Añadir la carne molida y deshacer los grumos.",
+        "Cocinar hasta que el centro alcance 71 °C (160 °F).",
+        "Aplastar o triturar y mantener húmedo."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta mezcla homogénea y húmeda, sin grumos compactos de carne.",
+        "9-11": "Aplastar la calabaza y deshacer la carne en partículas muy finas y húmedas.",
+        "12-23": "Carne muy tierna y desmenuzada, mezclada con calabaza blanda.",
+        "24-59": "Picadillo húmedo, carne suelta y vegetales tiernos."
+      },
+      "alergenos": [],
+      "alertas": [
+        "La carne molida de res debe alcanzar 71 °C (160 °F).",
+        "Evitar grumos secos o compactos; mantener húmedo.",
+        "No añadir sal, cubitos concentrados ni embutidos.",
+        "Evitar contaminación cruzada con carne cruda."
+      ]
     },
     {
       "id": "pina-majada",
@@ -1471,6 +1797,80 @@
       }
     },
     {
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes_nuevos": "Ofrecer y comprobar la tolerancia de cada ingrediente por separado antes de combinarlos.",
+      "conservacion": "Preparar con higiene, servir recién hecho y refrigerar pronto la porción no servida. Desechar restos en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "unicef-cuba-2020"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Preparación incluida en el catálogo aprobado por el especialista responsable de CIBA; esta ficha concreta cantidades orientativas, preparación y adaptación por habilidades."
+      },
+      "id": "pollo-guisado-papa-zanahoria",
+      "nombre": "Pollo guisado con papa y zanahoria",
+      "descripcion": "Guiso húmedo de pollo, papa, zanahoria y cebolla.",
+      "ingredientes": [
+        {
+          "alimento_id": "pollo",
+          "cantidad": "30",
+          "unidad": "gramos de pollo sin piel ni huesos",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "papa",
+          "cantidad": "1/4",
+          "unidad": "taza de papa pelada",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "zanahoria",
+          "cantidad": "1/4",
+          "unidad": "taza de zanahoria",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "cebolla",
+          "cantidad": "1",
+          "unidad": "cucharadita de cebolla picada",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar y pelar papa y zanahoria; cortar.",
+        "Cocinar pollo y vegetales hasta que estén completamente hechos y tiernos.",
+        "Comprobar que el centro del pollo alcance 74 °C (165 °F).",
+        "Retirar piel, huesos y cartílagos; desmenuzar el pollo muy fino.",
+        "Aplastar o triturar los vegetales y mezclar; mantener húmedo."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta textura homogénea; sin hebras ni trozos de pollo.",
+        "9-11": "Aplastar vegetales y desmenuzar el pollo muy fino y húmedo.",
+        "12-23": "Pollo muy tierno y vegetales blandos en tamaños manejables.",
+        "24-59": "Trozos pequeños y tiernos, sin huesos ni cartílagos."
+      },
+      "alergenos": [],
+      "alertas": [
+        "El pollo debe alcanzar 74 °C (165 °F).",
+        "Retirar todos los huesos y cartílagos.",
+        "No lavar el pollo crudo; evitar contaminación cruzada.",
+        "No añadir sal ni cubitos concentrados."
+      ]
+    },
+    {
       "id": "pure-boniato-natural",
       "nombre": "Puré espeso de boniato",
       "descripcion": "Boniato bien cocido y majado, sin añadidos.",
@@ -1575,6 +1975,138 @@
         "estado": "aprobada",
         "nota": "Formulación aprobada expresamente por el especialista responsable del recetario CIBA en la revisión del 9 de noviembre de 2026. Esta aprobación corresponde a la ficha aquí registrada; cualquier modificación de ingredientes, cantidades, preparación o adaptación requiere nueva revisión."
       }
+    },
+    {
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes_nuevos": "Ofrecer y comprobar la tolerancia de cada ingrediente por separado antes de combinarlos.",
+      "conservacion": "Preparar con higiene, servir recién hecho y refrigerar pronto la porción no servida. Desechar restos en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "unicef-cuba-2020"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Preparación incluida en el catálogo aprobado por el especialista responsable de CIBA; esta ficha concreta cantidades orientativas, preparación y adaptación por habilidades."
+      },
+      "id": "tilapia-boniato-majado",
+      "nombre": "Pescado desmenuzado con boniato",
+      "descripcion": "Tilapia completamente cocida y boniato majado; se especifica especie para evitar recomendaciones genéricas.",
+      "ingredientes": [
+        {
+          "alimento_id": "tilapia",
+          "cantidad": "25",
+          "unidad": "gramos de filete sin piel",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "boniato",
+          "cantidad": "1/2",
+          "unidad": "taza de boniato cocido",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Cocinar el boniato hasta que se aplaste fácilmente.",
+        "Cocinar completamente la tilapia al vapor, horno o sartén, sin sal.",
+        "Revisar cuidadosamente bajo buena iluminación y retirar piel, espinas y fragmentos duros.",
+        "Desmenuzar muy fino y mezclar con el boniato; mantener húmedo."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta textura húmeda y homogénea; comprobar nuevamente que no haya espinas.",
+        "9-11": "Pescado desmenuzado en partículas muy finas; revisar cada porción.",
+        "12-23": "Pescado muy tierno y desmenuzado con boniato blando; sin espinas.",
+        "24-59": "Piezas blandas pequeñas, siempre sin espinas."
+      },
+      "alergenos": [
+        "pescado"
+      ],
+      "alertas": [
+        "La tilapia es de bajo contenido de mercurio; adquirir de fuente segura y cocinar completamente.",
+        "Retirar todas las espinas mediante revisión visual y táctil.",
+        "El pescado es un alérgeno; introducirlo apropiadamente y observar reacciones."
+      ]
+    },
+    {
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes_nuevos": "Ofrecer y comprobar la tolerancia de cada ingrediente por separado antes de combinarlos.",
+      "conservacion": "Preparar con higiene, servir recién hecho y refrigerar pronto la porción no servida. Desechar restos en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "unicef-cuba-2020"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Preparación incluida en el catálogo aprobado por el especialista responsable de CIBA; esta ficha concreta cantidades orientativas, preparación y adaptación por habilidades."
+      },
+      "id": "tortilla-suave-vegetales",
+      "nombre": "Tortilla suave de vegetales",
+      "descripcion": "Tortilla de huevo completamente cuajado con calabaza y espinaca cocidas.",
+      "ingredientes": [
+        {
+          "alimento_id": "huevo-gallina",
+          "cantidad": "1",
+          "unidad": "huevo de gallina",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "calabaza",
+          "cantidad": "2",
+          "unidad": "cucharadas de calabaza cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "espinaca",
+          "cantidad": "1",
+          "unidad": "cucharada de espinaca cocida y picada",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar calabaza y espinaca; retirar partes dañadas.",
+        "Cocinar calabaza hasta ablandar; cocinar la espinaca y picarla finamente.",
+        "Batir el huevo y mezclar con los vegetales cocidos.",
+        "Cocinar a fuego suave hasta que el huevo esté completamente cuajado en el centro.",
+        "Dejar enfriar y cortar o desmenuzar según habilidades."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Aplastar o triturar la tortilla completamente cocida con los vegetales hasta textura húmeda y blanda.",
+        "9-11": "Desmenuzar en partículas blandas y húmedas; evitar fragmentos secos.",
+        "12-23": "Tiras blandas que se aplasten fácilmente o trozos pequeños manejables.",
+        "24-59": "Trozos pequeños, completamente cocidos y blandos."
+      },
+      "alergenos": [
+        "huevo"
+      ],
+      "alertas": [
+        "El huevo debe quedar completamente cuajado; no ofrecer crudo ni poco cocido.",
+        "El huevo es un alérgeno frecuente; introducirlo apropiadamente y observar reacciones.",
+        "La espinaca debe estar bien lavada, cocinada y picada finamente.",
+        "No añadir sal ni cubitos concentrados."
+      ]
     }
   ],
   "fuentes": [
