@@ -82,6 +82,18 @@ class TestRecetario(unittest.TestCase):
         self.assertEqual(sum(f["entradas_publicadas"] for f in generales), 151)
         self.assertEqual(sum(f.get("entradas_publicadas_minimo", 0) for f in colecciones), 101)
 
+    def test_indice_unicef_venezuela_contiene_22_preparaciones_no_publicables(self) -> None:
+        externas = json.loads((DATA / "recetario" / "recetas-externas-unicef-venezuela.json").read_text(encoding="utf-8"))
+        recetas = externas["recetas"]
+        self.assertEqual(len(recetas), 22)
+        self.assertEqual(len({r["id"] for r in recetas}), 22)
+        for receta in recetas:
+            self.assertFalse(receta["publicable"], receta["id"])
+            self.assertFalse(receta["recomendacion_automatica"], receta["id"])
+            self.assertEqual(receta["estado"], "pendiente_cotejo_individual", receta["id"])
+            self.assertTrue(receta["url_fuente"].startswith("https://"), receta["id"])
+            self.assertTrue(receta["alertas_revision"], receta["id"])
+
     def test_fuentes_clinicas_se_mantienen_separadas(self) -> None:
         colecciones = {f["id"]: f for f in self.fuentes_externas["colecciones"]}
         for key in ("uhs-babies-specialist", "uhs-toddlers-specialist"):
