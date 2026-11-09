@@ -90,9 +90,13 @@ class TestRecetario(unittest.TestCase):
         for receta in recetas:
             self.assertFalse(receta["publicable"], receta["id"])
             self.assertFalse(receta["recomendacion_automatica"], receta["id"])
-            self.assertEqual(receta["estado"], "pendiente_cotejo_individual", receta["id"])
+            self.assertEqual(receta["estado"], "pendiente_revision_profesional", receta["id"])
             self.assertTrue(receta["url_fuente"].startswith("https://"), receta["id"])
             self.assertTrue(receta["alertas_revision"], receta["id"])
+            revision = receta["revision_preliminar_ciba"]
+            self.assertEqual(revision["decision"], "no_aprobada_no_publicable", receta["id"])
+            self.assertTrue(revision["requiere_revision_profesional"], receta["id"])
+            self.assertTrue(revision["hallazgos"], receta["id"])
 
     def test_indice_nhs_y_first_steps_tiene_129_entradas_bloqueadas(self) -> None:
         indice = json.loads((DATA / "recetario" / "indice-recetas-nhs-first-steps.json").read_text(encoding="utf-8"))
