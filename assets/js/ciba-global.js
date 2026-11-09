@@ -203,6 +203,15 @@
       )
     );
 
+    // NUTRICIÓN DESDE LA CONCEPCIÓN
+    panel.appendChild(
+      enlace(
+        new URL('c/C1/C1-05/', RAIZ).href,
+        'Alimentación durante la gestación',
+        'ciba-global-enlace'
+      )
+    );
+
     // ACCESO DIRECTO AL RECETARIO INTERACTIVO
     panel.appendChild(
       enlace(
