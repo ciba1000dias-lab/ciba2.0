@@ -367,6 +367,367 @@
       ],
       "estado": "piloto",
       "imagenes": []
+    },
+    {
+      "id": "frijol-blanco",
+      "nombre": "Frijol blanco",
+      "nombres_alternativos": [
+        "frijoles blancos",
+        "habichuela blanca",
+        "judía blanca",
+        "alubia blanca",
+        "Phaseolus vulgaris"
+      ],
+      "categoria": "Legumbres",
+      "resumen": "Frijol común de semillas claras, útil en potajes y guisos; aporta proteína vegetal y fibra.",
+      "descripcion": "El frijol blanco pertenece a distintas variedades de Phaseolus vulgaris. Aporta proteína vegetal, fibra y carbohidratos complejos, además de folato, hierro y otros minerales en cantidades que dependen de la variedad y la preparación. El nombre puede abarcar cultivares de tamaño y textura diferentes.",
+      "propiedades": [
+        "Aporta proteína vegetal y fibra alimentaria.",
+        "Contiene folato, hierro no hemo y otros minerales en cantidades variables.",
+        "Su almidón y proteína contribuyen al aporte energético."
+      ],
+      "beneficios": [
+        "Amplía la variedad de legumbres que puede consumir la familia.",
+        "Cuando queda muy blando se puede triturar para preparar purés y guisos de textura espesa."
+      ],
+      "edad": "Puede incorporarse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Debe poder mantener la cabeza y el cuello estables y sentarse con apoyo. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente hasta que se deshaga al presionarla. Triturar o pasar por un colador si quedan pieles; ofrecer una crema espesa y homogénea."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aplastar muy bien con un tenedor; dejar solo pequeños grumos blandos si el bebé ya los maneja con seguridad. No ofrecer granos firmes enteros."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer bien cocida y aplastada o machacada, adaptando la textura a las habilidades del niño. Evitar granos duros y enteros."
+        }
+      ],
+      "preparacion_segura": "Revisar, lavar y remojar según el producto. Cocinar en agua potable hasta que todos los granos estén muy blandos, sin centros duros. Para el bebé, triturar y retirar pieles que queden duras. No añadir cubitos concentrados ni exceso de sal.",
+      "recetas": [
+        {
+          "nombre": "Crema de frijol blanco",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Frijoles blancos completamente cocidos y agua potable",
+          "preparacion": "Triturar hasta obtener una crema espesa, sin granos enteros ni pieles duras."
+        },
+        {
+          "nombre": "Frijol blanco con calabaza",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Frijoles blancos y calabaza cocidos",
+          "preparacion": "Aplastar o triturar juntos hasta lograr una mezcla suave y húmeda."
+        },
+        {
+          "nombre": "Potaje suave de frijol blanco",
+          "etapa": "Desde los 12 meses, según habilidades",
+          "ingredientes": "Frijoles blancos, calabaza y vegetales bien cocidos",
+          "preparacion": "Preparar sin exceso de sal y aplastar los granos antes de servir al niño."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer granos enteros, duros o insuficientemente cocidos por el riesgo de atragantamiento.",
+        "Evitar exceso de sal, embutidos y caldos concentrados.",
+        "Si se usan en conserva, preferir bajo sodio y enjuagar."
+      ],
+      "conservacion": "Una vez cocidas, enfriar pronto y refrigerar en recipiente limpio y tapado. Separar la porción del bebé antes de servir y desechar los restos que hayan estado en contacto con su saliva. Seguir las indicaciones de conservación del envase para productos en conserva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/White%20Beans.JPG?width=1280",
+        "alt": "Semillas secas de frijol blanco común, de forma ovalada y color crema.",
+        "autor": "Miansari66",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:White_Beans.JPG"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "frijol blanco",
+        "frijoles blancos",
+        "habichuela blanca",
+        "judía blanca",
+        "alubia blanca",
+        "phaseolus vulgaris",
+        "legumbres para bebés",
+        "mi bebé puede comer frijoles blancos",
+        "cómo preparar frijol blanco para bebés",
+        "desde cuándo dar frijoles blancos",
+        "puré de frijol blanco",
+        "potaje de frijoles blancos"
+      ],
+      "fuentes": [
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y consumo frecuente de legumbres; adaptar las formas para evitar atragantamientos."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "USDA WIC Works",
+          "titulo": "Infant Nutrition and Feeding",
+          "url": "https://wicworks.fns.usda.gov/sites/default/files/media/document/infant-feeding-guide.pdf",
+          "utilidad": "Preparación de legumbres bien cocidas, trituradas y sin granos enteros para lactantes."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de la forma de los alimentos."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional según variedad y preparación."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "lentejas",
+      "nombre": "Lentejas",
+      "nombres_alternativos": [
+        "lenteja",
+        "lentejas pardinas",
+        "lentejas rojas",
+        "Lens culinaris"
+      ],
+      "categoria": "Legumbres",
+      "resumen": "Legumbre pequeña que se cocina con relativa rapidez y aporta proteína vegetal, fibra y folato.",
+      "descripcion": "Las lentejas (Lens culinaris) son semillas comestibles de una leguminosa. Aportan proteína vegetal, fibra, carbohidratos, folato y minerales como hierro no hemo. La composición varía entre lentejas enteras, partidas y variedades de distintos colores; el hierro vegetal se absorbe mejor cuando se acompaña de alimentos ricos en vitamina C.",
+      "propiedades": [
+        "Aportan proteína vegetal y fibra.",
+        "Son fuente de folato y contienen hierro no hemo y otros minerales.",
+        "Las variedades partidas suelen ablandarse y deshacerse con facilidad."
+      ],
+      "beneficios": [
+        "Permiten incorporar una legumbre versátil a sopas, cremas y guisos.",
+        "Combinadas con vegetales ricos en vitamina C pueden favorecer la absorción del hierro no hemo."
+      ],
+      "edad": "Puede incorporarse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Debe poder mantener la cabeza y el cuello estables y sentarse con apoyo. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente hasta que se deshaga al presionarla. Triturar o pasar por un colador si quedan pieles; ofrecer una crema espesa y homogénea."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aplastar muy bien con un tenedor; dejar solo pequeños grumos blandos si el bebé ya los maneja con seguridad. No ofrecer granos firmes enteros."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer bien cocida y aplastada o machacada, adaptando la textura a las habilidades del niño. Evitar granos duros y enteros."
+        }
+      ],
+      "preparacion_segura": "Seleccionar y enjuagar las lentejas; retirar piedrecillas o granos dañados. Cocinar completamente en agua potable hasta que estén muy blandas. No es imprescindible remojar todas las variedades, pero deben seguirse las instrucciones del envase. Triturar para lactantes y comprobar que no queden partes firmes.",
+      "recetas": [
+        {
+          "nombre": "Crema espesa de lentejas",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Lentejas bien cocidas y agua potable",
+          "preparacion": "Cocinar hasta que se deshagan y triturar hasta obtener una crema homogénea."
+        },
+        {
+          "nombre": "Lentejas con calabaza",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Lentejas y calabaza bien cocidas",
+          "preparacion": "Aplastar o triturar juntas; ajustar la humedad sin dejar una sopa demasiado líquida."
+        },
+        {
+          "nombre": "Guiso suave de lentejas",
+          "etapa": "Desde los 12 meses, según habilidades",
+          "ingredientes": "Lentejas, zanahoria y tomate bien cocidos",
+          "preparacion": "Cocinar hasta ablandar por completo y adaptar los trozos a la capacidad de masticación."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer lentejas secas ni insuficientemente cocidas.",
+        "Adaptar la textura; no servir cucharadas con grumos firmes o ingredientes duros.",
+        "Evitar exceso de sal, embutidos y cubitos concentrados."
+      ],
+      "conservacion": "Una vez cocidas, enfriar pronto y refrigerar en recipiente limpio y tapado. Separar la porción del bebé antes de servir y desechar los restos que hayan estado en contacto con su saliva. Seguir las indicaciones de conservación del envase para productos en conserva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dried%20red%20lentil.JPG?width=1280",
+        "alt": "Lentejas rojas secas, pequeñas y partidas, antes de su cocción.",
+        "autor": "Mytinytank",
+        "licencia": "CC BY-SA 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Dried_red_lentil.JPG"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "lentejas",
+        "lenteja",
+        "lentejas rojas",
+        "lentejas pardinas",
+        "lens culinaris",
+        "legumbres para bebés",
+        "mi bebé puede comer lentejas",
+        "desde cuándo dar lentejas",
+        "cómo cocinar lentejas para bebés",
+        "puré de lentejas",
+        "crema de lentejas",
+        "recetas con lentejas para niños"
+      ],
+      "fuentes": [
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y consumo frecuente de legumbres; adaptar las formas para evitar atragantamientos."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "USDA WIC Works",
+          "titulo": "Infant Nutrition and Feeding",
+          "url": "https://wicworks.fns.usda.gov/sites/default/files/media/document/infant-feeding-guide.pdf",
+          "utilidad": "Preparación de legumbres bien cocidas, trituradas y sin granos enteros para lactantes."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de la forma de los alimentos."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional según variedad y preparación."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "garbanzos",
+      "nombre": "Garbanzos",
+      "nombres_alternativos": [
+        "garbanzo",
+        "chícharo garbanzo",
+        "Cicer arietinum",
+        "nut"
+      ],
+      "categoria": "Legumbres",
+      "resumen": "Legumbre de semilla redondeada que aporta proteína vegetal, fibra, folato y minerales.",
+      "descripcion": "El garbanzo (Cicer arietinum) es una legumbre ampliamente utilizada en sopas, potajes y pastas como el hummus. Aporta proteína vegetal, fibra, carbohidratos, folato y minerales. Su piel puede permanecer firme incluso después de la cocción, por lo que es importante adaptar la textura para los niños pequeños.",
+      "propiedades": [
+        "Aporta proteína vegetal y fibra alimentaria.",
+        "Contiene folato, hierro no hemo y otros minerales.",
+        "Su aporte energético procede principalmente de carbohidratos y proteína."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de legumbres en la alimentación familiar.",
+        "Puede triturarse en cremas y purés una vez cocido hasta quedar muy blando."
+      ],
+      "edad": "Puede incorporarse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Debe poder mantener la cabeza y el cuello estables y sentarse con apoyo. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente hasta que se deshaga al presionarla. Triturar o pasar por un colador si quedan pieles; ofrecer una crema espesa y homogénea."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aplastar muy bien con un tenedor; dejar solo pequeños grumos blandos si el bebé ya los maneja con seguridad. No ofrecer granos firmes enteros."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer bien cocida y aplastada o machacada, adaptando la textura a las habilidades del niño. Evitar granos duros y enteros."
+        }
+      ],
+      "preparacion_segura": "Revisar y lavar; remojar los garbanzos secos según las instrucciones del producto y desechar el agua de remojo. Cocinar en agua potable hasta que estén completamente blandos. Retirar pieles sueltas y triturar para lactantes; nunca ofrecer garbanzos duros o enteros a bebés.",
+      "recetas": [
+        {
+          "nombre": "Puré fino de garbanzos",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Garbanzos bien cocidos y agua potable",
+          "preparacion": "Retirar pieles sueltas y triturar hasta una crema lisa, espesa y sin granos enteros."
+        },
+        {
+          "nombre": "Garbanzos con boniato",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Garbanzos y boniato bien cocidos",
+          "preparacion": "Triturar o aplastar hasta obtener una textura húmeda y uniforme."
+        },
+        {
+          "nombre": "Hummus sencillo sin sal añadida",
+          "etapa": "Desde el inicio de la alimentación complementaria, en textura lisa y cantidad apropiada",
+          "ingredientes": "Garbanzos bien cocidos, un poco de agua y unas gotas de limón si ya se tolera",
+          "preparacion": "Triturar muy bien hasta eliminar grumos y pieles; no añadir tahini si no se ha introducido el sésamo y considerado su posible alergia."
+        }
+      ],
+      "precauciones": [
+        "Los garbanzos enteros pueden causar atragantamiento: triturar o aplastar completamente para lactantes y adaptar la textura en niños mayores.",
+        "No ofrecer garbanzos secos, duros ni poco cocidos.",
+        "El hummus comercial puede contener bastante sodio; revisar la etiqueta y evitar exceso de sal."
+      ],
+      "conservacion": "Una vez cocidas, enfriar pronto y refrigerar en recipiente limpio y tapado. Separar la porción del bebé antes de servir y desechar los restos que hayan estado en contacto con su saliva. Seguir las indicaciones de conservación del envase para productos en conserva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Soaked%20and%20dried%20chickpeas.jpg?width=1280",
+        "alt": "Garbanzos secos y garbanzos remojados colocados lado a lado.",
+        "autor": "Tiia Monto",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Soaked_and_dried_chickpeas.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "garbanzos",
+        "garbanzo",
+        "cicer arietinum",
+        "chícharo garbanzo",
+        "legumbres para bebés",
+        "mi bebé puede comer garbanzos",
+        "desde cuándo dar garbanzos",
+        "cómo preparar garbanzos para bebés",
+        "puré de garbanzos",
+        "hummus para bebés",
+        "garbanzos para niños",
+        "recetas con garbanzos"
+      ],
+      "fuentes": [
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y consumo frecuente de legumbres; adaptar las formas para evitar atragantamientos."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "USDA WIC Works",
+          "titulo": "Infant Nutrition and Feeding",
+          "url": "https://wicworks.fns.usda.gov/sites/default/files/media/document/infant-feeding-guide.pdf",
+          "utilidad": "Preparación de legumbres bien cocidas, trituradas y sin granos enteros para lactantes."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de la forma de los alimentos."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional según variedad y preparación."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
     }
   ]
 }
