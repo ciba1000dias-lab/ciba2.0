@@ -1,19 +1,25 @@
+import { evaluarRecetas } from './ciba-recetario-motor.js';
+
 const API = 'https://damp-pine-fb21.ciba-1000dias-125.workers.dev/interpret';
 const INDICE_URL = new URL('../data/alimentos-busqueda.json', import.meta.url);
+const RECETAS_URL = new URL('../data/recetario/recetas.json', import.meta.url);
 const formulario = document.querySelector('#ciba-recetario-form');
 const campoFecha = document.querySelector('#ciba-fecha-nacimiento');
 const campoEdad = document.querySelector('#ciba-edad-valor');
 const unidadEdad = document.querySelector('#ciba-edad-unidad');
 const estadoEdad = document.querySelector('#ciba-edad-calculada');
 const campoIngredientes = document.querySelector('#ciba-ingredientes');
+const campoRestricciones = document.querySelector('#ciba-restricciones-detalle');
 const contador = document.querySelector('#ciba-contador');
 const boton = document.querySelector('#ciba-receta-enviar');
 const resultados = document.querySelector('#ciba-receta-resultados');
 const mensaje = document.querySelector('#ciba-receta-mensaje');
 const listaReconocidos = document.querySelector('#ciba-receta-reconocidos');
 const desconocidos = document.querySelector('#ciba-receta-desconocidos');
+const propuestas = document.querySelector('#ciba-receta-propuestas');
 
 let alimentos = [];
+let recetas = [];
 
 function normalizar(texto) {
   return String(texto || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
@@ -49,7 +55,6 @@ function actualizarEdad() {
     return;
   }
   estadoEdad.dataset.meses = String(meses);
-  // Refleja también la edad calculada en el campo visible, no solo en el texto de estado.
   if (campoFecha.value) {
     if (meses < 12) {
       campoEdad.value = String(meses);
@@ -121,6 +126,90 @@ function mostrarError(texto) {
   mensaje.textContent = texto;
   listaReconocidos.replaceChildren();
   desconocidos.textContent = '';
+  propuestas.replaceChildren();
+}
+
+function obtenerRestricciones() {
+  return [...document.querySelectorAll('input[name="restriccion"]:checked')].map(c => c.value);
+}
+
+function crearLista(items) {
+  const lista = document.createElement('ul');
+  for (const texto of items || []) {
+    const li = document.createElement('li');
+    li.textContent = texto;
+    lista.appendChild(li);
+  }
+  return lista;
+}
+
+function mostrarRecetas(data) {
+  propuestas.replaceChildren();
+  const edad = edadEnMeses();
+  const decision = evaluarRecetas({
+    recetas: recetas.recetas || [],
+    ingredientesIds: (data.recognizedFoods || []).map(item => item.id).filter(Boolean),
+    edadMeses: edad,
+    restricciones: obtenerRestricciones(),
+    detalleRestricciones: campoRestricciones.value
+  });
+
+  const titulo = document.createElement('h3');
+  titulo.textContent = 'Preparaciones que coinciden';
+  propuestas.appendChild(titulo);
+
+  const aviso = document.createElement('p');
+  aviso.className = 'ciba-receta-estado';
+
+  if (decision.estado === 'menor_de_6_meses') {
+    aviso.textContent = 'No mostramos recetas de alimentación complementaria antes de los 6 meses. La leche materna o la fórmula infantil indicada siguen siendo la alimentación principal.';
+  } else if (decision.estado === 'fuera_de_rango') {
+    aviso.textContent = 'Este recetario está preparado para edades de 6 a 59 meses.';
+  } else if (decision.estado === 'falta_detalle_alergia') {
+    aviso.textContent = 'Para excluir el alimento correcto, escribe cuál es la alergia diagnosticada. No vamos a adivinarla.';
+  } else if (decision.estado === 'falta_detalle_intolerancia') {
+    aviso.textContent = 'Especifica qué alimento o componente debe evitarse por intolerancia.';
+  } else if (decision.estado === 'requiere_revision_clinica') {
+    aviso.textContent = 'Con una indicación clínica adicional, no ofrecemos combinaciones automáticas. Sigue el plan del equipo de salud.';
+  } else if (decision.estado === 'catalogo_sin_aprobaciones') {
+    aviso.textContent = 'El catálogo culinario contiene preparaciones en revisión especializada. Ninguna está habilitada todavía, así que no te mostraremos recetas improvisadas.';
+  } else if (decision.estado === 'sin_coincidencias') {
+    aviso.textContent = 'No hay una preparación aprobada que reúna todos los ingredientes reconocidos y las condiciones indicadas. No añadiremos alimentos que no mencionaste.';
+  } else {
+    aviso.textContent = 'Estas preparaciones aprobadas coinciden con los ingredientes, la edad y las restricciones indicadas. Comprueba siempre las etiquetas y evita el contacto cruzado con alérgenos.';
+  }
+  propuestas.appendChild(aviso);
+
+  for (const receta of decision.recetas) {
+    const tarjeta = document.createElement('article');
+    tarjeta.className = 'ciba-receta-tarjeta';
+    const nombre = document.createElement('h4');
+    nombre.textContent = receta.nombre;
+    tarjeta.appendChild(nombre);
+    const descripcion = document.createElement('p');
+    descripcion.textContent = receta.descripcion || '';
+    tarjeta.appendChild(descripcion);
+    const adaptacion = document.createElement('p');
+    adaptacion.textContent = 'Para esta edad: ' + receta.adaptacion_por_edad[decision.bandaEdad];
+    tarjeta.appendChild(adaptacion);
+    const ingredientesTitulo = document.createElement('strong');
+    ingredientesTitulo.textContent = 'Ingredientes';
+    tarjeta.appendChild(ingredientesTitulo);
+    tarjeta.appendChild(crearLista((receta.ingredientes || []).map(i => {
+      const alimento = alimentos.find(a => a.id === i.alimento_id);
+      return [i.cantidad, i.unidad, alimento ? '(' + alimento.nombre + ')' : '(' + i.alimento_id + ')'].filter(Boolean).join(' ');
+    })));
+    const preparacionTitulo = document.createElement('strong');
+    preparacionTitulo.textContent = 'Preparación';
+    tarjeta.appendChild(preparacionTitulo);
+    tarjeta.appendChild(crearLista(receta.preparacion || []));
+    if (receta.alertas?.length) {
+      const alertas = document.createElement('p');
+      alertas.textContent = 'Precauciones: ' + receta.alertas.join(' ');
+      tarjeta.appendChild(alertas);
+    }
+    propuestas.appendChild(tarjeta);
+  }
 }
 
 function mostrarResultado(data) {
@@ -141,14 +230,23 @@ function mostrarResultado(data) {
   desconocidos.textContent = terminos.length
     ? 'Necesitamos aclarar: ' + terminos.join(', ') + (data.clarification ? '. ' + data.clarification : '')
     : (data.clarification || '');
+  if (reconocidos.length) mostrarRecetas(data);
+  else propuestas.replaceChildren();
 }
 
-async function cargarAlimentos() {
-  const respuesta = await fetch(INDICE_URL, {cache:'no-cache'});
-  if (!respuesta.ok) throw new Error('No se pudo cargar la biblioteca de alimentos.');
-  const datos = await respuesta.json();
-  if (!Array.isArray(datos.alimentos)) throw new Error('El índice de alimentos no tiene el formato esperado.');
-  alimentos = datos.alimentos;
+async function cargarDatos() {
+  const [respuestaAlimentos, respuestaRecetas] = await Promise.all([
+    fetch(INDICE_URL, {cache:'no-cache'}),
+    fetch(RECETAS_URL, {cache:'no-cache'})
+  ]);
+  if (!respuestaAlimentos.ok) throw new Error('No se pudo cargar la biblioteca de alimentos.');
+  if (!respuestaRecetas.ok) throw new Error('No se pudo cargar el catálogo del recetario.');
+  const datosAlimentos = await respuestaAlimentos.json();
+  recetas = await respuestaRecetas.json();
+  if (!Array.isArray(datosAlimentos.alimentos) || !Array.isArray(recetas.recetas)) {
+    throw new Error('Uno de los catálogos no tiene el formato esperado.');
+  }
+  alimentos = datosAlimentos.alimentos;
 }
 
 function sincronizarFecha() {
@@ -186,7 +284,11 @@ formulario.addEventListener('submit', async (evento) => {
     mostrarError('Escribe al menos un ingrediente para comenzar.');
     return;
   }
-  if (!alimentos.length) {
+  if (edadEnMeses() === null) {
+    mostrarError('Indica primero una edad válida para adaptar las preparaciones.');
+    return;
+  }
+  if (!alimentos.length || !recetas.recetas) {
     mostrarError('La biblioteca todavía no está disponible. Inténtalo más tarde.');
     return;
   }
@@ -202,6 +304,7 @@ formulario.addEventListener('submit', async (evento) => {
   mensaje.textContent = 'Estamos consultando el asistente de CIBA.';
   listaReconocidos.replaceChildren();
   desconocidos.textContent = '';
+  propuestas.replaceChildren();
 
   try {
     const respuesta = await fetch(API, {
@@ -221,4 +324,4 @@ formulario.addEventListener('submit', async (evento) => {
 });
 
 actualizarEdad();
-cargarAlimentos().catch(error => mostrarError(error.message));
+cargarDatos().catch(error => mostrarError(error.message));
