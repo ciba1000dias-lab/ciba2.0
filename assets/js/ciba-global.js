@@ -390,6 +390,9 @@
 
     buscar.addEventListener('click', (evento) => {
       evento.preventDefault();
+      // La opción BUSCADOR del menú debe poder invocar el oráculo
+      // aunque este se hubiera ocultado durante el desplazamiento.
+      scrollOculto = false;
       cerrarMenu(panel, boton);
 
       if (esPortada()) {
