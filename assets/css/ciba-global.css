@@ -616,3 +616,35 @@ body:not(.ciba-con-cabecera-global) > .ciba-global-login{
   .ciba-global-contexto{font-size:13px}
   .ciba-global-cabecera > .ciba-global-login{min-height:35px;padding:0 9px;font-size:8px}
 }
+
+
+/* CIBA · restauración prioritaria del menú hamburguesa
+   El logo conserva la izquierda; el menú ocupa el extremo derecho,
+   separado del acceso de usuario. */
+.ciba-global-cabecera{position:sticky;isolation:isolate;overflow:visible}
+.ciba-global-cabecera > .ciba-global-menu{
+  position:absolute!important;top:50%!important;left:auto!important;
+  right:158px!important;z-index:10005!important;display:block!important;
+  visibility:visible!important;opacity:1!important;transform:translateY(-50%)!important;
+}
+.ciba-global-menu{z-index:10005!important;visibility:visible}
+.ciba-global-menu-boton{
+  position:relative;z-index:10006;display:flex!important;
+  visibility:visible!important;opacity:1!important;width:48px;height:48px;
+  pointer-events:auto
+}
+.ciba-global-panel{z-index:10007}
+body:not(.ciba-con-cabecera-global) > .ciba-global-menu{
+  position:fixed!important;top:88px!important;right:18px!important;
+  left:auto!important;z-index:10005!important
+}
+@media(max-width:600px){
+  .ciba-global-cabecera > .ciba-global-menu{right:139px!important}
+  .ciba-global-cabecera .ciba-global-menu-boton{width:42px;height:42px}
+  body:not(.ciba-con-cabecera-global) > .ciba-global-menu{
+    top:78px!important;right:12px!important
+  }
+}
+@media(max-width:380px){
+  .ciba-global-cabecera > .ciba-global-menu{right:128px!important}
+}
