@@ -63,3 +63,16 @@ a{color:inherit}
 
 .ciba-receta-confirmar{display:inline-flex;align-items:center;justify-content:center;min-height:48px;margin-top:10px;padding:12px 18px;border:0;border-radius:7px;background:var(--noche);color:#fff;font-size:13px;font-weight:800;cursor:pointer}
 .ciba-receta-confirmar:hover,.ciba-receta-confirmar:focus{background:var(--verde);outline:2px solid #526e5633;outline-offset:2px}
+
+
+.ciba-receta-fuentes{margin:28px 0;padding:22px;border:1px solid var(--linea);border-radius:13px;background:var(--papel)}
+.ciba-receta-fuentes h2{margin:8px 0;color:var(--noche);font:normal 27px Georgia,serif}
+.ciba-receta-fuentes>p:not(.ciba-receta-sobrelinea){color:var(--suave);font-size:13px;line-height:1.7}
+.ciba-receta-fuente-tarjetas{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:16px}
+.ciba-receta-fuente{display:flex;flex-direction:column;gap:9px;padding:15px;border:1px solid var(--linea);border-radius:9px;background:#fff}
+.ciba-receta-fuente strong{color:var(--noche);font-size:14px}
+.ciba-receta-fuente span{color:var(--suave);font-size:12px;line-height:1.5}
+.ciba-receta-fuente a,.ciba-receta-fuentes-especializadas a{color:var(--tierra);font-size:12px;font-weight:700}
+.ciba-receta-fuentes-especializadas{margin-top:16px;padding-top:12px;border-top:1px solid var(--linea);color:var(--noche);font-size:13px}
+.ciba-receta-fuentes-especializadas summary{cursor:pointer;font-weight:700}
+.ciba-receta-fuentes-especializadas p,.ciba-receta-fuentes-especializadas li{color:var(--suave);font-size:12px;line-height:1.7}
