@@ -68,10 +68,17 @@
   }
 
   function configurarImagen(img, foto, ancho, srcset) {
-    img.src = urlImagenOptimizada(foto.url, ancho);
+    const variantes = foto.variantes && typeof foto.variantes === 'object'
+      ? foto.variantes
+      : null;
+    const resolverTamano = (tamano) => {
+      const rutaLocal = variantes && variantes[String(tamano)];
+      return rutaLocal ? new URL(rutaLocal, raiz).href : urlImagenOptimizada(foto.url, tamano);
+    };
+    img.src = resolverTamano(ancho);
     if (srcset) {
       img.srcset = srcset.map((tamano) =>
-        urlImagenOptimizada(foto.url, tamano) + ' ' + tamano + 'w'
+        resolverTamano(tamano) + ' ' + tamano + 'w'
       ).join(', ');
       img.sizes = '(max-width: 600px) 50vw, 220px';
     }
