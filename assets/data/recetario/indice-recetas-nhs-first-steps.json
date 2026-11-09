@@ -156,13 +156,15 @@
       "publicable": false,
       "recomendacion_automatica": false,
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "La fuente indica 7–9 meses; identifica bacalao/cod, papa, plátano, vegetales, guisantes y arroz.",
-          "Retirar todas las espinas y revisar de nuevo tras triturar; cocción completa del pescado; vegetales y arroz muy blandos, sin sal añadida; confirmar especie real si se sustituye."
+          "Se cotejó la receta NHS completa: 7–9 meses, unas 4 porciones; incluye papa, cebolla, pimiento, ajo, plátano vianda, bacalao, aceite, agua, curry, tomate, guisantes y arroz. El pescado se cocina 5–10 minutos con el resto; el arroz se cuece aparte y se mezcla triturado o majado hasta suave con grumos blandos.",
+          "La receta exige retirar espinas antes de cocinar y volver a comprobarlas al servir. Verificar especie y procedencia del pescado, cocción completa, textura del plátano/guisantes y arroz; controlar sodio de tomate en conserva y mezcla de curry. El arroz cocido requiere enfriamiento y conservación segura."
         ],
         "decision": "no_aprobada_no_publicable",
-        "requiere_revision_profesional": true
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Se cotejaron edad, cantidades, ingredientes y siete pasos completos; pendiente validación profesional de especie, espinas, textura y conservación.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -236,13 +238,15 @@
       "publicable": false,
       "recomendacion_automatica": false,
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "La fuente indica 10–12 meses; carne molida, vegetales y tomate con espagueti; ofrece lentejas como alternativa.",
-          "Cocinar completamente la carne; pasta muy blanda y cortada; salsa húmeda, sin sal añadida; revisar tamaño y forma de pasta."
+          "Se cotejó la receta NHS completa: 10–12 meses, 4 porciones; incluye cebolla, pimiento, aceite, carne molida magra, champiñones, tomate en conserva, albahaca y espagueti. La salsa se cocina 20–30 minutos hasta que carne y vegetales estén cocidos; la pasta se hierve 10–12 minutos hasta blanda.",
+          "Confirmar cocción completa de la carne molida, ausencia de trozos grandes y textura húmeda; cortar la pasta a tamaño apropiado y comprobar que no forme hebras largas difíciles de manejar. Revisar sodio de tomate en conserva y seguridad de enfriamiento/congelación de sobrantes. La alternativa de soya requiere revisión separada de alérgenos y formulación."
         ],
         "decision": "no_aprobada_no_publicable",
-        "requiere_revision_profesional": true
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Se cotejaron edad, cantidades, ingredientes y seis pasos completos; pendiente revisión profesional de carne molida, pasta, sodio y conservación.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -261,13 +265,15 @@
       "publicable": false,
       "recomendacion_automatica": false,
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "La fuente indica 12 meses o más; res guisada, espinaca, tomate, guisantes y arroz; ofrece garbanzos como alternativa.",
-          "Carne muy tierna y finamente cortada; guisantes aplastados y arroz húmedo; adaptar especias y no añadir sal."
+          "Se cotejó la receta NHS completa: desde 12 meses; 4 porciones. Contiene cebolla, tomate, carne de res en cubos, aceite, puré de tomate, cúrcuma, chile suave, curry, agua, espinaca, arroz y guisantes. La carne se cocina tapada unos 20 minutos hasta tierna; arroz y guisantes se cuecen por separado; se incorpora la espinaca al final.",
+          "La edad mínima de 12 meses no garantiza que los cubos de carne o guisantes sean seguros para todos los niños: comprobar terneza, tamaño y capacidad de masticación; adaptar o desmenuzar la carne y aplastar guisantes cuando corresponda. Revisar cantidad de chile/especias, sodio del puré de tomate, cocción completa y conservación del arroz. La alternativa con garbanzos necesita revisión separada de textura y tolerancia."
         ],
         "decision": "no_aprobada_no_publicable",
-        "requiere_revision_profesional": true
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Se cotejaron edad, cantidades, ingredientes y siete pasos completos; pendiente revisión profesional de textura de carne/legumbres, especias y conservación.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -288,13 +294,15 @@
       "publicable": false,
       "recomendacion_automatica": false,
       "revision_preliminar_ciba": {
-        "estado": "requiere_adaptacion_de_textura",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "La fuente indica desde 6 meses; piña en conserva en jugo y yogur natural opcional.",
-          "Los anillos o medias rodajas de piña pueden ser fibrosos y difíciles de masticar; cortar muy fino o triturar; escoger fruta en jugo, no almíbar; yogur pasteurizado sin azúcar."
+          "Se cotejó la receta NHS completa: desde 6 meses; una porción. Utiliza una rodaja de piña en conserva en jugo (no almíbar), escurrida y cortada por la mitad, con yogur natural entero opcional.",
+          "La mitad de una rodaja puede seguir siendo fibrosa o demasiado grande; la fuente no indica cocción ni adaptación de textura. CIBA debe exigir fruta muy blanda, corte seguro acorde con desarrollo oral-motor y evitar trozos fibrosos. Revisar que la conserva no tenga azúcar añadido y que el yogur sea natural, pasteurizado y sin azúcar; lácteo es alérgeno."
         ],
         "decision": "no_aprobada_no_publicable",
-        "requiere_revision_profesional": true
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Se cotejaron edad, porción, ingredientes y tres pasos de la fuente; pendiente revisión profesional de textura, corte y composición de la conserva.",
+        "fuente_completa_consultada": true
       }
     },
     {
