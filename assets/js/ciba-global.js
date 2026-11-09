@@ -235,7 +235,7 @@
         if (!config.SUPABASE_URL || !config.SUPABASE_ANON_KEY) return;
         const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm');
         const auth = createClient(config.SUPABASE_URL, config.SUPABASE_ANON_KEY, {
-          auth: { autoRefreshToken: true, persistSession: true, detectSessionInUrl: true }
+          auth: { autoRefreshToken: true, persistSession: true, detectSessionInUrl: false }
         });
         const { data } = await auth.auth.getSession();
         acceso.hidden = Boolean(data.session);
