@@ -1,0 +1,938 @@
+{
+  "version": 1,
+  "alimentos": [
+    {
+      "id": "aguacate",
+      "nombre": "Aguacate",
+      "categoria": "Frutas",
+      "resumen": "Fruta de pulpa cremosa que aporta grasas principalmente monoinsaturadas, fibra y micronutrientes.",
+      "nombres_alternativos": [
+        "palta",
+        "Persea americana"
+      ],
+      "palabras_clave": [
+        "aguacate",
+        "palta",
+        "fruta",
+        "grasas saludables",
+        "grasas monoinsaturadas",
+        "fibra",
+        "alimentación complementaria",
+        "puré de aguacate",
+        "aguacate para bebés",
+        "recetas con aguacate",
+        "mi bebé puede comer aguacate",
+        "puede mi bebé comer aguacate",
+        "desde cuándo dar aguacate",
+        "cómo preparar aguacate para bebés",
+        "aguacate para bebé de 6 meses",
+        "papilla de aguacate",
+        "puré para bebé"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "mango",
+      "nombre": "Mango",
+      "categoria": "Frutas",
+      "resumen": "Pulpa dulce y aromática; aporta vitamina C, carotenoides y fibra.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "mango",
+        "mango para bebé",
+        "mi bebé puede comer mango",
+        "cómo dar mango a un bebé",
+        "papilla de mango",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer mango"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "guayaba",
+      "nombre": "Guayaba",
+      "categoria": "Frutas",
+      "resumen": "Fruta aromática con vitamina C y fibra. Retirar semillas duras y adaptar la pulpa.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "guayaba",
+        "guayaba para bebé",
+        "mi bebé puede comer guayaba",
+        "cómo preparar guayaba",
+        "semillas de guayaba",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer guayaba"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "fruta-bomba",
+      "nombre": "Fruta bomba (papaya)",
+      "categoria": "Frutas",
+      "resumen": "Pulpa blanda que aporta agua, fibra y carotenoides.",
+      "nombres_alternativos": [
+        "papaya",
+        "lechosa"
+      ],
+      "palabras_clave": [
+        "fruta bomba (papaya)",
+        "papaya",
+        "lechosa",
+        "papaya para bebé",
+        "fruta bomba para bebé",
+        "mi bebé puede comer papaya",
+        "lechosa",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer fruta bomba (papaya)"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "platano-fruta",
+      "nombre": "Plátano fruta",
+      "categoria": "Frutas",
+      "resumen": "Pulpa suave y energética; aporta carbohidratos, fibra y potasio.",
+      "nombres_alternativos": [
+        "banana",
+        "guineo"
+      ],
+      "palabras_clave": [
+        "plátano fruta",
+        "banana",
+        "guineo",
+        "banana para bebé",
+        "guineo",
+        "mi bebé puede comer plátano",
+        "puré de plátano",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer plátano fruta"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "naranja",
+      "nombre": "Naranja",
+      "categoria": "Frutas",
+      "resumen": "Cítrico con vitamina C, folato y agua. Preferir la fruta adaptada frente al jugo.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "naranja",
+        "naranja para bebé",
+        "mi bebé puede comer naranja",
+        "cómo ofrecer naranja",
+        "jugo de naranja para bebé",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer naranja"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "mandarina",
+      "nombre": "Mandarina",
+      "categoria": "Frutas",
+      "resumen": "Cítrico dulce que aporta vitamina C y agua. Retirar pieles y semillas.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "mandarina",
+        "mandarina para bebé",
+        "mi bebé puede comer mandarina",
+        "cómo dar mandarina",
+        "gajos de mandarina",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer mandarina"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "limon",
+      "nombre": "Limón",
+      "categoria": "Frutas",
+      "resumen": "Cítrico ácido usado sobre todo en pequeñas cantidades para condimentar.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "limón",
+        "limón para bebé",
+        "puede un bebé comer limón",
+        "limón en comida del bebé",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer limón"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "toronja",
+      "nombre": "Toronja",
+      "categoria": "Frutas",
+      "resumen": "Cítrico también llamado pomelo; aporta agua y vitamina C.",
+      "nombres_alternativos": [
+        "pomelo"
+      ],
+      "palabras_clave": [
+        "toronja",
+        "pomelo",
+        "pomelo para bebé",
+        "toronja para bebé",
+        "mi bebé puede comer toronja",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer toronja"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "pina",
+      "nombre": "Piña",
+      "categoria": "Frutas",
+      "resumen": "Fruta tropical jugosa con vitamina C y fibra; retirar centro fibroso.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "piña",
+        "piña para bebé",
+        "mi bebé puede comer piña",
+        "cómo dar piña",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer piña"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "mamey-colorado",
+      "nombre": "Mamey colorado",
+      "categoria": "Frutas",
+      "resumen": "Pulpa anaranjada y dulce; aporta fibra y carotenoides.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "mamey colorado",
+        "mamey para bebé",
+        "mi bebé puede comer mamey",
+        "cómo preparar mamey",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer mamey colorado"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "guanabana",
+      "nombre": "Guanábana",
+      "categoria": "Frutas",
+      "resumen": "Pulpa blanca y suave con numerosas semillas grandes que deben retirarse por completo.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "guanábana",
+        "guanábana para bebé",
+        "mi bebé puede comer guanábana",
+        "cómo preparar guanábana",
+        "semillas",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer guanábana"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "anon",
+      "nombre": "Anón",
+      "categoria": "Frutas",
+      "resumen": "Pulpa dulce rodeada de semillas duras; ofrecer solo pulpa cuidadosamente revisada.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "anón",
+        "anón para bebé",
+        "mi bebé puede comer anón",
+        "cómo preparar anón",
+        "semillas",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer anón"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "caimito",
+      "nombre": "Caimito",
+      "categoria": "Frutas",
+      "resumen": "Fruta tropical de pulpa gelatinosa; retirar piel y semillas.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "caimito",
+        "caimito para bebé",
+        "mi bebé puede comer caimito",
+        "cómo dar caimito",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer caimito"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "coco",
+      "nombre": "Coco",
+      "categoria": "Frutas",
+      "resumen": "La pulpa aporta grasa y fibra. La pulpa dura o rallada seca puede atragantar.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "coco",
+        "coco para bebé",
+        "mi bebé puede comer coco",
+        "agua de coco para bebés",
+        "leche de coco",
+        "coco rallado",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer coco"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "melon-agua",
+      "nombre": "Melón de agua (sandía)",
+      "categoria": "Frutas",
+      "resumen": "Fruta muy acuosa; retirar cáscara y semillas y adaptar la forma de servir.",
+      "nombres_alternativos": [
+        "sandía",
+        "patilla"
+      ],
+      "palabras_clave": [
+        "melón de agua (sandía)",
+        "sandía",
+        "patilla",
+        "sandía para bebé",
+        "patilla",
+        "mi bebé puede comer sandía",
+        "melón de agua",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer melón de agua (sandía)"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "melon",
+      "nombre": "Melón",
+      "categoria": "Frutas",
+      "resumen": "Pulpa dulce y acuosa; ofrecer madura y en textura blanda segura.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "melón",
+        "melón para bebé",
+        "mi bebé puede comer melón",
+        "cómo dar melón",
+        "cantalupo",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer melón"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "tamarindo",
+      "nombre": "Tamarindo",
+      "categoria": "Frutas",
+      "resumen": "Pulpa ácida y dulce; separar cáscara, fibras y semillas duras.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "tamarindo",
+        "tamarindo para bebé",
+        "mi bebé puede comer tamarindo",
+        "pulpa de tamarindo",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer tamarindo"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "ciruela",
+      "nombre": "Ciruela",
+      "categoria": "Frutas",
+      "resumen": "Fruta jugosa con agua y fibra; ofrecer pulpa madura sin hueso.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "ciruela",
+        "ciruela para bebé",
+        "mi bebé puede comer ciruela",
+        "ciruela para estreñimiento",
+        "ciruela pasa",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer ciruela"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "nispero",
+      "nombre": "Níspero",
+      "categoria": "Frutas",
+      "resumen": "Pulpa dulce con semillas grandes; retirar todas las semillas antes de ofrecer.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "níspero",
+        "níspero para bebé",
+        "mi bebé puede comer níspero",
+        "cómo preparar níspero",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer níspero"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "mamoncillo",
+      "nombre": "Mamoncillo",
+      "categoria": "Frutas",
+      "resumen": "Pulpa adherida a una semilla grande; nunca ofrecer entero a bebés o niños pequeños.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "mamoncillo",
+        "mamoncillo para bebé",
+        "mi bebé puede comer mamoncillo",
+        "quenepa",
+        "semilla de mamoncillo",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer mamoncillo"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "acerola",
+      "nombre": "Acerola",
+      "categoria": "Frutas",
+      "resumen": "Fruta pequeña y ácida, reconocida por su alto contenido de vitamina C.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "acerola",
+        "acerola para bebé",
+        "mi bebé puede comer acerola",
+        "cereza de Barbados",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer acerola"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "granada",
+      "nombre": "Granada",
+      "categoria": "Frutas",
+      "resumen": "Granos jugosos con semillas; no ofrecer granos enteros a bebés.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "granada",
+        "granada para bebé",
+        "mi bebé puede comer granada",
+        "semillas de granada bebé",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer granada"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "maranon-pseudofruto",
+      "nombre": "Marañón (pseudofruto)",
+      "categoria": "Frutas",
+      "resumen": "Parte carnosa del marañón, distinta de la nuez; aporta agua y vitamina C.",
+      "nombres_alternativos": [
+        "manzana de marañón"
+      ],
+      "palabras_clave": [
+        "marañón (pseudofruto)",
+        "manzana de marañón",
+        "marañón fruta",
+        "pseudofruto de marañón",
+        "manzana de marañón",
+        "mi bebé puede comer marañón",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer marañón (pseudofruto)"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "maracuya",
+      "nombre": "Maracuyá",
+      "categoria": "Frutas",
+      "resumen": "Fruta aromática y ácida con pulpa gelatinosa y semillas.",
+      "nombres_alternativos": [
+        "fruta de la pasión"
+      ],
+      "palabras_clave": [
+        "maracuyá",
+        "fruta de la pasión",
+        "maracuyá para bebé",
+        "mi bebé puede comer maracuyá",
+        "fruta de la pasión",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "recetas para bebés",
+        "cómo ofrecer fruta",
+        "preparar fruta para bebé",
+        "bebé de 6 meses",
+        "mi bebé puede comer maracuyá"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "boniato",
+      "nombre": "Boniato",
+      "categoria": "Viandas",
+      "resumen": "Vianda de pulpa dulce, rica en almidón y fuente de fibra y carotenoides, según la variedad.",
+      "nombres_alternativos": [
+        "batata",
+        "camote",
+        "Ipomoea batatas"
+      ],
+      "palabras_clave": [
+        "boniato cubano",
+        "batata para bebé",
+        "puré de boniato",
+        "boniato hervido",
+        "boniato al vapor",
+        "boniato para niño",
+        "boniato",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer boniato",
+        "cómo preparar boniato para bebés",
+        "desde cuándo dar boniato",
+        "recetas con boniato"
+      ],
+      "ruta_publica": "c/C1/alimentos/viandas/"
+    },
+    {
+      "id": "yuca",
+      "nombre": "Yuca",
+      "categoria": "Viandas",
+      "resumen": "Raíz rica en almidón que debe pelarse y cocinarse completamente antes de consumir.",
+      "nombres_alternativos": [
+        "mandioca",
+        "cassava",
+        "Manihot esculenta"
+      ],
+      "palabras_clave": [
+        "yuca para bebé",
+        "mandioca",
+        "cassava",
+        "yuca hervida",
+        "puré de yuca",
+        "yuca amarga",
+        "cómo cocinar yuca",
+        "yuca",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer yuca",
+        "cómo preparar yuca para bebés",
+        "desde cuándo dar yuca",
+        "recetas con yuca"
+      ],
+      "ruta_publica": "c/C1/alimentos/viandas/"
+    },
+    {
+      "id": "malanga",
+      "nombre": "Malanga",
+      "categoria": "Viandas",
+      "resumen": "Tubérculo feculento de textura cremosa al cocinarse; se consume siempre bien cocido.",
+      "nombres_alternativos": [
+        "yautía",
+        "ocumo",
+        "Xanthosoma sagittifolium"
+      ],
+      "palabras_clave": [
+        "malanga para bebé",
+        "malanga blanca",
+        "yautía",
+        "ocumo",
+        "puré de malanga",
+        "malanga hervida",
+        "malanga",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer malanga",
+        "cómo preparar malanga para bebés",
+        "desde cuándo dar malanga",
+        "recetas con malanga"
+      ],
+      "ruta_publica": "c/C1/alimentos/viandas/"
+    },
+    {
+      "id": "name",
+      "nombre": "Ñame",
+      "categoria": "Viandas",
+      "resumen": "Tubérculo feculento que aporta energía y se consume después de cocinarse completamente.",
+      "nombres_alternativos": [
+        "Dioscorea",
+        "yam"
+      ],
+      "palabras_clave": [
+        "ñame cubano",
+        "mapuey",
+        "yam",
+        "ñame para bebé",
+        "puré de ñame",
+        "vianda ñame",
+        "ñame",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer ñame",
+        "cómo preparar ñame para bebés",
+        "desde cuándo dar ñame",
+        "recetas con ñame"
+      ],
+      "ruta_publica": "c/C1/alimentos/viandas/"
+    },
+    {
+      "id": "papa",
+      "nombre": "Papa",
+      "categoria": "Viandas",
+      "resumen": "Tubérculo rico en almidón; aporta potasio y vitamina C en cantidades variables.",
+      "nombres_alternativos": [
+        "patata",
+        "Solanum tuberosum"
+      ],
+      "palabras_clave": [
+        "papa para bebé",
+        "patata",
+        "puré de papa",
+        "papas hervidas",
+        "papa verde",
+        "cómo preparar papa",
+        "papa",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer papa",
+        "cómo preparar papa para bebés",
+        "desde cuándo dar papa",
+        "recetas con papa"
+      ],
+      "ruta_publica": "c/C1/alimentos/viandas/"
+    },
+    {
+      "id": "platano-vianda",
+      "nombre": "Plátano macho verde",
+      "categoria": "Viandas",
+      "resumen": "Plátano de pulpa firme que se consume cocido; aporta almidón y energía.",
+      "nombres_alternativos": [
+        "plátano vianda",
+        "plátano verde",
+        "plantain"
+      ],
+      "palabras_clave": [
+        "plátano macho",
+        "plátano verde",
+        "plátano vianda para bebé",
+        "tostones",
+        "puré de plátano verde",
+        "plátano hervido",
+        "plátano vianda",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer plátano vianda",
+        "cómo preparar plátano vianda para bebés",
+        "desde cuándo dar plátano vianda",
+        "recetas con plátano vianda"
+      ],
+      "ruta_publica": "c/C1/alimentos/viandas/"
+    },
+    {
+      "id": "platano-burro",
+      "nombre": "Plátano burro verde",
+      "categoria": "Viandas",
+      "resumen": "Tipo de plátano de cocinar, de pulpa firme y uso frecuente en guisos y preparaciones hervidas.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "plátano burro bebé",
+        "burro cubano",
+        "plátano para cocinar",
+        "plátano hervido",
+        "puré de plátano burro",
+        "plátano burro",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer plátano burro",
+        "cómo preparar plátano burro para bebés",
+        "desde cuándo dar plátano burro",
+        "recetas con plátano burro"
+      ],
+      "ruta_publica": "c/C1/alimentos/viandas/"
+    },
+    {
+      "id": "calabaza",
+      "nombre": "Calabaza",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza de pulpa suave que en la cocina cubana también se agrupa entre las viandas.",
+      "nombres_alternativos": [
+        "Cucurbita",
+        "auyama",
+        "zapallo"
+      ],
+      "palabras_clave": [
+        "calabaza para bebé",
+        "auyama",
+        "zapallo",
+        "puré de calabaza",
+        "crema de calabaza",
+        "calabaza hervida",
+        "calabaza",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer calabaza",
+        "cómo preparar calabaza para bebés",
+        "desde cuándo dar calabaza",
+        "recetas con calabaza"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "chayote",
+      "nombre": "Chayote",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Fruto de textura acuosa y suave que en algunas clasificaciones culinarias cubanas se incluye entre las viandas.",
+      "nombres_alternativos": [
+        "tayota",
+        "güisquil",
+        "Sechium edule"
+      ],
+      "palabras_clave": [
+        "chayote para bebé",
+        "tayota",
+        "güisquil",
+        "Sechium edule",
+        "puré de chayote",
+        "sopa de chayote",
+        "chayote",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer chayote",
+        "cómo preparar chayote para bebés",
+        "desde cuándo dar chayote",
+        "recetas con chayote"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "tomate",
+      "nombre": "Tomate",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Fruto carnoso que se utiliza como hortaliza en ensaladas, salsas y guisos. Para bebés se ofrece maduro y con textura adaptada.",
+      "nombres_alternativos": [
+        "tomate de ensalada",
+        "tomate maduro",
+        "Solanum lycopersicum"
+      ],
+      "palabras_clave": [
+        "tomate para bebé",
+        "tomate maduro",
+        "tomate cocido",
+        "tomate triturado",
+        "salsa de tomate casera para bebés",
+        "cómo dar tomate a un bebé",
+        "desde cuándo puede comer tomate un bebé",
+        "tomate cherry atragantamiento",
+        "tomate de ensalada",
+        "Solanum lycopersicum",
+        "recetas con tomate para bebés"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "zanahoria",
+      "nombre": "Zanahoria",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Raíz comestible de color generalmente naranja, conocida por su contenido de carotenoides.",
+      "nombres_alternativos": [
+        "Daucus carota",
+        "zanahoria amarilla",
+        "zanahoria naranja"
+      ],
+      "palabras_clave": [
+        "zanahoria para bebé",
+        "puré de zanahoria",
+        "zanahoria cocida",
+        "zanahoria al vapor",
+        "betacaroteno",
+        "vitamina A",
+        "nitratos en zanahoria",
+        "cómo cocinar zanahoria para bebés",
+        "desde cuándo dar zanahoria",
+        "zanahoria cruda atragantamiento",
+        "Daucus carota"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "remolacha",
+      "nombre": "Remolacha",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Raíz de color rojo intenso que se consume cocida o rallada en preparaciones para adultos; para bebés requiere textura y preparación seguras.",
+      "nombres_alternativos": [
+        "betabel",
+        "betarraga",
+        "Beta vulgaris"
+      ],
+      "palabras_clave": [
+        "remolacha para bebé",
+        "betabel para bebé",
+        "betarraga",
+        "puré de remolacha",
+        "remolacha cocida",
+        "nitratos en remolacha",
+        "desde cuándo dar remolacha",
+        "cómo cocinar remolacha para bebés",
+        "remolacha y heces rojas",
+        "Beta vulgaris"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "habichuela-tierna",
+      "nombre": "Habichuela tierna",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Vaina verde tierna de frijol común que se consume cocida como hortaliza.",
+      "nombres_alternativos": [
+        "habichuela verde",
+        "judía verde",
+        "vainita",
+        "ejote",
+        "Phaseolus vulgaris"
+      ],
+      "palabras_clave": [
+        "habichuela tierna para bebé",
+        "habichuela verde",
+        "vainitas",
+        "ejotes",
+        "judías verdes",
+        "habichuela cocida",
+        "puré de habichuelas tiernas",
+        "cómo preparar habichuelas para bebés",
+        "nitratos en habichuelas",
+        "Phaseolus vulgaris"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "acelga",
+      "nombre": "Acelga",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza de hojas verdes y pencas claras o coloreadas que se consume cocida en sopas, guisos y otras preparaciones.",
+      "nombres_alternativos": [
+        "Beta vulgaris subsp. vulgaris",
+        "hojas de acelga",
+        "Swiss chard"
+      ],
+      "palabras_clave": [
+        "acelga para bebé",
+        "hojas de acelga",
+        "acelga cocida",
+        "puré de acelga",
+        "acelga con boniato",
+        "cómo preparar acelga para bebés",
+        "desde cuándo dar acelga",
+        "Beta vulgaris",
+        "verduras de hoja verde"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
+    }
+  ]
+}
