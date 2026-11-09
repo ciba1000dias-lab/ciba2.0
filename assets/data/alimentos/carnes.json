@@ -1,0 +1,1510 @@
+{
+  "version": 1,
+  "biblioteca": "CIBA · Crianza · Alimentación",
+  "categoria": "Carnes y aves",
+  "alimentos": [
+    {
+      "id": "pollo",
+      "nombre": "Pollo",
+      "nombres_alternativos": [
+        "carne de pollo",
+        "pechuga",
+        "muslo",
+        "Gallus gallus domesticus"
+      ],
+      "categoria": "Carnes y aves",
+      "resumen": "Carne de ave versátil y habitual en la cocina familiar cubana.",
+      "descripcion": "Aporta proteínas y vitaminas del grupo B. La pechuga suele ser más magra; muslos y otras piezas tienen proporciones distintas de grasa. Para bebés importa la cocción completa y retirar piel, huesos y fibras.",
+      "propiedades": [
+        "Aporta proteínas de alto valor biológico.",
+        "Contiene vitaminas del grupo B y minerales; las cantidades varían según especie y corte.",
+        "El contenido de grasa cambia según la pieza y el método de preparación."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de alimentos de origen animal en la alimentación complementaria.",
+        "Puede aportar hierro, zinc y vitamina B12, nutrientes importantes durante el crecimiento."
+      ],
+      "edad": "Puede incorporarse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación y puede mantenerse sentado con apoyo y controlar cabeza y cuello. Ofrecer como parte de una dieta diversa; la leche materna o fórmula continúa siendo fundamental durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente hasta quedar muy tierna. Triturar o desmenuzar finamente y mezclar con puré espeso húmedo; retirar piel, cartílagos, grasa dura, huesos y fragmentos fibrosos."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer muy tierna, finamente desmenuzada o picada y humedecida; adaptar el tamaño a las habilidades del bebé. Revisar que no queden huesos, cartílagos ni fibras largas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir tierna, picada o desmenuzada en piezas pequeñas y manejables, según la masticación del niño. Evitar trozos grandes, secos, duros o fibrosos."
+        }
+      ],
+      "preparacion_segura": "Cocinar todas las partes, incluidas las cercanas al hueso, hasta alcanzar 74 °C en el centro. Desmenuzar muy fino y revisar que no queden huesecillos.",
+      "recetas": [
+        {
+          "nombre": "Puré suave de pollo",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "pollo bien cocida y agua potable o vegetal cocido sin sal",
+          "preparacion": "Cocinar hasta que esté completamente tierna. Triturar muy fino y humedecer hasta obtener una preparación espesa y homogénea."
+        },
+        {
+          "nombre": "pollo con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "pollo bien cocida y calabaza cocida",
+          "preparacion": "Triturar o desmenuzar finamente la carne y mezclar con calabaza muy blanda; adaptar la textura a las habilidades del niño."
+        },
+        {
+          "nombre": "Guiso familiar suave de pollo",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "pollo, papa o boniato, tomate y vegetales",
+          "preparacion": "Cocinar a fuego suave hasta que todo esté tierno y la carne completamente cocida. Separar la porción infantil antes de añadir sal."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer cruda ni poco cocida; los niños pequeños tienen mayor riesgo de enfermar por microorganismos presentes en carnes insuficientemente cocidas.",
+        "Temperaturas internas de referencia: aves 74 °C; cortes enteros de res, cerdo y carnero 63 °C con reposo de 3 minutos; carnes molidas 71 °C. Usar termómetro cuando sea posible.",
+        "Evitar embutidos, carnes curadas, ahumadas y productos muy salados como opción habitual.",
+        "Retirar todos los huesos, cartílagos, piel dura y partes fibrosas; servir sentado y con supervisión."
+      ],
+      "conservacion": "Mantener refrigerada a 4 °C o menos y separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar en porciones pequeñas. Refrigerar las sobras cocidas en recipientes poco profundos y tapados; no dejarlas a temperatura ambiente durante periodos prolongados.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chicken%20Meat.jpg?width=1280",
+        "alt": "Fotografía ilustrativa de pollo.",
+        "autor": "Gaurav Dhwaj Khadka",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Chicken_Meat.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "carne de pollo",
+        "pechuga",
+        "muslo",
+        "Gallus gallus domesticus",
+        "pollo",
+        "pollo para bebés",
+        "cómo preparar pollo para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y alimentos de origen animal."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones de alimentación infantil en contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de carnes y aves crudas o poco cocidas en menores de cinco años."
+        },
+        {
+          "institucion": "USDA FSIS",
+          "titulo": "Safe Minimum Internal Temperature Chart",
+          "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+          "utilidad": "Temperaturas internas seguras para carnes y aves."
+        },
+        {
+          "institucion": "NHS",
+          "titulo": "Vitamin A",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-A/",
+          "utilidad": "El hígado es una fuente muy concentrada de vitamina A."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Chicken Meat.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Chicken_Meat.jpg",
+          "utilidad": "Fotografía ilustrativa; consultar la página original para autoría y licencia."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "gallina",
+      "nombre": "Gallina",
+      "nombres_alternativos": [
+        "gallina criolla",
+        "gallina de patio",
+        "gallina adulta"
+      ],
+      "categoria": "Carnes y aves",
+      "resumen": "Ave adulta utilizada en caldos y guisos tradicionales; su carne suele ser más firme que la del pollo joven.",
+      "descripcion": "En la cocina cubana, gallina suele referirse a un ave adulta, cuya carne necesita más tiempo de cocción y puede quedar fibrosa. El caldo no sustituye la carne ni debe concentrarse con sal o cubitos.",
+      "propiedades": [
+        "Aporta proteínas de alto valor biológico.",
+        "Contiene vitaminas del grupo B y minerales; las cantidades varían según especie y corte.",
+        "El contenido de grasa cambia según la pieza y el método de preparación."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de alimentos de origen animal en la alimentación complementaria.",
+        "Puede aportar hierro, zinc y vitamina B12, nutrientes importantes durante el crecimiento."
+      ],
+      "edad": "Puede incorporarse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación y puede mantenerse sentado con apoyo y controlar cabeza y cuello. Ofrecer como parte de una dieta diversa; la leche materna o fórmula continúa siendo fundamental durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente hasta quedar muy tierna. Triturar o desmenuzar finamente y mezclar con puré espeso húmedo; retirar piel, cartílagos, grasa dura, huesos y fragmentos fibrosos."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer muy tierna, finamente desmenuzada o picada y humedecida; adaptar el tamaño a las habilidades del bebé. Revisar que no queden huesos, cartílagos ni fibras largas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir tierna, picada o desmenuzada en piezas pequeñas y manejables, según la masticación del niño. Evitar trozos grandes, secos, duros o fibrosos."
+        }
+      ],
+      "preparacion_segura": "Cocinar a fuego suave o presión hasta que esté completamente cocida y muy tierna. Retirar huesos, piel y cartílagos; desmenuzar o triturar la carne. No ofrecer solo caldo como sustituto de un alimento rico en nutrientes.",
+      "recetas": [
+        {
+          "nombre": "Puré suave de gallina",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "gallina bien cocida y agua potable o vegetal cocido sin sal",
+          "preparacion": "Cocinar hasta que esté completamente tierna. Triturar muy fino y humedecer hasta obtener una preparación espesa y homogénea."
+        },
+        {
+          "nombre": "gallina con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "gallina bien cocida y calabaza cocida",
+          "preparacion": "Triturar o desmenuzar finamente la carne y mezclar con calabaza muy blanda; adaptar la textura a las habilidades del niño."
+        },
+        {
+          "nombre": "Guiso familiar suave de gallina",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "gallina, papa o boniato, tomate y vegetales",
+          "preparacion": "Cocinar a fuego suave hasta que todo esté tierno y la carne completamente cocida. Separar la porción infantil antes de añadir sal."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer cruda ni poco cocida; los niños pequeños tienen mayor riesgo de enfermar por microorganismos presentes en carnes insuficientemente cocidas.",
+        "Temperaturas internas de referencia: aves 74 °C; cortes enteros de res, cerdo y carnero 63 °C con reposo de 3 minutos; carnes molidas 71 °C. Usar termómetro cuando sea posible.",
+        "Evitar embutidos, carnes curadas, ahumadas y productos muy salados como opción habitual.",
+        "Retirar todos los huesos, cartílagos, piel dura y partes fibrosas; servir sentado y con supervisión."
+      ],
+      "conservacion": "Mantener refrigerada a 4 °C o menos y separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar en porciones pequeñas. Refrigerar las sobras cocidas en recipientes poco profundos y tapados; no dejarlas a temperatura ambiente durante periodos prolongados.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chicken%20Meat.jpg?width=1280",
+        "alt": "Fotografía ilustrativa de gallina.",
+        "autor": "Gaurav Dhwaj Khadka",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Chicken_Meat.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "gallina criolla",
+        "gallina de patio",
+        "gallina adulta",
+        "gallina",
+        "gallina para bebés",
+        "cómo preparar gallina para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y alimentos de origen animal."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones de alimentación infantil en contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de carnes y aves crudas o poco cocidas en menores de cinco años."
+        },
+        {
+          "institucion": "USDA FSIS",
+          "titulo": "Safe Minimum Internal Temperature Chart",
+          "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+          "utilidad": "Temperaturas internas seguras para carnes y aves."
+        },
+        {
+          "institucion": "NHS",
+          "titulo": "Vitamin A",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-A/",
+          "utilidad": "El hígado es una fuente muy concentrada de vitamina A."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Chicken Meat.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Chicken_Meat.jpg",
+          "utilidad": "Fotografía ilustrativa; consultar la página original para autoría y licencia."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "pavo",
+      "nombre": "Pavo",
+      "nombres_alternativos": [
+        "carne de pavo",
+        "pechuga de pavo",
+        "Meleagris gallopavo"
+      ],
+      "categoria": "Carnes y aves",
+      "resumen": "Carne de ave que aporta proteínas y puede variar en grasa según la pieza y si conserva la piel.",
+      "descripcion": "El pavo aporta proteínas y vitaminas del grupo B. La carne fresca sin procesar es diferente de fiambres y embutidos, que pueden contener mucho sodio.",
+      "propiedades": [
+        "Aporta proteínas de alto valor biológico.",
+        "Contiene vitaminas del grupo B y minerales; las cantidades varían según especie y corte.",
+        "El contenido de grasa cambia según la pieza y el método de preparación."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de alimentos de origen animal en la alimentación complementaria.",
+        "Puede aportar hierro, zinc y vitamina B12, nutrientes importantes durante el crecimiento."
+      ],
+      "edad": "Puede incorporarse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación y puede mantenerse sentado con apoyo y controlar cabeza y cuello. Ofrecer como parte de una dieta diversa; la leche materna o fórmula continúa siendo fundamental durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente hasta quedar muy tierna. Triturar o desmenuzar finamente y mezclar con puré espeso húmedo; retirar piel, cartílagos, grasa dura, huesos y fragmentos fibrosos."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer muy tierna, finamente desmenuzada o picada y humedecida; adaptar el tamaño a las habilidades del bebé. Revisar que no queden huesos, cartílagos ni fibras largas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir tierna, picada o desmenuzada en piezas pequeñas y manejables, según la masticación del niño. Evitar trozos grandes, secos, duros o fibrosos."
+        }
+      ],
+      "preparacion_segura": "Manipular con higiene y mantener separado de alimentos listos para comer mientras esté cruda. Cocinar completamente hasta que esté muy tierna; retirar huesos, piel dura, cartílagos y grasa visible. Para el bebé, triturar o desmenuzar muy fino y humedecer para facilitar una textura segura.",
+      "recetas": [
+        {
+          "nombre": "Puré suave de pavo",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "pavo bien cocida y agua potable o vegetal cocido sin sal",
+          "preparacion": "Cocinar hasta que esté completamente tierna. Triturar muy fino y humedecer hasta obtener una preparación espesa y homogénea."
+        },
+        {
+          "nombre": "pavo con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "pavo bien cocida y calabaza cocida",
+          "preparacion": "Triturar o desmenuzar finamente la carne y mezclar con calabaza muy blanda; adaptar la textura a las habilidades del niño."
+        },
+        {
+          "nombre": "Guiso familiar suave de pavo",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "pavo, papa o boniato, tomate y vegetales",
+          "preparacion": "Cocinar a fuego suave hasta que todo esté tierno y la carne completamente cocida. Separar la porción infantil antes de añadir sal."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer cruda ni poco cocida; los niños pequeños tienen mayor riesgo de enfermar por microorganismos presentes en carnes insuficientemente cocidas.",
+        "Temperaturas internas de referencia: aves 74 °C; cortes enteros de res, cerdo y carnero 63 °C con reposo de 3 minutos; carnes molidas 71 °C. Usar termómetro cuando sea posible.",
+        "Evitar embutidos, carnes curadas, ahumadas y productos muy salados como opción habitual.",
+        "Retirar todos los huesos, cartílagos, piel dura y partes fibrosas; servir sentado y con supervisión.",
+        "No confundir pavo fresco con fiambres o embutidos de pavo; estos suelen tener más sodio."
+      ],
+      "conservacion": "Mantener refrigerada a 4 °C o menos y separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar en porciones pequeñas. Refrigerar las sobras cocidas en recipientes poco profundos y tapados; no dejarlas a temperatura ambiente durante periodos prolongados.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Meat%20food%20turkey.jpg?width=1280",
+        "alt": "Fotografía ilustrativa de pavo.",
+        "autor": "John Harvey",
+        "licencia": "Dominio público",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Meat_food_turkey.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "carne de pavo",
+        "pechuga de pavo",
+        "Meleagris gallopavo",
+        "pavo",
+        "pavo para bebés",
+        "cómo preparar pavo para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y alimentos de origen animal."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones de alimentación infantil en contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de carnes y aves crudas o poco cocidas en menores de cinco años."
+        },
+        {
+          "institucion": "USDA FSIS",
+          "titulo": "Safe Minimum Internal Temperature Chart",
+          "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+          "utilidad": "Temperaturas internas seguras para carnes y aves."
+        },
+        {
+          "institucion": "NHS",
+          "titulo": "Vitamin A",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-A/",
+          "utilidad": "El hígado es una fuente muy concentrada de vitamina A."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Meat food turkey.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Meat_food_turkey.jpg",
+          "utilidad": "Fotografía ilustrativa; consultar la página original para autoría y licencia."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "res",
+      "nombre": "Carne de res",
+      "nombres_alternativos": [
+        "carne vacuna",
+        "ternera",
+        "vaca",
+        "buey",
+        "carne roja"
+      ],
+      "categoria": "Carnes y aves",
+      "resumen": "Carne roja que puede aportar hierro hemo, zinc y vitamina B12.",
+      "descripcion": "Es una fuente de proteínas y hierro hemo, que el organismo absorbe con mayor facilidad que el hierro vegetal. Los cortes varían en grasa y dureza; elegir piezas tiernas y retirar grasa visible.",
+      "propiedades": [
+        "Aporta proteínas de alto valor biológico.",
+        "Contiene vitaminas del grupo B y minerales; las cantidades varían según especie y corte.",
+        "El contenido de grasa cambia según la pieza y el método de preparación."
+      ],
+      "beneficios": [
+        "Aporta hierro hemo, zinc y vitamina B12.",
+        "Puede contribuir a cubrir nutrientes importantes durante el crecimiento, dentro de una dieta diversa."
+      ],
+      "edad": "Puede incorporarse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación y puede mantenerse sentado con apoyo y controlar cabeza y cuello. Ofrecer como parte de una dieta diversa; la leche materna o fórmula continúa siendo fundamental durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente hasta quedar muy tierna. Triturar o desmenuzar finamente y mezclar con puré espeso húmedo; retirar piel, cartílagos, grasa dura, huesos y fragmentos fibrosos."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer muy tierna, finamente desmenuzada o picada y humedecida; adaptar el tamaño a las habilidades del bebé. Revisar que no queden huesos, cartílagos ni fibras largas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir tierna, picada o desmenuzada en piezas pequeñas y manejables, según la masticación del niño. Evitar trozos grandes, secos, duros o fibrosos."
+        }
+      ],
+      "preparacion_segura": "Para cortes enteros, cocinar hasta 63 °C en el centro y dejar reposar 3 minutos; para carne molida, 71 °C. Para bebés, desmenuzar o triturar con líquido y comprobar que no haya fibras duras.",
+      "recetas": [
+        {
+          "nombre": "Puré suave de carne de res",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "carne de res bien cocida y agua potable o vegetal cocido sin sal",
+          "preparacion": "Cocinar hasta que esté completamente tierna. Triturar muy fino y humedecer hasta obtener una preparación espesa y homogénea."
+        },
+        {
+          "nombre": "carne de res con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "carne de res bien cocida y calabaza cocida",
+          "preparacion": "Triturar o desmenuzar finamente la carne y mezclar con calabaza muy blanda; adaptar la textura a las habilidades del niño."
+        },
+        {
+          "nombre": "Guiso familiar suave de carne de res",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "carne de res, papa o boniato, tomate y vegetales",
+          "preparacion": "Cocinar a fuego suave hasta que todo esté tierno y la carne completamente cocida. Separar la porción infantil antes de añadir sal."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer cruda ni poco cocida; los niños pequeños tienen mayor riesgo de enfermar por microorganismos presentes en carnes insuficientemente cocidas.",
+        "Temperaturas internas de referencia: aves 74 °C; cortes enteros de res, cerdo y carnero 63 °C con reposo de 3 minutos; carnes molidas 71 °C. Usar termómetro cuando sea posible.",
+        "Evitar embutidos, carnes curadas, ahumadas y productos muy salados como opción habitual.",
+        "Retirar todos los huesos, cartílagos, piel dura y partes fibrosas; servir sentado y con supervisión."
+      ],
+      "conservacion": "Mantener refrigerada a 4 °C o menos y separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar en porciones pequeñas. Refrigerar las sobras cocidas en recipientes poco profundos y tapados; no dejarlas a temperatura ambiente durante periodos prolongados.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20beef%20meat.jpg?width=1280",
+        "alt": "Fotografía ilustrativa de carne de res.",
+        "autor": "Attahokah",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Fresh_beef_meat.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "carne vacuna",
+        "ternera",
+        "vaca",
+        "buey",
+        "carne roja",
+        "carne de res",
+        "carne de res para bebés",
+        "cómo preparar carne de res para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y alimentos de origen animal."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones de alimentación infantil en contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de carnes y aves crudas o poco cocidas en menores de cinco años."
+        },
+        {
+          "institucion": "USDA FSIS",
+          "titulo": "Safe Minimum Internal Temperature Chart",
+          "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+          "utilidad": "Temperaturas internas seguras para carnes y aves."
+        },
+        {
+          "institucion": "NHS",
+          "titulo": "Vitamin A",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-A/",
+          "utilidad": "El hígado es una fuente muy concentrada de vitamina A."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Fresh beef meat.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Fresh_beef_meat.jpg",
+          "utilidad": "Fotografía ilustrativa; consultar la página original para autoría y licencia."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "cerdo",
+      "nombre": "Carne de cerdo",
+      "nombres_alternativos": [
+        "carne porcina",
+        "puerco",
+        "chancho",
+        "Sus scrofa domesticus"
+      ],
+      "categoria": "Carnes y aves",
+      "resumen": "Carne utilizada en numerosos platos cubanos; los cortes magros y las piezas grasas tienen perfiles distintos.",
+      "descripcion": "Aporta proteínas y vitaminas del grupo B, incluida la tiamina. Su contenido de grasa depende del corte; elegir piezas magras y retirar grasa visible. No confundir carne fresca con jamón, tocino, chorizo u otros productos procesados.",
+      "propiedades": [
+        "Aporta proteínas de alto valor biológico.",
+        "Contiene vitaminas del grupo B y minerales; las cantidades varían según especie y corte.",
+        "El contenido de grasa cambia según la pieza y el método de preparación."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de alimentos de origen animal en la alimentación complementaria.",
+        "Puede aportar hierro, zinc y vitamina B12, nutrientes importantes durante el crecimiento."
+      ],
+      "edad": "Puede incorporarse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación y puede mantenerse sentado con apoyo y controlar cabeza y cuello. Ofrecer como parte de una dieta diversa; la leche materna o fórmula continúa siendo fundamental durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente hasta quedar muy tierna. Triturar o desmenuzar finamente y mezclar con puré espeso húmedo; retirar piel, cartílagos, grasa dura, huesos y fragmentos fibrosos."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer muy tierna, finamente desmenuzada o picada y humedecida; adaptar el tamaño a las habilidades del bebé. Revisar que no queden huesos, cartílagos ni fibras largas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir tierna, picada o desmenuzada en piezas pequeñas y manejables, según la masticación del niño. Evitar trozos grandes, secos, duros o fibrosos."
+        }
+      ],
+      "preparacion_segura": "Manipular con higiene y mantener separado de alimentos listos para comer mientras esté cruda. Cocinar completamente hasta que esté muy tierna; retirar huesos, piel dura, cartílagos y grasa visible. Para el bebé, triturar o desmenuzar muy fino y humedecer para facilitar una textura segura.",
+      "recetas": [
+        {
+          "nombre": "Puré suave de carne de cerdo",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "carne de cerdo bien cocida y agua potable o vegetal cocido sin sal",
+          "preparacion": "Cocinar hasta que esté completamente tierna. Triturar muy fino y humedecer hasta obtener una preparación espesa y homogénea."
+        },
+        {
+          "nombre": "carne de cerdo con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "carne de cerdo bien cocida y calabaza cocida",
+          "preparacion": "Triturar o desmenuzar finamente la carne y mezclar con calabaza muy blanda; adaptar la textura a las habilidades del niño."
+        },
+        {
+          "nombre": "Guiso familiar suave de carne de cerdo",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "carne de cerdo, papa o boniato, tomate y vegetales",
+          "preparacion": "Cocinar a fuego suave hasta que todo esté tierno y la carne completamente cocida. Separar la porción infantil antes de añadir sal."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer cruda ni poco cocida; los niños pequeños tienen mayor riesgo de enfermar por microorganismos presentes en carnes insuficientemente cocidas.",
+        "Temperaturas internas de referencia: aves 74 °C; cortes enteros de res, cerdo y carnero 63 °C con reposo de 3 minutos; carnes molidas 71 °C. Usar termómetro cuando sea posible.",
+        "Evitar embutidos, carnes curadas, ahumadas y productos muy salados como opción habitual.",
+        "Retirar todos los huesos, cartílagos, piel dura y partes fibrosas; servir sentado y con supervisión.",
+        "Evitar usar chicharrón, tocino, jamón, chorizo o salchichas como sustitutos de carne fresca."
+      ],
+      "conservacion": "Mantener refrigerada a 4 °C o menos y separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar en porciones pequeñas. Refrigerar las sobras cocidas en recipientes poco profundos y tapados; no dejarlas a temperatura ambiente durante periodos prolongados.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pork%20meat.jpg?width=1280",
+        "alt": "Fotografía ilustrativa de carne de cerdo.",
+        "autor": "Shubhrajyoti.aqb",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Pork_meat.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "carne porcina",
+        "puerco",
+        "chancho",
+        "Sus scrofa domesticus",
+        "carne de cerdo",
+        "carne de cerdo para bebés",
+        "cómo preparar carne de cerdo para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y alimentos de origen animal."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones de alimentación infantil en contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de carnes y aves crudas o poco cocidas en menores de cinco años."
+        },
+        {
+          "institucion": "USDA FSIS",
+          "titulo": "Safe Minimum Internal Temperature Chart",
+          "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+          "utilidad": "Temperaturas internas seguras para carnes y aves."
+        },
+        {
+          "institucion": "NHS",
+          "titulo": "Vitamin A",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-A/",
+          "utilidad": "El hígado es una fuente muy concentrada de vitamina A."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Pork meat.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Pork_meat.jpg",
+          "utilidad": "Fotografía ilustrativa; consultar la página original para autoría y licencia."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "conejo",
+      "nombre": "Conejo",
+      "nombres_alternativos": [
+        "carne de conejo",
+        "Oryctolagus cuniculus"
+      ],
+      "categoria": "Carnes y aves",
+      "resumen": "Carne magra que puede formar parte de una alimentación variada cuando está disponible.",
+      "descripcion": "Suele ser magra y aporta proteínas y vitaminas del grupo B. Tiene huesos pequeños que requieren una revisión minuciosa antes de servir a niños.",
+      "propiedades": [
+        "Aporta proteínas de alto valor biológico.",
+        "Contiene vitaminas del grupo B y minerales; las cantidades varían según especie y corte.",
+        "El contenido de grasa cambia según la pieza y el método de preparación."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de alimentos de origen animal en la alimentación complementaria.",
+        "Puede aportar hierro, zinc y vitamina B12, nutrientes importantes durante el crecimiento."
+      ],
+      "edad": "Puede incorporarse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación y puede mantenerse sentado con apoyo y controlar cabeza y cuello. Ofrecer como parte de una dieta diversa; la leche materna o fórmula continúa siendo fundamental durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente hasta quedar muy tierna. Triturar o desmenuzar finamente y mezclar con puré espeso húmedo; retirar piel, cartílagos, grasa dura, huesos y fragmentos fibrosos."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer muy tierna, finamente desmenuzada o picada y humedecida; adaptar el tamaño a las habilidades del bebé. Revisar que no queden huesos, cartílagos ni fibras largas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir tierna, picada o desmenuzada en piezas pequeñas y manejables, según la masticación del niño. Evitar trozos grandes, secos, duros o fibrosos."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente hasta que esté muy tierna. Deshuesar con especial cuidado, revisar la carne con los dedos y desmenuzar finamente; no servir piezas con huesos pequeños.",
+      "recetas": [
+        {
+          "nombre": "Puré suave de conejo",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "conejo bien cocida y agua potable o vegetal cocido sin sal",
+          "preparacion": "Cocinar hasta que esté completamente tierna. Triturar muy fino y humedecer hasta obtener una preparación espesa y homogénea."
+        },
+        {
+          "nombre": "conejo con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "conejo bien cocida y calabaza cocida",
+          "preparacion": "Triturar o desmenuzar finamente la carne y mezclar con calabaza muy blanda; adaptar la textura a las habilidades del niño."
+        },
+        {
+          "nombre": "Guiso familiar suave de conejo",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "conejo, papa o boniato, tomate y vegetales",
+          "preparacion": "Cocinar a fuego suave hasta que todo esté tierno y la carne completamente cocida. Separar la porción infantil antes de añadir sal."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer cruda ni poco cocida; los niños pequeños tienen mayor riesgo de enfermar por microorganismos presentes en carnes insuficientemente cocidas.",
+        "Temperaturas internas de referencia: aves 74 °C; cortes enteros de res, cerdo y carnero 63 °C con reposo de 3 minutos; carnes molidas 71 °C. Usar termómetro cuando sea posible.",
+        "Evitar embutidos, carnes curadas, ahumadas y productos muy salados como opción habitual.",
+        "Retirar todos los huesos, cartílagos, piel dura y partes fibrosas; servir sentado y con supervisión.",
+        "El conejo tiene numerosos huesos pequeños: revisar minuciosamente cada porción antes de ofrecerla."
+      ],
+      "conservacion": "Mantener refrigerada a 4 °C o menos y separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar en porciones pequeñas. Refrigerar las sobras cocidas en recipientes poco profundos y tapados; no dejarlas a temperatura ambiente durante periodos prolongados.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rabbit%20meat.jpg?width=1280",
+        "alt": "Fotografía ilustrativa de conejo.",
+        "autor": "Garitzko",
+        "licencia": "Dominio público",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Rabbit_meat.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "carne de conejo",
+        "Oryctolagus cuniculus",
+        "conejo",
+        "conejo para bebés",
+        "cómo preparar conejo para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y alimentos de origen animal."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones de alimentación infantil en contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de carnes y aves crudas o poco cocidas en menores de cinco años."
+        },
+        {
+          "institucion": "USDA FSIS",
+          "titulo": "Safe Minimum Internal Temperature Chart",
+          "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+          "utilidad": "Temperaturas internas seguras para carnes y aves."
+        },
+        {
+          "institucion": "NHS",
+          "titulo": "Vitamin A",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-A/",
+          "utilidad": "El hígado es una fuente muy concentrada de vitamina A."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Rabbit meat.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Rabbit_meat.jpg",
+          "utilidad": "Fotografía ilustrativa; consultar la página original para autoría y licencia."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "higado-pollo",
+      "nombre": "Hígado de pollo",
+      "nombres_alternativos": [
+        "hígado de gallina",
+        "vísceras de pollo"
+      ],
+      "categoria": "Carnes y aves",
+      "resumen": "Víscera muy concentrada en hierro y vitamina A; debe tratarse de manera distinta a los cortes habituales de carne.",
+      "descripcion": "Aporta hierro, vitamina B12 y vitamina A preformada en cantidades concentradas. Por su alta concentración de vitamina A, no debe convertirse en alimento diario ni ofrecerse en grandes porciones. Las recomendaciones de frecuencia varían entre países; conviene seguir orientación pediátrica local.",
+      "propiedades": [
+        "Aporta hierro y vitamina B12.",
+        "Es una fuente concentrada de vitamina A preformada; su composición exige moderación."
+      ],
+      "beneficios": [
+        "Puede aportar hierro y otros micronutrientes, pero no reemplaza otras fuentes de proteína y hierro."
+      ],
+      "edad": "Puede incorporarse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación y puede mantenerse sentado con apoyo y controlar cabeza y cuello. Ofrecer como parte de una dieta diversa; la leche materna o fórmula continúa siendo fundamental durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente hasta quedar muy tierna. Triturar o desmenuzar finamente y mezclar con puré espeso húmedo; retirar piel, cartílagos, grasa dura, huesos y fragmentos fibrosos."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer muy tierna, finamente desmenuzada o picada y humedecida; adaptar el tamaño a las habilidades del bebé. Revisar que no queden huesos, cartílagos ni fibras largas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir tierna, picada o desmenuzada en piezas pequeñas y manejables, según la masticación del niño. Evitar trozos grandes, secos, duros o fibrosos."
+        }
+      ],
+      "preparacion_segura": "Manipular con higiene y cocinar completamente, sin zonas crudas. Triturar o picar muy fino y ofrecer porciones pequeñas solo dentro de una dieta variada; consultar con el pediatra sobre frecuencia apropiada para la edad.",
+      "recetas": [
+        {
+          "nombre": "Hígado de pollo bien cocido y triturado",
+          "etapa": "Solo ocasionalmente y con orientación sobre la frecuencia",
+          "ingredientes": "Hígado de pollo fresco y agua potable",
+          "preparacion": "Cocinar completamente, triturar hasta una textura homogénea y servir una porción pequeña; no añadir sal."
+        }
+      ],
+      "precauciones": [
+        "El hígado contiene mucha vitamina A preformada; evitar ofrecerlo con frecuencia o en porciones grandes.",
+        "No combinar de forma autónoma con suplementos de vitamina A o aceite de hígado de pescado; consultar al profesional de salud.",
+        "Cocinar completamente y extremar la higiene de manipulación."
+      ],
+      "conservacion": "Mantener refrigerada a 4 °C o menos y separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar en porciones pequeñas. Refrigerar las sobras cocidas en recipientes poco profundos y tapados; no dejarlas a temperatura ambiente durante periodos prolongados.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chicken%20Liver.jpg?width=1280",
+        "alt": "Fotografía ilustrativa de hígado de pollo.",
+        "autor": "Derk29",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Chicken_Liver.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "hígado de gallina",
+        "vísceras de pollo",
+        "hígado de pollo",
+        "hígado de pollo para bebés",
+        "cómo preparar hígado de pollo para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y alimentos de origen animal."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones de alimentación infantil en contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de carnes y aves crudas o poco cocidas en menores de cinco años."
+        },
+        {
+          "institucion": "USDA FSIS",
+          "titulo": "Safe Minimum Internal Temperature Chart",
+          "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+          "utilidad": "Temperaturas internas seguras para carnes y aves."
+        },
+        {
+          "institucion": "NHS",
+          "titulo": "Vitamin A",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-A/",
+          "utilidad": "El hígado es una fuente muy concentrada de vitamina A."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Chicken Liver.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Chicken_Liver.jpg",
+          "utilidad": "Fotografía ilustrativa; consultar la página original para autoría y licencia."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "higado-res",
+      "nombre": "Hígado de res",
+      "nombres_alternativos": [
+        "hígado vacuno",
+        "hígado de ternera",
+        "vísceras de res"
+      ],
+      "categoria": "Carnes y aves",
+      "resumen": "Víscera rica en hierro, vitamina B12 y vitamina A preformada, por lo que requiere especial moderación.",
+      "descripcion": "Es muy denso en micronutrientes, pero también concentra vitamina A preformada. No es equivalente a un corte de carne corriente y no debe ofrecerse con frecuencia ni en grandes cantidades.",
+      "propiedades": [
+        "Aporta hierro, vitamina B12 y otros micronutrientes.",
+        "Contiene vitamina A preformada en concentración elevada; no debe considerarse una ración diaria."
+      ],
+      "beneficios": [
+        "Puede aportar hierro, pero su concentración de vitamina A exige limitar la frecuencia y el tamaño de la porción."
+      ],
+      "edad": "Puede incorporarse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación y puede mantenerse sentado con apoyo y controlar cabeza y cuello. Ofrecer como parte de una dieta diversa; la leche materna o fórmula continúa siendo fundamental durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente hasta quedar muy tierna. Triturar o desmenuzar finamente y mezclar con puré espeso húmedo; retirar piel, cartílagos, grasa dura, huesos y fragmentos fibrosos."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer muy tierna, finamente desmenuzada o picada y humedecida; adaptar el tamaño a las habilidades del bebé. Revisar que no queden huesos, cartílagos ni fibras largas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir tierna, picada o desmenuzada en piezas pequeñas y manejables, según la masticación del niño. Evitar trozos grandes, secos, duros o fibrosos."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente y triturar muy fino. Usar solo cantidades pequeñas y ocasionales después de consultar la recomendación pediátrica local; no servir crudo, semicocido ni en paté.",
+      "recetas": [
+        {
+          "nombre": "Pequeña porción de hígado bien cocido",
+          "etapa": "Solo ocasionalmente y con orientación pediátrica",
+          "ingredientes": "Pequeña cantidad de hígado de res y agua potable",
+          "preparacion": "Cocinar completamente, triturar hasta quedar homogéneo y servir una porción pequeña; no añadir sal."
+        }
+      ],
+      "precauciones": [
+        "Muy alto en vitamina A preformada: evitar ofrecerlo con frecuencia o en porciones grandes.",
+        "No combinar por cuenta propia con suplementos de vitamina A o aceite de hígado de pescado.",
+        "Consultar al pediatra sobre si conviene incluirlo y con qué frecuencia."
+      ],
+      "conservacion": "Mantener refrigerada a 4 °C o menos y separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar en porciones pequeñas. Refrigerar las sobras cocidas en recipientes poco profundos y tapados; no dejarlas a temperatura ambiente durante periodos prolongados.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Beef%20liver.jpg?width=1280",
+        "alt": "Fotografía ilustrativa de hígado de res.",
+        "autor": "MaiDenzel",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Beef_liver.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "hígado vacuno",
+        "hígado de ternera",
+        "vísceras de res",
+        "hígado de res",
+        "hígado de res para bebés",
+        "cómo preparar hígado de res para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y alimentos de origen animal."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones de alimentación infantil en contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de carnes y aves crudas o poco cocidas en menores de cinco años."
+        },
+        {
+          "institucion": "USDA FSIS",
+          "titulo": "Safe Minimum Internal Temperature Chart",
+          "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+          "utilidad": "Temperaturas internas seguras para carnes y aves."
+        },
+        {
+          "institucion": "NHS",
+          "titulo": "Vitamin A",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-A/",
+          "utilidad": "El hígado es una fuente muy concentrada de vitamina A."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Beef liver.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Beef_liver.jpg",
+          "utilidad": "Fotografía ilustrativa; consultar la página original para autoría y licencia."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "corazon-pollo",
+      "nombre": "Corazón de pollo",
+      "nombres_alternativos": [
+        "corazones de pollo",
+        "vísceras de pollo"
+      ],
+      "categoria": "Carnes y aves",
+      "resumen": "Víscera muscular que aporta proteínas, hierro y vitaminas del grupo B.",
+      "descripcion": "El corazón es un músculo y no tiene el mismo perfil que el hígado. Aporta proteínas y micronutrientes, aunque puede ser firme y elástico; para bebés requiere cocción prolongada y trituración o picado muy fino.",
+      "propiedades": [
+        "Aporta proteínas de alto valor biológico.",
+        "Contiene vitaminas del grupo B y minerales; las cantidades varían según especie y corte.",
+        "El contenido de grasa cambia según la pieza y el método de preparación."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de alimentos de origen animal en la alimentación complementaria.",
+        "Puede aportar hierro, zinc y vitamina B12, nutrientes importantes durante el crecimiento."
+      ],
+      "edad": "Puede incorporarse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación y puede mantenerse sentado con apoyo y controlar cabeza y cuello. Ofrecer como parte de una dieta diversa; la leche materna o fórmula continúa siendo fundamental durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente hasta quedar muy tierna. Triturar o desmenuzar finamente y mezclar con puré espeso húmedo; retirar piel, cartílagos, grasa dura, huesos y fragmentos fibrosos."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer muy tierna, finamente desmenuzada o picada y humedecida; adaptar el tamaño a las habilidades del bebé. Revisar que no queden huesos, cartílagos ni fibras largas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir tierna, picada o desmenuzada en piezas pequeñas y manejables, según la masticación del niño. Evitar trozos grandes, secos, duros o fibrosos."
+        }
+      ],
+      "preparacion_segura": "Retirar vasos grandes, coágulos y partes duras. Cocinar completamente hasta que esté muy tierno y picar o triturar finamente. No ofrecer entero.",
+      "recetas": [
+        {
+          "nombre": "Puré suave de corazón de pollo",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "corazón de pollo bien cocida y agua potable o vegetal cocido sin sal",
+          "preparacion": "Cocinar hasta que esté completamente tierna. Triturar muy fino y humedecer hasta obtener una preparación espesa y homogénea."
+        },
+        {
+          "nombre": "corazón de pollo con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "corazón de pollo bien cocida y calabaza cocida",
+          "preparacion": "Triturar o desmenuzar finamente la carne y mezclar con calabaza muy blanda; adaptar la textura a las habilidades del niño."
+        },
+        {
+          "nombre": "Guiso familiar suave de corazón de pollo",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "corazón de pollo, papa o boniato, tomate y vegetales",
+          "preparacion": "Cocinar a fuego suave hasta que todo esté tierno y la carne completamente cocida. Separar la porción infantil antes de añadir sal."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer cruda ni poco cocida; los niños pequeños tienen mayor riesgo de enfermar por microorganismos presentes en carnes insuficientemente cocidas.",
+        "Temperaturas internas de referencia: aves 74 °C; cortes enteros de res, cerdo y carnero 63 °C con reposo de 3 minutos; carnes molidas 71 °C. Usar termómetro cuando sea posible.",
+        "Evitar embutidos, carnes curadas, ahumadas y productos muy salados como opción habitual.",
+        "Retirar todos los huesos, cartílagos, piel dura y partes fibrosas; servir sentado y con supervisión.",
+        "No ofrecer corazones enteros ni en mitades firmes; su forma y textura pueden dificultar la masticación."
+      ],
+      "conservacion": "Mantener refrigerada a 4 °C o menos y separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar en porciones pequeñas. Refrigerar las sobras cocidas en recipientes poco profundos y tapados; no dejarlas a temperatura ambiente durante periodos prolongados.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chicken%20hearts.jpg?width=1280",
+        "alt": "Fotografía ilustrativa de corazón de pollo.",
+        "autor": "Fumikas Sagisavas",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Chicken_hearts.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "corazones de pollo",
+        "vísceras de pollo",
+        "corazón de pollo",
+        "corazón de pollo para bebés",
+        "cómo preparar corazón de pollo para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y alimentos de origen animal."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones de alimentación infantil en contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de carnes y aves crudas o poco cocidas en menores de cinco años."
+        },
+        {
+          "institucion": "USDA FSIS",
+          "titulo": "Safe Minimum Internal Temperature Chart",
+          "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+          "utilidad": "Temperaturas internas seguras para carnes y aves."
+        },
+        {
+          "institucion": "NHS",
+          "titulo": "Vitamin A",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-A/",
+          "utilidad": "El hígado es una fuente muy concentrada de vitamina A."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Chicken hearts.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Chicken_hearts.jpg",
+          "utilidad": "Fotografía ilustrativa; consultar la página original para autoría y licencia."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "carnero",
+      "nombre": "Carne de carnero",
+      "nombres_alternativos": [
+        "cordero",
+        "ovino",
+        "carne de oveja",
+        "mutton"
+      ],
+      "categoria": "Carnes y aves",
+      "resumen": "Carne roja de ovino que puede variar en sabor, grasa y terneza según la edad del animal y el corte.",
+      "descripcion": "Carnero y cordero son términos culinarios relacionados con la carne de ovino; la edad del animal influye en el sabor y la firmeza. Aporta proteínas, hierro, zinc y vitamina B12.",
+      "propiedades": [
+        "Aporta proteínas de alto valor biológico.",
+        "Contiene vitaminas del grupo B y minerales; las cantidades varían según especie y corte.",
+        "El contenido de grasa cambia según la pieza y el método de preparación."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de alimentos de origen animal en la alimentación complementaria.",
+        "Puede aportar hierro, zinc y vitamina B12, nutrientes importantes durante el crecimiento."
+      ],
+      "edad": "Puede incorporarse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación y puede mantenerse sentado con apoyo y controlar cabeza y cuello. Ofrecer como parte de una dieta diversa; la leche materna o fórmula continúa siendo fundamental durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente hasta quedar muy tierna. Triturar o desmenuzar finamente y mezclar con puré espeso húmedo; retirar piel, cartílagos, grasa dura, huesos y fragmentos fibrosos."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer muy tierna, finamente desmenuzada o picada y humedecida; adaptar el tamaño a las habilidades del bebé. Revisar que no queden huesos, cartílagos ni fibras largas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir tierna, picada o desmenuzada en piezas pequeñas y manejables, según la masticación del niño. Evitar trozos grandes, secos, duros o fibrosos."
+        }
+      ],
+      "preparacion_segura": "Manipular con higiene y mantener separado de alimentos listos para comer mientras esté cruda. Cocinar completamente hasta que esté muy tierna; retirar huesos, piel dura, cartílagos y grasa visible. Para el bebé, triturar o desmenuzar muy fino y humedecer para facilitar una textura segura.",
+      "recetas": [
+        {
+          "nombre": "Puré suave de carne de carnero",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "carne de carnero bien cocida y agua potable o vegetal cocido sin sal",
+          "preparacion": "Cocinar hasta que esté completamente tierna. Triturar muy fino y humedecer hasta obtener una preparación espesa y homogénea."
+        },
+        {
+          "nombre": "carne de carnero con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "carne de carnero bien cocida y calabaza cocida",
+          "preparacion": "Triturar o desmenuzar finamente la carne y mezclar con calabaza muy blanda; adaptar la textura a las habilidades del niño."
+        },
+        {
+          "nombre": "Guiso familiar suave de carne de carnero",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "carne de carnero, papa o boniato, tomate y vegetales",
+          "preparacion": "Cocinar a fuego suave hasta que todo esté tierno y la carne completamente cocida. Separar la porción infantil antes de añadir sal."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer cruda ni poco cocida; los niños pequeños tienen mayor riesgo de enfermar por microorganismos presentes en carnes insuficientemente cocidas.",
+        "Temperaturas internas de referencia: aves 74 °C; cortes enteros de res, cerdo y carnero 63 °C con reposo de 3 minutos; carnes molidas 71 °C. Usar termómetro cuando sea posible.",
+        "Evitar embutidos, carnes curadas, ahumadas y productos muy salados como opción habitual.",
+        "Retirar todos los huesos, cartílagos, piel dura y partes fibrosas; servir sentado y con supervisión."
+      ],
+      "conservacion": "Mantener refrigerada a 4 °C o menos y separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar en porciones pequeñas. Refrigerar las sobras cocidas en recipientes poco profundos y tapados; no dejarlas a temperatura ambiente durante periodos prolongados.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lamb%20meat.jpg?width=1280",
+        "alt": "Fotografía ilustrativa de carne de carnero.",
+        "autor": "Pujanak",
+        "licencia": "Dominio público",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Lamb_meat.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "cordero",
+        "ovino",
+        "carne de oveja",
+        "mutton",
+        "carne de carnero",
+        "carne de carnero para bebés",
+        "cómo preparar carne de carnero para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y alimentos de origen animal."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones de alimentación infantil en contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de carnes y aves crudas o poco cocidas en menores de cinco años."
+        },
+        {
+          "institucion": "USDA FSIS",
+          "titulo": "Safe Minimum Internal Temperature Chart",
+          "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+          "utilidad": "Temperaturas internas seguras para carnes y aves."
+        },
+        {
+          "institucion": "NHS",
+          "titulo": "Vitamin A",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-A/",
+          "utilidad": "El hígado es una fuente muy concentrada de vitamina A."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Lamb meat.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Lamb_meat.jpg",
+          "utilidad": "Fotografía ilustrativa; consultar la página original para autoría y licencia."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "lengua-res",
+      "nombre": "Lengua de res",
+      "nombres_alternativos": [
+        "lengua vacuna",
+        "lengua de vaca",
+        "víscera de res"
+      ],
+      "categoria": "Carnes y aves",
+      "resumen": "Víscera muscular que, bien cocida, queda tierna; contiene proteínas, hierro y vitamina B12.",
+      "descripcion": "La lengua es un músculo con textura particular y contenido de grasa variable. Requiere cocción prolongada y retirar la piel exterior; para los niños debe quedar muy tierna, sin trozos gomosos.",
+      "propiedades": [
+        "Aporta proteínas de alto valor biológico.",
+        "Contiene vitaminas del grupo B y minerales; las cantidades varían según especie y corte.",
+        "El contenido de grasa cambia según la pieza y el método de preparación."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de alimentos de origen animal en la alimentación complementaria.",
+        "Puede aportar hierro, zinc y vitamina B12, nutrientes importantes durante el crecimiento."
+      ],
+      "edad": "Puede incorporarse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación y puede mantenerse sentado con apoyo y controlar cabeza y cuello. Ofrecer como parte de una dieta diversa; la leche materna o fórmula continúa siendo fundamental durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente hasta quedar muy tierna. Triturar o desmenuzar finamente y mezclar con puré espeso húmedo; retirar piel, cartílagos, grasa dura, huesos y fragmentos fibrosos."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer muy tierna, finamente desmenuzada o picada y humedecida; adaptar el tamaño a las habilidades del bebé. Revisar que no queden huesos, cartílagos ni fibras largas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir tierna, picada o desmenuzada en piezas pequeñas y manejables, según la masticación del niño. Evitar trozos grandes, secos, duros o fibrosos."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente hasta que esté muy tierna. Retirar la piel exterior gruesa después de cocer, eliminar partes duras y picar o triturar finamente. No ofrecer rodajas gruesas o elásticas.",
+      "recetas": [
+        {
+          "nombre": "Puré suave de lengua de res",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "lengua de res bien cocida y agua potable o vegetal cocido sin sal",
+          "preparacion": "Cocinar hasta que esté completamente tierna. Triturar muy fino y humedecer hasta obtener una preparación espesa y homogénea."
+        },
+        {
+          "nombre": "lengua de res con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "lengua de res bien cocida y calabaza cocida",
+          "preparacion": "Triturar o desmenuzar finamente la carne y mezclar con calabaza muy blanda; adaptar la textura a las habilidades del niño."
+        },
+        {
+          "nombre": "Guiso familiar suave de lengua de res",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "lengua de res, papa o boniato, tomate y vegetales",
+          "preparacion": "Cocinar a fuego suave hasta que todo esté tierno y la carne completamente cocida. Separar la porción infantil antes de añadir sal."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer cruda ni poco cocida; los niños pequeños tienen mayor riesgo de enfermar por microorganismos presentes en carnes insuficientemente cocidas.",
+        "Temperaturas internas de referencia: aves 74 °C; cortes enteros de res, cerdo y carnero 63 °C con reposo de 3 minutos; carnes molidas 71 °C. Usar termómetro cuando sea posible.",
+        "Evitar embutidos, carnes curadas, ahumadas y productos muy salados como opción habitual.",
+        "Retirar todos los huesos, cartílagos, piel dura y partes fibrosas; servir sentado y con supervisión.",
+        "Evitar rodajas gruesas o trozos gomosos; retirar la cubierta exterior y cualquier parte dura."
+      ],
+      "conservacion": "Mantener refrigerada a 4 °C o menos y separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar en porciones pequeñas. Refrigerar las sobras cocidas en recipientes poco profundos y tapados; no dejarlas a temperatura ambiente durante periodos prolongados.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Beef%20tongue%20preparation.jpg?width=1280",
+        "alt": "Fotografía ilustrativa de lengua de res.",
+        "autor": "Charles Haynes / Mind meal",
+        "licencia": "CC BY-SA 2.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Beef_tongue_preparation.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "lengua vacuna",
+        "lengua de vaca",
+        "víscera de res",
+        "lengua de res",
+        "lengua de res para bebés",
+        "cómo preparar lengua de res para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y alimentos de origen animal."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones de alimentación infantil en contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de carnes y aves crudas o poco cocidas en menores de cinco años."
+        },
+        {
+          "institucion": "USDA FSIS",
+          "titulo": "Safe Minimum Internal Temperature Chart",
+          "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+          "utilidad": "Temperaturas internas seguras para carnes y aves."
+        },
+        {
+          "institucion": "NHS",
+          "titulo": "Vitamin A",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-A/",
+          "utilidad": "El hígado es una fuente muy concentrada de vitamina A."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Beef tongue preparation.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Beef_tongue_preparation.jpg",
+          "utilidad": "Fotografía ilustrativa; consultar la página original para autoría y licencia."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "pato",
+      "nombre": "Pato",
+      "nombres_alternativos": [
+        "carne de pato",
+        "pato doméstico",
+        "Anas platyrhynchos domesticus"
+      ],
+      "categoria": "Carnes y aves",
+      "resumen": "Carne de ave de sabor intenso; suele tener más grasa bajo la piel que el pollo.",
+      "descripcion": "Aporta proteínas y vitaminas del grupo B. La cantidad de grasa varía mucho entre piezas y suele concentrarse bajo la piel; retirar piel y grasa visible para una preparación infantil más sencilla.",
+      "propiedades": [
+        "Aporta proteínas de alto valor biológico.",
+        "Contiene vitaminas del grupo B y minerales; las cantidades varían según especie y corte.",
+        "El contenido de grasa cambia según la pieza y el método de preparación."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de alimentos de origen animal en la alimentación complementaria.",
+        "Puede aportar hierro, zinc y vitamina B12, nutrientes importantes durante el crecimiento."
+      ],
+      "edad": "Puede incorporarse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación y puede mantenerse sentado con apoyo y controlar cabeza y cuello. Ofrecer como parte de una dieta diversa; la leche materna o fórmula continúa siendo fundamental durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Cocinar completamente hasta quedar muy tierna. Triturar o desmenuzar finamente y mezclar con puré espeso húmedo; retirar piel, cartílagos, grasa dura, huesos y fragmentos fibrosos."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer muy tierna, finamente desmenuzada o picada y humedecida; adaptar el tamaño a las habilidades del bebé. Revisar que no queden huesos, cartílagos ni fibras largas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir tierna, picada o desmenuzada en piezas pequeñas y manejables, según la masticación del niño. Evitar trozos grandes, secos, duros o fibrosos."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente todas las piezas hasta 74 °C en el centro. Retirar piel, grasa, huesos y tendones; desmenuzar muy fino y humedecer para evitar que quede seco.",
+      "recetas": [
+        {
+          "nombre": "Puré suave de pato",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "pato bien cocida y agua potable o vegetal cocido sin sal",
+          "preparacion": "Cocinar hasta que esté completamente tierna. Triturar muy fino y humedecer hasta obtener una preparación espesa y homogénea."
+        },
+        {
+          "nombre": "pato con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "pato bien cocida y calabaza cocida",
+          "preparacion": "Triturar o desmenuzar finamente la carne y mezclar con calabaza muy blanda; adaptar la textura a las habilidades del niño."
+        },
+        {
+          "nombre": "Guiso familiar suave de pato",
+          "etapa": "Para niños que ya manejan alimentos picados",
+          "ingredientes": "pato, papa o boniato, tomate y vegetales",
+          "preparacion": "Cocinar a fuego suave hasta que todo esté tierno y la carne completamente cocida. Separar la porción infantil antes de añadir sal."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer cruda ni poco cocida; los niños pequeños tienen mayor riesgo de enfermar por microorganismos presentes en carnes insuficientemente cocidas.",
+        "Temperaturas internas de referencia: aves 74 °C; cortes enteros de res, cerdo y carnero 63 °C con reposo de 3 minutos; carnes molidas 71 °C. Usar termómetro cuando sea posible.",
+        "Evitar embutidos, carnes curadas, ahumadas y productos muy salados como opción habitual.",
+        "Retirar todos los huesos, cartílagos, piel dura y partes fibrosas; servir sentado y con supervisión."
+      ],
+      "conservacion": "Mantener refrigerada a 4 °C o menos y separada de alimentos listos para comer mientras esté cruda. Cocinar pronto o congelar en porciones pequeñas. Refrigerar las sobras cocidas en recipientes poco profundos y tapados; no dejarlas a temperatura ambiente durante periodos prolongados.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Duck%20meat.jpg?width=1280",
+        "alt": "Fotografía ilustrativa de pato.",
+        "autor": "Jytim",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Duck_meat.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "carne de pato",
+        "pato doméstico",
+        "Anas platyrhynchos domesticus",
+        "pato",
+        "pato para bebés",
+        "cómo preparar pato para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y alimentos de origen animal."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientaciones de alimentación infantil en contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Safer Food Choices for Children Under 5 Years Old",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Riesgos de carnes y aves crudas o poco cocidas en menores de cinco años."
+        },
+        {
+          "institucion": "USDA FSIS",
+          "titulo": "Safe Minimum Internal Temperature Chart",
+          "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/safe-temperature-chart",
+          "utilidad": "Temperaturas internas seguras para carnes y aves."
+        },
+        {
+          "institucion": "NHS",
+          "titulo": "Vitamin A",
+          "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-A/",
+          "utilidad": "El hígado es una fuente muy concentrada de vitamina A."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "File:Duck meat.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Duck_meat.jpg",
+          "utilidad": "Fotografía ilustrativa; consultar la página original para autoría y licencia."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    }
+  ]
+}

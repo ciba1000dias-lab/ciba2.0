@@ -6,7 +6,8 @@
     "assets/data/alimentos/viandas.json",
     "assets/data/alimentos/vegetales.json",
     "assets/data/alimentos/legumbres.json",
-    "assets/data/alimentos/cereales.json"
+    "assets/data/alimentos/cereales.json",
+    "assets/data/alimentos/carnes.json"
   ],
   "categorias": [
     {
@@ -38,6 +39,12 @@
       "archivo": "assets/data/alimentos/cereales.json",
       "cantidad": 15,
       "slug": "cereales"
+    },
+    {
+      "nombre": "Carnes y aves",
+      "archivo": "assets/data/alimentos/carnes.json",
+      "cantidad": 12,
+      "slug": "carnes"
     }
   ]
 }
