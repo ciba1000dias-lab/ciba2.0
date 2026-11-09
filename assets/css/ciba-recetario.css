@@ -139,3 +139,10 @@ a{color:inherit}
   outline:3px solid #d9b87899;
   outline-offset:3px;
 }
+
+
+/* Control de alergias semántico: el botón ° queda fuera de la etiqueta del checkbox. */
+.ciba-receta-alergia-toggle{align-items:center}
+.ciba-receta-alergia-toggle>label{display:flex!important;flex:1;align-items:center;gap:10px;min-width:0;cursor:pointer}
+.ciba-receta-alergia-toggle>label span{font-size:14px;font-weight:500}
+.ciba-receta-alergia-toggle>.ciba-info{margin-left:4px}
