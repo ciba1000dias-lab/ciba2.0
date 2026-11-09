@@ -13,6 +13,24 @@
     .toLowerCase()
     .trim();
 
+  function resolverSeccion(consulta) {
+    const q = normalizar(consulta);
+    const reglas = [
+      { clave: 'edad', patrones: ['edad', 'desde cuando', 'a partir de cuando', 'cuando introducir', 'cuando puedo', 'meses puede', 'a que edad'] },
+      { clave: 'preparacion', patrones: ['preparar', 'preparacion', 'como dar', 'como ofrecer', 'textura', 'trozos', 'pure', 'papilla', 'aplastar', 'triturar', 'cortar para'] },
+      { clave: 'seguridad', patrones: ['seguro', 'segura', 'lavar', 'limpiar', 'cascara', 'semillas', 'hueso', 'atragantamiento'] },
+      { clave: 'precauciones', patrones: ['precaucion', 'precauciones', 'alergia', 'alergico', 'riesgo', 'peligro', 'evitar', 'contraindicacion'] },
+      { clave: 'recetas', patrones: ['receta', 'recetas', 'cocinar', 'que puedo hacer', 'que puedo preparar'] },
+      { clave: 'conservacion', patrones: ['conservar', 'conservacion', 'guardar', 'nevera', 'refrigerar', 'cuanto dura', 'congelar', 'almacenar'] },
+      { clave: 'beneficios', patrones: ['beneficio', 'beneficios', 'para que sirve', 'es bueno', 'bueno para'] },
+      { clave: 'propiedades', patrones: ['propiedad', 'propiedades', 'vitamina', 'vitaminas', 'nutriente', 'nutrientes', 'fibra', 'proteina', 'calorias', 'grasa', 'composicion', 'nutricional'] },
+      { clave: 'fuentes', patrones: ['fuente', 'fuentes', 'referencia', 'referencias', 'bibliografia', 'evidencia'] },
+      { clave: 'video', patrones: ['video', 'youtube', 'short'] },
+      { clave: 'descripcion', patrones: ['que es', 'informacion general', 'descripcion', 'describe'] }
+    ];
+    return reglas.find((regla) => regla.patrones.some((patron) => q.includes(patron))) || null;
+  }
+
   const crear = (tag, clase, texto) => {
     const nodo = document.createElement(tag);
     if (clase) nodo.className = clase;
@@ -51,7 +69,7 @@
       const alimentos = grupos.flatMap((grupo) => Array.isArray(grupo.alimentos) ? grupo.alimentos : []);
       let categoriaActiva = 'Todos';
 
-      function abrirDetalle(alimento, actualizarHash = true) {
+      function abrirDetalle(alimento, actualizarHash = true, claveSeccion = '') {
         detalle.replaceChildren();
 
         const cabecera = crear('div', 'ciba-alimento-detalle-cabecera');
@@ -131,7 +149,10 @@
           enlazar(video, alimento.video_youtube.url, alimento.video_youtube.titulo || 'Ver video en YouTube');
           detalle.appendChild(video);
         } else {
-          const pendiente = crear('p', 'ciba-alimento-video-pendiente', 'Video de Solo Sin Receta: pendiente de identificar un Short que trate específicamente este alimento o su preparación.');
+          const pendiente = crear('section', 'ciba-alimento-video ciba-alimento-video-pendiente', 'Video de Solo Sin Receta: pendiente de identificar un Short que trate específicamente este alimento o su preparación.');
+          pendiente.id = 'alimento-' + alimento.id + '--video';
+          pendiente.tabIndex = -1;
+          pendiente.style.scrollMarginTop = '110px';
           detalle.appendChild(pendiente);
         }
 
@@ -165,8 +186,17 @@
 
         lista.hidden = true;
         detalle.hidden = false;
-        if (actualizarHash) history.replaceState(null, '', location.pathname + location.search + '#alimento-' + alimento.id);
+        if (actualizarHash) {
+          const ancla = claveSeccion ? '--' + claveSeccion : '';
+          history.replaceState(null, '', location.pathname + location.search + '#alimento-' + alimento.id + ancla);
+        }
         detalle.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (claveSeccion) {
+          setTimeout(() => {
+            const objetivo = document.getElementById('alimento-' + alimento.id + '--' + claveSeccion);
+            if (objetivo) objetivo.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 100);
+        }
       }
 
       function renderizar() {
@@ -204,7 +234,7 @@
           texto.appendChild(crear('strong', '', alimento.nombre));
           texto.appendChild(crear('span', '', alimento.resumen));
           tarjeta.appendChild(texto);
-          tarjeta.addEventListener('click', () => abrirDetalle(alimento));
+          tarjeta.addEventListener('click', () => abrirDetalle(alimento, true, resolverSeccion(buscador.value)?.clave || ''));
           lista.appendChild(tarjeta);
         });
 
