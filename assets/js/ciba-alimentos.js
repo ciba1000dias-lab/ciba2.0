@@ -91,6 +91,7 @@
           const bloque = crear('section', 'ciba-alimento-bloque');
           bloque.id = 'alimento-' + alimento.id + '--' + clave;
           bloque.tabIndex = -1;
+          bloque.style.scrollMarginTop = '110px';
           bloque.appendChild(crear('h4', '', nombre));
           if (Array.isArray(contenido)) {
             const ul = crear('ul');
@@ -125,6 +126,7 @@
           const video = crear('section', 'ciba-alimento-video');
           video.id = 'alimento-' + alimento.id + '--video';
           video.tabIndex = -1;
+          video.style.scrollMarginTop = '110px';
           video.appendChild(crear('h4', '', 'Video relacionado de Solo Sin Receta'));
           enlazar(video, alimento.video_youtube.url, alimento.video_youtube.titulo || 'Ver video en YouTube');
           detalle.appendChild(video);
@@ -137,6 +139,7 @@
           const fuentes = crear('section', 'ciba-alimento-fuentes');
           fuentes.id = 'alimento-' + alimento.id + '--fuentes';
           fuentes.tabIndex = -1;
+          fuentes.style.scrollMarginTop = '110px';
           fuentes.appendChild(crear('h4', '', 'Fuentes y referencias'));
           const ul = crear('ul');
           alimento.fuentes.forEach((fuente) => {
