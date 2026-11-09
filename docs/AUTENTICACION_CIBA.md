@@ -13,7 +13,7 @@ La interfaz de acceso, el botón Google OAuth y el acceso en cabecera están imp
 1. Crear un proyecto en https://supabase.com/dashboard.
 2. En Authentication → URL Configuration:
    - Site URL: https://ciba1000dias-lab.github.io/ciba2.0/
-   - Redirect URL: https://ciba1000dias-lab.github.io/ciba2.0/plataforma/mi-cuenta/acceso/
+   - Redirect URL: https://ciba1000dias-lab.github.io/ciba2.0/plataforma/mi-cuenta/acceso/index.html
 3. En Authentication → Sign In / Providers, habilitar Google.
 
 ## 2. Crear las credenciales OAuth de Google
