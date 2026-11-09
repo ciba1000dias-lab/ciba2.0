@@ -4,7 +4,8 @@
   "archivos": [
     "assets/data/alimentos/frutas.json",
     "assets/data/alimentos/viandas.json",
-    "assets/data/alimentos/vegetales.json"
+    "assets/data/alimentos/vegetales.json",
+    "assets/data/alimentos/legumbres.json"
   ],
   "categorias": [
     {
@@ -24,6 +25,12 @@
       "archivo": "assets/data/alimentos/vegetales.json",
       "cantidad": 7,
       "slug": "vegetales"
+    },
+    {
+      "nombre": "Legumbres",
+      "archivo": "assets/data/alimentos/legumbres.json",
+      "cantidad": 3,
+      "slug": "legumbres"
     }
   ]
 }

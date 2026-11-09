@@ -1,0 +1,372 @@
+{
+  "version": 1,
+  "biblioteca": "CIBA · Crianza · Alimentación",
+  "categoria": "Legumbres",
+  "alimentos": [
+    {
+      "id": "frijol-negro",
+      "nombre": "Frijol negro",
+      "nombres_alternativos": [
+        "frijoles negros",
+        "caraotas negras",
+        "porotos negros",
+        "Phaseolus vulgaris"
+      ],
+      "categoria": "Legumbres",
+      "resumen": "Legumbre habitual en la cocina cubana que aporta proteína vegetal, fibra y minerales.",
+      "descripcion": "El frijol negro es una semilla seca de Phaseolus vulgaris. Aporta proteína vegetal, carbohidratos complejos y fibra; también contiene hierro, folato y otros minerales en cantidades que varían según el producto y la preparación. Su composición no sustituye por sí sola la variedad de una dieta infantil.",
+      "propiedades": [
+        "Aporta proteína de origen vegetal y fibra alimentaria.",
+        "Contiene hierro no hemo y folato; la cantidad depende de la variedad y la preparación.",
+        "Aporta carbohidratos complejos y minerales."
+      ],
+      "beneficios": [
+        "Ayuda a incorporar legumbres con frecuencia en una alimentación diversa.",
+        "Al cocinarse hasta quedar muy blando puede triturarse para obtener una textura adecuada a la etapa."
+      ],
+      "edad": "Puede incorporarse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. La edad por sí sola no basta: debe poder mantenerse sentado con apoyo y controlar la cabeza y el cuello. La leche materna o la fórmula continúan siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Remojar si corresponde y cocinar completamente hasta que el grano se deshaga al presionarlo. Triturar o pasar por un colador si quedan pieles; ofrecer una crema espesa, nunca granos duros enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aplastar muy bien los granos cocidos con un tenedor; se pueden dejar pequeños grumos blandos si el bebé los maneja. Retirar pieles sueltas o duras."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer bien cocidos y aplastados o ligeramente machacados, adaptando el tamaño y la textura a la habilidad del niño. Evitar granos firmes y enteros."
+        }
+      ],
+      "preparacion_segura": "Revisar y lavar los granos, remojar según el producto y cocinarlos completamente en agua potable hasta que estén muy blandos. No ofrecer crudos ni poco cocidos. Para el bebé, triturar y retirar pieles duras; preparar sin cubitos concentrados ni exceso de sal.",
+      "recetas": [
+        {
+          "nombre": "Crema espesa de frijol negro",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Frijoles negros bien cocidos y agua de cocción potable",
+          "preparacion": "Triturar hasta lograr una crema espesa, homogénea y sin granos enteros."
+        },
+        {
+          "nombre": "Frijol negro con calabaza",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Frijoles negros y calabaza bien cocidos",
+          "preparacion": "Aplastar y mezclar hasta una textura suave y húmeda."
+        },
+        {
+          "nombre": "Arroz con frijoles adaptado",
+          "etapa": "Desde los 12 meses, según habilidades",
+          "ingredientes": "Arroz bien cocido y frijoles negros muy blandos",
+          "preparacion": "Mezclar en proporción moderada y aplastar los granos; evitar exceso de sal."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer granos enteros, duros o poco cocidos; pueden representar riesgo de atragantamiento.",
+        "Evitar preparaciones con exceso de sal, embutidos, tocino o cubitos concentrados.",
+        "Si se usan frijoles en conserva, revisar el sodio y enjuagarlos."
+      ],
+      "conservacion": "Una vez cocidas, enfriar pronto y refrigerar en recipiente limpio y tapado. Separar porciones antes de servir al bebé; desechar lo que haya estado en contacto con su saliva. Si se usan legumbres en conserva, elegir preferentemente las de bajo sodio y enjuagarlas.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Black%20Beans.JPG?width=1280",
+        "alt": "Granos secos de frijol negro, variedad común de Phaseolus vulgaris.",
+        "autor": "Wilfredor",
+        "licencia": "CC BY-SA 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Black_Beans.JPG"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "frijol negro",
+        "frijoles negros",
+        "caraotas negras",
+        "porotos negros",
+        "phaseolus vulgaris",
+        "legumbres",
+        "legumbres para bebés",
+        "mi bebé puede comer frijol negro",
+        "cómo preparar frijol negro para bebés",
+        "desde cuándo dar frijol negro",
+        "recetas con frijol negro",
+        "puré de frijol negro",
+        "frijoles para bebés"
+      ],
+      "fuentes": [
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomienda diversidad dietética e incluir legumbres con frecuencia, en formas que no supongan riesgo de atragantamiento."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco de alimentación infantil adaptado al contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de la alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y preparación segura."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional según variedad y preparación."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "frijol-colorado",
+      "nombre": "Frijol colorado",
+      "nombres_alternativos": [
+        "frijoles colorados",
+        "frijol rojo",
+        "habichuela roja",
+        "Phaseolus vulgaris"
+      ],
+      "categoria": "Legumbres",
+      "resumen": "Variedad de frijol común de color rojo, utilizada en guisos y potajes.",
+      "descripcion": "El frijol colorado pertenece al grupo de los frijoles comunes. Aporta proteína vegetal, fibra, almidón y minerales. El contenido nutricional cambia entre cultivares y según el remojo y la cocción; la fotografía muestra un tipo de frijol rojo como referencia, no identifica una variedad cubana específica.",
+      "propiedades": [
+        "Aporta proteína vegetal y fibra.",
+        "Contiene hierro no hemo, folato y otros minerales.",
+        "Su aporte energético procede principalmente de carbohidratos y proteína."
+      ],
+      "beneficios": [
+        "Permite variar las legumbres de la alimentación familiar.",
+        "Bien cocido y aplastado puede incorporarse a purés y guisos de textura blanda."
+      ],
+      "edad": "Puede incorporarse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. La edad por sí sola no basta: debe poder mantenerse sentado con apoyo y controlar la cabeza y el cuello. La leche materna o la fórmula continúan siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Remojar si corresponde y cocinar completamente hasta que el grano se deshaga al presionarlo. Triturar o pasar por un colador si quedan pieles; ofrecer una crema espesa, nunca granos duros enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aplastar muy bien los granos cocidos con un tenedor; se pueden dejar pequeños grumos blandos si el bebé los maneja. Retirar pieles sueltas o duras."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer bien cocidos y aplastados o ligeramente machacados, adaptando el tamaño y la textura a la habilidad del niño. Evitar granos firmes y enteros."
+        }
+      ],
+      "preparacion_segura": "Seleccionar, lavar y remojar los granos siguiendo las instrucciones del producto. Cocinar en agua hasta que estén completamente blandos; nunca consumir frijoles rojos crudos o poco cocidos. No usar olla de cocción lenta para cocinar frijoles rojos secos sin hervido previo adecuado. Para el bebé, triturar completamente.",
+      "recetas": [
+        {
+          "nombre": "Puré de frijol colorado",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Frijoles colorados completamente cocidos",
+          "preparacion": "Triturar y ajustar con agua potable hasta obtener una crema espesa sin granos enteros."
+        },
+        {
+          "nombre": "Frijol colorado con boniato",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Frijoles colorados y boniato bien cocidos",
+          "preparacion": "Aplastar juntos hasta conseguir una mezcla suave y húmeda."
+        },
+        {
+          "nombre": "Potaje familiar adaptado",
+          "etapa": "Desde los 12 meses, según habilidades",
+          "ingredientes": "Frijoles colorados, calabaza y vegetales bien cocidos",
+          "preparacion": "Separar la porción infantil antes de añadir sal; aplastar los granos y retirar partes firmes."
+        }
+      ],
+      "precauciones": [
+        "Los frijoles rojos secos contienen lectinas naturales que se reducen con el remojo y la cocción correcta; nunca ofrecerlos crudos o poco cocidos.",
+        "No ofrecer granos enteros y firmes al bebé.",
+        "Evitar exceso de sal, chorizo, tocino y caldos concentrados."
+      ],
+      "conservacion": "Una vez cocidas, enfriar pronto y refrigerar en recipiente limpio y tapado. Separar porciones antes de servir al bebé; desechar lo que haya estado en contacto con su saliva. Si se usan legumbres en conserva, elegir preferentemente las de bajo sodio y enjuagarlas.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Red%20kidney%20beans.jpg?width=1280",
+        "alt": "Granos secos de frijol rojo tipo kidney, mostrados como referencia visual de frijol colorado.",
+        "autor": "Fumikas Sagisavas",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Red_kidney_beans.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "frijol colorado",
+        "frijoles colorados",
+        "frijol rojo",
+        "habichuela roja",
+        "phaseolus vulgaris",
+        "legumbres",
+        "legumbres para bebés",
+        "mi bebé puede comer frijol colorado",
+        "cómo preparar frijol colorado para bebés",
+        "desde cuándo dar frijol colorado",
+        "recetas con frijol colorado",
+        "puré de frijol colorado",
+        "frijoles para bebés"
+      ],
+      "fuentes": [
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomienda diversidad dietética e incluir legumbres con frecuencia, en formas que no supongan riesgo de atragantamiento."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco de alimentación infantil adaptado al contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de la alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y preparación segura."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional según variedad y preparación."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "chicharo-seco",
+      "nombre": "Chícharo seco",
+      "nombres_alternativos": [
+        "chícharos",
+        "arvejas partidas",
+        "guisantes secos",
+        "split peas",
+        "Pisum sativum"
+      ],
+      "categoria": "Legumbres",
+      "resumen": "Legumbre seca usada en sopas y potajes; al cocinarse se deshace y adquiere textura cremosa.",
+      "descripcion": "El chícharo seco es la semilla madura y deshidratada del guisante (Pisum sativum), a menudo vendido partido. Aporta proteína vegetal, fibra y carbohidratos; también contiene folato y minerales. La composición varía según el producto y la preparación.",
+      "propiedades": [
+        "Aporta proteína vegetal y fibra alimentaria.",
+        "Contiene folato y minerales en cantidades variables.",
+        "Al cocinarse durante suficiente tiempo puede deshacerse y formar una crema."
+      ],
+      "beneficios": [
+        "Ofrece otra legumbre para diversificar las comidas familiares.",
+        "Su textura cremosa una vez bien cocido facilita adaptarlo a purés y sopas espesas."
+      ],
+      "edad": "Puede incorporarse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. La edad por sí sola no basta: debe poder mantenerse sentado con apoyo y controlar la cabeza y el cuello. La leche materna o la fórmula continúan siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Remojar si corresponde y cocinar completamente hasta que el grano se deshaga al presionarlo. Triturar o pasar por un colador si quedan pieles; ofrecer una crema espesa, nunca granos duros enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aplastar muy bien los granos cocidos con un tenedor; se pueden dejar pequeños grumos blandos si el bebé los maneja. Retirar pieles sueltas o duras."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer bien cocidos y aplastados o ligeramente machacados, adaptando el tamaño y la textura a la habilidad del niño. Evitar granos firmes y enteros."
+        }
+      ],
+      "preparacion_segura": "Revisar y enjuagar los chícharos secos. Seguir las instrucciones del envase para el remojo si se indica y cocinar completamente en agua potable hasta que se deshagan. Para el bebé, triturar y comprobar que no queden granos firmes ni pieles duras. No añadir sal en exceso.",
+      "recetas": [
+        {
+          "nombre": "Crema de chícharo",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Chícharos secos bien cocidos y agua potable",
+          "preparacion": "Cocinar hasta que se deshagan y triturar hasta obtener una crema espesa y sin grumos firmes."
+        },
+        {
+          "nombre": "Chícharo con zanahoria",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Chícharos y zanahoria completamente cocidos",
+          "preparacion": "Triturar juntos y adaptar la consistencia."
+        },
+        {
+          "nombre": "Sopa espesa de chícharo y vegetales",
+          "etapa": "Desde los 12 meses, según habilidades",
+          "ingredientes": "Chícharos, calabaza y vegetales bien cocidos",
+          "preparacion": "Cocinar sin cubitos concentrados; aplastar o triturar según la capacidad de masticación."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer chícharos secos ni insuficientemente cocidos.",
+        "Evitar granos firmes y sopas demasiado líquidas que desplacen alimentos nutritivos.",
+        "Controlar la sal, especialmente en mezclas instantáneas o productos envasados."
+      ],
+      "conservacion": "Una vez cocidas, enfriar pronto y refrigerar en recipiente limpio y tapado. Separar porciones antes de servir al bebé; desechar lo que haya estado en contacto con su saliva. Si se usan legumbres en conserva, elegir preferentemente las de bajo sodio y enjuagarlas.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Goya%20yellow%20split%20peas.jpg?width=1280",
+        "alt": "Arvejas amarillas partidas y secas, utilizadas para preparar chícharo.",
+        "autor": "Mx. Granger",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Goya_yellow_split_peas.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "chícharo seco",
+        "chícharos",
+        "arvejas partidas",
+        "guisantes secos",
+        "split peas",
+        "pisum sativum",
+        "legumbres",
+        "legumbres para bebés",
+        "mi bebé puede comer chícharo seco",
+        "cómo preparar chícharo seco para bebés",
+        "desde cuándo dar chícharo seco",
+        "recetas con chícharo seco",
+        "puré de chícharo seco",
+        "frijoles para bebés"
+      ],
+      "fuentes": [
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomienda diversidad dietética e incluir legumbres con frecuencia, en formas que no supongan riesgo de atragantamiento."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco de alimentación infantil adaptado al contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de la alimentación complementaria y adaptación de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y preparación segura."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional según variedad y preparación."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    }
+  ]
+}
