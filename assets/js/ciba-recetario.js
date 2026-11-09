@@ -175,7 +175,19 @@ function mostrarRecetas(data) {
   } else {
     aviso.textContent = 'Estas preparaciones aprobadas coinciden con los ingredientes, la edad y las restricciones indicadas. Comprueba siempre las etiquetas y evita el contacto cruzado con alérgenos.';
   }
-  propuestas.appendChild(aviso);
+  const nota = document.createElement('div');
+  nota.className = 'ciba-receta-nota';
+  const iconoNota = document.createElement('button');
+  iconoNota.type = 'button';
+  iconoNota.className = 'ciba-info';
+  iconoNota.textContent = '°';
+  iconoNota.setAttribute('aria-label', 'Aclaración sobre las recetas sugeridas');
+  iconoNota.title = aviso.textContent;
+  nota.appendChild(iconoNota);
+  const textoNota = document.createElement('span');
+  textoNota.textContent = decision.recetas.length ? 'Información sobre estas sugerencias' : aviso.textContent;
+  nota.appendChild(textoNota);
+  propuestas.appendChild(nota);
 
   for (const receta of decision.recetas) {
     const tarjeta = document.createElement('article');
@@ -207,8 +219,18 @@ function mostrarRecetas(data) {
     tarjeta.appendChild(preparacionTitulo);
     tarjeta.appendChild(crearLista(receta.preparacion || []));
     if (receta.alertas?.length) {
-      const alertas = document.createElement('p');
-      alertas.textContent = 'Precauciones: ' + receta.alertas.join(' ');
+      const alertas = document.createElement('div');
+      alertas.className = 'ciba-receta-alerta-info';
+      const alertaInfo = document.createElement('button');
+      alertaInfo.type = 'button';
+      alertaInfo.className = 'ciba-info';
+      alertaInfo.textContent = '°';
+      alertaInfo.setAttribute('aria-label', 'Precauciones de esta preparación');
+      alertaInfo.title = receta.alertas.join(' ');
+      alertas.appendChild(alertaInfo);
+      const alertaTexto = document.createElement('span');
+      alertaTexto.textContent = 'Precauciones';
+      alertas.appendChild(alertaTexto);
       tarjeta.appendChild(alertas);
     }
     propuestas.appendChild(tarjeta);
@@ -297,7 +319,7 @@ function mostrarResultado(data) {
   listaReconocidos.replaceChildren();
   const reconocidos = data.recognizedFoods || [];
   if (reconocidos.length) {
-    mensaje.textContent = 'Hemos identificado estos alimentos. Comprueba que coincidan con lo que tienes:';
+    mensaje.textContent = 'Ingredientes identificados';
     for (const item of reconocidos) {
       const li = document.createElement('li');
       li.textContent = item.name;
