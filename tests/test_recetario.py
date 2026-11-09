@@ -94,12 +94,12 @@ class TestRecetario(unittest.TestCase):
             self.assertTrue(receta["url_fuente"].startswith("https://"), receta["id"])
             self.assertTrue(receta["alertas_revision"], receta["id"])
 
-    def test_indice_nhs_y_first_steps_tiene_85_entradas_bloqueadas(self) -> None:
+    def test_indice_nhs_y_first_steps_tiene_105_entradas_bloqueadas(self) -> None:
         indice = json.loads((DATA / "recetario" / "indice-recetas-nhs-first-steps.json").read_text(encoding="utf-8"))
         recetas = indice["recetas"]
-        self.assertEqual(len(recetas), 85)
-        self.assertEqual(len({r["id"] for r in recetas}), 85)
-        self.assertEqual(sum(r["fuente_id"] == "nhs-best-start-97" for r in recetas), 53)
+        self.assertEqual(len(recetas), 105)
+        self.assertEqual(len({r["id"] for r in recetas}), 105)
+        self.assertEqual(sum(r["fuente_id"] == "nhs-best-start-97" for r in recetas), 73)
         self.assertEqual(sum(r["fuente_id"] == "first-steps-2023" for r in recetas), 32)
         for receta in recetas:
             self.assertFalse(receta["publicable"], receta["id"])
