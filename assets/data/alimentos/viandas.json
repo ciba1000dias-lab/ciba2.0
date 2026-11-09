@@ -23,7 +23,7 @@
         "Su pulpa cocida queda blanda y puede triturarse con facilidad.",
         "Permite ofrecer sabores y colores variados sin añadir azúcar."
       ],
-      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. La edad por sí sola no basta: deben valorarse el control postural y la capacidad de manejar y tragar alimentos. La leche materna o la fórmula siguen siendo fundamentales.",
       "preparacion_por_edades": [
         {
           "etapa": "Alrededor de 6–8 meses",
@@ -143,7 +143,7 @@
         "Cocida hasta quedar muy blanda puede incorporarse a purés y platos familiares.",
         "Aporta variedad de textura y sabor a las comidas."
       ],
-      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. La edad por sí sola no basta: deben valorarse el control postural y la capacidad de manejar y tragar alimentos. La leche materna o la fórmula siguen siendo fundamentales.",
       "preparacion_por_edades": [
         {
           "etapa": "Alrededor de 6–8 meses",
@@ -270,7 +270,7 @@
         "Al cocinarse completamente desarrolla una textura suave, útil para purés.",
         "Puede combinarse con otros alimentos para diversificar la comida."
       ],
-      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. La edad por sí sola no basta: deben valorarse el control postural y la capacidad de manejar y tragar alimentos. La leche materna o la fórmula siguen siendo fundamentales.",
       "preparacion_por_edades": [
         {
           "etapa": "Alrededor de 6–8 meses",
@@ -375,7 +375,6 @@
       "nombre": "Ñame",
       "nombres_alternativos": [
         "Dioscorea",
-        "mapuey",
         "yam"
       ],
       "categoria": "Viandas",
@@ -390,7 +389,7 @@
         "Cocido queda blando y se puede aplastar para preparar purés.",
         "Ayuda a diversificar las viandas y las preparaciones familiares."
       ],
-      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. La edad por sí sola no basta: deben valorarse el control postural y la capacidad de manejar y tragar alimentos. La leche materna o la fórmula siguen siendo fundamentales.",
       "preparacion_por_edades": [
         {
           "etapa": "Alrededor de 6–8 meses",
@@ -509,7 +508,7 @@
         "Su pulpa cocida se aplasta fácilmente.",
         "Es versátil y puede combinarse con vegetales, legumbres o proteínas."
       ],
-      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. La edad por sí sola no basta: deben valorarse el control postural y la capacidad de manejar y tragar alimentos. La leche materna o la fórmula siguen siendo fundamentales.",
       "preparacion_por_edades": [
         {
           "etapa": "Alrededor de 6–8 meses",
@@ -611,12 +610,11 @@
     },
     {
       "id": "platano-vianda",
-      "nombre": "Plátano vianda",
+      "nombre": "Plátano macho verde",
       "nombres_alternativos": [
-        "plátano macho",
+        "plátano vianda",
         "plátano verde",
-        "plantain",
-        "Musa"
+        "plantain"
       ],
       "categoria": "Viandas",
       "resumen": "Plátano de pulpa firme que se consume cocido; aporta almidón y energía.",
@@ -630,7 +628,7 @@
         "Puede ofrecerse cocido y aplastado en una textura adecuada.",
         "Permite preparaciones familiares variadas sin necesidad de freír."
       ],
-      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. La edad por sí sola no basta: deben valorarse el control postural y la capacidad de manejar y tragar alimentos. La leche materna o la fórmula siguen siendo fundamentales.",
       "preparacion_por_edades": [
         {
           "etapa": "Alrededor de 6–8 meses",
@@ -732,12 +730,8 @@
     },
     {
       "id": "platano-burro",
-      "nombre": "Plátano burro",
-      "nombres_alternativos": [
-        "burro",
-        "Musa ABB",
-        "bluggoe"
-      ],
+      "nombre": "Plátano burro verde",
+      "nombres_alternativos": [],
       "categoria": "Viandas",
       "resumen": "Tipo de plátano de cocinar, de pulpa firme y uso frecuente en guisos y preparaciones hervidas.",
       "descripcion": "El plátano burro es un tipo de plátano de cocinar, distinto del plátano fruta. Su aporte principal es almidón y energía, con potasio y fibra en cantidades variables. La textura y dulzor cambian con la maduración.",
@@ -750,7 +744,7 @@
         "Cocido puede integrarse en purés y platos familiares.",
         "Ofrece otra variedad de plátano de cocinar para diversificar la dieta."
       ],
-      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. No se ofrecen sólidos antes de los 4 meses. La leche materna o la fórmula siguen siendo fundamentales.",
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. La edad por sí sola no basta: deben valorarse el control postural y la capacidad de manejar y tragar alimentos. La leche materna o la fórmula siguen siendo fundamentales.",
       "preparacion_por_edades": [
         {
           "etapa": "Alrededor de 6–8 meses",
