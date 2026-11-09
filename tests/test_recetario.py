@@ -58,9 +58,9 @@ class TestRecetario(unittest.TestCase):
                 self.assertEqual(receta.get("estado"), "aprobada", receta["id"])
                 self.assertEqual(receta.get("revision", {}).get("estado"), "aprobada", receta["id"])
 
-    def test_catalogo_ampliado_incluye_27_fichas_aprobadas(self) -> None:
+    def test_catalogo_ampliado_incluye_35_fichas_aprobadas(self) -> None:
         self.assertEqual(self.catalogo.get("estado_catalogo"), "ampliacion_progresiva")
-        self.assertEqual(len(self.catalogo["recetas"]), 27)
+        self.assertEqual(len(self.catalogo["recetas"]), 35)
         for receta in self.catalogo["recetas"]:
             self.assertTrue(receta.get("publicable"), receta["id"])
             self.assertEqual(receta.get("estado"), "aprobada", receta["id"])
