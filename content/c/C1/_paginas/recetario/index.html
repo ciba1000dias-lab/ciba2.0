@@ -43,11 +43,13 @@
       </section>
 
       <section class="ciba-receta-panel ciba-receta-panel-alergias" aria-labelledby="restricciones-titulo">
-        <label class="ciba-receta-alergia-toggle" for="ciba-hay-alergias">
-          <input id="ciba-hay-alergias" type="checkbox">
-          <span>¿El niño o la niña tiene alguna alergia alimentaria?</span>
-          <button class="ciba-info" type="button" aria-label="Información sobre alergias" title="Marca esta opción únicamente si existe una alergia conocida o diagnosticada. Podrás especificar los alimentos que deben excluirse.">°</button>
-        </label>
+        <div class="ciba-receta-alergia-toggle">
+          <label for="ciba-hay-alergias">
+            <input id="ciba-hay-alergias" type="checkbox">
+            <span>¿El niño o la niña tiene alguna alergia alimentaria?</span>
+          </label>
+          <button class="ciba-info" type="button" aria-label="Información sobre alergias" title="Marca esta opción únicamente si existe una alergia conocida o diagnosticada. Podrás especificar los alimentos que deben excluirse." aria-expanded="false">°</button>
+        </div>
         <div id="ciba-alergias-detalle" class="ciba-receta-alergias-detalle" hidden>
           <p class="ciba-receta-ayuda">Selecciona todos los alérgenos que debe evitarse.</p>
           <div class="ciba-receta-opciones">
