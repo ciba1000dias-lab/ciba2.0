@@ -1030,6 +1030,196 @@
       ],
       "estado": "piloto",
       "imagenes": []
+    },
+    {
+      "id": "berenjena",
+      "nombre": "Berenjena",
+      "nombres_alternativos": [
+        "Solanum melongena"
+      ],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza que debe cocinarse hasta quedar muy blanda y ofrecerse picada o triturada.",
+      "descripcion": "Hortaliza que debe cocinarse hasta quedar muy blanda y ofrecerse picada o triturada.",
+      "propiedades": [
+        "Aporta fibra y micronutrientes en cantidades variables."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de vegetales en la alimentación familiar."
+      ],
+      "edad": "Puede ofrecerse dentro de una alimentación complementaria variada desde alrededor de los 6 meses, con preparación y textura apropiadas.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Cocinar hasta muy blando y triturar o aplastar."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Cocinar hasta ablandar y picar o aplastar."
+        },
+        {
+          "etapa": "12–23 meses",
+          "forma": "Ofrecer bien cocido en piezas blandas adaptadas a las habilidades."
+        },
+        {
+          "etapa": "24–59 meses",
+          "forma": "Servir cocido o en la forma segura apropiada a las habilidades."
+        }
+      ],
+      "preparacion_segura": [
+        "Lavar bajo agua potable.",
+        "Cocinar hasta que se aplaste fácilmente.",
+        "Retirar partes duras y adaptar textura y tamaño."
+      ],
+      "recetas": [],
+      "precauciones": [
+        "No ofrecer piezas crudas duras ni tallos fibrosos.",
+        "Supervisar y adaptar a las habilidades de masticación."
+      ],
+      "conservacion": "Conservar refrigerado y lavar justo antes de preparar.",
+      "imagen_principal": null,
+      "video_youtube": null,
+      "palabras_clave": [
+        "berenjena",
+        "berenjena",
+        "vegetales para bebés"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco general de alimentación complementaria."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "calabacin",
+      "nombre": "Calabacín",
+      "nombres_alternativos": [
+        "Calabacita",
+        "Cucurbita pepo"
+      ],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza de pulpa tierna; cocinar hasta que esté blanda y adaptar el corte a las habilidades.",
+      "descripcion": "Hortaliza de pulpa tierna; cocinar hasta que esté blanda y adaptar el corte a las habilidades.",
+      "propiedades": [
+        "Aporta fibra y micronutrientes en cantidades variables."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de vegetales en la alimentación familiar."
+      ],
+      "edad": "Puede ofrecerse dentro de una alimentación complementaria variada desde alrededor de los 6 meses, con preparación y textura apropiadas.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Cocinar hasta muy blando y triturar o aplastar."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Cocinar hasta ablandar y picar o aplastar."
+        },
+        {
+          "etapa": "12–23 meses",
+          "forma": "Ofrecer bien cocido en piezas blandas adaptadas a las habilidades."
+        },
+        {
+          "etapa": "24–59 meses",
+          "forma": "Servir cocido o en la forma segura apropiada a las habilidades."
+        }
+      ],
+      "preparacion_segura": [
+        "Lavar bajo agua potable.",
+        "Cocinar hasta que se aplaste fácilmente.",
+        "Retirar partes duras y adaptar textura y tamaño."
+      ],
+      "recetas": [],
+      "precauciones": [
+        "No ofrecer piezas crudas duras ni tallos fibrosos.",
+        "Supervisar y adaptar a las habilidades de masticación."
+      ],
+      "conservacion": "Conservar refrigerado y lavar justo antes de preparar.",
+      "imagen_principal": null,
+      "video_youtube": null,
+      "palabras_clave": [
+        "calabacin",
+        "calabacín",
+        "vegetales para bebés"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco general de alimentación complementaria."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "brocoli",
+      "nombre": "Brócoli",
+      "nombres_alternativos": [
+        "Brassica oleracea var. italica"
+      ],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Vegetal que debe cocinarse hasta ablandar; deshacer floretes y tallos duros antes de ofrecer.",
+      "descripcion": "Vegetal que debe cocinarse hasta ablandar; deshacer floretes y tallos duros antes de ofrecer.",
+      "propiedades": [
+        "Aporta fibra y micronutrientes en cantidades variables."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de vegetales en la alimentación familiar."
+      ],
+      "edad": "Puede ofrecerse dentro de una alimentación complementaria variada desde alrededor de los 6 meses, con preparación y textura apropiadas.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Cocinar hasta muy blando y triturar o aplastar."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Cocinar hasta ablandar y picar o aplastar."
+        },
+        {
+          "etapa": "12–23 meses",
+          "forma": "Ofrecer bien cocido en piezas blandas adaptadas a las habilidades."
+        },
+        {
+          "etapa": "24–59 meses",
+          "forma": "Servir cocido o en la forma segura apropiada a las habilidades."
+        }
+      ],
+      "preparacion_segura": [
+        "Lavar bajo agua potable.",
+        "Cocinar hasta que se aplaste fácilmente.",
+        "Retirar partes duras y adaptar textura y tamaño."
+      ],
+      "recetas": [],
+      "precauciones": [
+        "No ofrecer piezas crudas duras ni tallos fibrosos.",
+        "Supervisar y adaptar a las habilidades de masticación."
+      ],
+      "conservacion": "Conservar refrigerado y lavar justo antes de preparar.",
+      "imagen_principal": null,
+      "video_youtube": null,
+      "palabras_clave": [
+        "brocoli",
+        "brócoli",
+        "vegetales para bebés"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Marco general de alimentación complementaria."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
     }
   ]
 }
