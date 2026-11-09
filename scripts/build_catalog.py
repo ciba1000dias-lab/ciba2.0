@@ -389,6 +389,14 @@ def _conectar_sistema_global(
     )
 
     if script_cargado:
+        etiqueta_existente = script_cargado.group(0)
+        etiqueta_actualizada = re.sub(
+            r'(\\bsrc\\s*=\\s*["\'][^"\']*ciba-global\\.js)(?:[?#][^"\']*)?(["\'])',
+            r'\\1?v=20261109-2\\2',
+            etiqueta_existente,
+            flags=re.IGNORECASE,
+        )
+        contenido = contenido.replace(etiqueta_existente, etiqueta_actualizada, 1)
         try:
             archivo_html.write_text(contenido, encoding="utf-8")
         except (OSError, UnicodeError) as exc:
