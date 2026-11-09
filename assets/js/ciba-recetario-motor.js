@@ -26,16 +26,37 @@ const ALERGENOS_POR_ALIMENTO = {
   'requeson': ['leche', 'lacteos'],
   'huevo-gallina': ['huevo'],
   'huevo-codorniz': ['huevo'],
-  'pescado-blanco': ['pescado'],
+  'pargo': ['pescado'],
+  'tilapia': ['pescado'],
+  'sardina': ['pescado'],
+  'atun': ['pescado'],
+  'jurel': ['pescado'],
+  'macarela': ['pescado'],
+  'lisa': ['pescado'],
+  'claria': ['pescado'],
+  'merluza': ['pescado'],
+  'bonito': ['pescado'],
+  'pescado-enlatado': ['pescado'],
+  'croquetas-pescado': ['pescado'],
+  'tiburon': ['pescado'],
+  'pulpo': ['moluscos'],
+  'calamar': ['moluscos'],
+  'ostiones': ['moluscos'],
+  'cobo': ['moluscos'],
   'atun': ['pescado'],
   'salmon': ['pescado'],
   'sardina': ['pescado'],
   'camaron': ['crustaceos'],
   'langosta': ['crustaceos'],
   'cangrejo': ['crustaceos'],
-  'soya': ['soya'],
+  'prolacsin-soya': ['soya'],
   'frijol-negro': ['legumbres'],
   'frijol-colorado': ['legumbres'],
+  'frijol-blanco': ['legumbres'],
+  'frijol-bayo': ['legumbres'],
+  'frijol-caballero': ['legumbres'],
+  'chicharo-seco': ['legumbres'],
+  'gandul': ['legumbres'],
   'garbanzos': ['legumbres'],
   'lentejas': ['legumbres'],
   'chicharos': ['legumbres'],
@@ -45,7 +66,10 @@ const ALERGENOS_POR_ALIMENTO = {
   'ajonjoli': ['sesamo'],
   'trigo': ['trigo-gluten'],
   'pan': ['trigo-gluten'],
-  'pasta-trigo': ['trigo-gluten']
+  'harina-trigo': ['trigo-gluten'],
+  'pasta': ['trigo-gluten'],
+  'cebada': ['trigo-gluten'],
+  'centeno': ['trigo-gluten']
 };
 
 const ALIAS_ALERGENOS = [
@@ -53,13 +77,14 @@ const ALIAS_ALERGENOS = [
   { key: 'lacteos', terms: ['lactosa', 'intolerancia a la lactosa'] },
   { key: 'huevo', terms: ['huevo', 'huevos', 'clara', 'yema'] },
   { key: 'pescado', terms: ['pescado', 'atun', 'salmon', 'sardina', 'merluza'] },
+  { key: 'moluscos', terms: ['pulpo', 'calamar', 'ostion', 'ostiones', 'cobo', 'moluscos'] },
   { key: 'crustaceos', terms: ['camaron', 'camarones', 'langosta', 'cangrejo', 'crustaceos'] },
   { key: 'soya', terms: ['soya', 'soja'] },
   { key: 'mani', terms: ['mani', 'cacahuete', 'cacahuate'] },
   { key: 'frutos-secos', terms: ['almendra', 'nuez', 'avellana', 'anacardo', 'pistacho', 'frutos secos'] },
   { key: 'sesamo', terms: ['sesamo', 'ajonjoli'] },
   { key: 'trigo-gluten', terms: ['trigo', 'gluten', 'cebada', 'centeno'] },
-  { key: 'legumbres', terms: ['legumbres', 'frijol', 'frijoles', 'lentejas', 'garbanzos', 'chicharos'] }
+  { key: 'legumbres', terms: ['legumbres', 'frijol', 'frijoles', 'lentejas', 'garbanzos', 'chicharos', 'gandul'] }
 ];
 
 function normalizar(texto) {
