@@ -1,5 +1,6 @@
 {
   "version": 1,
+  "biblioteca": "CIBA · Índice ligero para el buscador global",
   "alimentos": [
     {
       "id": "aguacate",
@@ -935,6 +936,1274 @@
       "ruta_publica": "c/C1/alimentos/vegetales/"
     },
     {
+      "id": "frijol-negro",
+      "nombre": "Frijol negro",
+      "categoria": "Legumbres",
+      "resumen": "Legumbre habitual en la cocina cubana que aporta proteína vegetal, fibra y minerales.",
+      "nombres_alternativos": [
+        "frijoles negros",
+        "caraotas negras",
+        "porotos negros",
+        "Phaseolus vulgaris"
+      ],
+      "palabras_clave": [
+        "frijol negro",
+        "frijoles negros",
+        "caraotas negras",
+        "porotos negros",
+        "phaseolus vulgaris",
+        "legumbres",
+        "legumbres para bebés",
+        "mi bebé puede comer frijol negro",
+        "cómo preparar frijol negro para bebés",
+        "desde cuándo dar frijol negro",
+        "recetas con frijol negro",
+        "puré de frijol negro",
+        "frijoles para bebés"
+      ],
+      "ruta_publica": "c/C1/alimentos/legumbres/"
+    },
+    {
+      "id": "frijol-colorado",
+      "nombre": "Frijol colorado",
+      "categoria": "Legumbres",
+      "resumen": "Variedad de frijol común de color rojo, utilizada en guisos y potajes.",
+      "nombres_alternativos": [
+        "frijoles colorados",
+        "frijol rojo",
+        "habichuela roja",
+        "Phaseolus vulgaris"
+      ],
+      "palabras_clave": [
+        "frijol colorado",
+        "frijoles colorados",
+        "frijol rojo",
+        "habichuela roja",
+        "phaseolus vulgaris",
+        "legumbres",
+        "legumbres para bebés",
+        "mi bebé puede comer frijol colorado",
+        "cómo preparar frijol colorado para bebés",
+        "desde cuándo dar frijol colorado",
+        "recetas con frijol colorado",
+        "puré de frijol colorado",
+        "frijoles para bebés"
+      ],
+      "ruta_publica": "c/C1/alimentos/legumbres/"
+    },
+    {
+      "id": "chicharo-seco",
+      "nombre": "Chícharo seco",
+      "categoria": "Legumbres",
+      "resumen": "Legumbre seca usada en sopas y potajes; al cocinarse se deshace y adquiere textura cremosa.",
+      "nombres_alternativos": [
+        "chícharos",
+        "arvejas partidas",
+        "guisantes secos",
+        "split peas",
+        "Pisum sativum"
+      ],
+      "palabras_clave": [
+        "chícharo seco",
+        "chícharos",
+        "arvejas partidas",
+        "guisantes secos",
+        "split peas",
+        "pisum sativum",
+        "legumbres",
+        "legumbres para bebés",
+        "mi bebé puede comer chícharo seco",
+        "cómo preparar chícharo seco para bebés",
+        "desde cuándo dar chícharo seco",
+        "recetas con chícharo seco",
+        "puré de chícharo seco",
+        "frijoles para bebés"
+      ],
+      "ruta_publica": "c/C1/alimentos/legumbres/"
+    },
+    {
+      "id": "frijol-blanco",
+      "nombre": "Frijol blanco",
+      "categoria": "Legumbres",
+      "resumen": "Frijol común de semillas claras, útil en potajes y guisos; aporta proteína vegetal y fibra.",
+      "nombres_alternativos": [
+        "frijoles blancos",
+        "habichuela blanca",
+        "judía blanca",
+        "alubia blanca",
+        "Phaseolus vulgaris"
+      ],
+      "palabras_clave": [
+        "frijol blanco",
+        "frijoles blancos",
+        "habichuela blanca",
+        "judía blanca",
+        "alubia blanca",
+        "phaseolus vulgaris",
+        "legumbres para bebés",
+        "mi bebé puede comer frijoles blancos",
+        "cómo preparar frijol blanco para bebés",
+        "desde cuándo dar frijoles blancos",
+        "puré de frijol blanco",
+        "potaje de frijoles blancos"
+      ],
+      "ruta_publica": "c/C1/alimentos/legumbres/"
+    },
+    {
+      "id": "lentejas",
+      "nombre": "Lentejas",
+      "categoria": "Legumbres",
+      "resumen": "Legumbre pequeña que se cocina con relativa rapidez y aporta proteína vegetal, fibra y folato.",
+      "nombres_alternativos": [
+        "lenteja",
+        "lentejas pardinas",
+        "lentejas rojas",
+        "Lens culinaris"
+      ],
+      "palabras_clave": [
+        "lentejas",
+        "lenteja",
+        "lentejas rojas",
+        "lentejas pardinas",
+        "lens culinaris",
+        "legumbres para bebés",
+        "mi bebé puede comer lentejas",
+        "desde cuándo dar lentejas",
+        "cómo cocinar lentejas para bebés",
+        "puré de lentejas",
+        "crema de lentejas",
+        "recetas con lentejas para niños"
+      ],
+      "ruta_publica": "c/C1/alimentos/legumbres/"
+    },
+    {
+      "id": "garbanzos",
+      "nombre": "Garbanzos",
+      "categoria": "Legumbres",
+      "resumen": "Legumbre de semilla redondeada que aporta proteína vegetal, fibra, folato y minerales.",
+      "nombres_alternativos": [
+        "garbanzo",
+        "chícharo garbanzo",
+        "Cicer arietinum",
+        "nut"
+      ],
+      "palabras_clave": [
+        "garbanzos",
+        "garbanzo",
+        "cicer arietinum",
+        "chícharo garbanzo",
+        "legumbres para bebés",
+        "mi bebé puede comer garbanzos",
+        "desde cuándo dar garbanzos",
+        "cómo preparar garbanzos para bebés",
+        "puré de garbanzos",
+        "hummus para bebés",
+        "garbanzos para niños",
+        "recetas con garbanzos"
+      ],
+      "ruta_publica": "c/C1/alimentos/legumbres/"
+    },
+    {
+      "id": "frijol-bayo",
+      "nombre": "Frijol bayo",
+      "categoria": "Legumbres",
+      "resumen": "Variedad de frijol común de tonalidad beige o canela; aporta proteína vegetal, fibra y folato.",
+      "nombres_alternativos": [
+        "frijoles bayos",
+        "frijol beige",
+        "frijol canela",
+        "Phaseolus vulgaris"
+      ],
+      "palabras_clave": [
+        "frijol bayo",
+        "frijoles bayos",
+        "frijol beige",
+        "frijol canela",
+        "phaseolus vulgaris",
+        "legumbres para bebés",
+        "mi bebé puede comer frijol bayo",
+        "cómo preparar frijol bayo para bebés",
+        "desde cuándo dar frijol bayo",
+        "puré de frijol bayo",
+        "recetas con frijol bayo"
+      ],
+      "ruta_publica": "c/C1/alimentos/legumbres/"
+    },
+    {
+      "id": "frijol-caballero",
+      "nombre": "Frijol caballero (haba de Lima)",
+      "categoria": "Legumbres",
+      "resumen": "Legumbre conocida en Cuba como frijol caballero; algunas variedades requieren especial cuidado por sus compuestos naturales.",
+      "nombres_alternativos": [
+        "frijol de la tierra",
+        "haba de Lima",
+        "frijol lima",
+        "lima bean",
+        "Phaseolus lunatus"
+      ],
+      "palabras_clave": [
+        "frijol caballero",
+        "frijoles caballeros",
+        "haba de Lima",
+        "habas de Lima",
+        "frijol de la tierra",
+        "frijol lima",
+        "phaseolus lunatus",
+        "mi bebé puede comer frijol caballero",
+        "cómo cocinar frijol caballero",
+        "preparación segura de haba de Lima",
+        "legumbres cubanas"
+      ],
+      "ruta_publica": "c/C1/alimentos/legumbres/"
+    },
+    {
+      "id": "gandul",
+      "nombre": "Gandul",
+      "categoria": "Legumbres",
+      "resumen": "Legumbre tropical conocida en Cuba y el Caribe; sus semillas aportan proteína vegetal, fibra y minerales.",
+      "nombres_alternativos": [
+        "guandú",
+        "guandul",
+        "frijol de palo",
+        "frijol chícharo",
+        "quinchoncho",
+        "pigeon pea",
+        "Cajanus cajan"
+      ],
+      "palabras_clave": [
+        "gandul",
+        "guandú",
+        "guandul",
+        "frijol de palo",
+        "frijol chícharo",
+        "quinchoncho",
+        "pigeon pea",
+        "cajanus cajan",
+        "gandules para bebés",
+        "mi bebé puede comer gandul",
+        "cómo preparar gandul para bebés",
+        "arroz con gandules",
+        "puré de gandul",
+        "legumbres cubanas"
+      ],
+      "ruta_publica": "c/C1/alimentos/legumbres/"
+    },
+    {
+      "id": "arroz",
+      "nombre": "Arroz",
+      "categoria": "Cereales",
+      "resumen": "Cereal básico de la cocina cubana, presente tanto en preparaciones sencillas como en platos familiares con frijoles, vegetales o pollo.",
+      "nombres_alternativos": [
+        "arroz blanco",
+        "arroz integral",
+        "Oryza sativa",
+        "arroz amarillo",
+        "arroz blanco cubano",
+        "arroz con frijoles",
+        "congrí",
+        "congris",
+        "moros y cristianos",
+        "arroz con pollo",
+        "arroz con vegetales"
+      ],
+      "palabras_clave": [
+        "arroz",
+        "arroz blanco",
+        "arroz integral",
+        "oryza sativa",
+        "cereales para bebés",
+        "mi bebé puede comer arroz",
+        "cómo preparar arroz para bebés",
+        "desde cuándo dar arroz",
+        "recetas con arroz",
+        "arroz amarillo",
+        "arroz con bijol",
+        "arroz con bija",
+        "arroz con achiote",
+        "congrí",
+        "congris",
+        "congri oriental",
+        "congrí oriental",
+        "congrí cubano",
+        "moros y cristianos",
+        "moros",
+        "arroz con frijoles",
+        "arroz con frijoles negros",
+        "arroz con frijoles colorados",
+        "arroz con pollo",
+        "arroz con vegetales",
+        "arroz con verduras",
+        "arroz blanco cubano",
+        "mi bebé puede comer congrí",
+        "mi bebé puede comer moros y cristianos",
+        "cómo preparar congrí para bebés",
+        "cómo adaptar arroz amarillo para bebés",
+        "arroz para bebés"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "maiz",
+      "nombre": "Maíz",
+      "categoria": "Cereales",
+      "resumen": "Cereal versátil que se consume tierno, seco y molido.",
+      "nombres_alternativos": [
+        "maíz tierno",
+        "maíz en grano",
+        "Zea mays"
+      ],
+      "palabras_clave": [
+        "maíz",
+        "maíz tierno",
+        "maíz en grano",
+        "zea mays",
+        "cereales para bebés",
+        "mi bebé puede comer maíz",
+        "cómo preparar maíz para bebés",
+        "desde cuándo dar maíz",
+        "recetas con maíz"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "avena",
+      "nombre": "Avena",
+      "categoria": "Cereales",
+      "resumen": "Cereal de grano entero utilizado en gachas y papillas.",
+      "nombres_alternativos": [
+        "hojuelas de avena",
+        "Avena sativa",
+        "porridge"
+      ],
+      "palabras_clave": [
+        "avena",
+        "hojuelas de avena",
+        "avena sativa",
+        "porridge",
+        "cereales para bebés",
+        "mi bebé puede comer avena",
+        "cómo preparar avena para bebés",
+        "desde cuándo dar avena",
+        "recetas con avena"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "trigo",
+      "nombre": "Trigo",
+      "categoria": "Cereales",
+      "resumen": "Cereal del que se obtienen harinas, panes y pastas.",
+      "nombres_alternativos": [
+        "grano de trigo",
+        "Triticum aestivum",
+        "trigo integral"
+      ],
+      "palabras_clave": [
+        "trigo",
+        "grano de trigo",
+        "triticum aestivum",
+        "trigo integral",
+        "cereales para bebés",
+        "mi bebé puede comer trigo",
+        "cómo preparar trigo para bebés",
+        "desde cuándo dar trigo",
+        "recetas con trigo"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "harina-maiz",
+      "nombre": "Harina de maíz",
+      "categoria": "Cereales",
+      "resumen": "Producto molido del maíz usado en gachas y masas.",
+      "nombres_alternativos": [
+        "maíz molido",
+        "cornmeal",
+        "fubá"
+      ],
+      "palabras_clave": [
+        "harina de maíz",
+        "maíz molido",
+        "cornmeal",
+        "fubá",
+        "cereales para bebés",
+        "mi bebé puede comer harina de maíz",
+        "cómo preparar harina de maíz para bebés",
+        "desde cuándo dar harina de maíz",
+        "recetas con harina de maíz"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "harina-trigo",
+      "nombre": "Harina de trigo",
+      "categoria": "Cereales",
+      "resumen": "Ingrediente básico de panes, masas y pastas.",
+      "nombres_alternativos": [
+        "harina integral",
+        "harina refinada",
+        "Triticum aestivum"
+      ],
+      "palabras_clave": [
+        "harina de trigo",
+        "harina integral",
+        "harina refinada",
+        "triticum aestivum",
+        "cereales para bebés",
+        "mi bebé puede comer harina de trigo",
+        "cómo preparar harina de trigo para bebés",
+        "desde cuándo dar harina de trigo",
+        "recetas con harina de trigo"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "cebada",
+      "nombre": "Cebada",
+      "categoria": "Cereales",
+      "resumen": "Cereal usado en sopas y guisos después de cocción prolongada.",
+      "nombres_alternativos": [
+        "cebada perlada",
+        "Hordeum vulgare"
+      ],
+      "palabras_clave": [
+        "cebada",
+        "cebada perlada",
+        "hordeum vulgare",
+        "cereales para bebés",
+        "mi bebé puede comer cebada",
+        "cómo preparar cebada para bebés",
+        "desde cuándo dar cebada",
+        "recetas con cebada"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "centeno",
+      "nombre": "Centeno",
+      "categoria": "Cereales",
+      "resumen": "Cereal usado principalmente en panes y harinas.",
+      "nombres_alternativos": [
+        "Secale cereale",
+        "harina de centeno"
+      ],
+      "palabras_clave": [
+        "centeno",
+        "secale cereale",
+        "harina de centeno",
+        "cereales para bebés",
+        "mi bebé puede comer centeno",
+        "cómo preparar centeno para bebés",
+        "desde cuándo dar centeno",
+        "recetas con centeno"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "mijo",
+      "nombre": "Mijo",
+      "categoria": "Cereales",
+      "resumen": "Cereal pequeño que permite variar los granos habituales.",
+      "nombres_alternativos": [
+        "millet",
+        "Panicum miliaceum"
+      ],
+      "palabras_clave": [
+        "mijo",
+        "millet",
+        "panicum miliaceum",
+        "cereales para bebés",
+        "mi bebé puede comer mijo",
+        "cómo preparar mijo para bebés",
+        "desde cuándo dar mijo",
+        "recetas con mijo"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "sorgo",
+      "nombre": "Sorgo",
+      "categoria": "Cereales",
+      "resumen": "Cereal tropical que se consume como grano o harina en distintas regiones.",
+      "nombres_alternativos": [
+        "Sorghum bicolor",
+        "millo",
+        "sorghum"
+      ],
+      "palabras_clave": [
+        "sorgo",
+        "sorghum bicolor",
+        "millo",
+        "sorghum",
+        "cereales para bebés",
+        "mi bebé puede comer sorgo",
+        "cómo preparar sorgo para bebés",
+        "desde cuándo dar sorgo",
+        "recetas con sorgo"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "quinoa",
+      "nombre": "Quinoa",
+      "categoria": "Cereales",
+      "resumen": "Pseudocereal andino que se cocina como un grano.",
+      "nombres_alternativos": [
+        "quinua",
+        "Chenopodium quinoa"
+      ],
+      "palabras_clave": [
+        "quinoa",
+        "quinua",
+        "chenopodium quinoa",
+        "cereales para bebés",
+        "mi bebé puede comer quinoa",
+        "cómo preparar quinoa para bebés",
+        "desde cuándo dar quinoa",
+        "recetas con quinoa"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "polenta",
+      "nombre": "Polenta de maíz",
+      "categoria": "Cereales",
+      "resumen": "Preparación cocida de harina gruesa de maíz.",
+      "nombres_alternativos": [
+        "polenta",
+        "sémola de maíz"
+      ],
+      "palabras_clave": [
+        "polenta de maíz",
+        "polenta",
+        "sémola de maíz",
+        "cereales para bebés",
+        "mi bebé puede comer polenta de maíz",
+        "cómo preparar polenta de maíz para bebés",
+        "desde cuándo dar polenta de maíz",
+        "recetas con polenta de maíz"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "pan",
+      "nombre": "Pan",
+      "categoria": "Cereales",
+      "resumen": "Alimento elaborado habitualmente con harina, agua y levadura.",
+      "nombres_alternativos": [
+        "pan de trigo",
+        "pan integral",
+        "pan blanco"
+      ],
+      "palabras_clave": [
+        "pan",
+        "pan de trigo",
+        "pan integral",
+        "pan blanco",
+        "cereales para bebés",
+        "mi bebé puede comer pan",
+        "cómo preparar pan para bebés",
+        "desde cuándo dar pan",
+        "recetas con pan"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "pasta",
+      "nombre": "Pasta",
+      "categoria": "Cereales",
+      "resumen": "Producto elaborado habitualmente con sémola de trigo y agua.",
+      "nombres_alternativos": [
+        "macarrones",
+        "espaguetis",
+        "fideos",
+        "pasta de trigo"
+      ],
+      "palabras_clave": [
+        "pasta",
+        "macarrones",
+        "espaguetis",
+        "fideos",
+        "pasta de trigo",
+        "cereales para bebés",
+        "mi bebé puede comer pasta",
+        "cómo preparar pasta para bebés",
+        "desde cuándo dar pasta",
+        "recetas con pasta"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "cuscus",
+      "nombre": "Cuscús",
+      "categoria": "Cereales",
+      "resumen": "Pequeñas partículas de sémola de trigo que se hidratan y cocinan rápidamente.",
+      "nombres_alternativos": [
+        "couscous",
+        "sémola de trigo",
+        "kus-kus"
+      ],
+      "palabras_clave": [
+        "cuscús",
+        "couscous",
+        "sémola de trigo",
+        "kus-kus",
+        "cereales para bebés",
+        "mi bebé puede comer cuscús",
+        "cómo preparar cuscús para bebés",
+        "desde cuándo dar cuscús",
+        "recetas con cuscús"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "pollo",
+      "nombre": "Pollo",
+      "categoria": "Carnes y aves",
+      "resumen": "Carne de ave versátil y habitual en la cocina familiar cubana.",
+      "nombres_alternativos": [
+        "carne de pollo",
+        "pechuga",
+        "muslo",
+        "Gallus gallus domesticus"
+      ],
+      "palabras_clave": [
+        "carne de pollo",
+        "pechuga",
+        "muslo",
+        "Gallus gallus domesticus",
+        "pollo",
+        "pollo para bebés",
+        "cómo preparar pollo para bebé",
+        "carne para alimentación complementaria",
+        "picadillo",
+        "picadillo cubano",
+        "picadillo de pollo",
+        "pollo molido",
+        "carne molida de pollo",
+        "picadillo mixto",
+        "picadillo para bebés",
+        "picadillo para niños"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "gallina",
+      "nombre": "Gallina",
+      "categoria": "Carnes y aves",
+      "resumen": "Ave adulta utilizada en caldos y guisos tradicionales; su carne suele ser más firme que la del pollo joven.",
+      "nombres_alternativos": [
+        "gallina criolla",
+        "gallina de patio",
+        "gallina adulta"
+      ],
+      "palabras_clave": [
+        "gallina criolla",
+        "gallina de patio",
+        "gallina adulta",
+        "gallina",
+        "gallina para bebés",
+        "cómo preparar gallina para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "pavo",
+      "nombre": "Pavo",
+      "categoria": "Carnes y aves",
+      "resumen": "Carne de ave que aporta proteínas y puede variar en grasa según la pieza y si conserva la piel.",
+      "nombres_alternativos": [
+        "carne de pavo",
+        "pechuga de pavo",
+        "Meleagris gallopavo"
+      ],
+      "palabras_clave": [
+        "carne de pavo",
+        "pechuga de pavo",
+        "Meleagris gallopavo",
+        "pavo",
+        "pavo para bebés",
+        "cómo preparar pavo para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "res",
+      "nombre": "Carne de res",
+      "categoria": "Carnes y aves",
+      "resumen": "Carne roja que puede aportar hierro hemo, zinc y vitamina B12.",
+      "nombres_alternativos": [
+        "carne vacuna",
+        "ternera",
+        "vaca",
+        "buey",
+        "carne roja"
+      ],
+      "palabras_clave": [
+        "carne vacuna",
+        "ternera",
+        "vaca",
+        "buey",
+        "carne roja",
+        "carne de res",
+        "carne de res para bebés",
+        "cómo preparar carne de res para bebé",
+        "carne para alimentación complementaria",
+        "picadillo",
+        "picadillo cubano",
+        "picadillo de res",
+        "carne molida",
+        "carne molida de res",
+        "cómo hacer picadillo",
+        "picadillo para bebés",
+        "picadillo para niños",
+        "carne molida para bebé"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "cerdo",
+      "nombre": "Carne de cerdo",
+      "categoria": "Carnes y aves",
+      "resumen": "Carne utilizada en numerosos platos cubanos; los cortes magros y las piezas grasas tienen perfiles distintos.",
+      "nombres_alternativos": [
+        "carne porcina",
+        "puerco",
+        "chancho",
+        "Sus scrofa domesticus"
+      ],
+      "palabras_clave": [
+        "carne porcina",
+        "puerco",
+        "chancho",
+        "Sus scrofa domesticus",
+        "carne de cerdo",
+        "carne de cerdo para bebés",
+        "cómo preparar carne de cerdo para bebé",
+        "carne para alimentación complementaria",
+        "picadillo",
+        "picadillo cubano",
+        "picadillo de cerdo",
+        "carne molida de cerdo",
+        "picadillo mixto",
+        "carne molida",
+        "picadillo para bebés",
+        "picadillo para niños"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "conejo",
+      "nombre": "Conejo",
+      "categoria": "Carnes y aves",
+      "resumen": "Carne magra que puede formar parte de una alimentación variada cuando está disponible.",
+      "nombres_alternativos": [
+        "carne de conejo",
+        "Oryctolagus cuniculus"
+      ],
+      "palabras_clave": [
+        "carne de conejo",
+        "Oryctolagus cuniculus",
+        "conejo",
+        "conejo para bebés",
+        "cómo preparar conejo para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "higado-pollo",
+      "nombre": "Hígado de pollo",
+      "categoria": "Carnes y aves",
+      "resumen": "Víscera muy concentrada en hierro y vitamina A; debe tratarse de manera distinta a los cortes habituales de carne.",
+      "nombres_alternativos": [
+        "hígado de gallina",
+        "vísceras de pollo"
+      ],
+      "palabras_clave": [
+        "hígado de gallina",
+        "vísceras de pollo",
+        "hígado de pollo",
+        "hígado de pollo para bebés",
+        "cómo preparar hígado de pollo para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "higado-res",
+      "nombre": "Hígado de res",
+      "categoria": "Carnes y aves",
+      "resumen": "Víscera rica en hierro, vitamina B12 y vitamina A preformada, por lo que requiere especial moderación.",
+      "nombres_alternativos": [
+        "hígado vacuno",
+        "hígado de ternera",
+        "vísceras de res"
+      ],
+      "palabras_clave": [
+        "hígado vacuno",
+        "hígado de ternera",
+        "vísceras de res",
+        "hígado de res",
+        "hígado de res para bebés",
+        "cómo preparar hígado de res para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "corazon-pollo",
+      "nombre": "Corazón de pollo",
+      "categoria": "Carnes y aves",
+      "resumen": "Víscera muscular que aporta proteínas, hierro y vitaminas del grupo B.",
+      "nombres_alternativos": [
+        "corazones de pollo",
+        "vísceras de pollo"
+      ],
+      "palabras_clave": [
+        "corazones de pollo",
+        "vísceras de pollo",
+        "corazón de pollo",
+        "corazón de pollo para bebés",
+        "cómo preparar corazón de pollo para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "carnero",
+      "nombre": "Carne de carnero",
+      "categoria": "Carnes y aves",
+      "resumen": "Carne roja de ovino que puede variar en sabor, grasa y terneza según la edad del animal y el corte.",
+      "nombres_alternativos": [
+        "cordero",
+        "ovino",
+        "carne de oveja",
+        "mutton"
+      ],
+      "palabras_clave": [
+        "cordero",
+        "ovino",
+        "carne de oveja",
+        "mutton",
+        "carne de carnero",
+        "carne de carnero para bebés",
+        "cómo preparar carne de carnero para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "lengua-res",
+      "nombre": "Lengua de res",
+      "categoria": "Carnes y aves",
+      "resumen": "Víscera muscular que, bien cocida, queda tierna; contiene proteínas, hierro y vitamina B12.",
+      "nombres_alternativos": [
+        "lengua vacuna",
+        "lengua de vaca",
+        "víscera de res"
+      ],
+      "palabras_clave": [
+        "lengua vacuna",
+        "lengua de vaca",
+        "víscera de res",
+        "lengua de res",
+        "lengua de res para bebés",
+        "cómo preparar lengua de res para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "pato",
+      "nombre": "Pato",
+      "categoria": "Carnes y aves",
+      "resumen": "Carne de ave de sabor intenso; suele tener más grasa bajo la piel que el pollo.",
+      "nombres_alternativos": [
+        "carne de pato",
+        "pato doméstico",
+        "Anas platyrhynchos domesticus"
+      ],
+      "palabras_clave": [
+        "carne de pato",
+        "pato doméstico",
+        "Anas platyrhynchos domesticus",
+        "pato",
+        "pato para bebés",
+        "cómo preparar pato para bebé",
+        "carne para alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "picadillo",
+      "nombre": "Picadillo",
+      "categoria": "Preparaciones de carne",
+      "resumen": "Preparación muy presente en la cocina cubana, elaborada con carne molida y un sofrito que puede incluir tomate y vegetales.",
+      "nombres_alternativos": [
+        "picadillo cubano",
+        "carne molida",
+        "picadillo de res",
+        "picadillo de cerdo",
+        "picadillo de pollo",
+        "picadillo mixto"
+      ],
+      "palabras_clave": [
+        "picadillo cubano",
+        "carne molida",
+        "picadillo de res",
+        "picadillo de cerdo",
+        "picadillo de pollo",
+        "picadillo mixto",
+        "Picadillo",
+        "picadillo para bebés",
+        "picadillo para niños",
+        "picadillo con papa",
+        "picadillo con tomate",
+        "picadillo con vegetales",
+        "carne molida cubana"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "mollejas-pollo",
+      "nombre": "Mollejas de pollo",
+      "categoria": "Vísceras",
+      "resumen": "Víscera muscular del aparato digestivo del ave, firme y de cocción más prolongada que otras piezas.",
+      "nombres_alternativos": [
+        "molleja de pollo",
+        "mollejas",
+        "menudos de pollo",
+        "menudencias de pollo",
+        "pedrejón",
+        "piedrecilla"
+      ],
+      "palabras_clave": [
+        "molleja de pollo",
+        "mollejas",
+        "menudos de pollo",
+        "menudencias de pollo",
+        "pedrejón",
+        "piedrecilla",
+        "Mollejas de pollo",
+        "mollejas para bebés",
+        "mollejas guisadas",
+        "menudos",
+        "vísceras de pollo"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "patas-cerdo",
+      "nombre": "Patas de cerdo",
+      "categoria": "Partes y cortes",
+      "resumen": "Parte del cerdo rica en piel, tejido conectivo y huesos, utilizada en guisos y preparaciones tradicionales.",
+      "nombres_alternativos": [
+        "patas de puerco",
+        "manitas de cerdo",
+        "manos de cerdo",
+        "pies de cerdo",
+        "patitas de puerco"
+      ],
+      "palabras_clave": [
+        "patas de puerco",
+        "manitas de cerdo",
+        "manos de cerdo",
+        "pies de cerdo",
+        "patitas de puerco",
+        "Patas de cerdo",
+        "patas de cerdo para niños",
+        "patas de puerco guisadas",
+        "gelatina natural de patas"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "salchichas-perros-calientes",
+      "nombre": "Salchichas y perros calientes",
+      "categoria": "Embutidos y carnes procesadas",
+      "resumen": "Embutidos cocidos o ahumados, de composición variable y generalmente con bastante sodio.",
+      "nombres_alternativos": [
+        "salchicha",
+        "salchichas",
+        "perro caliente",
+        "perros calientes",
+        "hot dog",
+        "frankfurter",
+        "vienesas"
+      ],
+      "palabras_clave": [
+        "salchicha",
+        "salchichas",
+        "perro caliente",
+        "perros calientes",
+        "hot dog",
+        "frankfurter",
+        "vienesas",
+        "Salchichas y perros calientes",
+        "salchichas para niños",
+        "perritos calientes",
+        "embutidos",
+        "salchicha de pollo",
+        "salchicha de cerdo"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "jamonada",
+      "nombre": "Jamonada",
+      "categoria": "Embutidos y carnes procesadas",
+      "resumen": "Fiambre o producto cárnico moldeado; existen variantes condimentadas y especiales con formulaciones distintas.",
+      "nombres_alternativos": [
+        "jamonada condimentada",
+        "jamonada especial condimentada",
+        "jamonada especial",
+        "jamonada cubana",
+        "fiambre tipo jamonada"
+      ],
+      "palabras_clave": [
+        "jamonada condimentada",
+        "jamonada especial condimentada",
+        "jamonada especial",
+        "jamonada cubana",
+        "fiambre tipo jamonada",
+        "Jamonada",
+        "jamonada para sándwich",
+        "fiambre",
+        "embutido"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "jamon-viking",
+      "nombre": "Jamón tipo viking",
+      "categoria": "Embutidos y carnes procesadas",
+      "resumen": "Producto cárnico enlatado conocido en Cuba como jamón viking; su composición depende del fabricante y la presentación.",
+      "nombres_alternativos": [
+        "jamón viking",
+        "viking",
+        "jamon enlatado",
+        "jamón en conserva",
+        "carne enlatada tipo viking"
+      ],
+      "palabras_clave": [
+        "jamón viking",
+        "viking",
+        "jamon enlatado",
+        "jamón en conserva",
+        "carne enlatada tipo viking",
+        "Jamón tipo viking",
+        "jamón viking para niños",
+        "viking cubano",
+        "carne enlatada",
+        "fiambre en conserva",
+        "jamon viking"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "jamon-condimentado",
+      "nombre": "Jamón condimentado",
+      "categoria": "Embutidos y carnes procesadas",
+      "resumen": "Producto de jamón o fiambre sazonado, con contenido de sal y composición variables.",
+      "nombres_alternativos": [
+        "jamón condimentado cubano",
+        "jamon condimentado",
+        "jamón especiado",
+        "jamón procesado condimentado"
+      ],
+      "palabras_clave": [
+        "jamón condimentado cubano",
+        "jamon condimentado",
+        "jamón especiado",
+        "jamón procesado condimentado",
+        "Jamón condimentado",
+        "jamón para sándwich",
+        "jamón cocido",
+        "jamón curado",
+        "fiambre de jamón"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "chorizo",
+      "nombre": "Chorizo",
+      "categoria": "Embutidos y carnes procesadas",
+      "resumen": "Embutido condimentado cuya receta puede variar: algunos son frescos y otros curados o ahumados.",
+      "nombres_alternativos": [
+        "chorizos",
+        "chorizo cubano",
+        "chorizo condimentado",
+        "chorizo curado",
+        "chorizo fresco"
+      ],
+      "palabras_clave": [
+        "chorizos",
+        "chorizo cubano",
+        "chorizo condimentado",
+        "chorizo curado",
+        "chorizo fresco",
+        "Chorizo",
+        "chorizo para niños",
+        "chorizo de cerdo",
+        "embutido",
+        "longaniza",
+        "chorizo español"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "carnes-enlatadas",
+      "nombre": "Spam y otras carnes enlatadas",
+      "categoria": "Carnes procesadas y conservas",
+      "resumen": "Carnes cocidas y conservadas en lata, como Spam y productos tipo luncheon meat; prácticas para almacenar, pero suelen contener bastante sodio.",
+      "nombres_alternativos": [
+        "Spam",
+        "carne enlatada",
+        "carne en conserva",
+        "carne de lata",
+        "carne prensada enlatada",
+        "luncheon meat",
+        "jamón enlatado",
+        "carne cocida enlatada",
+        "carne enlatada cubana",
+        "spam cubano",
+        "carne enlatada para apagones",
+        "conserva de carne",
+        "carne tipo spam",
+        "carne procesada en lata",
+        "lata de carne"
+      ],
+      "palabras_clave": [
+        "spam",
+        "carne enlatada",
+        "carne en conserva",
+        "carne de lata",
+        "carne prensada",
+        "luncheon meat",
+        "jamón enlatado",
+        "carne tipo spam",
+        "spam cubano",
+        "carne enlatada cubana",
+        "carne enlatada para apagones",
+        "comida para cortes eléctricos",
+        "alimentos para apagones",
+        "conserva de carne",
+        "carne procesada en lata",
+        "lata de carne",
+        "carne cocida enlatada",
+        "carnes enlatadas"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "rabo-res",
+      "nombre": "Rabo de res",
+      "categoria": "Partes y cortes",
+      "resumen": "Corte de la cola de res formado por segmentos con hueso, carne y tejido conectivo; se utiliza en guisos de cocción prolongada.",
+      "nombres_alternativos": [
+        "rabo",
+        "cola de res",
+        "cola de vaca",
+        "rabo de vaca",
+        "rabo guisado",
+        "rabo encendido"
+      ],
+      "palabras_clave": [
+        "rabo de res",
+        "rabo",
+        "cola de res",
+        "cola de vaca",
+        "rabo de vaca",
+        "rabo guisado",
+        "rabo encendido",
+        "rabo de res para niños",
+        "carne de rabo",
+        "rabo con papas"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "costillas-cerdo",
+      "nombre": "Costillas de cerdo",
+      "categoria": "Partes y cortes",
+      "resumen": "Corte del cerdo con huesos, carne y grasa variable, utilizado en guisos, sopas y asados.",
+      "nombres_alternativos": [
+        "costillas de puerco",
+        "costilla de cerdo",
+        "costillitas de puerco",
+        "costillas de cerdo guisadas",
+        "costillas ahumadas"
+      ],
+      "palabras_clave": [
+        "costillas de cerdo",
+        "costillas de puerco",
+        "costilla de cerdo",
+        "costillitas de puerco",
+        "costillas guisadas",
+        "costillas asadas",
+        "costillas con papas",
+        "costillas para niños",
+        "carne de costilla"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "mondongo-res",
+      "nombre": "Mondongo (tripa de res)",
+      "categoria": "Vísceras",
+      "resumen": "Estómago de res comestible, conocido como mondongo o tripa; requiere limpieza y cocción completa hasta quedar muy tierno.",
+      "nombres_alternativos": [
+        "mondongo",
+        "tripa",
+        "tripa de res",
+        "panza de res",
+        "callos",
+        "mondongo de res",
+        "mondongo guisado",
+        "panza"
+      ],
+      "palabras_clave": [
+        "mondongo",
+        "tripa de res",
+        "tripa",
+        "panza de res",
+        "callos",
+        "mondongo de res",
+        "mondongo guisado",
+        "mondongo con papas",
+        "sopa de mondongo",
+        "vísceras de res"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
+      "id": "costillas-res",
+      "nombre": "Costillas de res",
+      "categoria": "Partes y cortes",
+      "resumen": "Corte de res con hueso, carne y grasa variable, utilizado en caldos, sopas y guisos de cocción lenta.",
+      "nombres_alternativos": [
+        "costilla de res",
+        "costillas de vaca",
+        "costilla de vaca",
+        "costillas de ternera",
+        "asado de tira"
+      ],
+      "palabras_clave": [
+        "costillas de res",
+        "costilla de res",
+        "costillas de vaca",
+        "costilla de vaca",
+        "costillas guisadas",
+        "sopa de costilla",
+        "asado de tira",
+        "costillas para niños"
+      ],
+      "ruta_publica": "c/C1/alimentos/carnes/"
+    },
+    {
       "id": "pargo",
       "nombre": "Pargo",
       "categoria": "Pescados",
@@ -955,7 +2224,8 @@
         "espinas de pescado",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -980,7 +2250,8 @@
         "pescado bajo en mercurio",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1006,7 +2277,8 @@
         "omega 3",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1034,7 +2306,8 @@
         "mercurio atún",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1059,7 +2332,8 @@
         "jurel para bebé",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1085,7 +2359,8 @@
         "mercurio macarela",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1112,7 +2387,8 @@
         "lisa para bebé",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1138,7 +2414,8 @@
         "pescado de agua dulce",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1163,7 +2440,8 @@
         "merluza para bebé",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1189,7 +2467,8 @@
         "alergia al camarón",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1215,7 +2494,8 @@
         "mariscos",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1240,7 +2520,8 @@
         "Panulirus argus",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1265,7 +2546,8 @@
         "bonito para bebé",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1294,7 +2576,8 @@
         "comida enlatada",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1320,7 +2603,8 @@
         "pescado empanizado",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1343,7 +2627,8 @@
         "pescados que evitar",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1366,7 +2651,8 @@
         "mariscos",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1392,7 +2678,8 @@
         "anillas de calamar",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1420,7 +2707,8 @@
         "caracol marino",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1446,7 +2734,8 @@
         "Crassostrea rhizophorae",
         "pescado para bebé",
         "mariscos para bebé",
-        "alimentación complementaria"
+        "alimentación complementaria",
+        "cómo preparar pescado para niños"
       ],
       "ruta_publica": "c/C1/alimentos/pescados/"
     },
@@ -1675,7 +2964,7 @@
       "id": "formula-infantil",
       "nombre": "Fórmula infantil (leche maternizada)",
       "categoria": "Leches",
-      "resumen": "Producto formulado para lactantes cuando la lactancia materna no es posible, es insuficiente o se necesita suplementación indicada.",
+      "resumen": "Fórmula especialmente formulada para lactantes menores de 12 meses cuando la lactancia materna no es posible, es insuficiente o se necesita suplementación indicada. No confundir con leche común.",
       "nombres_alternativos": [
         "leche maternizada",
         "fórmula de inicio",
@@ -1802,7 +3091,7 @@
     {
       "id": "huevo-gallina",
       "nombre": "Huevo de gallina",
-      "categoria": "Huevos y quesos",
+      "categoria": "Huevos",
       "resumen": "Alimento versátil que aporta proteínas y varios micronutrientes; debe ofrecerse completamente cocido.",
       "nombres_alternativos": [
         "huevo",
@@ -1830,7 +3119,7 @@
     {
       "id": "huevo-codorniz",
       "nombre": "Huevo de codorniz",
-      "categoria": "Huevos y quesos",
+      "categoria": "Huevos",
       "resumen": "Huevo pequeño de composición similar al de gallina; requiere la misma atención a la cocción completa y a la alergia.",
       "nombres_alternativos": [
         "huevos de codorniz",
@@ -1852,7 +3141,7 @@
     {
       "id": "queso-fresco-pasteurizado",
       "nombre": "Queso fresco pasteurizado",
-      "categoria": "Huevos y quesos",
+      "categoria": "Quesos",
       "resumen": "Queso blando y húmedo; para niños pequeños debe elaborarse con leche pasteurizada y tener poca sal.",
       "nombres_alternativos": [
         "queso fresco",
@@ -1875,7 +3164,7 @@
     {
       "id": "queso-blanco",
       "nombre": "Queso blanco",
-      "categoria": "Huevos y quesos",
+      "categoria": "Quesos",
       "resumen": "Nombre amplio para quesos claros de distintas recetas; su sal, humedad y pasteurización varían según el producto.",
       "nombres_alternativos": [
         "queso blanco",
@@ -1896,7 +3185,7 @@
     {
       "id": "requeson",
       "nombre": "Requesón",
-      "categoria": "Huevos y quesos",
+      "categoria": "Quesos",
       "resumen": "Producto lácteo fresco y húmedo, de textura granulosa o cremosa; elegir versión pasteurizada y baja en sal.",
       "nombres_alternativos": [
         "requeson",
