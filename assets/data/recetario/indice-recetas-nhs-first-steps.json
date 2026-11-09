@@ -1,7 +1,7 @@
 {
   "version": 1,
   "titulo": "Índice de recetas externas para revisión CIBA",
-  "nota": "Índice documental, no catálogo de recomendaciones. Los títulos y enlaces conducen a las fuentes originales. No se copian instrucciones ni cantidades. Todas las entradas permanecen deshabilitadas hasta revisión individual, adaptación a contexto cubano y aprobación profesional.",
+  "nota": "Índice documental, no catálogo de recomendaciones. Incluye recetas con página individual verificada del NHS y entradas de First Steps Nutrition Trust. No se copian instrucciones ni cantidades. Todas las entradas permanecen deshabilitadas hasta revisión individual, adaptación al contexto cubano y aprobación profesional.",
   "fuentes": [
     {
       "id": "nhs-best-start-97",
@@ -923,6 +923,376 @@
       ],
       "alertas_revision": [
         "Revisar azúcar añadida; pasas enteras/pegajosas pueden ser riesgo de atragantamiento; leche usada en preparación."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-egg-cups-toast",
+      "nombre": "Egg cups on toast",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/egg-cups-and-toast/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "huevo, champiñones, perejil, tomate, pan integral",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "La fuente indica 12 meses o más; huevo completamente cocido y tomate pequeño cortado para evitar atragantamiento."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-butternut-red-pepper-soup",
+      "nombre": "Butternut squash and red pepper soup",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/butternut-squash-and-red-pepper-soup/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "calabaza, pimiento rojo, cebolla, lentejas rojas, pan integral",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "La fuente indica 12 meses o más; cocinar completamente las lentejas y ajustar el pan/textura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-omelette-muffins",
+      "nombre": "Omelette muffins",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/omelette-muffins/",
+      "edad_minima_fuente_meses": 10,
+      "edad_maxima_fuente_meses": 12,
+      "ingredientes_referenciados": "huevo, queso, guisantes, papa, habichuelas",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "La fuente indica 10–12 meses; huevo bien cuajado, queso bajo en sodio y vegetales muy blandos."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-pea-ham-bake",
+      "nombre": "Pea and ham bake",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/pea-and-ham-bake/",
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "ingredientes_referenciados": "pasta, champiñones, cebolla, ajo, jamón, tomate, guisantes",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Contiene jamón procesado y sodio; no priorizar ni recomendar automáticamente. Adaptar pasta y guisantes a textura segura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-mac-and-cheese",
+      "nombre": "Mac and cheese",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/mac-and-cheese/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "macarrones, queso, tomate, leche, guisantes",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "La fuente indica 12 meses o más; revisar sodio del queso y ofrecer guisantes blandos."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-cinnamon-banana-toast",
+      "nombre": "Cinnamon and banana toast",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/cinnamon-and-banana-toast/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "pan integral, banana, canela",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "La fuente indica 12 meses o más; revisar textura del pan tostado y tamaño de los bocados."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-jamaican-fish",
+      "nombre": "Jamaican fish",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/jamaican-fish/",
+      "edad_minima_fuente_meses": 10,
+      "edad_maxima_fuente_meses": 12,
+      "ingredientes_referenciados": "bacalao, papa, cebolla, pimiento, plátano, tomate, guisantes, arroz",
+      "alergenos_o_grupos_a_verificar": [
+        "pescado"
+      ],
+      "alertas_revision": [
+        "La fuente indica 10–12 meses; identificar especie, revisar mercurio y retirar todas las espinas; cocción completa."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-sweet-potato-fingers",
+      "nombre": "Sweet potato fingers",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/sweet-potato-fingers/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "boniato, aceite vegetal",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "La fuente indica desde 6 meses; cocinar hasta que se aplaste fácilmente y adaptar forma/tamaño a las habilidades."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-butterbean-goulash",
+      "nombre": "Butterbean goulash with cooked green beans",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/butterbean-goulash-green-beans/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "habas grandes, cebolla, pimiento, champiñones, zanahoria, ajo, tomate, habichuelas",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres"
+      ],
+      "alertas_revision": [
+        "La fuente indica desde 6 meses; usar legumbres sin sal añadida, cocinarlas muy blandas y triturarlas/aplastarlas."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-lemony-chicken-strips",
+      "nombre": "Lemony chicken strips",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/lemony-chicken-strips/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "pollo, limón",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "La fuente indica desde 6 meses; pollo completamente cocido y tierno. Las tiras requieren valoración de tamaño y textura para cada bebé."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-steamed-apple-pear",
+      "nombre": "Steamed apple and pear",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/steamed-apple-and-pear/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "manzana, pera",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "La fuente indica desde 6 meses; ambas frutas deben quedar blandas, sin partes firmes ni pieles."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-autumn-lentil-soup",
+      "nombre": "Autumn lentil soup",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/autumn-lentil-soup/",
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "ingredientes_referenciados": "calabaza, pimiento rojo, cebolla, lentejas rojas, pan integral",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "La fuente indica 7–9 meses; lentejas completamente cocidas y textura húmeda; revisar el pan según desarrollo."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-ham-flatbread",
+      "nombre": "Ham flatbread",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/ham-flatbread/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "harina de trigo, yogur, jamón, champiñones, mozzarella, queso",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Contiene jamón procesado y quesos con sodio; no priorizar ni recomendar automáticamente. Revisar textura del pan plano."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-chicken-veg-noodle-dinner",
+      "nombre": "Chicken, veg and noodle dinner",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/chicken-veg-and-noodle-dinner/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "pollo, cebolla, zanahoria, maíz, fideos de huevo",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "La fuente indica 12 meses o más; pollo bien cocido, maíz y verduras blandos, fideos cortados según habilidades."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-breakfast-three-ways",
+      "nombre": "Breakfast 3 ways",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/breakfast-3-ways/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "huevo, pan integral, tomate",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "La fuente indica 12 meses o más; el tiempo de cocción de huevo publicado (5–6 minutos) no garantiza por sí solo cocción completa: no recomendar hasta adaptar y validar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-creamy-lentil-broccoli-pasta",
+      "nombre": "Creamy lentil and broccoli pasta",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/creamy-lentil-and-broccoli-pasta/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "lentejas rojas, brócoli, tomate, queso crema, pasta, maíz tierno",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres",
+        "lacteos",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "La fuente indica 12 meses o más; revisar textura del maíz tierno, cocción de legumbres y sodio del queso."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-banana-berry-porridge",
+      "nombre": "Banana and berry porridge",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/banana-and-berry-porridge/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "avena, leche, banana, frutos rojos, yogur",
+      "alergenos_o_grupos_a_verificar": [
+        "leche",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "La fuente indica 12 meses o más y usa leche como ingrediente; no extrapolar a menores de 12 meses ni confundir con bebida láctea antes del año."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-chickpea-biryani",
+      "nombre": "Chickpea biryani",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/chickpea-biryani/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "garbanzos, arroz, zanahoria, coliflor, guisantes, cebolla",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres"
+      ],
+      "alertas_revision": [
+        "La fuente indica 12 meses o más; usar garbanzos sin sal, completamente blandos y aplastados si es necesario."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-african-sweet-potato-stew",
+      "nombre": "African sweet potato stew",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/african-sweet-potato-stew/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "boniato, habichuelas, frijoles, tomate, mantequilla de maní, pan integral",
+      "alergenos_o_grupos_a_verificar": [
+        "maní",
+        "legumbres",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "La fuente indica 12 meses o más; maní es alérgeno, usar crema lisa diluida y nunca frutos secos enteros; revisar textura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-tuna-dip",
+      "nombre": "Tuna dip",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/tuna-dip/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "atún, mayonesa, yogur, pan pita integral",
+      "alergenos_o_grupos_a_verificar": [
+        "pescado",
+        "huevo",
+        "lacteos",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "La fuente indica 12 meses o más; controlar especie/frecuencia de atún por mercurio, sodio de conserva y seguridad de mayonesa."
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
