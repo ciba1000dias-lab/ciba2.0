@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#172b27">
+  <meta name="theme-color" content="#493A32">
   <meta name="description" content="CIBA: Crianza, Internet, Bienestar y Acompañamiento. Un espacio cubano para las familias, el conocimiento y el futuro digital.">
   <title>CIBA — Crecemos acompañándonos</title>
 
@@ -1036,6 +1036,224 @@
       .recursos-carrusel{overflow-x:auto;mask-image:none;-webkit-mask-image:none}
     }
 
+
+    /* CIBA · identidad institucional cacao, luminosa y caribeña */
+    :root {
+      --noche: #493A32;
+      --noche2: #665044;
+      --verde: #397653;
+      --verde-claro: #DCE9D8;
+      --tierra: #8D5742;
+      --terracota: #B97858;
+      --oro: #C69B52;
+      --marfil: #F6F0E4;
+      --papel: #FFFCF5;
+      --tinta: #493A32;
+      --suave: #776D61;
+      --linea: #E6DCCB;
+    }
+
+    body {
+      background:
+        radial-gradient(ellipse at 8% 12%, rgba(57,118,83,.055), transparent 28rem),
+        radial-gradient(ellipse at 92% 34%, rgba(40,123,154,.05), transparent 30rem),
+        var(--marfil);
+    }
+
+    .cabecera {
+      background: rgba(73,58,50,.94);
+      border-bottom-color: rgba(255,255,255,.18);
+      box-shadow: 0 5px 24px rgba(73,58,50,.12);
+    }
+    .marca-simbolo { color: #E6C98E; filter: drop-shadow(0 0 8px rgba(230,201,142,.25)); }
+    .marca-texto { color: #FFF8EB; }
+    .marca-texto small { color: #E6C98E; }
+
+    .hero {
+      min-height: 650px;
+      color: var(--noche);
+      background:
+        radial-gradient(ellipse at 78% 25%, rgba(198,155,82,.22), transparent 32%),
+        radial-gradient(ellipse at 18% 88%, rgba(57,118,83,.11), transparent 34%),
+        linear-gradient(118deg, #F8F2E7 0%, #F1E6D4 58%, #E9DDC9 100%);
+    }
+    .hero::before {
+      opacity: .28;
+      background-image:
+        radial-gradient(rgba(73,58,50,.13) .7px, transparent .7px),
+        linear-gradient(90deg, rgba(73,58,50,.035) 1px, transparent 1px);
+      background-size: 7px 7px, 48px 48px;
+      mask-image: linear-gradient(90deg, transparent, black 30%, black);
+    }
+    .hero::after {
+      border-color: rgba(73,58,50,.20);
+      box-shadow: 0 0 0 28px rgba(57,118,83,.055),
+                  0 0 0 58px rgba(40,123,154,.045),
+                  0 0 0 90px rgba(169,68,59,.035);
+    }
+    .hero h1 { color: #493A32; }
+    .hero h1 em { color: #8D642E; }
+    .sobrelinea { color: #805D32; }
+    .sobrelinea::before { background: #B58A4C; }
+    .hero-descripcion { color: #685D51; }
+    .boton-dorado {
+      background: #493A32;
+      color: #FFF8EB;
+      box-shadow: 0 8px 22px rgba(73,58,50,.16);
+    }
+    .boton-dorado:hover { background: #665044; }
+    .boton-contorno { border-color: rgba(73,58,50,.4); color: #493A32; }
+    .boton-contorno:hover { background: rgba(255,255,255,.45); }
+    .hero-imagen-marco {
+      border-color: rgba(141,87,66,.42);
+      background: rgba(255,255,255,.34);
+      box-shadow: 0 25px 65px rgba(73,58,50,.17), inset 0 0 28px rgba(255,255,255,.35);
+      backdrop-filter: blur(9px);
+    }
+    .hero-imagen { background: linear-gradient(145deg, rgba(198,155,82,.18), rgba(57,118,83,.20)), #D9C6A8; }
+    .imagen-sello {
+      background: rgba(73,58,50,.92);
+      color: #FFF8EB;
+      border: 1px solid rgba(255,255,255,.35);
+      box-shadow: 0 12px 35px rgba(73,58,50,.22), 0 0 28px rgba(198,155,82,.18);
+      backdrop-filter: blur(10px);
+    }
+    .hero-pie {
+      color: #66584B;
+      border-top-color: rgba(73,58,50,.16);
+      background: rgba(255,252,245,.36);
+      backdrop-filter: blur(10px);
+    }
+
+    .busqueda {
+      background: rgba(255,252,245,.90);
+      backdrop-filter: blur(12px);
+    }
+    .busqueda-oraculo {
+      background: radial-gradient(circle, rgba(230,201,142,.78), rgba(230,201,142,.24) 48%, transparent 73%);
+      box-shadow: 0 0 30px rgba(198,155,82,.16);
+    }
+    .busqueda-oraculo .orbita-externa { border-color: #A9443B; border-left-color: transparent; }
+    .busqueda-oraculo .orbita-interna { border-color: rgba(40,123,154,.7); }
+    .busqueda-oraculo .busqueda-espiral { color: #493A32; }
+    .busqueda-caja button { background: #493A32; }
+
+    .seccion { position: relative; }
+    .etiqueta { color: #8D5742; }
+    .seccion h2.titulo { color: #493A32; }
+    .columnas { position: relative; }
+    .columna {
+      border: 1px solid rgba(255,255,255,.30);
+      box-shadow: 0 12px 32px rgba(73,58,50,.10), inset 0 1px 0 rgba(255,255,255,.18);
+    }
+    .columna::after {
+      border-color: rgba(255,255,255,.27);
+      box-shadow: 0 0 0 20px rgba(255,255,255,.055),
+                  0 0 0 42px rgba(255,255,255,.035),
+                  0 0 28px rgba(255,255,255,.08);
+    }
+    .areas {
+      background:
+        radial-gradient(ellipse at 0% 50%, rgba(57,118,83,.08), transparent 34%),
+        radial-gradient(ellipse at 100% 20%, rgba(40,123,154,.08), transparent 34%),
+        #EEE6D8;
+    }
+    .area-card {
+      border-color: rgba(141,87,66,.16);
+      box-shadow: 0 5px 18px rgba(73,58,50,.035);
+    }
+    .area-card small { color: #8D5742; }
+    .filosofia { background: rgba(255,252,245,.94); }
+    .filosofia-frase {
+      border-left-color: #A9443B;
+      background: linear-gradient(135deg, rgba(198,155,82,.13), rgba(57,118,83,.07)), #F6F0E4;
+      box-shadow: inset 0 0 35px rgba(255,255,255,.65);
+    }
+    .filosofia-frase blockquote { color: #493A32; }
+    .personajes {
+      background:
+        radial-gradient(circle at 12% 18%, rgba(57,118,83,.22), transparent 28%),
+        radial-gradient(circle at 88% 78%, rgba(40,123,154,.20), transparent 30%),
+        linear-gradient(125deg, #493A32, #665044);
+    }
+    .personajes::before {
+      border-color: rgba(230,201,142,.28);
+      box-shadow: 0 0 0 35px rgba(40,123,154,.08),
+                  0 0 0 75px rgba(169,68,59,.07),
+                  0 0 0 112px rgba(57,118,83,.06);
+    }
+    .personaje {
+      background: rgba(255,252,245,.075);
+      border-color: rgba(255,255,255,.22);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.12), 0 12px 35px rgba(0,0,0,.08);
+      backdrop-filter: blur(12px);
+    }
+    .invitacion {
+      background:
+        radial-gradient(circle at 50% 0%, rgba(198,155,82,.22), transparent 45%),
+        linear-gradient(120deg, #EDE1CE, #F7F0E4);
+    }
+    .invitacion .boton { background: #493A32; }
+    .pie { background: #493A32; }
+    .pie h3 { color: #E6C98E; }
+    .pie p, .pie a { color: #E7DCCB; }
+    .pie-final { border-top-color: rgba(255,255,255,.20); color: #D8C9B5; }
+    .aviso { color: #E0CDAA; }
+
+    /* Paisaje gráfico CIBA: naturaleza antillana y geometría inspirada,
+       sin presentar estos dibujos como glifos taínos históricos. */
+    .ciba-paisaje {
+      position: absolute;
+      z-index: 1;
+      inset: auto 0 36px 0;
+      width: 100%;
+      height: min(58%, 390px);
+      opacity: .43;
+      pointer-events: none;
+      overflow: visible;
+    }
+    .ciba-paisaje .trazo-cacao { stroke: #795B43; }
+    .ciba-paisaje .trazo-verde { stroke: #397653; }
+    .ciba-paisaje .trazo-azul { stroke: #287B9A; }
+    .ciba-paisaje .trazo-ocre { stroke: #8C671F; }
+    .ciba-paisaje .trazo-coral { stroke: #A9443B; }
+    .ciba-paisaje path, .ciba-paisaje circle, .ciba-paisaje ellipse {
+      vector-effect: non-scaling-stroke;
+    }
+    .ciba-paisaje .luz-sol { fill: rgba(198,155,82,.20); stroke: rgba(141,87,66,.45); }
+    .ciba-paisaje .montana { fill: rgba(57,118,83,.10); stroke: rgba(57,118,83,.62); }
+    .ciba-paisaje .ola { fill: none; stroke: rgba(40,123,154,.48); }
+    .ciba-paisaje .motivo { fill: none; stroke-width: 2.1; stroke-linecap: round; stroke-linejoin: round; }
+    .ciba-paisaje .detalle { fill: none; stroke-width: 1.4; stroke-linecap: round; }
+    .ciba-paisaje .palma { fill: none; stroke: rgba(57,118,83,.72); stroke-width: 2.5; stroke-linecap: round; }
+    .ciba-paisaje .espiral { fill: none; stroke: rgba(169,68,59,.68); stroke-width: 2.2; stroke-linecap: round; }
+    .ciba-paisaje .ave { fill: rgba(169,68,59,.16); stroke: rgba(169,68,59,.70); stroke-width: 1.8; }
+    .ciba-paisaje .jicotea { fill: rgba(57,118,83,.12); stroke: rgba(57,118,83,.72); stroke-width: 1.8; }
+    .hero-contenido { z-index: 2; }
+    .hero-pie { z-index: 3; }
+    .motivo-fondo {
+      position: absolute;
+      width: 190px;
+      height: 190px;
+      right: 2%;
+      top: 5%;
+      border: 1px solid rgba(141,87,66,.12);
+      border-radius: 50%;
+      box-shadow: 0 0 0 18px rgba(198,155,82,.055), 0 0 0 39px rgba(40,123,154,.035);
+      pointer-events: none;
+    }
+
+    @media (max-width: 680px) {
+      .ciba-paisaje { height: 250px; bottom: 42px; opacity: .30; }
+      .motivo-fondo { width: 120px; height: 120px; right: -20px; top: 8%; }
+      .hero { background:
+        radial-gradient(circle at 90% 24%, rgba(198,155,82,.22), transparent 38%),
+        linear-gradient(145deg, #F8F2E7, #EFE3D1); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .ciba-paisaje * { animation: none !important; }
+    }
+
   </style>
 </head>
 
@@ -1061,6 +1279,46 @@
 
   <main>
     <section class="hero" id="inicio">
+      <div class="motivo-fondo" aria-hidden="true"></div>
+      <svg class="ciba-paisaje" viewBox="0 0 1440 430" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+        <circle class="luz-sol" cx="1130" cy="125" r="76"/>
+        <circle class="motivo trazo-ocre" cx="1130" cy="125" r="94" opacity=".7"/>
+        <path class="motivo trazo-coral" d="M1130 14v20 M1130 216v20 M1019 125h-20 M1261 125h-20 M1052 47l-14-14 M1222 203l-14-14 M1208 47l14-14 M1038 203l14-14"/>
+        <path class="montana" d="M0 330 Q120 255 245 310 Q360 190 495 300 Q610 235 730 310 Q850 240 970 300 Q1090 220 1210 295 Q1320 245 1440 300 L1440 430 L0 430Z"/>
+        <path class="ola" d="M0 350 Q170 320 330 350 T660 350 T990 350 T1320 350 T1650 350"/>
+        <path class="ola" d="M0 372 Q170 342 330 372 T660 372 T990 372 T1320 372 T1650 372"/>
+        <g class="palma">
+          <path d="M170 350 Q188 230 168 115"/>
+          <path d="M168 118 Q115 64 62 91 Q112 92 168 118 Q127 35 92 35 Q132 65 168 118 Q168 44 204 25 Q185 70 168 118 Q229 65 263 82 Q213 89 168 118 Q238 121 255 155 Q211 133 168 118"/>
+          <path d="M170 350 Q160 290 132 265 M170 350 Q187 295 219 278"/>
+        </g>
+        <g class="motivo trazo-cacao" transform="translate(365 285)">
+          <path d="M0 0 C-25 -25 -20 -67 12 -79 C49 -92 77 -62 67 -29 C60 -7 35 7 15 -5 C-2 -16 2 -41 20 -48 C38 -55 52 -39 45 -25 C40 -15 28 -13 22 -20"/>
+          <path class="detalle" d="M-15 -2 Q18 18 55 1"/>
+        </g>
+        <g transform="translate(850 315)">
+          <path class="jicotea" d="M-44 0 Q-42 -43 0 -49 Q42 -43 44 0 Q0 25 -44 0Z"/>
+          <path class="detalle trazo-verde" d="M-28 -10 L0 -35 L28 -10 L0 13Z M0 -35V13 M-28 -10H28"/>
+          <path class="jicotea" d="M-42 -4 l-24 -13 -5 17 23 13 M42 -4 l24 -13 5 17 -23 13 M-25 7 l-13 24 16 3 14 -22 M25 7 l13 24 -16 3 -14 -22 M0 -49 q-8 -20 8 -25 q18 2 15 19"/>
+        </g>
+        <g class="ave" transform="translate(1010 235)">
+          <path d="M-42 4 Q-15 -30 8 -7 Q25 -27 48 -18 Q31 -3 12 2 Q-2 25 -25 16Z"/>
+          <path d="M8 -7 Q16 -25 32 -32 Q27 -12 12 2 M-42 4 l-19 -5 18 14"/>
+          <circle cx="24" cy="-13" r="2.3" fill="#493A32" stroke="none"/>
+        </g>
+        <g class="espiral" transform="translate(1280 300)">
+          <path d="M0 0 C-35 -10 -37 -52 -8 -67 C24 -83 54 -54 42 -25 C34 -5 8 3 -7 -12 C-18 -24 -10 -42 5 -43 C18 -44 25 -31 18 -22 C14 -17 7 -18 5 -23"/>
+          <path d="M-44 13 Q-14 26 18 16" opacity=".7"/>
+        </g>
+        <g class="motivo trazo-azul" transform="translate(575 300)">
+          <path d="M-34 0 Q-25 -35 0 -38 Q27 -35 34 0 Q0 20 -34 0Z"/>
+          <path d="M0 -36 Q-8 -12 0 0 Q12 -12 0 -36 M-25 -20 Q0 -5 25 -20" opacity=".8"/>
+        </g>
+        <g class="motivo trazo-coral" transform="translate(700 210)">
+          <path d="M-28 0 C-18 -18 -2 -18 10 -5 C20 7 10 20 -2 17 C-13 14 -12 2 -4 -2"/>
+          <path d="M22 -18 Q42 -32 56 -15" opacity=".65"/>
+        </g>
+      </svg>
       <div class="hero-contenido contenedor">
         <div class="hero-texto">
           <div class="sobrelinea">Una comunidad que crece</div>
