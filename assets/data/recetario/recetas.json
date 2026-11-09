@@ -7758,6 +7758,12 @@
           "cantidad": "1/3",
           "unidad": "taza cocida",
           "obligatorio": true
+        },
+        {
+          "alimento_id": "aceite-vegetal",
+          "cantidad": "1",
+          "unidad": "cucharadita pequeña, opcional",
+          "obligatorio": false
         }
       ],
       "preparacion": [
@@ -7776,7 +7782,7 @@
       "alertas": [
         "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
         "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
-        "El aceite vegetal se incorpora al servir, en pequeña cantidad; no freír."
+        "El aceite se incorpora al servir, en pequeña cantidad; no freír ni añadir cantidades excesivas."
       ],
       "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
       "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
@@ -8063,6 +8069,12 @@
           "cantidad": "1/3",
           "unidad": "taza cocida",
           "obligatorio": true
+        },
+        {
+          "alimento_id": "aceite-oliva",
+          "cantidad": "1",
+          "unidad": "cucharadita pequeña, opcional",
+          "obligatorio": false
         }
       ],
       "preparacion": [
@@ -8081,7 +8093,7 @@
       "alertas": [
         "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
         "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
-        "El aceite vegetal se incorpora al servir, en pequeña cantidad; no freír."
+        "El aceite se incorpora al servir, en pequeña cantidad; no freír ni añadir cantidades excesivas."
       ],
       "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
       "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
