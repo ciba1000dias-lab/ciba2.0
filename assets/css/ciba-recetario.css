@@ -60,3 +60,6 @@ a{color:inherit}
 .ciba-receta-opcion-aclaracion:hover,.ciba-receta-opcion-aclaracion:focus{border-color:var(--verde);outline:2px solid #526e5633}
 .ciba-receta-opcion-aclaracion strong{color:var(--noche);font-size:14px}
 .ciba-receta-opcion-aclaracion span{color:var(--suave);font-size:12px;line-height:1.5;font-weight:400}
+
+.ciba-receta-confirmar{display:inline-flex;align-items:center;justify-content:center;min-height:48px;margin-top:10px;padding:12px 18px;border:0;border-radius:7px;background:var(--noche);color:#fff;font-size:13px;font-weight:800;cursor:pointer}
+.ciba-receta-confirmar:hover,.ciba-receta-confirmar:focus{background:var(--verde);outline:2px solid #526e5633;outline-offset:2px}
