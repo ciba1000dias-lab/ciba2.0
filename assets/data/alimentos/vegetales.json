@@ -2,5 +2,246 @@
   "version": 1,
   "biblioteca": "CIBA · Crianza · Alimentación",
   "categoria": "Vegetales y hortalizas",
-  "alimentos": []
+  "alimentos": [
+    {
+      "id": "calabaza",
+      "nombre": "Calabaza",
+      "nombres_alternativos": [
+        "Cucurbita",
+        "auyama",
+        "zapallo"
+      ],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza de pulpa suave que en la cocina cubana también se agrupa entre las viandas.",
+      "descripcion": "La calabaza aporta agua, fibra y carotenoides, especialmente en variedades de pulpa anaranjada. Su contenido energético suele ser menor que el de raíces y tubérculos ricos en almidón. En Cuba se utiliza tanto en sopas como en purés y guisos.",
+      "propiedades": [
+        "Aporta agua y fibra.",
+        "Las variedades anaranjadas contienen carotenoides.",
+        "Aporta vitaminas y minerales en cantidades variables."
+      ],
+      "beneficios": [
+        "Su pulpa cocida se vuelve blanda y fácil de aplastar.",
+        "Añade color y variedad a las comidas sin necesidad de azúcar."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. La edad por sí sola no basta: deben valorarse el control postural y la capacidad de manejar y tragar alimentos. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Retirar cáscara y semillas; cocinar hasta ablandar y aplastar."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer majada o en trozos muy blandos, sin semillas ni cáscara dura."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en cubos pequeños blandos o en sopas espesas."
+        }
+      ],
+      "preparacion_segura": "Retirar cáscara, semillas y partes duras. Cocinar completamente y adaptar textura.",
+      "recetas": [
+        {
+          "nombre": "Puré de calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Calabaza sin cáscara ni semillas",
+          "preparacion": "Cocinar al vapor o hervir y aplastar."
+        },
+        {
+          "nombre": "Calabaza con malanga",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Calabaza y malanga cocidas",
+          "preparacion": "Aplastar hasta una crema espesa."
+        },
+        {
+          "nombre": "Crema de calabaza y pollo",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Calabaza y pollo completamente cocidos",
+          "preparacion": "Triturar la calabaza y mezclar con pollo muy fino y húmedo."
+        }
+      ],
+      "precauciones": [
+        "Retirar siempre semillas y cáscara dura.",
+        "Evitar sopas muy saladas, cubitos concentrados y azúcar añadida.",
+        "No dejar trozos grandes o duros."
+      ],
+      "conservacion": "Entera, conservar en lugar fresco, seco y ventilado. Una vez cortada, cubrir y refrigerar; cocinar y refrigerar pronto las porciones preparadas.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/CALABAZA.jpg?width=1280",
+        "alt": "Calabaza entera fotografiada en un huerto.",
+        "autor": "PEPE GADEIRAS",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:CALABAZA.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "calabaza para bebé",
+        "auyama",
+        "zapallo",
+        "puré de calabaza",
+        "crema de calabaza",
+        "calabaza hervida",
+        "calabaza",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer calabaza",
+        "cómo preparar calabaza para bebés",
+        "desde cuándo dar calabaza",
+        "recetas con calabaza"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para la infancia."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientación general sobre alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y señales de preparación."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional de los alimentos."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "chayote",
+      "nombre": "Chayote",
+      "nombres_alternativos": [
+        "tayota",
+        "güisquil",
+        "Sechium edule"
+      ],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Fruto de textura acuosa y suave que en algunas clasificaciones culinarias cubanas se incluye entre las viandas.",
+      "descripcion": "El chayote es un fruto comestible de bajo aporte energético y alto contenido de agua. Aporta fibra y pequeñas cantidades de vitaminas y minerales. Aunque botánicamente es un fruto, puede utilizarse como hortaliza o vianda en guisos y sopas.",
+      "propiedades": [
+        "Contiene mucha agua y pocas calorías.",
+        "Aporta fibra y pequeñas cantidades de vitamina C y folato.",
+        "Su sabor suave permite combinarlo con otros alimentos."
+      ],
+      "beneficios": [
+        "Cocido queda blando y se integra con facilidad en purés y guisos.",
+        "Ayuda a variar las texturas y los vegetales ofrecidos."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses, cuando el bebé muestra señales de preparación para la alimentación complementaria. La edad por sí sola no basta: deben valorarse el control postural y la capacidad de manejar y tragar alimentos. La leche materna o la fórmula siguen siendo fundamentales.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Pelar si la piel es dura; retirar semilla y cocinar hasta ablandar. Aplastar."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Ofrecer majado o en trozos muy blandos, sin semilla dura."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir en trozos pequeños cocidos, adaptados a la masticación."
+        }
+      ],
+      "preparacion_segura": "Lavar, retirar semilla y cocinar hasta que esté completamente blando; evitar trozos firmes.",
+      "recetas": [
+        {
+          "nombre": "Chayote majado",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Chayote lavado, pelado y sin semilla",
+          "preparacion": "Hervir o cocinar al vapor hasta ablandar y aplastar."
+        },
+        {
+          "nombre": "Chayote con boniato",
+          "etapa": "Cuando ambos alimentos se hayan introducido por separado",
+          "ingredientes": "Chayote y boniato cocidos",
+          "preparacion": "Aplastar hasta obtener una mezcla húmeda."
+        },
+        {
+          "nombre": "Sopa espesa de chayote",
+          "etapa": "Cuando los ingredientes se hayan introducido por separado",
+          "ingredientes": "Chayote, zanahoria y pollo completamente cocidos",
+          "preparacion": "Cocinar y triturar parcialmente para una textura espesa, sin trozos duros."
+        }
+      ],
+      "precauciones": [
+        "Retirar la semilla y cualquier parte dura.",
+        "Evitar ofrecerlo crudo o en cubos firmes a bebés pequeños.",
+        "No añadir sal en exceso."
+      ],
+      "conservacion": "Refrigerar entero o cortado en recipiente limpio; una vez cocido, enfriar y refrigerar pronto.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Variedad%20de%20chayote.JPG?width=1280",
+        "alt": "Varios chayotes de diferentes formas y tamaños.",
+        "autor": "Katie Abrams",
+        "licencia": "CC BY 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Variedad%20de%20chayote.JPG"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "chayote para bebé",
+        "tayota",
+        "güisquil",
+        "Sechium edule",
+        "puré de chayote",
+        "sopa de chayote",
+        "chayote",
+        "viandas",
+        "vianda para bebés",
+        "mi bebé puede comer chayote",
+        "cómo preparar chayote para bebés",
+        "desde cuándo dar chayote",
+        "recetas con chayote"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Marco alimentario cubano para la infancia."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Orientación general sobre alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y señales de preparación."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención de atragantamientos y adaptación de texturas."
+        },
+        {
+          "institucion": "USDA",
+          "titulo": "FoodData Central",
+          "url": "https://fdc.nal.usda.gov/food-search/",
+          "utilidad": "Consulta de composición nutricional de los alimentos."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    }
+  ]
 }
