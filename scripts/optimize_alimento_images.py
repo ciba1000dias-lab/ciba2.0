@@ -12,7 +12,6 @@ from __future__ import annotations
 import argparse
 import json
 from pathlib import Path
-from urllib.parse import urlparse
 
 RUTA_LOCAL_PERMITIDA = "assets/images/alimentos/"
 
@@ -36,7 +35,7 @@ def preparar_foto(foto: dict, raiz: Path) -> bool:
         return False
 
     # Solo se permiten rutas relativas dentro del directorio oficial de imágenes.
-    ruta = url.replace("\\\\", "/")
+    ruta = url.replace("\\", "/")
     if not ruta.startswith(RUTA_LOCAL_PERMITIDA) or ".." in Path(ruta).parts:
         foto["url"] = ""
         foto.pop("variantes", None)
@@ -107,14 +106,14 @@ def main() -> int:
                         imagenes_omitidas += 1
 
             archivo.write_text(
-                json.dumps(datos, ensure_ascii=False, indent=2) + "\\n",
+                json.dumps(datos, ensure_ascii=False, indent=2) + "\n",
                 encoding="utf-8",
             )
         except (OSError, json.JSONDecodeError, ValueError) as exc:
             errores.append(f"{archivo.name}: {exc}")
 
     if errores:
-        print("\\n".join(errores))
+        print("\n".join(errores))
         return 1
 
     print(
