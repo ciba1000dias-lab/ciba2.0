@@ -1,175 +1,128 @@
 #!/usr/bin/env python3
-"""Optimiza las fotografías de alimentos a WebP durante el build.
+"""Prepara las imágenes locales de la biblioteca sin depender de servicios externos.
 
-Las fuentes originales y los metadatos de autoría/licencia permanecen en los
-JSON versionados. Solo se transforman copias dentro de dist/.
+La compilación nunca descarga fotografías de Internet. Las imágenes se incorporan
+previamente al repositorio, bajo assets/images/alimentos/. Si una ficha conserva
+una URL externa (Wikimedia, Pexels, etc.) o un archivo local inexistente, se
+omite su visualización sin detener el build. Los metadatos de autoría y licencia
+se conservan para facilitar la incorporación posterior de una imagen local.
 """
 from __future__ import annotations
 
 import argparse
-import io
 import json
-import re
-import sys
-import time
-import urllib.error
-import urllib.request
 from pathlib import Path
+from urllib.parse import urlparse
 
-from PIL import Image, ImageOps
-
-ANCHORES = (320, 640, 960)
-PILOTO = {
-    "frutas": {"aguacate"},
-    "viandas": {"boniato"},
-    "vegetales": {"calabaza"},
-}
-MAX_BYTES = 20 * 1024 * 1024
-USER_AGENT = "CIBA-Alimentos-ImageOptimizer/1.1 (GitHub Actions build)"
-INTERVALO_DESCARGAS = 1.5
-ESPERAS_REINTENTO = (8, 20, 45, 60)
-_ultima_solicitud = 0.0
+RUTA_LOCAL_PERMITIDA = "assets/images/alimentos/"
 
 
-def descargar(url: str) -> bytes:
-    global _ultima_solicitud
-    if not isinstance(url, str) or not url.startswith(("https://upload.wikimedia.org/", "https://thumb.wikimedia.org/", "https://commons.wikimedia.org/")):
-        raise ValueError(f"Fuente de imagen no autorizada: {url!r}")
+def preparar_foto(foto: dict, raiz: Path) -> bool:
+    """Conserva solo imágenes locales existentes; nunca realiza solicitudes HTTP."""
+    url = foto.get("url", "")
+    if not isinstance(url, str) or not url:
+        foto["url"] = ""
+        foto.pop("variantes", None)
+        foto.pop("formato_local", None)
+        return False
 
-    solicitud = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    for intento in range(len(ESPERAS_REINTENTO) + 1):
-        espera = INTERVALO_DESCARGAS - (time.monotonic() - _ultima_solicitud)
-        if espera > 0:
-            time.sleep(espera)
-        _ultima_solicitud = time.monotonic()
+    # Las URLs externas se conservan como referencia editorial, pero no se
+    # muestran ni se descargan durante el build.
+    if url.startswith(("https://", "http://")):
+        foto.setdefault("url_original", url)
+        foto["url"] = ""
+        foto.pop("variantes", None)
+        foto.pop("formato_local", None)
+        return False
 
-        try:
-            with urllib.request.urlopen(solicitud, timeout=45) as respuesta:
-                tipo = respuesta.headers.get("Content-Type", "")
-                datos = respuesta.read(MAX_BYTES + 1)
-            if len(datos) > MAX_BYTES:
-                raise ValueError("La imagen supera el límite de 20 MB.")
-            if not tipo.lower().startswith("image/"):
-                raise ValueError(f"La URL no devolvió una imagen (Content-Type: {tipo or 'desconocido'}).")
-            return datos
-        except urllib.error.HTTPError as exc:
-            if exc.code not in (429, 503) or intento >= len(ESPERAS_REINTENTO):
-                raise
-            retry_after = exc.headers.get("Retry-After", "")
-            try:
-                demora = max(float(retry_after), ESPERAS_REINTENTO[intento])
-            except (TypeError, ValueError):
-                demora = ESPERAS_REINTENTO[intento]
-            print(
-                f"Wikimedia respondió HTTP {exc.code}; reintento {intento + 1} "
-                f"de {len(ESPERAS_REINTENTO)} en {demora:.0f} s.",
-                file=sys.stderr,
-            )
-            time.sleep(demora)
-    raise RuntimeError("No se pudo descargar la imagen tras varios reintentos.")
+    # Solo se permiten rutas relativas dentro del directorio oficial de imágenes.
+    ruta = url.replace("\\\\", "/")
+    if not ruta.startswith(RUTA_LOCAL_PERMITIDA) or ".." in Path(ruta).parts:
+        foto["url"] = ""
+        foto.pop("variantes", None)
+        foto.pop("formato_local", None)
+        return False
 
+    archivo = (raiz / ruta).resolve()
+    try:
+        archivo.relative_to(raiz.resolve())
+    except ValueError:
+        foto["url"] = ""
+        foto.pop("variantes", None)
+        foto.pop("formato_local", None)
+        return False
 
-def convertir(datos: bytes, destino_base: Path) -> dict[str, str]:
-    with Image.open(io.BytesIO(datos)) as original:
-        imagen = ImageOps.exif_transpose(original)
-        if imagen.width < 1 or imagen.height < 1:
-            raise ValueError("Dimensiones de imagen inválidas.")
-        perfil = imagen.info.get("icc_profile")
-        if imagen.mode not in ("RGB", "RGBA"):
-            imagen = imagen.convert("RGBA" if "transparency" in imagen.info else "RGB")
-        elif imagen.mode == "RGBA":
-            imagen = imagen.copy()
-        else:
-            imagen = imagen.copy()
+    if not archivo.is_file():
+        foto["url"] = ""
+        foto.pop("variantes", None)
+        foto.pop("formato_local", None)
+        return False
 
-        variantes: dict[str, str] = {}
-        for ancho in ANCHORES:
-            copia = imagen.copy()
-            copia.thumbnail((ancho, ancho), Image.Resampling.LANCZOS)
-            destino = destino_base.parent / f"{destino_base.name}-{ancho}.webp"
-            destino.parent.mkdir(parents=True, exist_ok=True)
-            opciones = {"format": "WEBP", "quality": 82, "method": 6}
-            if perfil:
-                opciones["icc_profile"] = perfil
-            copia.save(destino, **opciones)
-            variantes[str(ancho)] = destino.relative_to(destino_base.parents[4]).as_posix()
-        return variantes
-
-
-def optimizar_foto(foto: dict, destino_base: Path) -> None:
-    url_original = foto.get("url_original") or foto.get("url")
-    if not url_original:
-        raise ValueError("La fotografía no tiene URL de origen.")
-    datos = descargar(url_original)
-    variantes = convertir(datos, destino_base)
-    foto["url_original"] = url_original
-    foto["url"] = variantes["960"]
-    foto["variantes"] = variantes
-    foto["formato_local"] = "WebP"
+    # Los archivos locales se sirven directamente. No hay conversión ni red.
+    foto["url"] = ruta
+    foto.pop("variantes", None)
+    foto.pop("formato_local", None)
+    return True
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--src", type=Path, default=Path("dist"), help="Directorio publicado del build.")
-    parser.add_argument("--pilot", action="store_true", help="Procesa solo aguacate, boniato y calabaza.")
+    parser.add_argument("--pilot", action="store_true", help="Compatibilidad con el antiguo modo piloto.")
     args = parser.parse_args()
 
     raiz = args.src.resolve()
-    if not raiz.is_dir():
-        parser.error(f"No existe el directorio de publicación: {raiz}")
+    directorio = raiz / "assets" / "data" / "alimentos"
+    if not directorio.is_dir():
+        parser.error(f"No existe el directorio de datos de alimentos: {directorio}")
 
-    grupos = sorted(PILOTO) if args.pilot else sorted(p.stem for p in (raiz / "assets/data/alimentos").glob("*.json"))
-    procesadas = 0
+    archivos = sorted(directorio.glob("*.json"))
+    fichas = 0
+    imagenes_locales = 0
+    imagenes_omitidas = 0
     errores: list[str] = []
 
-    for grupo in grupos:
-        archivo = raiz / "assets" / "data" / "alimentos" / f"{grupo}.json"
-        if not archivo.is_file():
-            if args.pilot:
-                errores.append(f"No existe el grupo del piloto: {archivo}")
-            continue
+    for archivo in archivos:
         try:
             datos = json.loads(archivo.read_text(encoding="utf-8"))
-        except (OSError, json.JSONDecodeError) as exc:
-            errores.append(f"{archivo}: {exc}")
-            continue
+            alimentos = datos.get("alimentos", [])
+            if not isinstance(alimentos, list):
+                raise ValueError("El campo 'alimentos' no es una lista.")
 
-        alimentos = datos.get("alimentos", [])
-        ids_piloto = PILOTO.get(grupo, set()) if args.pilot else None
-        encontrados: set[str] = set()
+            for alimento in alimentos:
+                if not isinstance(alimento, dict):
+                    continue
+                fichas += 1
+                fotos = []
+                if isinstance(alimento.get("imagen_principal"), dict):
+                    fotos.append(alimento["imagen_principal"])
+                fotos.extend(
+                    foto for foto in alimento.get("imagenes", [])
+                    if isinstance(foto, dict)
+                )
+                for foto in fotos:
+                    if preparar_foto(foto, raiz):
+                        imagenes_locales += 1
+                    else:
+                        imagenes_omitidas += 1
 
-        for alimento in alimentos:
-            alimento_id = alimento.get("id", "")
-            if ids_piloto is not None and alimento_id not in ids_piloto:
-                continue
-            fotos = []
-            if alimento.get("imagen_principal"):
-                fotos.append(("principal", alimento["imagen_principal"]))
-            fotos.extend((f"imagen-{i:02d}", foto) for i, foto in enumerate(alimento.get("imagenes", []), 1))
-
-            for etiqueta, foto in fotos:
-                try:
-                    if not re.fullmatch(r"[a-z0-9-]+", alimento_id):
-                        raise ValueError(f"Identificador inseguro: {alimento_id!r}")
-                    destino = raiz / "assets" / "img" / "alimentos" / grupo / f"{alimento_id}-{etiqueta}"
-                    optimizar_foto(foto, destino)
-                    procesadas += 1
-                except Exception as exc:
-                    errores.append(f"{grupo}/{alimento_id}/{etiqueta}: {exc}")
-            encontrados.add(alimento_id)
-
-        if ids_piloto is not None:
-            faltantes = ids_piloto - encontrados
-            if faltantes:
-                errores.append(f"{grupo}: no se encontraron alimentos del piloto: {', '.join(sorted(faltantes))}")
-
-        if not errores:
-            archivo.write_text(json.dumps(datos, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            archivo.write_text(
+                json.dumps(datos, ensure_ascii=False, indent=2) + "\\n",
+                encoding="utf-8",
+            )
+        except (OSError, json.JSONDecodeError, ValueError) as exc:
+            errores.append(f"{archivo.name}: {exc}")
 
     if errores:
-        print("\n".join(errores), file=sys.stderr)
+        print("\\n".join(errores))
         return 1
-    print(f"Fotografías convertidas a WebP: {procesadas}")
+
+    print(
+        f"Biblioteca preparada: {fichas} fichas; "
+        f"{imagenes_locales} imágenes locales; "
+        f"{imagenes_omitidas} imágenes externas o ausentes omitidas. "
+        "No se realizaron descargas de Internet."
+    )
     return 0
 
 
