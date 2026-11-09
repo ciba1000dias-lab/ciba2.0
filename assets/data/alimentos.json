@@ -3,7 +3,8 @@
   "biblioteca": "CIBA · Crianza · Alimentación",
   "archivos": [
     "assets/data/alimentos/frutas.json",
-    "assets/data/alimentos/viandas.json"
+    "assets/data/alimentos/viandas.json",
+    "assets/data/alimentos/vegetales.json"
   ],
   "categorias": [
     {
@@ -14,7 +15,12 @@
     {
       "nombre": "Viandas",
       "archivo": "assets/data/alimentos/viandas.json",
-      "cantidad": 10
+      "cantidad": 7
+    },
+    {
+      "nombre": "Vegetales y hortalizas",
+      "archivo": "assets/data/alimentos/vegetales.json",
+      "cantidad": 0
     }
   ]
 }
