@@ -2454,9 +2454,10 @@
         "Spam y muchos productos tipo luncheon meat son carnes procesadas. La OMS/IARC clasifica el consumo de carne procesada como carcinógeno para los seres humanos; esta clasificación identifica un peligro y no significa que una porción aislada tenga el mismo riesgo que fumar. La recomendación práctica es limitar su consumo habitual.",
         "No deben desplazar de forma rutinaria alimentos frescos o mínimamente procesados ni convertirse en la proteína diaria de bebés y niños.",
         "Evitar rodajas redondas, cubos grandes o fragmentos duros; si un niño mayor la consume, adaptar el corte a sus habilidades de masticación y supervisarlo mientras come.",
-        "Desechar latas abombadas, con fugas, perforadas o muy dañadas. Tras abrir, refrigerar el contenido en un recipiente limpio y tapado."
+        "Desechar latas abombadas, con fugas, perforadas o muy dañadas. Tras abrir, refrigerar el contenido en un recipiente limpio y tapado.",
+        "En un apagón, no conservar para después carnes enlatadas ya abiertas que hayan permanecido por encima de 4 °C durante más de 2 horas. Algunos jamones enlatados exigen refrigeración incluso sin abrir: manda siempre la etiqueta."
       ],
-      "conservacion": "Mientras permanezca cerrada, conservar en un lugar fresco, seco y alejado del sol, respetando la fecha y las indicaciones del envase. Un corte eléctrico no obliga a desechar una lata cerrada e íntegra que se haya mantenido almacenada correctamente. Una vez abierta, necesita refrigeración: no dejarla horas sobre la mesa ni confiar en que el hecho de ser enlatada la hace estable después de abrir.",
+      "conservacion": "No todas las conservas cárnicas son estables a temperatura ambiente: seguir siempre la etiqueta. Algunas, como ciertos jamones enlatados, indican «mantener refrigerado» incluso antes de abrir y necesitan frío. Solo almacenar en la despensa las latas comerciales íntegras cuya etiqueta permita conservarlas sin refrigeración, en un lugar fresco y seco. Después de abrir, refrigerar pronto el contenido en un recipiente limpio y tapado. Durante un apagón, si la carne enlatada ya está abierta y permanece por encima de 4 °C durante más de 2 horas, desecharla; no probarla para decidir si es segura.",
       "imagen_principal": {
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Spam%20and%20Great%20Value%20Luncheon%20Meat%20in%20cans.jpg?width=1280",
         "alt": "Dos latas de carne tipo Spam y luncheon meat, fotografiadas lado a lado.",
@@ -2509,6 +2510,12 @@
           "titulo": "File:Spam and Great Value Luncheon Meat in cans.jpg",
           "url": "https://commons.wikimedia.org/wiki/File:Spam_and_Great_Value_Luncheon_Meat_in_cans.jpg",
           "utilidad": "Fotografía de dos latas de carne procesada; autor Ll1324, licencia CC0 1.0."
+        },
+        {
+          "institucion": "FoodSafety.gov",
+          "titulo": "Food Safety During a Power Outage",
+          "url": "https://www.foodsafety.gov/food-safety-charts/food-safety-during-power-outage",
+          "utilidad": "Diferencia las conservas estables de los productos que requieren refrigeración y orienta sobre latas dañadas y alimentos abiertos durante apagones."
         }
       ],
       "estado": "publicado",
