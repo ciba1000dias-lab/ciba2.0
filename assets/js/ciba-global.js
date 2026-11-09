@@ -203,6 +203,15 @@
       )
     );
 
+    // ACCESO DIRECTO AL RECETARIO INTERACTIVO
+    panel.appendChild(
+      enlace(
+        new URL('c/C1/recetario/', RAIZ).href,
+        '¿Qué cocino hoy? · Recetario IA',
+        'ciba-global-enlace'
+      )
+    );
+
     // CUATRO COLUMNAS
     columnas.forEach((columna) => {
       const grupo = elemento('div', 'ciba-global-grupo');
