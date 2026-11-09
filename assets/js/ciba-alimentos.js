@@ -61,12 +61,19 @@
       if (!respuesta.ok) throw new Error('No se pudo cargar el índice de la biblioteca.');
       const indice = await respuesta.json();
       if (!Array.isArray(indice.archivos)) throw new Error('Índice de alimentos inválido.');
-      const grupos = await Promise.all(indice.archivos.map(async (archivo) => {
-        const r = await fetch(new URL(archivo, raiz).href, { cache: 'no-cache' });
-        if (!r.ok) throw new Error('No se pudo cargar: ' + archivo);
-        return r.json();
-      }));
-      const alimentos = grupos.flatMap((grupo) => Array.isArray(grupo.alimentos) ? grupo.alimentos : []);
+      const grupoSolicitado = raizUI.dataset.grupo;
+      let alimentos = [];
+
+      if (grupoSolicitado) {
+        const categoria = (indice.categorias || []).find((item) => item.slug === grupoSolicitado);
+        if (!categoria || !categoria.archivo) throw new Error('Grupo de alimentos desconocido.');
+        const r = await fetch(new URL(categoria.archivo, raiz).href, { cache: 'force-cache' });
+        if (!r.ok) throw new Error('No se pudo cargar el grupo: ' + grupoSolicitado);
+        const datosGrupo = await r.json();
+        alimentos = Array.isArray(datosGrupo.alimentos) ? datosGrupo.alimentos : [];
+      } else {
+        throw new Error('La página de alimentos debe indicar el grupo que va a cargar.');
+      }
       let categoriaActiva = 'Todos';
 
       function abrirDetalle(alimento, actualizarHash = true, claveSeccion = '') {
