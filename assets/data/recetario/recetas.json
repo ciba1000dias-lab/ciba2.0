@@ -1,8 +1,8 @@
 {
-  "version": 1,
+  "version": 2,
   "proyecto": "CIBA · ¿Qué cocino hoy?",
   "estado_catalogo": "piloto_en_revision",
-  "nota": "Estas preparaciones son borradores culinarios originales para revisión editorial y nutricional. No se habilitan para recomendaciones automáticas hasta completar la revisión especializada y las pruebas de seguridad.",
+  "nota": "Catálogo ampliado de preparaciones originales en borrador. Todos los registros requieren revisión especializada, editorial y de seguridad; ninguno se habilita automáticamente.",
   "tramos_edad": [
     "6-8",
     "9-11",
@@ -318,6 +318,607 @@
         "fecha": "2026-11-09",
         "estado": "pendiente_de_revision_especializada",
         "nota": "Revisar cantidad de legumbre y consistencias por etapa antes de publicar."
+      }
+    },
+    {
+      "id": "pure-boniato-natural",
+      "nombre": "Puré espeso de boniato",
+      "descripcion": "Boniato bien cocido y majado, sin añadidos.",
+      "estado": "revision_especializada_pendiente",
+      "publicable": false,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "boniato",
+          "cantidad": "1/2",
+          "unidad": "taza de boniato cocido",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar, pelar y cortar el boniato en piezas uniformes.",
+        "Hervir o cocinar al vapor hasta que se aplaste sin esfuerzo.",
+        "Aplastar o triturar y humedecer con agua potable hasta lograr la consistencia adecuada."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta una consistencia homogénea, húmeda y espesa; sin piezas, hebras ni grumos duros.",
+        "9-11": "Aplastar muy bien; permitir grumos pequeños y blandos solo si ya maneja esa textura con seguridad.",
+        "12-23": "Ofrecer aplastado o en trozos pequeños, blandos y húmedos, según sus habilidades de masticación.",
+        "24-59": "Servir bien cocido y tierno, en tamaño adecuado a la capacidad de masticar y tragar."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No ofrecer piezas firmes, secas ni pegajosas.",
+        "No añadir sal, azúcar ni miel."
+      ],
+      "ingredientes_nuevos": "Introducir cada ingrediente por separado y comprobar tolerancia antes de combinarlo con otros alimentos nuevos.",
+      "conservacion": "Preparar en condiciones higiénicas, servir una porción limpia y refrigerar pronto lo que no haya estado en contacto con saliva. Los tiempos concretos de conservación requieren validación editorial y de seguridad alimentaria.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "pendiente_de_revision_especializada",
+        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+      }
+    },
+    {
+      "id": "aguacate-majado",
+      "nombre": "Aguacate majado",
+      "descripcion": "Aguacate maduro, fresco y machacado hasta quedar suave.",
+      "estado": "revision_especializada_pendiente",
+      "publicable": false,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "aguacate",
+          "cantidad": "1/4",
+          "unidad": "de aguacate maduro",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar la cáscara antes de abrir.",
+        "Retirar cáscara y semilla; comprobar que la pulpa esté fresca y sin partes dañadas.",
+        "Aplastar con un tenedor hasta obtener una textura suave. No es necesario añadir sal."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta una consistencia homogénea, húmeda y espesa; sin piezas, hebras ni grumos duros.",
+        "9-11": "Aplastar muy bien; permitir grumos pequeños y blandos solo si ya maneja esa textura con seguridad.",
+        "12-23": "Ofrecer aplastado o en trozos pequeños, blandos y húmedos, según sus habilidades de masticación.",
+        "24-59": "Servir bien cocido y tierno, en tamaño adecuado a la capacidad de masticar y tragar."
+      },
+      "alergenos": [],
+      "alertas": [
+        "Preparar justo antes de servir para evitar deterioro.",
+        "Retirar completamente la semilla y la cáscara."
+      ],
+      "ingredientes_nuevos": "Introducir cada ingrediente por separado y comprobar tolerancia antes de combinarlo con otros alimentos nuevos.",
+      "conservacion": "Preparar en condiciones higiénicas, servir una porción limpia y refrigerar pronto lo que no haya estado en contacto con saliva. Los tiempos concretos de conservación requieren validación editorial y de seguridad alimentaria.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "pendiente_de_revision_especializada",
+        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+      }
+    },
+    {
+      "id": "arroz-boniato-pollo",
+      "nombre": "Arroz meloso con boniato y pollo",
+      "descripcion": "Combinación húmeda de cereal, vianda y pollo completamente cocido.",
+      "estado": "revision_especializada_pendiente",
+      "publicable": false,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "arroz",
+          "cantidad": "1/4",
+          "unidad": "taza de arroz bien cocido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "boniato",
+          "cantidad": "1/4",
+          "unidad": "taza de boniato cocido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "pollo",
+          "cantidad": "30",
+          "unidad": "gramos de pollo cocido, sin piel ni huesos",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Cocinar el arroz con agua potable hasta que quede muy blando y húmedo.",
+        "Cocinar el boniato hasta que se aplaste fácilmente.",
+        "Cocinar el pollo hasta alcanzar 74 °C en el centro; retirar piel y huesos.",
+        "Desmenuzar el pollo muy fino y mezclar con el arroz y el boniato. Ajustar la humedad."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta una consistencia homogénea, húmeda y espesa; sin piezas, hebras ni grumos duros.",
+        "9-11": "Aplastar muy bien; permitir grumos pequeños y blandos solo si ya maneja esa textura con seguridad.",
+        "12-23": "Ofrecer aplastado o en trozos pequeños, blandos y húmedos, según sus habilidades de masticación.",
+        "24-59": "Servir bien cocido y tierno, en tamaño adecuado a la capacidad de masticar y tragar."
+      },
+      "alergenos": [],
+      "alertas": [
+        "El pollo debe alcanzar 74 °C en el centro.",
+        "Evitar contaminación cruzada con pollo crudo.",
+        "No añadir sal, cubitos ni embutidos."
+      ],
+      "ingredientes_nuevos": "Introducir cada ingrediente por separado y comprobar tolerancia antes de combinarlo con otros alimentos nuevos.",
+      "conservacion": "Preparar en condiciones higiénicas, servir una porción limpia y refrigerar pronto lo que no haya estado en contacto con saliva. Los tiempos concretos de conservación requieren validación editorial y de seguridad alimentaria.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "cdc-pollo-seguro"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "pendiente_de_revision_especializada",
+        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+      }
+    },
+    {
+      "id": "malanga-pollo-majado",
+      "nombre": "Malanga majada con pollo",
+      "descripcion": "Vianda cocida y pollo desmenuzado en una mezcla húmeda.",
+      "estado": "revision_especializada_pendiente",
+      "publicable": false,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "malanga",
+          "cantidad": "1/2",
+          "unidad": "taza de malanga cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "pollo",
+          "cantidad": "30",
+          "unidad": "gramos de pollo cocido, sin piel ni huesos",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Pelar la malanga y cocinarla completamente en agua potable hasta que esté muy blanda.",
+        "Cocinar el pollo por separado hasta alcanzar 74 °C en el centro.",
+        "Retirar huesos, piel y cartílagos; desmenuzar muy fino.",
+        "Aplastar la malanga y mezclar con el pollo. Añadir agua potable si hace falta."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta una consistencia homogénea, húmeda y espesa; sin piezas, hebras ni grumos duros.",
+        "9-11": "Aplastar muy bien; permitir grumos pequeños y blandos solo si ya maneja esa textura con seguridad.",
+        "12-23": "Ofrecer aplastado o en trozos pequeños, blandos y húmedos, según sus habilidades de masticación.",
+        "24-59": "Servir bien cocido y tierno, en tamaño adecuado a la capacidad de masticar y tragar."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No ofrecer malanga cruda o insuficientemente cocida.",
+        "El pollo debe alcanzar 74 °C en el centro.",
+        "No añadir sal ni caldos concentrados."
+      ],
+      "ingredientes_nuevos": "Introducir cada ingrediente por separado y comprobar tolerancia antes de combinarlo con otros alimentos nuevos.",
+      "conservacion": "Preparar en condiciones higiénicas, servir una porción limpia y refrigerar pronto lo que no haya estado en contacto con saliva. Los tiempos concretos de conservación requieren validación editorial y de seguridad alimentaria.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "cdc-pollo-seguro"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "pendiente_de_revision_especializada",
+        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+      }
+    },
+    {
+      "id": "lentejas-zanahoria-majadas",
+      "nombre": "Lentejas majadas con zanahoria",
+      "descripcion": "Legumbre y vegetal cocidos hasta quedar muy blandos.",
+      "estado": "revision_especializada_pendiente",
+      "publicable": false,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "lentejas",
+          "cantidad": "2",
+          "unidad": "cucharadas de lentejas cocidas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "zanahoria",
+          "cantidad": "1/4",
+          "unidad": "taza de zanahoria cocida",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar las lentejas y cocinarlas en agua potable hasta que estén completamente blandas.",
+        "Pelar y cocinar la zanahoria hasta que se aplaste fácilmente.",
+        "Triturar o aplastar ambos ingredientes con un poco de agua potable.",
+        "Comprobar que no queden lentejas firmes ni trozos duros."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta una consistencia homogénea, húmeda y espesa; sin piezas, hebras ni grumos duros.",
+        "9-11": "Aplastar muy bien; permitir grumos pequeños y blandos solo si ya maneja esa textura con seguridad.",
+        "12-23": "Ofrecer aplastado o en trozos pequeños, blandos y húmedos, según sus habilidades de masticación.",
+        "24-59": "Servir bien cocido y tierno, en tamaño adecuado a la capacidad de masticar y tragar."
+      },
+      "alergenos": [
+        "legumbres"
+      ],
+      "alertas": [
+        "Las lentejas deben estar completamente cocidas y blandas.",
+        "No añadir sal, embutidos ni cubitos concentrados."
+      ],
+      "ingredientes_nuevos": "Introducir cada ingrediente por separado y comprobar tolerancia antes de combinarlo con otros alimentos nuevos.",
+      "conservacion": "Preparar en condiciones higiénicas, servir una porción limpia y refrigerar pronto lo que no haya estado en contacto con saliva. Los tiempos concretos de conservación requieren validación editorial y de seguridad alimentaria.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "pendiente_de_revision_especializada",
+        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+      }
+    },
+    {
+      "id": "arroz-frijol-calabaza",
+      "nombre": "Arroz húmedo con frijoles y calabaza",
+      "descripcion": "Combinación de cereal, legumbre y vegetal, sin carnes procesadas.",
+      "estado": "revision_especializada_pendiente",
+      "publicable": false,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "arroz",
+          "cantidad": "1/4",
+          "unidad": "taza de arroz bien cocido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "frijol-negro",
+          "cantidad": "2",
+          "unidad": "cucharadas de frijoles negros completamente cocidos",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "calabaza",
+          "cantidad": "1/4",
+          "unidad": "taza de calabaza cocida",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Cocinar los frijoles hasta que estén completamente blandos; no utilizar granos duros.",
+        "Cocinar el arroz hasta que quede muy blando y húmedo.",
+        "Cocinar la calabaza sin cáscara ni semillas hasta que se aplaste fácilmente.",
+        "Aplastar o triturar todo; retirar pieles de frijol si permanecen duras."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta una consistencia homogénea, húmeda y espesa; sin piezas, hebras ni grumos duros.",
+        "9-11": "Aplastar muy bien; permitir grumos pequeños y blandos solo si ya maneja esa textura con seguridad.",
+        "12-23": "Ofrecer aplastado o en trozos pequeños, blandos y húmedos, según sus habilidades de masticación.",
+        "24-59": "Servir bien cocido y tierno, en tamaño adecuado a la capacidad de masticar y tragar."
+      },
+      "alergenos": [
+        "legumbres"
+      ],
+      "alertas": [
+        "No ofrecer granos enteros o firmes a lactantes.",
+        "No añadir sal, tocino, chorizo ni cubitos concentrados."
+      ],
+      "ingredientes_nuevos": "Introducir cada ingrediente por separado y comprobar tolerancia antes de combinarlo con otros alimentos nuevos.",
+      "conservacion": "Preparar en condiciones higiénicas, servir una porción limpia y refrigerar pronto lo que no haya estado en contacto con saliva. Los tiempos concretos de conservación requieren validación editorial y de seguridad alimentaria.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "pendiente_de_revision_especializada",
+        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+      }
+    },
+    {
+      "id": "papa-huevo-majado",
+      "nombre": "Papa majada con huevo bien cocido",
+      "descripcion": "Preparación sencilla con huevo completamente cocido.",
+      "estado": "revision_especializada_pendiente",
+      "publicable": false,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "papa",
+          "cantidad": "1/2",
+          "unidad": "taza de papa cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "huevo-gallina",
+          "cantidad": "1/2",
+          "unidad": "huevo completamente cocido",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar, pelar y cocinar la papa hasta que esté muy blanda.",
+        "Cocinar el huevo hasta que clara y yema estén completamente firmes.",
+        "Aplastar el huevo y la papa hasta obtener una mezcla húmeda y sin trozos duros."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta una consistencia homogénea, húmeda y espesa; sin piezas, hebras ni grumos duros.",
+        "9-11": "Aplastar muy bien; permitir grumos pequeños y blandos solo si ya maneja esa textura con seguridad.",
+        "12-23": "Ofrecer aplastado o en trozos pequeños, blandos y húmedos, según sus habilidades de masticación.",
+        "24-59": "Servir bien cocido y tierno, en tamaño adecuado a la capacidad de masticar y tragar."
+      },
+      "alergenos": [
+        "huevo"
+      ],
+      "alertas": [
+        "El huevo debe estar completamente cocido.",
+        "El huevo es un alérgeno; ofrecerlo según orientación vigente y nunca ocultarlo en una preparación.",
+        "No añadir sal."
+      ],
+      "ingredientes_nuevos": "Introducir cada ingrediente por separado y comprobar tolerancia antes de combinarlo con otros alimentos nuevos.",
+      "conservacion": "Preparar en condiciones higiénicas, servir una porción limpia y refrigerar pronto lo que no haya estado en contacto con saliva. Los tiempos concretos de conservación requieren validación editorial y de seguridad alimentaria.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "pendiente_de_revision_especializada",
+        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+      }
+    },
+    {
+      "id": "avena-fruta-bomba",
+      "nombre": "Avena suave con fruta bomba",
+      "descripcion": "Avena bien cocida y papaya madura triturada, sin azúcar añadida.",
+      "estado": "revision_especializada_pendiente",
+      "publicable": false,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "avena",
+          "cantidad": "2",
+          "unidad": "cucharadas de avena",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "fruta-bomba",
+          "cantidad": "1/4",
+          "unidad": "taza de fruta bomba madura",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Cocinar la avena con agua potable, removiendo hasta que quede muy blanda.",
+        "Lavar la fruta bomba por fuera, retirar cáscara y semillas.",
+        "Aplastar la fruta y mezclar con la avena ya cocida.",
+        "Dejar enfriar hasta una temperatura segura antes de servir."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta una consistencia homogénea, húmeda y espesa; sin piezas, hebras ni grumos duros.",
+        "9-11": "Aplastar muy bien; permitir grumos pequeños y blandos solo si ya maneja esa textura con seguridad.",
+        "12-23": "Ofrecer aplastado o en trozos pequeños, blandos y húmedos, según sus habilidades de masticación.",
+        "24-59": "Servir bien cocido y tierno, en tamaño adecuado a la capacidad de masticar y tragar."
+      },
+      "alergenos": [],
+      "alertas": [
+        "Usar avena simple, sin azúcar ni saborizantes.",
+        "No añadir miel ni azúcar.",
+        "Comprobar que la mezcla no quede seca ni pegajosa."
+      ],
+      "ingredientes_nuevos": "Introducir cada ingrediente por separado y comprobar tolerancia antes de combinarlo con otros alimentos nuevos.",
+      "conservacion": "Preparar en condiciones higiénicas, servir una porción limpia y refrigerar pronto lo que no haya estado en contacto con saliva. Los tiempos concretos de conservación requieren validación editorial y de seguridad alimentaria.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "pendiente_de_revision_especializada",
+        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+      }
+    },
+    {
+      "id": "platano-vianda-pollo",
+      "nombre": "Plátano verde majado con pollo",
+      "descripcion": "Plátano vianda bien cocido con pollo desmenuzado y húmedo.",
+      "estado": "revision_especializada_pendiente",
+      "publicable": false,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "platano-vianda",
+          "cantidad": "1/2",
+          "unidad": "taza de plátano vianda cocido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "pollo",
+          "cantidad": "30",
+          "unidad": "gramos de pollo cocido, sin piel ni huesos",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Pelar el plátano y cocinarlo en agua potable hasta que esté completamente blando.",
+        "Cocinar el pollo hasta alcanzar 74 °C en el centro.",
+        "Retirar todos los huesos y desmenuzar el pollo muy fino.",
+        "Aplastar el plátano y mezclarlo con el pollo; ajustar la humedad con agua potable."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta una consistencia homogénea, húmeda y espesa; sin piezas, hebras ni grumos duros.",
+        "9-11": "Aplastar muy bien; permitir grumos pequeños y blandos solo si ya maneja esa textura con seguridad.",
+        "12-23": "Ofrecer aplastado o en trozos pequeños, blandos y húmedos, según sus habilidades de masticación.",
+        "24-59": "Servir bien cocido y tierno, en tamaño adecuado a la capacidad de masticar y tragar."
+      },
+      "alergenos": [],
+      "alertas": [
+        "El pollo debe alcanzar 74 °C en el centro.",
+        "Evitar masas secas, compactas o pegajosas.",
+        "No añadir sal ni embutidos."
+      ],
+      "ingredientes_nuevos": "Introducir cada ingrediente por separado y comprobar tolerancia antes de combinarlo con otros alimentos nuevos.",
+      "conservacion": "Preparar en condiciones higiénicas, servir una porción limpia y refrigerar pronto lo que no haya estado en contacto con saliva. Los tiempos concretos de conservación requieren validación editorial y de seguridad alimentaria.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "cdc-pollo-seguro"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "pendiente_de_revision_especializada",
+        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
+      }
+    },
+    {
+      "id": "polenta-calabaza",
+      "nombre": "Polenta suave con calabaza",
+      "descripcion": "Maíz cocido y calabaza en una preparación húmeda.",
+      "estado": "revision_especializada_pendiente",
+      "publicable": false,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "harina-maiz",
+          "cantidad": "2",
+          "unidad": "cucharadas de harina de maíz",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "calabaza",
+          "cantidad": "1/4",
+          "unidad": "taza de calabaza cocida",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Cocinar la harina de maíz con agua potable, removiendo para evitar grumos y hasta que esté completamente cocida.",
+        "Cocinar la calabaza sin cáscara ni semillas hasta que esté muy blanda.",
+        "Aplastar la calabaza y mezclar con la polenta; ajustar con agua potable para que quede húmeda."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta una consistencia homogénea, húmeda y espesa; sin piezas, hebras ni grumos duros.",
+        "9-11": "Aplastar muy bien; permitir grumos pequeños y blandos solo si ya maneja esa textura con seguridad.",
+        "12-23": "Ofrecer aplastado o en trozos pequeños, blandos y húmedos, según sus habilidades de masticación.",
+        "24-59": "Servir bien cocido y tierno, en tamaño adecuado a la capacidad de masticar y tragar."
+      },
+      "alergenos": [],
+      "alertas": [
+        "La polenta debe estar completamente cocida, suave y húmeda.",
+        "Evitar grumos densos o pegajosos.",
+        "No añadir sal, azúcar ni miel."
+      ],
+      "ingredientes_nuevos": "Introducir cada ingrediente por separado y comprobar tolerancia antes de combinarlo con otros alimentos nuevos.",
+      "conservacion": "Preparar en condiciones higiénicas, servir una porción limpia y refrigerar pronto lo que no haya estado en contacto con saliva. Los tiempos concretos de conservación requieren validación editorial y de seguridad alimentaria.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "pendiente_de_revision_especializada",
+        "nota": "Validar cantidades, textura, preparación y adecuación por etapa antes de publicar."
       }
     }
   ],
