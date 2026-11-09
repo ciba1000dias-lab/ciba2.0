@@ -400,7 +400,8 @@ function abrirAyudaInfo(botonInfo) {
   const cerrar = document.createElement('button');
   cerrar.type = 'button';
   cerrar.className = 'ciba-info-cerrar';
-  cerrar.textContent = 'Cerrar';
+  cerrar.textContent = '×';
+  cerrar.setAttribute('aria-label', 'Cerrar comentario');
   cerrar.addEventListener('click', () => cerrarAyudaInfo(true));
   panel.append(contenido, cerrar);
   document.body.appendChild(panel);
