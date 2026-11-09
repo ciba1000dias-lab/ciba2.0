@@ -203,10 +203,10 @@
       )
     );
 
-    // NUTRICIÓN DESDE LA CONCEPCIÓN
+    // SUBSECCIÓN DE ALIMENTACIÓN DURANTE LA GESTACIÓN
     panel.appendChild(
       enlace(
-        new URL('c/C1/C1-05/', RAIZ).href,
+        new URL('c/C1/alimentacion-gestacion/', RAIZ).href,
         'Alimentación durante la gestación',
         'ciba-global-enlace'
       )
