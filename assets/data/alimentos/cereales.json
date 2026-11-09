@@ -9,11 +9,19 @@
       "nombres_alternativos": [
         "arroz blanco",
         "arroz integral",
-        "Oryza sativa"
+        "Oryza sativa",
+        "arroz amarillo",
+        "arroz blanco cubano",
+        "arroz con frijoles",
+        "congrí",
+        "congris",
+        "moros y cristianos",
+        "arroz con pollo",
+        "arroz con vegetales"
       ],
       "categoria": "Cereales",
-      "resumen": "Grano básico de la cocina cubana, fuente principalmente de almidón.",
-      "descripcion": "El arroz es un cereal de consumo extendido. El integral conserva más fibra y micronutrientes; el blanco suele ablandarse con facilidad. Puede contener arsénico inorgánico, por lo que no debe ser el único cereal habitual del lactante.",
+      "resumen": "Cereal básico de la cocina cubana, presente tanto en preparaciones sencillas como en platos familiares con frijoles, vegetales o pollo.",
+      "descripcion": "El arroz es un cereal de consumo extendido. El integral conserva más fibra y algunos micronutrientes; el blanco suele ablandarse con facilidad. En Cuba se consume de muchas formas: blanco, amarillo, con frijoles, con pollo o con vegetales. Estas preparaciones no cambian la identidad del alimento principal, pero sí sus ingredientes, su contenido de sal y grasa y la textura que recibe el niño. El arroz puede contener arsénico inorgánico, por lo que conviene alternarlo con otros cereales.",
       "propiedades": [
         "El arroz es un cereal de consumo extendido.",
         "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
@@ -38,34 +46,36 @@
           "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
         }
       ],
-      "preparacion_segura": "Variar con otros cereales; cocinar hasta quedar muy blando y aplastar. No ofrecer granos duros ni compactos.",
+      "preparacion_segura": "Cocinar completamente hasta que quede blando y húmedo. Para los más pequeños, aplastar o triturar y adaptar la consistencia a sus habilidades. Preparar la base familiar sin sal añadida y apartar la porción infantil antes de condimentar la de los adultos. En platos con frijoles, estos deben estar completamente cocidos y aplastados para evitar ofrecer granos enteros.",
       "recetas": [
         {
-          "nombre": "Arroz muy blando triturado",
-          "etapa": "Desde el inicio de la alimentación complementaria",
-          "ingredientes": "Arroz y alimentos frescos apropiados",
-          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+          "nombre": "Arroz blanco bien cocido",
+          "etapa": "Preparación sencilla",
+          "ingredientes": "Arroz y agua",
+          "preparacion": "Cocinar hasta que el grano esté completamente tierno. Para el bebé, servir húmedo y aplastado o triturado según sus habilidades; evitar una masa seca o compacta."
         },
         {
-          "nombre": "arroz con calabaza",
-          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
-          "ingredientes": "Arroz y alimentos frescos apropiados",
-          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+          "nombre": "Arroz con calabaza",
+          "etapa": "Preparación con vegetales",
+          "ingredientes": "Arroz, calabaza y agua",
+          "preparacion": "Cocinar la calabaza hasta que esté muy blanda y mezclarla con el arroz bien cocido. Aplastar o triturar según la etapa; no añadir sal a la porción infantil."
         },
         {
-          "nombre": "arroz meloso con pollo desmenuzado.",
-          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
-          "ingredientes": "Arroz y alimentos frescos apropiados",
-          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+          "nombre": "Arroz meloso con pollo",
+          "etapa": "Preparación con proteína",
+          "ingredientes": "Arroz, pollo sin piel ni huesos y vegetales suaves",
+          "preparacion": "Cocinar el pollo completamente, retirar todos los huesos y desmenuzarlo muy fino. Mezclar con arroz húmedo y vegetales bien cocidos; adaptar la textura y no usar cubitos de caldo ni embutidos."
         }
       ],
       "precauciones": [
-        "Alternar arroz con avena, maíz, trigo y otros cereales por la preocupación de arsénico. Evitar sal.",
         "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
         "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados.",
-        "Alternar arroz con otros cereales: la FDA y los CDC desaconsejan que el cereal de arroz sea la única fuente habitual de cereal del lactante por la exposición al arsénico."
+        "Alternar arroz con otros cereales: la FDA y los CDC desaconsejan que el cereal de arroz sea la única fuente habitual de cereal del lactante por la exposición al arsénico.",
+        "Alternar el arroz con otros cereales para diversificar la alimentación y reducir la dependencia de un solo cereal por la exposición al arsénico.",
+        "En congrí y moros y cristianos, los frijoles deben estar completamente cocidos y aplastados para los niños que aún no manejan bien los granos enteros.",
+        "Evitar en la porción infantil embutidos, tocino, chicharrones, cubitos de caldo y preparaciones muy saladas o grasosas."
       ],
-      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "conservacion": "Guardar el arroz seco en un recipiente limpio, cerrado y protegido de humedad y plagas. El arroz cocido requiere especial cuidado: enfriarlo rápidamente (idealmente dentro de una hora), refrigerarlo enseguida y consumirlo dentro de las 24 horas. Recalentar solo una vez y hasta que esté muy caliente en toda su extensión. No dejarlo varias horas a temperatura ambiente. Separar la porción infantil y desechar los restos que hayan estado en contacto con saliva.",
       "imagen_principal": {
         "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rice%20Grains.jpg?width=1280",
         "alt": "Arroz: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
@@ -83,7 +93,30 @@
         "mi bebé puede comer arroz",
         "cómo preparar arroz para bebés",
         "desde cuándo dar arroz",
-        "recetas con arroz"
+        "recetas con arroz",
+        "arroz amarillo",
+        "arroz con bijol",
+        "arroz con bija",
+        "arroz con achiote",
+        "congrí",
+        "congris",
+        "congri oriental",
+        "congrí oriental",
+        "congrí cubano",
+        "moros y cristianos",
+        "moros",
+        "arroz con frijoles",
+        "arroz con frijoles negros",
+        "arroz con frijoles colorados",
+        "arroz con pollo",
+        "arroz con vegetales",
+        "arroz con verduras",
+        "arroz blanco cubano",
+        "mi bebé puede comer congrí",
+        "mi bebé puede comer moros y cristianos",
+        "cómo preparar congrí para bebés",
+        "cómo adaptar arroz amarillo para bebés",
+        "arroz para bebés"
       ],
       "fuentes": [
         {
@@ -121,10 +154,62 @@
           "titulo": "Rice Grains.jpg",
           "url": "https://commons.wikimedia.org/wiki/File:Rice_Grains.jpg",
           "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de arroz."
+        },
+        {
+          "institucion": "OMS",
+          "titulo": "Infant and young child feeding",
+          "url": "https://www.who.int/en/news-room/fact-sheets/detail/infant-and-young-child-feeding",
+          "utilidad": "Inicio de la alimentación complementaria alrededor de los 6 meses, variedad, higiene y progresión de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Foods and Drinks to Avoid or Limit",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-avoid-or-limit.html",
+          "utilidad": "Orientación para limitar alimentos con mucha sal y carnes procesadas en niños pequeños."
+        },
+        {
+          "institucion": "Food Standards Scotland",
+          "titulo": "Food storage",
+          "url": "https://www.foodstandards.gov.scot/consumer-advice/food-safety/food-safety-in-the-kitchen/food-storage",
+          "utilidad": "Enfriamiento rápido, refrigeración, plazo de 24 horas y recalentamiento seguro del arroz cocido."
+        },
+        {
+          "institucion": "Niurka Núñez González",
+          "titulo": "Entre la tradición y el cambio. La cultura alimentaria cubana y su patrimonialización",
+          "url": "https://www.editions.ird.fr/open_access_download/1254/754",
+          "utilidad": "Documenta la variación regional y familiar de los nombres congrí y moros y cristianos en Cuba (2019)."
         }
       ],
       "estado": "piloto",
-      "imagenes": []
+      "imagenes": [],
+      "preparaciones_cubanas": [
+        "En Cuba los nombres y las recetas cambian entre regiones y familias. Congrí suele asociarse al arroz con frijoles colorados en parte de la tradición oriental; moros y cristianos suele prepararse con frijoles negros. En muchos hogares los nombres se usan de manera más flexible. Aquí se describen como preparaciones relacionadas, sin imponer una única versión.",
+        {
+          "etapa": "Arroz amarillo",
+          "ingredientes": "Arroz, agua o caldo casero sin sal, cebolla, ajo, ají y una pequeña cantidad de bija/achiote o cúrcuma, según la costumbre",
+          "forma": "Sofreír suavemente los vegetales con poca grasa, añadir el arroz y el líquido y cocinar hasta que quede completamente tierno. Para el niño, apartar antes de añadir sal, cubitos de caldo, colorantes con mucho sodio o condimentos picantes; servir húmedo y con textura adaptada."
+        },
+        {
+          "etapa": "Congrí de frijoles colorados",
+          "ingredientes": "Arroz, frijoles colorados secos, agua, cebolla, ajo, ají y hierbas suaves",
+          "forma": "Cocinar los frijoles por completo hasta que estén muy tiernos; preparar el arroz con parte del líquido de cocción y mezclar. Para el bebé, aplastar bien los frijoles o triturar la mezcla, sin dejar granos enteros. Evitar chicharrón, tocino, embutidos, exceso de grasa y sal en la porción infantil."
+        },
+        {
+          "etapa": "Moros y cristianos",
+          "ingredientes": "Arroz, frijoles negros completamente cocidos, agua, cebolla, ajo, ají y hierbas suaves",
+          "forma": "Cocinar los frijoles hasta que estén muy tiernos y preparar el arroz con parte de su caldo. Para el niño pequeño, aplastar los frijoles y ajustar la humedad y consistencia; no ofrecer granos enteros ni añadir sal, cubitos de caldo o carnes procesadas."
+        },
+        {
+          "etapa": "Arroz con pollo",
+          "ingredientes": "Arroz, pollo, tomate o vegetales suaves, cebolla, ajo y ají",
+          "forma": "Cocinar el pollo completamente y retirar piel, cartílagos y todos los huesos. Desmenuzar muy fino y mezclar con arroz húmedo y vegetales bien cocidos. Evitar chorizo, jamón, salchichas y cubitos de caldo; adaptar la textura a la edad y habilidad del niño."
+        },
+        {
+          "etapa": "Arroz con vegetales",
+          "ingredientes": "Arroz, calabaza, zanahoria, habichuela tierna u otros vegetales apropiados",
+          "forma": "Cocinar cada vegetal hasta que esté blando y cortarlo o aplastarlo de acuerdo con las habilidades del niño. Mezclar con arroz bien cocido y húmedo; variar los vegetales y no añadir sal a la porción infantil."
+        }
+      ]
     },
     {
       "id": "maiz",

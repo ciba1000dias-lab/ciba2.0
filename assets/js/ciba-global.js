@@ -95,6 +95,7 @@
   function resolverSeccion(consulta) {
     const q = normalizar(consulta);
     const reglas = [
+      { clave: 'preparaciones-cubanas', etiqueta: 'Preparaciones cubanas del arroz', patrones: ['congri', 'moros y cristianos', 'moros', 'arroz amarillo', 'arroz con pollo', 'arroz con vegetales', 'arroz con frijoles'] },
       { clave: 'edad', etiqueta: 'Edad de introducción', patrones: ['edad', 'desde cuando', 'a partir de cuando', 'cuando introducir', 'cuando puedo', 'meses puede', 'a que edad'] },
       { clave: 'preparacion', etiqueta: 'Preparación según la etapa', patrones: ['preparar', 'preparacion', 'como dar', 'como ofrecer', 'textura', 'trozos', 'pure', 'papilla', 'aplastar', 'triturar', 'cortar para'] },
       { clave: 'seguridad', etiqueta: 'Preparación segura', patrones: ['lavar', 'limpiar', 'quitar semillas', 'quitar cascara', 'seguro', 'segura', 'hueso'] },

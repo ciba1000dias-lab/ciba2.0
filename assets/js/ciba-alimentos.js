@@ -16,6 +16,7 @@
   function resolverSeccion(consulta) {
     const q = normalizar(consulta);
     const reglas = [
+      { clave: 'preparaciones-cubanas', patrones: ['congri', 'moros y cristianos', 'moros', 'arroz amarillo', 'arroz con pollo', 'arroz con vegetales', 'arroz con frijoles'] },
       { clave: 'edad', patrones: ['edad', 'desde cuando', 'a partir de cuando', 'cuando introducir', 'cuando puedo', 'meses puede', 'a que edad'] },
       { clave: 'preparacion', patrones: ['preparar', 'preparacion', 'como dar', 'como ofrecer', 'textura', 'trozos', 'pure', 'papilla', 'aplastar', 'triturar', 'cortar para'] },
       { clave: 'seguridad', patrones: ['seguro', 'segura', 'lavar', 'limpiar', 'cascara', 'semillas', 'hueso', 'atragantamiento'] },
@@ -201,6 +202,7 @@
         seccion('Preparación según la etapa', alimento.preparacion_por_edades, 'preparacion');
         seccion('Preparación segura', alimento.preparacion_segura, 'seguridad');
         seccion('Recetas sencillas', alimento.recetas, 'recetas');
+        if (Array.isArray(alimento.preparaciones_cubanas) && alimento.preparaciones_cubanas.length) seccion('El arroz en la mesa cubana', alimento.preparaciones_cubanas, 'preparaciones-cubanas');
         seccion('Precauciones', alimento.precauciones, 'precauciones');
         seccion('Conservación', alimento.conservacion, 'conservacion');
 
