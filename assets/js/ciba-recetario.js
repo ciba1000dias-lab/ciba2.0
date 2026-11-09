@@ -198,6 +198,12 @@ function mostrarRecetas(data) {
       estadoDemo.textContent = 'BORRADOR · NO APROBADO';
       tarjeta.appendChild(estadoDemo);
     }
+    if (Number.isInteger(receta.numero_catalogo)) {
+      const numero = document.createElement('p');
+      numero.className = 'ciba-receta-numero';
+      numero.textContent = 'RECETA ' + receta.numero_catalogo;
+      tarjeta.appendChild(numero);
+    }
     const nombre = document.createElement('h4');
     nombre.textContent = receta.nombre;
     tarjeta.appendChild(nombre);
