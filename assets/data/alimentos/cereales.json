@@ -1,0 +1,1841 @@
+{
+  "version": 1,
+  "biblioteca": "CIBA · Crianza · Alimentación",
+  "categoria": "Cereales",
+  "alimentos": [
+    {
+      "id": "arroz",
+      "nombre": "Arroz",
+      "nombres_alternativos": [
+        "arroz blanco",
+        "arroz integral",
+        "Oryza sativa"
+      ],
+      "categoria": "Cereales",
+      "resumen": "Grano básico de la cocina cubana, fuente principalmente de almidón.",
+      "descripcion": "El arroz es un cereal de consumo extendido. El integral conserva más fibra y micronutrientes; el blanco suele ablandarse con facilidad. Puede contener arsénico inorgánico, por lo que no debe ser el único cereal habitual del lactante.",
+      "propiedades": [
+        "El arroz es un cereal de consumo extendido.",
+        "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
+        "La combinación con legumbres, vegetales y alimentos ricos en hierro mejora la diversidad de la comida."
+      ],
+      "beneficios": [
+        "Aporta energía y puede formar parte de una dieta variada; el integral aporta más fibra.",
+        "Puede adaptarse a una textura blanda y segura según la etapa y las habilidades del niño."
+      ],
+      "edad": "Puede ofrecerse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación. No existe un orden obligatorio para introducir los cereales. La leche materna o la fórmula siguen siendo fundamentales durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocido, muy blando y triturado o en papilla espesa y homogénea. No dejar granos duros, secos ni enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aumentar gradualmente la textura; ofrecer aplastado o muy blando en pequeños trozos que el bebé pueda manejar, siempre sentado y supervisado."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
+        }
+      ],
+      "preparacion_segura": "Variar con otros cereales; cocinar hasta quedar muy blando y aplastar. No ofrecer granos duros ni compactos.",
+      "recetas": [
+        {
+          "nombre": "Arroz muy blando triturado",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Arroz y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "arroz con calabaza",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Arroz y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "arroz meloso con pollo desmenuzado.",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Arroz y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        }
+      ],
+      "precauciones": [
+        "Alternar arroz con avena, maíz, trigo y otros cereales por la preocupación de arsénico. Evitar sal.",
+        "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
+        "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados.",
+        "Alternar arroz con otros cereales: la FDA y los CDC desaconsejan que el cereal de arroz sea la única fuente habitual de cereal del lactante por la exposición al arsénico."
+      ],
+      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rice%20Grains.jpg?width=1280",
+        "alt": "Arroz: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
+        "autor": "Ashok Menon",
+        "licencia": "CC BY 2.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Rice_Grains.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "arroz",
+        "arroz blanco",
+        "arroz integral",
+        "oryza sativa",
+        "cereales para bebés",
+        "mi bebé puede comer arroz",
+        "cómo preparar arroz para bebés",
+        "desde cuándo dar arroz",
+        "recetas con arroz"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y calidad de la alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación segura, texturas y comienzo de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Infant and Toddler Nutrition: Frequently Asked Questions",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/index.html",
+          "utilidad": "Recomienda variar cereales infantiles y no depender solo del arroz."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "What You Can Do to Limit Exposure to Arsenic",
+          "url": "https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic",
+          "utilidad": "Recomendaciones para reducir exposición al arsénico del arroz mediante variedad de cereales."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Rice Grains.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Rice_Grains.jpg",
+          "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de arroz."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "maiz",
+      "nombre": "Maíz",
+      "nombres_alternativos": [
+        "maíz tierno",
+        "maíz en grano",
+        "Zea mays"
+      ],
+      "categoria": "Cereales",
+      "resumen": "Cereal versátil que se consume tierno, seco y molido.",
+      "descripcion": "El maíz aporta almidón, algo de fibra y, en variedades amarillas, carotenoides. Los granos enteros pueden ser difíciles de manejar para lactantes.",
+      "propiedades": [
+        "El maíz aporta almidón, algo de fibra y, en variedades amarillas, carotenoides.",
+        "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
+        "La combinación con legumbres, vegetales y alimentos ricos en hierro mejora la diversidad de la comida."
+      ],
+      "beneficios": [
+        "Permite variar los cereales y combinarse con legumbres y vegetales.",
+        "Puede adaptarse a una textura blanda y segura según la etapa y las habilidades del niño."
+      ],
+      "edad": "Puede ofrecerse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación. No existe un orden obligatorio para introducir los cereales. La leche materna o la fórmula siguen siendo fundamentales durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocido, muy blando y triturado o en papilla espesa y homogénea. No dejar granos duros, secos ni enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aumentar gradualmente la textura; ofrecer aplastado o muy blando en pequeños trozos que el bebé pueda manejar, siempre sentado y supervisado."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente; retirar los granos de la mazorca y triturarlos o aplastarlos para los más pequeños. Nunca ofrecer granos duros enteros.",
+      "recetas": [
+        {
+          "nombre": "Crema de maíz tierno",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Maíz y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "maíz triturado con calabaza",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Maíz y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "maíz suave con frijoles aplastados.",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Maíz y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        }
+      ],
+      "precauciones": [
+        "Los granos enteros pueden causar atragantamiento; no ofrecer maíz duro ni palomitas.",
+        "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
+        "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados."
+      ],
+      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Corn%20with%20white%20and%20yellow%20kernels.jpg?width=1280",
+        "alt": "Maíz: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
+        "autor": "Jud McCranie",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Corn_with_white_and_yellow_kernels.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "maíz",
+        "maíz tierno",
+        "maíz en grano",
+        "zea mays",
+        "cereales para bebés",
+        "mi bebé puede comer maíz",
+        "cómo preparar maíz para bebés",
+        "desde cuándo dar maíz",
+        "recetas con maíz"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y calidad de la alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación segura, texturas y comienzo de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Infant and Toddler Nutrition: Frequently Asked Questions",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/index.html",
+          "utilidad": "Recomienda variar cereales infantiles y no depender solo del arroz."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "What You Can Do to Limit Exposure to Arsenic",
+          "url": "https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic",
+          "utilidad": "Recomendaciones para reducir exposición al arsénico del arroz mediante variedad de cereales."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Corn with white and yellow kernels.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Corn_with_white_and_yellow_kernels.jpg",
+          "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de maíz."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "avena",
+      "nombre": "Avena",
+      "nombres_alternativos": [
+        "hojuelas de avena",
+        "Avena sativa",
+        "porridge"
+      ],
+      "categoria": "Cereales",
+      "resumen": "Cereal de grano entero utilizado en gachas y papillas.",
+      "descripcion": "La avena aporta carbohidratos, fibra soluble —incluidos beta-glucanos— y proteínas vegetales. Puede contaminarse con gluten durante el procesamiento.",
+      "propiedades": [
+        "La avena aporta carbohidratos, fibra soluble —incluidos beta-glucanos— y proteínas vegetales.",
+        "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
+        "La combinación con legumbres, vegetales y alimentos ricos en hierro mejora la diversidad de la comida."
+      ],
+      "beneficios": [
+        "Aporta fibra y permite preparar papillas de textura adaptable.",
+        "Puede adaptarse a una textura blanda y segura según la etapa y las habilidades del niño."
+      ],
+      "edad": "Puede ofrecerse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación. No existe un orden obligatorio para introducir los cereales. La leche materna o la fórmula siguen siendo fundamentales durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocido, muy blando y triturado o en papilla espesa y homogénea. No dejar granos duros, secos ni enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aumentar gradualmente la textura; ofrecer aplastado o muy blando en pequeños trozos que el bebé pueda manejar, siempre sentado y supervisado."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
+        }
+      ],
+      "preparacion_segura": "Cocinar las hojuelas en agua hasta que estén muy blandas; triturar si hace falta. Preferir avena simple sin azúcar ni saborizantes.",
+      "recetas": [
+        {
+          "nombre": "Papilla de avena",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Avena y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "avena con plátano aplastado",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Avena y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "avena con fruta cocida.",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Avena y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer hojuelas secas ni granola dura. En celiaquía, elegir avena certificada sin gluten.",
+        "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
+        "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados.",
+        "Aunque el alimento puede ser naturalmente libre de gluten, puede contaminarse durante el procesamiento; para celiaquía, elegir producto certificado sin gluten."
+      ],
+      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Haferflocken.jpg?width=1280",
+        "alt": "Avena: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
+        "autor": "MarkusHagenlocher",
+        "licencia": "CC BY-SA 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Haferflocken.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "avena",
+        "hojuelas de avena",
+        "avena sativa",
+        "porridge",
+        "cereales para bebés",
+        "mi bebé puede comer avena",
+        "cómo preparar avena para bebés",
+        "desde cuándo dar avena",
+        "recetas con avena"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y calidad de la alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación segura, texturas y comienzo de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Infant and Toddler Nutrition: Frequently Asked Questions",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/index.html",
+          "utilidad": "Recomienda variar cereales infantiles y no depender solo del arroz."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "What You Can Do to Limit Exposure to Arsenic",
+          "url": "https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic",
+          "utilidad": "Recomendaciones para reducir exposición al arsénico del arroz mediante variedad de cereales."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Haferflocken.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Haferflocken.jpg",
+          "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de avena."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "trigo",
+      "nombre": "Trigo",
+      "nombres_alternativos": [
+        "grano de trigo",
+        "Triticum aestivum",
+        "trigo integral"
+      ],
+      "categoria": "Cereales",
+      "resumen": "Cereal del que se obtienen harinas, panes y pastas.",
+      "descripcion": "El trigo aporta almidón, proteínas —incluido gluten—, fibra y vitaminas B. El grano entero necesita molienda o cocción prolongada para ser seguro.",
+      "propiedades": [
+        "El trigo aporta almidón, proteínas —incluido gluten—, fibra y vitaminas B.",
+        "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
+        "La combinación con legumbres, vegetales y alimentos ricos en hierro mejora la diversidad de la comida."
+      ],
+      "beneficios": [
+        "La versión integral aporta más fibra que la refinada.",
+        "Puede adaptarse a una textura blanda y segura según la etapa y las habilidades del niño."
+      ],
+      "edad": "Puede ofrecerse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación. No existe un orden obligatorio para introducir los cereales. La leche materna o la fórmula siguen siendo fundamentales durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocido, muy blando y triturado o en papilla espesa y homogénea. No dejar granos duros, secos ni enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aumentar gradualmente la textura; ofrecer aplastado o muy blando en pequeños trozos que el bebé pueda manejar, siempre sentado y supervisado."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
+        }
+      ],
+      "preparacion_segura": "No ofrecer granos secos o enteros. Usar trigo molido o partido y cocinar hasta quedar muy blando.",
+      "recetas": [
+        {
+          "nombre": "Crema de trigo cocido",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Trigo y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "trigo partido con vegetales",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Trigo y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "trigo triturado con pollo.",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Trigo y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        }
+      ],
+      "precauciones": [
+        "Contiene gluten y es un alérgeno reconocido; no ofrecer granos enteros duros.",
+        "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
+        "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados.",
+        "Contiene gluten. No es adecuado para personas con enfermedad celíaca; ante sospecha de alergia o síntomas, consultar con un profesional de salud."
+      ],
+      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wheat%20Grains.jpg?width=1280",
+        "alt": "Trigo: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
+        "autor": "Armaghan Uddin Khan",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Wheat_Grains.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "trigo",
+        "grano de trigo",
+        "triticum aestivum",
+        "trigo integral",
+        "cereales para bebés",
+        "mi bebé puede comer trigo",
+        "cómo preparar trigo para bebés",
+        "desde cuándo dar trigo",
+        "recetas con trigo"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y calidad de la alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación segura, texturas y comienzo de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Infant and Toddler Nutrition: Frequently Asked Questions",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/index.html",
+          "utilidad": "Recomienda variar cereales infantiles y no depender solo del arroz."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "What You Can Do to Limit Exposure to Arsenic",
+          "url": "https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic",
+          "utilidad": "Recomendaciones para reducir exposición al arsénico del arroz mediante variedad de cereales."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Wheat Grains.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Wheat_Grains.jpg",
+          "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de trigo."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "harina-maiz",
+      "nombre": "Harina de maíz",
+      "nombres_alternativos": [
+        "maíz molido",
+        "cornmeal",
+        "fubá"
+      ],
+      "categoria": "Cereales",
+      "resumen": "Producto molido del maíz usado en gachas y masas.",
+      "descripcion": "Aporta principalmente almidón; su fibra depende del grado de refinado. No es lo mismo que la maicena, que es almidón extraído del maíz.",
+      "propiedades": [
+        "Aporta principalmente almidón; su fibra depende del grado de refinado.",
+        "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
+        "La combinación con legumbres, vegetales y alimentos ricos en hierro mejora la diversidad de la comida."
+      ],
+      "beneficios": [
+        "Permite preparar gachas blandas que pueden combinarse con otros grupos.",
+        "Puede adaptarse a una textura blanda y segura según la etapa y las habilidades del niño."
+      ],
+      "edad": "Puede ofrecerse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación. No existe un orden obligatorio para introducir los cereales. La leche materna o la fórmula siguen siendo fundamentales durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocido, muy blando y triturado o en papilla espesa y homogénea. No dejar granos duros, secos ni enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aumentar gradualmente la textura; ofrecer aplastado o muy blando en pequeños trozos que el bebé pueda manejar, siempre sentado y supervisado."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente, removiendo hasta que quede suave y húmeda; evitar grumos secos y masas pegajosas.",
+      "recetas": [
+        {
+          "nombre": "Gacha espesa de maíz",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Harina de maíz y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "harina de maíz con calabaza",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Harina de maíz y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "crema de maíz con huevo bien cocido.",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Harina de maíz y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer harina cruda ni masas secas o compactas; evitar azúcar y sal excesivas.",
+        "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
+        "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados."
+      ],
+      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/CornmealProducts.jpg?width=1280",
+        "alt": "Harina de maíz: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
+        "autor": "Scott Bauer (USDA)",
+        "licencia": "Dominio público (USDA)",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:CornmealProducts.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "harina de maíz",
+        "maíz molido",
+        "cornmeal",
+        "fubá",
+        "cereales para bebés",
+        "mi bebé puede comer harina de maíz",
+        "cómo preparar harina de maíz para bebés",
+        "desde cuándo dar harina de maíz",
+        "recetas con harina de maíz"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y calidad de la alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación segura, texturas y comienzo de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Infant and Toddler Nutrition: Frequently Asked Questions",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/index.html",
+          "utilidad": "Recomienda variar cereales infantiles y no depender solo del arroz."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "What You Can Do to Limit Exposure to Arsenic",
+          "url": "https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic",
+          "utilidad": "Recomendaciones para reducir exposición al arsénico del arroz mediante variedad de cereales."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "CornmealProducts.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:CornmealProducts.jpg",
+          "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de harina de maíz."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "harina-trigo",
+      "nombre": "Harina de trigo",
+      "nombres_alternativos": [
+        "harina integral",
+        "harina refinada",
+        "Triticum aestivum"
+      ],
+      "categoria": "Cereales",
+      "resumen": "Ingrediente básico de panes, masas y pastas.",
+      "descripcion": "Contiene almidón y proteínas, incluido gluten. La harina integral conserva más fibra y micronutrientes que la refinada.",
+      "propiedades": [
+        "Contiene almidón y proteínas, incluido gluten.",
+        "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
+        "La combinación con legumbres, vegetales y alimentos ricos en hierro mejora la diversidad de la comida."
+      ],
+      "beneficios": [
+        "La harina integral aporta más fibra que la refinada.",
+        "Puede adaptarse a una textura blanda y segura según la etapa y las habilidades del niño."
+      ],
+      "edad": "Puede ofrecerse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación. No existe un orden obligatorio para introducir los cereales. La leche materna o la fórmula siguen siendo fundamentales durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocido, muy blando y triturado o en papilla espesa y homogénea. No dejar granos duros, secos ni enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aumentar gradualmente la textura; ofrecer aplastado o muy blando en pequeños trozos que el bebé pueda manejar, siempre sentado y supervisado."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
+        }
+      ],
+      "preparacion_segura": "Ofrecer solo en preparaciones completamente cocidas y blandas; no dar masa cruda.",
+      "recetas": [
+        {
+          "nombre": "Crema cocida de trigo",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Harina de trigo y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "panqueque suave",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Harina de trigo y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "masa blanda con vegetales.",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Harina de trigo y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        }
+      ],
+      "precauciones": [
+        "Contiene gluten; no ofrecer masa cruda. Evitar galletas duras y masas compactas.",
+        "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
+        "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados.",
+        "Contiene gluten. No es adecuado para personas con enfermedad celíaca; ante sospecha de alergia o síntomas, consultar con un profesional de salud."
+      ],
+      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wheat%20flour.jpg?width=1280",
+        "alt": "Harina de trigo: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
+        "autor": "Oliwier Brzezinski",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Wheat_flour.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "harina de trigo",
+        "harina integral",
+        "harina refinada",
+        "triticum aestivum",
+        "cereales para bebés",
+        "mi bebé puede comer harina de trigo",
+        "cómo preparar harina de trigo para bebés",
+        "desde cuándo dar harina de trigo",
+        "recetas con harina de trigo"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y calidad de la alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación segura, texturas y comienzo de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Infant and Toddler Nutrition: Frequently Asked Questions",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/index.html",
+          "utilidad": "Recomienda variar cereales infantiles y no depender solo del arroz."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "What You Can Do to Limit Exposure to Arsenic",
+          "url": "https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic",
+          "utilidad": "Recomendaciones para reducir exposición al arsénico del arroz mediante variedad de cereales."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Wheat flour.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Wheat_flour.jpg",
+          "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de harina de trigo."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "cebada",
+      "nombre": "Cebada",
+      "nombres_alternativos": [
+        "cebada perlada",
+        "Hordeum vulgare"
+      ],
+      "categoria": "Cereales",
+      "resumen": "Cereal usado en sopas y guisos después de cocción prolongada.",
+      "descripcion": "Aporta almidón, fibra soluble —incluidos beta-glucanos— y minerales. Contiene gluten.",
+      "propiedades": [
+        "Aporta almidón, fibra soluble —incluidos beta-glucanos— y minerales.",
+        "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
+        "La combinación con legumbres, vegetales y alimentos ricos en hierro mejora la diversidad de la comida."
+      ],
+      "beneficios": [
+        "Aporta fibra y amplía la variedad de cereales.",
+        "Puede adaptarse a una textura blanda y segura según la etapa y las habilidades del niño."
+      ],
+      "edad": "Puede ofrecerse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación. No existe un orden obligatorio para introducir los cereales. La leche materna o la fórmula siguen siendo fundamentales durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocido, muy blando y triturado o en papilla espesa y homogénea. No dejar granos duros, secos ni enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aumentar gradualmente la textura; ofrecer aplastado o muy blando en pequeños trozos que el bebé pueda manejar, siempre sentado y supervisado."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
+        }
+      ],
+      "preparacion_segura": "Cocinar hasta que los granos estén muy blandos; triturar o moler finamente para lactantes.",
+      "recetas": [
+        {
+          "nombre": "Crema de cebada",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Cebada y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "cebada con calabaza",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Cebada y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "sopa espesa con vegetales.",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Cebada y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        }
+      ],
+      "precauciones": [
+        "Contiene gluten. No ofrecer granos enteros o firmes a lactantes.",
+        "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
+        "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados.",
+        "Contiene gluten. No es adecuado para personas con enfermedad celíaca; ante sospecha de alergia o síntomas, consultar con un profesional de salud."
+      ],
+      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wild%20barley%20grains.jpg?width=1280",
+        "alt": "Cebada: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
+        "autor": "Davidbena",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Wild_barley_grains.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "cebada",
+        "cebada perlada",
+        "hordeum vulgare",
+        "cereales para bebés",
+        "mi bebé puede comer cebada",
+        "cómo preparar cebada para bebés",
+        "desde cuándo dar cebada",
+        "recetas con cebada"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y calidad de la alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación segura, texturas y comienzo de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Infant and Toddler Nutrition: Frequently Asked Questions",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/index.html",
+          "utilidad": "Recomienda variar cereales infantiles y no depender solo del arroz."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "What You Can Do to Limit Exposure to Arsenic",
+          "url": "https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic",
+          "utilidad": "Recomendaciones para reducir exposición al arsénico del arroz mediante variedad de cereales."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Wild barley grains.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Wild_barley_grains.jpg",
+          "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de cebada."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "centeno",
+      "nombre": "Centeno",
+      "nombres_alternativos": [
+        "Secale cereale",
+        "harina de centeno"
+      ],
+      "categoria": "Cereales",
+      "resumen": "Cereal usado principalmente en panes y harinas.",
+      "descripcion": "Aporta carbohidratos, fibra y proteínas vegetales. Contiene gluten; la fibra varía según el refinado.",
+      "propiedades": [
+        "Aporta carbohidratos, fibra y proteínas vegetales.",
+        "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
+        "La combinación con legumbres, vegetales y alimentos ricos en hierro mejora la diversidad de la comida."
+      ],
+      "beneficios": [
+        "El centeno integral aporta fibra.",
+        "Puede adaptarse a una textura blanda y segura según la etapa y las habilidades del niño."
+      ],
+      "edad": "Puede ofrecerse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación. No existe un orden obligatorio para introducir los cereales. La leche materna o la fórmula siguen siendo fundamentales durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocido, muy blando y triturado o en papilla espesa y homogénea. No dejar granos duros, secos ni enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aumentar gradualmente la textura; ofrecer aplastado o muy blando en pequeños trozos que el bebé pueda manejar, siempre sentado y supervisado."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente; ofrecer como harina cocida o pan suave humedecido y en tamaño adecuado.",
+      "recetas": [
+        {
+          "nombre": "Papilla de harina de centeno",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Centeno y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "pan suave humedecido",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Centeno y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "mezcla de centeno con vegetales.",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Centeno y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        }
+      ],
+      "precauciones": [
+        "Contiene gluten. Evitar pan duro, cortezas rígidas y semillas enteras.",
+        "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
+        "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados.",
+        "Contiene gluten. No es adecuado para personas con enfermedad celíaca; ante sospecha de alergia o síntomas, consultar con un profesional de salud."
+      ],
+      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rye%20grains.JPG?width=1280",
+        "alt": "Centeno: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
+        "autor": "Agronom",
+        "licencia": "CC BY-SA 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Rye_grains.JPG"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "centeno",
+        "secale cereale",
+        "harina de centeno",
+        "cereales para bebés",
+        "mi bebé puede comer centeno",
+        "cómo preparar centeno para bebés",
+        "desde cuándo dar centeno",
+        "recetas con centeno"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y calidad de la alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación segura, texturas y comienzo de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Infant and Toddler Nutrition: Frequently Asked Questions",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/index.html",
+          "utilidad": "Recomienda variar cereales infantiles y no depender solo del arroz."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "What You Can Do to Limit Exposure to Arsenic",
+          "url": "https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic",
+          "utilidad": "Recomendaciones para reducir exposición al arsénico del arroz mediante variedad de cereales."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Rye grains.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Rye_grains.JPG",
+          "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de centeno."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "mijo",
+      "nombre": "Mijo",
+      "nombres_alternativos": [
+        "millet",
+        "Panicum miliaceum"
+      ],
+      "categoria": "Cereales",
+      "resumen": "Cereal pequeño que permite variar los granos habituales.",
+      "descripcion": "Aporta almidón, fibra y minerales; el perfil depende de la especie y procesamiento. Es naturalmente libre de gluten, pero puede contaminarse.",
+      "propiedades": [
+        "Aporta almidón, fibra y minerales; el perfil depende de la especie y procesamiento.",
+        "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
+        "La combinación con legumbres, vegetales y alimentos ricos en hierro mejora la diversidad de la comida."
+      ],
+      "beneficios": [
+        "Amplía la diversidad de cereales y preparaciones.",
+        "Puede adaptarse a una textura blanda y segura según la etapa y las habilidades del niño."
+      ],
+      "edad": "Puede ofrecerse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación. No existe un orden obligatorio para introducir los cereales. La leche materna o la fórmula siguen siendo fundamentales durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocido, muy blando y triturado o en papilla espesa y homogénea. No dejar granos duros, secos ni enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aumentar gradualmente la textura; ofrecer aplastado o muy blando en pequeños trozos que el bebé pueda manejar, siempre sentado y supervisado."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
+        }
+      ],
+      "preparacion_segura": "Enjuagar y cocinar completamente con suficiente agua hasta que esté muy blando; triturar para los más pequeños.",
+      "recetas": [
+        {
+          "nombre": "Papilla de mijo",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Mijo y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "mijo con calabaza",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Mijo y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "crema de mijo con fruta cocida.",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Mijo y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer granos secos o firmes. Para celiaquía, elegir producto certificado sin gluten.",
+        "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
+        "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados.",
+        "Aunque el alimento puede ser naturalmente libre de gluten, puede contaminarse durante el procesamiento; para celiaquía, elegir producto certificado sin gluten."
+      ],
+      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Millet%20grains.jpg?width=1280",
+        "alt": "Mijo: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
+        "autor": "Tiia Monto",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Millet_grains.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "mijo",
+        "millet",
+        "panicum miliaceum",
+        "cereales para bebés",
+        "mi bebé puede comer mijo",
+        "cómo preparar mijo para bebés",
+        "desde cuándo dar mijo",
+        "recetas con mijo"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y calidad de la alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación segura, texturas y comienzo de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Infant and Toddler Nutrition: Frequently Asked Questions",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/index.html",
+          "utilidad": "Recomienda variar cereales infantiles y no depender solo del arroz."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "What You Can Do to Limit Exposure to Arsenic",
+          "url": "https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic",
+          "utilidad": "Recomendaciones para reducir exposición al arsénico del arroz mediante variedad de cereales."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Millet grains.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Millet_grains.jpg",
+          "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de mijo."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "sorgo",
+      "nombre": "Sorgo",
+      "nombres_alternativos": [
+        "Sorghum bicolor",
+        "millo",
+        "sorghum"
+      ],
+      "categoria": "Cereales",
+      "resumen": "Cereal tropical que se consume como grano o harina en distintas regiones.",
+      "descripcion": "Aporta principalmente carbohidratos, fibra y algunos minerales. Es naturalmente libre de gluten, aunque puede contaminarse en el procesamiento.",
+      "propiedades": [
+        "Aporta principalmente carbohidratos, fibra y algunos minerales.",
+        "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
+        "La combinación con legumbres, vegetales y alimentos ricos en hierro mejora la diversidad de la comida."
+      ],
+      "beneficios": [
+        "Permite variar los cereales y combinarlos con legumbres.",
+        "Puede adaptarse a una textura blanda y segura según la etapa y las habilidades del niño."
+      ],
+      "edad": "Puede ofrecerse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación. No existe un orden obligatorio para introducir los cereales. La leche materna o la fórmula siguen siendo fundamentales durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocido, muy blando y triturado o en papilla espesa y homogénea. No dejar granos duros, secos ni enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aumentar gradualmente la textura; ofrecer aplastado o muy blando en pequeños trozos que el bebé pueda manejar, siempre sentado y supervisado."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
+        }
+      ],
+      "preparacion_segura": "Usar grano para consumo humano, lavar y cocinar completamente hasta ablandar; triturar para lactantes.",
+      "recetas": [
+        {
+          "nombre": "Crema de sorgo",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Sorgo y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "sorgo con vegetales",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Sorgo y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "sorgo triturado con frijoles.",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Sorgo y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        }
+      ],
+      "precauciones": [
+        "No usar granos para alimentación animal ni ofrecer granos duros. En celiaquía, verificar certificación.",
+        "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
+        "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados.",
+        "Aunque el alimento puede ser naturalmente libre de gluten, puede contaminarse durante el procesamiento; para celiaquía, elegir producto certificado sin gluten."
+      ],
+      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sorghum%20grain%20boiled.jpg?width=1280",
+        "alt": "Sorgo: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
+        "autor": "Wiki Taro",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Sorghum_grain_boiled.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "sorgo",
+        "sorghum bicolor",
+        "millo",
+        "sorghum",
+        "cereales para bebés",
+        "mi bebé puede comer sorgo",
+        "cómo preparar sorgo para bebés",
+        "desde cuándo dar sorgo",
+        "recetas con sorgo"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y calidad de la alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación segura, texturas y comienzo de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Infant and Toddler Nutrition: Frequently Asked Questions",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/index.html",
+          "utilidad": "Recomienda variar cereales infantiles y no depender solo del arroz."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "What You Can Do to Limit Exposure to Arsenic",
+          "url": "https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic",
+          "utilidad": "Recomendaciones para reducir exposición al arsénico del arroz mediante variedad de cereales."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Sorghum grain boiled.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Sorghum_grain_boiled.jpg",
+          "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de sorgo."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "quinoa",
+      "nombre": "Quinoa",
+      "nombres_alternativos": [
+        "quinua",
+        "Chenopodium quinoa"
+      ],
+      "categoria": "Cereales",
+      "resumen": "Pseudocereal andino que se cocina como un grano.",
+      "descripcion": "No es un cereal botánico, sino un pseudocereal. Aporta almidón, fibra y proteínas vegetales. Debe enjuagarse según las instrucciones del producto para retirar saponinas residuales.",
+      "propiedades": [
+        "No es un cereal botánico, sino un pseudocereal.",
+        "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
+        "La combinación con legumbres, vegetales y alimentos ricos en hierro mejora la diversidad de la comida."
+      ],
+      "beneficios": [
+        "Ofrece variedad y aporta proteínas vegetales.",
+        "Puede adaptarse a una textura blanda y segura según la etapa y las habilidades del niño."
+      ],
+      "edad": "Puede ofrecerse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación. No existe un orden obligatorio para introducir los cereales. La leche materna o la fórmula siguen siendo fundamentales durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocido, muy blando y triturado o en papilla espesa y homogénea. No dejar granos duros, secos ni enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aumentar gradualmente la textura; ofrecer aplastado o muy blando en pequeños trozos que el bebé pueda manejar, siempre sentado y supervisado."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
+        }
+      ],
+      "preparacion_segura": "Enjuagar según el envase y cocinar hasta quedar muy blanda; aplastar o triturar para lactantes.",
+      "recetas": [
+        {
+          "nombre": "Quinoa con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Quinoa y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "crema de quinoa",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Quinoa y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "quinoa con lentejas aplastadas.",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Quinoa y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer cruda o poco cocida; elegir producto alimentario apto.",
+        "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
+        "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados.",
+        "Aunque el alimento puede ser naturalmente libre de gluten, puede contaminarse durante el procesamiento; para celiaquía, elegir producto certificado sin gluten."
+      ],
+      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Quinoa%20seed.JPG?width=1280",
+        "alt": "Quinoa: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
+        "autor": "Adam Peterson",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Quinoa_seed.JPG"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "quinoa",
+        "quinua",
+        "chenopodium quinoa",
+        "cereales para bebés",
+        "mi bebé puede comer quinoa",
+        "cómo preparar quinoa para bebés",
+        "desde cuándo dar quinoa",
+        "recetas con quinoa"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y calidad de la alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación segura, texturas y comienzo de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Infant and Toddler Nutrition: Frequently Asked Questions",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/index.html",
+          "utilidad": "Recomienda variar cereales infantiles y no depender solo del arroz."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "What You Can Do to Limit Exposure to Arsenic",
+          "url": "https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic",
+          "utilidad": "Recomendaciones para reducir exposición al arsénico del arroz mediante variedad de cereales."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Quinoa seed.JPG",
+          "url": "https://commons.wikimedia.org/wiki/File:Quinoa_seed.JPG",
+          "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de quinoa."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "polenta",
+      "nombre": "Polenta de maíz",
+      "nombres_alternativos": [
+        "polenta",
+        "sémola de maíz"
+      ],
+      "categoria": "Cereales",
+      "resumen": "Preparación cocida de harina gruesa de maíz.",
+      "descripcion": "La polenta no es una especie distinta: se obtiene al cocinar sémola o harina de maíz. Aporta principalmente carbohidratos; su valor mejora con acompañamientos variados.",
+      "propiedades": [
+        "La polenta no es una especie distinta: se obtiene al cocinar sémola o harina de maíz.",
+        "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
+        "La combinación con legumbres, vegetales y alimentos ricos en hierro mejora la diversidad de la comida."
+      ],
+      "beneficios": [
+        "Permite ajustar la consistencia y combinar con vegetales y proteínas.",
+        "Puede adaptarse a una textura blanda y segura según la etapa y las habilidades del niño."
+      ],
+      "edad": "Puede ofrecerse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación. No existe un orden obligatorio para introducir los cereales. La leche materna o la fórmula siguen siendo fundamentales durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocido, muy blando y triturado o en papilla espesa y homogénea. No dejar granos duros, secos ni enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aumentar gradualmente la textura; ofrecer aplastado o muy blando en pequeños trozos que el bebé pueda manejar, siempre sentado y supervisado."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente hasta quedar suave y húmeda; servir blanda, no compacta.",
+      "recetas": [
+        {
+          "nombre": "Polenta con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Polenta de maíz y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "polenta con frijoles aplastados",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Polenta de maíz y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "polenta con huevo bien cocido.",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Polenta de maíz y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        }
+      ],
+      "precauciones": [
+        "Evitar porciones secas, frías y compactas que dificulten la deglución.",
+        "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
+        "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados."
+      ],
+      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polenta%20uncooked.jpg?width=1280",
+        "alt": "Polenta de maíz: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
+        "autor": "Popo le Chien",
+        "licencia": "CC BY-SA 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Polenta_uncooked.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "polenta de maíz",
+        "polenta",
+        "sémola de maíz",
+        "cereales para bebés",
+        "mi bebé puede comer polenta de maíz",
+        "cómo preparar polenta de maíz para bebés",
+        "desde cuándo dar polenta de maíz",
+        "recetas con polenta de maíz"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y calidad de la alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación segura, texturas y comienzo de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Infant and Toddler Nutrition: Frequently Asked Questions",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/index.html",
+          "utilidad": "Recomienda variar cereales infantiles y no depender solo del arroz."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "What You Can Do to Limit Exposure to Arsenic",
+          "url": "https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic",
+          "utilidad": "Recomendaciones para reducir exposición al arsénico del arroz mediante variedad de cereales."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Polenta uncooked.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Polenta_uncooked.jpg",
+          "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de polenta de maíz."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "pan",
+      "nombre": "Pan",
+      "nombres_alternativos": [
+        "pan de trigo",
+        "pan integral",
+        "pan blanco"
+      ],
+      "categoria": "Cereales",
+      "resumen": "Alimento elaborado habitualmente con harina, agua y levadura.",
+      "descripcion": "El pan suele elaborarse con trigo y contiene gluten. El integral aporta más fibra que el blanco; la sal y el azúcar varían según la receta.",
+      "propiedades": [
+        "El pan suele elaborarse con trigo y contiene gluten.",
+        "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
+        "La combinación con legumbres, vegetales y alimentos ricos en hierro mejora la diversidad de la comida."
+      ],
+      "beneficios": [
+        "Puede aportar energía y, si es integral, más fibra.",
+        "Puede adaptarse a una textura blanda y segura según la etapa y las habilidades del niño."
+      ],
+      "edad": "Puede ofrecerse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación. No existe un orden obligatorio para introducir los cereales. La leche materna o la fórmula siguen siendo fundamentales durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocido, muy blando y triturado o en papilla espesa y homogénea. No dejar granos duros, secos ni enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aumentar gradualmente la textura; ofrecer aplastado o muy blando en pequeños trozos que el bebé pueda manejar, siempre sentado y supervisado."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
+        }
+      ],
+      "preparacion_segura": "Ofrecer miga blanda en trozos o tiras adecuados a la habilidad; supervisar siempre y evitar bolas compactas.",
+      "recetas": [
+        {
+          "nombre": "Pan blando con aguacate",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Pan y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "pan suave con huevo bien cocido",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Pan y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "pan humedecido para mayores.",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Pan y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        }
+      ],
+      "precauciones": [
+        "Contiene gluten si es de trigo, cebada o centeno. Pan duro, tostado rígido y bolas de miga pueden atragantar; revisar sodio.",
+        "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
+        "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados.",
+        "Contiene gluten. No es adecuado para personas con enfermedad celíaca; ante sospecha de alergia o síntomas, consultar con un profesional de salud."
+      ],
+      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bread%20loaf.jpg?width=1280",
+        "alt": "Pan: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
+        "autor": "Tiia Monto",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Bread_loaf.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "pan",
+        "pan de trigo",
+        "pan integral",
+        "pan blanco",
+        "cereales para bebés",
+        "mi bebé puede comer pan",
+        "cómo preparar pan para bebés",
+        "desde cuándo dar pan",
+        "recetas con pan"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y calidad de la alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación segura, texturas y comienzo de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Infant and Toddler Nutrition: Frequently Asked Questions",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/index.html",
+          "utilidad": "Recomienda variar cereales infantiles y no depender solo del arroz."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "What You Can Do to Limit Exposure to Arsenic",
+          "url": "https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic",
+          "utilidad": "Recomendaciones para reducir exposición al arsénico del arroz mediante variedad de cereales."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Bread loaf.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Bread_loaf.jpg",
+          "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de pan."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "pasta",
+      "nombre": "Pasta",
+      "nombres_alternativos": [
+        "macarrones",
+        "espaguetis",
+        "fideos",
+        "pasta de trigo"
+      ],
+      "categoria": "Cereales",
+      "resumen": "Producto elaborado habitualmente con sémola de trigo y agua.",
+      "descripcion": "La pasta tradicional aporta almidón y proteínas, incluido gluten. La integral aporta más fibra; la composición cambia según producto.",
+      "propiedades": [
+        "La pasta tradicional aporta almidón y proteínas, incluido gluten.",
+        "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
+        "La combinación con legumbres, vegetales y alimentos ricos en hierro mejora la diversidad de la comida."
+      ],
+      "beneficios": [
+        "Es fuente de energía y combina bien con alimentos ricos en hierro y vegetales.",
+        "Puede adaptarse a una textura blanda y segura según la etapa y las habilidades del niño."
+      ],
+      "edad": "Puede ofrecerse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación. No existe un orden obligatorio para introducir los cereales. La leche materna o la fórmula siguen siendo fundamentales durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocido, muy blando y triturado o en papilla espesa y homogénea. No dejar granos duros, secos ni enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aumentar gradualmente la textura; ofrecer aplastado o muy blando en pequeños trozos que el bebé pueda manejar, siempre sentado y supervisado."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
+        }
+      ],
+      "preparacion_segura": "Cocinar hasta quedar muy blanda; cortar formatos largos o grandes en piezas apropiadas.",
+      "recetas": [
+        {
+          "nombre": "Macarrones blandos con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Pasta y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "pasta pequeña con pollo desmenuzado",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Pasta y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "fideos suaves con vegetales.",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Pasta y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        }
+      ],
+      "precauciones": [
+        "Contiene gluten salvo productos especiales. Evitar pasta dura o al dente y adaptar tamaño y forma.",
+        "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
+        "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados.",
+        "Contiene gluten. No es adecuado para personas con enfermedad celíaca; ante sospecha de alergia o síntomas, consultar con un profesional de salud."
+      ],
+      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Macaroni%20pasta.jpg?width=1280",
+        "alt": "Pasta: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
+        "autor": "Anu Annie",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Macaroni_pasta.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "pasta",
+        "macarrones",
+        "espaguetis",
+        "fideos",
+        "pasta de trigo",
+        "cereales para bebés",
+        "mi bebé puede comer pasta",
+        "cómo preparar pasta para bebés",
+        "desde cuándo dar pasta",
+        "recetas con pasta"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y calidad de la alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación segura, texturas y comienzo de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Infant and Toddler Nutrition: Frequently Asked Questions",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/index.html",
+          "utilidad": "Recomienda variar cereales infantiles y no depender solo del arroz."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "What You Can Do to Limit Exposure to Arsenic",
+          "url": "https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic",
+          "utilidad": "Recomendaciones para reducir exposición al arsénico del arroz mediante variedad de cereales."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Macaroni pasta.jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Macaroni_pasta.jpg",
+          "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de pasta."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    },
+    {
+      "id": "cuscus",
+      "nombre": "Cuscús",
+      "nombres_alternativos": [
+        "couscous",
+        "sémola de trigo",
+        "kus-kus"
+      ],
+      "categoria": "Cereales",
+      "resumen": "Pequeñas partículas de sémola de trigo que se hidratan y cocinan rápidamente.",
+      "descripcion": "El cuscús tradicional se elabora con sémola de trigo duro y contiene gluten. Aporta principalmente carbohidratos y algo de proteína.",
+      "propiedades": [
+        "El cuscús tradicional se elabora con sémola de trigo duro y contiene gluten.",
+        "El aporte de fibra y micronutrientes cambia según el grano, la variedad y el grado de refinado.",
+        "La combinación con legumbres, vegetales y alimentos ricos en hierro mejora la diversidad de la comida."
+      ],
+      "beneficios": [
+        "Facilita combinar cereal, legumbres, vegetales y proteína en una misma comida.",
+        "Puede adaptarse a una textura blanda y segura según la etapa y las habilidades del niño."
+      ],
+      "edad": "Puede ofrecerse desde el inicio de la alimentación complementaria, alrededor de los 6 meses, cuando el bebé muestra señales de preparación. No existe un orden obligatorio para introducir los cereales. La leche materna o la fórmula siguen siendo fundamentales durante el primer año.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Ofrecer completamente cocido, muy blando y triturado o en papilla espesa y homogénea. No dejar granos duros, secos ni enteros."
+        },
+        {
+          "etapa": "Alrededor de 9–11 meses",
+          "forma": "Aumentar gradualmente la textura; ofrecer aplastado o muy blando en pequeños trozos que el bebé pueda manejar, siempre sentado y supervisado."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Adaptar tamaño y consistencia a las habilidades de masticación. Evitar formas duras, secas, pegajosas o compactas."
+        }
+      ],
+      "preparacion_segura": "Hidratar y cocinar completamente hasta quedar muy tierno; humedecer y aplastar si hace falta.",
+      "recetas": [
+        {
+          "nombre": "Cuscús tierno con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Cuscús y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "cuscús con lentejas trituradas",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Cuscús y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        },
+        {
+          "nombre": "cuscús con pollo desmenuzado.",
+          "etapa": "Cuando los ingredientes se hayan introducido y tolerado por separado",
+          "ingredientes": "Cuscús y alimentos frescos apropiados",
+          "preparacion": "Cocinar completamente hasta lograr una textura blanda; triturar o cortar según las habilidades del niño y servir sin exceso de sal ni azúcar."
+        }
+      ],
+      "precauciones": [
+        "Contiene gluten. Evitar cuscús seco, grumos compactos y versiones instantáneas muy saladas.",
+        "Supervisar siempre al niño mientras come y ofrecerlo sentado, sin caminar ni jugar.",
+        "Evitar añadir sal, azúcar, miel o caldos concentrados; revisar ingredientes de los productos envasados.",
+        "Contiene gluten. No es adecuado para personas con enfermedad celíaca; ante sospecha de alergia o síntomas, consultar con un profesional de salud."
+      ],
+      "conservacion": "Guardar granos y harinas secos en recipientes limpios, bien cerrados y protegidos de humedad y plagas. Las preparaciones cocidas deben enfriarse pronto, refrigerarse tapadas y recalentarse completamente; separar la porción infantil y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Couscous%20(Kus-kus).jpg?width=1280",
+        "alt": "Cuscús: fotografía ilustrativa del alimento o de su forma habitual de presentación.",
+        "autor": "Uskeone",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Couscous_(Kus-kus).jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "cuscús",
+        "couscous",
+        "sémola de trigo",
+        "kus-kus",
+        "cereales para bebés",
+        "mi bebé puede comer cuscús",
+        "cómo preparar cuscús para bebés",
+        "desde cuándo dar cuscús",
+        "recetas con cuscús"
+      ],
+      "fuentes": [
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Diversidad dietética y calidad de la alimentación complementaria."
+        },
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación de alimentación infantil en el contexto cubano."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Preparación segura, texturas y comienzo de alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Infant and Toddler Nutrition: Frequently Asked Questions",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/faqs/index.html",
+          "utilidad": "Recomienda variar cereales infantiles y no depender solo del arroz."
+        },
+        {
+          "institucion": "FDA",
+          "titulo": "What You Can Do to Limit Exposure to Arsenic",
+          "url": "https://www.fda.gov/food/environmental-contaminants-food/what-you-can-do-limit-exposure-arsenic",
+          "utilidad": "Recomendaciones para reducir exposición al arsénico del arroz mediante variedad de cereales."
+        },
+        {
+          "institucion": "Wikimedia Commons",
+          "titulo": "Couscous (Kus-kus).jpg",
+          "url": "https://commons.wikimedia.org/wiki/File:Couscous_(Kus-kus).jpg",
+          "utilidad": "Fotografía ilustrativa y datos de autoría y licencia de cuscús."
+        }
+      ],
+      "estado": "piloto",
+      "imagenes": []
+    }
+  ]
+}

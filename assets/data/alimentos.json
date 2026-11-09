@@ -5,7 +5,8 @@
     "assets/data/alimentos/frutas.json",
     "assets/data/alimentos/viandas.json",
     "assets/data/alimentos/vegetales.json",
-    "assets/data/alimentos/legumbres.json"
+    "assets/data/alimentos/legumbres.json",
+    "assets/data/alimentos/cereales.json"
   ],
   "categorias": [
     {
@@ -31,6 +32,12 @@
       "archivo": "assets/data/alimentos/legumbres.json",
       "cantidad": 9,
       "slug": "legumbres"
+    },
+    {
+      "nombre": "Cereales",
+      "archivo": "assets/data/alimentos/cereales.json",
+      "cantidad": 15,
+      "slug": "cereales"
     }
   ]
 }
