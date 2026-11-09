@@ -6,7 +6,15 @@ const route=location.pathname.split('/plataforma/')[1]||'';
 const parts=route.split('/').filter(Boolean);
 const section=defs.find(s=>s[0]===parts[0]);
 const app=document.getElementById('ciba-plataforma-app');
-if(!app||!section){app.innerHTML='<main style="padding:3rem;font-family:system-ui"><h1>Este apartado no está disponible</h1><a href="'+root+'index.html">Volver a CIBA</a></main>';return;}
+if(!app)return;
+if(!parts.length){
+ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const cards=defs.map(s=>'<a class="plataforma-card" href="'+root+'plataforma/'+s[0]+'/"><span class="plataforma-card-icon">'+esc(s[3])+'</span><span><h2>'+esc(s[1])+'</h2><p>'+esc(s[2])+'</p><small>Explorar sección →</small></span></a>').join('');
+ app.innerHTML='<header class="plataforma-top"><div class="plataforma-top-inner"><a class="plataforma-logo" href="'+root+'index.html">CIBA</a><a class="plataforma-volver" href="'+root+'index.html">← Volver al inicio</a></div></header><section class="plataforma-hero"><div class="plataforma-wrap"><div class="plataforma-kicker">CIBA · Espacio institucional</div><h1>Plataforma</h1><p>Todo lo que necesitas para conocer CIBA, orientarte, participar y aprovechar sus recursos.</p><span class="plataforma-estado"><i>✧</i> Sección en construcción</span></div></section><main class="plataforma-main"><nav class="plataforma-breadcrumb"><a href="'+root+'index.html">Inicio</a><span>›</span><strong>Plataforma</strong></nav><p class="plataforma-intro">La plataforma reúne la información institucional, la confianza y los aspectos legales, las herramientas personales, la navegación, la comunidad y los recursos complementarios.</p><div class="plataforma-grid">'+cards+'</div><aside class="plataforma-nota"><span class="plataforma-nota-icon">✧</span><div><h2>Un espacio que crecerá contigo</h2><p>Las páginas ya están organizadas y conectadas. Sus contenidos y funciones se habilitarán progresivamente, con especial cuidado de la privacidad y la protección de datos.</p></div></aside></main><footer class="plataforma-pie">CIBA · Conocimiento, confianza y acompañamiento · <a href="'+root+'index.html">Inicio</a></footer>';
+ const l=document.createElement('link');l.rel='stylesheet';l.href=root+'assets/css/ciba-plataforma.css';document.head.appendChild(l);
+ const g=document.createElement('script');g.type='module';g.src=root+'assets/js/ciba-global.js';document.body.appendChild(g);return;
+}
+if(!section){app.innerHTML='<main style="padding:3rem;font-family:system-ui"><h1>Este apartado no está disponible</h1><a href="'+root+'index.html">Volver a CIBA</a></main>';return;}
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const url=(p='')=>root+'plataforma/'+p;
 const item=section[4].find(x=>x[0]===parts[1]);
