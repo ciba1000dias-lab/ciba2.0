@@ -957,54 +957,72 @@
       }
     }
 
-    /* CIBA · CARRUSEL DE RECURSOS DESTACADOS */
-    .recursos-destacados{background:linear-gradient(180deg,#f5f0e5 0%,#eee8da 100%)}
+    /* CIBA · CARRUSEL CONTINUO DE RECURSOS DESTACADOS */
+    .recursos-destacados{background:linear-gradient(180deg,#f5f0e5 0%,#eee8da 100%);overflow:hidden}
     .recursos-carrusel{
-      display:grid;
-      grid-auto-flow:column;
-      grid-auto-columns:minmax(260px,31%);
-      gap:18px;
-      overflow-x:auto;
-      overscroll-behavior-inline:contain;
-      padding:8px 3px 20px;
-      scroll-snap-type:x mandatory;
-      scrollbar-width:thin;
-      scrollbar-color:var(--verde) transparent;
+      position:relative;
+      overflow:hidden;
+      perspective:1200px;
+      padding:14px 0 24px;
+      mask-image:linear-gradient(to right,#000 0%,#000 84%,transparent 100%);
+      -webkit-mask-image:linear-gradient(to right,#000 0%,#000 84%,transparent 100%);
     }
+    .recursos-track{display:flex;width:max-content;will-change:transform;animation:recursos-desplazamiento 42s linear infinite}
+    .recursos-grupo{display:flex;flex:none;gap:18px;padding-right:18px}
     .recurso-destacado{
-      min-height:285px;
+      position:relative;
+      flex:0 0 clamp(260px,30vw,350px);
+      min-height:315px;
       display:flex;
       flex-direction:column;
       align-items:flex-start;
-      padding:25px;
+      padding:22px 24px 24px;
       border:1px solid var(--linea);
-      border-radius:17px;
-      background:var(--papel);
-      box-shadow:0 8px 24px rgba(23,43,39,.06);
-      scroll-snap-align:start;
-      transition:transform .2s,box-shadow .2s,border-color .2s;
+      border-radius:19px;
+      background:linear-gradient(150deg,#fffdf7 0%,#f8f2e7 100%);
+      box-shadow:0 12px 28px rgba(23,43,39,.09);
+      transform-style:preserve-3d;
+      transform:rotateY(-5deg);
+      animation:recurso-profundidad 7s ease-in-out infinite alternate;
+      transition:transform .35s,box-shadow .35s,border-color .35s;
     }
-    .recurso-destacado:hover{
-      transform:translateY(-4px);
-      border-color:var(--oro);
-      box-shadow:0 14px 30px rgba(23,43,39,.11);
+    .recurso-destacado:hover,.recurso-destacado:focus-visible{
+      z-index:2;transform:rotateY(0) translateY(-7px) scale(1.025);
+      border-color:var(--oro);box-shadow:0 20px 38px rgba(23,43,39,.16)
     }
-    .recurso-simbolo{
-      width:43px;height:43px;display:grid;place-items:center;
-      margin-bottom:18px;border:1px solid var(--oro);border-radius:50%;
-      color:var(--tierra);font:normal 25px Georgia,serif;
+    .recurso-visual{
+      width:100%;height:112px;display:flex;align-items:center;justify-content:flex-start;
+      padding:18px 22px;margin-bottom:17px;overflow:hidden;
+      border-radius:14px;background:linear-gradient(120deg,#e8dfc9,#f4ead8);
+      color:var(--verde);position:relative
     }
-    .recurso-destacado small{
-      color:var(--tierra);font-size:10px;font-weight:800;letter-spacing:.12em;
+    .recurso-visual::after{
+      content:"";position:absolute;width:130px;height:130px;right:-24px;top:-48px;
+      border:1px solid rgba(82,110,86,.22);border-radius:50%;
+      box-shadow:0 0 0 15px rgba(82,110,86,.05),0 0 0 31px rgba(82,110,86,.035)
     }
-    .recurso-destacado h3{
-      margin:10px 0;color:var(--noche);font:normal 25px Georgia,serif;line-height:1.2;
-    }
-    .recurso-destacado p{margin:0 0 18px;color:var(--suave);font-size:14px;line-height:1.65}
+    .recurso-visual svg{width:76px;height:76px;position:relative;z-index:1;filter:drop-shadow(0 5px 5px rgba(23,43,39,.12))}
+    .recurso-destacado:nth-child(2n) .recurso-visual{background:linear-gradient(120deg,#ead8c9,#f5e8da);color:#9a563f}
+    .recurso-destacado:nth-child(3n) .recurso-visual{background:linear-gradient(120deg,#dce4d4,#f0eedf);color:#526e56}
+    .recurso-destacado small{color:var(--tierra);font-size:10px;font-weight:800;letter-spacing:.12em}
+    .recurso-destacado h3{margin:9px 0;color:var(--noche);font:normal 24px Georgia,serif;line-height:1.2}
+    .recurso-destacado p{margin:0 0 18px;color:var(--suave);font-size:13px;line-height:1.65}
     .recurso-ir{margin-top:auto;color:var(--verde);font-size:12px;font-weight:800;letter-spacing:.04em}
     .recursos-ayuda{margin:4px 0 0;color:var(--suave);font-size:12px}
-    @media(max-width:760px){.recursos-carrusel{grid-auto-columns:minmax(245px,78%);gap:12px}.recurso-destacado{min-height:270px;padding:21px}}
-    @media(prefers-reduced-motion:reduce){.recurso-destacado{transition:none}}
+    @keyframes recursos-desplazamiento{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    @keyframes recurso-profundidad{from{transform:rotateY(-5deg) translateY(0)}to{transform:rotateY(2deg) translateY(-4px)}}
+    .recursos-carrusel:hover .recursos-track,.recursos-carrusel:focus-within .recursos-track{animation-play-state:paused}
+    .recursos-carrusel:hover .recurso-destacado,.recursos-carrusel:focus-within .recurso-destacado{animation-play-state:paused}
+    @media(max-width:760px){
+      .recursos-track{animation-duration:50s}
+      .recursos-grupo{gap:12px;padding-right:12px}
+      .recurso-destacado{flex-basis:78vw;min-height:300px;padding:19px}
+      .recurso-visual{height:100px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      .recursos-track,.recurso-destacado{animation:none!important;transform:none!important}
+      .recursos-carrusel{overflow-x:auto;mask-image:none;-webkit-mask-image:none}
+    }
 
   </style>
 </head>
@@ -1122,44 +1140,48 @@
           <p>Accede directamente a bibliotecas, guías y orientaciones prácticas de CIBA.</p>
         </div>
 
-        <div class="recursos-carrusel" role="list" aria-label="Recursos destacados de CIBA">
+        <div class="recursos-carrusel" aria-label="Carrusel continuo de recursos destacados de CIBA">
+          <div class="recursos-track">
+            <div class="recursos-grupo" role="list"> 
           <a class="recurso-destacado" href="c/C1/alimentos/" role="listitem">
-            <span class="recurso-simbolo" aria-hidden="true">✿</span>
+            <span class="recurso-visual" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none"><path d="M50 78C25 62 21 39 35 26c10-9 20-3 15 9 7-18 24-17 29-5 8 20-8 39-29 48Z" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M50 80c-2-19 2-35 15-49M50 61 35 48M55 51l17-4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
             <small>BIBLIOTECA · ALIMENTACIÓN</small>
             <h3>Biblioteca de alimentos</h3>
             <p>Conoce los alimentos, sus propiedades y cómo ofrecerlos de forma segura según la edad.</p>
             <span class="recurso-ir">Explorar biblioteca ↗</span>
           </a>
           <a class="recurso-destacado" href="c/C1/recetario/" role="listitem">
-            <span class="recurso-simbolo" aria-hidden="true">✿</span>
+            <span class="recurso-visual" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none"><path d="M20 43h60l-5 35H25l-5-35Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="M30 43c0-12 8-20 20-20s20 8 20 20M36 55h28M43 65h14" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M50 11v8M16 25l7 5M84 25l-7 5" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
             <small>HERRAMIENTA INTERACTIVA · ALIMENTACIÓN</small>
             <h3>¿Qué cocino hoy?</h3>
             <p>Escribe los ingredientes que tienes y descubre cómo la IA de CIBA los reconoce en nuestra biblioteca.</p>
             <span class="recurso-ir">Abrir recetario piloto ↗</span>
           </a>
           <a class="recurso-destacado" href="c/C1/C1-04/" role="listitem">
-            <span class="recurso-simbolo" aria-hidden="true">◒</span>
+            <span class="recurso-visual" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none"><path d="M50 17v66M50 22c-18-12-31 1-27 17 4 15 20 16 27 4M50 43c18-12 31 1 27 17-4 15-20 16-27 4M50 63c-14-9-25 1-22 13 3 10 16 12 22 5M50 83c14-9 25 1 22 13" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></span>
             <small>GUÍA PRÁCTICA · PRIMER AÑO</small>
             <h3>Cómo alimentar a un bebé durante su primer año</h3>
             <p>Una orientación para acompañar la alimentación desde el nacimiento hasta los 12 meses.</p>
             <span class="recurso-ir">Leer guía ↗</span>
           </a>
           <a class="recurso-destacado" href="c/C1/C1-03/" role="listitem">
-            <span class="recurso-simbolo" aria-hidden="true">☾</span>
+            <span class="recurso-visual" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none"><path d="M68 18c-7 3-12 12-12 22 0 16 13 29 29 29 3 0 6-.5 9-1.5C88 83 73 93 56 91 34 89 18 70 20 48 22 28 41 13 61 15c3 0 5 1 7 3Z" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="m72 20 3 6 7 1-5 5 1 7-6-4-6 4 1-7-5-5 7-1 3-6Z" fill="currentColor"/></svg></span>
             <small>GUÍA PRÁCTICA · DESCANSO</small>
             <h3>¿Cuánto debe dormir mi bebé?</h3>
             <p>Consulta las necesidades de sueño infantil según la etapa de desarrollo.</p>
             <span class="recurso-ir">Consultar guía ↗</span>
           </a>
           <a class="recurso-destacado" href="c/C1/C1-01/" role="listitem">
-            <span class="recurso-simbolo" aria-hidden="true">⌁</span>
+            <span class="recurso-visual" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none"><path d="M50 83V45M50 61 30 43M50 67l22-20M50 45 42 27M50 45l12-19" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M18 84h64" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><circle cx="30" cy="38" r="9" stroke="currentColor" stroke-width="4"/><circle cx="73" cy="42" r="9" stroke="currentColor" stroke-width="4"/><circle cx="41" cy="22" r="8" stroke="currentColor" stroke-width="4"/><circle cx="64" cy="20" r="8" stroke="currentColor" stroke-width="4"/></svg></span>
             <small>DESARROLLO INFANTIL</small>
             <h3>Comprender las etapas del desarrollo</h3>
             <p>Descubre cómo evoluciona la infancia y qué esperar en cada etapa.</p>
             <span class="recurso-ir">Explorar artículo ↗</span>
           </a>
+            </div>
+          </div>
         </div>
-        <p class="recursos-ayuda">Desliza hacia los lados para descubrir más recursos.</p>
+        <p class="recursos-ayuda">Los recursos avanzan suavemente en un carrusel continuo. Puedes detenerlo al pasar el cursor o al enfocarlo; en pantallas táctiles, desliza para explorar.</p>
       </div>
     </section>
 
@@ -1571,6 +1593,29 @@
           estadoCatalogo.textContent =
             "La biblioteca se está preparando. Puedes explorar las cuatro columnas mientras tanto.";
         });
+    })();
+  </script>
+
+  <script>
+    (() => {
+      const carrusel = document.querySelector(".recursos-carrusel");
+      const track = carrusel?.querySelector(".recursos-track");
+      const grupo = track?.querySelector(".recursos-grupo");
+      if (!carrusel || !track || !grupo || track.dataset.inicializado === "true") return;
+      const copia = grupo.cloneNode(true);
+      copia.setAttribute("aria-hidden", "true");
+      copia.querySelectorAll("a").forEach(enlace => {
+        enlace.setAttribute("tabindex", "-1");
+        enlace.setAttribute("aria-hidden", "true");
+      });
+      track.appendChild(copia);
+      track.dataset.inicializado = "true";
+      const movimientoReducido = window.matchMedia("(prefers-reduced-motion: reduce)");
+      const actualizarMovimiento = () => {
+        track.style.animationPlayState = movimientoReducido.matches ? "paused" : "";
+      };
+      actualizarMovimiento();
+      movimientoReducido.addEventListener?.("change", actualizarMovimiento);
     })();
   </script>
 
