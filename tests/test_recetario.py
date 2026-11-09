@@ -36,7 +36,7 @@ class TestRecetario(unittest.TestCase):
         etapas = {"6-8", "9-11", "12-23", "24-59"}
         for receta in self.catalogo["recetas"]:
             self.assertTrue(etapas.issubset(receta["adaptacion_por_edad"].keys()), receta["id"])
-            self.assertEqual(receta["edad_minima_meses"], 6, receta["id"])
+            self.assertIn(receta["edad_minima_meses"], {6, 12}, receta["id"])
             self.assertEqual(receta["edad_maxima_meses"], 59, receta["id"])
 
     def test_variedades_de_platano_se_mantienen_diferenciadas(self) -> None:
@@ -58,11 +58,21 @@ class TestRecetario(unittest.TestCase):
                 self.assertEqual(receta.get("estado"), "aprobada", receta["id"])
                 self.assertEqual(receta.get("revision", {}).get("estado"), "aprobada", receta["id"])
 
-    def test_catalogo_ampliado_incluye_35_fichas_aprobadas(self) -> None:
-        self.assertEqual(self.catalogo.get("estado_catalogo"), "ampliacion_progresiva")
-        self.assertEqual(len(self.catalogo["recetas"]), 35)
-        for receta in self.catalogo["recetas"]:
-            self.assertTrue(receta.get("publicable"), receta["id"])
+    def test_catalogo_completo_150_con_bloqueos_explicitos(self) -> None:
+        self.assertEqual(self.catalogo.get("estado_catalogo"), "catalogo_150_con_bloqueos_de_seguridad")
+        recetas = self.catalogo["recetas"]
+        self.assertEqual(len(recetas), 150)
+        numeros = [r["numero_catalogo"] for r in recetas]
+        self.assertEqual(sorted(numeros), list(range(1, 151)))
+        publicables = [r for r in recetas if r.get("publicable") is True]
+        bloqueadas = [r for r in recetas if r.get("publicable") is False]
+        self.assertEqual(len(publicables), 147)
+        self.assertEqual(len(bloqueadas), 3)
+        por_numero = {r["numero_catalogo"]: r for r in recetas}
+        self.assertEqual(por_numero[30]["estado"], "pendiente_revision_profesional")
+        self.assertEqual(por_numero[83]["estado"], "pendiente_revision_profesional")
+        self.assertEqual(por_numero[69]["estado"], "retirada_por_duplicacion")
+        for receta in publicables:
             self.assertEqual(receta.get("estado"), "aprobada", receta["id"])
             self.assertEqual(receta.get("revision", {}).get("estado"), "aprobada", receta["id"])
 
