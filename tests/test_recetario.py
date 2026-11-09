@@ -105,12 +105,21 @@ class TestRecetario(unittest.TestCase):
         self.assertEqual(len({r["id"] for r in recetas}), 129)
         self.assertEqual(sum(r["fuente_id"] == "nhs-best-start-97" for r in recetas), 97)
         self.assertEqual(sum(r["fuente_id"] == "first-steps-2023" for r in recetas), 32)
+        nhs = [r for r in recetas if r["fuente_id"] == "nhs-best-start-97"]
+        self.assertEqual(sum(bool(r.get("revision_preliminar_ciba")) for r in nhs), 15)
+        self.assertTrue(all(r.get("edad_minima_fuente_meses") is not None for r in nhs))
+        self.assertTrue(all(r.get("ingredientes_referenciados") for r in nhs))
         for receta in recetas:
             self.assertFalse(receta["publicable"], receta["id"])
             self.assertFalse(receta["recomendacion_automatica"], receta["id"])
-            self.assertEqual(receta["estado"], "pendiente_cotejo_individual", receta["id"])
+            self.assertIn(receta["estado"], {"pendiente_cotejo_individual", "pendiente_revision_profesional"}, receta["id"])
             self.assertTrue(receta["url_fuente"].startswith("https://"), receta["id"])
             self.assertTrue(receta["alertas_revision"], receta["id"])
+            if receta.get("revision_preliminar_ciba"):
+                revision = receta["revision_preliminar_ciba"]
+                self.assertEqual(revision["decision"], "no_aprobada_no_publicable", receta["id"])
+                self.assertTrue(revision["requiere_revision_profesional"], receta["id"])
+                self.assertTrue(revision["hallazgos"], receta["id"])
 
 
     def test_indice_ins_peru_contiene_30_preparaciones_bloqueadas(self) -> None:
