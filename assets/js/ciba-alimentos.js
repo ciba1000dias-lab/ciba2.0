@@ -244,12 +244,6 @@
           video.appendChild(crear('h4', '', 'Video relacionado de Solo Sin Receta'));
           enlazar(video, alimento.video_youtube.url, alimento.video_youtube.titulo || 'Ver video en YouTube');
           detalle.appendChild(video);
-        } else {
-          const pendiente = crear('section', 'ciba-alimento-video ciba-alimento-video-pendiente', 'Video de Solo Sin Receta: pendiente de identificar un Short que trate específicamente este alimento o su preparación.');
-          pendiente.id = 'alimento-' + alimento.id + '--video';
-          pendiente.tabIndex = -1;
-          pendiente.style.scrollMarginTop = '110px';
-          detalle.appendChild(pendiente);
         }
 
         if (Array.isArray(alimento.fuentes) && alimento.fuentes.length) {
