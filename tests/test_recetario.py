@@ -108,7 +108,7 @@ class TestRecetario(unittest.TestCase):
         first_steps = [r for r in recetas if r["fuente_id"] == "first-steps-2023"]
         self.assertTrue(all(r.get("revision_preliminar_ciba") for r in first_steps))
         nhs = [r for r in recetas if r["fuente_id"] == "nhs-best-start-97"]
-        self.assertEqual(sum(bool(r.get("revision_preliminar_ciba")) for r in nhs), 86)
+        self.assertEqual(sum(bool(r.get("revision_preliminar_ciba")) for r in nhs), 97)
         self.assertTrue(all(r.get("edad_minima_fuente_meses") is not None for r in nhs))
         self.assertTrue(all(r.get("ingredientes_referenciados") for r in nhs))
         for receta in recetas:
