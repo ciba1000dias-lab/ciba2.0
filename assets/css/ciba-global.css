@@ -754,3 +754,13 @@ body:not(.ciba-con-cabecera-global) > .ciba-global-login{
 @media(prefers-reduced-motion:reduce){
   .ciba-global-menu-boton{transition:none}
 }
+
+
+/* CIBA · cabeceras interiores con el color oficial de cada columna */
+.ciba-global-cabecera{
+  background:var(--ciba-columna-color,#493A32)!important;
+  border-bottom:3px solid rgba(255,255,255,.3)!important;
+  box-shadow:0 7px 24px rgba(73,58,50,.13);
+}
+.ciba-global-contexto{border-left-color:rgba(255,255,255,.72);text-shadow:0 1px 12px rgba(0,0,0,.12)}
+.ciba-global-contexto::after{background:linear-gradient(90deg,rgba(255,255,255,.7),rgba(255,255,255,.25),transparent);box-shadow:none}
