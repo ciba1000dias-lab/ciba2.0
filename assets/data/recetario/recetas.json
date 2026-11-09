@@ -824,6 +824,64 @@
       }
     },
     {
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "fuentes": [
+        "who-cf-2023",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "unicef-cuba-2020"
+      ],
+      "ingredientes_nuevos": "Cada ingrediente debe haberse ofrecido previamente de forma apropiada y tolerado antes de combinarlo.",
+      "conservacion": "Preparar en condiciones higiénicas y servir recién hecho. Refrigerar pronto la porción no servida; desechar restos que hayan estado en contacto con saliva.",
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Sustitución aceptada expresamente por el especialista responsable del recetario CIBA el 9 de noviembre de 2026."
+      },
+      "id": "ensalada-dulce-mango-fruta-bomba",
+      "nombre": "Ensalada dulce de mango y fruta bomba",
+      "descripcion": "Combinación de dos frutas maduras, presentada majada o en piezas blandas según las habilidades.",
+      "ingredientes": [
+        {
+          "alimento_id": "mango",
+          "cantidad": "1/4",
+          "unidad": "taza de mango maduro",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "fruta-bomba",
+          "cantidad": "1/4",
+          "unidad": "taza de fruta bomba madura",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar ambas frutas antes de pelarlas o cortarlas.",
+        "Retirar pieles y semillas; comprobar que estén maduras y blandas.",
+        "Aplastar por separado o juntas. Para presentación BLW, ofrecer piezas blandas y alargadas, no cubos duros ni formas redondas."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar o aplastar hasta una mezcla espesa y homogénea, sin fibras ni fragmentos firmes.",
+        "9-11": "Aplastar muy bien; admitir pequeños grumos blandos si ya los maneja.",
+        "12-23": "Ofrecer majada o en piezas blandas y alargadas que pueda agarrar y aplastar con facilidad.",
+        "24-59": "Servir en piezas blandas y manejables, según habilidades."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir azúcar ni miel antes de los 12 meses.",
+        "Adaptar las piezas a las habilidades; supervisar siempre."
+      ]
+    },
+    {
       "id": "guayaba-majada",
       "nombre": "Guayaba majada",
       "descripcion": "Preparación de un solo alimento, sin azúcar ni sal añadidas, con textura adaptable al desarrollo infantil.",
@@ -1228,6 +1286,69 @@
         "estado": "aprobada",
         "nota": "Preparación aceptada expresamente por el especialista responsable del recetario CIBA en el dictamen compartido el 9 de noviembre de 2026. La ficha técnica conserva cantidades domésticas orientativas y adaptación por habilidades."
       }
+    },
+    {
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "fuentes": [
+        "who-cf-2023",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "unicef-cuba-2020"
+      ],
+      "ingredientes_nuevos": "Cada ingrediente debe haberse ofrecido previamente de forma apropiada y tolerado antes de combinarlo.",
+      "conservacion": "Preparar en condiciones higiénicas y servir recién hecho. Refrigerar pronto la porción no servida; desechar restos que hayan estado en contacto con saliva.",
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Sustitución aceptada expresamente por el especialista responsable del recetario CIBA el 9 de noviembre de 2026."
+      },
+      "id": "platano-fruta-yogur-natural",
+      "nombre": "Plátano fruta con yogur natural",
+      "descripcion": "Merienda sencilla de plátano maduro y yogur natural pasteurizado sin azúcar añadido.",
+      "ingredientes": [
+        {
+          "alimento_id": "platano-fruta",
+          "cantidad": "1/2",
+          "unidad": "plátano fruta maduro",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "yogur-natural",
+          "cantidad": "2",
+          "unidad": "cucharadas de yogur natural pasteurizado sin azúcar",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar la cáscara del plátano antes de pelarlo.",
+        "Pelar y aplastar el plátano hasta eliminar trozos firmes.",
+        "Mezclar con yogur natural pasteurizado sin azúcar añadido.",
+        "Servir con cuchara; no dejar una pasta excesivamente espesa o pegajosa."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Aplastar muy bien el plátano y mezclar hasta obtener una textura espesa, húmeda y homogénea.",
+        "9-11": "Aplastar; permitir pequeños grumos blandos si ya los maneja.",
+        "12-23": "Servir mezclado o por separado, con textura húmeda y fácil de recoger.",
+        "24-59": "Servir como merienda, en consistencia adecuada a sus habilidades."
+      },
+      "alergenos": [
+        "leche",
+        "lacteos"
+      ],
+      "alertas": [
+        "Utilizar yogur pasteurizado, natural y sin azúcar añadido.",
+        "No ofrecer si existe alergia a la proteína de leche de vaca; la intolerancia a la lactosa requiere valoración individual.",
+        "No añadir miel antes de los 12 meses."
+      ]
     },
     {
       "id": "platano-vianda-pollo",
