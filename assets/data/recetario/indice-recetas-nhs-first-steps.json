@@ -1,7 +1,7 @@
 {
   "version": 1,
   "titulo": "Índice de recetas externas para revisión CIBA",
-  "nota": "Índice documental de 97 recetas con páginas individuales verificadas del NHS y 32 entradas del recetario familiar First Steps Nutrition Trust. Se han cotejado páginas individuales y completado edad, ingredientes y alertas para los registros revisados; la edad fuente no equivale a aprobación CIBA. Todas las entradas permanecen deshabilitadas hasta revisión individual, adaptación al contexto cubano y aprobación profesional. No se copian instrucciones ni cantidades.",
+  "nota": "Índice documental de 97 recetas con páginas individuales verificadas del NHS y 32 entradas de First Steps Nutrition Trust. Se han cotejado 31 páginas NHS a nivel individual y completado edad e ingredientes de las 97 fichas. La edad fuente no equivale a aprobación CIBA. Todas las entradas permanecen deshabilitadas hasta revisión individual, adaptación al contexto cubano y aprobación profesional. No se copian instrucciones ni cantidades.",
   "fuentes": [
     {
       "id": "nhs-best-start-97",
@@ -33,9 +33,18 @@
       "alertas_revision": [
         "Huevo debe quedar completamente cuajado; revisar tamaño y textura de la preparación."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "La fuente indica 10–12 meses; huevo horneado con champiñones, perejil, tomate cocido y pan integral.",
+          "El NHS especifica que el huevo debe quedar completamente cocido y no líquido; tomates cocidos y aplastados, pan adaptado a textura y tamaño seguros."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-cheese-mushroom-cakes",
@@ -53,9 +62,18 @@
       "alertas_revision": [
         "Queso puede aportar sodio; revisar textura de tortita, empanizado y alérgenos."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "La fuente indica desde 6 meses; papa, puerro, champiñones, queso duro, huevo, harina y pan rallado, horneados.",
+          "Revisar sodio del queso; confirmar cocción completa del huevo; tortitas húmedas y blandas, sin costra dura ni empanizado seco; alérgenos lácteos, huevo y trigo."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-chicken-noodle-stew",
@@ -72,9 +90,18 @@
       "alertas_revision": [
         "Comprobar cocción completa del pollo; picar fideos y verduras a textura segura."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "La fuente indica 10–12 meses; pollo, zanahoria, maíz y fideos de huevo cocidos en caldo.",
+          "El paso inicial de dorar pollo no basta: confirmar cocción completa hasta el centro; cortar fideos, triturar/aplastar maíz y adaptar zanahoria para evitar granos duros."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-baked-plantain",
@@ -90,9 +117,18 @@
       "alertas_revision": [
         "El plátano debe quedar muy blando; adaptar forma y tamaño; yogur pasteurizado sin azúcar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "La fuente indica desde 6 meses; plátano vianda horneado con aceite y yogur natural opcional.",
+          "Comprobar que el plátano quede completamente blando, no tostado duro; ofrecer textura apropiada y yogur pasteurizado natural sin azúcar."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-jamaican-fish-curry",
@@ -108,9 +144,18 @@
       "alertas_revision": [
         "La fuente usa bacalao; validar especie disponible, mercurio, espinas y cocción completa."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "La fuente indica 7–9 meses; identifica bacalao/cod, papa, plátano, vegetales, guisantes y arroz.",
+          "Retirar todas las espinas y revisar de nuevo tras triturar; cocción completa del pescado; vegetales y arroz muy blandos, sin sal añadida; confirmar especie real si se sustituye."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-jacket-potato-chilli-veg",
@@ -127,9 +172,18 @@
       "alertas_revision": [
         "Usar frijoles sin sal añadida; triturar/aplastar legumbres; maíz y verduras muy blandos."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion_con_control_de_atragantamiento",
+        "hallazgos": [
+          "La fuente indica 10–12 meses; incluye frijoles en conserva sin sal/azúcar, maíz, vegetales y papa.",
+          "Aplastar frijoles y granos de maíz; vegetales tiernos; retirar o reducir chile; no ofrecer granos enteros de maíz a lactantes por riesgo de atragantamiento."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-aromatic-beef-curry",
@@ -143,9 +197,18 @@
       "alertas_revision": [
         "Comprobar cocción y ternura de la carne; picar finamente; revisar cantidad de espinaca."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "La fuente indica 10–12 meses; carne de res guisada hasta tierna con tomate, espinaca, guisantes y arroz.",
+          "Confirmar ternura real de la carne, picar o triturar; arroz húmedo y guisantes aplastados; no añadir sal ni cubitos."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-beef-bolognese",
@@ -161,9 +224,18 @@
       "alertas_revision": [
         "Cocinar completamente la carne; adaptar pasta y salsa a la capacidad de masticar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "La fuente indica 10–12 meses; carne molida, vegetales y tomate con espagueti; ofrece lentejas como alternativa.",
+          "Cocinar completamente la carne; pasta muy blanda y cortada; salsa húmeda, sin sal añadida; revisar tamaño y forma de pasta."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-beefy-veg-curry",
@@ -177,9 +249,18 @@
       "alertas_revision": [
         "Cocinar hasta que la carne esté muy tierna; picar según habilidades."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "La fuente indica 12 meses o más; res guisada, espinaca, tomate, guisantes y arroz; ofrece garbanzos como alternativa.",
+          "Carne muy tierna y finamente cortada; guisantes aplastados y arroz húmedo; adaptar especias y no añadir sal."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-pineapple-yoghurt",
@@ -195,9 +276,18 @@
       "alertas_revision": [
         "La piña en rodajas puede ser fibrosa; adaptar forma/textura y elegir fruta en jugo, no almíbar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_adaptacion_de_textura",
+        "hallazgos": [
+          "La fuente indica desde 6 meses; piña en conserva en jugo y yogur natural opcional.",
+          "Los anillos o medias rodajas de piña pueden ser fibrosos y difíciles de masticar; cortar muy fino o triturar; escoger fruta en jugo, no almíbar; yogur pasteurizado sin azúcar."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-ham-pasta-bake",
@@ -213,9 +303,18 @@
       "alertas_revision": [
         "Contiene jamón/embutido: no priorizar ni recomendar de forma automática; evaluar sodio y carne procesada."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "no_priorizar_por_carne_procesada",
+        "hallazgos": [
+          "La fuente indica 12 meses o más; pasta, jamón, champiñones, cebolla, tomate y guisantes.",
+          "El jamón es carne procesada y aporta sodio; no habilitar como recomendación automática ni priorizar. Considerar reformulación con pollo o legumbres sin sal añadida."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-tender-lamb-strips",
@@ -425,9 +524,18 @@
       "alertas_revision": [
         "La fuente incluye maíz tierno como finger food; comprobar que esté muy blando y presentación segura; revisar gluten y lácteos."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion_con_control_de_atragantamiento",
+        "hallazgos": [
+          "La fuente indica 10–12 meses; lentejas rojas, brócoli, tomate, pasta, queso crema y maíz tierno.",
+          "Cocinar lentejas y pasta hasta muy blandas; el maíz tierno entero puede atragantar, retirarlo o triturarlo; revisar sodio del queso crema y alérgenos de trigo/lácteos."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-mexican-chicken-pitta",
@@ -1020,9 +1128,18 @@
       "alertas_revision": [
         "La fuente indica 12 meses o más; huevo completamente cocido y tomate pequeño cortado para evitar atragantamiento."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "La fuente indica 12 meses o más; huevo horneado con champiñones y perejil, tomate y pan integral.",
+          "El NHS especifica huevo completamente cocido; tomates cherry deben cortarse y cocinarse/aplastarse; adaptar pan tostado para que no sea duro o seco."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-butternut-red-pepper-soup",
@@ -1039,9 +1156,18 @@
       "alertas_revision": [
         "La fuente indica 12 meses o más; cocinar completamente las lentejas y ajustar el pan/textura."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "La fuente indica 12 meses o más; calabaza, pimiento, cebolla y lentejas rojas; pan integral opcional.",
+          "Cocinar lentejas y vegetales hasta muy blandos; revisar textura y consistencia espesa; pan tostado puede ser duro/seco, adaptar u omitir; evitar sal/cubitos."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-omelette-muffins",
@@ -1058,9 +1184,18 @@
       "alertas_revision": [
         "La fuente indica 10–12 meses; huevo bien cuajado, queso bajo en sodio y vegetales muy blandos."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "La fuente indica 10–12 meses; huevo, queso duro, guisantes, papa y habichuelas.",
+          "Confirmar huevo totalmente cuajado en el centro; revisar sodio del queso; guisantes, papa y habichuelas muy blandos y adaptados a la etapa."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-pea-ham-bake",
@@ -1076,9 +1211,18 @@
       "alertas_revision": [
         "Contiene jamón procesado y sodio; no priorizar ni recomendar automáticamente. Adaptar pasta y guisantes a textura segura."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "no_priorizar_por_carne_procesada",
+        "hallazgos": [
+          "La fuente indica 7–9 meses; pasta, champiñones, cebolla, ajo, jamón, tomate y guisantes.",
+          "El jamón es carne procesada y aporta sodio; no habilitar como recomendación automática. La fuente propone sustituto de soya, pero requiere revisión de alérgenos y textura; preferir alternativa local no procesada."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-mac-and-cheese",
