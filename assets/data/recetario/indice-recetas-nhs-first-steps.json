@@ -1,0 +1,932 @@
+{
+  "version": 1,
+  "titulo": "Índice de recetas externas para revisión CIBA",
+  "nota": "Índice documental, no catálogo de recomendaciones. Los títulos y enlaces conducen a las fuentes originales. No se copian instrucciones ni cantidades. Todas las entradas permanecen deshabilitadas hasta revisión individual, adaptación a contexto cubano y aprobación profesional.",
+  "fuentes": [
+    {
+      "id": "nhs-best-start-97",
+      "nombre": "NHS Best Start in Life",
+      "coleccion_url": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/",
+      "cantidad_en_coleccion": 97,
+      "idioma": "en"
+    },
+    {
+      "id": "first-steps-2023",
+      "nombre": "First Steps Nutrition Trust",
+      "coleccion_url": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "cantidad_en_coleccion": 32,
+      "idioma": "en"
+    }
+  ],
+  "recetas": [
+    {
+      "id": "nhs-breakfast-cups",
+      "nombre": "Breakfast cups",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/breakfast-cups/",
+      "edad_minima_fuente_meses": 10,
+      "edad_maxima_fuente_meses": 12,
+      "ingredientes_referenciados": "huevo, champiñones, perejil, tomate, pan integral",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo"
+      ],
+      "alertas_revision": [
+        "Huevo debe quedar completamente cuajado; revisar tamaño y textura de la preparación."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-cheese-mushroom-cakes",
+      "nombre": "Cheese and mushroom cakes",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/cheese-and-mushroom-cakes/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "papa, puerro, champiñones, queso, huevo, harina, pan rallado",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos",
+        "huevo",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Queso puede aportar sodio; revisar textura de tortita, empanizado y alérgenos."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-chicken-noodle-stew",
+      "nombre": "Chicken noodle stew",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/chicken-noodle-stew/",
+      "edad_minima_fuente_meses": 10,
+      "edad_maxima_fuente_meses": 12,
+      "ingredientes_referenciados": "pollo, cebolla, zanahoria, maíz, fideos de huevo",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten",
+        "huevo"
+      ],
+      "alertas_revision": [
+        "Comprobar cocción completa del pollo; picar fideos y verduras a textura segura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-baked-plantain",
+      "nombre": "Baked plantain",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/baked-plantain/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "plátano vianda, aceite vegetal, yogur natural",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "El plátano debe quedar muy blando; adaptar forma y tamaño; yogur pasteurizado sin azúcar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-jamaican-fish-curry",
+      "nombre": "Jamaican fish curry",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/jamaican-fish-curry/",
+      "edad_minima_fuente_meses": 7,
+      "edad_maxima_fuente_meses": 9,
+      "ingredientes_referenciados": "pescado blanco, papa, cebolla, pimiento, plátano, tomate, guisantes, arroz",
+      "alergenos_o_grupos_a_verificar": [
+        "pescado"
+      ],
+      "alertas_revision": [
+        "La fuente usa bacalao; validar especie disponible, mercurio, espinas y cocción completa."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-jacket-potato-chilli-veg",
+      "nombre": "Jacket potato and chilli veg",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/jacket-potato-and-chilli-veg/",
+      "edad_minima_fuente_meses": 10,
+      "edad_maxima_fuente_meses": 12,
+      "ingredientes_referenciados": "papa, berenjena, calabacín, pimiento, frijoles, maíz, tomate",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Usar frijoles sin sal añadida; triturar/aplastar legumbres; maíz y verduras muy blandos."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-aromatic-beef-curry",
+      "nombre": "Aromatic beef curry",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/aromatic-beef-curry/",
+      "edad_minima_fuente_meses": 10,
+      "edad_maxima_fuente_meses": 12,
+      "ingredientes_referenciados": "carne de res, cebolla, tomate, espinaca, guisantes, arroz",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Comprobar cocción y ternura de la carne; picar finamente; revisar cantidad de espinaca."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-beef-bolognese",
+      "nombre": "Beef bolognese",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/beef-bolognese/",
+      "edad_minima_fuente_meses": 10,
+      "edad_maxima_fuente_meses": 12,
+      "ingredientes_referenciados": "carne molida, tomate, cebolla, pimiento, champiñones, espagueti",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Cocinar completamente la carne; adaptar pasta y salsa a la capacidad de masticar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-beefy-veg-curry",
+      "nombre": "Beefy veg curry",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/beefy-veg-curry/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "carne de res, espinaca, tomate, guisantes, arroz",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Cocinar hasta que la carne esté muy tierna; picar según habilidades."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-pineapple-yoghurt",
+      "nombre": "Pineapple slices with plain yoghurt",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/pineapple-slices-with-plain-yoghurt/",
+      "edad_minima_fuente_meses": 6,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "piña, yogur natural",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "La piña en rodajas puede ser fibrosa; adaptar forma/textura y elegir fruta en jugo, no almíbar."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-ham-pasta-bake",
+      "nombre": "Ham pasta bake",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/ham-pasta-bake/",
+      "edad_minima_fuente_meses": 12,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "pasta, jamón, champiñones, cebolla, tomate, guisantes",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Contiene jamón/embutido: no priorizar ni recomendar de forma automática; evaluar sodio y carne procesada."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-tender-lamb-strips",
+      "nombre": "Tender lamb strips",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/tender-lamb-strips/",
+      "edad_minima_fuente_meses": null,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "cordero",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Verificar edad exacta, ternura, fibras y presentación segura de tiras de carne."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-fish-ratatouille",
+      "nombre": "Fish ratatouille",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/fish-ratatouille/",
+      "edad_minima_fuente_meses": null,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "pescado, vegetales",
+      "alergenos_o_grupos_a_verificar": [
+        "pescado"
+      ],
+      "alertas_revision": [
+        "Identificar especie, mercurio y espinas; revisar cocción y textura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-african-bean-stew",
+      "nombre": "African bean stew",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/african-bean-stew/",
+      "edad_minima_fuente_meses": null,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "frijoles, vegetales",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres"
+      ],
+      "alertas_revision": [
+        "Legumbres completamente cocidas y aplastadas; evitar granos enteros duros."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-vegetable-ham-bake",
+      "nombre": "Vegetable and ham bake",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/vegetable-and-ham-bake/",
+      "edad_minima_fuente_meses": null,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "vegetales, jamón",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Contiene jamón; evaluar carne procesada, sodio y necesidad de sustitución."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-omelette-popovers",
+      "nombre": "Omelette popovers",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/omelette-popovers/",
+      "edad_minima_fuente_meses": null,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "huevo",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo"
+      ],
+      "alertas_revision": [
+        "Huevo completamente cocido; comprobar consistencia interior y tamaño de porción."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-tasty-salmon-risotto",
+      "nombre": "Tasty salmon risotto",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/tasty-salmon-risotto/",
+      "edad_minima_fuente_meses": null,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "salmón, arroz, vegetales",
+      "alergenos_o_grupos_a_verificar": [
+        "pescado",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Verificar especie/salmón, mercurio, espinas y cocción; revisar ingredientes lácteos."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-cinnamon-toast-banana",
+      "nombre": "Cinnamon toast and banana sticks",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/cinnamon-toast-and-banana-sticks/",
+      "edad_minima_fuente_meses": null,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "pan, banana, canela",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Revisar textura del pan y forma de la banana para evitar atragantamiento."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-lentil-pasta-broccoli",
+      "nombre": "Lentil pasta with broccoli",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/lentil-pasta-with-broccoli/",
+      "edad_minima_fuente_meses": 10,
+      "edad_maxima_fuente_meses": 12,
+      "ingredientes_referenciados": "lentejas rojas, brócoli, tomate, pasta, queso crema, maíz",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten",
+        "lacteos",
+        "legumbres"
+      ],
+      "alertas_revision": [
+        "La fuente incluye maíz tierno como finger food; comprobar que esté muy blando y presentación segura; revisar gluten y lácteos."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "nhs-mexican-chicken-pitta",
+      "nombre": "Mex chicken with pitta bread",
+      "fuente_id": "nhs-best-start-97",
+      "url_fuente": "https://www.nhs.uk/best-start-in-life/baby/recipes-and-meal-ideas/mexican-chicken-with-pitta/",
+      "edad_minima_fuente_meses": null,
+      "edad_maxima_fuente_meses": null,
+      "ingredientes_referenciados": "pollo, pan pita, vegetales",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Pollo completamente cocido; revisar pan de pita y forma/tamaño de los trozos."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-chicken-sweetcorn-soup",
+      "nombre": "Chicken and sweetcorn soup",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 12,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "maíz"
+      ],
+      "alertas_revision": [
+        "Revisar textura de maíz y pollo; adaptar consistencia y evitar granos enteros duros."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-easy-minestrone",
+      "nombre": "Easy minestrone soup",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 14,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Revisar pasta, legumbres y tamaño de vegetales; sal añadida y caldo comercial."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-leek-potato-pea-soup",
+      "nombre": "Leek, potato and pea soup",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 16,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Ajustar textura y consistencia; evitar sal/cubitos."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-lentil-carrot-soup",
+      "nombre": "Lentil and carrot soup",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 18,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres"
+      ],
+      "alertas_revision": [
+        "Lentejas muy cocidas y textura apropiada; revisar densidad y porción."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-jacket-potato-beef",
+      "nombre": "Jacket potato with beef stir-fry",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 22,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Carne tierna y picada; papa muy blanda; revisar verduras y salsas."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-jacket-potato-egg-spinach",
+      "nombre": "Jacket potato with scrambled egg and spinach",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 24,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo"
+      ],
+      "alertas_revision": [
+        "Huevo completamente cocido; espinaca bien preparada; papa blanda."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-jacket-potato-tuna",
+      "nombre": "Jacket potato with tuna, sweetcorn and soft cheese",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 26,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "pescado",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Identificar atún y frecuencia por mercurio; revisar sodio del queso y maíz."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-jacket-potato-veg-chilli",
+      "nombre": "Jacket potato with vegetable chilli",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 28,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres"
+      ],
+      "alertas_revision": [
+        "Legumbres cocidas y aplastadas; vigilar picante, sal y textura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-chicken-mushroom-pie",
+      "nombre": "Chicken and mushroom pie",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 32,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Revisar masa/corteza seca, pollo completamente cocido y tamaño."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-fish-pie",
+      "nombre": "Fish pie",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 34,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "pescado",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Identificar especie y mercurio; revisar espinas, salsa láctea y textura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-mediterranean-pie",
+      "nombre": "Mediterranean pie",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 36,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Revisar ingredientes completos, sal y corteza."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-shepherdess-pie",
+      "nombre": "Shepherdess pie",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 38,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Revisar ingredientes completos, textura y sodio."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-sweet-potato-stew",
+      "nombre": "Sweet potato stew",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 42,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Comprobar ingredientes y evitar trozos firmes; revisar sodio."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-bean-sausage-hotpot",
+      "nombre": "Baked bean and veggie sausage hotpot",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 44,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Salchicha vegetal puede ser ultraprocesada y alta en sodio; no recomendar automáticamente."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-creamy-chicken-leek-hotpot",
+      "nombre": "Creamy chicken and leek hotpot",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 46,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Cocción completa del pollo; revisar salsa láctea y textura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-goulash",
+      "nombre": "Goulash",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 48,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Revisar receta completa, cortes de carne y condimentos/sodio."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-egg-fried-rice",
+      "nombre": "Egg-fried rice",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 52,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo"
+      ],
+      "alertas_revision": [
+        "Huevo bien cocido; enfriamiento y conservación segura del arroz cocido."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-jerk-chicken-rice-beans",
+      "nombre": "Jerk chicken with rice and beans",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 54,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres"
+      ],
+      "alertas_revision": [
+        "Pollo completamente cocido; controlar picante; arroz enfriado/refrigerado correctamente; frijoles blandos."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-turkey-vegetable-pilaf",
+      "nombre": "Turkey and vegetable pilaf",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 56,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [],
+      "alertas_revision": [
+        "Pavo completamente cocido; arroz y vegetales con textura apropiada."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-vegetable-biryani",
+      "nombre": "Vegetable biryani",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 58,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "legumbres"
+      ],
+      "alertas_revision": [
+        "Garbanzos muy blandos y aplastados; arroz seguro y húmedo."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-green-mac-cheese",
+      "nombre": "Green mac and cheese",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 62,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Sodio del queso; pasta cocida blanda; revisar vegetales."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-pasta-green-beans-peas",
+      "nombre": "Pasta with green beans and peas",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 64,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Judías y guisantes muy blandos y en forma segura; pasta cocida."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-spaghetti-bolognese",
+      "nombre": "Spaghetti Bolognese",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 66,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Carne completamente cocida; picar espagueti y adaptar textura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-tuna-pasta",
+      "nombre": "Tuna pasta",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 68,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "pescado",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Identificar tipo de atún y frecuencia por mercurio; revisar sal y pasta."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-peanut-butter-banana-sandwich",
+      "nombre": "Peanut butter and banana sandwiches with carrot and cucumber",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 72,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "mani",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Mantequilla de maní solo en capa fina/diluida; nunca cucharadas espesas ni frutos secos enteros; zanahoria y pepino en textura segura."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-hummus-pitta-cucumber",
+      "nombre": "Pitta with houmous and cucumber with carrot salad",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 74,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "sesamo",
+        "legumbres",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Tahini/sésamo y garbanzo; pan y vegetales deben presentarse sin riesgo de atragantamiento."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-couscous-tuna-salad",
+      "nombre": "Savoury couscous salad with tuna",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 76,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "pescado",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Identificar especie de atún/mercurio; cuscús húmedo y vegetales blandos."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-mexican-bean-cheese-wrap",
+      "nombre": "Mexican bean and cheese wrap with red pepper and celery",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 78,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos",
+        "legumbres",
+        "trigo-gluten"
+      ],
+      "alertas_revision": [
+        "Frijoles aplastados; revisar sodio del queso; apio crudo fibroso: no usar como bastón para bebé."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-apple-crumble",
+      "nombre": "Apple crumble",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 82,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "trigo-gluten",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Revisar azúcar añadida y cobertura seca/desmigable."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-banana-custard",
+      "nombre": "Banana custard",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 84,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "huevo",
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Huevo y lácteos; comprobar cocción segura y ausencia de azúcar añadida."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-poached-pear-honey",
+      "nombre": "Poached pear with Greek yoghurt and honey",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 86,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "NO APTO MENOR DE 12 MESES: contiene miel; no recomendar para lactantes menores de un año."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    },
+    {
+      "id": "fsn-rice-pudding-raisins",
+      "nombre": "Rice pudding with raisins",
+      "fuente_id": "first-steps-2023",
+      "url_fuente": "https://jon.cambscommunityservices.nhs.uk/media/re0iyqy2/fsn-eating-well-recipe-book_oct-2023_digital-compressed.pdf",
+      "pagina_pdf": 88,
+      "edad_visual_porcion_meses": "7-12 (guía visual de porciones; no valida por sí sola la idoneidad)",
+      "alergenos_o_grupos_a_verificar": [
+        "lacteos"
+      ],
+      "alertas_revision": [
+        "Revisar azúcar añadida; pasas enteras/pegajosas pueden ser riesgo de atragantamiento; leche usada en preparación."
+      ],
+      "estado": "pendiente_cotejo_individual",
+      "publicable": false,
+      "recomendacion_automatica": false
+    }
+  ]
+}
