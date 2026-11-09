@@ -10,7 +10,7 @@
 
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
-  const RUTA_ALIMENTOS = new URL('assets/data/alimentos.json', RAIZ);
+  const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
   const RUTA_CSS = new URL('../css/ciba-global.css', import.meta.url);
 
   let catalogo = null;
@@ -84,16 +84,11 @@
   async function obtenerAlimentos() {
     if (alimentos) return alimentos;
 
-    const respuesta = await fetch(RUTA_ALIMENTOS.href, { cache: 'no-cache' });
-    if (!respuesta.ok) throw new Error('No se pudo cargar el índice de alimentos.');
+    const respuesta = await fetch(RUTA_ALIMENTOS.href, { cache: 'force-cache' });
+    if (!respuesta.ok) throw new Error('No se pudo cargar el índice de búsqueda de alimentos.');
     const indice = await respuesta.json();
-    if (!Array.isArray(indice.archivos)) throw new Error('Índice de alimentos inválido.');
-    const grupos = await Promise.all(indice.archivos.map(async (archivo) => {
-      const r = await fetch(new URL(archivo, RAIZ).href, { cache: 'no-cache' });
-      if (!r.ok) throw new Error('No se pudo cargar ' + archivo);
-      return r.json();
-    }));
-    alimentos = { alimentos: grupos.flatMap((grupo) => Array.isArray(grupo.alimentos) ? grupo.alimentos : []) };
+    if (!Array.isArray(indice.alimentos)) throw new Error('Índice de búsqueda de alimentos inválido.');
+    alimentos = indice;
     return alimentos;
   }
 
@@ -574,14 +569,6 @@
               'beneficios beneficio bueno para que sirve',
               'propiedades nutricionales vitaminas nutrientes fibra proteina calorias grasas',
               'video youtube short',
-              JSON.stringify(alimento.edad || ''),
-              JSON.stringify(alimento.preparacion_por_edades || ''),
-              JSON.stringify(alimento.preparacion_segura || ''),
-              JSON.stringify(alimento.recetas || ''),
-              JSON.stringify(alimento.precauciones || ''),
-              JSON.stringify(alimento.conservacion || ''),
-              JSON.stringify(alimento.propiedades || ''),
-              JSON.stringify(alimento.beneficios || ''),
               ...(alimento.nombres_alternativos || []),
               ...(alimento.palabras_clave || [])
             ].join(' '));
@@ -604,8 +591,9 @@
 
           coincidenciasAlimentos.slice(0, 10).forEach((alimento) => {
             const ancla = seccionSolicitada ? '--' + seccionSolicitada.clave : '';
+            const rutaAlimento = alimento.ruta_publica || 'c/C1/alimentos/';
             const destino = new URL(
-              'c/C1/index.html#alimento-' + encodeURIComponent(alimento.id) + ancla,
+              rutaAlimento + '#alimento-' + encodeURIComponent(alimento.id) + ancla,
               RAIZ
             ).href;
             const resultado = enlace(
