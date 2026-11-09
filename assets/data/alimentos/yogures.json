@@ -26,11 +26,11 @@
       "preparacion_por_edades": [
         {
           "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
-          "forma": "Ofrecer una pequeña cantidad de yogur natural pasteurizado, sin azúcar, solo o mezclado con fruta ya tolerada y triturada."
+          "forma": "No ofrecer antes de iniciar alimentación complementaria, que suele comenzar alrededor de los 6 meses."
         },
         {
           "etapa": "Alrededor de 9–11 meses",
-          "forma": "Servir espeso con fruta madura aplastada o trocitos muy blandos, según habilidades."
+          "forma": "Ofrecer una pequeña cantidad como alimento, pasteurizado y sin azúcar, solo o mezclado con fruta ya introducida y triturada. Nunca como bebida principal ni sustituto de leche materna o fórmula."
         },
         {
           "etapa": "Desde los 12 meses",
@@ -133,16 +133,16 @@
       "edad": "Como alimento desde alrededor de 6 meses si está preparado para sólidos; no es bebida principal.",
       "preparacion_por_edades": [
         {
-          "etapa": "Menores de 6 meses",
-          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+          "etapa": "Antes de los 6 meses",
+          "forma": "No ofrecer. La alimentación debe ser leche materna o fórmula infantil."
         },
         {
-          "etapa": "De 6 a 11 meses",
-          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+          "etapa": "Desde alrededor de los 6 meses hasta los 11 meses",
+          "forma": "Puede ofrecerse como alimento en pequeña cantidad si es pasteurizado, natural y sin azúcar añadida. No es bebida principal ni sustituye leche materna o fórmula."
         },
         {
           "etapa": "Desde los 12 meses",
-          "forma": "Servir natural, pasteurizado, sin azúcar ni miel; se puede mezclar con fruta blanda."
+          "forma": "Ofrecer como parte de una dieta variada, preferentemente natural y sin azúcar añadida; servir con cuchara y conservar refrigerado."
         }
       ],
       "preparacion_segura": "No usar yogur casero de leche cruda; no sustituye leche materna o fórmula.",
@@ -220,16 +220,16 @@
       "edad": "Como alimento desde alrededor de 6 meses si es natural, pasteurizado y sin azúcar. No usar suplementos para tratar enfermedades sin indicación.",
       "preparacion_por_edades": [
         {
-          "etapa": "Menores de 6 meses",
-          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+          "etapa": "Antes de los 6 meses",
+          "forma": "No ofrecer. La alimentación debe ser leche materna o fórmula infantil."
         },
         {
-          "etapa": "De 6 a 11 meses",
-          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+          "etapa": "Desde alrededor de los 6 meses hasta los 11 meses",
+          "forma": "Puede ofrecerse como alimento en pequeña cantidad si es pasteurizado, natural y sin azúcar añadida. No es bebida principal ni sustituye leche materna o fórmula."
         },
         {
           "etapa": "Desde los 12 meses",
-          "forma": "Servir refrigerado según etiqueta; revisar ingredientes y azúcar."
+          "forma": "Ofrecer como parte de una dieta variada, preferentemente natural y sin azúcar añadida; servir con cuchara y conservar refrigerado."
         }
       ],
       "preparacion_segura": "No atribuir cura de cólicos, diarrea, alergias o infecciones sin evidencia específica.",
@@ -307,16 +307,16 @@
       "edad": "Desde alrededor de 6 meses solo si se confirma que es yogur pasteurizado sin azúcar añadida; revisar cada variedad.",
       "preparacion_por_edades": [
         {
-          "etapa": "Menores de 6 meses",
-          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+          "etapa": "Antes de los 6 meses",
+          "forma": "No ofrecer. La alimentación debe ser leche materna o fórmula infantil."
         },
         {
-          "etapa": "De 6 a 11 meses",
-          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+          "etapa": "Desde alrededor de los 6 meses hasta los 11 meses",
+          "forma": "Solo si la etiqueta confirma que es yogur pasteurizado, sin azúcar añadida y sin ingredientes inadecuados; preferir yogur natural. Ofrecer con cuchara, en pequeña cantidad y como alimento, nunca como bebida o sustituto de leche materna o fórmula."
         },
         {
           "etapa": "Desde los 12 meses",
-          "forma": "Abrir y servir con cuchara limpia; conservar según etiqueta."
+          "forma": "Revisar cada variedad y elegir la de menor azúcar añadida; servir con cuchara y conservar según etiqueta."
         }
       ],
       "preparacion_segura": "No atribuir composición o edad recomendada a una variedad sin foto de ingredientes y tabla nutricional.",
@@ -395,16 +395,16 @@
       "edad": "Como criterio prudente para esta biblioteca, ofrecer kéfir natural pasteurizado después de los 12 meses y en pequeñas cantidades, si el niño tolera lácteos. No usar kéfir casero ni fermentaciones de procedencia o higiene desconocidas en lactantes.",
       "preparacion_por_edades": [
         {
-          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
-          "forma": "No se recomienda como bebida para lactantes; mantener leche materna o fórmula como leche principal y elegir yogur natural pasteurizado si se desea introducir un lácteo."
+          "etapa": "Antes de los 6 meses",
+          "forma": "No ofrecer; la leche materna o fórmula infantil es el alimento lácteo."
         },
         {
-          "etapa": "Alrededor de 9–11 meses",
-          "forma": "Si se consulta su uso antes del año, hacerlo con el pediatra; no sustituir leche materna o fórmula por kéfir."
+          "etapa": "De 6 a 11 meses",
+          "forma": "Como criterio prudente, no introducir kéfir en esta etapa. Si se consulta un uso particular, debe valorarlo el pediatra; nunca sustituye leche materna o fórmula."
         },
         {
           "etapa": "Desde los 12 meses",
-          "forma": "Ofrecer pequeñas cantidades de kéfir comercial natural, sin azúcar y elaborado con leche pasteurizada; no desplazar agua ni comidas."
+          "forma": "Ofrecer pequeñas cantidades de kéfir comercial natural, sin azúcar y elaborado con leche pasteurizada, si el niño tolera lácteos. Evitar fermentaciones caseras de procedencia o higiene desconocidas."
         }
       ],
       "preparacion_segura": "Elegir producto comercial refrigerado con etiqueta clara de pasteurización y fecha vigente. Evitar preparaciones caseras para lactantes, leche cruda y fermentos que hayan permanecido a temperatura ambiente sin control. No añadir miel antes de los 12 meses.",

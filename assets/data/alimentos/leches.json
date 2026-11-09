@@ -990,7 +990,7 @@
         "fórmula lista para tomar"
       ],
       "categoria": "Leches",
-      "resumen": "Producto formulado para lactantes cuando la lactancia materna no es posible, es insuficiente o se necesita suplementación indicada.",
+      "resumen": "Fórmula especialmente formulada para lactantes menores de 12 meses cuando la lactancia materna no es posible, es insuficiente o se necesita suplementación indicada. No confundir con leche común.",
       "descripcion": "Hay fórmulas en polvo, líquidas listas para usar y concentradas, además de fórmulas especiales. No son intercambiables sin valorar edad, indicación y producto.",
       "propiedades": [
         "Aporta nutrientes en proporciones reguladas según el tipo.",
@@ -999,19 +999,23 @@
       "beneficios": [
         "Puede ser alternativa nutricional adecuada cuando se necesita, con elección y seguimiento profesional."
       ],
-      "edad": "Puede utilizarse desde el nacimiento cuando está indicada, según producto. No cambiar a fórmula especial por cuenta propia.",
+      "edad": "Puede utilizarse desde el nacimiento hasta los 12 meses cuando está indicada, según el tipo de fórmula y las instrucciones del envase. La elección debe considerar edad, salud y necesidades del bebé. A partir de los 12 meses no suele ser necesaria una fórmula de continuación o crecimiento de rutina; individualizar con el profesional de salud.",
       "preparacion_por_edades": [
         {
-          "etapa": "Menores de 6 meses",
-          "forma": "No ofrecer como bebida ni como sustituto de leche materna o fórmula infantil."
+          "etapa": "Desde el nacimiento hasta los 2 meses",
+          "forma": "Si se necesita fórmula, utilizar una apropiada para la edad. La fórmula líquida lista para tomar es estéril antes de abrir. La fórmula en polvo no es estéril y exige precauciones especiales frente a Cronobacter; consultar indicaciones sanitarias, especialmente en prematuros o bebés inmunodeprimidos."
+        },
+        {
+          "etapa": "De 2 a 5 meses",
+          "forma": "Preparar exactamente como indica el envase: medir primero el agua segura y después añadir el número exacto de medidas rasas. No diluir, concentrar, añadir cereal ni modificar la receta."
         },
         {
           "etapa": "De 6 a 11 meses",
-          "forma": "No utilizar como bebida ni para preparar biberones. Los usos culinarios puntuales no deben desplazar leche materna o fórmula."
+          "forma": "Continuar con leche materna o fórmula infantil como leche principal, junto con alimentación complementaria. Preparar cada toma siguiendo la etiqueta, higiene, conservación y tiempos de descarte. No sustituir por leche común, en polvo doméstica, evaporada, condensada o bebidas vegetales."
         },
         {
           "etapa": "Desde los 12 meses",
-          "forma": "Higiene de manos y utensilios. Medir primero agua segura y añadir exactamente las medidas rasas indicadas. Nunca añadir agua o polvo extra; seguir etiqueta para temperatura, conservación y descarte."
+          "forma": "No cambiar automáticamente a fórmulas de continuación o crecimiento. La mayoría de los niños sanos no las necesita de rutina; valorar la alimentación y cualquier necesidad especial con el profesional de salud."
         }
       ],
       "preparacion_segura": "La fórmula en polvo no es estéril. Bebés menores de 2 meses, prematuros o inmunodeprimidos requieren precauciones adicionales frente a Cronobacter.",
@@ -1024,10 +1028,11 @@
         }
       ],
       "precauciones": [
-        "Nunca diluir ni concentrar.",
-        "No preparar con leche común, evaporada, condensada o bebidas vegetales.",
-        "Desechar restos tras iniciar la toma y respetar tiempos.",
-        "No usar fórmulas caseras."
+        "Nunca diluir ni concentrar: puede causar alteraciones graves de sodio y nutrición.",
+        "No preparar con leche común, evaporada, condensada, polvo doméstico ni bebidas vegetales.",
+        "Desechar restos del biberón después de iniciar la toma y respetar tiempos de conservación y refrigeración indicados.",
+        "No usar fórmulas caseras ni productos que no estén destinados específicamente a lactantes.",
+        "La fórmula en polvo no es estéril. En menores de 2 meses, prematuros o inmunodeprimidos, seguir precauciones reforzadas frente a Cronobacter y orientación sanitaria."
       ],
       "conservacion": "Seguir la etiqueta. Tras abrir o reconstituir, refrigerar si corresponde y respetar el tiempo de uso. Desechar envases dañados, productos alterados o que hayan perdido la cadena de frío.",
       "imagen_principal": {
