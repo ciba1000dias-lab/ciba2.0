@@ -96,7 +96,7 @@ a{color:inherit}
 .ciba-info:focus-visible{outline:1px dotted #a99a78;outline-offset:2px}
 .ciba-receta-resultados #ciba-receta-mensaje{color:var(--suave);font-size:13px}
 .ciba-receta-nota{display:inline-flex;align-items:center;gap:8px;margin:8px 0;color:var(--suave);font-size:12px}
-.ciba-receta-nota .ciba-info{width:21px;height:21px}
+
 .ciba-receta-alerta-info{display:flex;align-items:center;gap:7px;margin-top:10px;color:var(--suave);font-size:12px}
 @media(max-width:620px){
  .ciba-receta-campos-edad{grid-template-columns:1fr 1fr}
