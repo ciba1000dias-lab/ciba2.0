@@ -866,3 +866,24 @@ body[data-ciba-columna="a"] .foot{background:#632824!important}
   .ciba-global-panel{transition:none!important}
   .ciba-global-menu-boton{transition:none!important}
 }
+
+
+/* CIBA · ORÁCULO DINÁMICO
+   Se retira al abrir el menú, al navegar y al bajar por la lectura.
+   Regresa suavemente al cerrar el menú o desplazarse hacia arriba. */
+.ciba-global-buscador{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0) scale(1);
+  transition:opacity .38s ease,transform .38s cubic-bezier(.2,.7,.25,1),visibility .38s;
+  will-change:opacity,transform;
+}
+.ciba-global-buscador.ciba-oraculo-oculto{
+  opacity:0!important;
+  visibility:hidden!important;
+  transform:translateY(16px) scale(.94)!important;
+  pointer-events:none!important;
+}
+@media(prefers-reduced-motion:reduce){
+  .ciba-global-buscador{transition:none!important}
+}
