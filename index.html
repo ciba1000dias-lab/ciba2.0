@@ -566,9 +566,21 @@
       box-shadow: 0 20px 40px rgba(37,47,39,.16);
     }
 
-    .columna:nth-child(2) { background: #38564e; }
-    .columna:nth-child(3) { background: #8c5944; }
-    .columna:nth-child(4) { background: #5c684e; }
+    /* Identidad cromática permanente de las cuatro columnas CIBA.
+       Tonos profundos para mantener contraste legible con texto blanco. */
+    .columna:nth-child(1) { background: #397653; } /* Crianza · verde de la vida */
+    .columna:nth-child(2) { background: #287B9A; } /* Internet · azul del Caribe */
+    .columna:nth-child(3) { background: #8C671F; } /* Bienestar · ocre del sol */
+    .columna:nth-child(4) { background: #A9443B; } /* Acompañamiento · rojo coral */
+
+    .columna:nth-child(1) .columna-numero,
+    .columna:nth-child(1) .columna-ir { color: #E0EBCF; }
+    .columna:nth-child(2) .columna-numero,
+    .columna:nth-child(2) .columna-ir { color: #D6EDF4; }
+    .columna:nth-child(3) .columna-numero,
+    .columna:nth-child(3) .columna-ir { color: #F7E6B9; }
+    .columna:nth-child(4) .columna-numero,
+    .columna:nth-child(4) .columna-ir { color: #F9DDD6; }
 
     .columna::after {
       content: "";
