@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Optimiza un piloto de fotografías de alimentos a WebP durante el build.
+"""Optimiza las fotografías de alimentos a WebP durante el build.
 
 Las fuentes originales y los metadatos de autoría/licencia permanecen en los
 JSON versionados. Solo se transforman copias dentro de dist/.
@@ -11,6 +11,8 @@ import io
 import json
 import re
 import sys
+import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -23,21 +25,48 @@ PILOTO = {
     "vegetales": {"calabaza"},
 }
 MAX_BYTES = 20 * 1024 * 1024
-USER_AGENT = "CIBA-Alimentos-ImageOptimizer/1.0 (GitHub Actions build)"
+USER_AGENT = "CIBA-Alimentos-ImageOptimizer/1.1 (GitHub Actions build)"
+INTERVALO_DESCARGAS = 1.5
+ESPERAS_REINTENTO = (8, 20, 45, 60)
+_ultima_solicitud = 0.0
 
 
 def descargar(url: str) -> bytes:
+    global _ultima_solicitud
     if not isinstance(url, str) or not url.startswith(("https://upload.wikimedia.org/", "https://thumb.wikimedia.org/", "https://commons.wikimedia.org/")):
         raise ValueError(f"Fuente de imagen no autorizada: {url!r}")
+
     solicitud = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(solicitud, timeout=45) as respuesta:
-        tipo = respuesta.headers.get("Content-Type", "")
-        datos = respuesta.read(MAX_BYTES + 1)
-    if len(datos) > MAX_BYTES:
-        raise ValueError("La imagen supera el límite de 20 MB.")
-    if not tipo.lower().startswith("image/"):
-        raise ValueError(f"La URL no devolvió una imagen (Content-Type: {tipo or 'desconocido'}).")
-    return datos
+    for intento in range(len(ESPERAS_REINTENTO) + 1):
+        espera = INTERVALO_DESCARGAS - (time.monotonic() - _ultima_solicitud)
+        if espera > 0:
+            time.sleep(espera)
+        _ultima_solicitud = time.monotonic()
+
+        try:
+            with urllib.request.urlopen(solicitud, timeout=45) as respuesta:
+                tipo = respuesta.headers.get("Content-Type", "")
+                datos = respuesta.read(MAX_BYTES + 1)
+            if len(datos) > MAX_BYTES:
+                raise ValueError("La imagen supera el límite de 20 MB.")
+            if not tipo.lower().startswith("image/"):
+                raise ValueError(f"La URL no devolvió una imagen (Content-Type: {tipo or 'desconocido'}).")
+            return datos
+        except urllib.error.HTTPError as exc:
+            if exc.code not in (429, 503) or intento >= len(ESPERAS_REINTENTO):
+                raise
+            retry_after = exc.headers.get("Retry-After", "")
+            try:
+                demora = max(float(retry_after), ESPERAS_REINTENTO[intento])
+            except (TypeError, ValueError):
+                demora = ESPERAS_REINTENTO[intento]
+            print(
+                f"Wikimedia respondió HTTP {exc.code}; reintento {intento + 1} "
+                f"de {len(ESPERAS_REINTENTO)} en {demora:.0f} s.",
+                file=sys.stderr,
+            )
+            time.sleep(demora)
+    raise RuntimeError("No se pudo descargar la imagen tras varios reintentos.")
 
 
 def convertir(datos: bytes, destino_base: Path) -> dict[str, str]:
