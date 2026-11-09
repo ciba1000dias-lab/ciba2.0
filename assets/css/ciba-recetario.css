@@ -44,3 +44,9 @@ a{color:inherit}
 .ciba-receta-disclaimer{margin-top:24px;padding:18px;border:1px solid var(--linea);border-radius:10px}
 .ciba-receta-disclaimer strong{color:var(--noche);font-size:13px}
 @media(max-width:620px){.ciba-receta-campos-edad{grid-template-columns:1fr 1fr}.ciba-receta-o{display:none}.ciba-receta-opciones{grid-template-columns:1fr}.ciba-receta-panel{padding:18px}.ciba-receta-panel h2{font-size:24px}}
+
+.ciba-receta-tarjeta{margin:18px 0;padding:18px;border:1px solid var(--linea);border-radius:10px;background:#fff}
+.ciba-receta-tarjeta h4{margin:0 0 8px;color:var(--noche);font:normal 22px Georgia,serif}
+.ciba-receta-tarjeta p,.ciba-receta-tarjeta li{color:var(--suave);font-size:13px;line-height:1.7}
+.ciba-receta-tarjeta ul{padding-left:20px}
+#ciba-receta-propuestas h3{margin:24px 0 10px;color:var(--noche);font:normal 24px Georgia,serif}
