@@ -130,6 +130,35 @@ Antes de conectar el proveedor:
 - Peticiones desde dominios ajenos: rechazadas.
 - No aparecen claves, datos personales ni contenido sensible en frontend, repositorio o logs.
 
-## 9. Estado
+## 9. Estado actualizado — 9 de noviembre de 2026
 
-La arquitectura está seleccionada como propuesta técnica, pero el servicio todavía no está conectado ni desplegado. Requiere una cuenta Cloudflare gratuita del propietario del proyecto y pruebas reales de disponibilidad/cuota. No anunciar el recetario como «IA activa» hasta superar las pruebas de aceptación.
+### Prueba real de conectividad completada
+
+- Cuenta Cloudflare creada por el propietario del proyecto.
+- Worker `ciba-recetario-api` creado y publicado en Cloudflare.
+- Binding de Workers AI añadido con variable exacta `AI`.
+- Modelo `@cf/google/gemma-4-26b-a4b-it` invocado correctamente desde el Worker.
+- Prueba real de generación en español completada; la respuesta devolvió 147 tokens totales y un consumo reportado de 2.972727 Neurons.
+- URL del Worker: `https://damp-pine-fb21.ciba-1000dias-125.workers.dev/`.
+- La prueba desplegada actualmente es solo una comprobación de estado y generación. **No está conectada todavía a la web CIBA ni genera recetas.**
+
+### Código fuente versionado
+
+El primer backend de interpretación se ha guardado en `workers/ciba-recetario/`:
+- `index.js`: endpoint `POST /interpret`, CORS limitado al dominio CIBA, validación de entrada, límite de tamaño, interpretación de ingredientes mediante Gemma 4 y validación de IDs contra la lista de candidatos recibida.
+- `index.test.js`: pruebas unitarias de validación y filtrado de respuestas.
+- `package.json`: ejecución de pruebas con Node.js.
+- `README.md`: instrucciones de despliegue y alcance.
+
+Esta versión **solo interpreta ingredientes**. No genera ni recomienda recetas, no decide seguridad alimentaria y no sustituye el motor determinista. La respuesta requiere confirmación humana.
+
+### Pendiente antes de conectar la web
+
+1. Ejecutar y revisar las pruebas automatizadas del Worker.
+2. Configurar límites de frecuencia y controles de abuso en Cloudflare; CORS por sí solo no autentica clientes.
+3. Sustituir el código de prueba del Worker por el código versionado, tras verificarlo.
+4. Construir el catálogo de recetas curadas y las reglas deterministas.
+5. Crear la interfaz del recetario y conectarla al endpoint.
+6. Incorporar aviso de procesamiento por Cloudflare y privacidad antes de abrirlo al público.
+
+No anunciar el recetario como funcional ni IA integrada en la web hasta completar las pruebas de seguridad, integración y publicación.
