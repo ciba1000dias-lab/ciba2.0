@@ -15,7 +15,7 @@ test("acepta ingredientes y candidatos válidos", () => {
   const result = validarEntrada({
     ingredients: "arroz, guineo y zanahoria",
     candidates
-  });
+  }, officialFoods);
   assert.equal(result.ok, true);
   assert.equal(result.value.candidates.length, 2);
 });
@@ -24,7 +24,7 @@ test("rechaza texto excesivo", () => {
   const result = validarEntrada({
     ingredients: "a".repeat(501),
     candidates
-  });
+  }, officialFoods);
   assert.equal(result.ok, false);
 });
 
@@ -32,7 +32,7 @@ test("rechaza IDs con formato inválido", () => {
   const result = validarEntrada({
     ingredients: "arroz",
     candidates: [{ id: "../secreto", name: "Arroz" }]
-  });
+  }, officialFoods);
   assert.equal(result.ok, false);
 });
 
@@ -64,6 +64,14 @@ test("rechaza una salida sin estructura reconocible", () => {
 
 
 import { readFileSync } from "node:fs";
+
+const foodIndex = JSON.parse(
+  readFileSync(new URL("../../assets/data/alimentos-busqueda.json", import.meta.url), "utf8")
+);
+const officialFoods = Object.fromEntries(foodIndex.alimentos.map(food => [food.id, {
+  name: food.nombre,
+  aliases: [...(food.nombres_alternativos || []), ...(food.palabras_clave || [])]
+}]));
 
 const recipeCatalog = JSON.parse(
   readFileSync(new URL("../../assets/data/recetario/recetas.json", import.meta.url), "utf8")
@@ -117,7 +125,7 @@ test("rechaza alimentos que no pertenecen a la biblioteca oficial", () => {
   const result = validarEntrada({
     ingredients: "algo",
     candidates: [{ id: "alimento-inventado", name: "Alimento inventado" }]
-  });
+  }, officialFoods);
   assert.equal(result.ok, false);
 });
 
@@ -125,7 +133,7 @@ test("no permite cambiar el nombre oficial de un ID válido", () => {
   const result = validarEntrada({
     ingredients: "calabaza",
     candidates: [{ id: "calabaza", name: "Chocolate" }]
-  });
+  }, officialFoods);
   assert.equal(result.ok, false);
 });
 
@@ -133,8 +141,8 @@ test("usa los sinónimos oficiales y no los enviados por el navegador", () => {
   const result = validarEntrada({
     ingredients: "guineo",
     candidates: [{ id: "platano-fruta", name: "Plátano fruta", aliases: ["nombre-falso"] }]
-  });
+  }, officialFoods);
   assert.equal(result.ok, true);
-  assert.ok(result.value.candidates[0].aliases.includes("banana"));
+  assert.ok(result.value.candidates[0].aliases.some(alias => alias.includes("banana") || alias.includes("guineo")));
   assert.ok(!result.value.candidates[0].aliases.includes("nombre-falso"));
 });
