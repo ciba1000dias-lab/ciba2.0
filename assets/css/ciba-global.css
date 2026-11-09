@@ -576,3 +576,30 @@ transition: none;
 @media(prefers-reduced-motion:reduce){
  .ciba-transicion-columnas,.ciba-transicion-columnas svg,.ciba-transicion-luz{animation:none!important;transition:none!important}
 }
+
+
+/* CIBA · acceso visible en la cabecera mientras no exista sesión */
+.ciba-global-login{
+  display:inline-flex;align-items:center;justify-content:center;min-height:42px;
+  padding:0 17px;border:1px solid rgba(230,201,142,.72);border-radius:999px;
+  background:linear-gradient(135deg,rgba(198,155,82,.24),rgba(73,58,50,.96));
+  color:#FFF8EB;text-decoration:none;font:800 10px/1 Arial,sans-serif;
+  letter-spacing:.13em;white-space:nowrap;box-shadow:0 5px 18px rgba(35,25,20,.2);
+  transition:transform .2s ease,background .2s ease,border-color .2s ease;
+}
+.ciba-global-login:hover,.ciba-global-login:focus-visible{
+  transform:translateY(-1px);background:linear-gradient(135deg,#8D6A3C,#493A32);
+  border-color:#F0D39B;color:#FFF8EB;outline:2px solid rgba(240,211,155,.3);outline-offset:3px;
+}
+.ciba-global-login[hidden]{display:none!important}
+.ciba-global-cabecera > .ciba-global-login{
+  position:absolute;right:18px;top:50%;transform:translateY(-50%);z-index:3;
+}
+body:not(.ciba-con-cabecera-global) > .ciba-global-login{
+  position:fixed;top:17px;right:18px;z-index:10001;
+}
+@media(max-width:600px){
+  .ciba-global-cabecera > .ciba-global-login{right:10px;min-height:37px;padding:0 11px;font-size:9px;letter-spacing:.08em}
+  body:not(.ciba-con-cabecera-global) > .ciba-global-login{top:12px;right:12px;min-height:38px;padding:0 12px;font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){.ciba-global-login{transition:none}}
