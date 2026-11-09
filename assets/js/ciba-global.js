@@ -216,7 +216,8 @@
   function crearMenu() {
     if (document.querySelector('.ciba-global-menu')) return;
 
-    const cabeceraGlobal = crearCabeceraGlobal();\n    const contenedor = elemento('div', 'ciba-global-menu');
+    const cabeceraGlobal = crearCabeceraGlobal();
+    const contenedor = elemento('div', 'ciba-global-menu');
 
     const boton = elemento('button', 'ciba-global-menu-boton');
     boton.type = 'button';
