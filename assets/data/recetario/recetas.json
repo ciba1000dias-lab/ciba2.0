@@ -11,6 +11,2270 @@
   ],
   "recetas": [
     {
+      "numero_catalogo": 16,
+      "id": "arepas-boniato-queso",
+      "nombre": "Arepitas blandas de boniato y queso",
+      "descripcion": "Preparación CIBA adaptada al contexto local: arepitas blandas de boniato y queso.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "boniato",
+          "cantidad": "1/3",
+          "unidad": "taza cocido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "harina-maiz",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "queso-blanco",
+          "cantidad": "1",
+          "unidad": "cucharada pasteurizado",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Aplastar los ingredientes cocidos y mezclar con harina de maíz y agua hasta formar masa blanda.",
+        "Formar arepitas pequeñas y finas; cocinar completamente a fuego bajo.",
+        "Humedecer y desmenuzar o cortar en tiras blandas; evitar costras duras."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "leche"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: leche. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 17,
+      "id": "tortitas-chayote-pollo",
+      "nombre": "Tortitas suaves de chayote y pollo",
+      "descripcion": "Preparación CIBA adaptada al contexto local: tortitas suaves de chayote y pollo.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "chayote",
+          "cantidad": "1/4",
+          "unidad": "taza cocido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "pollo",
+          "cantidad": "30",
+          "unidad": "gramos cocido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "harina-maiz",
+          "cantidad": "1",
+          "unidad": "cucharada",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Aplastar los ingredientes cocidos y formar piezas pequeñas y aplanadas, no esferas.",
+        "Cocinar al horno o sartén hasta que estén completamente hechas y blandas.",
+        "Desmenuzar para lactantes pequeños; no ofrecer piezas secas, duras ni compactas."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 18,
+      "id": "arepas-platano-res",
+      "nombre": "Arepitas de plátano vianda con res",
+      "descripcion": "Preparación CIBA adaptada al contexto local: arepitas de plátano vianda con res.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "platano-vianda",
+          "cantidad": "1/3",
+          "unidad": "taza cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "harina-maiz",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "res",
+          "cantidad": "25",
+          "unidad": "gramos molida",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Aplastar los ingredientes cocidos y mezclar con harina de maíz y agua hasta formar masa blanda.",
+        "Formar arepitas pequeñas y finas; cocinar completamente a fuego bajo.",
+        "Humedecer y desmenuzar o cortar en tiras blandas; evitar costras duras."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 19,
+      "id": "yuca-huevo-aguacate",
+      "nombre": "Yuca majada con huevo y aguacate",
+      "descripcion": "Preparación CIBA adaptada al contexto local: yuca majada con huevo y aguacate.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "yuca",
+          "cantidad": "1/3",
+          "unidad": "taza cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "huevo-gallina",
+          "cantidad": "1",
+          "unidad": "huevo",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "aguacate",
+          "cantidad": "1",
+          "unidad": "cucharada",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cocinar los ingredientes hasta que estén completamente blandos.",
+        "Retirar pieles, semillas, huesos, espinas y fibras duras; triturar o aplastar.",
+        "Añadir agua de cocción potable si hace falta para mantener humedad."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "huevo"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: huevo. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 20,
+      "id": "platano-maduro-queso-horno",
+      "nombre": "Plátano vianda al horno con queso",
+      "descripcion": "Preparación CIBA adaptada al contexto local: plátano vianda al horno con queso.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "platano-vianda",
+          "cantidad": "1/3",
+          "unidad": "taza cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "queso-blanco",
+          "cantidad": "1",
+          "unidad": "cucharada pasteurizado",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cocinar los ingredientes al horno hasta que estén completamente blandos y hechos por dentro.",
+        "Evitar superficies duras, tostadas o secas; añadir agua de cocción si hace falta.",
+        "Aplastar o desmenuzar y comprobar la temperatura antes de servir."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "leche"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: leche. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 21,
+      "id": "panquecas-calabaza-queso",
+      "nombre": "Panquecas blandas de calabaza y queso",
+      "descripcion": "Preparación CIBA adaptada al contexto local: panquecas blandas de calabaza y queso.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "calabaza",
+          "cantidad": "1/4",
+          "unidad": "taza cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "huevo-gallina",
+          "cantidad": "1",
+          "unidad": "huevo",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "harina-maiz",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "queso-blanco",
+          "cantidad": "1",
+          "unidad": "cucharada",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Aplastar los ingredientes húmedos y mezclar hasta formar una masa suave.",
+        "Cocinar porciones pequeñas a fuego bajo por ambos lados hasta que el centro esté hecho.",
+        "Servir blandas y húmedas; evitar bordes duros, tostados o gomosos."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "huevo",
+        "leche"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: huevo, leche. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 22,
+      "id": "arepas-maiz-res-vegetales",
+      "nombre": "Arepitas de maíz con res y vegetales",
+      "descripcion": "Preparación CIBA adaptada al contexto local: arepitas de maíz con res y vegetales.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "harina-maiz",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "res",
+          "cantidad": "25",
+          "unidad": "gramos molida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "zanahoria",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "calabaza",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Aplastar los ingredientes cocidos y mezclar con harina de maíz y agua hasta formar masa blanda.",
+        "Formar arepitas pequeñas y finas; cocinar completamente a fuego bajo.",
+        "Humedecer y desmenuzar o cortar en tiras blandas; evitar costras duras."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 23,
+      "id": "malanga-vegetales-pollo",
+      "nombre": "Malanga y vegetales con pollo",
+      "descripcion": "Preparación CIBA adaptada al contexto local: malanga y vegetales con pollo.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "malanga",
+          "cantidad": "1/3",
+          "unidad": "taza cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "chayote",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "pollo",
+          "cantidad": "25",
+          "unidad": "gramos cocido",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cocinar los ingredientes hasta que estén completamente blandos.",
+        "Retirar pieles, semillas, huesos, espinas y fibras duras; triturar o aplastar.",
+        "Añadir agua de cocción potable si hace falta para mantener humedad."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 24,
+      "id": "panquecas-platano-avena-queso",
+      "nombre": "Panquecas de plátano fruta y avena con queso",
+      "descripcion": "Preparación CIBA adaptada al contexto local: panquecas de plátano fruta y avena con queso.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "platano-fruta",
+          "cantidad": "1/2",
+          "unidad": "unidad madura",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "avena",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "queso-blanco",
+          "cantidad": "1",
+          "unidad": "cucharada",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Aplastar los ingredientes húmedos y mezclar hasta formar una masa suave.",
+        "Cocinar porciones pequeñas a fuego bajo por ambos lados hasta que el centro esté hecho.",
+        "Servir blandas y húmedas; evitar bordes duros, tostados o gomosos."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "leche"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: leche. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 25,
+      "id": "bollitos-maiz-res",
+      "nombre": "Bollitos blandos de maíz con res",
+      "descripcion": "Preparación CIBA adaptada al contexto local: bollitos blandos de maíz con res.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "maiz",
+          "cantidad": "1/4",
+          "unidad": "taza triturado",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "res",
+          "cantidad": "25",
+          "unidad": "gramos molida",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Triturar el maíz cocido y mezclar con los demás ingredientes hasta obtener masa húmeda.",
+        "Cocinar al vapor o hervir hasta que el centro esté completamente hecho.",
+        "Aplastar o desmenuzar; evitar piezas gomosas o compactas."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 26,
+      "id": "panquecas-zanahoria-avena",
+      "nombre": "Panquecas de zanahoria y avena",
+      "descripcion": "Preparación CIBA adaptada al contexto local: panquecas de zanahoria y avena.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "zanahoria",
+          "cantidad": "1/4",
+          "unidad": "taza cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "avena",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "huevo-gallina",
+          "cantidad": "1",
+          "unidad": "huevo",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Aplastar los ingredientes húmedos y mezclar hasta formar una masa suave.",
+        "Cocinar porciones pequeñas a fuego bajo por ambos lados hasta que el centro esté hecho.",
+        "Servir blandas y húmedas; evitar bordes duros, tostados o gomosos."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "huevo"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: huevo. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 27,
+      "id": "bollitos-maiz-frijol-queso",
+      "nombre": "Bollitos de maíz con frijoles y queso",
+      "descripcion": "Preparación CIBA adaptada al contexto local: bollitos de maíz con frijoles y queso.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "maiz",
+          "cantidad": "1/4",
+          "unidad": "taza triturado",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "frijol-negro",
+          "cantidad": "2",
+          "unidad": "cucharadas cocidas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "queso-blanco",
+          "cantidad": "1",
+          "unidad": "cucharada",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Triturar el maíz cocido y mezclar con los demás ingredientes hasta obtener masa húmeda.",
+        "Cocinar al vapor o hervir hasta que el centro esté completamente hecho.",
+        "Aplastar o desmenuzar; evitar piezas gomosas o compactas."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "leche"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: leche. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 28,
+      "id": "platano-res-mechada",
+      "nombre": "Plátano vianda con carne de res desmechada",
+      "descripcion": "Preparación CIBA adaptada al contexto local: plátano vianda con carne de res desmechada.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "platano-vianda",
+          "cantidad": "1/3",
+          "unidad": "taza cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "res",
+          "cantidad": "25",
+          "unidad": "gramos tierna",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cocinar los ingredientes hasta que estén completamente blandos.",
+        "Retirar pieles, semillas, huesos, espinas y fibras duras; triturar o aplastar.",
+        "Añadir agua de cocción potable si hace falta para mantener humedad."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 29,
+      "id": "tortitas-gandul-sardina",
+      "nombre": "Tortitas blandas de gandul y sardina",
+      "descripcion": "Preparación CIBA adaptada al contexto local: tortitas blandas de gandul y sardina.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "gandul",
+          "cantidad": "1/4",
+          "unidad": "taza cocido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "sardina",
+          "cantidad": "20",
+          "unidad": "gramos fresca sin espinas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "harina-maiz",
+          "cantidad": "1",
+          "unidad": "cucharada",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Aplastar los ingredientes cocidos y formar piezas pequeñas y aplanadas, no esferas.",
+        "Cocinar al horno o sartén hasta que estén completamente hechas y blandas.",
+        "Desmenuzar para lactantes pequeños; no ofrecer piezas secas, duras ni compactas."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "pescado"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: pescado. Introducirlos de forma apropiada y observar posibles reacciones.",
+        "Retirar todas las espinas y cocinar el pescado completamente.",
+        "Preferir sardina fresca de fuente segura; evitar versiones saladas."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 31,
+      "id": "arroz-lentejas-queso",
+      "nombre": "Arroz meloso con lentejas y queso",
+      "descripcion": "Preparación CIBA adaptada al contexto local: arroz meloso con lentejas y queso.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "arroz",
+          "cantidad": "2",
+          "unidad": "cucharadas crudo",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "lentejas",
+          "cantidad": "2",
+          "unidad": "cucharadas cocidas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "queso-blanco",
+          "cantidad": "1",
+          "unidad": "cucharada",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cocinar el arroz con agua suficiente hasta que quede muy blando y meloso.",
+        "Cocinar por separado carnes, legumbres y vegetales; desmenuzar o aplastar.",
+        "Mezclar y mantener húmedo; no añadir sal, cubitos concentrados ni embutidos."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "leche"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: leche. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 32,
+      "id": "pasta-res-zanahoria",
+      "nombre": "Pasta corta con res y zanahoria",
+      "descripcion": "Preparación CIBA adaptada al contexto local: pasta corta con res y zanahoria.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "pasta",
+          "cantidad": "1/4",
+          "unidad": "taza cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "res",
+          "cantidad": "25",
+          "unidad": "gramos molida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "zanahoria",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cocinar la pasta hasta que quede muy blanda y cortar según habilidades.",
+        "Cocinar proteína y vegetales por separado hasta que estén hechos.",
+        "Mezclar con salsa húmeda sin sal; no servir pasta seca ni hebras largas."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "trigo/gluten"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: trigo/gluten. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 33,
+      "id": "tortilla-papa-espinaca",
+      "nombre": "Tortilla de papa y espinaca",
+      "descripcion": "Preparación CIBA adaptada al contexto local: tortilla de papa y espinaca.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "huevo-gallina",
+          "cantidad": "1",
+          "unidad": "huevo",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "papa",
+          "cantidad": "1/4",
+          "unidad": "taza cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "espinaca",
+          "cantidad": "1",
+          "unidad": "cucharada cocida",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cocinar los vegetales o acompañamientos hasta ablandar.",
+        "Añadir el huevo y cocinar por completo hasta que no queden partes líquidas.",
+        "Dejar enfriar y cortar o desmenuzar según las habilidades."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "huevo"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: huevo. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 34,
+      "id": "mango-leche-materna",
+      "nombre": "Mango majado con leche materna",
+      "descripcion": "Preparación CIBA adaptada al contexto local: mango majado con leche materna.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "mango",
+          "cantidad": "1/4",
+          "unidad": "taza pulpa madura",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Lavar la fruta antes de pelarla o cortarla; retirar semillas, huesos, corazón y partes duras.",
+        "Aplastar o triturar la pulpa madura. Si está firme, cocinar con poca agua hasta ablandar.",
+        "Servir sin azúcar, miel ni zumos añadidos."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "La leche materna extraída es opcional: añadir al final, cuando esté tibia; nunca hervirla."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 35,
+      "id": "platano-leche-materna",
+      "nombre": "Plátano fruta majado con leche materna",
+      "descripcion": "Preparación CIBA adaptada al contexto local: plátano fruta majado con leche materna.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "platano-fruta",
+          "cantidad": "1/2",
+          "unidad": "unidad madura",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Lavar la fruta antes de pelarla o cortarla; retirar semillas, huesos, corazón y partes duras.",
+        "Aplastar o triturar la pulpa madura. Si está firme, cocinar con poca agua hasta ablandar.",
+        "Servir sin azúcar, miel ni zumos añadidos."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "La leche materna extraída es opcional: añadir al final, cuando esté tibia; nunca hervirla."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 36,
+      "id": "compota-mango-natural",
+      "nombre": "Compota natural de mango",
+      "descripcion": "Preparación CIBA adaptada al contexto local: compota natural de mango.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "mango",
+          "cantidad": "1/3",
+          "unidad": "taza pulpa madura",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Lavar la fruta antes de pelarla o cortarla; retirar semillas, huesos, corazón y partes duras.",
+        "Aplastar o triturar la pulpa madura. Si está firme, cocinar con poca agua hasta ablandar.",
+        "Servir sin azúcar, miel ni zumos añadidos."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 37,
+      "id": "atol-calabaza-leche-materna",
+      "nombre": "Atol suave de calabaza con leche materna",
+      "descripcion": "Preparación CIBA adaptada al contexto local: atol suave de calabaza con leche materna.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "calabaza",
+          "cantidad": "1/3",
+          "unidad": "taza cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "avena",
+          "cantidad": "1",
+          "unidad": "cucharada",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cocinar el cereal en agua potable hasta que quede completamente hecho y cremoso.",
+        "Incorporar los demás ingredientes ya cocidos y triturados o finamente desmenuzados.",
+        "Ajustar con agua hasta textura húmeda y espesa; no servir cereal seco."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "La leche materna extraída es opcional: añadir al final, cuando esté tibia; nunca hervirla."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 38,
+      "id": "vasitos-desayuno-huevo",
+      "nombre": "Vasitos blandos de huevo, tomate y pan",
+      "descripcion": "Preparación CIBA adaptada al contexto local: vasitos blandos de huevo, tomate y pan.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "huevo-gallina",
+          "cantidad": "1",
+          "unidad": "huevo",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "tomate",
+          "cantidad": "2",
+          "unidad": "cucharadas cocido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "pan",
+          "cantidad": "1/4",
+          "unidad": "rebanada blanda",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cocinar los ingredientes al horno hasta que estén completamente blandos y hechos por dentro.",
+        "Evitar superficies duras, tostadas o secas; añadir agua de cocción si hace falta.",
+        "Aplastar o desmenuzar y comprobar la temperatura antes de servir."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "huevo",
+        "trigo/gluten"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: huevo, trigo/gluten. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 39,
+      "id": "tortitas-papa-queso",
+      "nombre": "Tortitas blandas de papa y queso",
+      "descripcion": "Preparación CIBA adaptada al contexto local: tortitas blandas de papa y queso.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "papa",
+          "cantidad": "1/3",
+          "unidad": "taza cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "queso-blanco",
+          "cantidad": "1",
+          "unidad": "cucharada",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "huevo-gallina",
+          "cantidad": "1/2",
+          "unidad": "huevo",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Aplastar los ingredientes cocidos y formar piezas pequeñas y aplanadas, no esferas.",
+        "Cocinar al horno o sartén hasta que estén completamente hechas y blandas.",
+        "Desmenuzar para lactantes pequeños; no ofrecer piezas secas, duras ni compactas."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "huevo",
+        "leche"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: huevo, leche. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 40,
+      "id": "guiso-pollo-fideos",
+      "nombre": "Guiso de pollo con fideos y zanahoria",
+      "descripcion": "Preparación CIBA adaptada al contexto local: guiso de pollo con fideos y zanahoria.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "pollo",
+          "cantidad": "30",
+          "unidad": "gramos cocido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "pasta",
+          "cantidad": "2",
+          "unidad": "cucharadas cocidas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "zanahoria",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "cebolla",
+          "cantidad": "1",
+          "unidad": "cucharadita",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cortar vegetales y cocinarlos con agua potable hasta que estén muy blandos.",
+        "Añadir la proteína y cocinar completamente; desmenuzarla o deshacer los grumos.",
+        "Reducir el líquido y aplastar o triturar hasta lograr un guiso espeso y húmedo."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "trigo/gluten"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: trigo/gluten. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 41,
+      "id": "platano-vianda-horno",
+      "nombre": "Plátano vianda al horno",
+      "descripcion": "Preparación CIBA adaptada al contexto local: plátano vianda al horno.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "platano-vianda",
+          "cantidad": "1/3",
+          "unidad": "taza cocida",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cocinar los ingredientes al horno hasta que estén completamente blandos y hechos por dentro.",
+        "Evitar superficies duras, tostadas o secas; añadir agua de cocción si hace falta.",
+        "Aplastar o desmenuzar y comprobar la temperatura antes de servir."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 42,
+      "id": "guiso-pescado-viandas",
+      "nombre": "Guiso suave de tilapia con viandas",
+      "descripcion": "Preparación CIBA adaptada al contexto local: guiso suave de tilapia con viandas.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "tilapia",
+          "cantidad": "25",
+          "unidad": "gramos sin espinas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "papa",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "platano-vianda",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "tomate",
+          "cantidad": "1",
+          "unidad": "cucharada",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cortar vegetales y cocinarlos con agua potable hasta que estén muy blandos.",
+        "Añadir la proteína y cocinar completamente; desmenuzarla o deshacer los grumos.",
+        "Reducir el líquido y aplastar o triturar hasta lograr un guiso espeso y húmedo."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "pescado"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: pescado. Introducirlos de forma apropiada y observar posibles reacciones.",
+        "Retirar todas las espinas y cocinar el pescado completamente."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 43,
+      "id": "boloñesa-res-pasta",
+      "nombre": "Pasta con salsa suave de res y tomate",
+      "descripcion": "Preparación CIBA adaptada al contexto local: pasta con salsa suave de res y tomate.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "res",
+          "cantidad": "25",
+          "unidad": "gramos molida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "tomate",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "cebolla",
+          "cantidad": "1",
+          "unidad": "cucharadita",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "pasta",
+          "cantidad": "1/4",
+          "unidad": "taza cocida",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cocinar la pasta hasta que quede muy blanda y cortar según habilidades.",
+        "Cocinar proteína y vegetales por separado hasta que estén hechos.",
+        "Mezclar con salsa húmeda sin sal; no servir pasta seca ni hebras largas."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "trigo/gluten"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: trigo/gluten. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 44,
+      "id": "guiso-res-espinaca-tomate",
+      "nombre": "Guiso de res con espinaca y tomate",
+      "descripcion": "Preparación CIBA adaptada al contexto local: guiso de res con espinaca y tomate.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "res",
+          "cantidad": "25",
+          "unidad": "gramos tierna",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "espinaca",
+          "cantidad": "1",
+          "unidad": "cucharada cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "tomate",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "arroz",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cortar vegetales y cocinarlos con agua potable hasta que estén muy blandos.",
+        "Añadir la proteína y cocinar completamente; desmenuzarla o deshacer los grumos.",
+        "Reducir el líquido y aplastar o triturar hasta lograr un guiso espeso y húmedo."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 45,
+      "id": "pina-yogur-natural",
+      "nombre": "Piña madura con yogur natural",
+      "descripcion": "Preparación CIBA adaptada al contexto local: piña madura con yogur natural.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "pina",
+          "cantidad": "2",
+          "unidad": "cucharadas madura",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "yogur-natural",
+          "cantidad": "2",
+          "unidad": "cucharadas pasteurizado",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Lavar la fruta antes de pelarla o cortarla; retirar semillas, huesos, corazón y partes duras.",
+        "Aplastar o triturar la pulpa madura. Si está firme, cocinar con poca agua hasta ablandar.",
+        "Servir sin azúcar, miel ni zumos añadidos."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "leche"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: leche. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 46,
+      "id": "sopa-calabaza-lentejas",
+      "nombre": "Sopa espesa de calabaza y lentejas",
+      "descripcion": "Preparación CIBA adaptada al contexto local: sopa espesa de calabaza y lentejas.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "calabaza",
+          "cantidad": "1/4",
+          "unidad": "taza",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "lentejas",
+          "cantidad": "2",
+          "unidad": "cucharadas cocidas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "cebolla",
+          "cantidad": "1",
+          "unidad": "cucharadita",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cocinar todos los ingredientes hasta que estén muy blandos.",
+        "Triturar o aplastar parte y reducir el líquido para lograr sopa espesa.",
+        "Comprobar que no queden huesos, espinas, pieles duras ni trozos firmes."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 47,
+      "id": "wrap-blando-pollo-aguacate",
+      "nombre": "Tortilla blanda de pollo y aguacate",
+      "descripcion": "Preparación CIBA adaptada al contexto local: tortilla blanda de pollo y aguacate.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 12,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "pollo",
+          "cantidad": "25",
+          "unidad": "gramos cocido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "harina-maiz",
+          "cantidad": "1",
+          "unidad": "tortilla blanda",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "aguacate",
+          "cantidad": "1",
+          "unidad": "cucharada",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Preparar completamente el relleno; desmenuzar la proteína y aplastar los vegetales.",
+        "Usar tortilla blanda y fina; no enrollar en cilindro apretado ni añadir rellenos duros.",
+        "Para lactantes, ofrecer relleno desmenuzado y tortilla adaptada a sus habilidades."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Versión CIBA adaptada: no ofrecer la tortilla enrollada como cilindro compacto."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 48,
+      "id": "pure-garbanzos-limon",
+      "nombre": "Puré suave de garbanzos y limón",
+      "descripcion": "Preparación CIBA adaptada al contexto local: puré suave de garbanzos y limón.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "garbanzos",
+          "cantidad": "1/4",
+          "unidad": "taza cocidos",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "limon",
+          "cantidad": "1",
+          "unidad": "cucharadita jugo",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cocinar los ingredientes hasta que estén completamente blandos.",
+        "Retirar pieles, semillas, huesos, espinas y fibras duras; triturar o aplastar.",
+        "Añadir agua de cocción potable si hace falta para mantener humedad."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 49,
+      "id": "guiso-pollo-vegetales",
+      "nombre": "Guiso de pollo con vegetales tiernos",
+      "descripcion": "Preparación CIBA adaptada al contexto local: guiso de pollo con vegetales tiernos.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "pollo",
+          "cantidad": "30",
+          "unidad": "gramos cocido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "zanahoria",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "papa",
+          "cantidad": "2",
+          "unidad": "cucharadas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "cebolla",
+          "cantidad": "1",
+          "unidad": "cucharadita",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Cortar vegetales y cocinarlos con agua potable hasta que estén muy blandos.",
+        "Añadir la proteína y cocinar completamente; desmenuzarla o deshacer los grumos.",
+        "Reducir el líquido y aplastar o triturar hasta lograr un guiso espeso y húmedo."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
+      "numero_catalogo": 50,
+      "id": "tortitas-boniato-garbanzos",
+      "nombre": "Tortitas blandas de boniato y garbanzos",
+      "descripcion": "Preparación CIBA adaptada al contexto local: tortitas blandas de boniato y garbanzos.",
+      "estado": "aprobada",
+      "publicable": true,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "boniato",
+          "cantidad": "1/4",
+          "unidad": "taza cocido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "garbanzos",
+          "cantidad": "2",
+          "unidad": "cucharadas cocidos",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "huevo-gallina",
+          "cantidad": "1/2",
+          "unidad": "huevo",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar manos, utensilios y superficies; utilizar agua potable y separar alimentos crudos de cocinados.",
+        "Aplastar los ingredientes cocidos y formar piezas pequeñas y aplanadas, no esferas.",
+        "Cocinar al horno o sartén hasta que estén completamente hechas y blandas.",
+        "Desmenuzar para lactantes pequeños; no ofrecer piezas secas, duras ni compactas."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Cocinar hasta ablandar y triturar o aplastar en textura espesa, húmeda y homogénea; sin trozos firmes, pieles duras, hebras ni grumos compactos.",
+        "9-11": "Aplastar con tenedor; admitir grumos pequeños muy blandos si ya los maneja. Desmenuzar carnes y pescados finamente y mantener húmedo.",
+        "12-23": "Ofrecer majado grueso o piezas blandas adaptadas a las habilidades; evitar alimentos duros, redondos, pegajosos o compactos.",
+        "24-59": "Ofrecer porciones pequeñas y textura familiar, progresando según habilidades de masticación."
+      },
+      "alergenos": [
+        "huevo"
+      ],
+      "alertas": [
+        "No añadir sal, cubitos concentrados ni azúcar; no añadir miel antes de los 12 meses.",
+        "Servir con el niño sentado, despierto y supervisado; adaptar forma, tamaño y textura a sus habilidades.",
+        "Contiene alérgenos: huevo. Introducirlos de forma apropiada y observar posibles reacciones."
+      ],
+      "ingredientes_nuevos": "Introducir ingredientes nuevos de forma apropiada y comprobar tolerancia antes de combinar varios alimentos nuevos.",
+      "conservacion": "Refrigerar pronto en recipiente limpio y cerrado. Desechar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "aprobada",
+        "nota": "Versión editorial CIBA adaptada al contexto local. Las fuentes sustentan criterios de alimentación complementaria y seguridad, no una transcripción literal de receta externa."
+      }
+    },
+    {
       "id": "aguacate-majado",
       "nombre": "Aguacate majado",
       "descripcion": "Aguacate maduro, fresco y machacado hasta quedar suave.",
