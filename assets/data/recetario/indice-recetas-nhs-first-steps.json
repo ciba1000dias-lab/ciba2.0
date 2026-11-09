@@ -1,7 +1,7 @@
 {
   "version": 1,
   "titulo": "Índice de recetas externas para revisión CIBA",
-  "nota": "Índice documental de 97 recetas con páginas individuales verificadas del NHS y 32 entradas de First Steps Nutrition Trust. Se han cotejado 31 páginas NHS a nivel individual y completado edad e ingredientes de las 97 fichas. La edad fuente no equivale a aprobación CIBA. Todas las entradas permanecen deshabilitadas hasta revisión individual, adaptación al contexto cubano y aprobación profesional. No se copian instrucciones ni cantidades.",
+  "nota": "Índice documental de 97 recetas con páginas individuales verificadas del NHS y 32 entradas de First Steps Nutrition Trust. Se han cotejado preliminarmente 46 páginas NHS a nivel individual y las 32 entradas de First Steps a partir del recetario PDF. La edad fuente no equivale a aprobación CIBA. Todas las entradas permanecen deshabilitadas hasta adaptación al contexto cubano y aprobación profesional. No se copian instrucciones ni cantidades.",
   "fuentes": [
     {
       "id": "nhs-best-start-97",
@@ -580,7 +580,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Sopa familiar con pollo, maíz, leche y caldo concentrado.",
+          "Retirar cubito/caldo salado de la porción infantil; pollo totalmente cocido y picado; aplastar o triturar maíz; revisar leche como ingrediente y no como bebida."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-easy-minestrone",
@@ -597,7 +606,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Sopa con pasta, tomate, verduras, legumbres y caldo.",
+          "Eliminar cubitos/sal añadida de la porción infantil; cocer y picar verduras, pasta y legumbres hasta textura segura."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-leek-potato-pea-soup",
@@ -612,7 +630,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Puerro, papa, guisantes, leche y caldo.",
+          "Separar la porción antes de añadir caldo concentrado; guisantes bien cocidos y aplastados; textura espesa y homogénea según etapa."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-lentil-carrot-soup",
@@ -629,7 +656,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Lentejas rojas, zanahoria, ajo y caldo.",
+          "Cocer completamente y triturar/aplastar; no añadir cubitos ni sal a la porción infantil."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-jacket-potato-beef",
@@ -644,7 +680,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Papa asada con relleno de carne salteada.",
+          "Carne completamente cocida, tierna y picada; papa muy blanda; salsa de soja y condimentos salados excluidos de porción infantil."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-jacket-potato-egg-spinach",
@@ -661,7 +706,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Papa con huevo revuelto y espinaca.",
+          "Huevo completamente cuajado; espinaca cocida y picada; papa y relleno húmedos, sin sal añadida."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-jacket-potato-tuna",
@@ -679,7 +733,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Papa con atún, maíz y queso crema.",
+          "Atún en conserva puede tener sodio y mercurio: identificar especie y frecuencia; maíz aplastado; revisar sodio del queso."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-jacket-potato-veg-chilli",
@@ -696,7 +759,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Papa con relleno de vegetales, frijoles y chile.",
+          "Separar porción antes de añadir caldo salado o chile; frijoles aplastados y vegetales tiernos; textura húmeda."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-chicken-mushroom-pie",
@@ -714,7 +786,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Pastel de pollo y champiñones con cobertura.",
+          "Pollo completamente cocido y picado; revisar sodio de queso/salsa y retirar corteza seca o dura; aplastar relleno."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-fish-pie",
@@ -732,7 +813,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Pastel de pescado con salsa y vegetales.",
+          "Identificar especie y mercurio; retirar todas las espinas antes y después de desmenuzar; cocción completa y textura blanda."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-mediterranean-pie",
@@ -749,7 +839,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Pastel vegetal con cobertura y semillas según receta.",
+          "Excluir semillas enteras por riesgo de atragantamiento; revisar sodio de caldo/quesos; cobertura blanda y relleno picado."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-shepherdess-pie",
@@ -766,7 +865,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Pastel de vegetales con sustituto vegetal de carne y caldo.",
+          "Revisar ingredientes y sodio del producto procesado; evitar cubitos; relleno y cobertura húmedos y blandos."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-sweet-potato-stew",
@@ -781,7 +889,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Guiso de boniato, legumbres y mantequilla de maní.",
+          "Cocer y aplastar legumbres; mantequilla de maní muy diluida y alérgeno introducido de forma segura; chile y sal fuera de porción infantil."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-bean-sausage-hotpot",
@@ -799,7 +916,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Guiso de frijoles con salchicha vegetal.",
+          "Salchicha vegetal es producto procesado potencialmente alto en sodio; no priorizar ni recomendar automáticamente; aplastar frijoles y revisar etiqueta."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-creamy-chicken-leek-hotpot",
@@ -816,7 +942,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Guiso cremoso con pollo, puerro y vegetales.",
+          "Pollo completamente cocido y picado; verduras tiernas; revisar sodio del queso crema y consistencia."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-goulash",
@@ -831,7 +966,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Guiso de carne, frijoles y vegetales con pimentón/caldo.",
+          "Carne tierna y picada; frijoles aplastados; omitir cubitos y ajustar condimentos a la porción infantil."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-egg-fried-rice",
@@ -848,7 +992,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Arroz salteado con huevo y vegetales.",
+          "Huevo completamente cocido; no usar salsa de soja salada; arroz enfriado rápidamente, refrigerado y recalentado una sola vez hasta muy caliente."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-jerk-chicken-rice-beans",
@@ -865,7 +1018,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Pollo especiado con arroz y frijoles.",
+          "Pollo completamente cocido; reducir/omitir chile y mezclas saladas; frijoles blandos y aplastados; manipulación y enfriamiento seguro del arroz."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-turkey-vegetable-pilaf",
@@ -880,7 +1042,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Arroz con pavo y vegetales.",
+          "Pavo completamente cocido; arroz húmedo y vegetales blandos; enfriar y refrigerar arroz rápidamente y recalentar una sola vez."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-vegetable-biryani",
@@ -897,7 +1068,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Arroz especiado con garbanzos y vegetales.",
+          "Garbanzos cocidos y aplastados; vegetales tiernos y arroz húmedo; revisar sal y mezclas comerciales de especias."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-green-mac-cheese",
@@ -915,7 +1095,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Pasta con queso y vegetales verdes.",
+          "Pasta muy blanda; revisar sodio del queso; vegetales cocidos y cortados; evitar sal añadida."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-pasta-green-beans-peas",
@@ -932,7 +1121,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Pasta con judías verdes y guisantes.",
+          "Judías cortadas longitudinalmente y picadas; guisantes aplastados; pasta blanda y húmeda."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-spaghetti-bolognese",
@@ -949,7 +1147,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Espagueti con salsa de carne molida y tomate.",
+          "Carne completamente cocida; espagueti cortado y salsa húmeda; evitar sal/cubitos."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-tuna-pasta",
@@ -967,7 +1174,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Pasta con atún.",
+          "Identificar especie de atún y limitar frecuencia por mercurio; revisar sodio de conserva y pasta blanda."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-peanut-butter-banana-sandwich",
@@ -985,7 +1201,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Sándwich con mantequilla de maní y banana, acompañado de vegetales crudos.",
+          "Mantequilla de maní solo fina y diluida, nunca espesa; zanahoria y pepino crudos no deben ofrecerse en bastones duros; adaptar textura."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-hummus-pitta-cucumber",
@@ -1004,7 +1229,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Pan pita con hummus y vegetales.",
+          "Tahini contiene sésamo (alérgeno); hummus suave; pan humedecido y vegetales cocidos/blandos o cortados con seguridad."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-couscous-tuna-salad",
@@ -1022,7 +1256,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Ensalada de cuscús con atún.",
+          "Identificar especie/frecuencia del atún; cuscús húmedo, sin grumos secos; revisar vegetales y sodio."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-mexican-bean-cheese-wrap",
@@ -1041,7 +1284,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Wrap con frijoles, queso, pimiento y apio.",
+          "Aplastar frijoles; revisar sodio del queso; apio crudo fibroso no es seguro como bastón para lactantes; adaptar tortilla."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-apple-crumble",
@@ -1059,7 +1311,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Postre de manzana con cobertura desmigable.",
+          "No añadir azúcar; cocinar manzana hasta blanda; cobertura seca/desmigable puede requerir humedecer y adaptar textura."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-banana-custard",
@@ -1077,7 +1338,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Natilla de banana con huevo y leche.",
+          "Huevo completamente cocido; leche pasteurizada; no añadir azúcar; textura homogénea."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-poached-pear-honey",
@@ -1094,7 +1364,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Pera cocida con yogur griego y miel.",
+          "BLOQUEADA para menores de 12 meses por miel; para mayores, no añadir azúcar adicional y adaptar pera muy blanda."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "fsn-rice-pudding-raisins",
@@ -1111,7 +1390,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Arroz con leche y pasas.",
+          "No añadir azúcar; leche pasteurizada; pasas enteras/pegajosas son riesgo de atragantamiento y deben excluirse o transformarse; arroz manipulado y conservado de forma segura."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-egg-cups-toast",
@@ -1241,7 +1529,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La fuente indica 12 meses o más; macarrones, queso, tomate, leche y guisantes.",
+          "Cocer pasta y guisantes hasta textura blanda; revisar sodio del queso y evitar sal añadida."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-cinnamon-banana-toast",
@@ -1259,7 +1556,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La fuente indica 12 meses o más; pan integral, banana y canela.",
+          "El pan tostado puede quedar seco/duro; adaptar humedad, tamaño y textura; no añadir azúcar."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-jamaican-fish",
@@ -1277,7 +1583,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La fuente indica 10–12 meses; bacalao, papa, plátano, vegetales, guisantes y arroz.",
+          "Retirar todas las espinas y comprobar de nuevo tras desmenuzar; cocción completa; adaptar arroz y vegetales a textura segura."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-sweet-potato-fingers",
@@ -1293,7 +1608,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La fuente indica desde 6 meses; boniato horneado con aceite.",
+          "Cocinar hasta quedar muy blando, sin bordes duros ni tostados; ofrecer forma adecuada a las habilidades del bebé."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-butterbean-goulash",
@@ -1311,7 +1635,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La fuente indica desde 6 meses; habas grandes, cebolla, pimiento, champiñones, zanahoria, ajo, tomate y habichuelas.",
+          "Cocer hasta muy blando y aplastar las habas; revisar pieles, tamaño de vegetales y textura húmeda."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-lemony-chicken-strips",
@@ -1327,7 +1660,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La fuente indica desde 6 meses; pollo y limón.",
+          "El pollo debe cocinarse completamente y quedar húmedo y muy tierno; las tiras fibrosas o secas no son adecuadas para todos los bebés."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-steamed-apple-pear",
@@ -1343,7 +1685,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La fuente indica desde 6 meses; manzana y pera al vapor.",
+          "Cocinar hasta que ambas frutas se aplasten fácilmente; retirar semillas y partes duras, sin azúcar añadida."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-autumn-lentil-soup",
@@ -1362,7 +1713,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La fuente indica 7–9 meses; calabaza, pimiento, cebolla, lentejas rojas y pan integral.",
+          "Cocer lentejas y vegetales hasta muy blandos; triturar o aplastar según etapa; pan húmedo y manejable, sin sal ni cubitos."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-ham-flatbread",
@@ -1381,7 +1741,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La fuente indica 12 meses o más; harina de trigo, yogur, jamón, champiñones y quesos.",
+          "Jamón es carne procesada y puede aportar mucho sodio; no priorizar ni recomendar automáticamente. Revisar corteza dura y sodio de quesos."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-chicken-veg-noodle-dinner",
@@ -1400,7 +1769,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La fuente indica 12 meses o más; pollo, zanahoria, maíz y fideos de huevo.",
+          "Cocinar pollo completamente; cortar fideos; aplastar maíz y ablandar zanahoria para reducir riesgo de atragantamiento."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-breakfast-three-ways",
@@ -1419,7 +1797,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La fuente indica 12 meses o más; huevo, pan integral y tomate.",
+          "La cocción breve del huevo indicada en la receta no garantiza centro completamente cuajado; no habilitar sin reformular y verificar cocción completa."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-creamy-lentil-broccoli-pasta",
@@ -1439,7 +1826,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La fuente indica 12 meses o más; lentejas, brócoli, tomate, queso crema, pasta y maíz tierno.",
+          "Aplastar o retirar granos de maíz; pasta y vegetales muy blandos; revisar sodio del queso crema y evitar sal añadida."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-banana-berry-porridge",
@@ -1476,7 +1872,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La fuente indica 12 meses o más; garbanzos, arroz y vegetales.",
+          "Cocer garbanzos hasta muy blandos y aplastarlos; arroz húmedo y vegetales tiernos; evitar granos duros o secos."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-african-sweet-potato-stew",
@@ -1496,7 +1901,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La fuente indica 12 meses o más; boniato, frijoles, mantequilla de maní y pan.",
+          "Mantequilla de maní es alérgeno: introducir de forma segura y diluida, nunca en cucharadas espesas; aplastar frijoles y adaptar pan; revisar chile."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-tuna-dip",
@@ -1517,7 +1931,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La fuente indica 12 meses o más; atún, mayonesa, yogur y pan pita.",
+          "Identificar especie de atún y controlar frecuencia por mercurio; mayonesa pasteurizada, revisar sodio y adaptar pita para evitar textura seca."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-beef-curry-rice",
