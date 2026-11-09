@@ -94,6 +94,20 @@ class TestRecetario(unittest.TestCase):
             self.assertTrue(receta["url_fuente"].startswith("https://"), receta["id"])
             self.assertTrue(receta["alertas_revision"], receta["id"])
 
+    def test_indice_nhs_y_first_steps_tiene_52_entradas_bloqueadas(self) -> None:
+        indice = json.loads((DATA / "recetario" / "indice-recetas-nhs-first-steps.json").read_text(encoding="utf-8"))
+        recetas = indice["recetas"]
+        self.assertEqual(len(recetas), 52)
+        self.assertEqual(len({r["id"] for r in recetas}), 52)
+        self.assertEqual(sum(r["fuente_id"] == "nhs-best-start-97" for r in recetas), 20)
+        self.assertEqual(sum(r["fuente_id"] == "first-steps-2023" for r in recetas), 32)
+        for receta in recetas:
+            self.assertFalse(receta["publicable"], receta["id"])
+            self.assertFalse(receta["recomendacion_automatica"], receta["id"])
+            self.assertEqual(receta["estado"], "pendiente_cotejo_individual", receta["id"])
+            self.assertTrue(receta["url_fuente"].startswith("https://"), receta["id"])
+            self.assertTrue(receta["alertas_revision"], receta["id"])
+
     def test_fuentes_clinicas_se_mantienen_separadas(self) -> None:
         colecciones = {f["id"]: f for f in self.fuentes_externas["colecciones"]}
         for key in ("uhs-babies-specialist", "uhs-toddlers-specialist"):
