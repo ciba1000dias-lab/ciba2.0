@@ -21,6 +21,7 @@ const propuestas = document.querySelector('#ciba-receta-propuestas');
 let alimentos = [];
 let recetas = [];
 let ultimoResultado = null;
+let resultadoConfirmado = false;
 
 function normalizar(texto) {
   return String(texto || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
@@ -123,6 +124,8 @@ function candidatosPara(texto) {
 }
 
 function mostrarError(texto) {
+  resultadoConfirmado = false;
+  ultimoResultado = null;
   resultados.hidden = false;
   mensaje.textContent = texto;
   listaReconocidos.replaceChildren();
@@ -267,8 +270,30 @@ function mostrarAclaraciones(terminos) {
   }
 }
 
+function mostrarConfirmacion(data) {
+  propuestas.replaceChildren();
+  const ayuda = document.createElement('p');
+  ayuda.className = 'ciba-receta-estado';
+  ayuda.textContent = 'Antes de buscar preparaciones, confirma que los alimentos reconocidos son exactamente los que tienes.';
+  propuestas.appendChild(ayuda);
+  const confirmar = document.createElement('button');
+  confirmar.type = 'button';
+  confirmar.className = 'ciba-receta-confirmar';
+  confirmar.textContent = 'Sí, son correctos. Buscar preparaciones';
+  confirmar.addEventListener('click', () => {
+    resultadoConfirmado = true;
+    mostrarRecetas(data);
+  });
+  propuestas.appendChild(confirmar);
+}
+
+function actualizarRecetasConfirmadas() {
+  if (resultadoConfirmado && ultimoResultado) mostrarRecetas(ultimoResultado);
+}
+
 function mostrarResultado(data) {
   ultimoResultado = data;
+  resultadoConfirmado = false;
   resultados.hidden = false;
   listaReconocidos.replaceChildren();
   const reconocidos = data.recognizedFoods || [];
@@ -289,7 +314,7 @@ function mostrarResultado(data) {
     return;
   }
   desconocidos.textContent = data.clarification || '';
-  if (reconocidos.length) mostrarRecetas(data);
+  if (reconocidos.length) mostrarConfirmacion(data);
   else propuestas.replaceChildren();
 }
 
@@ -326,14 +351,22 @@ campoFecha.addEventListener('change', sincronizarFecha);
 campoEdad.addEventListener('input', () => {
   if (campoEdad.value !== '') campoFecha.value = '';
   actualizarEdad();
+  actualizarRecetasConfirmadas();
 });
 unidadEdad.addEventListener('change', () => {
   campoEdad.max = unidadEdad.value === 'anos' ? '4' : '59';
   campoEdad.placeholder = unidadEdad.value === 'anos' ? 'Ej. 2' : 'Ej. 8';
   actualizarEdad();
+  actualizarRecetasConfirmadas();
 });
+campoFecha.addEventListener('change', actualizarRecetasConfirmadas);
+campoRestricciones.addEventListener('input', actualizarRecetasConfirmadas);
+document.querySelectorAll('input[name="restriccion"]').forEach(c => c.addEventListener('change', actualizarRecetasConfirmadas));
 campoIngredientes.addEventListener('input', () => {
   contador.textContent = String(campoIngredientes.value.length);
+  ultimoResultado = null;
+  resultadoConfirmado = false;
+  resultados.hidden = true;
 });
 
 formulario.addEventListener('submit', async (evento) => {
@@ -357,6 +390,8 @@ formulario.addEventListener('submit', async (evento) => {
     return;
   }
 
+  ultimoResultado = null;
+  resultadoConfirmado = false;
   boton.disabled = true;
   boton.textContent = 'Reconociendo ingredientes…';
   resultados.hidden = false;
