@@ -83,7 +83,15 @@
         "pollo",
         "pollo para bebés",
         "cómo preparar pollo para bebé",
-        "carne para alimentación complementaria"
+        "carne para alimentación complementaria",
+        "picadillo",
+        "picadillo cubano",
+        "picadillo de pollo",
+        "pollo molido",
+        "carne molida de pollo",
+        "picadillo mixto",
+        "picadillo para bebés",
+        "picadillo para niños"
       ],
       "fuentes": [
         {
@@ -130,7 +138,26 @@
         }
       ],
       "estado": "publicado",
-      "imagenes": []
+      "imagenes": [],
+      "titulo_preparaciones_cubanas": "El picadillo en la cocina cubana",
+      "preparaciones_cubanas": [
+        "El picadillo de pollo es una alternativa a la carne molida de res o cerdo. Al ser ave molida necesita alcanzar una temperatura interna más alta: 74 °C. El color por sí solo no confirma que esté bien cocido.",
+        {
+          "etapa": "Picadillo de pollo",
+          "ingredientes": "Pollo molido fresco, tomate maduro, cebolla, ajo y ají",
+          "forma": "Cocinar removiendo y separando la carne en partículas pequeñas hasta que toda la preparación alcance 74 °C en el centro. Mantenerla húmeda con tomate o un poco de agua y comprobar que no queden partes crudas."
+        },
+        {
+          "etapa": "Picadillo mixto con pollo",
+          "ingredientes": "Pollo molido y carne molida de res o cerdo",
+          "forma": "Por contener pollo, cocinar toda la mezcla hasta al menos 74 °C en el centro. Usar utensilios limpios y evitar el contacto de la carne cocida con platos o utensilios que tocaron la carne cruda."
+        },
+        {
+          "etapa": "Picadillo de pollo con tomate y vegetales",
+          "ingredientes": "Pollo molido, tomate, calabaza o zanahoria muy cocidos",
+          "forma": "Cocinar completamente el pollo y los vegetales hasta que estén muy blandos. Desmenuzar o triturar la mezcla y humedecerla para que no quede seca, pegajosa ni con grumos duros."
+        }
+      ]
     },
     {
       "id": "gallina",
@@ -469,7 +496,16 @@
         "carne de res",
         "carne de res para bebés",
         "cómo preparar carne de res para bebé",
-        "carne para alimentación complementaria"
+        "carne para alimentación complementaria",
+        "picadillo",
+        "picadillo cubano",
+        "picadillo de res",
+        "carne molida",
+        "carne molida de res",
+        "cómo hacer picadillo",
+        "picadillo para bebés",
+        "picadillo para niños",
+        "carne molida para bebé"
       ],
       "fuentes": [
         {
@@ -516,7 +552,26 @@
         }
       ],
       "estado": "publicado",
-      "imagenes": []
+      "imagenes": [],
+      "titulo_preparaciones_cubanas": "El picadillo en la cocina cubana",
+      "preparaciones_cubanas": [
+        "En Cuba el picadillo se prepara en muchos hogares con carne molida de res, sola o mezclada con otros ingredientes. La receta familiar cambia; lo importante para los niños es la cocción completa, la humedad y una textura que puedan manejar.",
+        {
+          "etapa": "Picadillo de res",
+          "ingredientes": "Carne molida de res, tomate maduro, cebolla, ajo y ají; aceite en poca cantidad",
+          "forma": "Deshacer la carne en la sartén con una cuchara mientras se cocina. Añadir tomate y vegetales bien picados o triturados y un poco de agua si hace falta. Cocinar hasta que toda la carne alcance 71 °C en el centro. Para el niño pequeño, dejarlo húmedo, muy desmenuzado y sin grumos compactos."
+        },
+        {
+          "etapa": "Picadillo mixto de res y cerdo",
+          "ingredientes": "Carne molida de res y cerdo, tomate y vegetales suaves",
+          "forma": "Mezclar las carnes crudas con utensilios limpios y cocinar removiendo hasta que toda la mezcla alcance al menos 71 °C. No basta con que cambie de color. Adaptar la textura y retirar la porción infantil antes de añadir sal."
+        },
+        {
+          "etapa": "Picadillo con tomate, vegetales o sofrito",
+          "ingredientes": "Picadillo de res, tomate, cebolla, ajo, ají y vegetales como zanahoria o calabaza",
+          "forma": "Preparar un sofrito suave con poca grasa y sin cubitos de caldo; incorporar el picadillo y cocinar completamente. Los vegetales deben quedar muy blandos y picados finamente o triturados. Evitar trozos duros, pieles y semillas grandes."
+        }
+      ]
     },
     {
       "id": "cerdo",
@@ -599,7 +654,15 @@
         "carne de cerdo",
         "carne de cerdo para bebés",
         "cómo preparar carne de cerdo para bebé",
-        "carne para alimentación complementaria"
+        "carne para alimentación complementaria",
+        "picadillo",
+        "picadillo cubano",
+        "picadillo de cerdo",
+        "carne molida de cerdo",
+        "picadillo mixto",
+        "carne molida",
+        "picadillo para bebés",
+        "picadillo para niños"
       ],
       "fuentes": [
         {
@@ -646,7 +709,26 @@
         }
       ],
       "estado": "publicado",
-      "imagenes": []
+      "imagenes": [],
+      "titulo_preparaciones_cubanas": "El picadillo en la cocina cubana",
+      "preparaciones_cubanas": [
+        "El picadillo de cerdo y las mezclas de res con cerdo son variantes posibles de la cocina familiar. La carne molida requiere una cocción completa; no se debe probar mientras esté cruda o a medio cocinar.",
+        {
+          "etapa": "Picadillo de cerdo",
+          "ingredientes": "Carne molida de cerdo, tomate maduro, cebolla, ajo y ají",
+          "forma": "Elegir carne fresca, cocinarla desmenuzándola con una cuchara y añadir tomate o vegetales para mantenerla húmeda. Alcanzar 71 °C en el centro. Evitar grasa excesiva y retirar la porción infantil antes de salar."
+        },
+        {
+          "etapa": "Picadillo mixto de cerdo y res",
+          "ingredientes": "Carne molida fresca de cerdo y res, tomate y vegetales suaves",
+          "forma": "Cocinar la mezcla completa hasta al menos 71 °C en el centro. Remover para que no queden zonas crudas ni grumos grandes; añadir un poco de agua si se seca."
+        },
+        {
+          "etapa": "Picadillo con vegetales",
+          "ingredientes": "Picadillo de cerdo, calabaza, zanahoria o tomate bien cocidos",
+          "forma": "Cocinar los vegetales hasta que estén blandos y mezclarlos con la carne completamente cocida. Picar o triturar según la habilidad del niño; no dejar cubos firmes ni vegetales crujientes."
+        }
+      ]
     },
     {
       "id": "conejo",
