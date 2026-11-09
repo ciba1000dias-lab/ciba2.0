@@ -1358,17 +1358,7 @@
     .ciba-columnas-barra.en-movimiento .ciba-columna-acceso::before{opacity:.88}
     .ciba-columnas-barra.en-cima .ciba-columna-acceso{min-height:39px;padding:6px 10px;border:1px solid rgba(255,255,255,.44);border-top:0;border-radius:0 0 var(--radio,22px) var(--radio,22px);background:rgba(73,58,50,.38);box-shadow:0 5px 18px rgba(73,58,50,.12),inset 0 -1px 0 rgba(255,255,255,.2);font-size:11px}
     .ciba-columnas-barra.en-cima .ciba-columna-acceso::before{opacity:.9}.ciba-columnas-barra.en-cima .ciba-columna-acceso .letra{font-size:16px}
-    @media(max-width:760px){
-      .ciba-columnas-barra,.ciba-columnas-barra.visible{left:12px!important;right:12px!important;top:auto!important;bottom:12px!important;width:auto!important;transform:none!important;gap:4px;padding:5px;border:1px solid rgba(73,58,50,.16);border-radius:15px;background:rgba(255,252,245,.94);-webkit-backdrop-filter:blur(18px) saturate(1.25);backdrop-filter:blur(18px) saturate(1.25);box-shadow:0 8px 28px rgba(48,36,29,.2);opacity:1;pointer-events:auto;will-change:auto}
-      .ciba-columna-acceso,.ciba-columnas-barra.en-movimiento .ciba-columna-acceso,.ciba-columnas-barra.en-cima .ciba-columna-acceso{min-height:48px;gap:3px;flex-direction:column;padding:5px 2px;border:0;border-radius:9px;background:transparent;box-shadow:none;font-size:9px;line-height:1.1;white-space:nowrap}
-      .ciba-columna-acceso::before{border-radius:9px;opacity:.16}
-      .ciba-columna-acceso .letra,.ciba-columnas-barra.en-cima .ciba-columna-acceso .letra{font-size:18px}
-      .ciba-columna-acceso[aria-current="location"]::before{opacity:1}
-      .ciba-columna-acceso[aria-current="location"]{color:#fff;box-shadow:0 2px 9px rgba(73,58,50,.18)}
-      .ciba-columna-acceso:focus-visible{outline:2px solid #493A32;outline-offset:2px}
-      .ciba-columnas-barra.en-movimiento .ciba-columna-acceso::before{opacity:.16}
-      .ciba-columnas-barra.en-movimiento .ciba-columna-acceso[aria-current="location"]::before{opacity:1}
-    }
+    @media(max-width:760px){.ciba-columnas-barra,.ciba-columnas-barra.visible{display:none!important}}
     @media(prefers-reduced-motion:reduce){.ciba-columnas-barra,.ciba-columna-acceso,.ciba-columna-acceso::before{transition:none}}
 
   </style>
@@ -2089,16 +2079,11 @@
         const actualizarBarra = () => {
           pendiente = false;
           if (esMovil.matches) {
-            barra.classList.add("visible");
-            barra.classList.remove("en-movimiento","en-cima");
-            barra.style.top = "auto";
-            barra.style.bottom = "12px";
-            barra.style.left = "12px";
-            barra.style.right = "12px";
-            barra.style.width = "auto";
-            barra.style.transform = "none";
+            barra.style.display = "none";
+            barra.classList.remove("visible","en-movimiento","en-cima");
             return;
           }
+          barra.style.display = "grid";
 
           barra.style.right = "auto";
           const rect = columnas.getBoundingClientRect();
@@ -2134,21 +2119,12 @@
         };
 
         const activarMovil = () => {
-          if (observador) observador.disconnect();
-          if (!esMovil.matches || !("IntersectionObserver" in window)) {
-            barra.querySelectorAll(".ciba-columna-acceso").forEach(a => a.removeAttribute("aria-current"));
-            return;
+          if (esMovil.matches) {
+            barra.style.display = "none";
+            barra.classList.remove("visible");
+          } else {
+            barra.style.display = "grid";
           }
-          observador = new IntersectionObserver(entradas => {
-            const visibles = entradas.filter(e => e.isIntersecting).sort((a,b) => b.intersectionRatio-a.intersectionRatio);
-            if (!visibles.length) return;
-            const id = visibles[0].target.id;
-            barra.querySelectorAll(".ciba-columna-acceso").forEach(a => {
-              if (a.getAttribute("href") === "#" + id) a.setAttribute("aria-current","location");
-              else a.removeAttribute("aria-current");
-            });
-          }, {root:null,rootMargin:"-22% 0px -48% 0px",threshold:[0,.15,.3,.5,.7]});
-          tarjetas.forEach(t => observador.observe(t));
         };
 
         window.addEventListener("scroll", programar, {passive:true});
