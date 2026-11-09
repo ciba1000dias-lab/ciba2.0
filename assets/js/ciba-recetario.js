@@ -8,9 +8,10 @@ const INDICE_URL = new URL('../data/alimentos-busqueda.json', import.meta.url);
 const RECETAS_URL = new URL('../data/recetario/recetas.json', import.meta.url);
 const formulario = document.querySelector('#ciba-recetario-form');
 const campoFecha = document.querySelector('#ciba-fecha-nacimiento');
-const campoEdad = document.querySelector('#ciba-edad-valor');
-const unidadEdad = document.querySelector('#ciba-edad-unidad');
-const estadoEdad = document.querySelector('#ciba-edad-calculada');
+const campoEdadCalculada = document.querySelector('#ciba-edad-calculada');
+const estadoEdad = document.querySelector('#ciba-edad-aviso');
+const controlAlergias = document.querySelector('#ciba-hay-alergias');
+const detalleAlergias = document.querySelector('#ciba-alergias-detalle');
 const campoIngredientes = document.querySelector('#ciba-ingredientes');
 const campoRestricciones = document.querySelector('#ciba-restricciones-detalle');
 const contador = document.querySelector('#ciba-contador');
@@ -31,53 +32,37 @@ function normalizar(texto) {
 }
 
 function edadEnMeses() {
-  if (campoFecha.value) {
-    const partes = campoFecha.value.split('-').map(Number);
-    if (partes.length !== 3 || partes.some(n => !Number.isInteger(n))) return null;
-    const [anio, mes, dia] = partes;
-    const nacimiento = new Date(anio, mes - 1, dia);
-    const hoy = new Date();
-    nacimiento.setHours(0, 0, 0, 0);
-    hoy.setHours(0, 0, 0, 0);
-    if (nacimiento.getFullYear() !== anio || nacimiento.getMonth() !== mes - 1 ||
-        nacimiento.getDate() !== dia || nacimiento > hoy) return null;
-    let meses = (hoy.getFullYear() - anio) * 12 + (hoy.getMonth() - (mes - 1));
-    if (hoy.getDate() < dia) meses--;
-    return Math.max(0, meses);
-  }
-  if (campoEdad.value === '') return null;
-  const valor = Number(campoEdad.value);
-  const maximo = unidadEdad.value === 'anos' ? 4 : 59;
-  if (!Number.isInteger(valor) || valor < 0 || valor > maximo) return null;
-  return unidadEdad.value === 'anos' ? valor * 12 : valor;
+  if (!campoFecha.value) return null;
+  const partes = campoFecha.value.split('-').map(Number);
+  if (partes.length !== 3 || partes.some(n => !Number.isInteger(n))) return null;
+  const [anio, mes, dia] = partes;
+  const nacimiento = new Date(anio, mes - 1, dia);
+  const hoy = new Date();
+  nacimiento.setHours(0, 0, 0, 0);
+  hoy.setHours(0, 0, 0, 0);
+  if (nacimiento.getFullYear() !== anio || nacimiento.getMonth() !== mes - 1 ||
+      nacimiento.getDate() !== dia || nacimiento > hoy) return null;
+  let meses = (hoy.getFullYear() - anio) * 12 + (hoy.getMonth() - (mes - 1));
+  if (hoy.getDate() < dia) meses--;
+  return Math.max(0, meses);
 }
 
 function actualizarEdad() {
   const meses = edadEnMeses();
   if (meses === null) {
-    estadoEdad.textContent = 'Indica una fecha válida o una edad entera entre 0 y 59 meses (o hasta 4 años).';
-    estadoEdad.dataset.meses = '';
+    campoEdadCalculada.value = '';
+    estadoEdad.hidden = true;
     return;
-  }
-  estadoEdad.dataset.meses = String(meses);
-  if (campoFecha.value) {
-    if (meses < 12) {
-      campoEdad.value = String(meses);
-      unidadEdad.value = 'meses';
-      campoEdad.max = '59';
-    } else {
-      campoEdad.value = String(Math.floor(meses / 12));
-      unidadEdad.value = 'anos';
-      campoEdad.max = '4';
-    }
   }
   const texto = meses === 1 ? '1 mes' : meses < 12 ? meses + ' meses' :
     Math.floor(meses / 12) + (Math.floor(meses / 12) === 1 ? ' año' : ' años') +
     (meses % 12 ? ' y ' + (meses % 12) + (meses % 12 === 1 ? ' mes' : ' meses') : '');
+  campoEdadCalculada.value = texto;
   let aviso = '';
-  if (meses < 6) aviso = ' La alimentación complementaria no debe iniciarse antes de los 6 meses salvo indicación clínica individual.';
-  else if (meses > 59) aviso = ' Esta primera versión del recetario cubre hasta los 59 meses.';
-  estadoEdad.textContent = 'Edad calculada: ' + texto + '.' + aviso;
+  if (meses < 6) aviso = 'El recetario ofrece preparaciones desde los 6 meses.';
+  else if (meses > 59) aviso = 'El recetario cubre hasta los 59 meses.';
+  estadoEdad.textContent = aviso;
+  estadoEdad.hidden = !aviso;
 }
 
 function distancia(a, b) {
@@ -328,7 +313,7 @@ function mostrarResultado(data) {
     return;
   }
   desconocidos.textContent = data.clarification || '';
-  if (reconocidos.length) mostrarConfirmacion(data);
+  if (reconocidos.length) mostrarRecetas(data);
   else propuestas.replaceChildren();
 }
 
@@ -348,8 +333,8 @@ async function cargarDatos() {
 }
 
 function sincronizarFecha() {
-  if (campoFecha.value) campoEdad.value = '';
   actualizarEdad();
+  actualizarRecetasConfirmadas();
 }
 
 function fechaLocalISO(fecha) {
@@ -362,18 +347,14 @@ function fechaLocalISO(fecha) {
 campoFecha.max = fechaLocalISO(new Date());
 campoFecha.addEventListener('input', sincronizarFecha);
 campoFecha.addEventListener('change', sincronizarFecha);
-campoEdad.addEventListener('input', () => {
-  if (campoEdad.value !== '') campoFecha.value = '';
-  actualizarEdad();
+controlAlergias.addEventListener('change', () => {
+  detalleAlergias.hidden = !controlAlergias.checked;
+  if (!controlAlergias.checked) {
+    document.querySelectorAll('input[name="restriccion"]').forEach(c => { c.checked = false; });
+    campoRestricciones.value = '';
+  }
   actualizarRecetasConfirmadas();
 });
-unidadEdad.addEventListener('change', () => {
-  campoEdad.max = unidadEdad.value === 'anos' ? '4' : '59';
-  campoEdad.placeholder = unidadEdad.value === 'anos' ? 'Ej. 2' : 'Ej. 8';
-  actualizarEdad();
-  actualizarRecetasConfirmadas();
-});
-campoFecha.addEventListener('change', actualizarRecetasConfirmadas);
 campoRestricciones.addEventListener('input', actualizarRecetasConfirmadas);
 document.querySelectorAll('input[name="restriccion"]').forEach(c => c.addEventListener('change', actualizarRecetasConfirmadas));
 campoIngredientes.addEventListener('input', () => {
@@ -427,7 +408,7 @@ formulario.addEventListener('submit', async (evento) => {
     mostrarError(error.message || 'No se pudo conectar con la IA. La biblioteca de alimentos sigue disponible.');
   } finally {
     boton.disabled = false;
-    boton.innerHTML = 'Reconocer mis ingredientes <span aria-hidden="true">→</span>';
+    boton.innerHTML = 'Buscar recetas <span aria-hidden="true">→</span>';
   }
 });
 
