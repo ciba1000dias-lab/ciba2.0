@@ -2858,15 +2858,16 @@
       "publicable": false,
       "recomendacion_automatica": false,
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "El índice resume calabaza, pimiento, cebolla, lentejas y pan integral; edad de origen: 10 meses.",
-          "Cocer las lentejas y vegetales hasta quedar muy blandos; adaptar el pan y evitar tiras secas o duras. Ajustar la consistencia de la sopa para que no quede líquida si se ofrece con cuchara.",
-          "Revisar trigo/gluten, sodio de caldos y cantidad de fibra; el resumen no permite validar cantidades ni método."
+          "Se consultó la receta completa NHS: 10–12 meses; calabaza, pimiento, cebolla, lentejas rojas, hierbas, agua y pan integral; rinde cuatro porciones infantiles.",
+          "La receta cuece vegetales y lentejas 15–20 minutos hasta tiernos y luego aplasta con grumos blandos. El pan tostado se corta en dedos: revisar que no quede seco/duro y adaptar a la habilidad oral.",
+          "Contiene trigo; revisar textura final, porción, enfriamiento y congelación de porciones. No añadir sal ni caldo salado."
         ],
         "decision": "no_aprobada_no_publicable",
         "requiere_revision_profesional": true,
-        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+        "alcance_revision": "Se cotejaron ingredientes, edad, cantidades y método publicados por NHS; pendiente validación profesional y adaptación al contexto CIBA.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -2888,15 +2889,16 @@
       "publicable": false,
       "recomendacion_automatica": false,
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "El índice resume pollo, limón, pepino, lechuga, tortilla y queso crema; edad de origen: 12 meses.",
-          "Cocinar completamente el pollo y cortarlo en fragmentos pequeños y húmedos; retirar partes duras del pepino y adaptar la tortilla para evitar masas compactas o tiras difíciles de manejar.",
-          "Revisar trigo, leche, sodio del queso/tortilla y textura de vegetales crudos; confirmar que la receta original no contenga piezas duras."
+          "Se consultó la receta completa NHS: 12 meses o más; pechuga de pollo, limón, pepino, lechuga, tortilla y queso crema; pollo horneado 15–20 minutos hasta completamente cocido.",
+          "La receta monta el wrap con lechuga y pepino y lo corta por la mitad. CIBA debe adaptar vegetales crudos y tortilla a la habilidad masticatoria; evitar trozos fibrosos, duros o una porción compacta difícil de manejar.",
+          "Contiene trigo y leche; revisar pasteurización/sodio del queso crema y cocción completa del pollo. La receta congela porciones de pollo: validar enfriamiento y recalentamiento."
         ],
         "decision": "no_aprobada_no_publicable",
         "requiere_revision_profesional": true,
-        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+        "alcance_revision": "Se cotejaron ingredientes, edad, cantidades y método publicados por NHS; pendiente validación profesional y adaptación al contexto CIBA.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -3113,15 +3115,16 @@
       "recomendacion_automatica": false,
       "ingredientes_referenciados": "garbanzos, limón, ajo, comino, agua, aceite de oliva, tirabeques",
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "El índice resume garbanzos, limón, ajo, comino, agua, aceite de oliva y tirabeques; edad de origen: 12 meses.",
-          "Cocer y triturar bien los garbanzos; el hummus debe quedar suave y no espeso/pegajoso. Cocinar los tirabeques hasta textura segura y adaptar tamaño y forma al desarrollo.",
-          "Verificar tahini/sésamo u otros ingredientes no reflejados en el resumen; revisar sal y forma de los bastones vegetales."
+          "Se consultó la receta completa NHS: 12 meses o más; garbanzos, limón, ajo, comino, agua y aceite de oliva; se tritura hasta pasta suave y se sirve con tirabeques crudos.",
+          "El punto crítico es el acompañamiento: los tirabeques crudos pueden ser fibrosos y difíciles de masticar. CIBA debe sustituirlos por vegetales cocidos muy blandos y con forma segura; no servirlos crudos por defecto.",
+          "La receta no incluye tahini, por lo que no se debe atribuir sésamo como alérgeno a esta versión. Revisar garbanzo/legumbre y almacenamiento refrigerado 2–3 días indicado por NHS."
         ],
         "decision": "no_aprobada_no_publicable",
         "requiere_revision_profesional": true,
-        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+        "alcance_revision": "Se cotejaron ingredientes, edad, cantidades y método publicados por NHS; pendiente validación profesional y adaptación al contexto CIBA.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -3530,15 +3533,16 @@
       "recomendacion_automatica": false,
       "ingredientes_referenciados": "puerro, zanahoria, papa, habichuelas, pollo, brócoli, queso crema",
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "El índice resume puerro, zanahoria, papa, habichuelas, pollo, brócoli y queso crema; edad de origen: 7 meses.",
-          "Cocinar pollo y vegetales hasta quedar muy blandos; picar pollo y retirar hebras fibrosas. Servir húmedo, con textura ajustada a la etapa.",
-          "Revisar leche, sodio del queso crema y cocción completa del pollo; el resumen no confirma cantidades ni método."
+          "Se consultó la receta completa NHS: 7–9 meses; puerro, zanahoria, papa, habichuelas, pollo, brócoli, aceite, agua y queso crema; cocción aproximada de 20 minutos y triturado/aplastado final.",
+          "El pollo debe quedar completamente cocido; vegetales muy blandos y puerro/habichuelas sin fibras largas. NHS propone brócoli cocido como alimento para agarrar: comprobar que esté muy tierno y adaptar tamaño.",
+          "Contiene queso crema: revisar pasteurización y sodio. La sustitución opcional por abadejo exige verificar especie y retirar espinas; no debe activarse sin revisar esa variante."
         ],
         "decision": "no_aprobada_no_publicable",
         "requiere_revision_profesional": true,
-        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+        "alcance_revision": "Se cotejaron ingredientes, edad, cantidades y método publicados por NHS; pendiente validación profesional y adaptación al contexto CIBA.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -3561,15 +3565,16 @@
       "recomendacion_automatica": false,
       "ingredientes_referenciados": "ensalada de cinco frijoles en conserva sin sal ni azúcar, queso duro, pan integral, crema vegetal, pimiento rojo",
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "El índice resume mezcla de cinco frijoles en conserva sin sal ni azúcar añadidos, queso duro, pan integral, crema vegetal y pimiento rojo; edad de origen: 7 meses.",
-          "Aplastar todos los frijoles para eliminar piezas enteras; cocinar el pimiento hasta muy blando. Adaptar el pan para que no quede seco/duro ni forme una masa compacta.",
-          "Revisar leche del queso, trigo y composición de crema vegetal; controlar sodio del queso y conserva. Confirmar textura y cantidades."
+          "Se consultó la receta completa NHS: 7–9 meses; mezcla de cinco frijoles en conserva, queso duro, pan integral, crema vegetal y pimiento rojo; frijoles triturados con grumos blandos y pimiento cocido 3–5 minutos.",
+          "La receta ofrece dedos de pan tostado: evaluar que no queden duros/secos y que la textura sea manejable; pimiento debe quedar muy blando. Triturar todos los frijoles para eliminar piezas enteras.",
+          "Contiene leche (queso) y trigo; revisar sodio del queso y conserva, y composición de la crema vegetal. NHS indica refrigerar sobrantes hasta 2 días: adaptar conservación segura."
         ],
         "decision": "no_aprobada_no_publicable",
         "requiere_revision_profesional": true,
-        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+        "alcance_revision": "Se cotejaron ingredientes, edad, cantidades y método publicados por NHS; pendiente validación profesional y adaptación al contexto CIBA.",
+        "fuente_completa_consultada": true
       }
     },
     {
@@ -3588,15 +3593,16 @@
       "recomendacion_automatica": false,
       "ingredientes_referenciados": "cebolla, ajo, tomate, cordero magro, cilantro molido, comino, agua, canela opcional, limón, arroz, brócoli",
       "revision_preliminar_ciba": {
-        "estado": "candidata_a_adaptacion",
+        "estado": "cotejada_fuente_completa_pendiente_revision_profesional",
         "hallazgos": [
-          "El índice resume cebolla, ajo, tomate, cordero magro, cilantro molido, comino, canela opcional, limón, arroz y brócoli; edad de origen: 7 meses.",
-          "Cocinar completamente el cordero y picarlo muy fino; arroz blando y húmedo, brócoli tierno y sin tallos duros. Ajustar especias y evitar sal añadida.",
-          "Verificar si la receta original contiene caldo/sal u otros alérgenos; revisar textura del arroz/carne y porciones. El resumen no basta para aprobar."
+          "Se consultó la receta completa NHS: 7–9 meses; cordero, cebolla, ajo, tomate, comino, cilantro, canela opcional, limón, arroz y brócoli; porciones infantiles y método de cocción en sartén y posterior hervor suave.",
+          "El método indica dorar el cordero y cocinarlo con vegetales 5–10 minutos adicionales; CIBA debe verificar cocción completa de la carne, tamaño y ternura antes de recomendar. Arroz debe quedar blando y húmedo; brócoli tierno.",
+          "La receta propone triturar una porción con arroz; verificar espinas no aplica, pero sí riesgo de trozos de carne duros, sodio y conservación del arroz cocido. Pendiente validación profesional."
         ],
         "decision": "no_aprobada_no_publicable",
         "requiere_revision_profesional": true,
-        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+        "alcance_revision": "Se cotejaron ingredientes, edad, cantidades y método publicados por NHS; pendiente validación profesional y adaptación al contexto CIBA.",
+        "fuente_completa_consultada": true
       }
     }
   ]
