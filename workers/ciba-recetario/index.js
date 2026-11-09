@@ -93,6 +93,37 @@ export function validarResultado(modelData, candidates) {
   };
 }
 
+
+function normalizarTexto(texto) {
+  return String(texto || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+export function reconocerCoincidenciasExactas(texto, candidates) {
+  const normalizedText = " " + normalizarTexto(texto) + " ";
+  const stop = new Set(["y", "e", "de", "del", "con", "un", "una", "unos", "unas", "el", "la", "los", "las"]);
+  const words = normalizarTexto(texto).split(/\s+/).filter(word => word.length >= 3 && !stop.has(word));
+  const recognizedFoods = [];
+  const matchedWords = new Set();
+  for (const item of candidates) {
+    const aliases = [item.name, ...(item.aliases || [])];
+    let matched = false;
+    for (const alias of aliases) {
+      const normalized = normalizarTexto(alias);
+      if (!normalized) continue;
+      if (normalizedText.includes(" " + normalized + " ")) {
+        matched = true;
+        normalized.split(" ").forEach(word => matchedWords.add(word));
+      }
+    }
+    if (matched) recognizedFoods.push({ id: item.id, name: item.name });
+  }
+  return {
+    recognizedFoods,
+    unmatchedTerms: [...new Set(words.filter(word => !matchedWords.has(word)))]
+  };
+}
+
 async function cargarListaOficial() {
   const response = await fetch(FOOD_INDEX_URL, {
     cf: { cacheTtl: 3600, cacheEverything: true }
@@ -170,7 +201,28 @@ export default {
 
     const checked = validarEntrada(body, allowlist);
     if (!checked.ok) return json({ error: checked.error }, 400);
-    if (!env?.AI?.run) return json({ error: "El servicio de inteligencia artificial no está disponible." }, 503);
+    const exact = reconocerCoincidenciasExactas(checked.value.ingredients, checked.value.candidates);
+    if (exact.recognizedFoods.length && exact.unmatchedTerms.length === 0) {
+      return json({
+        ok: true,
+        servicio: "CIBA Recetario IA",
+        etapa: "reconocimiento-de-ingredientes",
+        recognizedFoods: exact.recognizedFoods,
+        unknownTerms: [],
+        clarification: null,
+        requiresConfirmation: true,
+        aviso: "Confirma los alimentos reconocidos. Esta etapa no genera ni recomienda recetas."
+      });
+    }
+    if (!env?.AI?.run) {
+      if (exact.recognizedFoods.length) return json({
+        ok: true, servicio: "CIBA Recetario IA", etapa: "reconocimiento-de-ingredientes",
+        recognizedFoods: exact.recognizedFoods, unknownTerms: exact.unmatchedTerms,
+        clarification: "Reconocimos algunos alimentos; revisa los términos pendientes.",
+        requiresConfirmation: true
+      });
+      return json({ error: "El servicio de inteligencia artificial no está disponible." }, 503);
+    }
 
     const candidateList = checked.value.candidates.map(item => ({
       id: item.id, nombre: item.name, otros_nombres: item.aliases
@@ -214,6 +266,12 @@ export default {
         aviso: "Confirma los alimentos reconocidos. Esta etapa no genera ni recomienda recetas."
       });
     } catch {
+      if (exact.recognizedFoods.length) return json({
+        ok: true, servicio: "CIBA Recetario IA", etapa: "reconocimiento-de-ingredientes",
+        recognizedFoods: exact.recognizedFoods, unknownTerms: exact.unmatchedTerms,
+        clarification: "Reconocimos algunos alimentos; revisa los términos pendientes.",
+        requiresConfirmation: true
+      });
       return json({
         error: "No se pudo completar la interpretación. La biblioteca de alimentos sigue disponible."
       }, 503);
