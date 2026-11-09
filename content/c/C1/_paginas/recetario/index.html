@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#172b27">
+  <meta name="description" content="Recetario interactivo CIBA: reconoce ingredientes habituales y prepara el camino para encontrar recetas infantiles adecuadas a cada etapa.">
+  <title>¿Qué cocino hoy? · Recetario CIBA</title>
+  <link rel="stylesheet" href="../../../assets/css/ciba-recetario.css">
+</head>
+<body>
+  <header class="ciba-receta-cabecera">
+    <div class="ciba-receta-contenedor">
+      <a class="ciba-receta-marca" href="../../../index.html" aria-label="Volver a CIBA">CIBA <small>CRECER · CONECTAR · ACOMPAÑAR</small></a>
+    </div>
+  </header>
+  <main class="ciba-receta-contenedor ciba-receta-main">
+    <a class="ciba-receta-volver" href="../">← Volver a Crianza</a>
+    <p class="ciba-receta-sobrelinea">CIBA · ALIMENTACIÓN FAMILIAR</p>
+    <h1>¿Qué cocino <em>hoy?</em></h1>
+    <p class="ciba-receta-intro">Cuéntanos qué alimentos tienes en casa. El asistente comprende expresiones cotidianas y variantes del español cubano para reconocerlos dentro de nuestra biblioteca.</p>
+
+    <div class="ciba-receta-aviso" role="note">
+      <strong>Etapa piloto activa</strong>
+      <p>En esta primera versión, la IA reconoce ingredientes y pide aclaraciones. Todavía no recomienda ni genera recetas: las preparaciones del catálogo siguen en revisión especializada.</p>
+    </div>
+
+    <form id="ciba-recetario-form" class="ciba-receta-form">
+      <section class="ciba-receta-panel" aria-labelledby="edad-titulo">
+        <span class="ciba-receta-numero">01</span>
+        <h2 id="edad-titulo">¿Qué edad tiene el niño o la niña?</h2>
+        <p class="ciba-receta-ayuda">Puedes indicar la fecha de nacimiento o escribir la edad manualmente. La fecha se calcula en este dispositivo y no se envía al servicio de IA.</p>
+        <div class="ciba-receta-campos-edad">
+          <label>Fecha de nacimiento
+            <input id="ciba-fecha-nacimiento" type="date" autocomplete="off">
+          </label>
+          <span class="ciba-receta-o">o</span>
+          <label>Edad
+            <input id="ciba-edad-valor" type="number" min="0" max="59" step="1" inputmode="numeric" placeholder="Ej. 8">
+          </label>
+          <label>Unidad
+            <select id="ciba-edad-unidad">
+              <option value="meses">Meses</option>
+              <option value="anos">Años</option>
+            </select>
+          </label>
+        </div>
+        <p id="ciba-edad-calculada" class="ciba-receta-estado" aria-live="polite">Indica una fecha de nacimiento o una edad.</p>
+      </section>
+
+      <section class="ciba-receta-panel" aria-labelledby="ingredientes-titulo">
+        <span class="ciba-receta-numero">02</span>
+        <h2 id="ingredientes-titulo">¿Qué tienes en la cocina?</h2>
+        <p class="ciba-receta-ayuda">Escribe como hablas normalmente: «un boniato, arroz, un pedacito de pollo y calabaza». No importa si olvidas alguna tilde o una coma.</p>
+        <label class="ciba-receta-etiqueta" for="ciba-ingredientes">Ingredientes disponibles</label>
+        <textarea id="ciba-ingredientes" name="ingredients" rows="4" maxlength="500" required placeholder="Ej.: tengo boniato, un poquito de pollo y calabaza…"></textarea>
+        <div class="ciba-receta-contador"><span id="ciba-contador">0</span>/500</div>
+      </section>
+
+      <section class="ciba-receta-panel" aria-labelledby="restricciones-titulo">
+        <span class="ciba-receta-numero">03</span>
+        <h2 id="restricciones-titulo">¿Hay alergias o restricciones que debamos tener presentes?</h2>
+        <p class="ciba-receta-ayuda">Esta información permanece en esta pantalla: todavía no se envía al servicio de IA ni se utiliza para seleccionar recetas.</p>
+        <div class="ciba-receta-opciones">
+          <label><input type="checkbox" name="restriccion" value="alergia"> Alergia alimentaria diagnosticada</label>
+          <label><input type="checkbox" name="restriccion" value="intolerancia"> Intolerancia alimentaria</label>
+          <label><input type="checkbox" name="restriccion" value="vegetariana"> Alimentación vegetariana</label>
+          <label><input type="checkbox" name="restriccion" value="otra"> Otra indicación o restricción</label>
+        </div>
+        <label class="ciba-receta-etiqueta" for="ciba-restricciones-detalle">Detalles (opcional)</label>
+        <input id="ciba-restricciones-detalle" type="text" maxlength="240" placeholder="Ej.: alergia al huevo">
+      </section>
+
+      <button class="ciba-receta-boton" id="ciba-receta-enviar" type="submit">Reconocer mis ingredientes <span aria-hidden="true">→</span></button>
+      <p class="ciba-receta-privacidad">Solo se envían el texto de ingredientes y una lista limitada de alimentos candidatos. No se envían fecha de nacimiento, edad, nombre ni datos de contacto. No guardamos esta consulta.</p>
+    </form>
+
+    <section id="ciba-receta-resultados" class="ciba-receta-resultados" hidden aria-live="polite">
+      <h2>Lo que hemos reconocido</h2>
+      <div id="ciba-receta-mensaje"></div>
+      <ul id="ciba-receta-reconocidos" class="ciba-receta-lista"></ul>
+      <div id="ciba-receta-desconocidos"></div>
+      <p class="ciba-receta-pendiente">Confirma siempre los ingredientes. La recomendación de recetas se habilitará cuando el catálogo y sus revisiones estén completos.</p>
+    </section>
+
+    <aside class="ciba-receta-disclaimer">
+      <strong>Alcance educativo</strong>
+      <p>Este recurso está en desarrollo y no sustituye la orientación del pediatra o de un profesional de nutrición. No está diseñado para atender alergias, enfermedades, dificultades de deglución ni dietas terapéuticas. Ante una indicación clínica individual, sigue las instrucciones del equipo de salud.</p>
+    </aside>
+  </main>
+  <script type="module" src="../../../assets/js/ciba-recetario.js"></script>
+</body>
+</html>
