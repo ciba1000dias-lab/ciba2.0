@@ -1854,7 +1854,18 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La ficha resume avena, leche, banana, frutos rojos y yogur; la edad indicada por la fuente es 12 meses o más.",
+          "Comprobar que la avena quede completamente cocida y blanda; triturar o aplastar frutos rojos para eliminar piezas redondas o firmes; usar lácteos pasteurizados y sin azúcar añadido.",
+          "La leche usada como ingrediente no debe confundirse con recomendación de leche de vaca como bebida antes de los 12 meses."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "limitacion": "Anotación preliminar basada en la edad e ingredientes resumidos del índice; falta cotejar la página original completa, cantidades, método, rendimiento y contexto de preparación."
+      }
     },
     {
       "id": "nhs-chickpea-biryani",
@@ -2177,7 +2188,18 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La ficha resume carne molida, tomate, cebolla, pimiento, champiñones y espagueti; la fuente indica 7–9 meses.",
+          "Confirmar cocción completa de la carne; cocinar y picar verduras hasta textura blanda; cortar pasta larga y adaptar humedad/tamaño a la habilidad oral.",
+          "Revisar sodio de cualquier salsa o ingrediente comercial y alérgeno trigo/gluten; el resumen no permite verificar cantidades ni método."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "limitacion": "Anotación preliminar basada en la edad e ingredientes resumidos del índice; falta cotejar la página original completa, cantidades, método, rendimiento y contexto de preparación."
+      }
     },
     {
       "id": "nhs-omelette-fingers",
@@ -2195,7 +2217,18 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La ficha resume huevo, cebolla y pimiento; la fuente indica desde 6 meses.",
+          "El huevo debe quedar completamente cuajado; verduras muy blandas y finamente picadas; las tiras deben ser húmedas y deshacerse con facilidad, no secas ni gomosas.",
+          "Huevo es alérgeno; introducción y vigilancia según guía sanitaria. El resumen no confirma cantidades ni método completo."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "limitacion": "Anotación preliminar basada en la edad e ingredientes resumidos del índice; falta cotejar la página original completa, cantidades, método, rendimiento y contexto de preparación."
+      }
     },
     {
       "id": "nhs-scrambled-egg",
@@ -2214,7 +2247,18 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La ficha resume huevo, leche y aceite vegetal; la fuente indica desde 6 meses.",
+          "Cocinar el huevo completamente, sin partes líquidas; textura húmeda y blanda, no seca ni gomosa. Usar leche pasteurizada si forma parte de la receta y no añadir sal.",
+          "Verificar alérgenos huevo y leche; el resumen no permite confirmar cantidades ni método."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "limitacion": "Anotación preliminar basada en la edad e ingredientes resumidos del índice; falta cotejar la página original completa, cantidades, método, rendimiento y contexto de preparación."
+      }
     },
     {
       "id": "nhs-cheesy-pasta-peas",
@@ -2233,7 +2277,18 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La ficha resume macarrones, queso, tomate, leche y guisantes; la fuente indica 7–9 meses.",
+          "Cocer pasta y guisantes hasta muy blandos; aplastar guisantes y adaptar tamaño de pasta; revisar sodio del queso y usar lácteos pasteurizados.",
+          "Verificar alérgenos trigo/gluten y leche; el resumen no permite confirmar cantidades ni método completo."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "limitacion": "Anotación preliminar basada en la edad e ingredientes resumidos del índice; falta cotejar la página original completa, cantidades, método, rendimiento y contexto de preparación."
+      }
     },
     {
       "id": "nhs-leek-potato",
@@ -2251,7 +2306,18 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La ficha resume papa, puerro y leche; la fuente indica desde 6 meses.",
+          "Cocinar papa y puerro hasta muy blandos y triturar o aplastar según desarrollo; evitar fibras largas de puerro y ajustar consistencia segura.",
+          "La leche como ingrediente no equivale a ofrecer leche de vaca como bebida antes de 12 meses; revisar pasteurización y ausencia de sal."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "limitacion": "Anotación preliminar basada en la edad e ingredientes resumidos del índice; falta cotejar la página original completa, cantidades, método, rendimiento y contexto de preparación."
+      }
     },
     {
       "id": "nhs-fruity-sticks",
@@ -2269,7 +2335,18 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La ficha resume banana y yogur; la fuente indica desde 6 meses.",
+          "El formato de palitos exige comprobar forma, firmeza y tamaño reales: evitar piezas duras, resbaladizas o redondas; banana madura y textura blanda, yogur espeso sin azúcar añadido.",
+          "Usar yogur pasteurizado; verificar tolerancia a lácteos. El resumen no describe la preparación ni la geometría del alimento."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "limitacion": "Anotación preliminar basada en la edad e ingredientes resumidos del índice; falta cotejar la página original completa, cantidades, método, rendimiento y contexto de preparación."
+      }
     },
     {
       "id": "nhs-scrambly-eggs-muffins",
@@ -2305,7 +2382,18 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "La ficha resume boniato y zanahoria; la fuente indica desde 6 meses.",
+          "Cocinar ambos tubérculos/vegetales hasta que se aplasten fácilmente; machacar o triturar y ajustar textura progresivamente; no ofrecer trozos duros de zanahoria.",
+          "No añadir sal ni azúcar. El resumen no permite verificar cantidades ni método completo."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "limitacion": "Anotación preliminar basada en la edad e ingredientes resumidos del índice; falta cotejar la página original completa, cantidades, método, rendimiento y contexto de preparación."
+      }
     },
     {
       "id": "nhs-sweetcorn-chowder",
