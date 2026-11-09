@@ -141,16 +141,8 @@
 
   const init = async () => {
     try {
-      const config = await import(root + 'assets/js/ciba-auth-config.js');
-      if (!config.SUPABASE_URL || !config.SUPABASE_ANON_KEY) {
-        showStatus('pending', 'Acceso en preparación', 'La página ya está lista. Falta conectar las credenciales públicas de Supabase y habilitar Google como proveedor. No introduzcas datos personales todavía.');
-        return;
-      }
-
-      const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm');
-      client = createClient(config.SUPABASE_URL, config.SUPABASE_ANON_KEY, {
-        auth: { autoRefreshToken: true, persistSession: true, detectSessionInUrl: true }
-      });
+      const { supabase: sharedClient } = await import(root + 'assets/js/ciba-supabase.js');
+      client = sharedClient;
 
       const { data, error } = await client.auth.getSession();
       if (error) throw error;
