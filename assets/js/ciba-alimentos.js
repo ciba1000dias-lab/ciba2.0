@@ -202,7 +202,7 @@
         seccion('Preparación según la etapa', alimento.preparacion_por_edades, 'preparacion');
         seccion('Preparación segura', alimento.preparacion_segura, 'seguridad');
         seccion('Recetas sencillas', alimento.recetas, 'recetas');
-        if (Array.isArray(alimento.preparaciones_cubanas) && alimento.preparaciones_cubanas.length) seccion('El arroz en la mesa cubana', alimento.preparaciones_cubanas, 'preparaciones-cubanas');
+        if (Array.isArray(alimento.preparaciones_cubanas) && alimento.preparaciones_cubanas.length) seccion(alimento.titulo_preparaciones_cubanas || (alimento.id === 'arroz' ? 'El arroz en la mesa cubana' : 'Preparaciones tradicionales'), alimento.preparaciones_cubanas, 'preparaciones-cubanas');
         seccion('Precauciones', alimento.precauciones, 'precauciones');
         seccion('Conservación', alimento.conservacion, 'conservacion');
 
