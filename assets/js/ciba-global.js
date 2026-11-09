@@ -347,19 +347,21 @@
 
     panel.appendChild(buscar);
 
-    // SOBRE EL PROYECTO
-    crearSubmenu(
-      'Sobre el proyecto',
-      ['Desarrolladores del proyecto'],
-      panel
-    );
+    // PLATAFORMA: navegación jerárquica con rutas reales.
+    const seccionesPlataforma = [["sobre-ciba","Sobre CIBA","Conoce el propósito, las personas y los principios que dan forma a CIBA.","✺",[["mision-y-lema","Misión y lema","La razón de ser de CIBA, su compromiso con las familias y el sentido de su lema."],["fundador","Fundador","La historia, motivación y visión de quien impulsa el proyecto."],["desarrolladores","Desarrolladores","El equipo técnico y las personas que construyen y mantienen la plataforma."],["colaboradores","Colaboradores","Profesionales e instituciones que contribuyen al crecimiento de CIBA."],["declaracion-editorial","Declaración editorial","Los principios de independencia, rigor, transparencia y revisión de los contenidos."]]],["confianza-y-legal","Confianza y legal","Información transparente sobre el uso responsable de CIBA, sus límites y la protección de las personas.","◈",[["aviso-medico","Aviso médico","Alcance educativo de la información y cuándo se necesita atención sanitaria individual."],["privacidad","Privacidad","Qué información podría recopilarse, para qué se utilizaría y cómo se protegería."],["datos-de-menores","Datos de menores","Principios reforzados de minimización, protección y tratamiento responsable de información infantil."],["terminos-de-uso","Términos de uso","Condiciones para utilizar la plataforma, sus recursos y herramientas."],["como-citar","Cómo citar","Orientaciones para citar artículos, recursos y materiales de CIBA."]]],["mi-cuenta","Mi cuenta","Un espacio personal que podrá reunir preferencias y recursos guardados cuando se habilite el acceso seguro.","◎",[["perfil","Perfil","Datos básicos y configuración de la cuenta de la persona adulta."],["preferencias","Preferencias","Opciones para adaptar la experiencia, los temas y la navegación."],["notificaciones","Notificaciones","Control de avisos y comunicaciones, cuando este servicio esté disponible."],["guardados","Guardados","Acceso a artículos y recursos que cada persona decida conservar."],["mis-datos","Mis datos","Consulta, exportación y solicitudes relacionadas con los datos personales."]]],["navegacion","Navegación","Herramientas para encontrar información y recorrer el conocimiento de CIBA de distintas maneras.","⌘",[["buscar","Buscar","Acceso al buscador de CIBA para localizar artículos, fichas y recursos."],["indice-tematico","Índice temático","Mapa organizado de temas, áreas y contenidos de las cuatro columnas."],["recorrido-por-edad","Recorrido por edad","Explorar contenidos desde la concepción hasta los dos años."],["series","Series","Colecciones de contenidos relacionados para profundizar paso a paso."],["glosario","Glosario","Definiciones claras de términos de salud, crianza, nutrición y desarrollo."]]],["comunidad","Comunidad","Canales para participar, enviar comentarios y ayudar a mejorar CIBA de forma respetuosa y segura.","♡",[["preguntale-al-pediatra","Pregúntale al pediatra","Un futuro espacio de orientación general que no sustituirá la consulta ni la atención urgente."],["reportar-error","Reportar error","Canal para comunicar enlaces rotos, errores de contenido o dificultades de uso."],["compartir","Compartir","Herramientas para compartir CIBA y sus recursos con otras familias y profesionales."]]],["recursos","Recursos","Materiales complementarios para aprender, consultar y compartir información confiable.","✧",[["descargables","Descargables","Guías, fichas y materiales imprimibles para uso familiar y educativo."],["multimedia","Multimedia","Videos, audios, ilustraciones y otros formatos de aprendizaje."],["enlaces-recomendados","Enlaces recomendados","Selección editorial de recursos externos fiables y útiles."]]]];
+    panel.appendChild(elemento('h2','ciba-global-menu-titulo ciba-global-menu-separador','PLATAFORMA'));
+    seccionesPlataforma.forEach((seccion) => {
+      const grupo=elemento('div','ciba-global-grupo');
+      const encabezado=elemento('a','ciba-global-enlace',seccion[1]);
+      encabezado.href=urlPublica('plataforma/'+seccion[0]+'/');
+      encabezado.setAttribute('aria-expanded','false');
+      const lista=elemento('div','ciba-global-submenu');lista.hidden=true;
+      encabezado.addEventListener('click',(evento)=>{evento.preventDefault();const abierto=!lista.hidden;lista.hidden=abierto;encabezado.setAttribute('aria-expanded',String(!abierto));});
+      lista.appendChild(enlace(urlPublica('plataforma/'+seccion[0]+'/'),'Ver sección completa','ciba-global-enlace ciba-global-subenlace'));
+      seccion[4].forEach(apartado=>lista.appendChild(enlace(urlPublica('plataforma/'+seccion[0]+'/'+apartado[0]+'/'),apartado[1],'ciba-global-enlace ciba-global-subenlace')));
+      grupo.append(encabezado,lista);panel.appendChild(grupo);
+    });
 
-    // CONFIGURACIÓN
-    crearSubmenu(
-      'Configuración',
-      ['Licencia Creative Commons'],
-      panel
-    );
 
     boton.addEventListener('click', () => {
       const abierto = panel.classList.toggle('abierto');

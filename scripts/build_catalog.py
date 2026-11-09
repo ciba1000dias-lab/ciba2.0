@@ -78,7 +78,10 @@ def _copiar_paginas_estaticas(src: Path, tmp: Path) -> list[ValidationError]:
             errores.append(ValidationError(str(relativo), "página auxiliar", "solo se permite index.html"))
             continue
 
-        destino = tmp / "c" / "C1" / relativo.parent
+        if relativo.parts and relativo.parts[0] == "plataforma":
+            destino = tmp / "plataforma" / relativo.parent.relative_to("plataforma")
+        else:
+            destino = tmp / "c" / "C1" / relativo.parent
         destino.mkdir(parents=True, exist_ok=True)
 
         try:
