@@ -1,7 +1,7 @@
 {
   "version": 1,
   "titulo": "Índice de recetas externas para revisión CIBA",
-  "nota": "Índice documental de 97 páginas NHS y 32 entradas First Steps. 70 fichas NHS tienen anotaciones preliminares individuales; 32 de 32 entradas First Steps tienen observaciones preliminares. Las anotaciones basadas en edad e ingredientes resumidos no sustituyen el cotejo de la receta completa, cantidades, método, textura ni revisión profesional. Todas las entradas permanecen deshabilitadas para publicación y recomendación automática.",
+  "nota": "Índice documental de 97 páginas NHS y 32 entradas First Steps. 78 fichas NHS tienen anotaciones preliminares individuales; 32 de 32 entradas First Steps tienen observaciones preliminares. Las anotaciones basadas en edad e ingredientes resumidos no sustituyen el cotejo de la receta completa, cantidades, método, textura ni revisión profesional. Todas las entradas permanecen deshabilitadas para publicación y recomendación automática.",
   "fuentes": [
     {
       "id": "nhs-best-start-97",
@@ -2619,9 +2619,20 @@
       "alertas_revision": [
         "Frijoles sin sal, muy cocidos y aplastados; maíz y vegetales blandos."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume frijoles, papa, berenjena, calabacín, pimiento y maíz; edad de origen: 7 meses.",
+          "Cocer hasta muy tierno; aplastar los frijoles y evitar granos de maíz enteros. Adaptar la papa y vegetales a textura húmeda y blanda, sin pieles ni trozos duros.",
+          "Verificar sodio de frijoles en conserva, caldo/salsas y método real; las cantidades y la textura final no constan en el resumen."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-veggie-biryani",
@@ -2637,9 +2648,20 @@
       "alertas_revision": [
         "Garbanzos sin sal y blandos; arroz y verduras completamente cocidos."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume arroz, garbanzos, zanahoria, coliflor y guisantes; edad de origen: 10 meses.",
+          "Cocer arroz y legumbres completamente; aplastar garbanzos y guisantes y ablandar bien los vegetales. Comprobar que no haya frutos secos enteros ni piezas duras en la receta original.",
+          "Revisar especias, sal y manejo seguro del arroz cocido; el resumen no permite verificar cantidades ni preparación."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-fish-curry",
@@ -2655,9 +2677,20 @@
       "alertas_revision": [
         "Identificar especie, revisar mercurio/sodio, retirar espinas y cocinar por completo."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume bacalao, papa, plátano, tomate, guisantes y arroz; edad de origen: 12 meses.",
+          "Confirmar especie exacta y procedencia del pescado, retirar todas las espinas y cocinar completamente. Adaptar guisantes y demás ingredientes a textura blanda; revisar el picante y la sal.",
+          "El bacalao no debe asumirse libre de espinas ni seguro por el nombre genérico. Verificar receta completa, porción, alérgeno pescado y sodio."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-egg-toast-tomatoes",
@@ -2674,9 +2707,20 @@
       "alertas_revision": [
         "Cocción publicada de 5–6 minutos no garantiza huevo totalmente cocido; adaptar y validar; tomate pequeño."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume huevo, pan integral y tomate; edad de origen: 10 meses.",
+          "Huevo completamente cocido; tomate blando y adaptado, sin piezas redondas enteras. Ajustar pan para que no quede seco, duro ni forme una masa pegajosa.",
+          "Revisar trigo y huevo como alérgenos, sal añadida y formato exacto de los dedos de pan; método y cantidades pendientes."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-simple-baked-fish",
@@ -2692,9 +2736,20 @@
       "alertas_revision": [
         "Cocinar por completo, desmenuzar y revisar espinas; considerar frecuencia y especie."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume salmón; edad de origen: 6 meses.",
+          "Cocinar completamente el pescado, comprobar y retirar cuidadosamente todas las espinas y desmenuzar en láminas pequeñas y húmedas, adaptadas a la habilidad oral.",
+          "Confirmar especie, origen, tamaño de porción y ausencia de sal/salsas; el resumen de un solo ingrediente no permite aprobar la receta."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-fish-risotto-peas",
@@ -2710,9 +2765,20 @@
       "alertas_revision": [
         "Salmón completamente cocido y sin espinas; arroz muy blando y textura húmeda."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume salmón, arroz, guisantes, cebolla, ajo y pimiento; edad de origen: 7 meses.",
+          "Cocinar completamente el pescado y retirar todas las espinas; arroz blando y húmedo, guisantes aplastados y vegetales muy tiernos. Evitar textura seca o compacta.",
+          "Revisar especie y alérgeno pescado, sodio del caldo y conservación/recalentamiento seguro del arroz; faltan cantidades y método."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-pasta-ratatouille",
@@ -2729,9 +2795,20 @@
       "alertas_revision": [
         "Identificar especie, retirar espinas, cocinar pescado por completo y pasta blanda."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume abadejo, pasta, tomate, calabacín y champiñones; edad de origen: 10 meses.",
+          "La presencia de pescado debe verificarse en la receta completa, pues el título no lo anticipa. Cocinar completamente y retirar espinas; pasta y vegetales muy blandos, cortados/adaptados a la etapa.",
+          "Revisar pescado, trigo y posibles lácteos/otros ingredientes de la receta original; el resumen no basta para confirmar alérgenos ni método."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-spag-bol",
@@ -2747,9 +2824,20 @@
       "alertas_revision": [
         "Carne completamente cocida y pasta blanda; adaptar porción y textura."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume carne molida, tomate, cebolla, pimiento, champiñones y espagueti; edad de origen: 12 meses.",
+          "Cocinar la carne molida completamente; vegetales blandos y pasta cortada/adaptada para evitar tiras largas difíciles de manejar. Servir húmedo, no seco ni compacto.",
+          "Verificar sodio de salsas/caldos, tamaño de pasta y cantidades; no se puede evaluar el método completo con el resumen."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-squash-lentil-soup",
