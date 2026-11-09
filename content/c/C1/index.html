@@ -1010,5 +1010,27 @@
     })();
   </script>
 
+<script type="module">
+  // Compatibilidad: redirige antiguos enlaces de fichas al grupo independiente.
+  (() => {
+    const hash = decodeURIComponent(location.hash.replace(/^#/, ''));
+    if (!hash.startsWith('alimento-')) return;
+    const valor = hash.slice('alimento-'.length);
+    const separador = valor.indexOf('--');
+    const id = separador >= 0 ? valor.slice(0, separador) : valor;
+    const seccion = separador >= 0 ? '--' + valor.slice(separador + 2) : '';
+    const raiz = new URL('../../', location.href);
+    fetch(new URL('assets/data/alimentos-busqueda.json', raiz), { cache: 'force-cache' })
+      .then((r) => r.ok ? r.json() : Promise.reject(new Error('Índice no disponible')))
+      .then((indice) => {
+        const alimento = (indice.alimentos || []).find((item) => item.id === id);
+        if (!alimento || !alimento.ruta_publica) return;
+        const destino = new URL(alimento.ruta_publica + '#alimento-' + encodeURIComponent(id) + seccion, raiz);
+        location.replace(destino.href);
+      })
+      .catch((error) => console.warn('CIBA: no se pudo resolver el enlace antiguo de alimento.', error));
+  })();
+</script>
+
 </body>
 </html>
