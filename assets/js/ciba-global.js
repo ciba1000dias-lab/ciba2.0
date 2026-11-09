@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261109-7', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261109-8', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -178,6 +178,13 @@
 
   function crearCabeceraGlobal() {
     if (esPortada() || document.querySelector('.ciba-global-cabecera')) return null;
+
+    // Las páginas de sección conservaban su cabecera antigua además de la global.
+    // Retiramos solo esa cabecera superior para evitar que la marca aparezca duplicada.
+    document.querySelectorAll('body > header.cabecera').forEach((anterior) => {
+      anterior.remove();
+    });
+
     const actual = resolverColumnaActual();
     const colores = { C:'#397653', I:'#287B9A', B:'#8C671F', A:'#A9443B' };
     const cabecera = elemento('header','ciba-global-cabecera');
