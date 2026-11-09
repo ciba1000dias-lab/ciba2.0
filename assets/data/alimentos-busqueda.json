@@ -933,6 +933,522 @@
         "verduras de hoja verde"
       ],
       "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "pargo",
+      "nombre": "Pargo",
+      "categoria": "Pescados",
+      "resumen": "Pescado marino de carne blanca; el nombre pargo agrupa varias especies y no identifica por sí solo una especie concreta.",
+      "nombres_alternativos": [
+        "pargo rojo",
+        "pargo de mar",
+        "Lutjanidae"
+      ],
+      "palabras_clave": [
+        "Pargo",
+        "pargo rojo",
+        "pargo de mar",
+        "Lutjanidae",
+        "pargo",
+        "pescado para bebé",
+        "pargo para niños",
+        "espinas de pescado",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "tilapia",
+      "nombre": "Tilapia",
+      "categoria": "Pescados",
+      "resumen": "Pescado de carne suave y sabor delicado, frecuente en sistemas de cultivo.",
+      "nombres_alternativos": [
+        "tilapia de cultivo",
+        "Oreochromis",
+        "pescado blanco"
+      ],
+      "palabras_clave": [
+        "Tilapia",
+        "tilapia de cultivo",
+        "Oreochromis",
+        "pescado blanco",
+        "tilapia",
+        "pescado blanco",
+        "tilapia para bebé",
+        "pescado bajo en mercurio",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "sardina",
+      "nombre": "Sardina",
+      "categoria": "Pescados",
+      "resumen": "Pescado pequeño y graso que aporta proteínas, vitamina B12 y omega-3.",
+      "nombres_alternativos": [
+        "sardinas",
+        "Sardina",
+        "pescado azul"
+      ],
+      "palabras_clave": [
+        "Sardina",
+        "sardinas",
+        "Sardina",
+        "pescado azul",
+        "sardina",
+        "sardinas",
+        "sardina para bebé",
+        "pescado azul",
+        "omega 3",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "atun",
+      "nombre": "Atún",
+      "categoria": "Pescados",
+      "resumen": "Pescado de varias especies; el mercurio depende mucho de cuál sea.",
+      "nombres_alternativos": [
+        "atún fresco",
+        "atún en filete",
+        "Thunnus"
+      ],
+      "palabras_clave": [
+        "Atún",
+        "atún fresco",
+        "atún en filete",
+        "Thunnus",
+        "atún",
+        "atún para niños",
+        "atún en lata",
+        "atún claro",
+        "albacora",
+        "patudo",
+        "mercurio atún",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "jurel",
+      "nombre": "Jurel",
+      "categoria": "Pescados",
+      "resumen": "Pescado azul de tamaño y contenido graso variables según especie.",
+      "nombres_alternativos": [
+        "chicharro",
+        "Trachurus",
+        "jurel de mar"
+      ],
+      "palabras_clave": [
+        "Jurel",
+        "chicharro",
+        "Trachurus",
+        "jurel de mar",
+        "jurel",
+        "chicharro",
+        "pescado azul",
+        "jurel para bebé",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "macarela",
+      "nombre": "Macarela",
+      "categoria": "Pescados",
+      "resumen": "Nombre común ambiguo que puede referirse a especies con recomendaciones de mercurio muy diferentes.",
+      "nombres_alternativos": [
+        "caballa",
+        "macarela común",
+        "mackerel"
+      ],
+      "palabras_clave": [
+        "Macarela",
+        "caballa",
+        "macarela común",
+        "mackerel",
+        "macarela",
+        "caballa",
+        "macarela rey",
+        "king mackerel",
+        "mercurio macarela",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "lisa",
+      "nombre": "Lisa",
+      "categoria": "Pescados",
+      "resumen": "Pescado costero conocido como lisa o mújol; el nombre puede abarcar varias especies.",
+      "nombres_alternativos": [
+        "lisa de mar",
+        "mújol",
+        "Mugilidae",
+        "Mugil cephalus"
+      ],
+      "palabras_clave": [
+        "Lisa",
+        "lisa de mar",
+        "mújol",
+        "Mugilidae",
+        "Mugil cephalus",
+        "lisa",
+        "mújol",
+        "pescado de costa",
+        "lisa para bebé",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "claria",
+      "nombre": "Claria",
+      "categoria": "Pescados",
+      "resumen": "Pez de agua dulce introducido y criado en Cuba; conocido por su resistencia y carne firme.",
+      "nombres_alternativos": [
+        "pez gato africano",
+        "bagre africano",
+        "Clarias gariepinus"
+      ],
+      "palabras_clave": [
+        "Claria",
+        "pez gato africano",
+        "bagre africano",
+        "Clarias gariepinus",
+        "claria",
+        "clarias",
+        "pez gato",
+        "bagre africano",
+        "pescado de agua dulce",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "merluza",
+      "nombre": "Merluza",
+      "categoria": "Pescados",
+      "resumen": "Pescado blanco de sabor suave y carne que se desmenuza con facilidad.",
+      "nombres_alternativos": [
+        "hake",
+        "pescadilla",
+        "Merluccius"
+      ],
+      "palabras_clave": [
+        "Merluza",
+        "hake",
+        "pescadilla",
+        "Merluccius",
+        "merluza",
+        "hake",
+        "pescadilla",
+        "merluza para bebé",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "camaron",
+      "nombre": "Camarón",
+      "categoria": "Mariscos",
+      "resumen": "Crustáceo que aporta proteínas y puede causar alergia alimentaria.",
+      "nombres_alternativos": [
+        "camarones",
+        "gamba",
+        "langostino"
+      ],
+      "palabras_clave": [
+        "Camarón",
+        "camarones",
+        "gamba",
+        "langostino",
+        "camarón",
+        "camarones",
+        "gamba",
+        "mariscos",
+        "alergia al camarón",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "cangrejo",
+      "nombre": "Cangrejo",
+      "categoria": "Mariscos",
+      "resumen": "Crustáceo cuya carne requiere retirar caparazón y fragmentos duros.",
+      "nombres_alternativos": [
+        "jaiba",
+        "cangrejo moro",
+        "carne de cangrejo"
+      ],
+      "palabras_clave": [
+        "Cangrejo",
+        "jaiba",
+        "cangrejo moro",
+        "carne de cangrejo",
+        "cangrejo",
+        "jaiba",
+        "cangrejo moro",
+        "carne de cangrejo",
+        "mariscos",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "langosta",
+      "nombre": "Langosta",
+      "categoria": "Mariscos",
+      "resumen": "Crustáceo marino de carne firme; su captura y comercialización están reguladas en Cuba.",
+      "nombres_alternativos": [
+        "langosta espinosa del Caribe",
+        "Panulirus argus",
+        "crustáceo"
+      ],
+      "palabras_clave": [
+        "Langosta",
+        "langosta espinosa del Caribe",
+        "Panulirus argus",
+        "crustáceo",
+        "langosta",
+        "langosta espinosa",
+        "langosta del Caribe",
+        "Panulirus argus",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "bonito",
+      "nombre": "Bonito",
+      "categoria": "Pescados",
+      "resumen": "Pez pelágico de la familia de los túnidos; el nombre común puede variar por región.",
+      "nombres_alternativos": [
+        "bonito atlántico",
+        "Sarda sarda",
+        "bonito de mar"
+      ],
+      "palabras_clave": [
+        "Bonito",
+        "bonito atlántico",
+        "Sarda sarda",
+        "bonito de mar",
+        "bonito",
+        "Sarda sarda",
+        "pescado azul",
+        "bonito para bebé",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "pescado-enlatado",
+      "nombre": "Pescado enlatado",
+      "categoria": "Conservas y preparaciones",
+      "resumen": "Conservas de sardina, atún y otras especies; la especie y el sodio importan.",
+      "nombres_alternativos": [
+        "pescado en conserva",
+        "sardinas en lata",
+        "atún en lata",
+        "conservas de pescado"
+      ],
+      "palabras_clave": [
+        "Pescado enlatado",
+        "pescado en conserva",
+        "sardinas en lata",
+        "atún en lata",
+        "conservas de pescado",
+        "pescado enlatado",
+        "pescado en lata",
+        "sardinas en lata",
+        "atún en lata",
+        "conservas de pescado",
+        "comida enlatada",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "croquetas-pescado",
+      "nombre": "Croquetas de pescado",
+      "categoria": "Conservas y preparaciones",
+      "resumen": "Preparación elaborada con pescado, masa o puré, empanizado y fritura; no equivale al pescado fresco.",
+      "nombres_alternativos": [
+        "croqueta de pescado",
+        "frituras de pescado",
+        "pescado empanizado"
+      ],
+      "palabras_clave": [
+        "Croquetas de pescado",
+        "croqueta de pescado",
+        "frituras de pescado",
+        "pescado empanizado",
+        "croquetas de pescado",
+        "croqueta",
+        "croquetas",
+        "frituras de pescado",
+        "pescado empanizado",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "tiburon",
+      "nombre": "Tiburón",
+      "categoria": "Pescados · advertencia",
+      "resumen": "Ficha informativa con advertencia: no se recomienda para niños por su alto contenido de mercurio.",
+      "nombres_alternativos": [
+        "carne de tiburón",
+        "shark"
+      ],
+      "palabras_clave": [
+        "Tiburón",
+        "carne de tiburón",
+        "shark",
+        "tiburón",
+        "carne de tiburón",
+        "mercurio tiburón",
+        "pescados que evitar",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "pulpo",
+      "nombre": "Pulpo",
+      "categoria": "Mariscos",
+      "resumen": "Molusco cefalópodo de carne firme que necesita cocción adecuada para ablandarse.",
+      "nombres_alternativos": [
+        "octopus",
+        "pulpo común"
+      ],
+      "palabras_clave": [
+        "Pulpo",
+        "octopus",
+        "pulpo común",
+        "pulpo",
+        "octopus",
+        "pulpo para bebé",
+        "mariscos",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "calamar",
+      "nombre": "Calamar",
+      "categoria": "Mariscos",
+      "resumen": "Molusco cefalópodo que puede quedar gomoso si no se cocina correctamente.",
+      "nombres_alternativos": [
+        "jibia",
+        "squid",
+        "calamares"
+      ],
+      "palabras_clave": [
+        "Calamar",
+        "jibia",
+        "squid",
+        "calamares",
+        "calamar",
+        "calamares",
+        "jibia",
+        "squid",
+        "anillas de calamar",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "cobo",
+      "nombre": "Cobo",
+      "categoria": "Mariscos",
+      "resumen": "Molusco grande del Caribe conocido como caracol reina; su extracción está regulada.",
+      "nombres_alternativos": [
+        "caracol reina",
+        "cobo rosado",
+        "Lobatus gigas",
+        "Aliger gigas"
+      ],
+      "palabras_clave": [
+        "Cobo",
+        "caracol reina",
+        "cobo rosado",
+        "Lobatus gigas",
+        "Aliger gigas",
+        "cobo",
+        "caracol reina",
+        "Lobatus gigas",
+        "Aliger gigas",
+        "caracol marino",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
+    },
+    {
+      "id": "ostiones",
+      "nombre": "Ostiones",
+      "categoria": "Mariscos",
+      "resumen": "Moluscos bivalvos filtradores; deben proceder de aguas y canales de comercialización controlados.",
+      "nombres_alternativos": [
+        "ostión de mangle",
+        "ostra",
+        "Crassostrea rhizophorae"
+      ],
+      "palabras_clave": [
+        "Ostiones",
+        "ostión de mangle",
+        "ostra",
+        "Crassostrea rhizophorae",
+        "ostión",
+        "ostiones",
+        "ostra",
+        "ostión de mangle",
+        "Crassostrea rhizophorae",
+        "pescado para bebé",
+        "mariscos para bebé",
+        "alimentación complementaria"
+      ],
+      "ruta_publica": "c/C1/alimentos/pescados/"
     }
   ]
 }
