@@ -17,6 +17,7 @@ class TestRecetario(unittest.TestCase):
         cls.indice = json.loads((DATA / "alimentos-busqueda.json").read_text(encoding="utf-8"))
         cls.alimentos = {a["id"] for a in cls.indice["alimentos"]}
         cls.fuentes = {f["id"] for f in cls.catalogo["fuentes"]}
+        cls.fuentes_externas = json.loads((DATA / "recetario" / "fuentes-externas.json").read_text(encoding="utf-8"))
 
     def test_ids_de_receta_unicos(self) -> None:
         ids = [r["id"] for r in self.catalogo["recetas"]]
@@ -60,6 +61,28 @@ class TestRecetario(unittest.TestCase):
     def test_catalogo_conserva_bloqueo_global(self) -> None:
         if self.catalogo.get("estado_catalogo") != "publicado":
             self.assertFalse(any(r.get("publicable") is True for r in self.catalogo["recetas"]))
+
+
+    def test_fuentes_externas_tienen_enlaces_y_no_se_habilitan_sin_revision(self) -> None:
+        colecciones = self.fuentes_externas["colecciones"]
+        self.assertEqual(len({f["id"] for f in colecciones}), len(colecciones))
+        for fuente in colecciones:
+            self.assertTrue(fuente["url"].startswith("https://"), fuente["id"])
+            self.assertGreater(fuente["entradas_publicadas"], 0, fuente["id"])
+            self.assertFalse(fuente["recomendacion_automatica"], fuente["id"])
+
+    def test_fuentes_generales_suman_151_entradas_documentadas(self) -> None:
+        colecciones = self.fuentes_externas["colecciones"]
+        generales = [f for f in colecciones if f["id"] in {
+            "nhs-best-start-97", "unicef-venezuela-2026", "first-steps-2023"
+        }]
+        self.assertEqual(sum(f["entradas_publicadas"] for f in generales), 151)
+
+    def test_fuentes_clinicas_se_mantienen_separadas(self) -> None:
+        colecciones = {f["id"]: f for f in self.fuentes_externas["colecciones"]}
+        for key in ("uhs-babies-specialist", "uhs-toddlers-specialist"):
+            self.assertFalse(colecciones[key]["recomendacion_automatica"])
+            self.assertIn("especializ", colecciones[key]["uso_ciba"].lower())
 
 
 if __name__ == "__main__":
