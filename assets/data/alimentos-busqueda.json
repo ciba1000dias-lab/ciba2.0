@@ -3204,6 +3204,44 @@
         "queso fresco"
       ],
       "ruta_publica": "c/C1/alimentos/huevos-quesos/"
+    },
+    {
+      "id": "pera",
+      "nombre": "Pera",
+      "categoria": "Frutas",
+      "resumen": "Fruta de pulpa jugosa que aporta agua y fibra; su firmeza varía con la madurez.",
+      "nombres_alternativos": [
+        "peral",
+        "Pyrus communis"
+      ],
+      "palabras_clave": [
+        "pera",
+        "pera para bebé",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "cómo preparar pera para bebés",
+        "mi bebé puede comer pera"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
+    },
+    {
+      "id": "manzana",
+      "nombre": "Manzana",
+      "categoria": "Frutas",
+      "resumen": "Fruta que aporta agua y fibra; debe ablandarse mediante cocción para evitar ofrecer trozos duros a lactantes.",
+      "nombres_alternativos": [
+        "Apple",
+        "Malus domestica"
+      ],
+      "palabras_clave": [
+        "manzana",
+        "manzana para bebé",
+        "fruta para bebé",
+        "alimentación complementaria",
+        "cómo preparar manzana para bebés",
+        "mi bebé puede comer manzana"
+      ],
+      "ruta_publica": "c/C1/alimentos/frutas/"
     }
   ]
 }
