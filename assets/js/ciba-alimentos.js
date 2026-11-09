@@ -336,7 +336,6 @@
         });
 
         if (rejillaFotos.children.length) {
-          conFoto.appendChild(crear('h3', 'ciba-alimentos-subtitulo', 'Con fotografía'));
           conFoto.appendChild(rejillaFotos);
           lista.appendChild(conFoto);
         }
