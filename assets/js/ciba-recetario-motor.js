@@ -1,5 +1,5 @@
 // Motor determinista del recetario CIBA.
-// No genera recetas: solo filtra preparaciones aprobadas del catálogo oficial.
+// El modo normal solo filtra recetas aprobadas; la demostración puede mostrar borradores con advertencia explícita.
 const BANDAS = [
   { min: 6, max: 8, key: '6-8' },
   { min: 9, max: 11, key: '9-11' },
@@ -125,7 +125,7 @@ function recetaVegetariana(receta) {
   return !ids.some(id => categoriasAnimales.test(id));
 }
 
-export function evaluarRecetas({ recetas, ingredientesIds, edadMeses, restricciones = [], detalleRestricciones = '' }) {
+export function evaluarRecetas({ recetas, ingredientesIds, edadMeses, restricciones = [], detalleRestricciones = '', modoDemostracion = false }) {
   if (!Number.isInteger(edadMeses)) return { estado: 'edad_invalida', recetas: [] };
   if (edadMeses < 6) return { estado: 'menor_de_6_meses', recetas: [] };
   if (edadMeses > 59) return { estado: 'fuera_de_rango', recetas: [] };
@@ -142,8 +142,10 @@ export function evaluarRecetas({ recetas, ingredientesIds, edadMeses, restriccio
 
   const edad = bandaParaEdad(edadMeses);
   const ids = new Set(ingredientesIds || []);
-  const publicadas = (recetas || []).filter(r => r.publicable === true && r.estado === 'aprobada');
-  const coincidencias = publicadas.filter(receta => {
+  const elegibles = modoDemostracion
+    ? (recetas || []).filter(r => r.publicable === false && r.estado !== 'aprobada')
+    : (recetas || []).filter(r => r.publicable === true && r.estado === 'aprobada');
+  const coincidencias = elegibles.filter(receta => {
     if (edadMeses < (receta.edad_minima_meses ?? 6) || edadMeses > (receta.edad_maxima_meses ?? 59)) return false;
     if (!receta.adaptacion_por_edad || !receta.adaptacion_por_edad[edad.key]) return false;
     const obligatorios = (receta.ingredientes || []).filter(i => i.obligatorio !== false);
@@ -158,9 +160,13 @@ export function evaluarRecetas({ recetas, ingredientesIds, edadMeses, restriccio
   });
 
   return {
-    estado: coincidencias.length ? 'coincidencias' : publicadas.length ? 'sin_coincidencias' : 'catalogo_sin_aprobaciones',
+    estado: coincidencias.length
+      ? (modoDemostracion ? 'coincidencias_demo' : 'coincidencias')
+      : elegibles.length ? (modoDemostracion ? 'sin_coincidencias_demo' : 'sin_coincidencias')
+      : modoDemostracion ? 'sin_coincidencias_demo' : 'catalogo_sin_aprobaciones',
     bandaEdad: edad.key,
     alergenosDetectados: alergenos,
+    modoDemostracion,
     recetas: coincidencias
   };
 }
