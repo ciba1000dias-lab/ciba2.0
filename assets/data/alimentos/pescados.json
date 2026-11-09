@@ -1580,19 +1580,19 @@
         "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
         "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
       ],
-      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "edad": "Alrededor de los 6 meses puede ofrecerse pescado en una forma segura y baja en mercurio. Las conservas pueden tener mucho sodio y la especie varía: para bebés, preferir productos simples con bajo contenido de sal, revisar espinas y evitar salsas saladas. No usar una recomendación de atún claro para cualquier tipo de atún.",
       "preparacion_por_edades": [
         {
-          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
-          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "Si se utiliza conserva, elegir una opción simple y baja en sodio, escurrirla, revisar espinas y aplastar muy bien. Es preferible pescado fresco o congelado de bajo mercurio y sin sal añadida."
         },
         {
           "etapa": "Alrededor de 9–11 meses",
-          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+          "forma": "Desmenuzar finamente y humedecer; comprobar que no queden espinas duras."
         },
         {
           "etapa": "Desde los 12 meses",
-          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+          "forma": "Servir pequeñas porciones, preferiblemente bajas en sodio y combinadas con alimentos frescos."
         }
       ],
       "preparacion_segura": "Leer la etiqueta y reconocer especie, sodio, aceite y fecha. Para niños pequeños, retirar espinas duras, aplastar las blandas y desmenuzar; escurrir si el producto tiene mucho sodio. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
@@ -1702,34 +1702,34 @@
         "Puede contribuir a la variedad de alimentos ricos en proteínas dentro de una alimentación diversa, cuando la especie y su procedencia son adecuadas.",
         "No es necesario consumir una especie concreta para obtener beneficios: conviene alternar opciones seguras y de menor mercurio."
       ],
-      "edad": "El pescado y los mariscos bien cocidos pueden introducirse alrededor de los 6 meses, cuando el bebé está preparado para la alimentación complementaria. Introducir en textura segura; los mariscos son alérgenos importantes. La recomendación depende también de la especie y de su procedencia.",
+      "edad": "El pescado bien cocido puede introducirse alrededor de los 6 meses, pero eso no significa que las croquetas sean una forma adecuada de ofrecerlo al bebé. Por su empanizado, fritura, sal y textura variable, es preferible ofrecer el pescado por separado, bien cocido, sin espinas y adaptado a la etapa.",
       "preparacion_por_edades": [
         {
-          "etapa": "Alrededor de 6 meses, al iniciar la alimentación complementaria",
-          "forma": "Ofrecer pescado bien cocido, sin piel ni espinas, triturado o muy finamente desmenuzado y mezclado con una preparación húmeda. Para mariscos, introducir bien cocidos y en pequeña cantidad; son alérgenos importantes."
+          "etapa": "Alrededor de 6–8 meses",
+          "forma": "No ofrecer la croqueta entera ni su cubierta. Ofrecer pescado bien cocido, sin espinas, triturado y húmedo, sin sal añadida."
         },
         {
           "etapa": "Alrededor de 9–11 meses",
-          "forma": "Ofrecer en hebras muy finas o picado pequeño, siempre húmedo y sin espinas, caparazón, conchas ni partes duras. Ajustar a las habilidades del bebé."
+          "forma": "Preferir pescado desmenuzado y húmedo, sin empanizado duro ni corteza crujiente."
         },
         {
           "etapa": "Desde los 12 meses",
-          "forma": "Servir en piezas pequeñas y blandas, revisadas cuidadosamente. Evitar trozos gomosos, secos, redondos o duros y mantener supervisión."
+          "forma": "Si se ofrece una croqueta casera, debe ser muy blanda, sin exceso de sal, sin bordes duros y desmenuzada en trozos pequeños; no es una opción cotidiana."
         }
       ],
-      "preparacion_segura": "Para la familia, elaborar con pescado bien cocido y sin espinas, poca sal y cocción completa. Para niños pequeños, ofrecer el interior suave y húmedo en textura adecuada; evitar la cubierta dura, seca o muy crujiente. Cocinar completamente; evitar producto crudo o semicrudo y mantener refrigeración adecuada.",
+      "preparacion_segura": "La croqueta no es equivalente al pescado simple. Para bebés, ofrecer el pescado por separado, bien cocido, sin espinas y húmedo. En versiones familiares, cocinar completamente el centro, evitar rellenos fríos o semicrudos y mantener refrigeración adecuada.",
       "recetas": [
         {
-          "nombre": "Pescado o marisco bien cocido y desmenuzado",
-          "etapa": "Desde el inicio de la alimentación complementaria, si la especie es adecuada",
-          "ingredientes": "Porción pequeña del alimento, agua potable y vegetal cocido sin sal",
-          "preparacion": "Cocinar completamente. Retirar espinas, caparazón, concha y partes duras. Triturar o desmenuzar hasta una textura húmeda, espesa y homogénea."
+          "nombre": "Pescado suave para sustituir la croqueta",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Pescado fresco o congelado de bajo mercurio, calabaza o papa",
+          "preparacion": "Cocinar completamente el pescado, retirar todas las espinas y desmenuzarlo finamente. Mezclar con vegetal cocido y triturado hasta obtener una textura húmeda."
         },
         {
-          "nombre": "Guiso familiar suave",
-          "etapa": "Para niños que ya manejan alimentos picados",
-          "ingredientes": "Pescado o marisco, tomate, calabaza o papa y hierbas suaves",
-          "preparacion": "Cocinar completamente con vegetales hasta que estén tiernos. Separar la porción infantil antes de añadir sal; revisar otra vez espinas y fragmentos duros."
+          "nombre": "Croqueta casera para la mesa familiar",
+          "etapa": "Para niños mayores que manejan bien alimentos sólidos",
+          "ingredientes": "Pescado cocido sin espinas, papa, huevo y una pequeña cantidad de pan rallado",
+          "preparacion": "Preparar porciones pequeñas y blandas, cocinar completamente y evitar una cubierta gruesa o muy crujiente. Separar la porción infantil antes de añadir sal; comprobar textura y temperatura."
         }
       ],
       "precauciones": [
