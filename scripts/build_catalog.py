@@ -392,7 +392,7 @@ def _conectar_sistema_global(
         etiqueta_existente = script_cargado.group(0)
         etiqueta_actualizada = re.sub(
             r'(\bsrc\s*=\s*["\'][^"\']*ciba-global\.js)(?:[?#][^"\']*)?(["\'])',
-            r'\1?v=20261109-11\2',
+            r'\1?v=20261109-12\2',
             etiqueta_existente,
             flags=re.IGNORECASE,
         )
@@ -659,7 +659,7 @@ def _construir_en_tmp(
                 html = archivo_html.read_text(encoding="utf-8")
                 html_actualizado = re.sub(
                     r'(<script\b[^>]*\bsrc\s*=\s*["\'][^"\']*ciba-global\.js)(?:[?#][^"\']*)?(["\'][^>]*>)',
-                    r'\1?v=20261109-11\2',
+                    r'\1?v=20261109-12\2',
                     html,
                     flags=re.IGNORECASE,
                 )
