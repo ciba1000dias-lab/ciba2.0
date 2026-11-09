@@ -51,7 +51,42 @@ def _iter_paginas(area_dir: Path):
     subdirs, _ = listar_directorios_seguros(area_dir, str(area_dir.name))
 
     for pag_dir in subdirs:
+        if pag_dir.name == "_paginas":
+            continue
         yield pag_dir
+
+
+def _copiar_paginas_estaticas(src: Path, tmp: Path) -> list[ValidationError]:
+    """Publica páginas auxiliares de CIBA sin convertirlas en artículos."""
+    errores: list[ValidationError] = []
+    raiz = src / "c" / "C1" / "_paginas"
+
+    if not raiz.exists() and not raiz.is_symlink():
+        return errores
+
+    ok, motivo = es_ruta_segura(src, raiz)
+    if not ok or not raiz.is_dir():
+        errores.append(ValidationError("content/c/C1/_paginas", "ruta", motivo or "no es carpeta"))
+        return errores
+
+    archivos, errs_walk = iterar_arbol_seguro(raiz)
+    errores.extend(errs_walk)
+
+    for archivo in archivos:
+        relativo = archivo.relative_to(raiz)
+        if archivo.name != "index.html":
+            errores.append(ValidationError(str(relativo), "página auxiliar", "solo se permite index.html"))
+            continue
+
+        destino = tmp / "c" / "C1" / relativo.parent
+        destino.mkdir(parents=True, exist_ok=True)
+
+        try:
+            shutil.copy2(archivo, destino / "index.html")
+        except OSError as exc:
+            errores.append(ValidationError(str(relativo), "página auxiliar", f"copia falló: {exc}"))
+
+    return errores
 
 
 def _preparar(tmp: Path) -> None:
@@ -477,6 +512,9 @@ def _construir_en_tmp(
     # Copiar los recursos compartidos del proyecto.
     errs_assets = _copiar_assets(src.parent, tmp)
     errores.extend(errs_assets)
+
+    # Páginas auxiliares (bibliotecas y herramientas) fuera del catálogo editorial.
+    errores.extend(_copiar_paginas_estaticas(src, tmp))
 
     if errores:
         return errores
