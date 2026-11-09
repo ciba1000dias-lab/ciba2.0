@@ -10,17 +10,20 @@
     {
       "nombre": "Frutas",
       "archivo": "assets/data/alimentos/frutas.json",
-      "cantidad": 25
+      "cantidad": 25,
+      "slug": "frutas"
     },
     {
       "nombre": "Viandas",
       "archivo": "assets/data/alimentos/viandas.json",
-      "cantidad": 7
+      "cantidad": 7,
+      "slug": "viandas"
     },
     {
       "nombre": "Vegetales y hortalizas",
       "archivo": "assets/data/alimentos/vegetales.json",
-      "cantidad": 7
+      "cantidad": 7,
+      "slug": "vegetales"
     }
   ]
 }
