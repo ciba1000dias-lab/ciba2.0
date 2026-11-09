@@ -49,3 +49,53 @@
   .ciba-alimento-accesos{animation:none}
   .ciba-alimento-acceso{transition:none}
 }
+
+
+/* CIBA · ORDEN VISUAL DE LA BIBLIOTECA
+   Las fotografías disponibles aparecen primero. Los alimentos sin foto
+   permanecen accesibles, en una sección secundaria de nombres. */
+#ciba-alimentos-lista{display:block}
+#ciba-alimentos .ciba-alimentos-seccion{margin:24px 0 30px}
+#ciba-alimentos .ciba-alimentos-subtitulo{
+  margin:0 0 14px;
+  color:var(--noche);
+  font:normal 25px Georgia,serif;
+}
+#ciba-alimentos .ciba-alimentos-rejilla{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:15px;
+}
+#ciba-alimentos .ciba-alimentos-rejilla-otros{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+}
+#ciba-alimentos .ciba-alimento-sin-foto{
+  min-height:48px;
+  padding:11px 15px;
+  border:1px solid var(--linea);
+  border-radius:8px;
+  background:var(--papel);
+  color:var(--noche);
+  text-align:left;
+  cursor:pointer;
+}
+#ciba-alimentos .ciba-alimento-sin-foto .ciba-alimento-tarjeta-texto{
+  display:block;
+  padding:0;
+}
+#ciba-alimentos .ciba-alimento-sin-foto .ciba-alimento-tarjeta-texto strong{
+  font:600 15px Arial,Helvetica,sans-serif;
+}
+#ciba-alimentos .ciba-alimento-sin-foto:hover{
+  border-color:var(--verde);
+  background:#f0f3ec;
+}
+@media(max-width:600px){
+  #ciba-alimentos .ciba-alimentos-rejilla{grid-template-columns:1fr 1fr;gap:10px}
+  #ciba-alimentos .ciba-alimento-sin-foto{padding:10px 12px}
+}
+@media(max-width:390px){
+  #ciba-alimentos .ciba-alimentos-rejilla{grid-template-columns:1fr}
+}
