@@ -1,7 +1,7 @@
 {
   "version": 1,
   "titulo": "Índice de recetas externas para revisión CIBA",
-  "nota": "Índice documental de 97 recetas con páginas individuales verificadas del NHS y 32 entradas de First Steps Nutrition Trust. Se han cotejado preliminarmente 46 páginas NHS a nivel individual y las 32 entradas de First Steps a partir del recetario PDF. La edad fuente no equivale a aprobación CIBA. Todas las entradas permanecen deshabilitadas hasta adaptación al contexto cubano y aprobación profesional. No se copian instrucciones ni cantidades.",
+  "nota": "Índice documental de 97 páginas NHS y 32 entradas First Steps. 54 fichas NHS tienen anotaciones preliminares individuales; 32 de 32 entradas First Steps tienen observaciones preliminares. Parte de las anotaciones se basa en los ingredientes resumidos del índice y no sustituye el cotejo de la receta completa, cantidades, método ni revisión profesional. Todas las entradas permanecen deshabilitadas para publicación y recomendación automática.",
   "fuentes": [
     {
       "id": "nhs-best-start-97",
@@ -1956,7 +1956,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Ficha indexada para 7–9 meses; res, tomate, espinaca, arroz y guisantes. Esta anotación usa los ingredientes del índice; falta cotejar cantidades y método completos de la página.",
+          "Carne completamente cocida, muy tierna y finamente desmenuzada; guisantes aplastados; arroz húmedo; revisar sal/caldo y condimentos del curry."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-blueberry-porridge",
@@ -1975,7 +1984,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Ficha indexada para 7–9 meses; avena, leche, banana, frutos rojos y yogur. Ingredientes resumidos del índice; receta completa pendiente de cotejo.",
+          "Avena bien cocida y textura húmeda; frutos rojos aplastados o triturados, nunca enteros y firmes; lácteos pasteurizados y sin azúcar añadida."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-fruity-porridge",
@@ -1994,7 +2012,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Ficha indexada para 10–12 meses; avena, leche, banana, frutos rojos y yogur. Ingredientes resumidos del índice; receta completa pendiente de cotejo.",
+          "Cocer avena hasta blanda; aplastar frutas y frutos rojos; lácteos pasteurizados, sin azúcar añadida; comprobar que no haya trozos firmes."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-tuna-mayo-jackets",
@@ -2014,7 +2041,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Ficha indexada para 7–9 meses; papa, atún, mayonesa, yogur, zanahoria y pepino. Ingredientes resumidos del índice; especie de atún no especificada.",
+          "No recomendar hasta identificar especie de atún y establecer frecuencia por mercurio; usar mayonesa pasteurizada, revisar sodio, papa blanda y vegetales cocidos/adaptados."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-broccoli-puree",
@@ -2030,7 +2066,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Ficha indexada desde 6 meses; brócoli como ingrediente principal. El índice no aporta cantidades ni método detallado.",
+          "Cocer hasta muy blando y triturar/aplastar según habilidades; no añadir sal; ajustar consistencia sin desplazar leche materna o fórmula."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-cheesy-toast-cucumber",
@@ -2049,7 +2094,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Ficha indexada desde 6 meses; pan integral, queso crema y pepino. Ingredientes resumidos del índice; receta completa pendiente de cotejo.",
+          "Revisar sodio del queso crema; pan tostado seco y pepino crudo firme pueden ser difíciles o peligrosos: modificar humedad, corte y textura según desarrollo; no ofrecer bastones duros."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-crustless-mini-quiche",
@@ -2068,7 +2122,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Ficha indexada desde 6 meses; huevo, leche, cebollino, pimiento y tomate. Ingredientes resumidos del índice; receta completa pendiente de cotejo.",
+          "Huevo completamente cuajado en el centro; leche pasteurizada; vegetales blandos y picados; revisar sodio de cualquier queso o condimento adicional."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-chicken-noodles",
@@ -2087,7 +2150,16 @@
       ],
       "estado": "pendiente_cotejo_individual",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "revision_preliminar_con_alertas",
+        "hallazgos": [
+          "Ficha indexada para 7–9 meses; pollo, zanahoria, maíz y fideos de huevo. Ingredientes resumidos del índice; receta completa pendiente de cotejo.",
+          "Pollo totalmente cocido y desmenuzado; zanahoria muy blanda; maíz aplastado o triturado y fideos cortados; evitar caldo concentrado/sal."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "nhs-pasta-bolognese",
