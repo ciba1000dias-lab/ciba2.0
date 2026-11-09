@@ -1,0 +1,365 @@
+{
+  "version": 1,
+  "proyecto": "CIBA · ¿Qué cocino hoy?",
+  "estado_catalogo": "piloto_en_revision",
+  "nota": "Estas preparaciones son borradores culinarios originales para revisión editorial y nutricional. No se habilitan para recomendaciones automáticas hasta completar la revisión especializada y las pruebas de seguridad.",
+  "tramos_edad": [
+    "6-8",
+    "9-11",
+    "12-23",
+    "24-59"
+  ],
+  "recetas": [
+    {
+      "id": "pure-calabaza-natural",
+      "nombre": "Puré espeso de calabaza",
+      "descripcion": "Preparación sencilla de un solo alimento para comenzar a explorar la textura de la calabaza.",
+      "estado": "revision_especializada_pendiente",
+      "publicable": false,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "calabaza",
+          "cantidad": "1/2",
+          "unidad": "taza de calabaza cocida",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar la calabaza bajo agua potable.",
+        "Retirar cáscara, semillas y partes dañadas.",
+        "Cocinar al vapor o hervir en agua potable hasta que se deshaga fácilmente al presionarla con un tenedor.",
+        "Aplastar y añadir pequeñas cantidades de agua potable de cocción si hace falta para ajustar la consistencia."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Textura homogénea, espesa y suave; sin trozos, fibras duras ni semillas.",
+        "9-11": "Aplastar muy bien; se pueden dejar grumos blandos pequeños si el bebé ya los maneja.",
+        "12-23": "Ofrecer aplastada o en trozos muy blandos y pequeños, según sus habilidades.",
+        "24-59": "Ofrecer bien cocida y blanda, en tamaño adecuado a la capacidad de masticar."
+      },
+      "alergenos": [],
+      "alertas": [
+        "Confirmar que el niño está preparado para la alimentación complementaria.",
+        "No añadir sal, azúcar, miel, cubitos de caldo ni condimentos concentrados.",
+        "Supervisar siempre mientras come y mantenerlo sentado."
+      ],
+      "ingredientes_nuevos": "Si la calabaza es nueva para el niño, ofrecerla sola en una ocasión inicial y observar tolerancia; no estrenar varios alimentos a la vez.",
+      "conservacion": "No se establece tiempo de conservación en este borrador. Preparar fresco y no reutilizar restos que hayan estado en contacto con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "unicef-cuba-2020"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "pendiente_de_revision_especializada",
+        "nota": "Validar receta, cantidades orientativas y adecuación por etapa antes de publicar."
+      }
+    },
+    {
+      "id": "boniato-pollo-majado",
+      "nombre": "Boniato majado con pollo",
+      "descripcion": "Combinación sencilla de vianda y pollo completamente cocido, con textura ajustable.",
+      "estado": "revision_especializada_pendiente",
+      "publicable": false,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "boniato",
+          "cantidad": "1/2",
+          "unidad": "taza de boniato cocido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "pollo",
+          "cantidad": "30",
+          "unidad": "gramos de pollo cocido, sin piel ni huesos",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Lavar el boniato, pelarlo y cortarlo en piezas uniformes.",
+        "Cocinar el boniato en agua potable hasta que esté muy blando.",
+        "Cocinar el pollo completamente, sin lavar la carne cruda y evitando el contacto de sus jugos con otros alimentos.",
+        "Comprobar con termómetro que el centro del pollo alcance 74 °C (165 °F).",
+        "Retirar piel, grasa visible y cualquier hueso; desmenuzar el pollo muy fino.",
+        "Aplastar el boniato y mezclar con el pollo. Ajustar la humedad con un poco de agua potable."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta lograr una preparación húmeda, homogénea y espesa; no dejar hebras ni trozos de pollo.",
+        "9-11": "Aplastar el boniato y desmenuzar el pollo en partículas muy finas y húmedas.",
+        "12-23": "Servir húmedo, con pollo muy tierno y trozos blandos pequeños, adecuados a las habilidades.",
+        "24-59": "Servir en trozos pequeños y tiernos; retirar cualquier hueso o cartílago."
+      },
+      "alergenos": [],
+      "alertas": [
+        "Pollo completamente cocido: 74 °C en el centro.",
+        "Evitar contaminación cruzada entre pollo crudo y alimentos listos para comer.",
+        "No añadir sal, cubitos de caldo ni embutidos.",
+        "Supervisar la comida y adaptar la textura a las habilidades reales."
+      ],
+      "ingredientes_nuevos": "El boniato y el pollo deben haberse ofrecido por separado y tolerado antes de combinarlos.",
+      "conservacion": "No se establece tiempo de conservación en este borrador. Refrigerar pronto en recipiente limpio si no se consume de inmediato; desechar restos que hayan tocado saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "cdc-pollo-seguro"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "pendiente_de_revision_especializada",
+        "nota": "Validar cantidad de pollo, textura y tamaño de lote antes de publicar."
+      }
+    },
+    {
+      "id": "arroz-calabaza-pollo-meloso",
+      "nombre": "Arroz meloso con calabaza y pollo",
+      "descripcion": "Preparación húmeda inspirada en la cocina familiar cubana, sin cubitos ni embutidos.",
+      "estado": "revision_especializada_pendiente",
+      "publicable": false,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "arroz",
+          "cantidad": "1/4",
+          "unidad": "taza de arroz bien cocido",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "calabaza",
+          "cantidad": "1/4",
+          "unidad": "taza de calabaza cocida",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "pollo",
+          "cantidad": "30",
+          "unidad": "gramos de pollo cocido, sin piel ni huesos",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Cocinar el arroz con agua potable hasta que esté muy blando y húmedo.",
+        "Cocinar la calabaza sin cáscara ni semillas hasta que se aplaste fácilmente.",
+        "Cocinar el pollo completamente y comprobar 74 °C en el centro.",
+        "Retirar piel, grasa visible y todos los huesos; desmenuzar muy fino.",
+        "Mezclar los tres ingredientes y aplastar o triturar según la etapa. Añadir agua potable si queda seco."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta una textura espesa, homogénea y húmeda; no dejar granos duros ni hebras de pollo.",
+        "9-11": "Aplastar y mantener grumos muy blandos; pollo desmenuzado finamente.",
+        "12-23": "Servir húmedo, con los ingredientes blandos y en tamaños que pueda manejar.",
+        "24-59": "Servir como arroz meloso familiar, con ingredientes tiernos y sin huesos."
+      },
+      "alergenos": [],
+      "alertas": [
+        "Introducir por separado y tolerar cada ingrediente antes de combinarlos.",
+        "No añadir sal, azúcar, miel, cubitos concentrados ni embutidos.",
+        "El arroz debe quedar húmedo, no seco ni compacto.",
+        "Supervisar al niño mientras come."
+      ],
+      "ingredientes_nuevos": "No utilizar como primera exposición simultánea a arroz, calabaza y pollo; ofrecer cada uno por separado previamente.",
+      "conservacion": "No se establece tiempo de conservación en este borrador. Preparar pequeñas cantidades y refrigerar pronto lo que no se haya servido.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento",
+        "cdc-pollo-seguro"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "pendiente_de_revision_especializada",
+        "nota": "Revisar exposición al arroz, cantidades y consistencia antes de publicar."
+      }
+    },
+    {
+      "id": "crema-frijol-calabaza",
+      "nombre": "Crema espesa de frijol negro y calabaza",
+      "descripcion": "Mezcla de legumbre y vegetal, inspirada en ingredientes cotidianos de la cocina cubana.",
+      "estado": "revision_especializada_pendiente",
+      "publicable": false,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "frijol-negro",
+          "cantidad": "2",
+          "unidad": "cucharadas de frijoles completamente cocidos",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "calabaza",
+          "cantidad": "1/4",
+          "unidad": "taza de calabaza cocida",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Revisar, lavar y cocinar los frijoles en agua potable hasta que estén completamente blandos y se aplasten con facilidad.",
+        "Cocinar la calabaza sin cáscara ni semillas hasta que esté muy blanda.",
+        "Triturar ambos ingredientes hasta obtener una crema húmeda. Pasar por colador si quedan pieles duras.",
+        "No utilizar frijoles crudos, poco cocidos ni granos enteros para lactantes."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Crema lisa, espesa y homogénea; sin pieles ni granos enteros.",
+        "9-11": "Aplastar muy bien; solo dejar pequeños grumos blandos si el niño los maneja.",
+        "12-23": "Servir aplastado y húmedo; evitar granos enteros si no los mastica con seguridad.",
+        "24-59": "Servir los frijoles bien cocidos y blandos; ajustar tamaño a la masticación."
+      },
+      "alergenos": [
+        "legumbres"
+      ],
+      "alertas": [
+        "Los frijoles deben estar completamente cocidos y aplastados; los granos enteros son riesgo de atragantamiento.",
+        "No añadir sal, tocino, chorizo, jamonada ni cubitos concentrados.",
+        "Supervisar siempre mientras come."
+      ],
+      "ingredientes_nuevos": "Frijol y calabaza deben haberse introducido por separado y tolerado antes de mezclarlos.",
+      "conservacion": "No se establece tiempo de conservación en este borrador. Enfriar y refrigerar pronto en recipiente limpio; no guardar restos que hayan tocado saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "pendiente_de_revision_especializada",
+        "nota": "Revisar tolerancia individual, consistencia y cantidad de legumbre antes de publicar."
+      }
+    },
+    {
+      "id": "lentejas-boniato-majado",
+      "nombre": "Lentejas con boniato majado",
+      "descripcion": "Preparación de legumbre y vianda que puede servirse muy blanda y húmeda.",
+      "estado": "revision_especializada_pendiente",
+      "publicable": false,
+      "edad_minima_meses": 6,
+      "edad_maxima_meses": 59,
+      "tramos_edad": [
+        "6-8",
+        "9-11",
+        "12-23",
+        "24-59"
+      ],
+      "ingredientes": [
+        {
+          "alimento_id": "lentejas",
+          "cantidad": "2",
+          "unidad": "cucharadas de lentejas completamente cocidas",
+          "obligatorio": true
+        },
+        {
+          "alimento_id": "boniato",
+          "cantidad": "1/4",
+          "unidad": "taza de boniato cocido",
+          "obligatorio": true
+        }
+      ],
+      "preparacion": [
+        "Revisar y lavar las lentejas; cocinarlas en agua potable hasta que estén muy blandas.",
+        "Pelar y cocinar el boniato hasta que se aplaste fácilmente.",
+        "Aplastar o triturar ambos ingredientes con un poco de agua potable hasta obtener una mezcla húmeda."
+      ],
+      "adaptacion_por_edad": {
+        "6-8": "Triturar hasta una crema espesa y lisa; no dejar lentejas enteras ni firmes.",
+        "9-11": "Aplastar muy bien; permitir grumos blandos pequeños solo si ya maneja esa textura.",
+        "12-23": "Servir bien aplastado y húmedo; evitar piezas firmes o secas.",
+        "24-59": "Servir las lentejas tiernas y el boniato blando, en tamaño adecuado."
+      },
+      "alergenos": [
+        "legumbres"
+      ],
+      "alertas": [
+        "No ofrecer lentejas crudas, duras ni poco cocidas.",
+        "No añadir sal, embutidos ni cubitos concentrados.",
+        "Supervisar al niño y adaptar la textura a sus habilidades."
+      ],
+      "ingredientes_nuevos": "Lentejas y boniato deben haberse introducido por separado y tolerado antes de combinarlos.",
+      "conservacion": "No se establece tiempo de conservación en este borrador. Refrigerar pronto en recipiente limpio y no reutilizar restos con saliva.",
+      "fuentes": [
+        "who-cf-2023",
+        "unicef-cuba-2020",
+        "cdc-introduccion",
+        "cdc-atragantamiento"
+      ],
+      "revision": {
+        "fecha": "2026-11-09",
+        "estado": "pendiente_de_revision_especializada",
+        "nota": "Revisar cantidad de legumbre y consistencias por etapa antes de publicar."
+      }
+    }
+  ],
+  "fuentes": [
+    {
+      "id": "who-cf-2023",
+      "institucion": "Organización Mundial de la Salud",
+      "titulo": "WHO Guideline for complementary feeding of infants and young children 6–23 months of age",
+      "fecha": "2023-10-16",
+      "url": "https://www.who.int/publications/i/item/9789240081864",
+      "uso": "Inicio de alimentación complementaria alrededor de los 6 meses, progresión de consistencias, variedad y alimentación responsiva."
+    },
+    {
+      "id": "unicef-cuba-2020",
+      "institucion": "UNICEF Cuba",
+      "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+      "fecha": "2020-12",
+      "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+      "uso": "Contexto alimentario cubano; variedad progresiva desde los 6 meses, carnes y pollo, higiene y no añadir sal ni azúcar."
+    },
+    {
+      "id": "cdc-introduccion",
+      "institucion": "Centers for Disease Control and Prevention",
+      "titulo": "When, What, and How to Introduce Solid Foods",
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+      "uso": "Preparación de frutas, vegetales, cereales, carnes y adaptación de textura."
+    },
+    {
+      "id": "cdc-atragantamiento",
+      "institucion": "Centers for Disease Control and Prevention",
+      "titulo": "Choking Hazards",
+      "fecha": "2026-03-11",
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+      "uso": "Prevención del atragantamiento, postura sentada, supervisión y preparación por textura y tamaño."
+    },
+    {
+      "id": "cdc-pollo-seguro",
+      "institucion": "Centers for Disease Control and Prevention",
+      "titulo": "Chicken and Food Poisoning",
+      "fecha": "2024-04-29",
+      "url": "https://www.cdc.gov/food-safety/foods/chicken.html",
+      "uso": "Cocción segura del pollo a 165 °F (74 °C), evitar contaminación cruzada y no lavar pollo crudo."
+    }
+  ]
+}
