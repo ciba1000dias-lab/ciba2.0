@@ -1,7 +1,7 @@
 {
   "version": 1,
   "titulo": "Índice de recetas externas para revisión CIBA",
-  "nota": "Índice documental de 97 páginas NHS y 32 entradas First Steps. 54 fichas NHS tienen anotaciones preliminares individuales; 32 de 32 entradas First Steps tienen observaciones preliminares. Parte de las anotaciones se basa en los ingredientes resumidos del índice y no sustituye el cotejo de la receta completa, cantidades, método ni revisión profesional. Todas las entradas permanecen deshabilitadas para publicación y recomendación automática.",
+  "nota": "Índice documental de 97 páginas NHS y 32 entradas First Steps. 70 fichas NHS tienen anotaciones preliminares individuales; 32 de 32 entradas First Steps tienen observaciones preliminares. Las anotaciones basadas en edad e ingredientes resumidos no sustituyen el cotejo de la receta completa, cantidades, método, textura ni revisión profesional. Todas las entradas permanecen deshabilitadas para publicación y recomendación automática.",
   "fuentes": [
     {
       "id": "nhs-best-start-97",
@@ -2364,9 +2364,20 @@
       "alertas_revision": [
         "Huevo totalmente cuajado; tomate cortado y muffin en textura segura."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume huevo, leche, tomate, champiñones y muffin; edad de origen: 7 meses.",
+          "Verificar cocción completa del huevo, pasteurización y tipo/cantidad de leche, textura blanda de vegetales y adaptación del muffin para evitar trozos secos o duros.",
+          "Revisar alérgenos huevo, leche y trigo. La ficha resumida no confirma cantidades ni método."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-root-vegetable-mash",
@@ -2409,9 +2420,20 @@
       "alertas_revision": [
         "Usa leche como ingrediente; no confundir con bebida láctea antes de 12 meses; maíz bien triturado."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume maíz, ajo, cebolla y leche entera; edad de origen: 6 meses.",
+          "Comprobar si el maíz se tritura o cuela: no ofrecer granos enteros duros. Cocinar bien los vegetales. La leche entera sería ingrediente, no bebida antes de 12 meses.",
+          "Revisar textura final, sodio de cualquier caldo y alérgeno leche; faltan cantidades y método."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-smashed-avocado-banana",
@@ -2425,9 +2447,20 @@
       "alertas_revision": [
         "Fruta madura y machacada; refrigerar y consumir pronto."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume aguacate y banana; edad de origen: 6 meses.",
+          "Usar fruta madura y textura aplastada, sin trozos duros ni piezas redondas/resbaladizas; ofrecer con el bebé sentado y supervisado.",
+          "Confirmar que no se añadan azúcar, miel u otros ingredientes no reflejados en el índice; método y cantidades pendientes."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-peachy-cereal",
@@ -2444,9 +2477,20 @@
       "alertas_revision": [
         "Usa leche entera como ingrediente; no confundir con bebida antes de 12 meses; melocotón blando."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume cereal de trigo, leche entera y melocotón; edad de origen: 7 meses.",
+          "Comprobar que el cereal esté bien hidratado y el melocotón maduro, blando y sin trozos duros. Leche entera solo como ingrediente, no como bebida antes de 12 meses.",
+          "Revisar introducción de trigo/gluten y leche como alérgenos; confirmar textura, cantidades y ausencia de azúcar añadido."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-falafel",
@@ -2463,9 +2507,20 @@
       "alertas_revision": [
         "Tahini contiene sésamo; garbanzos blandos y centro húmedo; no ofrecer bolas firmes."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume garbanzos, tahini, limón y ajo; edad de origen: 6 meses.",
+          "Garbanzos completamente cocidos y triturados; evitar bolas compactas, secas o duras. Diluir tahini para evitar una pasta espesa o pegajosa.",
+          "Revisar sésamo como alérgeno, forma real, sal añadida y método de cocción; no aprobar solo con ingredientes."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-vegetable-biryani",
@@ -2481,9 +2536,20 @@
       "alertas_revision": [
         "Garbanzos sin sal, blandos y aplastados; arroz y verduras bien cocidos."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume arroz, garbanzos, zanahoria, coliflor y guisantes; edad de origen: 7 meses.",
+          "Cocer arroz y legumbres hasta quedar muy blandos; aplastar garbanzos y guisantes, y cocinar zanahoria/coliflor hasta textura segura. Revisar especias, sal y caldo.",
+          "El arroz cocido requiere enfriamiento y conservación segura; verificar preparación, enfriado y recalentamiento. Cantidades y método pendientes."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-veggie-finger-foods",
@@ -2497,9 +2563,20 @@
       "alertas_revision": [
         "Servir muy blando, en forma adecuada a agarre y masticación."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice solo identifica brócoli y edad de origen de 6 meses; el título sugiere formato para agarrar, pero no confirma el corte.",
+          "Verificar que el brócoli esté cocido hasta muy tierno y que tallo/floretes tengan forma y tamaño adecuados al desarrollo; evitar piezas duras o pequeñas y sueltas. Supervisión continua.",
+          "Ingredientes resumidos insuficientes para revisar receta completa, cantidades, método y formato; no aprobar hasta consultar la página íntegra."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-apple-blueberry-stew",
@@ -2513,9 +2590,20 @@
       "alertas_revision": [
         "Cocinar fruta y bayas hasta ablandar; adaptar textura."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "El índice resume manzana y arándanos; edad de origen: 6 meses.",
+          "Cocinar la manzana hasta ablandarla por completo; aplastar o triturar los arándanos para evitar piezas redondas enteras. Comprobar textura homogénea y temperatura.",
+          "No añadir azúcar ni miel; verificar método, cantidades y textura final en la receta original."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true,
+        "alcance_revision": "Anotación preliminar basada únicamente en edad e ingredientes resumidos del índice; no equivale a cotejo de la receta completa."
+      }
     },
     {
       "id": "nhs-mixed-bean-hot-potato",
