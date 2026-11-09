@@ -23,7 +23,7 @@
 
   const home = root + 'index.html';
   const platform = root + 'plataforma/';
-  const accessUrl = root + 'plataforma/mi-cuenta/acceso/';
+  const accessUrl = root + 'plataforma/mi-cuenta/acceso/index.html';
   const profileUrl = root + 'plataforma/mi-cuenta/perfil/';
 
   app.innerHTML = `
