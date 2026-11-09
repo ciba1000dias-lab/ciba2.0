@@ -6,14 +6,17 @@
     "institucion": "Instituto Nacional de Salud del Perú",
     "titulo": "Recetario nutritivo para niñas y niños de 6 a 23 meses",
     "url": "https://repositorio.ins.gob.pe/items/a9bc0f90-55d8-4114-b3d7-10c1a43b59bf",
-    "pdf": "https://repositorio.ins.gob.pe/bitstreams/a5259856-0790-463b-9d90-932d410c0573/download",
+    "pdf": "https://cdn.www.gob.pe/uploads/document/file/4114920/CENAN-0005.pdf.pdf",
     "fecha_publicacion": "2023",
     "autoras": [
       "Rosa Victoria Salvatierra Ruiz",
       "Luz Melchorita Cárdenas Achata"
-    ]
+    ],
+    "edicion_documento": "Primera edición: junio de 2014. El registro institucional actual del INS figura publicado el 13 de febrero de 2023.",
+    "fecha_edicion_original": "2014-06",
+    "fecha_publicacion_repositorio": "2023-02-13"
   },
-  "nota": "Índice de 30 títulos extraídos del índice del documento oficial. No reproduce instrucciones ni cantidades. La edad por grupo refleja el índice de la fuente, no aprobación clínica individual. Todas las entradas están bloqueadas hasta revisión completa y adaptación al contexto cubano. Atención especial a hígado y vitamina A preformada, sangre de ave, pescado, alérgenos, texturas y seguridad alimentaria.",
+  "nota": "Índice de 30 recetas cotejadas contra el PDF institucional completo del INS. Se registran hallazgos preliminares individualizados para orientar adaptación; no constituyen aprobación clínica. Todas permanecen bloqueadas para recomendación automática y publicación hasta revisión por profesional de nutrición pediátrica. No copiar instrucciones extensas; enlazar la fuente.",
   "recetas": [
     {
       "id": "ins-peru-purecito-verde",
@@ -26,9 +29,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Habas y papa cocidas y trituradas; comprobar textura espesa y homogénea.",
+          "La receta añade leche evaporada: revisar sustitución según alimentación láctea del bebé y criterio pediátrico."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-zapallito-feliz",
@@ -41,9 +53,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Calabaza y papa cocidas; textura espesa.",
+          "Incluye leche evaporada; adaptar el componente lácteo y validar cantidades."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-purecito-moreno",
@@ -56,9 +77,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "bloqueo_especializado",
+        "hallazgos": [
+          "Contiene hígado de pollo; la tabla declara 3457,6 µg de retinol por ración.",
+          "No habilitar hasta evaluación especializada de vitamina A preformada, porción y frecuencia."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-mazamorra-primaveral",
@@ -71,9 +101,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Camote cocido y majado.",
+          "Incluye leche evaporada; revisar sustitución y densidad nutricional."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-flan-de-zapallo",
@@ -86,9 +125,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_reformulacion",
+        "hallazgos": [
+          "Incluye azúcar añadida y leche evaporada.",
+          "No usar como está; retirar azúcar añadida y revisar ingrediente lácteo, textura y aporte."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-suavecito-de-higado",
@@ -103,9 +151,18 @@
         "La fuente incluye preparaciones con hígado en esta etapa; revisar el contenido de vitamina A preformada y la frecuencia de consumo. No recomendar repetidamente ni de forma automática.",
         "Revisar además que la cantidad de hígado no exceda la recomendación apropiada para lactantes."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "bloqueo_especializado",
+        "hallazgos": [
+          "Contiene hígado; la tabla declara 1065 µg de retinol por ración.",
+          "Requiere evaluación especializada de vitamina A preformada, cantidad y frecuencia."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-mazamorra-de-zanahoria",
@@ -118,9 +175,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Zanahoria cocida/licuada y espesada con maicena.",
+          "Incluye leche evaporada; revisar sustitución y evitar convertirla en preparación predominantemente líquida."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-mazamorra-peruanita",
@@ -133,9 +199,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_revision_de_alergenos",
+        "hallazgos": [
+          "Harina de siete semillas y leche evaporada.",
+          "Identificar semillas concretas y alérgenos; no recomendar sin composición exacta y sustitución láctea apropiada."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-purecito-arveja-higado",
@@ -150,9 +225,18 @@
         "La fuente incluye preparaciones con hígado en esta etapa; revisar el contenido de vitamina A preformada y la frecuencia de consumo. No recomendar repetidamente ni de forma automática.",
         "Revisar además que la cantidad de hígado no exceda la recomendación apropiada para lactantes."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "bloqueo_especializado",
+        "hallazgos": [
+          "Contiene hígado; la tabla declara 1602 µg de retinol por ración.",
+          "Requiere evaluación especializada de vitamina A preformada, cantidad y frecuencia."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-pure-brillante",
@@ -165,9 +249,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_adaptacion",
+        "hallazgos": [
+          "Contiene yema de huevo, leche evaporada y sal añadida.",
+          "Retirar sal añadida; revisar ingrediente lácteo, alergia al huevo y cocción completa."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-higado-primaveral",
@@ -181,9 +274,18 @@
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
         "La fuente incluye preparaciones con hígado en esta etapa; revisar el contenido de vitamina A preformada y la frecuencia de consumo. No recomendar repetidamente ni de forma automática."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "bloqueo_especializado",
+        "hallazgos": [
+          "Contiene hígado; la tabla declara 3698,5 µg de retinol por ración y añade sal.",
+          "No habilitar; evaluación especializada de vitamina A preformada y reformulación sin sal."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-ajiaco-jardinera",
@@ -196,9 +298,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "bloqueo_especializado",
+        "hallazgos": [
+          "La preparación incorpora hígado en el procedimiento, aunque la lista de ingredientes no lo cuantifica; también contiene queso, leche evaporada y sal.",
+          "Inconsistencia entre ingredientes y preparación; aclarar receta, cuantificar hígado y evaluar retinol, sodio y lácteos."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-zapallito-con-chispas",
@@ -211,9 +322,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_adaptacion",
+        "hallazgos": [
+          "Habas, papa y calabaza cocidas; añade sal y leche evaporada.",
+          "Reformular sin sal añadida; revisar lácteo y textura de habas/papa."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-fideos-morenada",
@@ -226,9 +346,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "bloqueo_especializado",
+        "hallazgos": [
+          "Contiene hígado; la tabla declara 3590,1 µg de retinol por ración y añade sal.",
+          "No habilitar sin revisión especializada de vitamina A preformada, porción y frecuencia; retirar sal."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-espesito-higado",
@@ -242,9 +371,18 @@
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
         "La fuente incluye preparaciones con hígado en esta etapa; revisar el contenido de vitamina A preformada y la frecuencia de consumo. No recomendar repetidamente ni de forma automática."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "bloqueo_especializado",
+        "hallazgos": [
+          "Contiene hígado; la tabla declara 3390,8 µg de retinol por ración y añade sal.",
+          "No habilitar sin revisión especializada de vitamina A preformada, porción y frecuencia; retirar sal."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-tallarincitos-rojos",
@@ -257,9 +395,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_validacion_de_seguridad",
+        "hallazgos": [
+          "Contiene sangrecita de pollo y sal; la tabla declara 16,1 mg de hierro por ración.",
+          "Verificar procedencia sanitaria, cadena de frío, cocción completa, porción y textura; no presentar como tratamiento de anemia."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-aji-pescado",
@@ -273,9 +420,18 @@
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
         "Las preparaciones de pescado requieren identificar especie, mercurio, espinas, cocción completa y alérgeno pescado."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_revision_de_pescado_y_alergenos",
+        "hallazgos": [
+          "No identifica especie de pescado; contiene pan, leche evaporada y sal.",
+          "Identificar especie y mercurio, retirar espinas, asegurar cocción completa y revisar alérgenos/tratamiento lácteo."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-rayitos-sol",
@@ -288,9 +444,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_adaptacion",
+        "hallazgos": [
+          "Contiene huevo, leche evaporada y sal añadida.",
+          "Retirar sal; revisar alérgeno huevo, cocción completa y sustitución láctea."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-sudadito-pescado",
@@ -304,9 +469,18 @@
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
         "Las preparaciones de pescado requieren identificar especie, mercurio, espinas, cocción completa y alérgeno pescado."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_revision_de_pescado_y_alergenos",
+        "hallazgos": [
+          "No identifica especie de pescado; contiene sal añadida.",
+          "Identificar especie y mercurio, retirar espinas, asegurar cocción completa y reformular sin sal."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-sangrecita-italiana",
@@ -320,9 +494,18 @@
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
         "Las preparaciones con sangrecita requieren confirmar procedencia sanitaria, manipulación higiénica y cocción completa; no extrapolar su aporte de hierro como indicación terapéutica."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_validacion_de_seguridad",
+        "hallazgos": [
+          "Contiene sangrecita de pollo y sal añadida.",
+          "Verificar procedencia sanitaria, cadena de frío, manipulación y cocción completa; no presentarla como tratamiento de anemia."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-mix-verduras",
@@ -335,9 +518,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_adaptacion_de_textura",
+        "hallazgos": [
+          "Incluye pollo, choclo, arvejas, pan rallado, pasas y sal.",
+          "Revisar dureza/tamaño del maíz, arvejas y pasas; adaptar textura, cocinar bien y retirar sal."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-solterito-lentejitas",
@@ -350,9 +542,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_adaptacion",
+        "hallazgos": [
+          "Incluye lentejas, pollo, brócoli, queso, papa y sal.",
+          "Adaptar tamaño y textura; revisar sodio del queso y retirar sal añadida."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-tortilla-brillante",
@@ -365,9 +566,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "bloqueo_especializado",
+        "hallazgos": [
+          "Contiene hígado y huevo; la tabla declara 3541,1 µg de retinol por ración; preparación frita y con sal.",
+          "Requiere evaluación especializada de vitamina A preformada; revisar alérgenos, cocción y técnica, sin sal añadida."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-fiesta-verduras",
@@ -380,9 +590,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_adaptacion_de_textura",
+        "hallazgos": [
+          "Incluye pollo, brócoli, zanahoria, choclo, arroz y sal.",
+          "Asegurar pollo completamente cocido; adaptar choclo y vegetales para evitar atragantamiento; retirar sal."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-higado-salsa-verde",
@@ -396,9 +615,18 @@
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
         "La fuente incluye preparaciones con hígado en esta etapa; revisar el contenido de vitamina A preformada y la frecuencia de consumo. No recomendar repetidamente ni de forma automática."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "bloqueo_especializado",
+        "hallazgos": [
+          "Contiene dos hígados de pollo; la tabla declara 5972,5 µg de retinol por ración y usa fritura.",
+          "No habilitar; cantidad y retinol requieren evaluación especializada. Reformular técnica y retirar sal."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-pure-yuca-higado-arroz",
@@ -412,9 +640,18 @@
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
         "La fuente incluye preparaciones con hígado en esta etapa; revisar el contenido de vitamina A preformada y la frecuencia de consumo. No recomendar repetidamente ni de forma automática."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "bloqueo_especializado",
+        "hallazgos": [
+          "Contiene hígado; la tabla declara 2952 µg de retinol por ración; incluye sal y fritura.",
+          "No habilitar sin revisión especializada de vitamina A preformada; revisar yuca bien cocida, retirar hebras y reformular."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-pollo-brocoli-arroz",
@@ -427,9 +664,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "candidata_a_adaptacion",
+        "hallazgos": [
+          "Pollo, brócoli y arroz; ingredientes habituales y combinación de grupos alimentarios.",
+          "Asegurar cocción completa del pollo, textura/tamaño adecuados y retirar sal añadida."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-torrejita-antianemica",
@@ -442,9 +688,18 @@
       "alertas_revision": [
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_revision_especializada",
+        "hallazgos": [
+          "Contiene bazo, huevo, trigo y fritura; la denominación sugiere una finalidad terapéutica.",
+          "No usar el nombre ni atribuir prevención/tratamiento de anemia; revisar víscera, alérgenos, cocción y textura."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-trigo-jardinera-higado",
@@ -458,9 +713,18 @@
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
         "La fuente incluye preparaciones con hígado en esta etapa; revisar el contenido de vitamina A preformada y la frecuencia de consumo. No recomendar repetidamente ni de forma automática."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "bloqueo_especializado",
+        "hallazgos": [
+          "Contiene hígado; la tabla declara 2619,7 µg de retinol por ración y añade sal.",
+          "No habilitar sin revisión especializada de vitamina A preformada, cantidad y frecuencia."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     },
     {
       "id": "ins-peru-chaufa-sangrecita",
@@ -474,9 +738,18 @@
         "Entrada documental: verificar ingredientes completos, cantidades, técnica, textura y aporte nutricional en la página individual antes de adaptar o recomendar.",
         "Las preparaciones con sangrecita requieren confirmar procedencia sanitaria, manipulación higiénica y cocción completa; no extrapolar su aporte de hierro como indicación terapéutica."
       ],
-      "estado": "pendiente_cotejo_individual",
+      "estado": "pendiente_revision_profesional",
       "publicable": false,
-      "recomendacion_automatica": false
+      "recomendacion_automatica": false,
+      "revision_preliminar_ciba": {
+        "estado": "requiere_validacion_de_seguridad",
+        "hallazgos": [
+          "Contiene sangrecita, huevo, arroz y sal; la tabla declara 31,8 mg de hierro por ración.",
+          "Verificar procedencia y cocción completa de sangrecita y huevo; revisar textura y sodio; no presentarla como tratamiento de anemia."
+        ],
+        "decision": "no_aprobada_no_publicable",
+        "requiere_revision_profesional": true
+      }
     }
   ]
 }
