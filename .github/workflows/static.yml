@@ -28,6 +28,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Instalar herramienta de imágenes
+        run: python -m pip install --disable-pip-version-check "Pillow==11.3.0"
+
       - name: Ejecutar pruebas
         run: python -m unittest discover -s tests -t . -v
 
@@ -36,6 +39,9 @@ jobs:
 
       - name: Construir sitio
         run: python scripts/build_catalog.py --src content --out dist
+
+      - name: Optimizar fotografías piloto a WebP
+        run: python scripts/optimize_alimento_images.py --src dist --pilot
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
