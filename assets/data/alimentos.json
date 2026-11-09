@@ -20,7 +20,7 @@
     {
       "nombre": "Vegetales y hortalizas",
       "archivo": "assets/data/alimentos/vegetales.json",
-      "cantidad": 2
+      "cantidad": 7
     }
   ]
 }
