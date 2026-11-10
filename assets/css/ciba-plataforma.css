@@ -48,3 +48,12 @@
 .enlace-recomendado-contenido dd{margin:0;color:var(--ciba-cacao);font-size:11px;line-height:1.5}
 .enlace-recomendado-contenido>a{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:9px 12px;border-radius:9px;background:#493a32;color:#fff8eb;font-size:10px;font-weight:800}
 @media(max-width:640px){.recurso-card{padding:0}.recurso-vista{height:126px}.recurso-card .recurso-meta{margin-top:14px}.enlace-recomendado-card{grid-template-columns:92px minmax(0,1fr)}.enlace-identidad{min-height:100%;padding:12px 6px}.enlace-identidad span{font-size:20px}.enlace-identidad small{font-size:7px}.enlace-recomendado-contenido{padding:14px}.enlace-recomendado-contenido h3{font-size:18px}.enlace-recomendado-meta span{font-size:8px}.enlace-recomendado-contenido dl div{grid-template-columns:64px minmax(0,1fr)}}
+
+/* Enlaces recomendados: miniaturas fotográficas reales */
+.enlace-recomendado-card{grid-template-columns: minmax(0,1fr)}
+.enlace-imagen{position:relative;display:block;overflow:hidden;width:100%;height:190px;background:#e8e1d4;text-decoration:none}
+.enlace-imagen img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.enlace-imagen:hover img{transform:scale(1.025)}
+.enlace-imagen>span{position:absolute;left:13px;bottom:12px;padding:7px 11px;border-radius:7px;background:rgba(35,55,48,.88);color:#fff;font:800 11px/1.2 system-ui,sans-serif;letter-spacing:.12em}
+.enlace-recomendado-contenido{padding:18px 20px 20px}
+@media(max-width:640px){.enlace-imagen{height:170px}.enlace-recomendado-card{grid-template-columns:minmax(0,1fr)}}
