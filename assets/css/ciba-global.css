@@ -966,6 +966,7 @@ html[data-ciba-espacio="amplio"] body p,
 html[data-ciba-espacio="amplio"] body li{
   line-height:1.9!important;
 }
+html[data-ciba-ancho="amplio"] main:not(.ciba-global-panel),
 html[data-ciba-ancho="amplio"] .plataforma-main,
 html[data-ciba-ancho="amplio"] main.ciba-contenido,
 html[data-ciba-ancho="amplio"] .ciba-articulo-contenido{
