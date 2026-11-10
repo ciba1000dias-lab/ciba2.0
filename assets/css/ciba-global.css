@@ -1212,3 +1212,68 @@ html[data-ciba-movimiento="reducido"] .ciba-global-grupo>.ciba-global-submenu:no
 html[data-ciba-movimiento="reducido"] .ciba-icono-vivo:is(:hover,:focus-visible,:active){
   transform:none!important;filter:none!important;
 }
+
+
+/* CIBA · MICROINTERACCIONES TÁCTILES
+   En pantallas táctiles se evita el hover persistente y se prioriza una respuesta breve al toque.
+*/
+@media (hover:none) and (pointer:coarse){
+  :is(a,button,[role="button"],.plataforma-card,.comunidad-join-card,
+  .plataforma-nota,.plataforma-estado,.recurso-card,.multimedia-card,
+  .red-social-card):hover:not(:focus-visible) .ciba-icono-vivo{
+    transform:none;
+    filter:none;
+  }
+  :is(a,button,[role="button"]):active .ciba-icono-vivo{
+    transform:scale(.94);
+    filter:drop-shadow(0 2px 3px rgba(198,155,82,.16));
+  }
+  .ciba-icono-vivo:hover:not(:focus-visible){
+    transform:none;
+    filter:none;
+  }
+  .ciba-icono-vivo:active{
+    transform:scale(.94);
+    filter:drop-shadow(0 2px 3px rgba(198,155,82,.16));
+  }
+  .ciba-global-menu-boton:hover:not(:focus-visible),
+  .ciba-global-enlace:hover:not(:focus-visible),
+  .ciba-pie-enlace:hover:not(:focus-visible){
+    transform:none;
+    box-shadow:none;
+  }
+  .ciba-global-desplegable-control:hover:not(:focus-visible)::after{
+    border-color:inherit;
+  }
+  .plataforma-card:hover:not(:focus-visible) .plataforma-card-icon,
+  .plataforma-nota:hover:not(:focus-visible) .plataforma-nota-icon,
+  .comunidad-join-card:hover:not(:focus-visible) .comunidad-join-icon{
+    transform:none;
+    box-shadow:none;
+  }
+  .ciba-global-menu-boton:active,
+  .ciba-global-enlace:active,
+  .ciba-pie-enlace:active{
+    transform:scale(.98);
+  }
+}
+@media (hover:none) and (pointer:coarse) and (prefers-reduced-motion:reduce){
+  :is(a,button,[role="button"]):active .ciba-icono-vivo,
+  .ciba-icono-vivo:active,
+  .ciba-global-menu-boton:active,
+  .ciba-global-enlace:active,
+  .ciba-pie-enlace:active{
+    transform:none!important;
+    filter:none!important;
+    box-shadow:none!important;
+  }
+}
+html[data-ciba-movimiento="reducido"] :is(a,button,[role="button"]):active .ciba-icono-vivo,
+html[data-ciba-movimiento="reducido"] .ciba-icono-vivo:active,
+html[data-ciba-movimiento="reducido"] .ciba-global-menu-boton:active,
+html[data-ciba-movimiento="reducido"] .ciba-global-enlace:active,
+html[data-ciba-movimiento="reducido"] .ciba-pie-enlace:active{
+  transform:none!important;
+  filter:none!important;
+  box-shadow:none!important;
+}
