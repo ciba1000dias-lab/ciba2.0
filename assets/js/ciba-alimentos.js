@@ -242,37 +242,37 @@
           const datosVideo = typeof alimento.video_youtube === 'string'
             ? { url: alimento.video_youtube }
             : alimento.video_youtube;
-          const video = crear('section', 'ciba-alimento-video');
+          const video = crear('div', 'ciba-alimento-video');
           video.id = 'alimento-' + alimento.id + '--video';
-          video.tabIndex = -1;
-          video.style.scrollMarginTop = '110px';
-          video.appendChild(crear('h4', '', 'Video relacionado'));
-          if (datosVideo.titulo) video.appendChild(crear('p', 'ciba-alimento-video-titulo', datosVideo.titulo));
-          if (datosVideo.canal) video.appendChild(crear('p', 'ciba-alimento-video-canal', datosVideo.canal + (datosVideo.formato ? ' · ' + datosVideo.formato : '')));
           const enlaceVideo = crear('a', 'ciba-alimento-video-enlace');
           enlaceVideo.href = datosVideo.url;
           enlaceVideo.target = '_blank';
           enlaceVideo.rel = 'noopener noreferrer';
-          enlaceVideo.setAttribute('aria-label', 'Reproducir en YouTube: ' + (datosVideo.titulo || alimento.nombre));
-          let miniatura = datosVideo.miniatura || '';
-          if (!miniatura) {
-            const coincidencia = datosVideo.url.match(/(?:youtu\.be\/|youtube\.com\/(?:shorts\/|watch\?v=))([\w-]{11})/);
-            if (coincidencia) miniatura = 'https://img.youtube.com/vi/' + coincidencia[1] + '/hqdefault.jpg';
-          }
-          if (miniatura) {
-            const imagenVideo = document.createElement('img');
-            imagenVideo.src = miniatura;
-            imagenVideo.alt = 'Miniatura del video: ' + (datosVideo.titulo || alimento.nombre);
-            imagenVideo.loading = 'lazy';
-            imagenVideo.decoding = 'async';
-            imagenVideo.width = 480;
-            imagenVideo.height = 360;
-            enlaceVideo.appendChild(imagenVideo);
-          }
-          const botonVideo = crear('span', 'ciba-alimento-video-boton', '▶ Reproducir en YouTube');
-          enlaceVideo.appendChild(botonVideo);
+          enlaceVideo.setAttribute('aria-label', 'Ver vídeo en YouTube sobre ' + alimento.nombre);
+
+          const logoYouTube = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+          logoYouTube.setAttribute('viewBox', '0 0 32 23');
+          logoYouTube.setAttribute('width', '32');
+          logoYouTube.setAttribute('height', '23');
+          logoYouTube.setAttribute('aria-hidden', 'true');
+          logoYouTube.setAttribute('focusable', 'false');
+
+          const fondoLogo = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+          fondoLogo.setAttribute('x', '1');
+          fondoLogo.setAttribute('y', '1');
+          fondoLogo.setAttribute('width', '30');
+          fondoLogo.setAttribute('height', '21');
+          fondoLogo.setAttribute('rx', '6');
+          fondoLogo.setAttribute('fill', '#FF0033');
+
+          const playLogo = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+          playLogo.setAttribute('d', 'M13 7.2 21 11.5 13 15.8Z');
+          playLogo.setAttribute('fill', '#FFFFFF');
+
+          logoYouTube.append(fondoLogo, playLogo);
+          enlaceVideo.append(logoYouTube);
+          enlaceVideo.appendChild(crear('span', '', 'Ver vídeo'));
           video.appendChild(enlaceVideo);
-          if (datosVideo.descripcion) video.appendChild(crear('p', 'ciba-alimento-video-descripcion', datosVideo.descripcion));
           detalle.appendChild(video);
         }
 
