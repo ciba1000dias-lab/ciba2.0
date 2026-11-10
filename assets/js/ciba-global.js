@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-36', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-37', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -883,8 +883,37 @@
     });
   }
 
+
+  // Microinteracciones ligeras para la iconografía de toda la plataforma.
+  // No descarga bibliotecas ni imágenes externas; también cubre componentes dinámicos.
+  function activarMicrointeraccionesIconos() {
+    const selector = [
+      '[class*="icon"]', '[class*="Icon"]', '[class*="ico"]',
+      '[class*="simbolo"]', '[class*="espiral"]', '[class*="oraculo"]',
+      '.plataforma-estado i', '.ciba-global-letra',
+      'a svg', 'button svg', '[role="button"] svg'
+    ].join(',');
+
+    const marcar = (raiz) => {
+      if (!raiz || raiz.nodeType !== 1) return;
+      if (raiz.matches(selector)) raiz.classList.add('ciba-icono-vivo');
+      raiz.querySelectorAll(selector).forEach((nodo) => {
+        nodo.classList.add('ciba-icono-vivo');
+      });
+    };
+
+    marcar(document.body);
+    const observador = new MutationObserver((cambios) => {
+      cambios.forEach((cambio) => {
+        cambio.addedNodes.forEach((nodo) => marcar(nodo));
+      });
+    });
+    observador.observe(document.body, { childList: true, subtree: true });
+  }
+
   function iniciar() {
     iniciarPreferencias();
+    activarMicrointeraccionesIconos();
     cargarEstilos();
     crearPieInstitucional();
     crearMenu();
