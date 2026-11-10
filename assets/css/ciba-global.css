@@ -1094,36 +1094,32 @@ html[data-ciba-tema="oscuro"]:not([data-ciba-contraste="alto"]) body .equipo-enl
 html[data-ciba-tema="oscuro"]:not([data-ciba-contraste="alto"]) body .comunidad-join-contact a{color:#D9B878!important}
 
 
-/* CIBA · menú jerárquico de cinco espacios principales */
-.ciba-global-desplegable{
-  width:100%;min-height:46px;justify-content:flex-start;text-align:left;
-  font:inherit;background:transparent;border:0;cursor:pointer;
-}
-.ciba-global-desplegable::after{
-  content:"";width:8px;height:8px;margin-left:auto;flex:0 0 8px;
-  border-right:2px solid rgba(255,255,255,.82);
-  border-bottom:2px solid rgba(255,255,255,.82);
-  transform:rotate(45deg) translateY(-2px);transition:transform .2s ease;
-}
-.ciba-global-desplegable[aria-expanded="true"]::after{
-  transform:rotate(225deg) translate(-2px,-1px);
-}
+/* CIBA · menú jerárquico con acceso directo y control de despliegue */
+.ciba-global-cabecera-grupo{display:flex;align-items:stretch;width:100%;gap:0}
+.ciba-global-enlace-directo{display:flex;align-items:center;flex:1;min-width:0;text-decoration:none!important}
+.ciba-global-enlace-directo:hover,.ciba-global-enlace-directo:focus-visible{color:#F0D39B!important}
+.ciba-global-desplegable{width:100%;min-height:46px;justify-content:flex-start;text-align:left;font:inherit;background:transparent;border:0;cursor:pointer}
+.ciba-global-desplegable-control{flex:0 0 42px;width:42px;min-width:42px;padding:0!important;margin:0!important;border:0!important;border-radius:0!important;background:transparent!important}
+.ciba-global-desplegable-control::after{content:"";width:8px;height:8px;margin-left:auto;flex:0 0 8px;border-right:2px solid rgba(255,255,255,.82);border-bottom:2px solid rgba(255,255,255,.82);transform:rotate(45deg) translateY(-2px);transition:transform .2s ease}
+.ciba-global-desplegable[aria-expanded="true"]::after{transform:rotate(225deg) translate(-2px,-1px)}
 .ciba-global-submenu{padding:2px 0 8px 12px}
 .ciba-global-submenu[hidden]{display:none!important}
 .ciba-global-area{margin:2px 0 3px 8px;border-left:1px solid rgba(255,255,255,.28)}
+.ciba-global-area .ciba-global-enlace-directo{font-size:13px;font-weight:650;min-height:40px;padding:9px 8px 9px 13px}
 .ciba-global-area>.ciba-global-desplegable{font-size:13px;font-weight:650;min-height:40px;padding:9px 8px 9px 13px}
 .ciba-global-subarea{margin-left:10px;border-left:1px solid rgba(255,255,255,.18)}
 .ciba-global-subarea>.ciba-global-desplegable{font-size:12px;min-height:36px;padding:7px 8px 7px 12px;color:#F0D39B!important}
 .ciba-global-subenlace{margin-left:12px;padding:8px 7px 8px 13px;font-size:12px;line-height:1.4}
-.ciba-global-columna>.ciba-global-desplegable{font-size:16px;min-height:52px}
+.ciba-global-columna .ciba-global-enlace-directo{font-size:16px;min-height:52px}
+.ciba-global-columna .ciba-global-desplegable-control{min-height:52px}
 .ciba-global-columna .ciba-global-letra{margin-right:1px}
-.ciba-global-plataforma>.ciba-global-desplegable{font-size:16px;min-height:52px}
+.ciba-global-plataforma .ciba-global-enlace-directo{font-size:16px;min-height:52px}
+.ciba-global-plataforma .ciba-global-desplegable-control{min-height:52px}
 .ciba-global-herramienta{width:100%;margin-top:14px;border-top:1px solid rgba(255,255,255,.24);font-weight:800;letter-spacing:.07em;background:transparent;border-left:0;border-right:0;border-bottom:0;cursor:pointer}
 .ciba-global-menu-separador{padding-top:18px;margin-top:12px}
 @media(max-width:600px){
  .ciba-global-subenlace{font-size:12px;padding-top:9px;padding-bottom:9px}
- .ciba-global-area>.ciba-global-desplegable{min-height:42px}
+ .ciba-global-area .ciba-global-enlace-directo,.ciba-global-area>.ciba-global-desplegable{min-height:42px}
+ .ciba-global-columna .ciba-global-enlace-directo,.ciba-global-columna .ciba-global-desplegable-control{min-height:54px}
 }
-@media(prefers-reduced-motion:reduce){
- .ciba-global-desplegable::after{transition:none}
-}
+@media(prefers-reduced-motion:reduce){.ciba-global-desplegable::after{transition:none}}
