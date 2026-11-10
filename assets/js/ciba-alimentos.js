@@ -239,12 +239,40 @@
         seccion('Conservación', alimento.conservacion, 'conservacion');
 
         if (alimento.video_youtube?.url) {
+          const datosVideo = typeof alimento.video_youtube === 'string'
+            ? { url: alimento.video_youtube }
+            : alimento.video_youtube;
           const video = crear('section', 'ciba-alimento-video');
           video.id = 'alimento-' + alimento.id + '--video';
           video.tabIndex = -1;
           video.style.scrollMarginTop = '110px';
-          video.appendChild(crear('h4', '', 'Video relacionado de Solo Sin Receta'));
-          enlazar(video, alimento.video_youtube.url, alimento.video_youtube.titulo || 'Ver video en YouTube');
+          video.appendChild(crear('h4', '', 'Video relacionado'));
+          if (datosVideo.titulo) video.appendChild(crear('p', 'ciba-alimento-video-titulo', datosVideo.titulo));
+          if (datosVideo.canal) video.appendChild(crear('p', 'ciba-alimento-video-canal', datosVideo.canal + (datosVideo.formato ? ' · ' + datosVideo.formato : '')));
+          const enlaceVideo = crear('a', 'ciba-alimento-video-enlace');
+          enlaceVideo.href = datosVideo.url;
+          enlaceVideo.target = '_blank';
+          enlaceVideo.rel = 'noopener noreferrer';
+          enlaceVideo.setAttribute('aria-label', 'Reproducir en YouTube: ' + (datosVideo.titulo || alimento.nombre));
+          let miniatura = datosVideo.miniatura || '';
+          if (!miniatura) {
+            const coincidencia = datosVideo.url.match(/(?:youtu\.be\/|youtube\.com\/(?:shorts\/|watch\?v=))([\w-]{11})/);
+            if (coincidencia) miniatura = 'https://img.youtube.com/vi/' + coincidencia[1] + '/hqdefault.jpg';
+          }
+          if (miniatura) {
+            const imagenVideo = document.createElement('img');
+            imagenVideo.src = miniatura;
+            imagenVideo.alt = 'Miniatura del video: ' + (datosVideo.titulo || alimento.nombre);
+            imagenVideo.loading = 'lazy';
+            imagenVideo.decoding = 'async';
+            imagenVideo.width = 480;
+            imagenVideo.height = 360;
+            enlaceVideo.appendChild(imagenVideo);
+          }
+          const botonVideo = crear('span', 'ciba-alimento-video-boton', '▶ Reproducir en YouTube');
+          enlaceVideo.appendChild(botonVideo);
+          video.appendChild(enlaceVideo);
+          if (datosVideo.descripcion) video.appendChild(crear('p', 'ciba-alimento-video-descripcion', datosVideo.descripcion));
           detalle.appendChild(video);
         }
 
