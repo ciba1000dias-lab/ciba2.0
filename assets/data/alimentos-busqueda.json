@@ -3347,6 +3347,173 @@
         "aceite para cocinar"
       ],
       "ruta_publica": null
+    },
+    {
+      "id": "ajo",
+      "nombre": "Ajo",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Bulbo aromático utilizado en pequeñas cantidades para aportar sabor a las comidas.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "ajo",
+        "ajo para bebé",
+        "ajo cocido",
+        "condimentos para bebés"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "aji-cachucha",
+      "nombre": "Ají cachucha",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Ají cubano de aroma suave, empleado para condimentar sofritos y guisos.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "ají cachucha",
+        "pimiento dulce",
+        "sofrito cubano"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "pepino",
+      "nombre": "Pepino",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza rica en agua, de sabor fresco y textura crujiente cuando está cruda.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "pepino",
+        "pepino para bebé",
+        "pepino cocido",
+        "textura segura"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "col",
+      "nombre": "Col",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza de hojas compactas que aporta fibra y vitamina C.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "col",
+        "repollo",
+        "col para bebé",
+        "col cocida"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "quimbombo",
+      "nombre": "Quimbombó",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Vaina verde comestible, fuente de fibra y utilizada en guisos cubanos.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "quimbombó",
+        "okra",
+        "quimbombó cubano",
+        "quimbombó para bebé"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "lechuga",
+      "nombre": "Lechuga",
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza de hojas que aporta agua, folato y vitamina K.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "lechuga",
+        "lechuga para bebé",
+        "lechuga cocida",
+        "hojas verdes"
+      ],
+      "ruta_publica": "c/C1/alimentos/vegetales/"
+    },
+    {
+      "id": "guisantes-verdes",
+      "nombre": "Guisantes verdes",
+      "categoria": "Legumbres",
+      "resumen": "Legumbre tierna que aporta fibra, proteína vegetal y folato.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "guisantes",
+        "arvejas",
+        "chícharos verdes",
+        "guisantes para bebé"
+      ],
+      "ruta_publica": "c/C1/alimentos/legumbres/"
+    },
+    {
+      "id": "mani",
+      "nombre": "Maní",
+      "categoria": "Legumbres",
+      "resumen": "Legumbre oleaginosa que aporta grasas insaturadas y proteína; es un alérgeno importante.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "maní",
+        "cacahuete",
+        "alergia al maní",
+        "mantequilla de maní"
+      ],
+      "ruta_publica": "c/C1/alimentos/legumbres/"
+    },
+    {
+      "id": "ajonjoli",
+      "nombre": "Ajonjolí",
+      "categoria": "Legumbres",
+      "resumen": "Semilla oleaginosa conocida como sésamo, fuente de grasas insaturadas y proteína vegetal.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "ajonjolí",
+        "sésamo",
+        "tahini",
+        "alérgeno sésamo"
+      ],
+      "ruta_publica": "c/C1/alimentos/legumbres/"
+    },
+    {
+      "id": "casabe",
+      "nombre": "Casabe",
+      "categoria": "Cereales",
+      "resumen": "Torta seca elaborada con yuca procesada, tradicional en varias regiones del Caribe.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "casabe",
+        "cazabe",
+        "pan de yuca",
+        "casabe cubano"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "gofio",
+      "nombre": "Gofio",
+      "categoria": "Cereales",
+      "resumen": "Harina de cereal tostado, tradicional en Canarias y presente en algunas preparaciones familiares.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "gofio",
+        "harina tostada",
+        "gofio de maíz",
+        "gofio de trigo"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
+    },
+    {
+      "id": "harina-arroz",
+      "nombre": "Harina de arroz",
+      "categoria": "Cereales",
+      "resumen": "Harina obtenida de arroz molido, utilizada en papillas y preparaciones cocidas.",
+      "nombres_alternativos": [],
+      "palabras_clave": [
+        "harina de arroz",
+        "papilla de arroz",
+        "arroz molido",
+        "cereal sin gluten"
+      ],
+      "ruta_publica": "c/C1/alimentos/cereales/"
     }
   ]
 }
