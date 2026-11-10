@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "categoria": "Grasas y aceites",
+  "alimentos": [
+    {
+      "id": "aceite-vegetal",
+      "nombre": "Aceite vegetal",
+      "nombres_alternativos": [],
+      "categoria": "Grasas y aceites",
+      "resumen": "Grasa culinaria que aporta energía y facilita la preparación de comidas variadas.",
+      "descripcion": "Los aceites vegetales se obtienen de semillas o frutos (por ejemplo, soya, girasol, maíz u oliva). Aportan energía y ácidos grasos; su perfil depende del origen. No todos los aceites tienen la misma composición.",
+      "propiedades": [
+        "Aportan energía concentrada y ácidos grasos esenciales en proporciones variables.",
+        "Los aceites de soya y canola aportan ácido alfa-linolénico; oliva y girasol tienen perfiles distintos."
+      ],
+      "beneficios": [
+        "Pequeñas cantidades pueden enriquecer la densidad energética de las comidas.",
+        "Permiten cocinar y mejorar la textura sin necesidad de añadir sal."
+      ],
+      "edad": "Puede utilizarse en pequeñas cantidades desde el inicio de la alimentación complementaria, alrededor de los 6 meses, como ingrediente de comidas. No ofrecer aceite solo ni sustituir alimentos.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Añadir unas gotas a purés o alimentos bien cocidos; no es necesario agregarlo a todas las comidas."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Usar pequeñas cantidades en guisos y preparaciones húmedas, evitando frituras."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Incorporar moderadamente en comidas familiares; priorizar preparaciones hervidas, guisadas, al vapor u horneadas."
+        }
+      ],
+      "preparacion_segura": "Usar aceite apto para consumo humano, bien almacenado y sin olor rancio. Evitar reutilizar repetidamente aceite de fritura. No calentar hasta que humee.",
+      "recetas": [
+        {
+          "nombre": "Vegetales majados con aceite",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Vegetales bien cocidos y unas gotas de aceite vegetal",
+          "preparacion": "Aplastar los vegetales y mezclar una pequeña cantidad de aceite hasta integrar."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer aceite solo en cucharas ni añadir grandes cantidades.",
+        "Evitar frituras frecuentes y aceite reutilizado o recalentado repetidamente.",
+        "No sustituye la leche materna, fórmula ni alimentos ricos en hierro."
+      ],
+      "conservacion": "Mantener bien cerrado, protegido de luz, calor y humedad. Respetar fecha de consumo y desechar si presenta olor o sabor rancio.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bottle%20in%20the%20oil.jpg?width=1280",
+        "alt": "Botella de aceite.",
+        "autor": "Vignesh1694",
+        "licencia": "CC BY 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Bottle_in_the_oil.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "aceite vegetal",
+        "aceite de soya",
+        "aceite de girasol",
+        "aceite de oliva",
+        "grasas saludables",
+        "aceite para cocinar"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación alimentaria adaptada al contexto cubano."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y preparación segura."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención del atragantamiento y adaptación de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Higiene y prevención de enfermedades transmitidas por alimentos."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    }
+  ]
+}
