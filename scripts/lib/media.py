@@ -10,6 +10,11 @@ from .errors import ValidationError
 from .safety import es_ruta_segura, iterar_arbol_seguro
 
 
+# Presupuesto máximo institucional para cualquier imagen publicada.
+MAX_IMAGEN_BYTES = 500 * 1024
+EXTENSIONES_IMAGEN = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif", ".svg"}
+
+
 @dataclass(frozen=True)
 class MediaFoto:
     ruta_relativa: str
@@ -47,6 +52,16 @@ def validar_foto(
     if not candidata.is_file():
         errores.append(ValidationError(rel_pagina, campo, "archivo no existe"))
         return None, errores
+
+    if candidata.suffix.lower() in EXTENSIONES_IMAGEN:
+        peso = candidata.stat().st_size
+        if peso > MAX_IMAGEN_BYTES:
+            errores.append(ValidationError(
+                rel_pagina,
+                campo,
+                f"imagen de {peso / 1024:.1f} KB: supera el límite CIBA de 500 KB",
+            ))
+            return None, errores
 
     return MediaFoto(ruta_relativa=ruta_valor, alt=""), errores
 
