@@ -28,6 +28,8 @@ from validate_content import validar
 
 
 PERMITIDOS_EN_PAGINA = {"index.html"}
+MAX_IMAGEN_BYTES = 500 * 1024
+EXTENSIONES_IMAGEN = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif", ".svg"}
 
 
 def _leer_json(ruta: Path) -> dict:
@@ -214,6 +216,15 @@ def _copiar_assets(repo_raiz: Path, tmp: Path) -> list[ValidationError]:
 
     for f in archivos:
         rel = f.relative_to(assets_src)
+        if f.suffix.lower() in EXTENSIONES_IMAGEN:
+            peso = f.stat().st_size
+            if peso > MAX_IMAGEN_BYTES:
+                errores.append(ValidationError(
+                    str(rel),
+                    "peso de imagen",
+                    f"{peso / 1024:.1f} KB; supera el límite CIBA de 500 KB",
+                ))
+                continue
         destino = tmp / "assets" / rel
         destino.parent.mkdir(parents=True, exist_ok=True)
 
