@@ -88,18 +88,6 @@
 .comunidad-card small{margin-top:auto;padding-top:12px;border-top:1px solid var(--ciba-linea);color:#8b6740;font-size:10px;font-weight:800;line-height:1.5}
 @media(max-width:760px){.comunidad-grid{grid-template-columns:1fr;gap:13px}.comunidad-card{display:grid;grid-template-columns:104px minmax(0,1fr)}.comunidad-card-visual{height:auto;min-height:100%}.comunidad-card-visual span{width:52px;height:52px;font-size:28px}.comunidad-card-cuerpo{padding:15px}.comunidad-card h2{font-size:19px}.comunidad-card p{font-size:11px;margin-bottom:12px}}
 
-/* Boletín mensual CIBA: formulario de suscripción Brevo */
-.boletin-panel{overflow:hidden;margin:28px 0 24px;border:1px solid var(--ciba-linea);border-radius:20px;background:rgba(255,252,245,.96);box-shadow:0 12px 34px rgba(73,58,50,.07)}
-.boletin-panel-cabecera{padding:26px 28px 20px;background:linear-gradient(135deg,#29463f,#172b27);color:#fff8eb}
-.boletin-sello{display:inline-block;margin-bottom:12px;color:#e6c98e;font-size:9px;font-weight:800;letter-spacing:.18em}
-.boletin-panel-cabecera h2{max-width:650px;margin:0 0 9px;font:400 clamp(24px,4vw,32px)/1.2 Georgia,serif}
-.boletin-panel-cabecera p{max-width:650px;margin:0;color:#eee5d7;font-size:13px;line-height:1.7}
-.boletin-formulario{padding:18px 14px 22px;background:#fffdf8}
-.boletin-formulario iframe{width:100%;max-width:540px;min-height:330px;border:0}
-.boletin-privacidad{margin:18px 0 0;color:var(--ciba-suave);font-size:11px;line-height:1.7}
-.boletin-privacidad a{color:#76572f;text-decoration:underline;text-underline-offset:3px}
-@media(max-width:640px){.boletin-panel-cabecera{padding:22px 18px 17px}.boletin-formulario{padding:10px 8px 16px}.boletin-formulario iframe{min-height:360px}}
-
 
 /* Comunidad · herramienta para compartir */
 .comunidad-share-panel{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0;padding:clamp(1.2rem,3vw,2.2rem);border:1px solid rgba(73,58,50,.16);border-radius:22px;background:#fffdf8;box-shadow:0 12px 34px rgba(45,38,31,.06)}
@@ -113,3 +101,16 @@
 .comunidad-share-btn:focus-visible{outline:3px solid #8C671F;outline-offset:3px}
 .comunidad-share-status{min-height:2.5em;margin:.3rem 0 0;color:#625c53;font-size:.9rem;line-height:1.5}
 @media(max-width:700px){.comunidad-share-panel{grid-template-columns:1fr;gap:1.2rem;padding:1rem;border-radius:16px}.comunidad-share-actions{gap:.6rem}}
+
+
+/* Comunidad · incorporación de colaboradores y patrocinadores */
+.comunidad-join-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:28px 0}
+.comunidad-join-card{display:flex;flex-direction:column;align-items:flex-start;min-width:0;padding:24px;border:1px solid var(--ciba-linea);border-radius:18px;background:#fffdf8;box-shadow:0 10px 28px rgba(73,58,50,.05)}
+.comunidad-join-card h2{margin:9px 0;color:#493a32;font:400 clamp(21px,2.5vw,27px)/1.2 Georgia,serif}
+.comunidad-join-card p{flex:1;margin:0 0 20px;color:#5e5a53;font-size:13px;line-height:1.7}
+.comunidad-join-card .comunidad-share-btn{margin-top:auto;text-decoration:none}
+.comunidad-join-contact{margin:28px 0;padding:24px;border-radius:18px;background:#f2eee5;text-align:center}
+.comunidad-join-contact h2{margin:0 0 8px;color:#493a32;font:400 24px/1.2 Georgia,serif}
+.comunidad-join-contact p{margin:0 0 10px;color:#5e5a53}
+.comunidad-join-contact a{color:#76572f;font-weight:750;overflow-wrap:anywhere}
+@media(max-width:700px){.comunidad-join-grid{grid-template-columns:1fr;gap:13px}.comunidad-join-card{padding:19px}.comunidad-join-card h2{font-size:22px}}
