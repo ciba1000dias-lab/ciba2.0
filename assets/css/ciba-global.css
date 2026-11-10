@@ -1198,3 +1198,17 @@ html[data-ciba-movimiento="reducido"] .ciba-global-grupo>.ciba-global-submenu:no
 .red-social-card):is(:hover,:focus-within) .ciba-icono-vivo{
   transform:translateY(-2px) scale(1.08) rotate(-3deg);
 }
+
+
+/* Iconos que son controles por sí mismos, no descendientes de un botón. */
+.ciba-icono-vivo:is(:hover,:focus-visible,:active){
+  transform:translateY(-2px) scale(1.08) rotate(-4deg);
+  filter:drop-shadow(0 3px 5px rgba(198,155,82,.22));
+}
+.ciba-icono-vivo:active{transform:scale(.92)}
+@media(prefers-reduced-motion:reduce){
+  .ciba-icono-vivo:is(:hover,:focus-visible,:active){transform:none!important;filter:none!important}
+}
+html[data-ciba-movimiento="reducido"] .ciba-icono-vivo:is(:hover,:focus-visible,:active){
+  transform:none!important;filter:none!important;
+}
