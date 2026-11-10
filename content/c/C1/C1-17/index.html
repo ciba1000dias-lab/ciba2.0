@@ -9,9 +9,9 @@
 *{box-sizing:border-box}body{margin:0;background:var(--marfil);color:var(--tinta);font-family:Arial,Helvetica,sans-serif}a{color:var(--verde)}.contenedor{width:min(850px,calc(100% - 36px));margin:auto}
 .hero{padding:58px 0 52px;background:linear-gradient(125deg,var(--noche),var(--verde));color:white}.tag{color:#e9c98d;font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.hero h1{max-width:760px;margin:18px 0;font:normal clamp(36px,6vw,56px)/1.08 Georgia,serif;letter-spacing:-.035em}.hero p{max-width:720px;color:#e2e8df;font-size:15px;line-height:1.85}.meta-line{margin-top:22px;color:#d8dfd5;font-size:11px;line-height:1.8}
 main{padding:38px 0 76px}.entradilla{padding:0 0 24px;border-bottom:1px solid var(--linea);font:normal 20px/1.65 Georgia,serif;color:var(--noche)}.ciba-articulo{font-size:16px;line-height:1.85}.ciba-articulo h2{margin:34px 0 12px;color:var(--noche);font:normal 28px/1.2 Georgia,serif}.ciba-articulo p{margin:0 0 17px}.ciba-articulo li{margin:0 0 9px}.respuesta{margin:24px 0;padding:20px 22px;border-left:4px solid var(--coral);background:var(--crema);font-size:15px;line-height:1.8}.practica,.interactivo{margin:24px 0;padding:21px 23px;border:1px solid var(--linea);border-radius:12px;background:var(--papel)}.practica h2,.interactivo h2{margin-top:0}.alarma{margin:24px 0;padding:19px 21px;border-left:4px solid var(--tierra);background:#f3e8dc}.fuentes{padding-top:20px;border-top:1px solid var(--linea)}.fuentes li{margin-bottom:12px;font-size:13px;line-height:1.65;overflow-wrap:anywhere}.metadatos{margin-top:26px;padding:19px;border-radius:10px;background:#e9e5d9;font-size:12px;line-height:1.8}.volver{display:inline-block;margin-top:28px;font-size:12px;font-weight:800;text-underline-offset:4px}
-.lamina{margin:24px 0;padding:16px;border:1px solid var(--linea);border-radius:14px;background:var(--papel)}.lamina svg{display:block;width:100%;height:auto;max-height:310px}.lamina figcaption{margin-top:10px;color:var(--suave);font-size:12px;line-height:1.6}.checklist{display:grid;gap:10px;margin:14px 0}.checklist label{display:flex;gap:11px;align-items:flex-start;padding:11px 12px;border:1px solid var(--linea);border-radius:9px;font-size:14px;line-height:1.55}.checklist input{width:20px;height:20px;flex:0 0 20px;accent-color:var(--verde);margin:1px 0 0}.progreso{font-size:12px;color:var(--verde);font-weight:700}.nota-interactiva{font-size:12px;color:var(--suave);margin:8px 0 0}
+.lamina{margin:24px 0;padding:16px;border:1px solid var(--linea);border-radius:14px;background:var(--papel)}.lamina iframe{display:block;width:100%;height:560px;border:0;border-radius:8px;background:#fff}.lamina-cabecera{display:grid;gap:5px;margin:0 0 12px;color:var(--noche)}.lamina-cabecera span{font-size:12px;color:var(--suave)}.lamina figcaption{margin-top:10px;color:var(--suave);font-size:12px;line-height:1.6}.checklist{display:grid;gap:10px;margin:14px 0}.checklist label{display:flex;gap:11px;align-items:flex-start;padding:11px 12px;border:1px solid var(--linea);border-radius:9px;font-size:14px;line-height:1.55}.checklist input{width:20px;height:20px;flex:0 0 20px;accent-color:var(--verde);margin:1px 0 0}.progreso{font-size:12px;color:var(--verde);font-weight:700}.nota-interactiva{font-size:12px;color:var(--suave);margin:8px 0 0}
 @keyframes ciba-respiro{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}.pulso{transform-box:fill-box;transform-origin:center;animation:ciba-respiro 3.8s ease-in-out infinite}
-@media(max-width:600px){.hero{padding:46px 0}.ciba-articulo{font-size:15px}.ciba-articulo h2{font-size:25px}.lamina{padding:10px}}
+@media(max-width:600px){.hero{padding:46px 0}.ciba-articulo{font-size:15px}.ciba-articulo h2{font-size:25px}.lamina{padding:10px}.lamina iframe{height:480px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -27,29 +27,10 @@ main{padding:38px 0 76px}.entradilla{padding:0 0 24px;border-bottom:1px solid va
 <h2>Antes de acercarlo: cuerpo alineado y apoyo</h2>
 <p>Colócate de una manera que puedas mantener sin tensión: espalda apoyada, hombros relajados y brazos sostenidos con almohadas o cojines si los tienes. No necesitas comprar nada especial. El bebé debe quedar cerca de tu cuerpo, frente a ti, con oreja, hombro y cadera aproximadamente alineados. Su cuello no debe quedar torcido ni muy flexionado.</p>
 <p>Sostén su espalda y sus hombros, dejando que la cabeza tenga libertad para inclinarse ligeramente hacia atrás. La nariz puede quedar frente al pezón al comenzar. Esa posición permite que el bebé extienda un poco el cuello y abra mejor la boca. Evita empujar la parte posterior de su cabeza: puede hacer que se aparte o cierre la boca.</p>
-<figure class="lamina">
-<svg viewBox="0 0 720 300" role="img" aria-labelledby="svg-title svg-desc">
-<title id="svg-title">Esquema de acercamiento para un agarre profundo</title><desc id="svg-desc">Ilustración esquemática de un bebé frente al pecho. La nariz queda frente al pezón antes de abrir la boca; el mentón se acerca primero al pecho y la boca toma una porción amplia de areola.</desc>
-<rect x="8" y="8" width="704" height="284" rx="18" fill="#fdf6e3"/>
-<path d="M80 206 C155 132 244 126 330 174 C360 191 375 219 370 251 L92 251Z" fill="#e7b99b" stroke="#8b5e3c" stroke-width="3"/>
-<path d="M335 176 C370 151 404 145 430 163 C445 174 449 193 436 204 C417 219 388 212 371 201" fill="#d99a79" stroke="#8b5e3c" stroke-width="3"/>
-<path d="M430 164 C451 142 475 139 497 151 C518 163 523 185 508 201 C493 216 468 212 450 197" fill="#d99a79" stroke="#8b5e3c" stroke-width="3"/>
-<path d="M505 174 C530 154 554 158 565 175 C575 192 563 210 542 211" fill="none" stroke="#8b5e3c" stroke-width="5" stroke-linecap="round"/>
-<path d="M565 175 C580 169 592 174 594 184" fill="none" stroke="#e07a5f" stroke-width="5" stroke-linecap="round"/>
-<path d="M550 213 C573 224 595 219 605 205" fill="none" stroke="#8b5e3c" stroke-width="3" stroke-linecap="round"/>
-<circle cx="548" cy="164" r="4" fill="#29332d"/>
-<path d="M602 184 L650 184" stroke="#3d5a40" stroke-width="2" stroke-dasharray="5 5"/>
-<text x="648" y="174" text-anchor="end" font-size="14" fill="#1e3a5f" font-weight="bold">Nariz frente</text>
-<text x="648" y="191" text-anchor="end" font-size="14" fill="#1e3a5f" font-weight="bold">al pezón</text>
-<path d="M533 218 L533 257 L644 257" stroke="#3d5a40" stroke-width="2" fill="none"/>
-<text x="644" y="276" text-anchor="end" font-size="14" fill="#1e3a5f" font-weight="bold">Mentón cerca del pecho</text>
-<path d="M468 148 L468 91 L608 91" stroke="#e07a5f" stroke-width="2" fill="none"/>
-<text x="608" y="78" text-anchor="end" font-size="14" fill="#1e3a5f" font-weight="bold">Boca amplia</text>
-<path d="M378 184 L330 85 L112 85" stroke="#3d5a40" stroke-width="2" fill="none"/>
-<text x="112" y="70" font-size="14" fill="#1e3a5f" font-weight="bold">Cuerpo pegado y alineado</text>
-<circle class="pulso" cx="533" cy="218" r="8" fill="#e07a5f" opacity=".55"/>
-</svg>
-<figcaption>Esquema orientativo, no una imagen anatómica. Lo importante es la alineación del cuerpo, la apertura amplia de la boca y el acercamiento del bebé al pecho.</figcaption>
+<figure class="lamina lamina-oficial">
+<div class="lamina-cabecera"><strong>Guía visual oficial: cómo facilitar el agarre</strong><span>Departamento de Salud y Servicios Humanos de Estados Unidos · Oficina para la Salud de la Mujer</span></div>
+<iframe title="Ilustraciones oficiales paso a paso para facilitar el agarre al pecho" src="https://womenshealth.gov/sites/default/files/documents/your-guide-to-breastfeeding.pdf#page=16&zoom=page-width" loading="lazy" referrerpolicy="no-referrer" allow="fullscreen"></iframe>
+<figcaption>La página original muestra tres ilustraciones claras: estimular suavemente los labios para que abra la boca, acercar al bebé con el mentón primero y comprobar que toma una porción amplia del pecho. Material de una publicación del Gobierno federal de Estados Unidos. <a href="https://womenshealth.gov/sites/default/files/documents/your-guide-to-breastfeeding.pdf#page=16" target="_blank" rel="noopener">Abrir la página original °</a></figcaption>
 </figure>
 <h2>Cómo facilitar el agarre, paso a paso</h2>
 <ol>
