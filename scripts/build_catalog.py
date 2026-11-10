@@ -268,6 +268,24 @@ def _copiar_pagina_publica(
         return errores
 
     if fotos_validadas:
+        # En la serie de Lactancia (C1-16 a C1-40), ninguna imagen local
+        # puede superar 200 KB: prioridad a conexiones lentas y móviles.
+        match_lactancia = re.search(r"(?:^|/)C1-(\\d+)(?:/|$)", rel_pagina)
+        es_lactancia = bool(match_lactancia and 16 <= int(match_lactancia.group(1)) <= 40)
+        if es_lactancia:
+            for foto in fotos_validadas:
+                ruta_foto = origen_pagina / foto.ruta_relativa
+                try:
+                    peso_foto = ruta_foto.stat().st_size
+                except OSError as exc:
+                    errores.append(ValidationError(rel_pagina, "imagen de lactancia", f"no se pudo comprobar el peso: {exc}"))
+                    continue
+                if peso_foto > 200 * 1024:
+                    errores.append(ValidationError(
+                        str(Path(rel_pagina) / foto.ruta_relativa),
+                        "peso de imagen en Lactancia",
+                        f"{peso_foto / 1024:.1f} KB; el máximo permitido es 200 KB",
+                    ))
         errs_media = copiar_media_autorizada(
             origen_pagina,
             destino_pagina,
