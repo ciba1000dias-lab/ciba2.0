@@ -238,7 +238,7 @@
         seccion('Precauciones', alimento.precauciones, 'precauciones');
         seccion('Conservación', alimento.conservacion, 'conservacion');
 
-        if (alimento.video_youtube?.url) {
+        if (alimento.video_youtube && (typeof alimento.video_youtube === 'string' || alimento.video_youtube.url)) {
           const datosVideo = typeof alimento.video_youtube === 'string'
             ? { url: alimento.video_youtube }
             : alimento.video_youtube;
