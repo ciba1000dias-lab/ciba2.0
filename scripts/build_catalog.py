@@ -270,7 +270,7 @@ def _copiar_pagina_publica(
     if fotos_validadas:
         # En la serie de Lactancia (C1-16 a C1-40), ninguna imagen local
         # puede superar 200 KB: prioridad a conexiones lentas y móviles.
-        match_lactancia = re.search(r"(?:^|/)C1-(\\d+)(?:/|$)", rel_pagina)
+        match_lactancia = re.search(r"(?:^|/)C1-(\d+)(?:/|$)", rel_pagina)
         es_lactancia = bool(match_lactancia and 16 <= int(match_lactancia.group(1)) <= 40)
         if es_lactancia:
             for foto in fotos_validadas:
