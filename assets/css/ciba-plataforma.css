@@ -72,3 +72,18 @@
 .red-social-card.youtube .red-social-cabecera{background:#f9eeee}
 .red-social-card.facebook .red-social-cabecera{background:#edf2fa}
 @media(max-width:760px){.redes-sociales-grid{grid-template-columns:1fr;gap:14px}.red-social-card{display:grid;grid-template-columns:100px minmax(0,1fr)}.red-social-cabecera{height:auto;min-height:100%;gap:8px}.red-social-cabecera img{width:42px;height:42px}.red-social-cabecera span{font-size:8px}.red-social-cuerpo{padding:15px}.red-social-cuerpo h2{font-size:17px}.red-social-cuerpo p{font-size:12px}}
+
+/* Comunidad: portada y espacios de participación */
+.comunidad-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:28px 0 32px}
+.comunidad-card{display:flex;flex-direction:column;overflow:hidden;min-width:0;border:1px solid var(--ciba-linea);border-radius:18px;background:rgba(255,252,245,.96);box-shadow:0 9px 28px rgba(73,58,50,.05);transition:transform .2s,border-color .2s,box-shadow .2s}
+.comunidad-card:hover{transform:translateY(-3px);border-color:rgba(198,155,82,.7);box-shadow:0 14px 34px rgba(73,58,50,.1)}
+.comunidad-card-visual{height:142px;display:grid;place-items:center;background:linear-gradient(140deg,#29463f,#172b27);color:#f4e5c6}
+.comunidad-card-visual span{display:grid;place-items:center;width:66px;height:66px;border:1px solid rgba(244,229,198,.72);border-radius:50%;font:400 35px/1 Georgia,serif}
+.comunidad-preguntale-al-pediatra .comunidad-card-visual{background:linear-gradient(140deg,#397653,#254b38)}
+.comunidad-reportar-error .comunidad-card-visual{background:linear-gradient(140deg,#8c671f,#594315)}
+.comunidad-card-cuerpo{display:flex;flex:1;flex-direction:column;padding:19px}
+.comunidad-tipo{color:#8b6740;font-size:9px;font-weight:800;letter-spacing:.14em}
+.comunidad-card h2{margin:9px 0 8px;color:var(--ciba-cacao);font:400 22px/1.2 Georgia,serif}
+.comunidad-card p{margin:0 0 17px;color:var(--ciba-suave);font-size:12px;line-height:1.7}
+.comunidad-card small{margin-top:auto;padding-top:12px;border-top:1px solid var(--ciba-linea);color:#8b6740;font-size:10px;font-weight:800;line-height:1.5}
+@media(max-width:760px){.comunidad-grid{grid-template-columns:1fr;gap:13px}.comunidad-card{display:grid;grid-template-columns:104px minmax(0,1fr)}.comunidad-card-visual{height:auto;min-height:100%}.comunidad-card-visual span{width:52px;height:52px;font-size:28px}.comunidad-card-cuerpo{padding:15px}.comunidad-card h2{font-size:19px}.comunidad-card p{font-size:11px;margin-bottom:12px}}
