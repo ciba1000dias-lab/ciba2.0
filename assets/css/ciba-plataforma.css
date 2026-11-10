@@ -57,3 +57,18 @@
 .enlace-imagen>span{position:absolute;left:13px;bottom:12px;padding:7px 11px;border-radius:7px;background:rgba(35,55,48,.88);color:#fff;font:800 11px/1.2 system-ui,sans-serif;letter-spacing:.12em}
 .enlace-recomendado-contenido{padding:18px 20px 20px}
 @media(max-width:640px){.enlace-imagen{height:170px}.enlace-recomendado-card{grid-template-columns:minmax(0,1fr)}}
+
+/* Redes sociales */
+.redes-sociales-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:28px 0 34px}
+.red-social-card{overflow:hidden;display:flex;flex-direction:column;min-width:0;border:1px solid var(--ciba-linea);border-radius:17px;background:#fffdf8;box-shadow:0 8px 24px rgba(43,35,25,.06)}
+.red-social-cabecera{height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#f1eee7}
+.red-social-cabecera img{width:54px;height:54px;object-fit:contain}
+.red-social-cabecera span{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#493a32}
+.red-social-cuerpo{display:flex;flex:1;flex-direction:column;padding:20px}
+.red-social-cuerpo h2{margin:0 0 9px;color:#29463f;font-size:20px;line-height:1.25}
+.red-social-cuerpo p{margin:0 0 18px;color:#5e574d;font-size:13px;line-height:1.65;flex:1}
+.red-social-cuerpo>a{align-self:flex-start;display:inline-flex;gap:8px;align-items:center;padding:10px 14px;border-radius:9px;background:#29463f;color:#fff8eb;text-decoration:none;font-size:11px;font-weight:800}
+.red-social-card.whatsapp .red-social-cabecera{background:#eaf5ed}
+.red-social-card.youtube .red-social-cabecera{background:#f9eeee}
+.red-social-card.facebook .red-social-cabecera{background:#edf2fa}
+@media(max-width:760px){.redes-sociales-grid{grid-template-columns:1fr;gap:14px}.red-social-card{display:grid;grid-template-columns:100px minmax(0,1fr)}.red-social-cabecera{height:auto;min-height:100%;gap:8px}.red-social-cabecera img{width:42px;height:42px}.red-social-cabecera span{font-size:8px}.red-social-cuerpo{padding:15px}.red-social-cuerpo h2{font-size:17px}.red-social-cuerpo p{font-size:12px}}
