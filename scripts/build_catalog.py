@@ -658,14 +658,8 @@ def _construir_en_tmp(
             try:
                 html = archivo_html.read_text(encoding="utf-8")
                 html_actualizado = re.sub(
-                    r'(<script\b[^>]*\bsrc\s*=\s*["\'][^"\']*ciba-global\.js)(?:[?#][^"\']*)?(["\'][^>]*>)',
-                    r'\1?v=20261110-18\2',
-                    html,
-                    flags=re.IGNORECASE,
-                )
-                html_actualizado = re.sub(
-                    r'(<script\\b[^>]*\\bsrc\\s*=\\s*["\\'][^"\\']*ciba-plataforma\\.js)(?:[?#][^"\\']*)?(["\\'][^>]*>)',
-                    r'\\1?v=20261110-19\\2',
+                    r'(<script\b[^>]*\bsrc\s*=\s*["\'][^"\']*ciba-plataforma\.js)(?:[?#][^"\']*)?(["\'][^>]*>)',
+                    r'\1?v=20261110-19\2',
                     html_actualizado,
                     flags=re.IGNORECASE,
                 )
