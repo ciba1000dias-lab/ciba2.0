@@ -712,6 +712,66 @@ def _construir_en_tmp(
                     )
                 )
 
+        # Auditoría de cobertura: ninguna página pública debe quedar fuera
+        # del sistema global ni cargar una versión antigua en caché.
+        try:
+            codigo_global = script_global.read_text(encoding="utf-8")
+        except (OSError, UnicodeError) as exc:
+            errores.append(
+                ValidationError(
+                    "assets/js/ciba-global.js",
+                    "cobertura de movimiento",
+                    f"no se pudo comprobar el módulo global: {exc}",
+                )
+            )
+            codigo_global = ""
+
+        if "ciba-global.css?v=20261110-40" not in codigo_global:
+            errores.append(
+                ValidationError(
+                    "assets/js/ciba-global.js",
+                    "cobertura de movimiento",
+                    "la hoja global no utiliza la versión institucional vigente",
+                )
+            )
+
+        for archivo_html in sorted(tmp.rglob("*.html")):
+            try:
+                html = archivo_html.read_text(encoding="utf-8")
+            except (OSError, UnicodeError) as exc:
+                errores.append(
+                    ValidationError(
+                        str(archivo_html.relative_to(tmp)),
+                        "cobertura de movimiento",
+                        f"no se pudo leer la página publicada: {exc}",
+                    )
+                )
+                continue
+
+            referencias_globales = re.findall(
+                r'<script\\b(?=[^>]*\\bsrc\\s*=\\s*["\\'][^"\\']*ciba-global\\.js(?:[?#][^"\\']*)?["\\'])[^>]*>',
+                html,
+                flags=re.IGNORECASE,
+            )
+
+            version_correcta = (
+                len(referencias_globales) == 1
+                and re.search(
+                    r"ciba-global\\.js\\?v=20261110-40(?:[""']|\\s)",
+                    referencias_globales[0],
+                    flags=re.IGNORECASE,
+                )
+            )
+
+            if not version_correcta:
+                errores.append(
+                    ValidationError(
+                        str(archivo_html.relative_to(tmp)),
+                        "cobertura de movimiento",
+                        "la página debe cargar una sola vez el sistema global en su versión vigente",
+                    )
+                )
+
     return errores
 
 
