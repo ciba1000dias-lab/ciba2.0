@@ -1921,6 +1921,277 @@
       ],
       "estado": "piloto",
       "imagenes": []
+    },
+    {
+      "id": "casabe",
+      "nombre": "Casabe",
+      "nombres_alternativos": [],
+      "categoria": "Cereales y derivados",
+      "resumen": "Torta seca elaborada con yuca procesada, tradicional en varias regiones del Caribe.",
+      "descripcion": "El casabe es una torta fina elaborada a partir de yuca (mandioca) rallada, prensada y cocida. No es un cereal: se incluye aquí de forma práctica entre los derivados feculentos para facilitar su consulta. La seguridad depende de un procesamiento correcto de la yuca.",
+      "propiedades": [
+        "Aporta principalmente almidón y energía.",
+        "Su contenido de fibra y micronutrientes es limitado y depende del proceso."
+      ],
+      "beneficios": [
+        "Representa una preparación tradicional del Caribe.",
+        "Puede utilizarse en pequeñas cantidades como parte de una comida variada, si se adapta su textura."
+      ],
+      "edad": "No es una opción adecuada para el inicio de la alimentación complementaria por su textura seca, dura y quebradiza. Si se ofrece, hacerlo ocasionalmente después de los 12 meses, completamente humedecido y bajo supervisión.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–11 meses",
+          "forma": "No ofrecer casabe seco ni en trozos; su textura puede deshacerse en fragmentos duros o secos."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Solo si el niño maneja bien sólidos: humedecer y desmenuzar por completo dentro de una preparación blanda. No ofrecer láminas secas."
+        }
+      ],
+      "preparacion_segura": "Elegir casabe elaborado con yuca correctamente procesada y de procedencia confiable. Nunca preparar ni consumir yuca amarga sin procesamiento especializado que elimine compuestos cianogénicos. Humedecer completamente antes de ofrecer.",
+      "recetas": [
+        {
+          "nombre": "Casabe humedecido en crema de vegetales",
+          "etapa": "Después de los 12 meses y según habilidades",
+          "ingredientes": "Pequeña cantidad de casabe y crema espesa de vegetales",
+          "preparacion": "Desmenuzar y humedecer hasta que no queden fragmentos secos, rígidos ni quebradizos."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer seco, duro ni en fragmentos.",
+        "La yuca amarga mal procesada puede contener compuestos que liberan cianuro; no utilizar yuca de origen dudoso.",
+        "No sustituye alimentos ricos en hierro ni una comida variada."
+      ],
+      "conservacion": "Conservar seco, cerrado y protegido de humedad. Desechar si presenta moho, humedad, olor anormal o deterioro.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/El%20casabe.jpg?width=1280",
+        "alt": "Torta tradicional de casabe.",
+        "autor": "Wilmeris Hernández",
+        "licencia": "CC BY-SA 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:El_casabe.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "casabe",
+        "cazabe",
+        "pan de yuca",
+        "yuca",
+        "casabe cubano",
+        "derivados de yuca"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación alimentaria adaptada al contexto cubano."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención del atragantamiento y adaptación de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Higiene y prevención de enfermedades transmitidas por alimentos."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "gofio",
+      "nombre": "Gofio",
+      "nombres_alternativos": [],
+      "categoria": "Cereales",
+      "resumen": "Harina de cereal tostado, tradicional en Canarias y presente en algunas preparaciones familiares.",
+      "descripcion": "El gofio es una harina obtenida de cereales tostados y molidos, con frecuencia maíz o trigo. Su composición depende del cereal y de si contiene mezclas, azúcar o sal; puede contener gluten.",
+      "propiedades": [
+        "Aporta almidón y energía.",
+        "El contenido de fibra, proteína y minerales varía según el cereal y el grado de refinado."
+      ],
+      "beneficios": [
+        "Puede aportar variedad de cereales cuando se utiliza sin azúcar ni sal añadidas.",
+        "Su textura debe quedar húmeda y uniforme para los niños pequeños."
+      ],
+      "edad": "Puede utilizarse desde alrededor de los 6 meses si el cereal está completamente cocido o mezclado en una preparación húmeda y espesa; revisar ingredientes y posible gluten.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Cocinar bien con agua hasta obtener una papilla espesa y sin grumos secos; no ofrecer polvo ni mezcla cruda."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Integrar en preparaciones húmedas, bien cocidas y sin azúcar añadida."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer en papillas o masas blandas, con textura segura y sin endulzar."
+        }
+      ],
+      "preparacion_segura": "Leer la etiqueta: algunos gofios contienen azúcar, sal, leche u otros alérgenos. Cocinar o hidratar según el producto; nunca ofrecer harina seca que pueda aspirarse.",
+      "recetas": [
+        {
+          "nombre": "Papilla sencilla de gofio",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Gofio sin azúcar ni sal y agua potable",
+          "preparacion": "Cocinar removiendo hasta que quede completamente hidratado, espeso y sin grumos secos."
+        }
+      ],
+      "precauciones": [
+        "Puede contener trigo y gluten; revisar etiqueta y antecedentes de alergia o enfermedad celíaca.",
+        "Evitar versiones azucaradas o con sal añadida.",
+        "No ofrecer polvo seco ni mezclas muy espesas y pegajosas."
+      ],
+      "conservacion": "Conservar en envase hermético, seco y protegido de insectos. Una vez preparada la papilla, consumir pronto y refrigerar las sobras de forma segura.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gofio%2001.jpg?width=1280",
+        "alt": "Gofio, harina de cereal tostado.",
+        "autor": "Koppchen",
+        "licencia": "CC BY 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Gofio_01.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "gofio",
+        "harina tostada",
+        "gofio de maíz",
+        "gofio de trigo",
+        "papilla de gofio",
+        "gluten"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación alimentaria adaptada al contexto cubano."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y preparación segura."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención del atragantamiento y adaptación de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Higiene y prevención de enfermedades transmitidas por alimentos."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "harina-arroz",
+      "nombre": "Harina de arroz",
+      "nombres_alternativos": [],
+      "categoria": "Cereales",
+      "resumen": "Harina obtenida de arroz molido, utilizada en papillas y preparaciones cocidas.",
+      "descripcion": "La harina de arroz se obtiene al moler granos de arroz. Aporta principalmente almidón y es naturalmente libre de gluten, aunque puede contaminarse durante el procesamiento. No debe convertirse en el único cereal de la dieta.",
+      "propiedades": [
+        "Aporta carbohidratos y energía.",
+        "Es naturalmente libre de gluten, aunque debe revisarse el etiquetado por posible contaminación cruzada."
+      ],
+      "beneficios": [
+        "Permite preparar papillas de textura suave.",
+        "Puede formar parte de una dieta que incluya otros cereales y alimentos ricos en hierro."
+      ],
+      "edad": "Puede ofrecerse alrededor de los 6 meses como parte de la alimentación complementaria, siempre cocida completamente. Alternar con otros cereales para evitar depender solo del arroz.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Cocinar completamente en agua hasta lograr papilla espesa y lisa; no añadir azúcar."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Usar en preparaciones húmedas y combinar con alimentos ricos en hierro."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Incorporar en masas y preparaciones familiares blandas, variadas y poco saladas."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente; no ofrecer harina cruda ni mezclas secas. Alternar con avena, maíz, trigo y otros cereales. Elegir productos aptos para la edad y revisar alérgenos en mezclas.",
+      "recetas": [
+        {
+          "nombre": "Papilla de harina de arroz",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Harina de arroz y agua potable",
+          "preparacion": "Disolver en agua fría y cocinar removiendo hasta espesar y cocer completamente. No añadir azúcar."
+        }
+      ],
+      "precauciones": [
+        "No basar toda la alimentación en arroz o harina de arroz; variar los cereales por la exposición al arsénico inorgánico presente en algunos productos de arroz.",
+        "No añadir azúcar, miel ni sal.",
+        "No utilizar harina cruda."
+      ],
+      "conservacion": "Guardar en envase hermético, seco y fresco. Una vez preparada, refrigerar pronto y desechar restos que hayan estado en contacto con saliva.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rice%20flour.jpg?width=1280",
+        "alt": "Harina de arroz blanca en un recipiente.",
+        "autor": "Thamizhpparithi Maari",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Rice_flour.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "harina de arroz",
+        "harina de arroz para bebé",
+        "papilla de arroz",
+        "arroz molido",
+        "cereal sin gluten"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación alimentaria adaptada al contexto cubano."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y preparación segura."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Higiene y prevención de enfermedades transmitidas por alimentos."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
     }
   ]
 }
