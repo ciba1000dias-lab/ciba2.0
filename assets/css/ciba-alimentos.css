@@ -99,3 +99,14 @@
 @media(max-width:390px){
   #ciba-alimentos .ciba-alimentos-rejilla{grid-template-columns:1fr}
 }
+
+
+/* CIBA · VIDEOS EXTERNOS: miniatura y enlace, sin reproductor incrustado */
+#ciba-alimentos .ciba-alimento-video{display:grid;gap:10px}
+#ciba-alimentos .ciba-alimento-video-titulo{margin:0;color:var(--noche);font-weight:700;line-height:1.5}
+#ciba-alimentos .ciba-alimento-video-canal{margin:0;color:var(--suave);font-size:12px}
+#ciba-alimentos .ciba-alimento-video-enlace{display:block;max-width:560px;overflow:hidden;border:1px solid var(--linea);border-radius:10px;background:var(--papel);color:var(--noche);text-decoration:none}
+#ciba-alimentos .ciba-alimento-video-enlace img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#e9e5dc}
+#ciba-alimentos .ciba-alimento-video-boton{display:flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 16px;background:var(--noche);color:#fffdf7;font-weight:700;text-align:center}
+#ciba-alimentos .ciba-alimento-video-enlace:hover .ciba-alimento-video-boton{background:var(--verde)}
+#ciba-alimentos .ciba-alimento-video-descripcion{max-width:700px;margin:0;color:var(--suave);font-size:13px;line-height:1.65}
