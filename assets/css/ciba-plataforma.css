@@ -19,3 +19,32 @@
 .multimedia-generica-icon{display:grid;place-items:center;width:62px;height:62px;border:2px solid #fff;border-radius:50%;font-size:25px;padding-left:4px}
 .multimedia-imagen-generica small{font-size:11px;font-weight:800;letter-spacing:.12em}
 @media(max-width:640px){.multimedia-card{padding:0}.multimedia-card .multimedia-etapa{margin-top:14px}}
+
+/* Identificadores visuales de documentos: no sustituyen las cubiertas originales */
+.recurso-card{overflow:hidden;padding:0}
+.recurso-vista{height:142px;display:flex;align-items:center;justify-content:center;gap:16px;padding:14px;background:linear-gradient(125deg,#f1e8d8,#e8decd);border-bottom:1px solid var(--ciba-linea)}
+.recurso-hoja{position:relative;width:84px;height:112px;display:flex;flex-direction:column;justify-content:flex-start;gap:8px;padding:14px 10px 9px;background:#fffdf8;border:1px solid #d7cbbb;border-radius:3px;box-shadow:0 5px 12px #493a3218;transform:rotate(-3deg)}
+.recurso-pdf{align-self:flex-start;padding:4px 6px;border-radius:4px;background:#a9443b;color:#fff;font:800 10px/1 system-ui,sans-serif;letter-spacing:.08em}
+.recurso-linea{display:block;height:3px;width:100%;border-radius:2px;background:#d8d0c4}
+.recurso-linea.corta{width:62%}
+.recurso-hoja-pie{margin-top:auto;overflow:hidden;color:#8b6740;font:700 6px/1.2 system-ui,sans-serif;text-transform:uppercase;white-space:nowrap;text-overflow:ellipsis}
+.recurso-vista-tipo{color:#77664f;font:800 10px/1.4 system-ui,sans-serif;letter-spacing:.13em}
+.recurso-card .recurso-meta,.recurso-card h3,.recurso-card .recurso-descripcion,.recurso-card .recurso-datos,.recurso-card .recurso-aviso,.recurso-card .recurso-enlaces{margin-left:18px;margin-right:18px}
+.recurso-card .recurso-meta{margin-top:16px}
+.recurso-card .recurso-enlaces{margin-bottom:18px}
+.enlaces-recomendados-lista{display:grid;gap:14px;margin-top:24px}
+.enlace-recomendado-card{display:grid;grid-template-columns:148px minmax(0,1fr);overflow:hidden;border:1px solid var(--ciba-linea);border-radius:17px;background:rgba(255,252,245,.94);box-shadow:0 9px 28px rgba(73,58,50,.045)}
+.enlace-identidad{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;min-height:180px;padding:18px;background:linear-gradient(150deg,#29463f,#172b27);color:#fff;text-align:center}
+.enlace-identidad span{font:400 25px/1 Georgia,serif;letter-spacing:.04em}
+.enlace-identidad small{font:800 8px/1.4 system-ui,sans-serif;letter-spacing:.14em;color:#e6d5b3}
+.enlace-recomendado-contenido{min-width:0;padding:19px}
+.enlace-recomendado-meta{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:10px}
+.enlace-recomendado-meta span{padding:5px 8px;border-radius:999px;background:rgba(198,155,82,.14);color:#76572f;font-size:9px;font-weight:700}
+.enlace-recomendado-contenido h3{margin:0 0 8px;color:var(--ciba-cacao);font:400 21px/1.25 Georgia,serif}
+.enlace-recomendado-contenido>p{margin:0;color:var(--ciba-suave);font-size:12px;line-height:1.7}
+.enlace-recomendado-contenido dl{display:grid;gap:6px;margin:13px 0 0;padding-top:11px;border-top:1px solid var(--ciba-linea)}
+.enlace-recomendado-contenido dl div{display:grid;grid-template-columns:78px minmax(0,1fr);gap:8px}
+.enlace-recomendado-contenido dt{color:#8b6740;font-size:10px;font-weight:800}
+.enlace-recomendado-contenido dd{margin:0;color:var(--ciba-cacao);font-size:11px;line-height:1.5}
+.enlace-recomendado-contenido>a{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:9px 12px;border-radius:9px;background:#493a32;color:#fff8eb;font-size:10px;font-weight:800}
+@media(max-width:640px){.recurso-card{padding:0}.recurso-vista{height:126px}.recurso-card .recurso-meta{margin-top:14px}.enlace-recomendado-card{grid-template-columns:92px minmax(0,1fr)}.enlace-identidad{min-height:100%;padding:12px 6px}.enlace-identidad span{font-size:20px}.enlace-identidad small{font-size:7px}.enlace-recomendado-contenido{padding:14px}.enlace-recomendado-contenido h3{font-size:18px}.enlace-recomendado-meta span{font-size:8px}.enlace-recomendado-contenido dl div{grid-template-columns:64px minmax(0,1fr)}}
