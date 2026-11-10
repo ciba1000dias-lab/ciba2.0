@@ -887,3 +887,59 @@ body[data-ciba-columna="a"] .foot{background:#632824!important}
 @media(prefers-reduced-motion:reduce){
   .ciba-global-buscador{transition:none!important}
 }
+
+
+/* CIBA · PIE INSTITUCIONAL Y NAVEGACIÓN GLOBAL */
+.ciba-pie-institucional{
+  display:block;
+  width:100%;
+  margin:0;
+  padding:26px clamp(18px,4vw,56px) 24px;
+  box-sizing:border-box;
+  background:#172B27;
+  color:#F7F2E8;
+  text-align:center;
+  font-family:system-ui,sans-serif;
+  border-top:1px solid rgba(217,184,120,.42);
+}
+.ciba-pie-institucional p{margin:0}
+.ciba-pie-identidad{
+  max-width:900px;
+  margin-inline:auto!important;
+  font-size:13px;
+  line-height:1.65;
+  font-weight:600;
+  letter-spacing:.01em;
+}
+.ciba-pie-lema{
+  margin-top:5px!important;
+  color:#D9B878;
+  font-family:Georgia,serif;
+  font-size:15px;
+}
+.ciba-pie-navegacion{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:8px 22px;
+  margin-top:17px;
+}
+.ciba-pie-enlace{
+  display:inline-block;
+  padding:5px 0;
+  color:#F7F2E8!important;
+  font-size:12px;
+  line-height:1.5;
+  text-decoration:none;
+  border-bottom:1px solid rgba(217,184,120,.55);
+}
+.ciba-pie-enlace:hover,.ciba-pie-enlace:focus-visible{
+  color:#D9B878!important;
+  border-bottom-color:#D9B878;
+}
+@media(max-width:600px){
+  .ciba-pie-institucional{padding:22px 17px}
+  .ciba-pie-navegacion{gap:7px 15px}
+  .ciba-pie-enlace{font-size:11px}
+}
