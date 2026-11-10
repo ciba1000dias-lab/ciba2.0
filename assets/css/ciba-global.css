@@ -1123,3 +1123,71 @@ html[data-ciba-tema="oscuro"]:not([data-ciba-contraste="alto"]) body .comunidad-
  .ciba-global-columna .ciba-global-enlace-directo,.ciba-global-columna .ciba-global-desplegable-control{min-height:54px}
 }
 @media(prefers-reduced-motion:reduce){.ciba-global-desplegable::after{transition:none}}
+
+
+/* CIBA · SISTEMA DE MOVIMIENTO INSTITUCIONAL
+   Microinteracciones por interacción; sin GIF, fuentes externas ni animación continua.
+*/
+.ciba-icono-vivo{
+  transform-origin:center;
+  transition:transform .24s cubic-bezier(.2,.75,.25,1),filter .24s ease,color .24s ease;
+  will-change:auto;
+}
+:is(a,button,[role="button"],.plataforma-card,.comunidad-join-card,.plataforma-nota):is(:hover,:focus-within) .ciba-icono-vivo{
+  transform:translateY(-2px) scale(1.09) rotate(-4deg);
+  filter:drop-shadow(0 3px 5px rgba(198,155,82,.22));
+}
+:is(a,button,[role="button"]):active .ciba-icono-vivo{
+  transform:scale(.91) rotate(2deg);
+  filter:none;
+}
+.ciba-global-menu-boton{transition:background .22s ease,transform .22s ease,box-shadow .22s ease}
+.ciba-global-menu-boton:hover{transform:translateY(-1px);box-shadow:0 5px 16px rgba(0,0,0,.16)}
+.ciba-global-menu-boton:active{transform:scale(.96)}
+.ciba-global-enlace{transition:color .2s ease,background .2s ease,transform .2s ease}
+.ciba-global-enlace:hover,.ciba-global-enlace:focus-visible{transform:translateX(3px)}
+.ciba-global-desplegable-control::after{
+  transition:transform .28s cubic-bezier(.2,.75,.25,1),border-color .2s ease;
+}
+.ciba-global-desplegable-control:hover::after{border-color:#F0D39B}
+.ciba-global-grupo>.ciba-global-submenu:not([hidden]){
+  animation:ciba-submenu-aparece .22s ease-out both;
+  transform-origin:top;
+}
+@keyframes ciba-submenu-aparece{
+  from{opacity:0;transform:translateY(-5px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.ciba-pie-enlace{transition:transform .2s ease,color .2s ease}
+.ciba-pie-enlace:hover,.ciba-pie-enlace:focus-visible{transform:translateY(-2px)}
+.plataforma-card-icon,.plataforma-nota-icon,.comunidad-join-icon,.plataforma-estado i{
+  transition:transform .24s cubic-bezier(.2,.75,.25,1),box-shadow .24s ease;
+}
+.plataforma-card:hover .plataforma-card-icon,
+.plataforma-card:focus-visible .plataforma-card-icon,
+.plataforma-nota:hover .plataforma-nota-icon,
+.comunidad-join-card:hover .comunidad-join-icon{
+  transform:translateY(-3px) rotate(-7deg) scale(1.08);
+  box-shadow:0 5px 14px rgba(198,155,82,.18);
+}
+button,a,[role="button"]{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline-offset:3px}
+@media(prefers-reduced-motion:reduce){
+  .ciba-icono-vivo,.ciba-global-menu-boton,.ciba-global-enlace,
+  .ciba-global-desplegable-control::after,.ciba-pie-enlace,
+  .plataforma-card-icon,.plataforma-nota-icon,.comunidad-join-icon,
+  .plataforma-estado i{transition:none!important;animation:none!important;transform:none!important;filter:none!important}
+  .ciba-global-grupo>.ciba-global-submenu:not([hidden]){animation:none!important}
+}
+html[data-ciba-movimiento="reducido"] .ciba-icono-vivo,
+html[data-ciba-movimiento="reducido"] .ciba-global-menu-boton,
+html[data-ciba-movimiento="reducido"] .ciba-global-enlace,
+html[data-ciba-movimiento="reducido"] .ciba-global-desplegable-control::after,
+html[data-ciba-movimiento="reducido"] .ciba-pie-enlace,
+html[data-ciba-movimiento="reducido"] .plataforma-card-icon,
+html[data-ciba-movimiento="reducido"] .plataforma-nota-icon,
+html[data-ciba-movimiento="reducido"] .comunidad-join-icon,
+html[data-ciba-movimiento="reducido"] .plataforma-estado i{
+  transition:none!important;animation:none!important;transform:none!important;filter:none!important;
+}
+html[data-ciba-movimiento="reducido"] .ciba-global-grupo>.ciba-global-submenu:not([hidden]){animation:none!important}
