@@ -836,6 +836,13 @@
 
   function crearPieInstitucional() {
     if (document.querySelector('.ciba-pie-institucional')) return;
+
+    // El pie institucional nuevo es el único pie visible en todas las páginas.
+    // Retiramos los cierres antiguos que algunas páginas ya incorporaban.
+    document.querySelectorAll('footer:not(.ciba-pie-institucional)').forEach((anterior) => {
+      anterior.remove();
+    });
+
     const pie = elemento('footer', 'ciba-pie-institucional');
     const identidad = elemento('p', 'ciba-pie-identidad',
       'CIBA: plataforma digital cubana de educación parental en los primeros mil días de las infancias.');
