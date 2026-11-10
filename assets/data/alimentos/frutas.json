@@ -218,7 +218,13 @@
         "atribucion_url": "https://commons.wikimedia.org/wiki/File:Cut_ripe_mango_pieces.JPG"
       },
       "imagenes": [],
-      "video_youtube": null,
+      "video_youtube": {
+        "titulo": "Frutas y purés de fruta · desde 02:55",
+        "canal": "Dra. Carmen de la Torre · Pediatra",
+        "formato": "Vídeo educativo",
+        "descripcion": "Fragmento del vídeo dedicado al grupo alimentario indicado. El contenido es orientación general y debe adaptarse a la edad, desarrollo y necesidades de cada niño o niña.",
+        "url": "https://www.youtube.com/watch?v=iLYy5Ot8m50&t=175s"
+      },
       "palabras_clave": [
         "mango",
         "mango para bebé",
@@ -447,7 +453,13 @@
         "atribucion_url": "https://commons.wikimedia.org/wiki/File:Fresh_papaya_fruit.jpg"
       },
       "imagenes": [],
-      "video_youtube": null,
+      "video_youtube": {
+        "titulo": "Frutas y purés de fruta · desde 02:55",
+        "canal": "Dra. Carmen de la Torre · Pediatra",
+        "formato": "Vídeo educativo",
+        "descripcion": "Fragmento del vídeo dedicado al grupo alimentario indicado. El contenido es orientación general y debe adaptarse a la edad, desarrollo y necesidades de cada niño o niña.",
+        "url": "https://www.youtube.com/watch?v=iLYy5Ot8m50&t=175s"
+      },
       "palabras_clave": [
         "fruta bomba (papaya)",
         "papaya",
