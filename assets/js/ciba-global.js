@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-42', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-43', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -268,9 +268,12 @@
     const tituloColumnas = elemento('h2','ciba-global-menu-titulo ciba-global-menu-separador','LAS CUATRO COLUMNAS');
     panel.appendChild(tituloColumnas);
 
+    let secuenciaSubmenus = 0;
+
     function crearDesplegable(titulo, clase='', ruta=null) {
       const grupo=elemento('div','ciba-global-grupo '+clase);
       const lista=elemento('div','ciba-global-submenu');
+      lista.id = 'ciba-submenu-' + (++secuenciaSubmenus);
       lista.hidden=true;
 
       let botonGrupo;
@@ -280,6 +283,7 @@
         const control=elemento('button','ciba-global-enlace ciba-global-desplegable ciba-global-desplegable-control');
         control.type='button';
         control.setAttribute('aria-label','Mostrar u ocultar '+titulo);
+        control.setAttribute('aria-controls', lista.id);
         control.setAttribute('aria-expanded','false');
         control.addEventListener('click',()=>{
           const abrir=lista.hidden;
@@ -292,6 +296,7 @@
       } else {
         botonGrupo=elemento('button','ciba-global-enlace ciba-global-desplegable',titulo);
         botonGrupo.type='button';
+        botonGrupo.setAttribute('aria-controls', lista.id);
         botonGrupo.setAttribute('aria-expanded','false');
         botonGrupo.addEventListener('click',()=>{
           const abrir=lista.hidden;
@@ -412,8 +417,9 @@
     });
 
     document.addEventListener('keydown', (evento) => {
-      if (evento.key === 'Escape') {
+      if (evento.key === 'Escape' && panel.classList.contains('abierto')) {
         cerrarMenu(panel, boton);
+        boton.focus();
       }
     });
 
