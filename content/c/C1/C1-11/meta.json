@@ -1,0 +1,23 @@
+{
+  "id": "C1-11",
+  "titulo": "Guía interactiva de alimentación según la edad",
+  "descripcion": "Menú interactivo desde el nacimiento hasta los 23 meses para consultar alimentos, texturas y habilidades orientativas, conectado con la biblioteca y el recetario CIBA.",
+  "columna": "C",
+  "area": "C1",
+  "palabras_clave": [
+    "alimentación complementaria",
+    "alimentación por edad",
+    "primer año",
+    "segundo año",
+    "texturas",
+    "lactancia",
+    "alimentos",
+    "recetario",
+    "bebé"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-10",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "subseccion": "Primer año de vida"
+}
