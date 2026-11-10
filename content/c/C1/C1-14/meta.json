@@ -1,0 +1,22 @@
+{
+  "id": "C1-14",
+  "titulo": "Seguridad alimentaria infantil",
+  "descripcion": "Prácticas de higiene, agua segura, cocción y conservación para reducir enfermedades transmitidas por alimentos en la infancia temprana.",
+  "columna": "C",
+  "area": "C1",
+  "palabras_clave": [
+    "seguridad alimentaria",
+    "higiene",
+    "agua segura",
+    "conservación",
+    "cocción",
+    "contaminación",
+    "enfermedades transmitidas por alimentos",
+    "alimentación infantil"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-10",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "subseccion": "Primer año de vida"
+}
