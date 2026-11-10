@@ -690,8 +690,8 @@ def _construir_en_tmp(
                     flags=re.IGNORECASE,
                 )
                 html_actualizado = re.sub(
-                    r'(import\\s*\\(\\s*["\\'][^"\\']*ciba-plataforma\\.js)(?:[?#][^"\\']*)?(["\\']\\s*\\))',
-                    r'\\1?v=20261110-32\\2',
+                    r'(import\s*\(\s*["\'][^"\']*ciba-plataforma\.js)(?:[?#][^"\']*)?(["\']\s*\))',
+                    r'\1?v=20261110-32\2',
                     html_actualizado,
                     flags=re.IGNORECASE,
                 )
