@@ -322,7 +322,7 @@
         });
         const primeraArea=areas[0];
         if(primeraArea) agregarEnlace(desplegable.lista,primeraArea.ruta_publica,'Explorar '+columna.titulo);
-        panel.appendChild(desplegable.grupo);
+        panel.insertBefore(desplegable.grupo,tituloPlataforma);
       });
     }
 
