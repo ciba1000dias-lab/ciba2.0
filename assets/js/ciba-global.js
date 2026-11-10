@@ -268,20 +268,39 @@
     const tituloColumnas = elemento('h2','ciba-global-menu-titulo ciba-global-menu-separador','LAS CUATRO COLUMNAS');
     panel.appendChild(tituloColumnas);
 
-    function crearDesplegable(titulo, clase='') {
+    function crearDesplegable(titulo, clase='', ruta=null) {
       const grupo=elemento('div','ciba-global-grupo '+clase);
-      const botonGrupo=elemento('button','ciba-global-enlace ciba-global-desplegable',titulo);
-      botonGrupo.type='button';
-      botonGrupo.setAttribute('aria-expanded','false');
       const lista=elemento('div','ciba-global-submenu');
       lista.hidden=true;
-      botonGrupo.addEventListener('click',()=>{
-        const abrir=lista.hidden;
-        lista.hidden=!abrir;
-        botonGrupo.setAttribute('aria-expanded',String(abrir));
-        grupo.classList.toggle('desplegado',abrir);
-      });
-      grupo.append(botonGrupo,lista);
+
+      let botonGrupo;
+      if(ruta) {
+        const cabecera=elemento('div','ciba-global-cabecera-grupo');
+        botonGrupo=enlace(urlPublica(ruta),titulo,'ciba-global-enlace ciba-global-enlace-directo');
+        const control=elemento('button','ciba-global-enlace ciba-global-desplegable ciba-global-desplegable-control');
+        control.type='button';
+        control.setAttribute('aria-label','Mostrar u ocultar '+titulo);
+        control.setAttribute('aria-expanded','false');
+        control.addEventListener('click',()=>{
+          const abrir=lista.hidden;
+          lista.hidden=!abrir;
+          control.setAttribute('aria-expanded',String(abrir));
+          grupo.classList.toggle('desplegado',abrir);
+        });
+        cabecera.append(botonGrupo,control);
+        grupo.append(cabecera,lista);
+      } else {
+        botonGrupo=elemento('button','ciba-global-enlace ciba-global-desplegable',titulo);
+        botonGrupo.type='button';
+        botonGrupo.setAttribute('aria-expanded','false');
+        botonGrupo.addEventListener('click',()=>{
+          const abrir=lista.hidden;
+          lista.hidden=!abrir;
+          botonGrupo.setAttribute('aria-expanded',String(abrir));
+          grupo.classList.toggle('desplegado',abrir);
+        });
+        grupo.append(botonGrupo,lista);
+      }
       return {grupo,botonGrupo,lista};
     }
 
@@ -293,14 +312,13 @@
     async function construirNavegacionEditorial() {
       const datos=await obtenerCatalogo();
       columnas.forEach((columna)=>{
-        const desplegable=crearDesplegable(columna.titulo,'ciba-global-columna ciba-global-columna-'+columna.id.toLowerCase());
-        const letra=elemento('span','ciba-global-letra',columna.id);
-        desplegable.botonGrupo.prepend(letra);
         const areas=(datos.areas||[]).filter(a=>a.columna===columna.id)
           .sort((a,b)=>(a.orden||0)-(b.orden||0));
+        const desplegable=crearDesplegable(columna.titulo,'ciba-global-columna ciba-global-columna-'+columna.id.toLowerCase(),areas[0]?.ruta_publica||null);
+        const letra=elemento('span','ciba-global-letra',columna.id);
+        desplegable.botonGrupo.prepend(letra);
         areas.forEach(area=>{
-          const grupoArea=crearDesplegable(area.titulo||area.id,'ciba-global-area');
-          agregarEnlace(grupoArea.lista,area.ruta_publica,'Abrir '+(area.titulo||'área'));
+          const grupoArea=crearDesplegable(area.titulo||area.id,'ciba-global-area',area.ruta_publica||null);
           const paginas=(datos.paginas||[]).filter(p=>p.area===area.id&&p.columna===columna.id)
             .sort((a,b)=>String(a.titulo||'').localeCompare(String(b.titulo||''),'es'));
           const subsecciones=new Map();
@@ -320,8 +338,6 @@
           });
           desplegable.lista.appendChild(grupoArea.grupo);
         });
-        const primeraArea=areas[0];
-        if(primeraArea) agregarEnlace(desplegable.lista,primeraArea.ruta_publica,'Explorar '+columna.titulo);
         panel.insertBefore(desplegable.grupo,tituloPlataforma);
       });
     }
@@ -337,11 +353,9 @@
 
     const tituloPlataforma=elemento('h2','ciba-global-menu-titulo ciba-global-menu-separador','PLATAFORMA');
     panel.appendChild(tituloPlataforma);
-    const grupoPlataforma=crearDesplegable('Plataforma','ciba-global-plataforma');
-    agregarEnlace(grupoPlataforma.lista,'plataforma/','Explorar Plataforma');
+    const grupoPlataforma=crearDesplegable('Plataforma','ciba-global-plataforma','plataforma/');
     seccionesPlataforma.forEach(seccion=>{
-      const grupo=crearDesplegable(seccion[1],'ciba-global-area');
-      agregarEnlace(grupo.lista,'plataforma/'+seccion[0]+'/','Ver sección completa');
+      const grupo=crearDesplegable(seccion[1],'ciba-global-area','plataforma/'+seccion[0]+'/');
       seccion[2].forEach(apartado=>agregarEnlace(grupo.lista,'plataforma/'+seccion[0]+'/'+apartado[0]+'/',apartado[1]));
       grupoPlataforma.lista.appendChild(grupo.grupo);
     });
