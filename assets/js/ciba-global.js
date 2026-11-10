@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-43', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-44', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -131,44 +131,39 @@
     boton.setAttribute('aria-label', 'Abrir menú de navegación');
   }
 
+  let secuenciaSubmenusPreparacion = 0;
+
   function crearSubmenu(titulo, opciones, panel) {
     const grupo = elemento('div', 'ciba-global-grupo');
+    const lista = elemento('div', 'ciba-global-submenu');
+    lista.id = 'ciba-submenu-preparacion-' + (++secuenciaSubmenusPreparacion);
+    lista.hidden = true;
 
     const encabezado = elemento(
-      'a',
-      'ciba-global-enlace',
+      'button',
+      'ciba-global-enlace ciba-global-submenu-toggle',
       titulo
     );
 
-    encabezado.href = '#';
+    encabezado.type = 'button';
+    encabezado.setAttribute('aria-controls', lista.id);
     encabezado.setAttribute('aria-expanded', 'false');
 
-    const lista = elemento('div', 'ciba-global-submenu');
-    lista.hidden = true;
-
-    encabezado.addEventListener('click', (evento) => {
-      evento.preventDefault();
-
-      const abierto = !lista.hidden;
-      lista.hidden = abierto;
-      encabezado.setAttribute('aria-expanded', String(!abierto));
+    encabezado.addEventListener('click', () => {
+      const abrir = lista.hidden;
+      lista.hidden = !abrir;
+      encabezado.setAttribute('aria-expanded', String(abrir));
     });
 
     opciones.forEach((opcion) => {
       const item = elemento(
-        'a',
+        'span',
         'ciba-global-enlace ciba-global-subenlace',
         opcion
       );
 
-      item.href = '#';
       item.setAttribute('aria-disabled', 'true');
       item.title = 'Apartado en preparación';
-
-      item.addEventListener('click', (evento) => {
-        evento.preventDefault();
-      });
-
       lista.appendChild(item);
     });
 
