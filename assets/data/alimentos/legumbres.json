@@ -559,7 +559,13 @@
         "licencia": "CC BY-SA 3.0",
         "atribucion_url": "https://commons.wikimedia.org/wiki/File:Dried_red_lentil.JPG"
       },
-      "video_youtube": null,
+      "video_youtube": {
+        "titulo": "Introducción de legumbres · desde 19:44",
+        "canal": "Dra. Carmen de la Torre · Pediatra",
+        "formato": "Vídeo educativo",
+        "descripcion": "Fragmento del vídeo dedicado al grupo alimentario indicado. El contenido es orientación general y debe adaptarse a la edad, desarrollo y necesidades de cada niño o niña.",
+        "url": "https://www.youtube.com/watch?v=iLYy5Ot8m50&t=1184s"
+      },
       "palabras_clave": [
         "lentejas",
         "lenteja",
@@ -679,7 +685,13 @@
         "licencia": "CC BY-SA 4.0",
         "atribucion_url": "https://commons.wikimedia.org/wiki/File:Soaked_and_dried_chickpeas.jpg"
       },
-      "video_youtube": null,
+      "video_youtube": {
+        "titulo": "Introducción de legumbres · desde 19:44",
+        "canal": "Dra. Carmen de la Torre · Pediatra",
+        "formato": "Vídeo educativo",
+        "descripcion": "Fragmento del vídeo dedicado al grupo alimentario indicado. El contenido es orientación general y debe adaptarse a la edad, desarrollo y necesidades de cada niño o niña.",
+        "url": "https://www.youtube.com/watch?v=iLYy5Ot8m50&t=1184s"
+      },
       "palabras_clave": [
         "garbanzos",
         "garbanzo",
