@@ -97,6 +97,84 @@
       ],
       "estado": "publicado",
       "imagenes": []
+    },
+    {
+      "id": "aceite-oliva",
+      "nombre": "Aceite de oliva",
+      "nombres_alternativos": [
+        "aceite de oliva virgen",
+        "aceite de oliva virgen extra"
+      ],
+      "categoria": "Grasas y aceites",
+      "resumen": "Aceite vegetal rico en ácido oleico, utilizado en pequeñas cantidades para cocinar y aliñar.",
+      "descripcion": "El aceite de oliva se obtiene del fruto del olivo. Su grasa está formada principalmente por ácidos grasos monoinsaturados, sobre todo ácido oleico. El aceite virgen extra conserva compuestos fenólicos en cantidades variables; sigue siendo una grasa concentrada en energía.",
+      "propiedades": [
+        "Predominan los ácidos grasos monoinsaturados.",
+        "Aporta energía concentrada; no es fuente importante de proteína ni fibra."
+      ],
+      "beneficios": [
+        "Puede formar parte de una alimentación variada como fuente de grasa culinaria.",
+        "Pequeñas cantidades permiten enriquecer la textura y densidad energética de las comidas."
+      ],
+      "edad": "Puede utilizarse en pequeñas cantidades desde el inicio de la alimentación complementaria, alrededor de los 6 meses, como ingrediente de preparaciones. No ofrecerlo solo.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Añadir unas gotas a purés y alimentos bien cocidos, sin que sustituya otros grupos alimentarios."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Utilizar pequeñas cantidades en vegetales, legumbres o carnes bien cocidas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Incorporar moderadamente en comidas familiares; priorizar preparaciones no fritas."
+        }
+      ],
+      "preparacion_segura": "Elegir aceite apto para consumo, conservarlo bien cerrado y evitar calentarlo hasta que humee. No reutilizar repetidamente el aceite de fritura.",
+      "recetas": [
+        {
+          "nombre": "Vegetales majados con aceite de oliva",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Vegetales cocidos y unas gotas de aceite de oliva",
+          "preparacion": "Aplastar los vegetales y mezclar una pequeña cantidad de aceite hasta integrar."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer aceite solo ni en grandes cantidades.",
+        "Evitar frituras frecuentes y aceite reutilizado o recalentado repetidamente."
+      ],
+      "conservacion": "Mantener bien cerrado, protegido de la luz y el calor. Respetar fecha de consumo y desechar si presenta olor o sabor rancio.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bottle_in_the_oil.jpg?width=1280",
+        "alt": "Botella de aceite transparente fotografiada sobre un fondo claro.",
+        "autor": "Vignesh1694",
+        "licencia": "CC BY 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Bottle_in_the_oil.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "aceite de oliva",
+        "aceite de oliva para bebé",
+        "grasas monoinsaturadas",
+        "aceite virgen extra"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación alimentaria adaptada al contexto cubano."
+        },
+        {
+          "institucion": "OMS",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
     }
   ]
 }
