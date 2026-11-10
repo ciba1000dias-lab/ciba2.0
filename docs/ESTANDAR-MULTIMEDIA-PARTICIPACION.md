@@ -60,7 +60,7 @@ Inventario operativo de la biblioteca: **151 fichas**.
 
 - Vídeos: **13 de 151 (8,61 %)**. Se alcanza el mínimo de 13 fichas con vídeo.
 - Imágenes de Wikimedia Commons: **144 de 151 (95,36 %)**. Se supera el mínimo de 76 fichas.
-- Páginas interactivas: en el inventario general actual se han identificado al menos 15 páginas interactivas entre buscadores de categorías, selector por edades y recetario. El recuento global del sitio debe revisarse por temática en la siguiente auditoría editorial.
+- Páginas interactivas: en el inventario general actual se han identificado al menos 15 páginas interactivas de 82 páginas publicadas (18,29 %), entre buscadores de categorías, selector por edades y recetario. Se supera el mínimo global del 10 %; el recuento debe desglosarse por temática en la siguiente auditoría editorial.
 
 Los siete alimentos que todavía no tienen imagen no impiden cumplir el umbral del 50 %. Se añadirán imágenes solo cuando exista una fuente adecuada y una atribución válida.
 
