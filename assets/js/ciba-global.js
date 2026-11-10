@@ -854,7 +854,7 @@
       ['Internet', 'i/I1/'],
       ['Bienestar', 'b/B1/'],
       ['Acompañamiento', 'a/A1/'],
-      ['Configuración de la plataforma', 'plataforma/']
+      ['Configuración de la plataforma', 'plataforma/configuracion/']
     ];
     enlaces.forEach(([nombre, ruta]) => {
       nav.appendChild(enlace(urlPublica(ruta), nombre, 'ciba-pie-enlace'));
