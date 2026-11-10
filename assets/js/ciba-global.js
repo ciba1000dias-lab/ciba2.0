@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-45', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-46', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -318,9 +318,12 @@
         const letra=elemento('span','ciba-global-letra',columna.id);
         desplegable.botonGrupo.prepend(letra);
         areas.forEach(area=>{
-          const grupoArea=crearDesplegable(area.titulo||area.id,'ciba-global-area',area.ruta_publica||null);
-          const paginas=(datos.paginas||[]).filter(p=>p.area===area.id&&p.columna===columna.id)
-            .sort((a,b)=>String(a.titulo||'').localeCompare(String(b.titulo||''),'es'));
+          const rutaMenuArea = area.id === 'C1' ? 'c/C1/alimentacion/' : area.ruta_publica;
+          const grupoArea=crearDesplegable(area.titulo||area.id,'ciba-global-area',rutaMenuArea);
+          const paginas=(datos.paginas||[]).filter(p=>
+            p.area===area.id&&p.columna===columna.id&&
+            !(area.id==='C1'&&['C1-01','C1-02','C1-03'].includes(p.id))
+          ).sort((a,b)=>String(a.titulo||'').localeCompare(String(b.titulo||''),'es'));
           const subsecciones=new Map();
           paginas.forEach(p=>{
             const clave=p.subseccion||'Contenidos generales';
@@ -336,6 +339,12 @@
               items.forEach(p=>agregarEnlace(grupoArea.lista,p.ruta_publica,p.titulo));
             }
           });
+          if(area.id==='C1'){
+            agregarEnlace(grupoArea.lista,'c/C1/lactancia/','Lactancia');
+          }
+          if(area.id==='C2') agregarEnlace(grupoArea.lista,'c/C1/C1-03/','¿Cuántas horas debe dormir mi bebé según su edad?');
+          if(area.id==='C4') agregarEnlace(grupoArea.lista,'c/C1/C1-01/','Comprender las etapas del desarrollo infantil');
+          if(area.id==='C5') agregarEnlace(grupoArea.lista,'c/C1/C1-02/','El apego y la construcción de vínculos seguros');
           desplegable.lista.appendChild(grupoArea.grupo);
         });
         panel.insertBefore(desplegable.grupo,tituloPlataforma);
