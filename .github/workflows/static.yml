@@ -31,10 +31,12 @@ jobs:
       - name: Ejecutar pruebas
         run: python -m unittest discover -s tests -t . -v
 
-      - name: Comprobar sintaxis JavaScript del recetario
+      - name: Comprobar sintaxis JavaScript del sitio
         run: |
           node --input-type=module --check < assets/js/ciba-recetario-motor.js
           node --input-type=module --check < assets/js/ciba-recetario.js
+          node --input-type=module --check < assets/js/ciba-global.js
+          node --check assets/js/ciba-plataforma.js
 
       - name: Validar contenidos
         run: python scripts/validate_content.py --src content
