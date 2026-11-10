@@ -72,7 +72,13 @@
         "licencia": "CC BY-SA 4.0",
         "atribucion_url": "https://commons.wikimedia.org/wiki/File:CALABAZA.jpg"
       },
-      "video_youtube": null,
+      "video_youtube": {
+        "titulo": "Introducción de verduras · desde 05:16",
+        "canal": "Dra. Carmen de la Torre · Pediatra",
+        "formato": "Vídeo educativo",
+        "descripcion": "Fragmento del vídeo dedicado al grupo alimentario indicado. El contenido es orientación general y debe adaptarse a la edad, desarrollo y necesidades de cada niño o niña.",
+        "url": "https://www.youtube.com/watch?v=iLYy5Ot8m50&t=316s"
+      },
       "palabras_clave": [
         "calabaza para bebé",
         "auyama",
@@ -442,7 +448,13 @@
         "licencia": "CC BY-SA 4.0",
         "atribucion_url": "https://commons.wikimedia.org/wiki/File:Organic_Carrot.jpg"
       },
-      "video_youtube": null,
+      "video_youtube": {
+        "titulo": "Preparación de purés de verduras · desde 06:23",
+        "canal": "Dra. Carmen de la Torre · Pediatra",
+        "formato": "Vídeo educativo",
+        "descripcion": "Fragmento del vídeo dedicado al grupo alimentario indicado. El contenido es orientación general y debe adaptarse a la edad, desarrollo y necesidades de cada niño o niña.",
+        "url": "https://www.youtube.com/watch?v=iLYy5Ot8m50&t=383s"
+      },
       "palabras_clave": [
         "zanahoria para bebé",
         "puré de zanahoria",
