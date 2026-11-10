@@ -646,20 +646,16 @@
     .crianza-area-icono { position:absolute; top:17px; right:18px; width:38px; height:38px; color:#8c9c83; opacity:.9; }
     .crianza-area-icono svg { width:100%; height:100%; fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
     .crianza-area-icono path { stroke-dasharray:150; stroke-dashoffset:150; animation:crianza-area-trazo 1.2s ease .25s forwards; }
-    .crianza-area-peso { margin-top:17px; color:var(--tierra); font-size:11px; font-weight:800; letter-spacing:.12em; }
     .crianza-area-card h3 { max-width:245px; margin:9px 0 8px; color:var(--noche); font:normal 23px/1.18 Georgia,serif; }
     .crianza-area-card p { margin:0 0 18px; color:var(--suave); font-size:12px; line-height:1.7; }
-    .crianza-area-barra { display:block; height:3px; margin-top:auto; overflow:hidden; background:#e9e2d6; }
-    .crianza-area-barra i { display:block; width:var(--peso); height:100%; background:var(--terracota); transform-origin:left; animation:crianza-area-progreso .9s ease .3s both; }
     .crianza-area-ir { display:flex; justify-content:space-between; align-items:center; margin-top:15px; color:var(--verde); font-size:9px; font-weight:800; letter-spacing:.12em; }
     .crianza-area-ir b { font-size:16px; transition:transform .2s; }
     .crianza-area-card:active .crianza-area-ir b { transform:translate(3px,-2px); }
     @keyframes crianza-area-entrada { from { opacity:0; transform:translateY(12px) } to { opacity:1; transform:translateY(0) } }
-    @keyframes crianza-area-trazo { to { stroke-dashoffset:0 } }
-    @keyframes crianza-area-progreso { from { transform:scaleX(0) } to { transform:scaleX(1) } }
+    @keyframes crianza-area-trazo { to { stroke-dashoffset:0 } } to { transform:scaleX(1) } }
     @media(max-width:850px){.crianza-areas-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:560px){.crianza-areas-grid{grid-template-columns:1fr}.crianza-area-card{min-height:220px;padding:21px}.crianza-area-card h3{font-size:24px}}
-    @media(prefers-reduced-motion:reduce){.crianza-area-card,.crianza-area-icono path,.crianza-area-barra i{animation:none!important;transition:none!important}.crianza-area-icono path{stroke-dashoffset:0}}
+    @media(prefers-reduced-motion:reduce){.crianza-area-card,.crianza-area-icono path,.crianza-area-icono path{stroke-dashoffset:0}}
 
   </style>
 </head>
@@ -780,72 +776,58 @@
     <section class="seccion crianza-areas" id="areas-crianza" aria-labelledby="titulo-areas-crianza">
       <div class="contenedor">
         <div class="encabezado-seccion crianza-areas-cabecera">
-          <span class="etiqueta">La arquitectura de Crianza · 40% de CIBA</span>
+          <span class="etiqueta">La arquitectura de Crianza</span>
           <h2 class="titulo" id="titulo-areas-crianza">Siete caminos para acompañar la infancia.</h2>
-          <p>La columna Crianza se organiza en siete áreas complementarias. La distribución porcentual expresa el peso editorial previsto de cada una dentro de esta columna; no representa porcentajes de contenido ya publicado.</p>
+          <p>La columna Crianza se organiza en siete áreas complementarias. Cada una responde a necesidades distintas de las familias y tiene la misma importancia dentro de nuestro acompañamiento.</p>
         </div>
         <div class="crianza-areas-grid">
-          <a class="crianza-area-card" href="alimentacion/" aria-label="Alimentación y lactancia, 25%. Nutrición, lactancia, alimentación complementaria y experiencias en torno a la mesa.">
+          <a class="crianza-area-card" href="alimentacion/" aria-label="Alimentación y lactancia. Nutrición, lactancia, alimentación complementaria y experiencias en torno a la mesa.">
             <span class="crianza-area-numero">01</span>
             <span class="crianza-area-icono" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 5 C34 5 42 13 42 23 C42 35 31 43 20 40 C9 37 4 26 9 16 C13 8 23 7 30 12 C36 17 36 26 30 31 C24 36 16 32 16 25 C16 20 20 17 24 18"/></svg></span>
-            <span class="crianza-area-peso">25%</span>
             <h3>Alimentación y lactancia</h3>
             <p>Nutrición, lactancia, alimentación complementaria y experiencias en torno a la mesa.</p>
-            <span class="crianza-area-barra" aria-hidden="true"><i style="--peso:25%"></i></span>
             <span class="crianza-area-ir">EXPLORAR ÁREA <b>↗</b></span>
           </a>
-          <a class="crianza-area-card" href="../C2/" aria-label="Sueño y descanso, 18%. Ritmos, siestas, rutinas y condiciones para un descanso seguro.">
+          <a class="crianza-area-card" href="../C2/" aria-label="Sueño y descanso. Ritmos, siestas, rutinas y condiciones para un descanso seguro.">
             <span class="crianza-area-numero">02</span>
             <span class="crianza-area-icono" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 25 C8 15 16 8 24 8 C34 8 41 16 41 25 C41 35 33 41 24 41 C15 41 8 34 8 25 M16 25 C16 20 20 16 25 16 C30 16 34 20 34 25"/></svg></span>
-            <span class="crianza-area-peso">18%</span>
             <h3>Sueño y descanso</h3>
             <p>Ritmos, siestas, rutinas y condiciones para un descanso seguro.</p>
-            <span class="crianza-area-barra" aria-hidden="true"><i style="--peso:18%"></i></span>
             <span class="crianza-area-ir">EXPLORAR ÁREA <b>↗</b></span>
           </a>
-          <a class="crianza-area-card" href="../C3/" aria-label="Cuidados básicos y autonomía, 15%. Higiene, cuidados cotidianos y adquisición progresiva de autonomía.">
+          <a class="crianza-area-card" href="../C3/" aria-label="Cuidados básicos y autonomía. Higiene, cuidados cotidianos y adquisición progresiva de autonomía.">
             <span class="crianza-area-numero">03</span>
             <span class="crianza-area-icono" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M10 13 H38 M10 24 H38 M10 35 H30"/></svg></span>
-            <span class="crianza-area-peso">15%</span>
             <h3>Cuidados básicos y autonomía</h3>
             <p>Higiene, cuidados cotidianos y adquisición progresiva de autonomía.</p>
-            <span class="crianza-area-barra" aria-hidden="true"><i style="--peso:15%"></i></span>
             <span class="crianza-area-ir">EXPLORAR ÁREA <b>↗</b></span>
           </a>
-          <a class="crianza-area-card" href="../C4/" aria-label="Juego, estimulación y aprendizaje, 15%. Exploración, juego, comunicación y aprendizaje en la vida diaria.">
+          <a class="crianza-area-card" href="../C4/" aria-label="Juego, estimulación y aprendizaje. Exploración, juego, comunicación y aprendizaje en la vida diaria.">
             <span class="crianza-area-numero">04</span>
             <span class="crianza-area-icono" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 5 C13 5 7 15 10 25 C13 35 22 42 24 43 C26 42 35 35 38 25 C41 15 35 5 24 5 Z M17 24 L22 29 L32 18"/></svg></span>
-            <span class="crianza-area-peso">15%</span>
             <h3>Juego, estimulación y aprendizaje</h3>
             <p>Exploración, juego, comunicación y aprendizaje en la vida diaria.</p>
-            <span class="crianza-area-barra" aria-hidden="true"><i style="--peso:15%"></i></span>
             <span class="crianza-area-ir">EXPLORAR ÁREA <b>↗</b></span>
           </a>
-          <a class="crianza-area-card" href="../C5/" aria-label="Vínculo, apego y desarrollo socioemocional, 12%. Relaciones sensibles, apego seguro y acompañamiento emocional.">
+          <a class="crianza-area-card" href="../C5/" aria-label="Vínculo, apego y desarrollo socioemocional. Relaciones sensibles, apego seguro y acompañamiento emocional.">
             <span class="crianza-area-numero">05</span>
             <span class="crianza-area-icono" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 41 C24 31 10 29 10 18 C10 8 23 7 24 17 C25 7 38 8 38 18 C38 29 24 31 24 41 Z"/></svg></span>
-            <span class="crianza-area-peso">12%</span>
             <h3>Vínculo, apego y desarrollo socioemocional</h3>
             <p>Relaciones sensibles, apego seguro y acompañamiento emocional.</p>
-            <span class="crianza-area-barra" aria-hidden="true"><i style="--peso:12%"></i></span>
             <span class="crianza-area-ir">EXPLORAR ÁREA <b>↗</b></span>
           </a>
-          <a class="crianza-area-card" href="../C6/" aria-label="Prevención y seguridad en el hogar, 10%. Entornos protectores y prevención de lesiones durante los primeros años.">
+          <a class="crianza-area-card" href="../C6/" aria-label="Prevención y seguridad en el hogar. Entornos protectores y prevención de lesiones durante los primeros años.">
             <span class="crianza-area-numero">06</span>
             <span class="crianza-area-icono" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 5 L41 12 V24 C41 34 33 40 24 44 C15 40 7 34 7 24 V12 Z M16 24 L22 30 L33 18"/></svg></span>
-            <span class="crianza-area-peso">10%</span>
             <h3>Prevención y seguridad en el hogar</h3>
             <p>Entornos protectores y prevención de lesiones durante los primeros años.</p>
-            <span class="crianza-area-barra" aria-hidden="true"><i style="--peso:10%"></i></span>
             <span class="crianza-area-ir">EXPLORAR ÁREA <b>↗</b></span>
           </a>
-          <a class="crianza-area-card" href="../C7/" aria-label="Cultura, rutinas y vida cotidiana, 5%. Tradiciones, convivencia y prácticas familiares que dan sentido a la crianza.">
+          <a class="crianza-area-card" href="../C7/" aria-label="Cultura, rutinas y vida cotidiana. Tradiciones, convivencia y prácticas familiares que dan sentido a la crianza.">
             <span class="crianza-area-numero">07</span>
             <span class="crianza-area-icono" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 24 C14 12 20 12 24 24 C28 36 34 36 40 24 M24 7 V41"/></svg></span>
-            <span class="crianza-area-peso">5%</span>
             <h3>Cultura, rutinas y vida cotidiana</h3>
             <p>Tradiciones, convivencia y prácticas familiares que dan sentido a la crianza.</p>
-            <span class="crianza-area-barra" aria-hidden="true"><i style="--peso:5%"></i></span>
             <span class="crianza-area-ir">EXPLORAR ÁREA <b>↗</b></span>
           </a>
         </div>
