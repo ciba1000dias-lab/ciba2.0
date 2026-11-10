@@ -685,7 +685,7 @@ def _construir_en_tmp(
                 )
                 html_actualizado = re.sub(
                     r'(<script\b[^>]*\bsrc\s*=\s*["\'][^"\']*ciba-plataforma\.js)(?:[?#][^"\']*)?(["\'][^>]*>)',
-                    r'\1?v=20261110-22\2',
+                    r'\1?v=20261110-23\2',
                     html_actualizado,
                     flags=re.IGNORECASE,
                 )
