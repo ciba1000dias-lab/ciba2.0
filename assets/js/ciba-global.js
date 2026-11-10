@@ -353,11 +353,9 @@
     buscar.addEventListener('click',()=>{
       scrollOculto=false;
       cerrarMenu(panel,boton);
-      if(esPortada()) abrirBuscadorDePortada();
-      else {
-        const oraculo=document.querySelector('.ciba-global-oraculo');
-        if(oraculo) oraculo.click();
-      }
+      const oraculo=document.querySelector('.ciba-global-oraculo');
+      if(oraculo) oraculo.click();
+      else if(esPortada()) abrirBuscadorDePortada();
     });
     panel.appendChild(buscar);
 
@@ -466,9 +464,8 @@
   }
 
   function crearBuscador() {
-    // La portada conserva su buscador normal.
-    if (esPortada()) return;
-
+    // El oráculo flotante está disponible en portada y páginas interiores.
+    // La portada conserva además su buscador integrado como vía alternativa.
     if (document.querySelector('.ciba-global-buscador')) return;
 
     const contenedor = elemento(
