@@ -110,3 +110,11 @@
 #ciba-alimentos .ciba-alimento-video-boton{display:flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 16px;background:var(--noche);color:#fffdf7;font-weight:700;text-align:center}
 #ciba-alimentos .ciba-alimento-video-enlace:hover .ciba-alimento-video-boton{background:var(--verde)}
 #ciba-alimentos .ciba-alimento-video-descripcion{max-width:700px;margin:0;color:var(--suave);font-size:13px;line-height:1.65}
+
+
+/* CIBA · Enlaces ligeros a YouTube: sin miniaturas ni reproductores */
+#ciba-alimentos .ciba-alimento-video{margin:14px 0 0;padding:0;background:transparent}
+#ciba-alimentos .ciba-alimento-video-enlace{display:inline-flex;align-items:center;gap:9px;min-height:40px;color:var(--verde);font-weight:700;text-decoration:none}
+#ciba-alimentos .ciba-alimento-video-enlace svg{display:block;flex:0 0 32px}
+#ciba-alimentos .ciba-alimento-video-enlace span{text-decoration:underline;text-underline-offset:3px}
+#ciba-alimentos .ciba-alimento-video-enlace:hover span{color:var(--tierra)}
