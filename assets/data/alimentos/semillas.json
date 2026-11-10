@@ -93,6 +93,12 @@
           "titulo": "Food Safety for Children Under 5",
           "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
           "utilidad": "Higiene y prevención de enfermedades transmitidas por alimentos."
+        },
+        {
+          "institucion": "American Academy of Pediatrics · HealthyChildren.org",
+          "titulo": "When to Introduce Egg, Peanut Butter & Other Common Food Allergens to a Baby",
+          "url": "https://www.healthychildren.org/English/healthy-living/nutrition/Pages/when-to-introduce-egg-peanut-butter-and-other-common-food-allergens-to-your-baby-food-allergy-prevention-tips.aspx",
+          "utilidad": "Orientación sobre la introducción de alérgenos comunes, incluido el sésamo, en formas seguras y apropiadas para la edad."
         }
       ],
       "estado": "publicado",
