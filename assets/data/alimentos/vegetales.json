@@ -1365,7 +1365,13 @@
         "No ofrecer crudo en trozos duros o con piel difícil de manejar."
       ],
       "conservacion": "Refrigerar entero y seco en recipiente o bolsa perforada. Una vez cortado, refrigerar tapado y utilizar pronto.",
-      "imagen_principal": null,
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Capsicum_chinense_Aji_Dulce_1zz.jpg?width=1280",
+        "alt": "Ají dulce de la especie Capsicum chinense.",
+        "autor": "David J. Stang",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Capsicum_chinense_Aji_Dulce_1zz.jpg"
+      },
       "video_youtube": null,
       "palabras_clave": [
         "ají cachucha",
