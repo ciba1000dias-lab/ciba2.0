@@ -20,6 +20,20 @@ const url=(p='')=>root+'plataforma/'+p;
 const item=section[4].find(x=>x[0]===parts[1]);
 const crumb='<nav class="plataforma-breadcrumb" aria-label="Ruta de navegación"><a href="'+root+'index.html">Inicio</a><span>›</span><a href="'+url('')+'">Plataforma</a><span>›</span><a href="'+url(section[0]+'/')+'">'+esc(section[1])+'</a>'+(item?'<span>›</span><strong>'+esc(item[1])+'</strong>':'')+'</nav>';
 
+
+if(section[0]==='navegacion'&&item&&item[0]==='buscar'){
+ app.innerHTML='<header class="plataforma-top"><div class="plataforma-top-inner"><a class="plataforma-logo" href="'+root+'index.html">CIBA</a><a class="plataforma-volver" href="'+url('navegacion/')+'">← Navegación</a></div></header><section class="plataforma-hero navegacion-buscar-hero"><div class="plataforma-wrap"><div class="plataforma-kicker">CIBA · Plataforma · Navegación</div><h1>Buscar</h1><p>Encuentra contenidos de CIBA sobre embarazo, nacimiento, lactancia, alimentación y primeros dos años de vida.</p><span class="plataforma-estado"><i>⌕</i> Buscador global</span></div></section><main class="plataforma-main">'+crumb+'<section class="navegacion-buscar-panel"><div class="navegacion-buscar-simbolo" aria-hidden="true">⌕</div><div class="navegacion-buscar-contenido"><span class="navegacion-buscar-etiqueta">BUSCADOR ANCESTRAL CIBA</span><h2>¿Qué deseas encontrar?</h2><p>Abre el buscador global y escribe el tema, alimento o concepto que necesitas consultar.</p><button type="button" class="navegacion-buscar-cta" id="ciba-open-search">ABRIR BUSCADOR CIBA <span aria-hidden="true">→</span></button><p class="navegacion-buscar-estado" id="ciba-search-status" role="status" aria-live="polite"></p></div></section><section class="navegacion-buscar-guia"><div><span class="navegacion-buscar-numero">01</span><h2>Artículos publicados</h2><p>Localiza artículos registrados en el catálogo editorial de CIBA. Los resultados incluyen su título y una breve descripción.</p></div><div><span class="navegacion-buscar-numero">02</span><h2>Biblioteca de alimentos</h2><p>Encuentra fichas de alimentos y consulta información asociada a sus características, preparación y seguridad.</p></div></section><section class="navegacion-buscar-consejos"><h2>Cómo obtener mejores resultados</h2><ul><li>Comienza con una o dos palabras clave: <strong>hierro embarazo</strong>, <strong>lactancia</strong> o <strong>ácido fólico</strong>.</li><li>Si no encuentras lo que buscas, prueba con un término más sencillo o un sinónimo.</li><li>Selecciona un resultado para abrir el artículo o la ficha correspondiente.</li></ul></section><aside class="plataforma-nota"><span class="plataforma-nota-icon">✧</span><div><h2>Alcance del buscador</h2><p>El buscador consulta el catálogo de artículos publicados y la biblioteca de alimentos. No representa todavía un buscador integral de todos los documentos descargables, páginas institucionales o enlaces externos de CIBA.</p></div></aside></main><footer class="plataforma-pie">CIBA · Conocimiento, confianza y acompañamiento · <a href="'+root+'index.html">Inicio</a></footer>';
+ const link=document.createElement('link');link.rel='stylesheet';link.href=root+'assets/css/ciba-plataforma.css?v=20261110-13';document.head.appendChild(link);
+ const global=document.createElement('script');global.type='module';global.src=root+'assets/js/ciba-global.js?v=20261110-13';document.body.appendChild(global);
+ app.querySelector('#ciba-open-search').addEventListener('click',()=>{
+  const oraculo=document.querySelector('.ciba-global-oraculo');
+  const status=app.querySelector('#ciba-search-status');
+  if(oraculo){oraculo.click();status.textContent='El buscador está abierto. Escribe tu consulta en el panel.';}
+  else{status.textContent='El buscador todavía se está preparando. Espera un instante y vuelve a pulsar.';}
+ });
+ return;
+}
+
 if(section[0]==='recursos'&&item&&item[0]==='descargables'){
  const grupos=[
   {titulo:'Embarazo',intro:'Materiales relacionados con la nutrición y la atención durante la gestación.',docs:[
