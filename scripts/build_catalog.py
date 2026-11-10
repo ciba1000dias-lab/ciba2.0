@@ -392,7 +392,7 @@ def _conectar_sistema_global(
         etiqueta_existente = script_cargado.group(0)
         etiqueta_actualizada = re.sub(
             r'(\bsrc\s*=\s*["\'][^"\']*ciba-global\.js)(?:[?#][^"\']*)?(["\'])',
-            r'\1?v=20261110-20\2',
+            r'\1?v=20261110-21\2',
             etiqueta_existente,
             flags=re.IGNORECASE,
         )
@@ -657,6 +657,23 @@ def _construir_en_tmp(
         for archivo_html in tmp.rglob("*.html"):
             try:
                 html = archivo_html.read_text(encoding="utf-8")
+
+                # Identidad verbal única: toda firma o lema asociado a CIBA
+                # utiliza exclusivamente el lema institucional vigente.
+                sustituciones_identidad = (
+                    ("CRECER · CONECTAR · ACOMPAÑAR", "CRECEMOS ACOMPAÑÁNDONOS"),
+                    ("CRECER · CONECTAR · ACOMPAÑAR.", "CRECEMOS ACOMPAÑÁNDONOS."),
+                    ("Crecer · Conectar · Acompañar", "Crecemos acompañándonos"),
+                    ("Crecer, conectar y acompañar.", "Crecemos acompañándonos."),
+                    ("crecer, conectar y acompañar", "crecemos acompañándonos"),
+                    ("CIBA · Crecer · Conectar · Acompañar", "CIBA · Crecemos acompañándonos"),
+                    ("CIBA · Conocimiento, confianza y acompañamiento", "CIBA · Crecemos acompañándonos"),
+                    ("CIBA · Crecer, conectar y acompañar", "CIBA · Crecemos acompañándonos"),
+                )
+                html_actualizado = html
+                for texto_anterior, texto_nuevo in sustituciones_identidad:
+                    html_actualizado = html_actualizado.replace(texto_anterior, texto_nuevo)
+
                 html_actualizado = re.sub(
                     r'(<script\b[^>]*\bsrc\s*=\s*["\'][^"\']*ciba-global\.js)(?:[?#][^"\']*)?(["\'][^>]*>)',
                     r'\1?v=20261110-20\2',
