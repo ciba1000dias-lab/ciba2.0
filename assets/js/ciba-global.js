@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-44', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-45', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -918,9 +918,105 @@
     observador.observe(document.body, { childList: true, subtree: true });
   }
 
+
+  // Vectores editoriales SVG: aparecen al entrar en pantalla, también en móvil.
+  // Se insertan solo en aperturas de sección y párrafos introductorios para evitar ruido.
+  function activarVectoresDeLectura() {
+    const articulos = document.querySelectorAll('.ciba-articulo');
+    if (!articulos.length) return;
+
+    const NS = 'http://www.w3.org/2000/svg';
+    const motivos = [
+      {
+        clase: 'hoja',
+        trazos: [
+          ['path', 'M8 37 C8 17 22 7 39 8 C39 25 29 39 8 37 Z'],
+          ['path', 'M9 37 C17 27 25 20 37 10'],
+          ['path', 'M20 27 C19 20 15 17 11 15']
+        ]
+      },
+      {
+        clase: 'espiral',
+        trazos: [
+          ['path', 'M24 24 C24 16 36 16 36 25 C36 39 14 40 10 25 C5 5 35 1 43 18'],
+          ['path', 'M24 24 C27 21 30 24 28 27 C26 30 21 28 21 24']
+        ]
+      },
+      {
+        clase: 'vinculo',
+        trazos: [
+          ['path', 'M8 25 C8 14 17 8 25 14 C32 19 31 29 24 34'],
+          ['path', 'M40 23 C40 34 31 40 23 34 C16 29 17 19 24 14'],
+          ['path', 'M17 24 L31 24']
+        ]
+      }
+    ];
+
+    function crearVector(indice, tipo) {
+      const motivo = motivos[indice % motivos.length];
+      const marca = document.createElement('span');
+      marca.className = 'ciba-vector-lectura ciba-vector-' + motivo.clase + ' ciba-vector-' + tipo;
+      marca.setAttribute('aria-hidden', 'true');
+      const svg = document.createElementNS(NS, 'svg');
+      svg.setAttribute('viewBox', '0 0 48 48');
+      svg.setAttribute('focusable', 'false');
+      motivo.trazos.forEach(([etiqueta, d]) => {
+        const trazo = document.createElementNS(NS, etiqueta);
+        trazo.setAttribute('d', d);
+        trazo.setAttribute('class', 'ciba-vector-trazo');
+        svg.appendChild(trazo);
+      });
+      marca.appendChild(svg);
+      return marca;
+    }
+
+    let indice = 0;
+    const observados = [];
+    articulos.forEach((articulo) => {
+      const cabecera = articulo.querySelector('.cabecera-articulo');
+      const primerParrafo = cabecera && cabecera.nextElementSibling;
+      if (primerParrafo && primerParrafo.matches('p') && !primerParrafo.querySelector('.ciba-vector-lectura')) {
+        primerParrafo.prepend(crearVector(indice++, 'parrafo'));
+        observados.push(primerParrafo.querySelector('.ciba-vector-lectura'));
+      }
+
+      articulo.querySelectorAll('h2, h3').forEach((titulo) => {
+        if (titulo.querySelector('.ciba-vector-lectura')) return;
+        titulo.prepend(crearVector(indice++, 'titulo'));
+        observados.push(titulo.querySelector('.ciba-vector-lectura'));
+
+        const siguiente = titulo.nextElementSibling;
+        if (siguiente && siguiente.matches('p') && !siguiente.querySelector('.ciba-vector-lectura')) {
+          siguiente.prepend(crearVector(indice++, 'parrafo'));
+          observados.push(siguiente.querySelector('.ciba-vector-lectura'));
+        }
+      });
+    });
+
+    if (!observados.length) return;
+    const movimientoReducido = window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
+      document.documentElement.dataset.cibaMovimiento === 'reducido';
+
+    if (movimientoReducido || !('IntersectionObserver' in window)) {
+      observados.forEach((marca) => marca.classList.add('ciba-vector-visible'));
+      return;
+    }
+
+    const observador = new IntersectionObserver((entradas) => {
+      entradas.forEach((entrada) => {
+        if (!entrada.isIntersecting) return;
+        entrada.target.classList.add('ciba-vector-visible');
+        observador.unobserve(entrada.target);
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -6% 0px' });
+
+    observados.forEach((marca) => observador.observe(marca));
+  }
+
   function iniciar() {
     iniciarPreferencias();
     activarMicrointeraccionesIconos();
+    activarVectoresDeLectura();
     cargarEstilos();
     crearPieInstitucional();
     crearMenu();
