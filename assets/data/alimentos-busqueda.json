@@ -3462,7 +3462,7 @@
     {
       "id": "ajonjoli",
       "nombre": "Ajonjolí",
-      "categoria": "Legumbres",
+      "categoria": "Semillas",
       "resumen": "Semilla oleaginosa conocida como sésamo, fuente de grasas insaturadas y proteína vegetal.",
       "nombres_alternativos": [],
       "palabras_clave": [
@@ -3471,12 +3471,12 @@
         "tahini",
         "alérgeno sésamo"
       ],
-      "ruta_publica": "c/C1/alimentos/legumbres/"
+      "ruta_publica": "c/C1/alimentos/semillas/"
     },
     {
       "id": "casabe",
       "nombre": "Casabe",
-      "categoria": "Cereales",
+      "categoria": "Viandas",
       "resumen": "Torta seca elaborada con yuca procesada, tradicional en varias regiones del Caribe.",
       "nombres_alternativos": [],
       "palabras_clave": [
@@ -3485,7 +3485,7 @@
         "pan de yuca",
         "casabe cubano"
       ],
-      "ruta_publica": "c/C1/alimentos/cereales/"
+      "ruta_publica": "c/C1/alimentos/viandas/"
     },
     {
       "id": "gofio",
