@@ -1133,6 +1133,7 @@
           const articulos = catalogo.paginas.filter((pagina) =>
             pagina.columna === 'C' &&
             pagina.area === 'C1' &&
+            !['C1-01','C1-02','C1-03'].includes(pagina.id) &&
             pagina.ruta_publica
           );
 
