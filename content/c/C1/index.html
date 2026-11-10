@@ -972,7 +972,15 @@
 
         const fragmento = document.createDocumentFragment();
 
-        grupos.forEach((articulos, nombre) => {
+        const ordenPreferido = ['Gestación', 'Primer año de vida', 'Segundo año de vida', 'Contenidos generales'];
+        const nombresOrdenados = [...grupos.keys()].sort((a, b) => {
+          const ia = ordenPreferido.indexOf(a);
+          const ib = ordenPreferido.indexOf(b);
+          return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib) || a.localeCompare(b, 'es');
+        });
+
+        nombresOrdenados.forEach((nombre) => {
+          const articulos = grupos.get(nombre);
           const grupo = crearElemento('section', 'biblioteca-grupo');
 
           const titulo = crearElemento('h3', 'grupo-titulo');
