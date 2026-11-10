@@ -17,7 +17,7 @@
     {
       "nombre": "Frutas",
       "archivo": "assets/data/alimentos/frutas.json",
-      "cantidad": 25,
+      "cantidad": 27,
       "slug": "frutas"
     },
     {
@@ -29,7 +29,7 @@
     {
       "nombre": "Vegetales y hortalizas",
       "archivo": "assets/data/alimentos/vegetales.json",
-      "cantidad": 7,
+      "cantidad": 12,
       "slug": "vegetales"
     },
     {
