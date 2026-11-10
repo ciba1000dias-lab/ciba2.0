@@ -755,7 +755,7 @@ def _construir_en_tmp(
             )
             codigo_global = ""
 
-        if "ciba-global.css?v=20261110-46" not in codigo_global:
+        if "ciba-global.css?v=20261110-47" not in codigo_global:
             errores.append(
                 ValidationError(
                     "assets/js/ciba-global.js",
