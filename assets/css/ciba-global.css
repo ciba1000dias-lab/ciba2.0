@@ -202,7 +202,7 @@ box-shadow:
 cursor: pointer;
 display: grid;
 place-items: center;
-animation: ciba-respirar 4s ease-in-out infinite;
+animation: none;
 }
 
 .ciba-global-oraculo:hover {
@@ -226,7 +226,7 @@ stroke-width: 2.5;
 stroke-linecap: round;
 stroke-dasharray: 190;
 stroke-dashoffset: 0;
-animation: ciba-trazar 8s linear infinite;
+animation: none;
 }
 
 .ciba-global-orbita {
@@ -234,7 +234,7 @@ position: absolute;
 inset: 7px;
 border: 1px solid rgba(217,184,120,.4);
 border-radius: 50%;
-animation: ciba-girar 12s linear infinite;
+animation: none;
 }
 
 .ciba-global-orbita::before,
@@ -1276,4 +1276,72 @@ html[data-ciba-movimiento="reducido"] .ciba-pie-enlace:active{
   transform:none!important;
   filter:none!important;
   box-shadow:none!important;
+}
+
+
+/* CIBA · ESTADOS UNIFICADOS DE INTERACCIÓN
+   Movimiento activado por intención, con foco visible y respuesta táctil breve.
+*/
+:where(a[href],button,input,select,textarea,[role="button"],[tabindex]):focus-visible{
+  outline:3px solid rgba(198,155,82,.92);
+  outline-offset:3px;
+}
+:where(button,[role="button"],input[type="button"],input[type="submit"],input[type="reset"]){
+  -webkit-tap-highlight-color:transparent;
+  touch-action:manipulation;
+}
+:where(button:not(:disabled),[role="button"]:not([aria-disabled="true"]),input[type="button"]:not(:disabled),input[type="submit"]:not(:disabled),input[type="reset"]:not(:disabled)){
+  transition:transform .16s ease,box-shadow .16s ease,filter .16s ease;
+}
+:where(button:not(:disabled),[role="button"]:not([aria-disabled="true"]),input[type="button"]:not(:disabled),input[type="submit"]:not(:disabled),input[type="reset"]:not(:disabled)):active{
+  transform:scale(.98);
+}
+:where(button:disabled,input:disabled,select:disabled,textarea:disabled,[aria-disabled="true"]){
+  cursor:not-allowed;
+}
+:where(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),select,textarea):focus-visible{
+  border-color:#C69B52;
+  box-shadow:0 0 0 3px rgba(198,155,82,.2);
+}
+@media (hover:hover) and (pointer:fine){
+  .ciba-global-oraculo:is(:hover,:focus-visible){
+    animation:ciba-respirar .65s ease-out 1;
+    box-shadow:0 0 0 7px rgba(217,184,120,.12),0 0 32px rgba(217,184,120,.4),0 8px 25px rgba(0,0,0,.3);
+  }
+  .ciba-global-oraculo:is(:hover,:focus-visible) .ciba-global-orbita{
+    animation:ciba-girar 1.1s ease-out 1;
+  }
+  .ciba-global-oraculo:is(:hover,:focus-visible) .ciba-global-espiral path{
+    animation:ciba-trazar 1.25s ease-out 1;
+  }
+  .ciba-global-menu-boton:not(:disabled):hover{
+    transform:translateY(-1px) scale(1.03);
+  }
+}
+.ciba-global-oraculo:active{
+  transform:scale(.96);
+  box-shadow:0 0 0 4px rgba(217,184,120,.14),0 5px 16px rgba(0,0,0,.24);
+}
+@media (hover:none) and (pointer:coarse){
+  .ciba-global-oraculo:hover{
+    box-shadow:0 0 0 5px rgba(217,184,120,.08),0 0 24px rgba(169,185,154,.28),0 8px 25px rgba(0,0,0,.3);
+  }
+  .ciba-global-oraculo:active{
+    transform:scale(.96);
+    box-shadow:0 0 0 4px rgba(217,184,120,.14),0 5px 16px rgba(0,0,0,.24);
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  .ciba-global-oraculo:is(:hover,:focus-visible,:active),
+  .ciba-global-oraculo:is(:hover,:focus-visible) .ciba-global-orbita,
+  .ciba-global-oraculo:is(:hover,:focus-visible) .ciba-global-espiral path{
+    animation:none!important;
+    transform:none!important;
+  }
+}
+html[data-ciba-movimiento="reducido"] .ciba-global-oraculo:is(:hover,:focus-visible,:active),
+html[data-ciba-movimiento="reducido"] .ciba-global-oraculo:is(:hover,:focus-visible) .ciba-global-orbita,
+html[data-ciba-movimiento="reducido"] .ciba-global-oraculo:is(:hover,:focus-visible) .ciba-global-espiral path{
+  animation:none!important;
+  transform:none!important;
 }
