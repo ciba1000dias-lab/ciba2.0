@@ -1220,6 +1220,570 @@
       ],
       "estado": "piloto",
       "imagenes": []
+    },
+    {
+      "id": "ajo",
+      "nombre": "Ajo",
+      "nombres_alternativos": [],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Bulbo aromático utilizado en pequeñas cantidades para aportar sabor a las comidas.",
+      "descripcion": "El ajo es un bulbo rico en compuestos azufrados responsables de su aroma característico. En la alimentación infantil se utiliza principalmente como condimento culinario, no como remedio ni suplemento.",
+      "propiedades": [
+        "Aporta compuestos azufrados y pequeñas cantidades de micronutrientes.",
+        "Se consume habitualmente en cantidades pequeñas."
+      ],
+      "beneficios": [
+        "Permite dar sabor a las preparaciones sin depender de la sal.",
+        "Puede formar parte de comidas familiares variadas."
+      ],
+      "edad": "Puede utilizarse cocido y en pequeñas cantidades desde el inicio de la alimentación complementaria, alrededor de los 6 meses, si el bebé está preparado.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Usar una cantidad pequeña bien cocida, muy triturada e integrada en purés o preparaciones húmedas."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Incorporar picado muy fino y completamente cocido en comidas blandas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Utilizar como condimento en preparaciones familiares, evitando exceso de sal."
+        }
+      ],
+      "preparacion_segura": "Lavar y retirar la piel; cocinar por completo. No ofrecer dientes crudos ni trozos duros.",
+      "recetas": [
+        {
+          "nombre": "Calabaza con ajo cocido",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Calabaza cocida y una pequeña porción de ajo",
+          "preparacion": "Cocer ambos ingredientes y triturar hasta una textura espesa y homogénea."
+        },
+        {
+          "nombre": "Pollo guisado suave",
+          "etapa": "Cuando el pollo ya se haya introducido",
+          "ingredientes": "Pollo, ajo y vegetales",
+          "preparacion": "Cocinar completamente y desmenuzar o triturar según la habilidad del niño."
+        }
+      ],
+      "precauciones": [
+        "No aplicar ajo crudo sobre la piel ni utilizarlo como tratamiento.",
+        "Evitar trozos grandes o crudos por irritación y dificultad para masticar."
+      ],
+      "conservacion": "Conservar el bulbo entero en lugar fresco, seco y ventilado. Una vez pelado o picado, refrigerar en recipiente cerrado y utilizar pronto.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Garlic%20cloves%20garlic.jpg?width=1280",
+        "alt": "Dientes de ajo pelados y enteros.",
+        "autor": "Jon Sullivan",
+        "licencia": "Dominio público",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Garlic_cloves_garlic.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "ajo",
+        "ajo para bebé",
+        "ajo cocido",
+        "condimentos para bebés",
+        "alimentación complementaria"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación alimentaria adaptada al contexto cubano."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y preparación segura."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención del atragantamiento y adaptación de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Higiene y prevención de enfermedades transmitidas por alimentos."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "aji-cachucha",
+      "nombre": "Ají cachucha",
+      "nombres_alternativos": [],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Ají cubano de aroma suave, empleado para condimentar sofritos y guisos.",
+      "descripcion": "El ají cachucha (Capsicum chinense) es un pimiento aromático de sabor generalmente suave. Aporta agua, fibra y carotenoides en cantidades variables según variedad y madurez.",
+      "propiedades": [
+        "Aporta agua y fibra.",
+        "Contiene carotenoides y vitamina C en cantidades variables."
+      ],
+      "beneficios": [
+        "Enriquece el aroma y la variedad de las preparaciones.",
+        "Permite dar sabor sin añadir picante intenso ni exceso de sal."
+      ],
+      "edad": "Puede ofrecerse cocido y en pequeña cantidad desde alrededor de los 6 meses, una vez iniciada la alimentación complementaria.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Retirar tallo y semillas; cocinar hasta ablandar y triturar completamente, en pequeña cantidad."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Ofrecer muy picado y bien cocido, mezclado con alimentos blandos."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Incorporar en preparaciones familiares, retirando partes duras y evitando variedades picantes."
+        }
+      ],
+      "preparacion_segura": "Lavar antes de cortar; retirar tallo, semillas y partes dañadas. Cocinar por completo. Confirmar que sea una variedad dulce y no picante.",
+      "recetas": [
+        {
+          "nombre": "Sofrito suave de vegetales",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Ají cachucha, tomate y cebolla",
+          "preparacion": "Cocinar bien con poca agua y triturar o picar muy fino según la etapa."
+        }
+      ],
+      "precauciones": [
+        "No confundir con ajíes picantes.",
+        "No ofrecer crudo en trozos duros o con piel difícil de manejar."
+      ],
+      "conservacion": "Refrigerar entero y seco en recipiente o bolsa perforada. Una vez cortado, refrigerar tapado y utilizar pronto.",
+      "imagen_principal": null,
+      "video_youtube": null,
+      "palabras_clave": [
+        "ají cachucha",
+        "ají cachucha cubano",
+        "pimiento dulce",
+        "sofrito para bebés",
+        "Capsicum chinense"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación alimentaria adaptada al contexto cubano."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y preparación segura."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención del atragantamiento y adaptación de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Higiene y prevención de enfermedades transmitidas por alimentos."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "pepino",
+      "nombre": "Pepino",
+      "nombres_alternativos": [],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza rica en agua, de sabor fresco y textura crujiente cuando está cruda.",
+      "descripcion": "El pepino contiene principalmente agua y aporta pequeñas cantidades de fibra y micronutrientes. Para niños pequeños, la forma de ofrecerlo importa más que su contenido energético.",
+      "propiedades": [
+        "Alto contenido de agua.",
+        "Aporta pequeñas cantidades de fibra y vitamina K."
+      ],
+      "beneficios": [
+        "Contribuye a la variedad de vegetales y sabores.",
+        "Puede ofrecerse cocido o preparado de forma que resulte blando y seguro."
+      ],
+      "edad": "Puede introducirse alrededor de los 6 meses, una vez iniciada la alimentación complementaria, siempre adaptando su textura. No ofrecer rodajas crudas duras a bebés.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Pelar si la piel es dura, retirar semillas grandes y cocinar hasta que esté muy blando; triturar."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Ofrecer cocido, muy blando y en trozos pequeños que se aplasten fácilmente."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer pelado o sin pelar según textura, cortado longitudinalmente y en piezas pequeñas blandas; evitar rodajas gruesas."
+        }
+      ],
+      "preparacion_segura": "Lavar bajo agua potable. Evitar rodajas circulares crudas, bastones duros y trozos grandes. Supervisar siempre al niño mientras come.",
+      "recetas": [
+        {
+          "nombre": "Pepino cocido con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Pepino pelado y calabaza",
+          "preparacion": "Cocer hasta ablandar y triturar. Servir sin sal."
+        }
+      ],
+      "precauciones": [
+        "El pepino crudo firme puede ser difícil de masticar y representar riesgo de atragantamiento.",
+        "No utilizar encurtidos como primera opción por su contenido de sal."
+      ],
+      "conservacion": "Refrigerar seco y entero. Una vez cortado, guardar tapado y consumir pronto.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cucumbers.jpg?width=1280",
+        "alt": "Pepinos frescos enteros.",
+        "autor": "Misiokk",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Cucumbers.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "pepino",
+        "pepino para bebé",
+        "pepino cocido",
+        "textura segura",
+        "vegetales"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación alimentaria adaptada al contexto cubano."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y preparación segura."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención del atragantamiento y adaptación de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Higiene y prevención de enfermedades transmitidas por alimentos."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "col",
+      "nombre": "Col",
+      "nombres_alternativos": [],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza de hojas compactas que aporta fibra y vitamina C.",
+      "descripcion": "La col o repollo es una hortaliza crucífera. Aporta fibra, vitamina C, vitamina K y otros compuestos vegetales; su composición cambia con la variedad y la cocción.",
+      "propiedades": [
+        "Aporta fibra y vitamina C.",
+        "Contiene vitamina K y compuestos propios de las crucíferas."
+      ],
+      "beneficios": [
+        "Aumenta la variedad de vegetales en la dieta.",
+        "Cocinada queda más blanda y resulta más fácil de adaptar a la etapa."
+      ],
+      "edad": "Puede ofrecerse cocida desde alrededor de los 6 meses, una vez iniciada la alimentación complementaria.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Retirar nervaduras gruesas y cocinar hasta que esté muy blanda; triturar."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Picar muy fino después de cocinar y mezclar con alimentos húmedos."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Servir bien cocida y cortada en tiras cortas o trozos pequeños."
+        }
+      ],
+      "preparacion_segura": "Retirar hojas dañadas, lavar cuidadosamente y cocinar por completo. No ofrecer hojas crudas fibrosas ni tiras largas.",
+      "recetas": [
+        {
+          "nombre": "Col guisada suave",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Col, tomate y unas gotas de aceite",
+          "preparacion": "Cocinar hasta ablandar y triturar o picar según las habilidades."
+        }
+      ],
+      "precauciones": [
+        "Puede producir gases en algunas personas; ajustar la cantidad a la tolerancia individual.",
+        "Evitar preparaciones con exceso de sal, embutidos o caldos concentrados."
+      ],
+      "conservacion": "Conservar entera en refrigeración. Una vez cortada, cubrir y refrigerar; consumir en pocos días.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cabbage%2C%20medium%20size.jpg?width=1280",
+        "alt": "Col o repollo fresco entero.",
+        "autor": "Tunmise123",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Cabbage%2C_medium_size.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "col",
+        "repollo",
+        "col para bebé",
+        "col cocida",
+        "vegetales crucíferos"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación alimentaria adaptada al contexto cubano."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y preparación segura."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención del atragantamiento y adaptación de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Higiene y prevención de enfermedades transmitidas por alimentos."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "quimbombo",
+      "nombre": "Quimbombó",
+      "nombres_alternativos": [],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Vaina verde comestible, fuente de fibra y utilizada en guisos cubanos.",
+      "descripcion": "El quimbombó (okra) es una hortaliza cuya vaina contiene fibra soluble y mucílagos que dan textura espesa a sopas y guisos.",
+      "propiedades": [
+        "Aporta fibra soluble e insoluble.",
+        "Contiene folato y vitamina C en cantidades variables."
+      ],
+      "beneficios": [
+        "Aporta variedad de vegetales y texturas.",
+        "Su consistencia cocida puede integrarse en preparaciones húmedas."
+      ],
+      "edad": "Puede ofrecerse bien cocido desde alrededor de los 6 meses, una vez iniciada la alimentación complementaria.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Retirar extremos, cocinar hasta que esté muy blando y triturar; revisar que no queden partes fibrosas."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Picar fino y mezclar con arroz o viandas bien cocidas, adaptando la textura."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer en trozos pequeños y blandos, sin fibras duras."
+        }
+      ],
+      "preparacion_segura": "Lavar, retirar extremos y cocinar completamente. Cortar longitudinalmente y revisar las fibras; nunca ofrecer vaina dura o cruda.",
+      "recetas": [
+        {
+          "nombre": "Quimbombó con calabaza",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Quimbombó y calabaza",
+          "preparacion": "Cocinar hasta que ambos estén muy blandos; triturar o aplastar."
+        }
+      ],
+      "precauciones": [
+        "Evitar trozos fibrosos o duros.",
+        "No añadir exceso de sal, embutidos ni condimentos picantes."
+      ],
+      "conservacion": "Refrigerar fresco y seco. Una vez cocinado, guardar pronto en recipiente limpio y refrigerado.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Quimbombo.jpg?width=1280",
+        "alt": "Quimbombó fresco.",
+        "autor": "Wilfredor",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Quimbombo.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "quimbombó",
+        "okra",
+        "quimbombó cubano",
+        "quimbombó para bebé",
+        "guisos cubanos"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación alimentaria adaptada al contexto cubano."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y preparación segura."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención del atragantamiento y adaptación de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Higiene y prevención de enfermedades transmitidas por alimentos."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "lechuga",
+      "nombre": "Lechuga",
+      "nombres_alternativos": [],
+      "categoria": "Vegetales y hortalizas",
+      "resumen": "Hortaliza de hojas que aporta agua, folato y vitamina K.",
+      "descripcion": "La lechuga agrupa distintas variedades de hojas comestibles. Su aporte de agua es elevado y contiene folato, vitamina K y otros micronutrientes en cantidades variables.",
+      "propiedades": [
+        "Aporta agua y pequeñas cantidades de fibra.",
+        "Contiene folato y vitamina K."
+      ],
+      "beneficios": [
+        "Amplía la diversidad de vegetales y sabores.",
+        "Puede incorporarse cocida y picada en preparaciones blandas."
+      ],
+      "edad": "Puede introducirse cocida alrededor de los 6 meses. Las hojas crudas y fibrosas no son una textura apropiada para bebés que comienzan a comer.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Lavar hoja por hoja, retirar nervaduras y cocinar; triturar completamente."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Cocinar hasta ablandar y picar muy fino, mezclando con alimentos húmedos."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer hojas tiernas finamente cortadas cuando el niño maneje bien esa textura; evitar hojas largas y fibrosas."
+        }
+      ],
+      "preparacion_segura": "Lavar hoja por hoja bajo agua potable. No usar jabón ni detergentes. Refrigerar y evitar contaminación cruzada. Para lactantes, preferir cocida.",
+      "recetas": [
+        {
+          "nombre": "Crema de vegetales con lechuga",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Lechuga, papa y calabaza",
+          "preparacion": "Cocinar todo hasta ablandar y triturar hasta una consistencia espesa."
+        }
+      ],
+      "precauciones": [
+        "No ofrecer hojas enteras, largas o fibrosas a bebés.",
+        "Desechar hojas marchitas, viscosas o deterioradas."
+      ],
+      "conservacion": "Conservar refrigerada, seca y en recipiente ventilado. Lavar justo antes de preparar.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cabbage%20and%20lettuce%20as%20food.jpg?width=1280",
+        "alt": "Hojas frescas de col y lechuga.",
+        "autor": "Bembety",
+        "licencia": "CC0 1.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Cabbage_and_lettuce_as_food.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "lechuga",
+        "lechuga para bebé",
+        "lechuga cocida",
+        "hojas verdes",
+        "vegetales"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación alimentaria adaptada al contexto cubano."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y preparación segura."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención del atragantamiento y adaptación de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Higiene y prevención de enfermedades transmitidas por alimentos."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
     }
   ]
 }
