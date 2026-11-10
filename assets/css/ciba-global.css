@@ -1363,3 +1363,79 @@ html[data-ciba-movimiento="reducido"] .ciba-global-oraculo:is(:hover,:focus-visi
   outline:3px solid rgba(198,155,82,.92);
   outline-offset:2px;
 }
+
+
+/* CIBA · VECTORES EDITORIALES EN MOVIMIENTO · MOBILE FIRST */
+.ciba-vector-lectura{
+  display:inline-flex;
+  width:clamp(25px, 6vw, 31px);
+  height:clamp(25px, 6vw, 31px);
+  margin-inline-end:8px;
+  vertical-align:-.42em;
+  color:#A65D43;
+  opacity:0;
+  transform:translate3d(0,8px,0) scale(.82) rotate(-8deg);
+  transform-origin:center;
+  transition:opacity .45s ease,transform .55s cubic-bezier(.2,.75,.25,1);
+  pointer-events:none;
+}
+.ciba-vector-titulo{
+  width:30px;
+  height:30px;
+  margin-inline-end:10px;
+  vertical-align:-.48em;
+  color:#536B51;
+}
+.ciba-vector-lectura svg{width:100%;height:100%;overflow:visible}
+.ciba-vector-trazo{
+  fill:none;
+  stroke:currentColor;
+  stroke-width:2.1;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-dasharray:100;
+  stroke-dashoffset:100;
+}
+.ciba-vector-visible{
+  opacity:1;
+  transform:translate3d(0,0,0) scale(1) rotate(0);
+}
+.ciba-vector-visible .ciba-vector-trazo{
+  animation:ciba-vector-dibujar 1.05s cubic-bezier(.35,.05,.2,1) both;
+}
+.ciba-vector-visible.ciba-vector-hoja{animation:ciba-vector-brote .75s ease-out both}
+.ciba-vector-visible.ciba-vector-espiral{animation:ciba-vector-giro .8s cubic-bezier(.2,.75,.25,1) both}
+.ciba-vector-visible.ciba-vector-vinculo{animation:ciba-vector-vincular .7s ease-out both}
+@keyframes ciba-vector-dibujar{to{stroke-dashoffset:0}}
+@keyframes ciba-vector-brote{
+  0%{transform:translateY(8px) scale(.72) rotate(-18deg)}
+  65%{transform:translateY(-2px) scale(1.08) rotate(5deg)}
+  100%{transform:translateY(0) scale(1) rotate(0)}
+}
+@keyframes ciba-vector-giro{
+  from{transform:translateY(5px) scale(.75) rotate(-35deg)}
+  to{transform:translateY(0) scale(1) rotate(0)}
+}
+@keyframes ciba-vector-vincular{
+  0%{transform:translateY(7px) scale(.8)}
+  65%{transform:translateY(-2px) scale(1.08)}
+  100%{transform:translateY(0) scale(1)}
+}
+@media(max-width:600px){
+  .ciba-vector-lectura{width:27px;height:27px;margin-inline-end:7px}
+  .ciba-vector-titulo{width:28px;height:28px}
+  .ciba-articulo h2,.ciba-articulo h3{display:block}
+}
+@media(prefers-reduced-motion:reduce){
+  .ciba-vector-lectura,.ciba-vector-visible{
+    opacity:1!important;transform:none!important;transition:none!important;animation:none!important;
+  }
+  .ciba-vector-trazo{stroke-dasharray:none!important;stroke-dashoffset:0!important;animation:none!important}
+}
+html[data-ciba-movimiento="reducido"] .ciba-vector-lectura,
+html[data-ciba-movimiento="reducido"] .ciba-vector-visible{
+  opacity:1!important;transform:none!important;transition:none!important;animation:none!important;
+}
+html[data-ciba-movimiento="reducido"] .ciba-vector-trazo{
+  stroke-dasharray:none!important;stroke-dashoffset:0!important;animation:none!important;
+}
