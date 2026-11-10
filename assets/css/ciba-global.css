@@ -1191,3 +1191,10 @@ html[data-ciba-movimiento="reducido"] .plataforma-estado i{
   transition:none!important;animation:none!important;transform:none!important;filter:none!important;
 }
 html[data-ciba-movimiento="reducido"] .ciba-global-grupo>.ciba-global-submenu:not([hidden]){animation:none!important}
+
+/* Cobertura ampliada: iconos SVG y glifos decorativos en todas las áreas. */
+:is(a,button,[role="button"],.plataforma-card,.comunidad-join-card,
+.plataforma-nota,.plataforma-estado,.recurso-card,.multimedia-card,
+.red-social-card):is(:hover,:focus-within) .ciba-icono-vivo{
+  transform:translateY(-2px) scale(1.08) rotate(-3deg);
+}
