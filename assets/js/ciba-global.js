@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-20', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-28', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -863,7 +863,72 @@
     document.body.appendChild(pie);
   }
 
+
+  const CLAVE_PREFERENCIAS = 'ciba-preferencias-lectura-v1';
+  const PREFERENCIAS_BASE = {
+    texto: '100',
+    contraste: 'normal',
+    espacio: 'normal',
+    ancho: 'normal',
+    movimiento: 'normal'
+  };
+
+  function leerPreferencias() {
+    try {
+      const guardadas = JSON.parse(localStorage.getItem(CLAVE_PREFERENCIAS) || '{}');
+      return { ...PREFERENCIAS_BASE, ...guardadas };
+    } catch (_) {
+      return { ...PREFERENCIAS_BASE };
+    }
+  }
+
+  function aplicarPreferencias(preferencias = leerPreferencias()) {
+    const html = document.documentElement;
+    html.dataset.cibaContraste = preferencias.contraste;
+    html.dataset.cibaEspacio = preferencias.espacio;
+    html.dataset.cibaAncho = preferencias.ancho;
+    html.dataset.cibaMovimiento = preferencias.movimiento;
+    html.style.fontSize = (16 * Number(preferencias.texto || 100) / 100) + 'px';
+    try {
+      localStorage.setItem(CLAVE_PREFERENCIAS, JSON.stringify(preferencias));
+    } catch (_) {}
+    document.querySelectorAll('[data-ciba-setting]').forEach((control) => {
+      const clave = control.dataset.cibaSetting;
+      const valor = preferencias[clave] || PREFERENCIAS_BASE[clave];
+      control.setAttribute('aria-pressed', String(control.dataset.value === valor));
+      control.classList.toggle('activo', control.dataset.value === valor);
+    });
+    document.querySelectorAll('[data-ciba-current]').forEach((nodo) => {
+      const clave = nodo.dataset.cibaCurrent;
+      const valor = preferencias[clave] || PREFERENCIAS_BASE[clave];
+      const etiquetas = {
+        texto: { '90':'Pequeña', '100':'Estándar', '110':'Grande', '120':'Muy grande' },
+        contraste: { normal:'Estándar', alto:'Alto' },
+        espacio: { normal:'Estándar', amplio:'Ampliado' },
+        ancho: { normal:'Estándar', amplio:'Amplio' },
+        movimiento: { normal:'Habitual', reducido:'Reducido' }
+      };
+      nodo.textContent = (etiquetas[clave] && etiquetas[clave][valor]) || valor;
+    });
+  }
+
+  function iniciarPreferencias() {
+    aplicarPreferencias();
+    document.addEventListener('click', (evento) => {
+      const control = evento.target.closest('[data-ciba-setting]');
+      if (control) {
+        const preferencias = leerPreferencias();
+        preferencias[control.dataset.cibaSetting] = control.dataset.value;
+        aplicarPreferencias(preferencias);
+        return;
+      }
+      const restablecer = evento.target.closest('[data-ciba-reset]');
+      if (restablecer) aplicarPreferencias({ ...PREFERENCIAS_BASE });
+    });
+  }
+
   function iniciar() {
+    iniciarPreferencias();
     cargarEstilos();
     crearPieInstitucional();
     crearMenu();
