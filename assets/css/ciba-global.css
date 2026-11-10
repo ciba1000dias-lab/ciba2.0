@@ -1439,3 +1439,43 @@ html[data-ciba-movimiento="reducido"] .ciba-vector-visible{
 html[data-ciba-movimiento="reducido"] .ciba-vector-trazo{
   stroke-dasharray:none!important;stroke-dashoffset:0!important;animation:none!important;
 }
+
+
+/* CIBA · ORÁCULO: giro continuo, aparición suave y orientación de búsqueda */
+.ciba-global-oraculo{
+  animation:ciba-oraculo-respirar 4.8s ease-in-out infinite;
+}
+.ciba-global-orbita{
+  animation:ciba-girar 18s linear infinite;
+}
+.ciba-global-espiral{
+  animation:ciba-girar 28s linear infinite;
+  transform-origin:50% 50%;
+}
+.ciba-global-buscador{
+  transition:opacity .46s ease,transform .46s cubic-bezier(.2,.7,.25,1),visibility .46s;
+}
+.ciba-global-buscador.ciba-oraculo-oculto{
+  transform:translateY(13px) scale(.96)!important;
+}
+@keyframes ciba-oraculo-respirar{
+  0%,100%{box-shadow:0 0 0 5px rgba(198,155,82,.12),0 0 32px rgba(198,155,82,.30),0 9px 28px rgba(48,36,29,.28)}
+  50%{box-shadow:0 0 0 7px rgba(198,155,82,.16),0 0 38px rgba(198,155,82,.36),0 9px 28px rgba(48,36,29,.28)}
+}
+.ciba-global-busqueda-ayuda{
+  margin:0 0 7px;
+  color:#FFF8EB;
+  font:13px/1.55 system-ui,sans-serif;
+}
+.ciba-global-busqueda-ejemplos{
+  margin:0 0 14px;
+  color:#F0D39B;
+  font:600 12px/1.5 system-ui,sans-serif;
+  letter-spacing:.015em;
+}
+@media(prefers-reduced-motion:reduce){
+  .ciba-global-oraculo,.ciba-global-orbita,.ciba-global-espiral{
+    animation:none!important;
+  }
+  .ciba-global-buscador{transition:none!important}
+}
