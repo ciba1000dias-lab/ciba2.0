@@ -1,6 +1,6 @@
 {
   "id": "C1-04",
-  "titulo": "Cómo alimentar a un bebé durante su primer año",
+  "titulo": "Alimentación durante el primer año de vida",
   "descripcion": "Una guía práctica para conocer qué ofrecer desde el nacimiento hasta los doce meses, cuándo comenzar la alimentación complementaria y cómo acompañar cada etapa con seguridad.",
   "columna": "C",
   "area": "C1",
@@ -22,5 +22,6 @@
   "estado": "publicado",
   "fecha_publicacion": "2026-11-08",
   "mostrar_en_columna": true,
-  "mostrar_en_area": true
+  "mostrar_en_area": true,
+  "subseccion": "Primer año de vida"
 }
