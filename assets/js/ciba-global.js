@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-46', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-47', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -564,11 +564,12 @@
     );
 
     entrada.type = 'search';
-    entrada.placeholder = '¿Qué deseas encontrar?';
+    entrada.placeholder = 'Ej.: boniato, cólicos, gripe, mocos';
     entrada.setAttribute(
       'aria-label',
-      'Buscar en CIBA'
+      'Buscar en CIBA por palabras clave'
     );
+    entrada.setAttribute('aria-describedby', 'ciba-oraculo-ayuda');
     entrada.autocomplete = 'off';
     entrada.required = true;
 
@@ -588,7 +589,19 @@
 
     resultados.setAttribute('aria-live', 'polite');
 
-    panel.append(cabecera, formulario, resultados);
+    const ayuda = elemento(
+      'p',
+      'ciba-global-busqueda-ayuda',
+      'Este es un buscador simple por palabras clave. Escribe solo una o varias palabras; no redactes una oración ni una pregunta.'
+    );
+    ayuda.id = 'ciba-oraculo-ayuda';
+    const ejemplos = elemento(
+      'p',
+      'ciba-global-busqueda-ejemplos',
+      'Ejemplos: Boniato · cólicos · gripe · mocos'
+    );
+
+    panel.append(cabecera, ayuda, ejemplos, formulario, resultados);
 
     function cerrarPanel() {
       panel.classList.remove('abierto');
