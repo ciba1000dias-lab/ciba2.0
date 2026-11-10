@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-29', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-30', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -870,7 +870,8 @@
     contraste: 'normal',
     espacio: 'normal',
     ancho: 'normal',
-    movimiento: 'normal'
+    movimiento: 'normal',
+    tema: 'claro'
   };
 
   function leerPreferencias() {
@@ -888,6 +889,7 @@
     html.dataset.cibaEspacio = preferencias.espacio;
     html.dataset.cibaAncho = preferencias.ancho;
     html.dataset.cibaMovimiento = preferencias.movimiento;
+    html.dataset.cibaTema = preferencias.tema || 'claro';
     html.style.fontSize = (16 * Number(preferencias.texto || 100) / 100) + 'px';
     try {
       localStorage.setItem(CLAVE_PREFERENCIAS, JSON.stringify(preferencias));
@@ -906,7 +908,8 @@
         contraste: { normal:'Estándar', alto:'Alto' },
         espacio: { normal:'Estándar', amplio:'Ampliado' },
         ancho: { normal:'Estándar', amplio:'Amplio' },
-        movimiento: { normal:'Habitual', reducido:'Reducido' }
+        movimiento: { normal:'Habitual', reducido:'Reducido' },
+        tema: { claro:'Claro', oscuro:'Oscuro' }
       };
       nodo.textContent = (etiquetas[clave] && etiquetas[clave][valor]) || valor;
     });
