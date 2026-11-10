@@ -162,3 +162,27 @@
 .navegacion-buscar-consejos ul{margin:0;padding-left:19px}
 .navegacion-buscar-consejos li+li{margin-top:7px}
 @media(max-width:640px){.navegacion-buscar-panel{grid-template-columns:1fr;gap:15px;padding:21px}.navegacion-buscar-simbolo{width:66px;height:66px;font-size:45px}.navegacion-buscar-cta{width:100%}.navegacion-buscar-guia{grid-template-columns:1fr;gap:12px}.navegacion-buscar-guia>div{padding:18px}.navegacion-buscar-consejos{padding:19px}}
+
+
+/* Confianza y legal · documentos institucionales */
+.legal-hero{background:linear-gradient(120deg,#493A32 0%,#3f3028 55%,#2e2823 100%)}
+.legal-index-grid .plataforma-card{min-height:150px}
+.legal-index-card .plataforma-card-icon{font-family:Georgia,serif;font-size:28px}
+.legal-document{width:min(900px,100%);margin:26px auto 0;padding:clamp(22px,4vw,46px);background:#fffdf8;border:1px solid #e5dccb;border-top:4px solid #8c671f;border-radius:15px;box-shadow:0 12px 32px rgba(55,43,32,.055);color:#3b342d}
+.legal-document-kicker{margin:0 0 28px;color:#8c671f;font:800 10px/1.5 system-ui,sans-serif;letter-spacing:.17em}
+.legal-section{margin:0 0 30px}
+.legal-section h2{margin:0 0 12px;padding:0 0 10px;border-bottom:1px solid #e8dfd0;color:#493a32;font:400 clamp(21px,3vw,26px)/1.25 Georgia,serif}
+.legal-section p,.legal-section li{color:#5f554b;font-size:14px;line-height:1.85}
+.legal-section p{margin:0 0 13px}
+.legal-section ul{padding-left:22px;margin:10px 0 16px}
+.legal-section li{margin:0 0 9px}
+.legal-section a{color:#7d5b25;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.legal-ejemplo{margin:17px 0;padding:18px 20px;border-left:3px solid #8c671f;border-radius:0 10px 10px 0;background:#f4efe5}
+.legal-ejemplo strong{color:#493a32;font-size:12px;letter-spacing:.04em}
+.legal-ejemplo p{margin:8px 0 0;color:#5f554b;font-size:13px}
+.legal-document-footer{margin-top:34px;padding-top:20px;border-top:1px solid #e5dccb;color:#776b60;font-size:12px;line-height:1.7}
+.legal-document-footer p{margin:4px 0}
+.legal-document-footer a,.legal-back a{color:#7d5b25;text-decoration:underline;text-underline-offset:3px}
+.legal-back{margin:24px 0 10px;font-size:13px;font-weight:700}
+.legal-revision{margin:22px 0;color:#776b60;font-size:11px;text-align:right}
+@media(max-width:640px){.legal-document{margin:16px auto 0;padding:22px 18px;border-radius:12px}.legal-section{margin-bottom:25px}.legal-section h2{font-size:22px}.legal-section p,.legal-section li{font-size:13px;line-height:1.8}.legal-ejemplo{padding:15px}.legal-revision{text-align:left}}
