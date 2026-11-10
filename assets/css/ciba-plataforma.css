@@ -87,3 +87,15 @@
 .comunidad-card p{margin:0 0 17px;color:var(--ciba-suave);font-size:12px;line-height:1.7}
 .comunidad-card small{margin-top:auto;padding-top:12px;border-top:1px solid var(--ciba-linea);color:#8b6740;font-size:10px;font-weight:800;line-height:1.5}
 @media(max-width:760px){.comunidad-grid{grid-template-columns:1fr;gap:13px}.comunidad-card{display:grid;grid-template-columns:104px minmax(0,1fr)}.comunidad-card-visual{height:auto;min-height:100%}.comunidad-card-visual span{width:52px;height:52px;font-size:28px}.comunidad-card-cuerpo{padding:15px}.comunidad-card h2{font-size:19px}.comunidad-card p{font-size:11px;margin-bottom:12px}}
+
+/* Boletín mensual CIBA: formulario de suscripción Brevo */
+.boletin-panel{overflow:hidden;margin:28px 0 24px;border:1px solid var(--ciba-linea);border-radius:20px;background:rgba(255,252,245,.96);box-shadow:0 12px 34px rgba(73,58,50,.07)}
+.boletin-panel-cabecera{padding:26px 28px 20px;background:linear-gradient(135deg,#29463f,#172b27);color:#fff8eb}
+.boletin-sello{display:inline-block;margin-bottom:12px;color:#e6c98e;font-size:9px;font-weight:800;letter-spacing:.18em}
+.boletin-panel-cabecera h2{max-width:650px;margin:0 0 9px;font:400 clamp(24px,4vw,32px)/1.2 Georgia,serif}
+.boletin-panel-cabecera p{max-width:650px;margin:0;color:#eee5d7;font-size:13px;line-height:1.7}
+.boletin-formulario{padding:18px 14px 22px;background:#fffdf8}
+.boletin-formulario iframe{width:100%;max-width:540px;min-height:330px;border:0}
+.boletin-privacidad{margin:18px 0 0;color:var(--ciba-suave);font-size:11px;line-height:1.7}
+.boletin-privacidad a{color:#76572f;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:640px){.boletin-panel-cabecera{padding:22px 18px 17px}.boletin-formulario{padding:10px 8px 16px}.boletin-formulario iframe{min-height:360px}}
