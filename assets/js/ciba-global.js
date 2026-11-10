@@ -421,36 +421,7 @@
     if (cabeceraGlobal) cabeceraGlobal.appendChild(contenedor);
     else document.body.appendChild(contenedor);
 
-    // Conectar cada columna con su primera área disponible.
-    obtenerCatalogo()
-      .then((datos) => {
-        const grupos = panel.querySelectorAll(
-          '.ciba-global-grupo'
-        );
 
-        columnas.forEach((columna, indice) => {
-          const grupo = grupos[indice];
-          if (!grupo) return;
-
-          const encabezado = grupo.querySelector('a');
-
-          const areas = (datos.areas || [])
-            .filter((area) => area.columna === columna.id)
-            .sort((a, b) => (a.orden || 0) - (b.orden || 0));
-
-          if (areas.length) {
-            encabezado.href = urlPublica(
-              areas[0].ruta_publica
-            );
-          }
-        });
-      })
-      .catch((error) => {
-        console.warn(
-          'CIBA: no se pudieron cargar las rutas de las columnas.',
-          error
-        );
-      });
   }
 
   function abrirBuscadorDePortada() {
