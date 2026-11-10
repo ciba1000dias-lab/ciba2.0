@@ -1,35 +1,51 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#397653">
-<meta name="description" content="Área temática de crianza dedicada a sueño y descanso, organizada para ofrecer información rigurosa y recursos útiles a las familias.">
-<title>Sueño y descanso | Crianza · CIBA</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#172b27">
+<meta name="description" content="Sueño y descanso: 15 temas sobre sueño seguro, rutinas, dificultades frecuentes y descanso familiar durante los primeros mil días de las infancias.">
+<title>Sueño y descanso · CIBA Crianza</title>
 <style>
-:root{--ciba-columna:#397653;--ciba-cacao:#493A32;--ciba-marfil:#F7F2E8;--ciba-papel:#FFFCF5}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ciba-marfil);color:var(--ciba-cacao);font-family:system-ui,-apple-system,Segoe UI,sans-serif}
-.cabecera{position:sticky;top:0;z-index:5;padding:18px max(22px,calc((100% - 1120px)/2));background:rgba(73,58,50,.97);color:#fffaf0;border-bottom:3px solid var(--ciba-columna);backdrop-filter:blur(16px)}
-.marca{font-weight:900;letter-spacing:.2em;text-decoration:none;color:inherit}.marca small{display:block;margin-top:4px;color:#e8d6b5;font-size:9px;letter-spacing:.15em}
-main{min-height:calc(100vh - 130px)}.hero{position:relative;overflow:hidden;padding:clamp(55px,9vw,105px) 22px 80px;background:radial-gradient(ellipse at 80% 20%,color-mix(in srgb,var(--ciba-columna) 28%,transparent),transparent 38%),linear-gradient(130deg,#493A32,#302721);color:#fffaf0}
-.contenedor{width:min(1040px,100%);margin:auto;position:relative;z-index:1}.sobrelinea{color:#e9d6ad;font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.hero h1{max-width:820px;margin:22px 0 16px;font:400 clamp(38px,7vw,72px)/1.06 Georgia,serif;letter-spacing:-.035em}.hero p{max-width:680px;color:#eee5d7;line-height:1.8;font-size:15px}
-.estado{display:inline-flex;align-items:center;gap:9px;margin-top:22px;padding:10px 14px;border:1px solid rgba(255,245,220,.35);border-radius:999px;background:rgba(255,255,255,.09);color:#fff5df;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
-.estado-icono{width:20px;height:20px;display:grid;place-items:center;border-radius:50%;background:var(--ciba-columna);font-size:13px}
-.construccion{display:grid;grid-template-columns:minmax(240px,.9fr) 1.1fr;gap:35px;align-items:center;padding:58px 22px 85px}.nota{padding:30px;border:1px solid #e2d7c6;border-radius:18px;background:var(--ciba-papel);box-shadow:0 16px 45px rgba(73,58,50,.07)}.nota h2{margin:0 0 12px;font:400 27px Georgia,serif}.nota p{color:#75695e;line-height:1.85;font-size:14px}
-.espiral-marco{display:grid;place-items:center;min-height:330px;position:relative;overflow:hidden;border-radius:24px;background:radial-gradient(circle,color-mix(in srgb,var(--ciba-columna) 18%,transparent),transparent 66%)}
-.espiral{width:min(82%,360px);height:auto;overflow:visible;filter:drop-shadow(0 0 12px color-mix(in srgb,var(--ciba-columna) 65%,transparent));animation:giro-espiral 18s linear infinite}
-.espiral path{fill:none;stroke:var(--ciba-columna);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:5 3}
-.espiral-circulo{position:absolute;width:230px;height:230px;border:1px solid color-mix(in srgb,var(--ciba-columna) 35%,transparent);border-radius:50%;box-shadow:0 0 0 22px color-mix(in srgb,var(--ciba-columna) 5%,transparent),0 0 0 48px color-mix(in srgb,var(--ciba-columna) 4%,transparent);animation:latido 5s ease-in-out infinite}
-.pie{padding:24px 22px;background:#302721;color:#e8ddcd;font-size:11px}.pie a{color:#f0d9a9}
-@keyframes giro-espiral{to{transform:rotate(360deg)}}@keyframes latido{50%{transform:scale(1.12);opacity:.55}}
-@media(max-width:700px){.construccion{grid-template-columns:1fr;padding-top:35px}.espiral-marco{min-height:260px}.hero{padding-bottom:58px}}
-@media(prefers-reduced-motion:reduce){.espiral,.espiral-circulo{animation:none}}
+:root{--noche:#172b27;--verde:#38564e;--tierra:#a9583e;--oro:#d9b878;--marfil:#f5f0e5;--papel:#fffdf7;--tinta:#29332d;--suave:#73776d;--linea:#e4ddcf}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--marfil);color:var(--tinta);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}.contenedor{width:min(1080px,calc(100% - 36px));margin:auto}
+.hero{padding:68px 0 76px;color:white;background:radial-gradient(circle at 85% 25%,rgba(217,184,120,.2),transparent 30%),linear-gradient(120deg,#172b27,#38564e)}.tag{color:var(--oro);font-size:10px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.hero h1{max-width:780px;margin:20px 0;font:normal clamp(42px,7vw,68px)/1.08 Georgia,serif;letter-spacing:-.04em}.hero p{max-width:760px;color:#e0e6dc;font-size:15px;line-height:1.9}
+main{padding:55px 0 80px}.intro{max-width:800px;margin-bottom:30px}.intro h2{font:normal clamp(29px,4vw,42px)/1.15 Georgia,serif;color:var(--noche)}.intro p{color:var(--suave);font-size:14px;line-height:1.9}
+.grupo{margin:22px 0;padding:24px;border:1px solid var(--linea);border-radius:12px;background:var(--papel)}.grupo h2{margin:0 0 17px;color:var(--noche);font:normal 27px Georgia,serif}.grupo ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px;margin:0;padding-left:24px}.grupo li{padding:5px 0 7px 3px;color:var(--tierra);font-size:13px;line-height:1.65}.tema{color:var(--verde);font-weight:600}.pendiente{display:block;margin-top:4px;color:var(--suave);font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.nota{margin-top:28px;padding:22px;border-left:4px solid var(--tierra);background:var(--papel);color:var(--suave);font-size:13px;line-height:1.8}.nota strong{color:var(--noche)}.acciones{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.acciones a{display:inline-flex;min-height:44px;align-items:center;padding:0 17px;border-radius:5px;background:var(--noche);color:white;font-size:10px;font-weight:800;letter-spacing:.08em}.acciones a.secundario{border:1px solid var(--noche);background:transparent;color:var(--noche)}
+@media(max-width:650px){.grupo ol{grid-template-columns:1fr}.hero{padding:52px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
-<header class="cabecera"><a class="marca" href="../../index.html">CIBA<small>CRIANZA · C2</small></a></header>
-<main>
-<section class="hero"><div class="contenedor"><div class="sobrelinea">CIBA · CRIANZA · C2</div><h1>Sueño y descanso</h1><p>Este espacio forma parte de la arquitectura temática de CIBA. Aquí reuniremos contenidos claros, rigurosos y útiles, conectados con las demás áreas de los primeros mil días.</p><span class="estado"><span class="estado-icono">✦</span> En construcción</span></div></section>
-<section class="construccion contenedor"><div class="nota"><h2>Estamos preparando este espacio</h2><p>El contenido se desarrollará y revisará antes de su publicación. Mientras tanto, esta página ya forma parte de la navegación de CIBA y permite reconocer dónde se encuentra cada tema dentro de la plataforma.</p><p><strong>Un trabajo en segundo plano, para que cada recurso llegue con el cuidado que merece.</strong></p></div><div class="espiral-marco" role="img" aria-label="Espiral ornamental en movimiento que simboliza el trabajo en segundo plano"><span class="espiral-circulo"></span><svg class="espiral" viewBox="0 0 240 240" aria-hidden="true"><path d="M120 120 C120 102 145 99 155 115 C172 143 145 174 115 169 C72 162 58 112 82 79 C116 33 186 53 202 105 C225 179 156 222 94 205 C15 183 1 87 52 35 C109 -22 212 5 233 91"/></svg></div></section>
-</main><footer class="pie">CIBA · Crecer, conectar y acompañar. · <a href="../../index.html">Volver al inicio</a></footer>
+<section class="hero"><div class="contenedor"><span class="tag">C · CRIANZA · SEGUNDA ÁREA</span><h1>Sueño y descanso</h1><p>Un espacio para comprender cómo duermen los bebés y los niños pequeños, proteger su descanso y acompañar a cada familia con información confiable, expectativas realistas y respeto por sus circunstancias.</p></div></section>
+<main class="contenedor">
+<section class="intro"><span class="tag">Biblioteca temática · 15 temas</span><h2>Descansar también es crecer.</h2><p>El sueño cambia a lo largo de los primeros mil días. Aquí abordaremos la seguridad, las rutinas, las dificultades frecuentes y las transiciones familiares sin culpabilizar ni prometer soluciones universales. La protección del bebé será siempre prioritaria.</p></section>
+<section class="grupo" aria-labelledby="seguro"><h2 id="seguro">A. Sueño seguro</h2><ol start="1">
+<li><span class="tema">Las tres reglas del sueño seguro: boca arriba, superficie firme y despejada, en su cuna.</span><span class="pendiente">En preparación · 01/15</span></li>
+<li><span class="tema">Qué NO debe haber en la cuna (y por qué).</span><span class="pendiente">En preparación · 02/15</span></li>
+<li><span class="tema">Colecho: riesgos, alternativas y cómo decidir con información.</span><span class="pendiente">En preparación · 03/15</span></li>
+<li><span class="tema">Ambiente de sueño: temperatura, ventilación, humo y ruido.</span><span class="pendiente">En preparación · 04/15</span></li>
+</ol></section>
+<section class="grupo" aria-labelledby="rutinas"><h2 id="rutinas">B. Rutinas y hábitos</h2><ol start="5">
+<li><span class="tema">Cómo crear una rutina de sueño desde el primer mes.</span><span class="pendiente">En preparación · 05/15</span></li>
+<li><span class="tema">Siestas por edad: cuántas, cuánto y cómo acompañarlas.</span><span class="pendiente">En preparación · 06/15</span></li>
+<li><span class="tema">El ritual de antes de dormir: qué funciona y qué no.</span><span class="pendiente">En preparación · 07/15</span></li>
+<li><span class="tema">Cómo adaptar la rutina de sueño en casa de los abuelos o en viajes.</span><span class="pendiente">En preparación · 08/15</span></li>
+</ol></section>
+<section class="grupo" aria-labelledby="dificultades"><h2 id="dificultades">C. Dificultades frecuentes</h2><ol start="9">
+<li><span class="tema">Regresiones del sueño: qué son, cuándo aparecen y cómo atravesarlas.</span><span class="pendiente">En preparación · 09/15</span></li>
+<li><span class="tema">El bebé que se despierta muchas veces: ¿normal o señal de alarma?</span><span class="pendiente">En preparación · 10/15</span></li>
+<li><span class="tema">El llanto al acostarse: qué hacer y qué evitar.</span><span class="pendiente">En preparación · 11/15</span></li>
+<li><span class="tema">Cómo acompañar el destete nocturno sin trauma.</span><span class="pendiente">En preparación · 12/15</span></li>
+</ol></section>
+<section class="grupo" aria-labelledby="transiciones"><h2 id="transiciones">D. Transiciones y contexto familiar</h2><ol start="13">
+<li><span class="tema">Transición de la cuna a la cama (cerca de los 2 años).</span><span class="pendiente">En preparación · 13/15</span></li>
+<li><span class="tema">Cómo manejar el sueño cuando hay varios niños en casa.</span><span class="pendiente">En preparación · 14/15</span></li>
+<li><span class="tema">El agotamiento familiar por falta de sueño: qué hacer y cuándo pedir ayuda.</span><span class="pendiente">En preparación · 15/15</span></li>
+</ol></section>
+<div class="nota"><strong>Estado editorial:</strong> El índice de los 15 temas está establecido. Los artículos se desarrollarán progresivamente, con revisión de fuentes científicas e institucionales, lenguaje claro y ejemplos cercanos a la vida cotidiana de las familias cubanas. Hasta su publicación, cada tema permanecerá identificado como «En preparación». Este espacio ofrece educación y orientación general; no sustituye la valoración individual por profesionales de salud.</div>
+<div class="acciones"><a href="../C1/lactancia/">CONSULTAR LA BIBLIOTECA DE LACTANCIA</a><a class="secundario" href="../../index.html">VOLVER AL INICIO DE CIBA</a></div>
+</main>
 <script type="module" src="../../assets/js/ciba-global.js"></script>
 </body></html>
