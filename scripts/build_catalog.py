@@ -749,7 +749,7 @@ def _construir_en_tmp(
                 continue
 
             referencias_globales = re.findall(
-                r'<script\\b(?=[^>]*\\bsrc\\s*=\\s*["\\'][^"\\']*ciba-global\\.js(?:[?#][^"\\']*)?["\\'])[^>]*>',
+                r'<script\b(?=[^>]*\bsrc\s*=\s*["\'][^"\']*ciba-global\.js(?:[?#][^"\']*)?["\'])[^>]*>',
                 html,
                 flags=re.IGNORECASE,
             )
@@ -757,7 +757,7 @@ def _construir_en_tmp(
             version_correcta = (
                 len(referencias_globales) == 1
                 and re.search(
-                    r"ciba-global\\.js\\?v=20261110-40(?:[""']|\\s)",
+                    r"""ciba-global\.js\?v=20261110-40(?:["']|\s)""",
                     referencias_globales[0],
                     flags=re.IGNORECASE,
                 )
