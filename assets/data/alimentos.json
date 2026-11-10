@@ -12,7 +12,8 @@
     "assets/data/alimentos/leches.json",
     "assets/data/alimentos/yogures.json",
     "assets/data/alimentos/huevos-quesos.json",
-    "assets/data/alimentos/grasas.json"
+    "assets/data/alimentos/grasas.json",
+    "assets/data/alimentos/semillas.json"
   ],
   "categorias": [
     {
@@ -24,7 +25,7 @@
     {
       "nombre": "Viandas",
       "archivo": "assets/data/alimentos/viandas.json",
-      "cantidad": 7,
+      "cantidad": 8,
       "slug": "viandas"
     },
     {
@@ -36,13 +37,13 @@
     {
       "nombre": "Legumbres",
       "archivo": "assets/data/alimentos/legumbres.json",
-      "cantidad": 12,
+      "cantidad": 11,
       "slug": "legumbres"
     },
     {
       "nombre": "Cereales",
       "archivo": "assets/data/alimentos/cereales.json",
-      "cantidad": 18,
+      "cantidad": 17,
       "slug": "cereales"
     },
     {
@@ -80,6 +81,12 @@
       "archivo": "assets/data/alimentos/grasas.json",
       "cantidad": 2,
       "slug": "grasas"
+    },
+    {
+      "nombre": "Semillas",
+      "archivo": "assets/data/alimentos/semillas.json",
+      "cantidad": 1,
+      "slug": "semillas"
     }
   ]
 }
