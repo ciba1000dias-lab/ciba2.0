@@ -890,7 +890,11 @@
     const selector = [
       '[class*="icon"]', '[class*="Icon"]', '[class*="ico"]',
       '[class*="simbolo"]', '[class*="espiral"]', '[class*="oraculo"]',
-      '.plataforma-estado i', '.ciba-global-letra',
+      '[class^="fa-"]', '[class*=" fa-"]', '.fa', '.fas', '.far', '.fab',
+      '[class^="bi-"]', '[class*=" bi-"]',
+      '[class^="lucide"]', '[class*=" lucide"]', '[data-lucide]',
+      '.material-icons', '.material-symbols-outlined',
+      'i[class]', '.plataforma-estado i', '.ciba-global-letra',
       'svg', 'span[aria-hidden="true"]', 'i[aria-hidden="true"]'
     ].join(',');
 
