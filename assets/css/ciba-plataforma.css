@@ -186,3 +186,39 @@
 .legal-back{margin:24px 0 10px;font-size:13px;font-weight:700}
 .legal-revision{margin:22px 0;color:#776b60;font-size:11px;text-align:right}
 @media(max-width:640px){.legal-document{margin:16px auto 0;padding:22px 18px;border-radius:12px}.legal-section{margin-bottom:25px}.legal-section h2{font-size:22px}.legal-section p,.legal-section li{font-size:13px;line-height:1.8}.legal-ejemplo{padding:15px}.legal-revision{text-align:left}}
+
+
+/* Sobre CIBA · Nuestro equipo */
+.equipo-fundacion{display:grid;grid-template-columns:142px minmax(0,1fr);gap:25px;align-items:center;margin:30px 0 42px;padding:clamp(20px,3vw,30px);border:1px solid rgba(198,155,82,.38);border-radius:20px;background:linear-gradient(135deg,#fffdf8 0%,#f3ecdf 100%);box-shadow:0 12px 30px rgba(55,43,32,.06)}
+.equipo-retrato{width:124px;height:124px;margin:0 auto;display:grid;place-items:center;position:relative;border-radius:50%;background:#203a33;box-shadow:0 0 0 5px #f7f2e8,0 0 0 7px #b9975b,0 0 0 12px rgba(185,151,91,.13);overflow:hidden}
+.equipo-retrato-fundador{width:136px;height:136px}
+.equipo-avatar{width:100%;height:100%;display:grid;place-items:center;position:relative;overflow:hidden;border-radius:50%;background:radial-gradient(circle at 50% 45%,#496b5e 0%,#29463f 58%,#172b27 100%);color:#f5e8ca}
+.equipo-avatar:before,.equipo-avatar:after{content:"";position:absolute;border:1px solid rgba(235,211,159,.4);border-radius:50%;inset:10px}
+.equipo-avatar:after{inset:18px;border-style:dashed;opacity:.55}
+.equipo-avatar-iniciales{position:relative;z-index:1;font:400 31px/1 Georgia,serif;letter-spacing:.04em;color:#fff5df}
+.equipo-avatar-sello{position:absolute;z-index:2;right:17px;bottom:13px;display:grid;place-items:center;width:24px;height:24px;border:1px solid #d6b978;border-radius:50%;background:#203a33;color:#e7cc91;font:16px/1 Georgia,serif}
+.equipo-fundacion h2{margin:7px 0 9px;color:#493a32;font:400 clamp(24px,3vw,31px)/1.2 Georgia,serif}
+.equipo-fundacion p,.equipo-grupo-intro p,.equipo-desarrollo p{margin:0 0 12px;color:#62594f;font-size:13px;line-height:1.75}
+.equipo-fundacion a,.equipo-enlaces a{color:#80602c;font-size:11px;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.equipo-etiqueta{color:#8c671f;font-size:9px;font-weight:850;letter-spacing:.16em}
+.equipo-intro{margin:40px 0 18px;text-align:center}
+.equipo-intro h2{margin:0 0 8px;color:#493a32;font:400 clamp(25px,3vw,33px)/1.2 Georgia,serif}
+.equipo-intro p{margin:0;color:#6d6258;font-size:13px;line-height:1.7}
+.equipo-grupo{margin:30px 0}
+.equipo-grupo>h2{margin:0 0 17px;padding-bottom:11px;border-bottom:1px solid #e4d9c7;color:#8c671f;font:800 11px/1.4 system-ui,sans-serif;letter-spacing:.16em}
+.equipo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.equipo-persona{display:grid;grid-template-columns:94px minmax(0,1fr);gap:17px;align-items:center;min-width:0;padding:19px 17px;border:1px solid #e7ddce;border-radius:16px;background:#fffdf8;box-shadow:0 7px 22px rgba(55,43,32,.045)}
+.equipo-persona .equipo-retrato{width:82px;height:82px;box-shadow:0 0 0 3px #f7f2e8,0 0 0 4px #b9975b,0 0 0 7px rgba(185,151,91,.1)}
+.equipo-persona .equipo-avatar-iniciales{font-size:23px}
+.equipo-persona .equipo-avatar:before{inset:7px}
+.equipo-persona .equipo-avatar:after{inset:12px}
+.equipo-persona .equipo-avatar-sello{right:9px;bottom:7px;width:19px;height:19px;font-size:13px}
+.equipo-persona-datos{min-width:0}
+.equipo-persona h3{margin:0 0 7px;color:#493a32;font:400 19px/1.2 Georgia,serif;overflow-wrap:anywhere}
+.equipo-persona p{margin:0;color:#62594f;font-size:11px;line-height:1.65}
+.equipo-enlaces{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+.equipo-desarrollo{margin-top:38px;padding:23px;border-left:3px solid #8c671f;background:#f4efe5}
+.equipo-desarrollo>h2{margin-bottom:9px}
+.equipo-desarrollo p{margin:0}
+.equipo-lema{margin:38px 0 8px;color:#8c671f;text-align:center;font:italic 24px/1.3 Georgia,serif}
+@media(max-width:760px){.equipo-fundacion{grid-template-columns:1fr;text-align:center;gap:20px}.equipo-fundacion .equipo-retrato{width:118px;height:118px}.equipo-intro{text-align:left}.equipo-grid{grid-template-columns:1fr;gap:12px}.equipo-persona{grid-template-columns:82px minmax(0,1fr);padding:16px 14px;gap:14px}.equipo-persona h3{font-size:18px}.equipo-persona p{font-size:11px}}
