@@ -20,7 +20,7 @@ footer{padding:27px 0;background:#12231f;color:#cbd3c8;font-size:11px}footer a{c
 </style>
 </head>
 <body>
-<header><div class="contenedor"><a class="marca" href="../../index.html">CIBA<small>CRECEMOS ACOMPAÑÁNDONOS</small></a></div></header>
+<header><div class="contenedor"><a class="marca" href="../../../index.html">CIBA<small>CRECEMOS ACOMPAÑÁNDONOS</small></a></div></header>
 <section class="hero"><div class="contenedor"><div class="tag">C · CRIANZA · ALIMENTACIÓN</div><h1>Alimentar también es acompañar.</h1><p>Un recorrido por la alimentación durante la gestación y los primeros dos años de vida. Información confiable, herramientas prácticas y respeto por las posibilidades y ritmos de cada familia.</p></div></section>
 <main class="contenedor">
 <section class="intro"><span class="tag">Explora por etapa</span><h2>Tres momentos, un mismo acompañamiento.</h2><p>Selecciona la etapa que deseas consultar. Cada subsección reúne artículos y recursos organizados para facilitar el aprendizaje y la navegación.</p></section>
@@ -36,7 +36,7 @@ footer{padding:27px 0;background:#12231f;color:#cbd3c8;font-size:11px}footer a{c
 <div class="nota"><strong>Alcance educativo:</strong> los contenidos ofrecen orientación general y no sustituyen la valoración prenatal, pediátrica o nutricional individual. Las recomendaciones deben adaptarse a las necesidades, el desarrollo y las condiciones de salud de cada persona.</div>
 <a class="volver" href="../">← Volver a Crianza</a>
 </main>
-<footer><div class="contenedor">CIBA · Crecemos acompañándonos. · <a href="../../index.html">Inicio CIBA</a></div></footer>
+<footer><div class="contenedor">CIBA · Crecemos acompañándonos. · <a href="../../../index.html">Inicio CIBA</a></div></footer>
 <script>
 (async()=>{try{const r=await fetch('../../../data/catalogo.json');if(!r.ok)throw Error('catálogo');const c=await r.json();const ps=Array.isArray(c.paginas)?c.paginas:[];document.querySelectorAll('[data-count]').forEach(el=>{const n=ps.filter(p=>p.columna==='C'&&p.area==='C1'&&p.subseccion===el.dataset.count&&p.ruta_publica).length;el.textContent=n+' '+(n===1?'contenido':'contenidos')+' publicados';});}catch(e){console.warn('CIBA: no se pudieron actualizar los contadores de Alimentación.',e);}})();
 </script>
