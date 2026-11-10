@@ -894,7 +894,9 @@
       '[class^="bi-"]', '[class*=" bi-"]',
       '[class^="lucide"]', '[class*=" lucide"]', '[data-lucide]',
       '.material-icons', '.material-symbols-outlined',
-      'i[class]', '.plataforma-estado i', '.ciba-global-letra',
+      '.estado-icono', '.equipo-avatar-sello', '.ciba-info',
+      '.ciba-columna-acceso .letra', '.ciba-global-letra',
+      'i[class]', '.plataforma-estado i',
       'svg', 'span[aria-hidden="true"]', 'i[aria-hidden="true"]'
     ].join(',');
 
