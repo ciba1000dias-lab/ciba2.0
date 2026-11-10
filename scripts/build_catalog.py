@@ -663,6 +663,12 @@ def _construir_en_tmp(
                     html,
                     flags=re.IGNORECASE,
                 )
+                html_actualizado = re.sub(
+                    r'(<script\\b[^>]*\\bsrc\\s*=\\s*["\\'][^"\\']*ciba-plataforma\\.js)(?:[?#][^"\\']*)?(["\\'][^>]*>)',
+                    r'\\1?v=20261110-19\\2',
+                    html_actualizado,
+                    flags=re.IGNORECASE,
+                )
                 if html_actualizado != html:
                     archivo_html.write_text(html_actualizado, encoding="utf-8")
             except (OSError, UnicodeError) as exc:
