@@ -142,12 +142,12 @@ if(section[0]==='comunidad'&&!item){
 
 if(section[0]==='sobre-ciba'&&item&&item[0]==='nuestro-equipo'){
  const personas=[
-  {grupo:'DOCTORES EN CIENCIAS',nombre:'Dra. Lareisy Borges Damas',datos:'Doctora en Ciencias · Investigadora Auxiliar · Directora del Consejo de Sociedades Científicas de Artemisa',iniciales:'LB'},
-  {grupo:'DOCTORES EN CIENCIAS',nombre:'Dra. Yanet García Fernández',datos:'Doctora en Ciencias · Especialista de segundo grado en Neonatología y Medicina General Integral · Profesora Auxiliar · Investigadora Agregada',iniciales:'YG',orcid:'https://orcid.org/0000-0003-0684-5912'},
+  {grupo:'DOCTORES EN CIENCIAS',nombre:'DrC. Lareisy Borges Damas',datos:'Doctora en Ciencias · Investigadora Auxiliar · Directora del Consejo de Sociedades Científicas de Artemisa',iniciales:'LB'},
+  {grupo:'DOCTORES EN CIENCIAS',nombre:'DrC. Yanet García Fernández',datos:'Doctora en Ciencias · Especialista de segundo grado en Neonatología y Medicina General Integral · Profesora Auxiliar · Investigadora Agregada',iniciales:'YG',orcid:'https://orcid.org/0000-0003-0684-5912'},
   {grupo:'DOCTORES EN CIENCIAS',nombre:'DrC. Omar Pérez Grenier',datos:'Licenciado en Matemática y Computación · Máster en Informática Médica · Doctor en Ciencias de la Educación Médica · Profesor Titular',iniciales:'OP',orcid:'https://orcid.org/0000-0002-5007-8602',publicacion:'https://revsaludpublica.sld.cu/index.php/spu/article/view/2243'},
-  {grupo:'MÁSTERES EN CIENCIAS',nombre:'Dra. María Antonia Orta García',datos:'Doctora en Medicina · Especialista de primer grado en Imagenología · Máster en Ciencias',iniciales:'MO',orcid:'https://orcid.org/0000-0002-1580-9596'},
-  {grupo:'MÁSTERES EN CIENCIAS',nombre:'Dra. Hue Lídice Ramírez',datos:'Máster en Infectología · Especialista en Infectología y Terapia Intensiva Pediátrica',iniciales:'HR'},
-  {grupo:'MÁSTERES EN CIENCIAS',nombre:'Dayví Enríquez Nodarse',datos:'Máster en Ciencias · Especialista de primer grado en Enfermería Materno Infantil · Profesor Asistente · Doctorando',iniciales:'DE',publicacion:'https://dialnet.unirioja.es/ejemplar/717197'},
+  {grupo:'MÁSTERES EN CIENCIAS',nombre:'MSc. Dra. María Antonia Orta García',datos:'Doctora en Medicina · Especialista de primer grado en Imagenología · Máster en Ciencias',iniciales:'MO',orcid:'https://orcid.org/0000-0002-1580-9596'},
+  {grupo:'MÁSTERES EN CIENCIAS',nombre:'MSc. Dra. Hue Lídice Ramírez',datos:'Máster en Infectología · Especialista en Infectología y Terapia Intensiva Pediátrica',iniciales:'HR'},
+  {grupo:'MÁSTERES EN CIENCIAS',nombre:'MSc. Lic. Dayví Enríquez Nodarse',datos:'Máster en Ciencias · Especialista de primer grado en Enfermería Materno Infantil · Profesor Asistente · Doctorando',iniciales:'DE',publicacion:'https://dialnet.unirioja.es/ejemplar/717197'},
   {grupo:'ESPECIALISTAS Y PROFESIONALES',nombre:'Dr. Avelino García García',datos:'Especialista en Ginecobstetricia',iniciales:'AG',orcid:'https://orcid.org/0000-0002-6667-277X',publicacion:'https://revistacientificasanum.com/vol-10-num-2-abril-2026-placenta-invasiva-asociada-a-preeclampsia-atipica-caso-clinico/'},
   {grupo:'ESPECIALISTAS Y PROFESIONALES',nombre:'Dra. Amanda Breto Valdés',datos:'Especialista de primer grado en Neonatología · Profesora Instructora · Doctoranda',iniciales:'AB',publicacion:'https://dialnet.unirioja.es/ejemplar/717197'},
   {grupo:'ESPECIALISTAS Y PROFESIONALES',nombre:'Dra. Janet Rodríguez Hernández',datos:'Especialista de primer grado en Pediatría y Medicina General Integral',iniciales:'JR'}
