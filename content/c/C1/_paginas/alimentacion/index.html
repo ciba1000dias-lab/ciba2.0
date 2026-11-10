@@ -17,7 +17,7 @@ main{padding:54px 0 80px}.intro{max-width:760px;margin-bottom:30px}.intro h2{mar
 footer{padding:27px 0;background:#12231f;color:#cbd3c8;font-size:11px}footer a{color:var(--oro)}
 @media(max-width:760px){.etapas{grid-template-columns:1fr}.etapa{min-height:0}.recursos{grid-template-columns:1fr}.hero{padding:52px 0}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
-</style>
+.indice-alimentacion{display:grid;gap:18px;margin-top:30px}.indice-grupo{padding:24px;border:1px solid var(--linea);border-radius:12px;background:var(--papel)}.indice-grupo h2{margin:0 0 14px;color:var(--noche);font:normal 27px Georgia,serif}.indice-grupo ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 28px;margin:0;padding-left:20px}.indice-grupo li{padding:5px 0;color:var(--tierra);font-size:13px;line-height:1.65}.indice-grupo a{color:var(--verde);text-decoration:underline;text-decoration-color:#c7b99f;text-underline-offset:3px}@media(max-width:650px){.indice-grupo ol{grid-template-columns:1fr}}</style>
 </head>
 <body>
 <header><div class="contenedor"><a class="marca" href="../../../index.html">CIBA<small>CRECEMOS ACOMPAÑÁNDONOS</small></a></div></header>
@@ -25,10 +25,29 @@ footer{padding:27px 0;background:#12231f;color:#cbd3c8;font-size:11px}footer a{c
 <main class="contenedor">
 <section class="intro"><span class="tag">Explora por etapa</span><h2>Tres momentos, un mismo acompañamiento.</h2><p>Selecciona la etapa que deseas consultar. Cada subsección reúne artículos y recursos organizados para facilitar el aprendizaje y la navegación.</p></section>
 <section class="etapas" aria-label="Subsecciones de alimentación">
-<a class="etapa" href="../alimentacion-gestacion/"><span class="numero">01</span><h3>Gestación</h3><p>Nutrición materna, nutrientes esenciales, alimentos seguros, molestias digestivas y decisiones posibles durante el embarazo.</p><span class="contador" data-count="Gestación">Contenidos disponibles</span></a>
-<a class="etapa" href="../C1-11/"><span class="numero">02</span><h3>Primer año de vida</h3><p>Lactancia, inicio de la alimentación complementaria, alimentos, texturas, seguridad y aprendizaje a la hora de comer.</p><span class="contador" data-count="Primer año de vida">Contenidos disponibles</span></a>
-<a class="etapa" href="../C1-15/"><span class="numero">03</span><h3>Segundo año de vida</h3><p>Transición a la mesa familiar, autonomía, diversidad alimentaria y acompañamiento sensible entre los 12 y 23 meses.</p><span class="contador" data-count="Segundo año de vida">Contenidos disponibles</span></a>
+<a class="etapa" href="#gestacion"><span class="numero">01</span><h3>Gestación</h3><p>Nutrición materna, nutrientes esenciales, alimentos seguros y molestias digestivas.</p><span class="contador">6 artículos disponibles</span></a>
+<a class="etapa" href="#primer-ano"><span class="numero">02</span><h3>Primer año de vida</h3><p>Lactancia, alimentación complementaria, alimentos, texturas y seguridad.</p><span class="contador">5 artículos disponibles</span></a>
+<a class="etapa" href="#segundo-ano"><span class="numero">03</span><h3>Segundo año de vida</h3><p>Transición a la mesa familiar, autonomía y diversidad alimentaria.</p><span class="contador">1 artículo disponible</span></a>
 </section>
+<section class="indice-alimentacion" aria-label="Índice de artículos de alimentación">
+<div class="indice-grupo" id="gestacion"><h2>Gestación</h2><ol>
+<li><a href="../C1-05/">Alimentación durante la gestación</a></li>
+<li><a href="../C1-06/">Comer durante el embarazo cuando los recursos son limitados</a></li>
+<li><a href="../C1-07/">Hierro y anemia durante el embarazo</a></li>
+<li><a href="../C1-08/">Ácido fólico y otros nutrientes esenciales durante el embarazo</a></li>
+<li><a href="../C1-09/">Alimentos seguros durante el embarazo</a></li>
+<li><a href="../C1-10/">Náuseas, vómitos, acidez y estreñimiento durante el embarazo</a></li>
+</ol></div>
+<div class="indice-grupo" id="primer-ano"><h2>Primer año de vida</h2><ol>
+<li><a href="../C1-04/">Alimentación durante el primer año de vida</a></li>
+<li><a href="../C1-11/">¿Qué alimentos y texturas corresponden a cada edad?</a></li>
+<li><a href="../C1-12/">Texturas, cortes y prevención del atragantamiento</a></li>
+<li><a href="../C1-13/">Alimentación perceptiva y dificultades frecuentes</a></li>
+<li><a href="../C1-14/">Seguridad alimentaria infantil</a></li>
+</ol></div>
+<div class="indice-grupo" id="segundo-ano"><h2>Segundo año de vida</h2><ol>
+<li><a href="../C1-15/">Alimentación durante el segundo año de vida</a></li>
+</ol></div></section>
 <section class="recursos" aria-label="Herramientas de alimentación"><article class="recurso"><h3>Biblioteca de Lactancia</h3><p>Un nuevo espacio editorial para profundizar en fisiología, inicio, técnica, dificultades, extracción, conservación y acompañamiento.</p><a href="../lactancia/">EXPLORAR LACTANCIA →</a></article>
 <article class="recurso"><h3>Biblioteca de alimentos</h3><p>Consulta las fichas existentes, sus propiedades, preparación, precauciones y conservación.</p><a href="../alimentos/">ABRIR BIBLIOTECA →</a></article>
 <article class="recurso"><h3>¿Qué cocino hoy?</h3><p>Explora el recetario interactivo con ingredientes disponibles y edad del niño.</p><a href="../recetario/">ABRIR RECETARIO →</a></article>
