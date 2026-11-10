@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-37', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-38', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -891,7 +891,7 @@
       '[class*="icon"]', '[class*="Icon"]', '[class*="ico"]',
       '[class*="simbolo"]', '[class*="espiral"]', '[class*="oraculo"]',
       '.plataforma-estado i', '.ciba-global-letra',
-      'a svg', 'button svg', '[role="button"] svg'
+      'svg', 'span[aria-hidden="true"]', 'i[aria-hidden="true"]'
     ].join(',');
 
     const marcar = (raiz) => {
