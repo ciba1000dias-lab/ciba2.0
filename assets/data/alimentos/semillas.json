@@ -54,7 +54,13 @@
         "licencia": "CC BY-SA 4.0",
         "atribucion_url": "https://commons.wikimedia.org/wiki/File:Sesame_Seed.jpg"
       },
-      "video_youtube": null,
+      "video_youtube": {
+        "url": "https://www.youtube.com/watch?v=foZZtMfOx5c",
+        "titulo": "Alimentación complementaria en niños con alergia alimentaria",
+        "canal": "De piel a piel · Dra. Mayesther Pérez Estévez",
+        "formato": "Entrevista médica",
+        "descripcion": "La pediatra gastroenteróloga, especializada en alergia alimentaria, aborda cómo sospechar una alergia y cómo introducir nuevos alimentos. Es una orientación general; no sustituye la valoración individual ni las indicaciones del equipo médico."
+      },
       "palabras_clave": [
         "ajonjolí",
         "sésamo",
