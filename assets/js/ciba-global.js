@@ -314,9 +314,8 @@
       columnas.forEach((columna)=>{
         let areas=(datos.areas||[]).filter(a=>a.columna===columna.id)
           .sort((a,b)=>(a.orden||0)-(b.orden||0));
-        // En Crianza el índice se mantiene deliberadamente reducido:
-        // solo muestra Alimentación y Lactancia hasta desarrollar nuevas áreas.
-        if(columna.id==='C') areas=areas.filter(area=>area.id==='C1');
+        // En Crianza se muestran las áreas desarrolladas: Alimentación y Sueño y descanso.
+        if(columna.id==='C') areas=areas.filter(area=>['C1','C2'].includes(area.id));
         const desplegable=crearDesplegable(columna.titulo,'ciba-global-columna ciba-global-columna-'+columna.id.toLowerCase(),areas[0]?.ruta_publica||null);
         const letra=elemento('span','ciba-global-letra',columna.id);
         desplegable.botonGrupo.prepend(letra);
