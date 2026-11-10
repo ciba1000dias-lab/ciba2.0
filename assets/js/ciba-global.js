@@ -312,12 +312,20 @@
     async function construirNavegacionEditorial() {
       const datos=await obtenerCatalogo();
       columnas.forEach((columna)=>{
-        const areas=(datos.areas||[]).filter(a=>a.columna===columna.id)
+        let areas=(datos.areas||[]).filter(a=>a.columna===columna.id)
           .sort((a,b)=>(a.orden||0)-(b.orden||0));
+        // En Crianza el índice se mantiene deliberadamente reducido:
+        // solo muestra Alimentación y Lactancia hasta desarrollar nuevas áreas.
+        if(columna.id==='C') areas=areas.filter(area=>area.id==='C1');
         const desplegable=crearDesplegable(columna.titulo,'ciba-global-columna ciba-global-columna-'+columna.id.toLowerCase(),areas[0]?.ruta_publica||null);
         const letra=elemento('span','ciba-global-letra',columna.id);
         desplegable.botonGrupo.prepend(letra);
         areas.forEach(area=>{
+          if(columna.id==='C'&&area.id==='C1'){
+            agregarEnlace(desplegable.lista,'c/C1/alimentacion/','Alimentación');
+            agregarEnlace(desplegable.lista,'c/C1/lactancia/','Lactancia');
+            return;
+          }
           const rutaMenuArea = area.id === 'C1' ? 'c/C1/alimentacion/' : area.ruta_publica;
           const grupoArea=crearDesplegable(area.titulo||area.id,'ciba-global-area',rutaMenuArea);
           const paginas=(datos.paginas||[]).filter(p=>
