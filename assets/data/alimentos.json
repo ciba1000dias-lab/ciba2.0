@@ -78,7 +78,7 @@
     {
       "nombre": "Grasas y aceites",
       "archivo": "assets/data/alimentos/grasas.json",
-      "cantidad": 1,
+      "cantidad": 2,
       "slug": "grasas"
     }
   ]
