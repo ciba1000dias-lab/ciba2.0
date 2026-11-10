@@ -99,3 +99,17 @@
 .boletin-privacidad{margin:18px 0 0;color:var(--ciba-suave);font-size:11px;line-height:1.7}
 .boletin-privacidad a{color:#76572f;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:640px){.boletin-panel-cabecera{padding:22px 18px 17px}.boletin-formulario{padding:10px 8px 16px}.boletin-formulario iframe{min-height:360px}}
+
+
+/* Comunidad · herramienta para compartir */
+.comunidad-share-panel{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0;padding:clamp(1.2rem,3vw,2.2rem);border:1px solid rgba(73,58,50,.16);border-radius:22px;background:#fffdf8;box-shadow:0 12px 34px rgba(45,38,31,.06)}
+.comunidad-share-copy h2{margin:.55rem 0;color:#493A32;font-size:clamp(1.35rem,2.5vw,1.8rem)}
+.comunidad-share-copy p{line-height:1.65;color:#5e5a53}
+.comunidad-share-copy label{display:block;margin:1.4rem 0 .45rem;font-weight:700;color:#493A32}
+.comunidad-share-copy input{width:100%;min-width:0;padding:.85rem;border:1px solid #d8d0c4;border-radius:10px;background:#f7f2e8;color:#493A32;font:inherit}
+.comunidad-share-actions{display:flex;flex-direction:column;gap:.7rem;justify-content:center}
+.comunidad-share-btn{display:block;width:100%;padding:.9rem 1rem;border:1px solid #d8d0c4;border-radius:12px;background:#fff;color:#29463F;text-align:center;text-decoration:none;font:inherit;font-weight:650;cursor:pointer}
+.comunidad-share-btn.principal{background:#29463F;border-color:#29463F;color:#fff}
+.comunidad-share-btn:focus-visible{outline:3px solid #8C671F;outline-offset:3px}
+.comunidad-share-status{min-height:2.5em;margin:.3rem 0 0;color:#625c53;font-size:.9rem;line-height:1.5}
+@media(max-width:700px){.comunidad-share-panel{grid-template-columns:1fr;gap:1.2rem;padding:1rem;border-radius:16px}.comunidad-share-actions{gap:.6rem}}
