@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261109-12', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-18', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -834,8 +834,31 @@
     }, { passive: true });
   }
 
+  function crearPieInstitucional() {
+    if (document.querySelector('.ciba-pie-institucional')) return;
+    const pie = elemento('footer', 'ciba-pie-institucional');
+    const identidad = elemento('p', 'ciba-pie-identidad',
+      'CIBA: plataforma digital cubana de educación parental en los primeros mil días de las infancias.');
+    const lema = elemento('p', 'ciba-pie-lema', 'Crecemos acompañándonos.');
+    const nav = elemento('nav', 'ciba-pie-navegacion');
+    nav.setAttribute('aria-label', 'Navegación principal de CIBA');
+    const enlaces = [
+      ['Crianza', 'c/C1/'],
+      ['Internet', 'i/I1/'],
+      ['Bienestar', 'b/B1/'],
+      ['Acompañamiento', 'a/A1/'],
+      ['Configuración de la plataforma', 'plataforma/']
+    ];
+    enlaces.forEach(([nombre, ruta]) => {
+      nav.appendChild(enlace(urlPublica(ruta), nombre, 'ciba-pie-enlace'));
+    });
+    pie.append(identidad, lema, nav);
+    document.body.appendChild(pie);
+  }
+
   function iniciar() {
     cargarEstilos();
+    crearPieInstitucional();
     crearMenu();
     crearBuscador();
 
