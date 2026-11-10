@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-35', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-36', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -262,135 +262,106 @@
       elemento('h2', 'ciba-global-menu-titulo', 'EXPLORA CIBA')
     );
 
-    // INICIO
-    panel.appendChild(
-      enlace(
-        new URL('index.html', RAIZ).href,
-        'Inicio CIBA',
-        'ciba-global-enlace'
-      )
-    );
+    // ACCESO GENERAL
+    panel.appendChild(enlace(new URL('index.html', RAIZ).href,'Inicio CIBA','ciba-global-enlace'));
 
-    // ACCESO DIRECTO A LA BIBLIOTECA DE ALIMENTOS
-    panel.appendChild(
-      enlace(
-        new URL('c/C1/alimentos/', RAIZ).href,
-        'Biblioteca de alimentos',
-        'ciba-global-enlace'
-      )
-    );
+    const tituloColumnas = elemento('h2','ciba-global-menu-titulo ciba-global-menu-separador','LAS CUATRO COLUMNAS');
+    panel.appendChild(tituloColumnas);
 
-    // SUBSECCIÓN DE ALIMENTACIÓN DURANTE LA GESTACIÓN
-    panel.appendChild(
-      enlace(
-        new URL('c/C1/alimentacion-gestacion/', RAIZ).href,
-        'Alimentación durante la gestación',
-        'ciba-global-enlace'
-      )
-    );
+    function crearDesplegable(titulo, clase='') {
+      const grupo=elemento('div','ciba-global-grupo '+clase);
+      const botonGrupo=elemento('button','ciba-global-enlace ciba-global-desplegable',titulo);
+      botonGrupo.type='button';
+      botonGrupo.setAttribute('aria-expanded','false');
+      const lista=elemento('div','ciba-global-submenu');
+      lista.hidden=true;
+      botonGrupo.addEventListener('click',()=>{
+        const abrir=lista.hidden;
+        lista.hidden=!abrir;
+        botonGrupo.setAttribute('aria-expanded',String(abrir));
+        grupo.classList.toggle('desplegado',abrir);
+      });
+      grupo.append(botonGrupo,lista);
+      return {grupo,botonGrupo,lista};
+    }
 
-    // SUEÑO Y DESCANSO DURANTE LOS PRIMEROS DOS AÑOS
-    panel.appendChild(
-      enlace(
-        new URL('c/C1/C1-03/', RAIZ).href,
-        'Sueño infantil: horas y descanso seguro',
-        'ciba-global-enlace'
-      )
-    );
+    function agregarEnlace(lista,ruta,titulo,clase='ciba-global-enlace ciba-global-subenlace') {
+      if(!ruta) return;
+      lista.appendChild(enlace(urlPublica(ruta),titulo,clase));
+    }
 
-    // ACCESO DIRECTO AL RECETARIO INTERACTIVO
-    panel.appendChild(
-      enlace(
-        new URL('c/C1/recetario/', RAIZ).href,
-        '¿Qué cocino hoy? · Recetario IA',
-        'ciba-global-enlace'
-      )
-    );
+    async function construirNavegacionEditorial() {
+      const datos=await obtenerCatalogo();
+      columnas.forEach((columna)=>{
+        const desplegable=crearDesplegable(columna.titulo,'ciba-global-columna ciba-global-columna-'+columna.id.toLowerCase());
+        const letra=elemento('span','ciba-global-letra',columna.id);
+        desplegable.botonGrupo.prepend(letra);
+        const areas=(datos.areas||[]).filter(a=>a.columna===columna.id)
+          .sort((a,b)=>(a.orden||0)-(b.orden||0));
+        areas.forEach(area=>{
+          const grupoArea=crearDesplegable(area.titulo||area.id,'ciba-global-area');
+          agregarEnlace(grupoArea.lista,area.ruta_publica,'Abrir '+(area.titulo||'área'));
+          const paginas=(datos.paginas||[]).filter(p=>p.area===area.id&&p.columna===columna.id)
+            .sort((a,b)=>String(a.titulo||'').localeCompare(String(b.titulo||''),'es'));
+          const subsecciones=new Map();
+          paginas.forEach(p=>{
+            const clave=p.subseccion||'Contenidos generales';
+            if(!subsecciones.has(clave)) subsecciones.set(clave,[]);
+            subsecciones.get(clave).push(p);
+          });
+          subsecciones.forEach((items,nombre)=>{
+            if(subsecciones.size>1){
+              const grupoSub=crearDesplegable(nombre,'ciba-global-subarea');
+              items.forEach(p=>agregarEnlace(grupoSub.lista,p.ruta_publica,p.titulo));
+              grupoArea.lista.appendChild(grupoSub.grupo);
+            } else {
+              items.forEach(p=>agregarEnlace(grupoArea.lista,p.ruta_publica,p.titulo));
+            }
+          });
+          desplegable.lista.appendChild(grupoArea.grupo);
+        });
+        const primeraArea=areas[0];
+        if(primeraArea) agregarEnlace(desplegable.lista,primeraArea.ruta_publica,'Explorar '+columna.titulo);
+        panel.appendChild(desplegable.grupo);
+      });
+    }
 
-    // CUATRO COLUMNAS
-    columnas.forEach((columna) => {
-      const grupo = elemento('div', 'ciba-global-grupo');
+    const seccionesPlataforma = [
+      ["sobre-ciba","Sobre CIBA",[["mision-y-lema","Misión y lema"],["nuestro-equipo","Nuestro equipo"],["declaracion-editorial","Declaración editorial"]]],
+      ["confianza-y-legal","Confianza y legal",[["aviso-medico","Aviso médico"],["privacidad","Privacidad"],["datos-de-menores","Datos de menores"],["terminos-de-uso","Términos de uso"],["como-citar","Cómo citar"]]],
+      ["configuracion","Configuración",[]],
+      ["navegacion","Navegación",[["buscar","Buscar"],["indice-tematico","Índice temático"],["recorrido-por-edad","Recorrido por edad"],["series","Series"],["glosario","Glosario"]]],
+      ["comunidad","Comunidad",[["preguntale-al-pediatra","Pregúntale al pediatra"],["reportar-error","Reportar un error"],["compartir","Compartir"],["unirse-al-equipo","Unirse al equipo"]]],
+      ["recursos","Recursos",[["descargables","Descargables"],["multimedia","Multimedia"],["enlaces-recomendados","Enlaces recomendados"],["redes-sociales","Nuestras redes"]]]
+    ];
 
-      const encabezado = elemento(
-        'a',
-        'ciba-global-enlace',
-        ''
-      );
-
-      encabezado.href = new URL('index.html#areas', RAIZ).href;
-
-      const letra = elemento(
-        'span',
-        'ciba-global-letra',
-        columna.id
-      );
-
-      const nombre = elemento('span', '', columna.titulo);
-
-      encabezado.append(letra, nombre);
-      grupo.appendChild(encabezado);
-      panel.appendChild(grupo);
+    const tituloPlataforma=elemento('h2','ciba-global-menu-titulo ciba-global-menu-separador','PLATAFORMA');
+    panel.appendChild(tituloPlataforma);
+    const grupoPlataforma=crearDesplegable('Plataforma','ciba-global-plataforma');
+    agregarEnlace(grupoPlataforma.lista,'plataforma/','Explorar Plataforma');
+    seccionesPlataforma.forEach(seccion=>{
+      const grupo=crearDesplegable(seccion[1],'ciba-global-area');
+      agregarEnlace(grupo.lista,'plataforma/'+seccion[0]+'/','Ver sección completa');
+      seccion[2].forEach(apartado=>agregarEnlace(grupo.lista,'plataforma/'+seccion[0]+'/'+apartado[0]+'/',apartado[1]));
+      grupoPlataforma.lista.appendChild(grupo.grupo);
     });
+    panel.appendChild(grupoPlataforma.grupo);
 
-    // NAYARA Y TUREY
-    const dudas = enlace(
-      '#',
-      'Las dudas de Nayara y Turey',
-      'ciba-global-enlace'
-    );
-
-    dudas.setAttribute('aria-disabled', 'true');
-    dudas.title = 'Página en preparación';
-
-    dudas.addEventListener('click', (evento) => {
-      evento.preventDefault();
-    });
-
-    panel.appendChild(dudas);
-
-    // BUSCADOR
-    const buscar = enlace(
-      '#',
-      'BUSCADOR CIBA',
-      'ciba-global-enlace'
-    );
-
-    buscar.addEventListener('click', (evento) => {
-      evento.preventDefault();
-      // La opción BUSCADOR del menú debe poder invocar el oráculo
-      // aunque este se hubiera ocultado durante el desplazamiento.
-      scrollOculto = false;
-      cerrarMenu(panel, boton);
-
-      if (esPortada()) {
-        abrirBuscadorDePortada();
-      } else {
-        const oraculo = document.querySelector(
-          '.ciba-global-oraculo'
-        );
-
-        if (oraculo) oraculo.click();
+    // Herramienta transversal: buscador
+    const buscar=elemento('button','ciba-global-enlace ciba-global-herramienta','BUSCADOR CIBA');
+    buscar.type='button';
+    buscar.addEventListener('click',()=>{
+      scrollOculto=false;
+      cerrarMenu(panel,boton);
+      if(esPortada()) abrirBuscadorDePortada();
+      else {
+        const oraculo=document.querySelector('.ciba-global-oraculo');
+        if(oraculo) oraculo.click();
       }
     });
-
     panel.appendChild(buscar);
 
-    // PLATAFORMA: navegación jerárquica con rutas reales.
-    const seccionesPlataforma = [["sobre-ciba","Sobre CIBA","Conoce la identidad, el propósito compartido y los principios que orientan la construcción colectiva de CIBA.","✺",[["mision-y-lema","Misión y lema","La razón de ser de CIBA, su compromiso con las familias y el sentido de su lema."],["nuestro-equipo","Nuestro equipo","Las personas que aportan conocimientos, experiencia y compromiso a la construcción colectiva de CIBA."],["declaracion-editorial","Declaración editorial","Los principios de independencia, rigor, transparencia y revisión de los contenidos."]]],["confianza-y-legal","Confianza y legal","Información transparente sobre el uso responsable de CIBA, sus límites y la protección de las personas.","◈",[["aviso-medico","Aviso médico","Alcance educativo de la información y cuándo se necesita atención sanitaria individual."],["privacidad","Privacidad","Qué información podría recopilarse, para qué se utilizaría y cómo se protegería."],["datos-de-menores","Datos de menores","Principios reforzados de minimización, protección y tratamiento responsable de información infantil."],["terminos-de-uso","Términos de uso","Condiciones para utilizar la plataforma, sus recursos y herramientas."],["como-citar","Cómo citar","Orientaciones para citar artículos, recursos y materiales de CIBA."]]],["configuracion","Configuración","Adapta el tamaño del texto, el contraste y la presentación de CIBA a tus preferencias de lectura y accesibilidad.","⚙",[]],["navegacion","Navegación","Herramientas para encontrar información y recorrer el conocimiento de CIBA de distintas maneras.","⌘",[["buscar","Buscar","Acceso al buscador de CIBA para localizar artículos, fichas y recursos."],["indice-tematico","Índice temático","Mapa organizado de temas, áreas y contenidos de las cuatro columnas."],["recorrido-por-edad","Recorrido por edad","Explorar contenidos desde la concepción hasta los dos años."],["series","Series","Colecciones de contenidos relacionados para profundizar paso a paso."],["glosario","Glosario","Definiciones claras de términos de salud, crianza, nutrición y desarrollo."]]],["comunidad","Comunidad","Canales para participar, enviar comentarios y ayudar a mejorar CIBA de forma respetuosa y segura.","♡",[["preguntale-al-pediatra","Pregúntale al pediatra","Preguntas educativas generales por correo; no consultas clínicas personales."],["reportar-error","Reportar error","Correo institucional para comunicar enlaces rotos, errores de contenido o dificultades de uso."],["compartir","Compartir","Herramientas para compartir CIBA y sus recursos con otras familias y profesionales."],["unirse-al-equipo","Unirse al equipo","Conoce las formas de colaborar con CIBA como profesional, académico, comunicador, colaborador financiero o patrocinador."]]],["recursos","Recursos","Materiales complementarios para aprender, consultar y compartir información confiable.","✧",[["descargables","Descargables","Guías, fichas y materiales imprimibles para uso familiar y educativo."],["multimedia","Multimedia","Videos, audios, ilustraciones y otros formatos de aprendizaje."],["enlaces-recomendados","Enlaces recomendados","Selección editorial de recursos externos fiables y útiles."],["redes-sociales","Nuestras redes","Canales oficiales y espacios para seguir las publicaciones de CIBA."]]]];
-    panel.appendChild(elemento('h2','ciba-global-menu-titulo ciba-global-menu-separador','PLATAFORMA'));
-    panel.appendChild(enlace(urlPublica('plataforma/'),'Explorar Plataforma','ciba-global-enlace'));
-    seccionesPlataforma.forEach((seccion) => {
-      const grupo=elemento('div','ciba-global-grupo');
-      const encabezado=elemento('a','ciba-global-enlace',seccion[1]);
-      encabezado.href=urlPublica('plataforma/'+seccion[0]+'/');
-      encabezado.setAttribute('aria-expanded','false');
-      const lista=elemento('div','ciba-global-submenu');lista.hidden=true;
-      encabezado.addEventListener('click',(evento)=>{evento.preventDefault();const abierto=!lista.hidden;lista.hidden=abierto;encabezado.setAttribute('aria-expanded',String(!abierto));});
-      lista.appendChild(enlace(urlPublica('plataforma/'+seccion[0]+'/'),'Ver sección completa','ciba-global-enlace ciba-global-subenlace'));
-      seccion[4].forEach(apartado=>lista.appendChild(enlace(urlPublica('plataforma/'+seccion[0]+'/'+apartado[0]+'/'),apartado[1],'ciba-global-enlace ciba-global-subenlace')));
-      grupo.append(encabezado,lista);panel.appendChild(grupo);
-    });
-
+    construirNavegacionEditorial().catch(error=>console.warn('CIBA: no se pudo construir el índice jerárquico del menú.',error));
 
     boton.addEventListener('click', () => {
       const abierto = panel.classList.toggle('abierto');
