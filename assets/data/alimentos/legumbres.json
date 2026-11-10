@@ -1124,6 +1124,292 @@
       ],
       "estado": "piloto",
       "imagenes": []
+    },
+    {
+      "id": "guisantes-verdes",
+      "nombre": "Guisantes verdes",
+      "nombres_alternativos": [],
+      "categoria": "Legumbres",
+      "resumen": "Legumbre tierna que aporta fibra, proteína vegetal y folato.",
+      "descripcion": "Los guisantes verdes son semillas inmaduras de una leguminosa. Aportan carbohidratos, fibra, proteína vegetal y folato; su textura debe adaptarse cuidadosamente en la infancia.",
+      "propiedades": [
+        "Aportan fibra y proteína vegetal.",
+        "Contienen folato y otros micronutrientes."
+      ],
+      "beneficios": [
+        "Contribuyen a la diversidad de legumbres y vegetales.",
+        "Bien cocidos pueden triturarse hasta obtener una textura espesa."
+      ],
+      "edad": "Pueden ofrecerse alrededor de los 6 meses, una vez iniciada la alimentación complementaria, siempre muy bien cocidos y aplastados.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Cocer hasta que se aplasten con facilidad y triturar; pasar por colador si quedan pieles."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Aplastar individualmente los guisantes cocidos; no ofrecerlos enteros y firmes."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Ofrecer muy blandos y aplastados o partidos, según la habilidad de masticación."
+        }
+      ],
+      "preparacion_segura": "Cocinar completamente hasta que estén muy blandos. No ofrecer guisantes secos, duros, congelados sin cocinar ni enteros firmes.",
+      "recetas": [
+        {
+          "nombre": "Puré de guisantes",
+          "etapa": "Desde el inicio de la alimentación complementaria",
+          "ingredientes": "Guisantes verdes y agua potable",
+          "preparacion": "Cocer hasta ablandar, triturar y ajustar a una textura espesa."
+        }
+      ],
+      "precauciones": [
+        "Los guisantes enteros pueden representar riesgo de atragantamiento si no están suficientemente blandos y aplastados.",
+        "Evitar versiones enlatadas con alto contenido de sodio; enjuagar si se utilizan."
+      ],
+      "conservacion": "Refrigerar los guisantes frescos pronto. Los cocidos deben enfriarse rápidamente y guardarse tapados.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Green%20Peas.jpg?width=1280",
+        "alt": "Guisantes verdes frescos.",
+        "autor": "BHARATHESHA ALASANDEMAJALU",
+        "licencia": "CC BY-SA 3.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Green_Peas.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "guisantes verdes",
+        "arvejas",
+        "chícharos verdes",
+        "guisantes para bebé",
+        "proteína vegetal"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación alimentaria adaptada al contexto cubano."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y preparación segura."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención del atragantamiento y adaptación de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Higiene y prevención de enfermedades transmitidas por alimentos."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "mani",
+      "nombre": "Maní",
+      "nombres_alternativos": [],
+      "categoria": "Legumbres",
+      "resumen": "Legumbre oleaginosa que aporta grasas insaturadas y proteína; es un alérgeno importante.",
+      "descripcion": "El maní o cacahuete es una legumbre rica en grasas insaturadas, proteína y energía. Es un alérgeno alimentario importante y su presentación debe evitar el riesgo de atragantamiento.",
+      "propiedades": [
+        "Aporta grasas principalmente insaturadas y proteína vegetal.",
+        "Contiene niacina, vitamina E y otros micronutrientes."
+      ],
+      "beneficios": [
+        "Puede formar parte de una alimentación variada cuando se introduce de forma segura.",
+        "La introducción apropiada del alérgeno no debe retrasarse innecesariamente en la mayoría de los lactantes."
+      ],
+      "edad": "Puede introducirse alrededor de los 6 meses en forma segura, nunca entero ni como mantequilla espesa. Si el bebé tiene eccema grave o alergia al huevo, consultar al profesional de salud antes de introducirlo.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Ofrecer una pequeña cantidad de mantequilla de maní lisa, diluida con agua tibia o mezclada en puré; debe quedar fluida, nunca pegajosa."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Continuar en pequeñas cantidades mezcladas en alimentos húmedos. No ofrecer maní entero ni trozos."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Usar mantequilla lisa diluida o maní molido muy fino incorporado a preparaciones húmedas; nunca frutos enteros en menores de 5 años."
+        }
+      ],
+      "preparacion_segura": "No ofrecer maní entero, picado grueso ni cucharadas de mantequilla espesa. Evitar contaminación cruzada. Introducirlo cuando el niño esté sano y durante el día, en una cantidad pequeña.",
+      "recetas": [
+        {
+          "nombre": "Puré con maní diluido",
+          "etapa": "Solo tras valorar la introducción segura del alérgeno",
+          "ingredientes": "Una pequeña cantidad de mantequilla de maní lisa y puré ya tolerado",
+          "preparacion": "Diluir completamente la mantequilla en agua tibia y mezclar hasta que no queden grumos ni consistencia pegajosa."
+        }
+      ],
+      "precauciones": [
+        "El maní puede causar reacciones alérgicas graves, incluida anafilaxia.",
+        "Ante eccema grave, alergia conocida al huevo o reacción previa, consultar al pediatra/alergólogo antes de introducirlo.",
+        "Los frutos secos enteros y la mantequilla espesa son riesgo de atragantamiento."
+      ],
+      "conservacion": "Conservar el maní seco en recipiente hermético, fresco y sin humedad. La mantequilla abierta debe almacenarse según etiqueta y evitar contaminación con utensilios usados.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Organic%20peanut%20seeds.jpg?width=1280",
+        "alt": "Semillas de maní o cacahuete.",
+        "autor": "Renatotcm",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Organic_peanut_seeds.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "maní",
+        "cacahuete",
+        "cacahuate",
+        "alergia al maní",
+        "introducción de alérgenos",
+        "mantequilla de maní"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación alimentaria adaptada al contexto cubano."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y preparación segura."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención del atragantamiento y adaptación de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Higiene y prevención de enfermedades transmitidas por alimentos."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
+    },
+    {
+      "id": "ajonjoli",
+      "nombre": "Ajonjolí",
+      "nombres_alternativos": [],
+      "categoria": "Legumbres",
+      "resumen": "Semilla oleaginosa conocida como sésamo, fuente de grasas insaturadas y proteína vegetal.",
+      "descripcion": "El ajonjolí o sésamo es una semilla oleaginosa utilizada en pequeñas cantidades. Aporta grasas insaturadas, proteína, fibra y minerales. Es un alérgeno alimentario reconocido.",
+      "propiedades": [
+        "Aporta grasas insaturadas y proteína vegetal.",
+        "Contiene calcio, hierro y otros minerales; su absorción depende de la preparación."
+      ],
+      "beneficios": [
+        "Amplía la variedad de sabores y alimentos vegetales.",
+        "Puede incorporarse molido y bien integrado en preparaciones húmedas."
+      ],
+      "edad": "Puede introducirse alrededor de los 6 meses como semilla molida o pasta de sésamo muy diluida. No ofrecer semillas enteras ni cucharadas de tahini espeso.",
+      "preparacion_por_edades": [
+        {
+          "etapa": "6–8 meses",
+          "forma": "Usar una cantidad pequeña de tahini diluido o semilla finamente molida, mezclada por completo en puré húmedo."
+        },
+        {
+          "etapa": "9–11 meses",
+          "forma": "Continuar con pasta diluida o semilla molida fina; evitar semillas sueltas."
+        },
+        {
+          "etapa": "Desde los 12 meses",
+          "forma": "Añadir pequeñas cantidades molidas a preparaciones húmedas; evitar espolvorear semillas enteras."
+        }
+      ],
+      "preparacion_segura": "Introducir como alérgeno nuevo, en poca cantidad y sin otros alimentos nuevos en la misma toma. No ofrecer semillas enteras ni pasta espesa y pegajosa.",
+      "recetas": [
+        {
+          "nombre": "Puré con sésamo",
+          "etapa": "Tras introducir y tolerar el sésamo",
+          "ingredientes": "Una pequeña cantidad de tahini y puré de calabaza",
+          "preparacion": "Diluir el tahini y mezclar completamente hasta lograr una textura suave y no pegajosa."
+        }
+      ],
+      "precauciones": [
+        "El sésamo puede causar alergia, incluso reacciones graves.",
+        "No ofrecer semillas enteras por riesgo de atragantamiento.",
+        "Evitar tahini espeso o cucharadas de pasta sin diluir."
+      ],
+      "conservacion": "Guardar las semillas en recipiente hermético, seco y protegido del calor. Refrigerar el tahini después de abrirlo si así lo indica la etiqueta.",
+      "imagen_principal": {
+        "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sesame%20Seed.jpg?width=1280",
+        "alt": "Semillas de ajonjolí o sésamo.",
+        "autor": "Aderiqueza",
+        "licencia": "CC BY-SA 4.0",
+        "atribucion_url": "https://commons.wikimedia.org/wiki/File:Sesame_Seed.jpg"
+      },
+      "video_youtube": null,
+      "palabras_clave": [
+        "ajonjolí",
+        "sésamo",
+        "semillas de sésamo",
+        "tahini",
+        "alérgeno sésamo",
+        "semillas"
+      ],
+      "fuentes": [
+        {
+          "institucion": "UNICEF Cuba",
+          "titulo": "Guías alimentarias para niñas y niños cubanos hasta 2 años de edad",
+          "url": "https://www.unicef.org/cuba/informes/guias-alimentarias-para-ninas-y-ninos-cubanos-hasta-2-anos-de-edad",
+          "utilidad": "Orientación alimentaria adaptada al contexto cubano."
+        },
+        {
+          "institucion": "Organización Mundial de la Salud",
+          "titulo": "Guideline for complementary feeding of infants and young children 6–23 months of age",
+          "url": "https://www.who.int/publications/i/item/9789240081864",
+          "utilidad": "Recomendaciones generales para la alimentación complementaria."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "When, What, and How to Introduce Solid Foods",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-what-and-how-to-introduce-solid-foods.html",
+          "utilidad": "Inicio de alimentación complementaria y preparación segura."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Choking Hazards",
+          "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+          "utilidad": "Prevención del atragantamiento y adaptación de texturas."
+        },
+        {
+          "institucion": "CDC",
+          "titulo": "Food Safety for Children Under 5",
+          "url": "https://www.cdc.gov/food-safety/foods/children-under-5.html",
+          "utilidad": "Higiene y prevención de enfermedades transmitidas por alimentos."
+        }
+      ],
+      "estado": "publicado",
+      "imagenes": []
     }
   ]
 }
