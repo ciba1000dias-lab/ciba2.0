@@ -56,7 +56,7 @@ def effects(path,duration,rate=22050):
    if length<=0:continue
    x=np.arange(length)/rate;env=np.exp(-3*x)*np.minimum(1,x/.015);tone=.022*env*np.sin(2*np.pi*f*x)
    l[start:start+length]+=tone;r[start:start+length]+=.92*tone
- for onset in (39,101,154):
+ for onset in (30.0,68.0,113.5,154.2,195.6):
   start=int(onset*rate);length=min(int(.48*rate),n-start)
   if length<=0:continue
   noise=np.convolve(rng.normal(0,1,length),np.ones(19)/19,mode="same")
