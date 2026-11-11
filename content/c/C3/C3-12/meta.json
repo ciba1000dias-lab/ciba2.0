@@ -1,0 +1,50 @@
+{
+  "id": "C3-12",
+  "titulo": "Vestirse solo: cuándo y cómo",
+  "descripcion": "Cómo acompañar el aprendizaje de vestirse con paciencia, habilidades cotidianas, ropa cómoda, seguridad y recursos prácticos para las familias.",
+  "columna": "C",
+  "area": "C3",
+  "subseccion": "Autonomía temprana",
+  "palabras_clave": [
+    "vestirse solo",
+    "autonomía temprana",
+    "desarrollo infantil",
+    "habilidades de autocuidado",
+    "motricidad fina",
+    "zíper",
+    "botones",
+    "rutinas familiares",
+    "primeros mil días"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "enlaces_externos": [
+    {
+      "titulo": "American Academy of Pediatrics — Developmental Milestones",
+      "url": "https://www.aap.org/en/patient-care/developmental-surveillance-and-screening-patient-care/developmental-milestones/",
+      "tipo": "desarrollo y vigilancia de hitos"
+    },
+    {
+      "titulo": "CDC — Milestones by 18 Months",
+      "url": "https://www.cdc.gov/act-early/milestones/18-months.html",
+      "tipo": "participación en el vestido"
+    },
+    {
+      "titulo": "CDC — Milestones by 2 Years",
+      "url": "https://www.cdc.gov/act-early/milestones/2-years.html",
+      "tipo": "desarrollo infantil"
+    },
+    {
+      "titulo": "American Occupational Therapy Association",
+      "url": "https://www.aota.org/",
+      "tipo": "actividades de la vida diaria y participación"
+    },
+    {
+      "titulo": "Health Service Executive — Clothes safety",
+      "url": "https://www2.hse.ie/babies-children/child-safety/at-home/clothes-safety/",
+      "tipo": "seguridad de la ropa infantil"
+    }
+  ]
+}
