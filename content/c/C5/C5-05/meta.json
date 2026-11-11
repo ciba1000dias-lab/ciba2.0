@@ -1,0 +1,42 @@
+{
+  "id": "C5-05",
+  "titulo": "La sonrisa social y los primeros intercambios afectivos",
+  "descripcion": "Comprende la sonrisa social y los primeros intercambios afectivos del bebé, con orientaciones para acompañar su desarrollo sin comparaciones.",
+  "columna": "C",
+  "area": "C5",
+  "subseccion": "Construcción del apego",
+  "palabras_clave": [
+    "sonrisa-social",
+    "interaccion-temprana",
+    "comunicacion-bebe",
+    "mirada",
+    "vocalizaciones",
+    "desarrollo-social"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "preview_publica": false,
+  "media": {
+    "imagenes": [
+      {
+        "proveedor": "pexels",
+        "fotografo": "Arina Krasnikova",
+        "url": "https://www.pexels.com/photo/a-mother-and-baby-doing-face-to-face-5416623/"
+      }
+    ]
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "Centers for Disease Control and Prevention (CDC). Learn the Signs. Act Early. Milestones by 2 months.",
+      "url": "https://www.cdc.gov/act-early/milestones/2-months.html",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OMS: desarrollo infantil temprano",
+      "url": "https://www.who.int/health-topics/early-child-development",
+      "tipo": "fuente"
+    }
+  ]
+}
