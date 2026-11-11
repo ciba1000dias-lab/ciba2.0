@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-50', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-51', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -315,8 +315,23 @@
       columnas.forEach((columna)=>{
         let areas=(datos.areas||[]).filter(a=>a.columna===columna.id)
           .sort((a,b)=>(a.orden||0)-(b.orden||0));
-        // En Crianza se muestran las áreas desarrolladas: Alimentación y Sueño y descanso.
-        if(columna.id==='C') areas=areas.filter(area=>['C1','C2'].includes(area.id));
+        // Taxonomía editorial institucional: todas las áreas son secciones hermanas.
+        const ordenAreas = {
+          C:['C1','C2','C3','C4','C5','C6','C7'],
+          I:['I1','I2','I3','I4','I5'],
+          B:['B1','B2','B3','B4','B5'],
+          A:['A1','A2','A3','A4','A5']
+        };
+        const titulosAreas = {
+          C:{C1:'Alimentación',C2:'Sueño y descanso',C3:'Cuidados básicos y autonomía',C4:'Juego, estimulación y aprendizaje',C5:'Vínculo, apego y desarrollo socioemocional',C6:'Prevención y seguridad en el hogar',C7:'Cultura, rutinas y vida cotidiana'},
+          I:{I1:'Alfabetización sanitaria digital',I2:'Desinformación y consejos virales',I3:'Privacidad y seguridad infantil',I4:'Pantallas y desarrollo',I5:'Inteligencia artificial y crianza'},
+          B:{B1:'Salud del bebé',B2:'Salud materna y posparto',B3:'Salud emocional perinatal',B4:'Nutrición y estado nutricional',B5:'Prevención clínica y vacunas'},
+          A:{A1:'Apoyo emocional a la familia',A2:'Corresponsabilidad y familia',A3:'Redes de apoyo y comunidad',A4:'Cuidado del cuidador',A5:'Acompañamiento práctico y seguimiento'}
+        };
+        const orden = ordenAreas[columna.id] || [];
+        areas = areas
+          .filter(area=>orden.includes(area.id))
+          .sort((a,b)=>orden.indexOf(a.id)-orden.indexOf(b.id));
         const desplegable=crearDesplegable(columna.titulo,'ciba-global-columna ciba-global-columna-'+columna.id.toLowerCase(),areas[0]?.ruta_publica||null);
         const letra=elemento('span','ciba-global-letra',columna.id);
         desplegable.botonGrupo.prepend(letra);
@@ -327,8 +342,9 @@
             return;
           }
           const rutaMenuArea = area.id === 'C1' ? 'c/C1/alimentacion/' : area.ruta_publica;
-          const claseArea = area.id === 'C2' ? 'ciba-global-area ciba-global-area-c2' : 'ciba-global-area';
-          const grupoArea=crearDesplegable(area.titulo||area.id,claseArea,rutaMenuArea);
+          const claseArea = 'ciba-global-area';
+          const tituloArea = (titulosAreas[columna.id] || {})[area.id] || area.titulo || area.id;
+          const grupoArea=crearDesplegable(tituloArea,claseArea,rutaMenuArea);
           const paginas=(datos.paginas||[]).filter(p=>
             p.area===area.id&&p.columna===columna.id&&
             !(area.id==='C1'&&['C1-01','C1-02','C1-03'].includes(p.id))
