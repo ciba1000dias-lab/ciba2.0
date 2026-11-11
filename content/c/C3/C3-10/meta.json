@@ -1,0 +1,46 @@
+{
+  "id": "C3-10",
+  "titulo": "Comer solo: cuándo y cómo",
+  "descripcion": "Cómo acompañar la autoalimentación desde el inicio de la alimentación complementaria, desarrollar habilidades con manos, cuchara y vaso, respetar las señales de hambre y saciedad y prevenir el atragantamiento.",
+  "columna": "C",
+  "area": "C3",
+  "palabras_clave": [
+    "alimentación complementaria",
+    "autoalimentación",
+    "comer solo",
+    "alimentación responsiva",
+    "prevención del atragantamiento",
+    "cuchara",
+    "vaso",
+    "texturas",
+    "primeros mil días",
+    "autonomía temprana"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "subseccion": "Autonomía temprana",
+  "enlaces_externos": [
+    {
+      "titulo": "OMS — WHO Guideline for complementary feeding of infants and young children 6–23 months of age",
+      "url": "https://www.who.int/publications/i/item/9789240081864",
+      "tipo": "guía internacional"
+    },
+    {
+      "titulo": "CDC — When, What, and How to Introduce Solid Foods",
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/when-to-introduce-solid-foods.html",
+      "tipo": "orientación sobre alimentación complementaria"
+    },
+    {
+      "titulo": "CDC — Choking Hazards",
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html",
+      "tipo": "prevención de atragantamiento"
+    },
+    {
+      "titulo": "NHS — Your baby's first solid foods",
+      "url": "https://www.nhs.uk/start-for-life/baby/weaning/",
+      "tipo": "orientación para familias"
+    }
+  ]
+}
