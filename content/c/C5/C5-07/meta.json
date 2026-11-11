@@ -25,7 +25,12 @@
         "fotografo": "Barbara Olsen",
         "url": "https://www.pexels.com/photo/a-child-talking-to-her-parent-7880777/"
       }
-    ]
+    ],
+    "podcast": {
+      "proveedor": "UNICEF Uruguay",
+      "titulo": "Episodio 3. Las emociones: ¿cómo aprenden niños y niñas a manejarlas?",
+      "url": "https://www.unicef.org/uruguay/crianza/hablemos-de-crianza-un-podcast-de-unicef"
+    }
   },
   "enlaces_externos": [
     {
@@ -37,6 +42,11 @@
       "titulo": "OMS: desarrollo infantil temprano",
       "url": "https://www.who.int/health-topics/early-child-development",
       "tipo": "fuente"
+    },
+    {
+      "titulo": "Episodio 3. Las emociones: ¿cómo aprenden niños y niñas a manejarlas?",
+      "url": "https://www.unicef.org/uruguay/crianza/hablemos-de-crianza-un-podcast-de-unicef",
+      "tipo": "podcast"
     }
   ]
 }
