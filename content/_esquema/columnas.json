@@ -2,7 +2,7 @@
   "version": 1,
   "columnas": [
     { "id": "C", "titulo": "Crianza", "descripcion": "Acompañamiento en el desarrollo y la crianza respetuosa.", "orden": 1, "icono": "crianza" },
-    { "id": "I", "titulo": "Internet", "descripcion": "Educación digital, seguridad y uso consciente de la tecnología.", "orden": 2, "icono": "internet" },
+    { "id": "I", "titulo": "Informática", "descripcion": "Educación digital, seguridad y uso consciente de la tecnología.", "orden": 2, "icono": "internet" },
     { "id": "B", "titulo": "Bienestar", "descripcion": "Salud física, emocional y equilibrio familiar.", "orden": 3, "icono": "bienestar" },
     { "id": "A", "titulo": "Acompañamiento", "descripcion": "Orientación profesional y apoyo cercano.", "orden": 4, "icono": "acompanamiento" }
   ]
