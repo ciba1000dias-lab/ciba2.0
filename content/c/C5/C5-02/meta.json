@@ -1,0 +1,51 @@
+{
+  "id": "C5-02",
+  "titulo": "Piel con piel: la primera conversación del recién nacido",
+  "descripcion": "Qué es el contacto piel con piel al nacer, sus beneficios, cómo realizarlo con seguridad y cómo favorecerlo tras una cesárea o una separación clínica.",
+  "columna": "C",
+  "area": "C5",
+  "subseccion": "Embarazo y primeros meses",
+  "palabras_clave": [
+    "piel-con-piel",
+    "contacto-temprano",
+    "recien-nacido",
+    "nacimiento",
+    "lactancia",
+    "apego-temprano",
+    "seguridad-neonatal",
+    "cesarea",
+    "primera-hora",
+    "adaptacion-neonatal",
+    "vigilancia",
+    "padre",
+    "familia",
+    "metodo-canguro",
+    "primeros-mil-dias"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "preview_publica": true,
+  "media": {
+    "videos": [
+      {
+        "proveedor": "youtube",
+        "id": "I0NBzQ7W0gk",
+        "titulo": "Cuidados del recién nacido: atención inmediata — UNICEF Uruguay"
+      }
+    ]
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "UNICEF Uruguay: El momento del nacimiento",
+      "url": "https://www.unicef.org/uruguay/el-momento-del-nacimiento",
+      "tipo": "video"
+    },
+    {
+      "titulo": "OMS: contacto inmediato de piel con piel para bebés pequeños y prematuros",
+      "url": "https://www.who.int/es/news/item/15-11-2022-who-advises-immediate-skin-to-skin-care-for-survival-of-small-and-preterm-babies",
+      "tipo": "fuente"
+    }
+  ]
+}
