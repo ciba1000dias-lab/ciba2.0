@@ -74,3 +74,5 @@ jobs:
       - name: Publicar sitio
         id: deployment
         uses: actions/deploy-pages@v4
+
+# Reintento manual de publicación tras cancelación de ejecuciones anteriores.
