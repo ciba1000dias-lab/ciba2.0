@@ -19,20 +19,6 @@
   "mostrar_en_columna": true,
   "mostrar_en_area": true,
   "preview_publica": false,
-  "media": {
-    "imagenes": [
-      {
-        "proveedor": "pexels",
-        "fotografo": "PNW Production",
-        "url": "https://www.pexels.com/photo/photo-of-a-woman-carrying-a-toddler-7328065/"
-      }
-    ],
-    "podcast": {
-      "proveedor": "UNICEF Uruguay",
-      "titulo": "Episodio 4. Poner límites: una forma de acompañar a crecer",
-      "url": "https://www.unicef.org/uruguay/crianza/hablemos-de-crianza-un-podcast-de-unicef"
-    }
-  },
   "enlaces_externos": [
     {
       "titulo": "American Academy of Pediatrics: Emotional Development — 2 Year Olds",
@@ -48,6 +34,11 @@
       "titulo": "Episodio 4. Poner límites: una forma de acompañar a crecer",
       "url": "https://www.unicef.org/uruguay/crianza/hablemos-de-crianza-un-podcast-de-unicef",
       "tipo": "podcast"
+    },
+    {
+      "titulo": "Fotografía: PNW Production (Pexels)",
+      "url": "https://www.pexels.com/photo/photo-of-a-woman-carrying-a-toddler-7328065/",
+      "tipo": "imagen"
     }
   ]
 }
