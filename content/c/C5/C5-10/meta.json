@@ -18,15 +18,6 @@
   "mostrar_en_columna": true,
   "mostrar_en_area": true,
   "preview_publica": false,
-  "media": {
-    "imagenes": [
-      {
-        "proveedor": "pexels",
-        "fotografo": "Rovshan Nazirli",
-        "url": "https://www.pexels.com/photo/son-hugging-his-pregnant-mother-23158498/"
-      }
-    ]
-  },
   "enlaces_externos": [
     {
       "titulo": "UNICEF: Portal de Crianza",
@@ -37,6 +28,11 @@
       "titulo": "OMS: desarrollo infantil temprano",
       "url": "https://www.who.int/health-topics/early-child-development",
       "tipo": "fuente"
+    },
+    {
+      "titulo": "Fotografía: Rovshan Nazirli (Pexels)",
+      "url": "https://www.pexels.com/photo/son-hugging-his-pregnant-mother-23158498/",
+      "tipo": "imagen"
     }
   ]
 }
