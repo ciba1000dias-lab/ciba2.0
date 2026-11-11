@@ -1592,9 +1592,9 @@
             <div class="recursos-grupo" role="list"> 
           <a class="recurso-destacado" href="c/C1/fonoteca/" role="listitem">
             <span class="recurso-visual" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="37" stroke="currentColor" stroke-width="4"/><circle cx="50" cy="50" r="25" stroke="currentColor" stroke-width="2"/><circle cx="50" cy="50" r="10" stroke="currentColor" stroke-width="3"/><circle cx="50" cy="50" r="3" fill="currentColor"/><path d="M50 13v9M78 22l-7 7M87 50h-9M22 78l7-7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>
-            <small>FONOTECA · MEMORIA MUSICAL CUBANA</small>
-            <h3>Fonoteca infantil cubana</h3>
-            <p>Descubre canciones, creadoras y recuerdos musicales; crea listas familiares y encuentra música para compartir según la edad.</p>
+            <small>FONOTECA · TRADICIÓN INFANTIL</small>
+            <h3>Fonoteca infantil</h3>
+            <p>Escucha canciones tradicionales de Cuba, España y otros países; descubre nanas, rondas y juegos cantados, con créditos y licencias visibles.</p>
             <span class="recurso-ir">Entrar a la fonoteca ↗</span>
           </a>
           <a class="recurso-destacado" href="c/C1/alimentos/" role="listitem">
@@ -2039,10 +2039,10 @@
         const tarjetasArticulos = encontrados.slice(0, Math.max(0,10-tarjetasAlimentos.length)).map(pagina =>
           `<a class="resultado" href="${escapar(pagina.ruta_publica || "#areas")}"><strong>${escapar(pagina.titulo || "Contenido CIBA")}</strong><span>${escapar(pagina.descripcion || "")}</span></a>`
         );
-        const terminosFonoteca = ["fonoteca","cancion","canciones","musica","musical","infantil","nana","nanas","rima","rimas","ronda","rondas","teresita","enriqueta","ada elba","vinagrito","barquito","coro diminuto","liuba","kiki corona"];
+        const terminosFonoteca = ["fonoteca","cancion","canciones","musica","musical","infantil","nana","nanas","rima","rimas","ronda","rondas","tradicion oral","cancion de corro","a la rueda","al corro","comba","teresita","enriqueta","ada elba","vinagrito","barquito","coro diminuto","liuba","kiki corona"];
         const coincideFonoteca = palabras.some(p => terminosFonoteca.some(t => normalizar(t).includes(p) || p.includes(normalizar(t))));
         const tarjetaFonoteca = coincideFonoteca
-          ? [`<a class="resultado" href="c/C1/fonoteca/"><strong>Fonoteca infantil cubana</strong><span>Explora 68 canciones documentadas, creadoras cubanas, listas familiares y música orientativa según la edad.</span><span>Entrar a la fonoteca musical ↗</span></a>`]
+          ? [`<a class="resultado" href="c/C1/fonoteca/"><strong>Fonoteca infantil</strong><span>Explora canciones tradicionales de Cuba y otros países, grabaciones con licencia, nanas, rondas y listas familiares.</span><span>Entrar a la fonoteca musical ↗</span></a>`]
           : [];
         const tarjetas = [...tarjetasAlimentos, ...tarjetasArticulos, ...tarjetaFonoteca].slice(0,10);
         resultados.classList.add("visible");
