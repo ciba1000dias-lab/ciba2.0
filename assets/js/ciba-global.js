@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261111-56', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261111-57', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -533,7 +533,8 @@
       }
     });
 
-    contenedor.append(boton, panel);
+    if (cabeceraGlobal) cabeceraGlobal.appendChild(boton);
+    contenedor.appendChild(panel);
     // El menú vive directamente en body para evitar contextos de apilamiento.
     document.body.appendChild(contenedor);
 
