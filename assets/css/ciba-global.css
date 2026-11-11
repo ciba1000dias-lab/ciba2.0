@@ -1602,3 +1602,8 @@ html[data-ciba-movimiento="reducido"] .ciba-global-grupo>.ciba-global-submenu{
 .ciba-global-buscador{position:fixed!important;right:20px!important;bottom:20px!important;z-index:10030!important}
 .ciba-global-buscador.ciba-oraculo-oculto{opacity:0!important;visibility:hidden!important;pointer-events:none!important}
 @media(max-width:600px){.ciba-global-menu{top:12px!important;left:12px!important}.ciba-global-panel{width:min(88vw,360px)!important;max-width:88vw!important}.ciba-global-buscador{right:12px!important;bottom:12px!important}}
+
+/* Ajuste de especificidad para la portada, que conserva selectores históricos. */
+body:not(.ciba-con-cabecera-global) > .ciba-global-menu{top:16px!important;left:16px!important;z-index:10051!important}
+body:not(.ciba-con-cabecera-global) > .ciba-global-menu .ciba-global-panel{position:fixed!important;inset:0 auto 0 0!important;width:min(85vw,380px)!important;max-width:85vw!important;max-height:100vh!important;max-height:100dvh!important;transform:translateX(-105%)!important;z-index:10052!important}
+body:not(.ciba-con-cabecera-global) > .ciba-global-menu .ciba-global-panel.abierto{transform:translateX(0)!important}
