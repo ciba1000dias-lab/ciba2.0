@@ -20,15 +20,6 @@
   "mostrar_en_columna": true,
   "mostrar_en_area": true,
   "preview_publica": false,
-  "media": {
-    "imagenes": [
-      {
-        "proveedor": "pexels",
-        "fotografo": "RDNE Stock project",
-        "url": "https://www.pexels.com/photo/a-mother-caring-for-her-baby-6849563/"
-      }
-    ]
-  },
   "enlaces_externos": [
     {
       "titulo": "OMS: desarrollo infantil temprano",
@@ -44,6 +35,11 @@
       "titulo": "Harvard: Serve and Return",
       "url": "https://developingchild.harvard.edu/science/key-concepts/serve-and-return/",
       "tipo": "fuente"
+    },
+    {
+      "titulo": "Fotografía: RDNE Stock project (Pexels)",
+      "url": "https://www.pexels.com/photo/a-mother-caring-for-her-baby-6849563/",
+      "tipo": "imagen"
     }
   ]
 }
