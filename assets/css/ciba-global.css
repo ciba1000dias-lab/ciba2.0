@@ -1489,12 +1489,22 @@ body.ciba-area-sueno-descanso .ciba-articulo h2{font-size:29px;line-height:1.2}
 @media(max-width:600px){body.ciba-area-sueno-descanso .contenedor{width:calc(100% - 36px)}body.ciba-area-sueno-descanso .ciba-articulo{font-size:15px}body.ciba-area-sueno-descanso .ciba-articulo h2{font-size:26px}}
 
 
-/* CIBA · Crianza: misma tipografía para Alimentación, Lactancia y Sueño y descanso. */
-.ciba-global-columna-c .ciba-global-submenu>.ciba-global-subenlace,
-.ciba-global-columna-c .ciba-global-area .ciba-global-enlace-directo,
-.ciba-global-columna-c .ciba-global-area>.ciba-global-desplegable{
-  font-family:inherit!important;
-  font-size:15px!important;
-  font-weight:400!important;
-  line-height:1.4!important;
+
+
+/* CIBA · C2 se presenta como enlace hermano de Alimentación y Lactancia. */
+.ciba-global-area-c2{margin:0!important;border-left:0!important}
+.ciba-global-area-c2>.ciba-global-cabecera-grupo{display:flex;align-items:center;width:100%}
+.ciba-global-area-c2 .ciba-global-enlace-directo{
+  position:relative;flex:1 1 auto;min-width:0;margin-left:43px;
+  padding:8px 8px 8px 14px!important;min-height:0!important;
+  border:0!important;color:var(--ciba-verde-claro)!important;
+  font-size:13px!important;font-weight:400!important;line-height:1.4!important;
+}
+.ciba-global-area-c2 .ciba-global-enlace-directo::before{
+  content:"";position:absolute;left:0;top:50%;width:5px;height:5px;
+  border-radius:50%;background:var(--ciba-oro);transform:translateY(-50%);
+}
+.ciba-global-area-c2 .ciba-global-desplegable-control{align-self:stretch}
+@media(max-width:600px){
+  .ciba-global-area-c2 .ciba-global-enlace-directo{font-size:12px!important;padding-top:9px!important;padding-bottom:9px!important}
 }
