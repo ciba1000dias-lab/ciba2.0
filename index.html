@@ -2039,7 +2039,12 @@
         const tarjetasArticulos = encontrados.slice(0, Math.max(0,10-tarjetasAlimentos.length)).map(pagina =>
           `<a class="resultado" href="${escapar(pagina.ruta_publica || "#areas")}"><strong>${escapar(pagina.titulo || "Contenido CIBA")}</strong><span>${escapar(pagina.descripcion || "")}</span></a>`
         );
-        const tarjetas = [...tarjetasAlimentos, ...tarjetasArticulos];
+        const terminosFonoteca = ["fonoteca","cancion","canciones","musica","musical","infantil","nana","nanas","rima","rimas","ronda","rondas","teresita","enriqueta","ada elba","vinagrito","barquito","coro diminuto","liuba","kiki corona"];
+        const coincideFonoteca = palabras.some(p => terminosFonoteca.some(t => normalizar(t).includes(p) || p.includes(normalizar(t))));
+        const tarjetaFonoteca = coincideFonoteca
+          ? [`<a class="resultado" href="c/C1/fonoteca/"><strong>Fonoteca infantil cubana</strong><span>Explora 68 canciones documentadas, creadoras cubanas, listas familiares y música orientativa según la edad.</span><span>Entrar a la fonoteca musical ↗</span></a>`]
+          : [];
+        const tarjetas = [...tarjetasAlimentos, ...tarjetasArticulos, ...tarjetaFonoteca].slice(0,10);
         resultados.classList.add("visible");
         resultadosTitulo.textContent = tarjetas.length
           ? `Encontramos ${tarjetas.length} resultado(s)`
