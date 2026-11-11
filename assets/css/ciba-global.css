@@ -1710,3 +1710,25 @@ body:not(.ciba-con-cabecera-global)>.ciba-global-menu{
   .ciba-global-cabecera>.ciba-global-menu{flex-basis:38px!important;width:38px!important;height:38px!important}
   .ciba-global-cabecera>.ciba-global-menu>.ciba-global-menu-boton{width:38px!important;height:38px!important}
 }
+
+
+/* CIBA · Portada: menú integrado en la cabecera original, sin superposición. */
+.cabecera .barra>.ciba-global-menu{
+  position:relative!important;inset:auto!important;top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  flex:0 0 44px!important;width:44px!important;height:44px!important;
+  margin:0 0 0 auto!important;padding:0!important;transform:none!important;z-index:10051!important;
+}
+.cabecera .barra>.ciba-global-menu>.ciba-global-menu-boton{
+  position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important;
+  width:42px!important;height:42px!important;border:1px solid rgba(217,184,120,.62)!important;
+  border-radius:12px!important;background:rgba(255,255,255,.09)!important;
+  box-shadow:0 2px 9px rgba(0,0,0,.12)!important;
+}
+.cabecera .barra>.ciba-global-menu>.ciba-global-menu-boton span{background:#f5f0e5!important}
+.cabecera .barra>.ciba-global-menu>.ciba-global-menu-boton:hover{background:rgba(255,255,255,.17)!important}
+@media(max-width:600px){
+  .cabecera .barra{gap:10px!important;min-height:68px!important}
+  .cabecera .barra>.ciba-global-menu{flex-basis:40px!important;width:40px!important;height:40px!important}
+  .cabecera .barra>.ciba-global-menu>.ciba-global-menu-boton{width:38px!important;height:38px!important}
+}
