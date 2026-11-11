@@ -222,7 +222,7 @@ function playClip(){
  currentAudio.onerror=()=>{isPlaying=false;stopMusic();status.textContent="No se pudo cargar una pista de voz. Comprueba la conexión e inténtalo de nuevo.";};
  currentAudio.play().catch(()=>{isPlaying=false;stopMusic();status.textContent="Pulsa reproducir para permitir el audio en tu navegador.";});
 }
-playBtn.addEventListener("click",()=>{if(isPlaying)return;isPlaying=true;startMusic();if(ctx.state==="suspended")ctx.resume();if(currentAudio&&currentAudio.paused){currentAudio.play();}else playClip();});
+playBtn.addEventListener("click",()=>{if(isPlaying)return;isPlaying=true;startMusic();if(ctx.state==="suspended")ctx.resume();if(currentAudio&&currentAudio.paused&&!currentAudio.ended){currentAudio.play();}else playClip();});
 pauseBtn.addEventListener("click",()=>{isPlaying=false;if(currentAudio)currentAudio.pause();stopMusic();status.textContent="Pausado.";});
 document.getElementById("restartpod").addEventListener("click",()=>{isPlaying=false;if(currentAudio){currentAudio.pause();currentAudio=null;}audioIndex=0;bar.style.width="0%";stopMusic();status.textContent="Listo para comenzar.";});
 document.getElementById("vol").addEventListener("input",e=>{if(musicGain)musicGain.gain.setTargetAtTime(Number(e.target.value)/1000,ctx.currentTime,.08);});
