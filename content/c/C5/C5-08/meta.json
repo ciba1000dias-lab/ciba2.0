@@ -1,0 +1,42 @@
+{
+  "id": "C5-08",
+  "titulo": "Ansiedad de separación: cuándo es normal y cómo acompañarla",
+  "descripcion": "Guía para comprender la ansiedad de separación entre los 6 y 18 meses y acompañar despedidas, reencuentros y adaptación a otros cuidadores.",
+  "columna": "C",
+  "area": "C5",
+  "subseccion": "Desarrollo socioemocional",
+  "palabras_clave": [
+    "ansiedad-separacion",
+    "separacion-bebe",
+    "desarrollo-afectivo",
+    "despedidas",
+    "adaptacion-guarderia",
+    "apego"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "preview_publica": false,
+  "media": {
+    "imagenes": [
+      {
+        "proveedor": "pexels",
+        "fotografo": "Анастасия Триббиани",
+        "url": "https://www.pexels.com/photo/mother-cuddling-a-cute-baby-lying-on-a-bed-9455829/"
+      }
+    ]
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "American Academy of Pediatrics, HealthyChildren.org. Separation anxiety.",
+      "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/Separation-Anxiety.aspx",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OMS: desarrollo infantil temprano",
+      "url": "https://www.who.int/health-topics/early-child-development",
+      "tipo": "fuente"
+    }
+  ]
+}
