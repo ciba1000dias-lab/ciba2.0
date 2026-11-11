@@ -29,6 +29,7 @@ from validate_content import validar
 
 PERMITIDOS_EN_PAGINA = {"index.html"}
 MAX_IMAGEN_BYTES = 500 * 1024
+MAX_PDF_BYTES = 2 * 1024 * 1024
 EXTENSIONES_IMAGEN = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif", ".svg"}
 
 
@@ -267,6 +268,48 @@ def _copiar_pagina_publica(
         )
         return errores
 
+    # Publicar únicamente PDF locales, seguros y reconocibles. El builder
+    # nunca copia documentos arbitrarios: limita extensión, tamaño, ruta y firma.
+    archivos_pagina, errs_walk_pdf = iterar_arbol_seguro(origen_pagina)
+    errores.extend(errs_walk_pdf)
+    pdf_permitidos: set[str] = set()
+    for archivo in archivos_pagina:
+        if archivo.suffix.lower() != ".pdf":
+            continue
+        relativo = str(archivo.relative_to(origen_pagina)).replace("\\\\", "/")
+        ok_pdf, motivo_pdf = es_ruta_segura(origen_pagina, archivo)
+        if not ok_pdf:
+            errores.append(ValidationError(rel_pagina, "PDF", f"ruta insegura: {motivo_pdf}"))
+            continue
+        try:
+            peso_pdf = archivo.stat().st_size
+            with archivo.open("rb") as entrada:
+                firma_pdf = entrada.read(5)
+        except OSError as exc:
+            errores.append(ValidationError(rel_pagina, "PDF", f"no se pudo leer: {exc}"))
+            continue
+        if peso_pdf == 0 or peso_pdf > MAX_PDF_BYTES:
+            errores.append(ValidationError(
+                str(Path(rel_pagina) / relativo),
+                "peso de PDF",
+                f"{peso_pdf / 1024:.1f} KB; debe ser mayor que 0 y no superar 2048 KB",
+            ))
+            continue
+        if firma_pdf != b"%PDF-":
+            errores.append(ValidationError(
+                str(Path(rel_pagina) / relativo),
+                "formato PDF",
+                "el archivo no contiene la firma PDF válida",
+            ))
+            continue
+        destino_pdf = destino_pagina / relativo
+        destino_pdf.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            shutil.copy2(archivo, destino_pdf)
+            pdf_permitidos.add(relativo)
+        except OSError as exc:
+            errores.append(ValidationError(rel_pagina, "copia PDF", f"falló: {exc}"))
+
     if fotos_validadas:
         # En la serie de Lactancia (C1-16 a C1-40), ninguna imagen local
         # puede superar 200 KB: prioridad a conexiones lentas y móviles.
@@ -294,7 +337,7 @@ def _copiar_pagina_publica(
         )
         errores.extend(errs_media)
 
-    permitidos = set(PERMITIDOS_EN_PAGINA) | {
+    permitidos = set(PERMITIDOS_EN_PAGINA) | pdf_permitidos | {
         f.ruta_relativa for f in fotos_validadas
     }
 
