@@ -1,0 +1,48 @@
+{
+  "id": "C3-13",
+  "titulo": "Organizar el día con un bebé",
+  "descripcion": "Cómo organizar sueño, alimentación, juego, cuidados y descanso familiar mediante rutinas flexibles, observación de señales y corresponsabilidad.",
+  "columna": "C",
+  "area": "C3",
+  "subseccion": "Organización y rutinas del cuidado",
+  "palabras_clave": [
+    "organizar el día con un bebé",
+    "rutinas flexibles",
+    "sueño infantil",
+    "alimentación responsiva",
+    "señales del bebé",
+    "corresponsabilidad familiar",
+    "primeros mil días"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "enlaces_externos": [
+    {
+      "titulo": "OMS — Directrices sobre actividad física, comportamiento sedentario y sueño para menores de 5 años",
+      "url": "https://www.who.int/publications/i/item/9789241550536",
+      "tipo": "sueño, actividad y descanso"
+    },
+    {
+      "titulo": "OMS — Alimentación del lactante y del niño pequeño",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding",
+      "tipo": "alimentación responsiva"
+    },
+    {
+      "titulo": "OPS — Para crecer sanos, los niños tienen que pasar menos tiempo sentados y jugar más",
+      "url": "https://www.paho.org/es/noticias/24-4-2019-para-crecer-sanos-ninos-tienen-que-pasar-menos-tiempo-sentados-jugar-mas",
+      "tipo": "orientación regional"
+    },
+    {
+      "titulo": "AAP — Recomendaciones de sueño seguro para lactantes",
+      "url": "https://publications.aap.org/pediatrics/article/150/1/e2022057990/188304/",
+      "tipo": "seguridad del sueño"
+    },
+    {
+      "titulo": "UNICEF — Desarrollo de la primera infancia",
+      "url": "https://www.unicef.org/early-childhood-development",
+      "tipo": "cuidado cariñoso y sensible"
+    }
+  ]
+}
