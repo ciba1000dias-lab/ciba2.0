@@ -18,15 +18,6 @@
   "mostrar_en_columna": true,
   "mostrar_en_area": true,
   "preview_publica": false,
-  "media": {
-    "imagenes": [
-      {
-        "proveedor": "pexels",
-        "fotografo": "Анастасия Триббиани",
-        "url": "https://www.pexels.com/photo/mother-cuddling-a-cute-baby-lying-on-a-bed-9455829/"
-      }
-    ]
-  },
   "enlaces_externos": [
     {
       "titulo": "American Academy of Pediatrics: Separation Anxiety & Sleeping Trouble in Young Children",
@@ -37,6 +28,11 @@
       "titulo": "OMS: desarrollo infantil temprano",
       "url": "https://www.who.int/health-topics/early-child-development",
       "tipo": "fuente"
+    },
+    {
+      "titulo": "Fotografía: Анастасия Триббиани (Pexels)",
+      "url": "https://www.pexels.com/photo/mother-cuddling-a-cute-baby-lying-on-a-bed-9455829/",
+      "tipo": "imagen"
     }
   ]
 }
