@@ -595,19 +595,19 @@ def _construir_en_tmp(
             if pagina is None:
                 continue
 
-            if pagina.datos.get("estado") != "publicado":
+            estado_pagina = pagina.datos.get("estado")
+            es_preview = (
+                estado_pagina == "revision"
+                and pagina.datos.get("preview_publica") is True
+            )
+
+            if estado_pagina != "publicado" and not es_preview:
                 continue
 
-            registro = {
-                **pagina.datos,
-                "ruta_publica": (
-                    f"{letra.lower()}/{area_dir.name}/{pag_dir.name}/"
-                ),
-            }
-
-            paginas_publicadas.append(registro)
-
-            destino_pagina = tmp / registro["ruta_publica"]
+            ruta_publica = (
+                f"{letra.lower()}/{area_dir.name}/{pag_dir.name}/"
+            )
+            destino_pagina = tmp / ruta_publica
 
             errs_copia = _copiar_pagina_publica(
                 pag_dir,
@@ -616,6 +616,17 @@ def _construir_en_tmp(
                 rel_pag,
             )
             errores.extend(errs_copia)
+
+            # Las vistas previas son accesibles por URL, pero no se incorporan
+            # al catálogo ni se presentan como artículos publicados.
+            if es_preview:
+                continue
+
+            registro = {
+                **pagina.datos,
+                "ruta_publica": ruta_publica,
+            }
+            paginas_publicadas.append(registro)
 
     if errores:
         return errores
