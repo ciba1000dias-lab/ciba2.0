@@ -19,20 +19,6 @@
   "mostrar_en_columna": true,
   "mostrar_en_area": true,
   "preview_publica": false,
-  "media": {
-    "imagenes": [
-      {
-        "proveedor": "pexels",
-        "fotografo": "Keira Burton",
-        "url": "https://www.pexels.com/photo/tired-mother-with-black-boy-6624312/"
-      }
-    ],
-    "podcast": {
-      "proveedor": "UNICEF Uruguay",
-      "titulo": "Hablemos de crianza — Episodio 1: La llegada de un bebé",
-      "url": "https://www.unicef.org/uruguay/crianza/hablemos-de-crianza-un-podcast-de-unicef"
-    }
-  },
   "enlaces_externos": [
     {
       "titulo": "World Health Organization. Guide for integration of perinatal mental health in maternal and child health services.",
@@ -50,9 +36,9 @@
       "tipo": "podcast"
     },
     {
-      "titulo": "Hablemos de crianza — Episodio 1: La llegada de un bebé",
-      "url": "https://www.unicef.org/uruguay/crianza/hablemos-de-crianza-un-podcast-de-unicef",
-      "tipo": "podcast"
+      "titulo": "Fotografía: Keira Burton (Pexels)",
+      "url": "https://www.pexels.com/photo/tired-mother-with-black-boy-6624312/",
+      "tipo": "imagen"
     }
   ]
 }
