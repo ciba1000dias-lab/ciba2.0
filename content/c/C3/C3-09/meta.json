@@ -1,0 +1,47 @@
+{
+  "id": "C3-09",
+  "titulo": "Fomentar la autonomía sin forzar",
+  "descripcion": "Cómo acompañar la autonomía progresiva durante los primeros mil días, ofrecer oportunidades seguras y respetar el ritmo de cada niño sin exigir independencia antes de tiempo.",
+  "columna": "C",
+  "area": "C3",
+  "palabras_clave": [
+    "autonomía infantil",
+    "autonomía temprana",
+    "desarrollo infantil",
+    "crianza respetuosa",
+    "cuidado sensible",
+    "primeros mil días",
+    "exploración segura",
+    "participación infantil",
+    "habilidades cotidianas",
+    "desarrollo progresivo",
+    "acompañamiento familiar"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "subseccion": "Autonomía temprana",
+  "enlaces_externos": [
+    {
+      "titulo": "OMS — Nurturing care for early childhood development",
+      "url": "https://www.who.int/publications/i/item/9789241514064",
+      "tipo": "marco internacional de cuidado sensible"
+    },
+    {
+      "titulo": "OMS — Improving early childhood development",
+      "url": "https://www.who.int/publications/i/item/97892400020986",
+      "tipo": "guía basada en evidencia"
+    },
+    {
+      "titulo": "CDC — Milestones by 18 months",
+      "url": "https://www.cdc.gov/act-early/milestones/18-months.html",
+      "tipo": "indicadores del desarrollo"
+    },
+    {
+      "titulo": "Pexels — Photo of Child Playing With Wooden Blocks",
+      "url": "https://www.pexels.com/photo/photo-of-child-playing-with-wooden-blocks-3933279/",
+      "tipo": "fotografía con licencia Pexels"
+    }
+  ]
+}
