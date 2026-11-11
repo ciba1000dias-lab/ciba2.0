@@ -22,9 +22,9 @@
     "primeros-vinculos",
     "primeros-mil-dias"
   ],
-  "estado": "revision",
-  "preview_publica": true,
+  "estado": "publicado",
+  "preview_publica": false,
   "fecha_publicacion": "2026-11-11",
-  "mostrar_en_columna": false,
+  "mostrar_en_columna": true,
   "mostrar_en_area": true
 }
