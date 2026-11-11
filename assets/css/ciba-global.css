@@ -1572,3 +1572,23 @@ body.ciba-area-sueno-descanso .ciba-articulo h2{font-size:29px;line-height:1.2}
     padding-bottom:9px!important;
   }
 }
+
+
+/* CIBA · Acordeón del menú: despliegue y repliegue suave por niveles. */
+.ciba-global-grupo>.ciba-global-submenu{
+  overflow:hidden;
+  transition:opacity .22s ease,transform .28s ease;
+  transform:translateY(-4px);
+  opacity:0;
+}
+.ciba-global-grupo>.ciba-global-submenu:not([hidden]){
+  opacity:1;
+  transform:translateY(0);
+}
+.ciba-global-grupo>.ciba-global-submenu[hidden]{display:none!important}
+@media(prefers-reduced-motion:reduce){
+  .ciba-global-grupo>.ciba-global-submenu{transition:none!important;transform:none!important}
+}
+html[data-ciba-movimiento="reducido"] .ciba-global-grupo>.ciba-global-submenu{
+  transition:none!important;transform:none!important;
+}
