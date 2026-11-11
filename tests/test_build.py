@@ -110,13 +110,13 @@ class TestBuild(unittest.TestCase):
         pag = añadir_pagina(self.content, "c", "C3", "C3-01")
         pdf = self.content / "c" / "C3" / "guia-prueba.pdf"
         pdf.write_bytes(b"%PDF-1.4\\ncontenido de prueba")
-        (pag / "archivo-privado.pdf").write_bytes(b"%PDF-1.4\\nno autorizado")
+        (pag / "archivo-privado.txt").write_text("no autorizado", encoding="utf-8")
         self.assertEqual(construir(self.content, self.out), 0)
         self.assertEqual(
             (self.out / "c" / "C3" / "guia-prueba.pdf").read_bytes(),
             pdf.read_bytes(),
         )
-        self.assertFalse((self.out / "c" / "C3" / "C3-01" / "archivo-privado.pdf").exists())
+        self.assertFalse((self.out / "c" / "C3" / "C3-01" / "archivo-privado.txt").exists())
 
     def test_pdf_con_firma_invalida_falla_build(self) -> None:
         añadir_area(self.content, "c", "C3")
