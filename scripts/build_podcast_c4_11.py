@@ -11,6 +11,8 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 
 import numpy as np
+import imageio_ffmpeg
+from mutagen.mp3 import MP3
 
 CLIPS = [
     ("intro", "https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/84854979e66846989bc6c5855f53268f/id=ed21665db47142ac8510903fb83c2fdc.mp3"),
@@ -141,16 +143,16 @@ def main() -> None:
         concat_inputs = "".join(f"[s{i}]" for i in range(len(files)))
         graph = ";".join(filters) + f";{concat_inputs}concat=n={len(files)}:v=0:a=1[speech]"
         speech = work / "speech.wav"
-        run(["ffmpeg","-y",*inputs,"-filter_complex",graph,"-map","[speech]","-c:a","pcm_s16le","-ar","44100",str(speech)])
-        probe = subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","json",str(speech)],check=True,capture_output=True,text=True)
-        speech_duration = float(json.loads(probe.stdout)["format"]["duration"])
+        ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
+        run([ffmpeg,"-y",*inputs,"-filter_complex",graph,"-map","[speech]","-c:a","pcm_s16le","-ar","44100",str(speech)])
+        speech_duration = sum((13.725,11.345,25.340,7.288,27.732,9.459,28.672,6.986,7.033,41.024,7.892)) + 0.28*len(files)
         mix_duration = speech_duration + 3.0
         music = work / "music.wav"
         sfx = work / "sfx.wav"
         make_music(music,mix_duration)
         make_sfx(sfx,mix_duration)
         run([
-            "ffmpeg","-y","-i",str(speech),"-i",str(music),"-i",str(sfx),
+            ffmpeg,"-y","-i",str(speech),"-i",str(music),"-i",str(sfx),
             "-filter_complex",
             "[1:a]volume=0.85,aresample=44100[mb];"
             "[mb][0:a]sidechaincompress=threshold=0.018:ratio=5:attack=18:release=420[duck];"
@@ -162,9 +164,8 @@ def main() -> None:
             "-metadata","album=CIBA · Crecemos acompañándonos",
             str(output)
         ])
-        final_probe = subprocess.run(["ffprobe","-v","error","-show_entries","format=duration,size","-of","json",str(output)],check=True,capture_output=True,text=True)
-        info=json.loads(final_probe.stdout)["format"]
-        print(f"Podcast CIBA listo: {float(info['duration']):.1f} s, {int(info['size'])} bytes, {output}")
+        info=MP3(output).info
+        print(f"Podcast CIBA listo: {info.length:.1f} s, {output.stat().st_size} bytes, {output}")
 
 if __name__ == "__main__":
     main()
