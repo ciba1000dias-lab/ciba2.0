@@ -1,0 +1,56 @@
+{
+  "id": "C4-01",
+  "titulo": "Jugar sin juguetes: objetos cotidianos que estimulan",
+  "descripcion": "Ideas de juego con objetos domésticos seguros para bebés y niños pequeños, adaptadas a cada etapa y sin compras innecesarias.",
+  "columna": "C",
+  "area": "C4",
+  "subseccion": "Juego y desarrollo",
+  "palabras_clave": [
+    "jugar sin juguetes",
+    "juegos caseros para bebés",
+    "objetos cotidianos",
+    "estimulación temprana",
+    "juegos para bebés",
+    "juegos 0 a 6 meses",
+    "juegos 6 a 12 meses",
+    "juegos 1 a 2 años",
+    "desarrollo infantil",
+    "juego seguro en casa",
+    "materiales caseros seguros",
+    "aprender jugando",
+    "juegos económicos",
+    "juego con cajas",
+    "juego con recipientes"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "enlaces_externos": [
+    {
+      "titulo": "UNICEF — 21 actividades de aprendizaje para bebés y niños pequeños",
+      "url": "https://www.unicef.org/parenting/child-care/21-learning-activities-babies-and-toddlers",
+      "tipo": "actividades por edad"
+    },
+    {
+      "titulo": "UNICEF — Juguetes para la vida",
+      "url": "https://www.unicef.org/parenting/child-care/toys-life",
+      "tipo": "juego con materiales domésticos"
+    },
+    {
+      "titulo": "OMS — Mejorar el desarrollo infantil temprano",
+      "url": "https://www.who.int/publications/i/item/97892400020986",
+      "tipo": "cuidado receptivo y aprendizaje temprano"
+    },
+    {
+      "titulo": "Swirbul et al. — Object play in the everyday home environment",
+      "url": "https://doi.org/10.1016/j.infbeh.2022.101712",
+      "tipo": "investigación sobre juego con objetos"
+    },
+    {
+      "titulo": "AAP — Prevención del atragantamiento",
+      "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/choking-prevention.aspx",
+      "tipo": "seguridad infantil"
+    }
+  ]
+}
