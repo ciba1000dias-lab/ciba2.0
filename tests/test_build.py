@@ -121,7 +121,7 @@ class TestBuild(unittest.TestCase):
 
     def test_pdf_con_firma_invalida_falla_build(self) -> None:
         añadir_area(self.content, "c", "C3")
-        añadir_pagina(self.content, "c", "C3", "C3-01")
+        pag = añadir_pagina(self.content, "c", "C3", "C3-01")
         (pag / "guia-invalida.pdf").write_bytes(b"<html>no es pdf")
         self.assertEqual(construir(self.content, self.out), 1)
         self.assertFalse((self.out / "c" / "C3" / "C3-01" / "guia-invalida.pdf").exists())
