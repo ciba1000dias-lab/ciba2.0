@@ -53,6 +53,9 @@
 .enlace-recomendado-card{grid-template-columns: minmax(0,1fr)}
 .enlace-imagen{position:relative;display:block;overflow:hidden;width:100%;height:190px;background:#e8e1d4;text-decoration:none}
 .enlace-imagen img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.enlace-imagen-generica{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;background:linear-gradient(145deg,#29463f,#172b27);color:#fff}
+.enlace-imagen-generica strong{font:400 34px/1 Georgia,serif;letter-spacing:.08em}
+.enlace-imagen-generica small{font:800 9px/1.4 system-ui,sans-serif;letter-spacing:.14em;color:#e6d5b3}
 .enlace-imagen:hover img{transform:scale(1.025)}
 .enlace-imagen>span{position:absolute;left:13px;bottom:12px;padding:7px 11px;border-radius:7px;background:rgba(35,55,48,.88);color:#fff;font:800 11px/1.2 system-ui,sans-serif;letter-spacing:.12em}
 .enlace-recomendado-contenido{padding:18px 20px 20px}
