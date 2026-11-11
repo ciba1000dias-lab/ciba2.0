@@ -197,7 +197,7 @@
     const actual = resolverColumnaActual();
     const colores = { C:'#397653', I:'#287B9A', B:'#8C671F', A:'#A9443B' };
     if (actual.id) document.body.dataset.cibaColumna = actual.id.toLowerCase();
-    if (/\/c\/C2(?:\/|$)/i.test(window.location.pathname)) document.body.classList.add('ciba-area-sueno-descanso');
+    if (/\/c\/C2(?:\/|$)/i.test(window.location.pathname) && document.querySelector('.ciba-articulo')) document.body.classList.add('ciba-area-sueno-descanso');
     const cabecera = elemento('header','ciba-global-cabecera');
     cabecera.dataset.columna = actual.id;
     cabecera.style.setProperty('--ciba-columna-color', colores[actual.id] || '#493A32');
