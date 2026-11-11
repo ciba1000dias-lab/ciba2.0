@@ -1,0 +1,42 @@
+{
+  "id": "C5-11",
+  "titulo": "Vínculo y crianza a distancia: cuando los padres emigran",
+  "descripcion": "Orientaciones para sostener el vínculo de bebés y niños pequeños con madres o padres que viven lejos, sin sustituir el cuidado presencial.",
+  "columna": "C",
+  "area": "C5",
+  "subseccion": "Vínculo, familia y contexto",
+  "palabras_clave": [
+    "crianza-a-distancia",
+    "emigracion",
+    "familia-transnacional",
+    "videollamadas",
+    "vinculo-afectivo",
+    "cuidadores"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "preview_publica": false,
+  "media": {
+    "imagenes": [
+      {
+        "proveedor": "pexels",
+        "fotografo": "RDNE Stock project",
+        "url": "https://www.pexels.com/photo/mother-holding-her-baby-while-having-a-video-call-using-a-tablet-6414703/"
+      }
+    ]
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "UNICEF. Supporting families and early childhood development.",
+      "url": "https://www.unicef.org/early-childhood-development",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OMS: desarrollo infantil temprano",
+      "url": "https://www.who.int/health-topics/early-child-development",
+      "tipo": "fuente"
+    }
+  ]
+}
