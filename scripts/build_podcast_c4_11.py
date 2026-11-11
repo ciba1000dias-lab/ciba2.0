@@ -8,6 +8,7 @@ import tempfile
 import urllib.request
 import wave
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor
 
 import numpy as np
 
@@ -120,15 +121,17 @@ def main() -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="ciba-podcast-") as tmp:
         work = Path(tmp)
-        files = []
-        for i, (speaker, url) in enumerate(CLIPS):
+        def download_clip(item):
+            i, (speaker, url) = item
             target = work / f"{i:02d}-{speaker}.mp3"
             request = urllib.request.Request(url, headers={"User-Agent": "CIBA-Podcast-Builder/1.0"})
-            with urllib.request.urlopen(request, timeout=45) as response, target.open("wb") as dest:
+            with urllib.request.urlopen(request, timeout=35) as response, target.open("wb") as dest:
                 dest.write(response.read())
             if target.stat().st_size < 4096:
                 raise RuntimeError(f"Audio source {i} is unexpectedly small")
-            files.append(target)
+            return target
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            files = list(pool.map(download_clip, enumerate(CLIPS)))
         # Join all speakers with a short natural pause. Every stem is resampled identically.
         inputs = []
         filters = []
