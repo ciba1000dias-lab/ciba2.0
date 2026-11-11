@@ -105,6 +105,26 @@ class TestBuild(unittest.TestCase):
         self.assertTrue((destino / "media" / "ok.png").is_file())
         self.assertFalse((destino / "media" / "otra.png").exists())
 
+    def test_pdf_valido_se_publica_y_se_conserva_la_allowlist(self) -> None:
+        añadir_area(self.content, "c", "C3")
+        pag = añadir_pagina(self.content, "c", "C3", "C3-01")
+        pdf = self.content / "c" / "C3" / "guia-prueba.pdf"
+        pdf.write_bytes(b"%PDF-1.4\\ncontenido de prueba")
+        (pag / "archivo-privado.pdf").write_bytes(b"%PDF-1.4\\nno autorizado")
+        self.assertEqual(construir(self.content, self.out), 0)
+        self.assertEqual(
+            (self.out / "c" / "C3" / "guia-prueba.pdf").read_bytes(),
+            pdf.read_bytes(),
+        )
+        self.assertFalse((self.out / "c" / "C3" / "C3-01" / "archivo-privado.pdf").exists())
+
+    def test_pdf_con_firma_invalida_falla_build(self) -> None:
+        añadir_area(self.content, "c", "C3")
+        añadir_pagina(self.content, "c", "C3", "C3-01")
+        (self.content / "c" / "C3" / "guia-invalida.pdf").write_bytes(b"<html>no es pdf")
+        self.assertEqual(construir(self.content, self.out), 1)
+        self.assertFalse((self.out / "c" / "C3" / "guia-invalida.pdf").exists())
+
     def test_scripts_y_docs_no_se_copian(self) -> None:
         (self.tmp / "scripts").mkdir()
         (self.tmp / "scripts" / "secreto.py").write_text("# interno", encoding="utf-8")
