@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261111-57', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261111-58', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -521,7 +521,7 @@
     });
 
     document.addEventListener('click', (evento) => {
-      if (!contenedor.contains(evento.target)) {
+      if (!contenedor.contains(evento.target) && !panel.contains(evento.target)) {
         cerrarMenu(panel, boton);
       }
     });
@@ -533,10 +533,14 @@
       }
     });
 
-    if (cabeceraGlobal) cabeceraGlobal.appendChild(boton);
-    contenedor.appendChild(panel);
-    // El menú vive directamente en body para evitar contextos de apilamiento.
-    document.body.appendChild(contenedor);
+    contenedor.appendChild(boton);
+    if (cabeceraGlobal) {
+      cabeceraGlobal.appendChild(contenedor);
+    } else {
+      document.body.appendChild(contenedor);
+    }
+    // El panel se monta en body para evitar recortes y contextos de apilamiento.
+    document.body.appendChild(panel);
 
 
   }
