@@ -46,7 +46,8 @@ jobs:
 
       - name: Generar episodio completo Podcast CIBA C4-11
         run: |
-          ffmpeg -version
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
           python -m pip install numpy
           python scripts/build_podcast_c4_11.py --out dist/c/C4/C4-11/podcast-c4-11.mp3
 
