@@ -26,6 +26,7 @@ CAMPOS_OPCIONALES = (
     "enlaces_externos",
     "whatsapp_consulta",
     "subseccion",
+    "preview_publica",
 )
 CAMPOS_MEDIA = ("videos", "mapas", "fotos")
 CAMPOS_MEDIA_VIDEO_MAPA = ("proveedor", "id", "titulo")
@@ -171,7 +172,7 @@ def leer_meta(
                 ValidationError(ruta_relativa, "subseccion", "sin espacios al inicio o final")
             )
 
-    for b in ("mostrar_en_columna", "mostrar_en_area", "whatsapp_consulta"):
+    for b in ("mostrar_en_columna", "mostrar_en_area", "whatsapp_consulta", "preview_publica"):
         if b in datos and not isinstance(datos[b], bool):
             errores.append(ValidationError(ruta_relativa, b, "booleano"))
 
