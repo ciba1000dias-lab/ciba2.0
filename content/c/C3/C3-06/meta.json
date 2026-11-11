@@ -22,8 +22,25 @@
   "mostrar_en_area": false,
   "subseccion": "Higiene bucal y corporal",
   "enlaces_externos": [
-    {"titulo":"AAPD — Early Childhood Caries: Preventive Strategies","url":"https://www.aapd.org/research/oral-health-policies--recommendations/early-childhood-caries-classifications-consequences-and-preventive-strategies/","tipo":"guía clínica"},
-    {"titulo":"NHS — Baby and toddler tooth care","url":"https://www.nhs.uk/best-start-in-life/how-to-take-care-of-your-baby-or-toddlers-teeth/","tipo":"guía para familias"},
-    {"titulo":"HealthyChildren — La buena salud bucal comienza temprano","url":"https://www.healthychildren.org/Spanish/healthy-living/oral-health/Paginas/brushing-up-on-oral-health-never-too-early-to-start.aspx","tipo":"orientación pediátrica"}
+    {
+      "titulo": "AAPD — Early Childhood Caries: Preventive Strategies",
+      "url": "https://www.aapd.org/research/oral-health-policies--recommendations/early-childhood-caries-classifications-consequences-and-preventive-strategies/",
+      "tipo": "guía clínica"
+    },
+    {
+      "titulo": "NHS — Baby and toddler tooth care",
+      "url": "https://www.nhs.uk/best-start-in-life/how-to-take-care-of-your-baby-or-toddlers-teeth/",
+      "tipo": "guía para familias"
+    },
+    {
+      "titulo": "HealthyChildren — La buena salud bucal comienza temprano",
+      "url": "https://www.healthychildren.org/Spanish/healthy-living/oral-health/Paginas/brushing-up-on-oral-health-never-too-early-to-start.aspx",
+      "tipo": "orientación pediátrica"
+    },
+    {
+      "titulo": "AAPD — Perinatal and Infant Oral Health Care",
+      "url": "https://www.aapd.org/research/oral-health-policies--recommendations/perinatal-and-infant-oral-health-care/",
+      "tipo": "guía clínica"
+    }
   ]
 }
