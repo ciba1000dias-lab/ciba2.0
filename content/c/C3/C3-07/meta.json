@@ -1,0 +1,62 @@
+{
+  "id": "C3-07",
+  "titulo": "Cómo vestir al bebé según el clima",
+  "descripcion": "Guía familiar para elegir la ropa del bebé según el calor, el frío y los cambios de temperatura: capas, señales corporales, protección solar y seguridad al dormir y viajar.",
+  "columna": "C",
+  "area": "C3",
+  "palabras_clave": [
+    "vestir al bebé",
+    "ropa según el clima",
+    "sobreabrigo",
+    "capas de ropa",
+    "calor en bebés",
+    "frío en bebés",
+    "temperatura corporal",
+    "sueño seguro",
+    "protección solar infantil",
+    "asiento infantil de automóvil",
+    "primeros mil días"
+  ],
+  "estado": "borrador",
+  "fecha_publicacion": null,
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "subseccion": "Higiene bucal y corporal",
+  "enlaces_externos": [
+    {
+      "titulo": "NHS — How to dress a newborn baby",
+      "url": "https://www.nhs.uk/best-start-in-life/baby/baby-basics/caring-for-your-baby/how-to-dress-a-newborn/",
+      "tipo": "guía para familias"
+    },
+    {
+      "titulo": "AAP — Tips for Dressing Your Baby",
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/Dressing-Your-Newborn.aspx",
+      "tipo": "orientación pediátrica"
+    },
+    {
+      "titulo": "AAP — Safe Infant Sleeping Environment",
+      "url": "https://publications.aap.org/pediatrics/article/150/1/e2022057991/188305/Evidence-Base-for-2022-Updated-Recommendations-for",
+      "tipo": "recomendación científica"
+    },
+    {
+      "titulo": "CDC — Infants and Children and Heat",
+      "url": "https://www.cdc.gov/heat-health/risk-factors/infants-and-children.html",
+      "tipo": "salud pública"
+    },
+    {
+      "titulo": "FDA — ¿Debe ponerles protector solar a los bebés?",
+      "url": "https://www.fda.gov/consumers/articulos-para-el-consumidor-en-espanol/debe-ponerles-protector-solar-los-bebes-por-lo-general-no",
+      "tipo": "orientación sanitaria"
+    },
+    {
+      "titulo": "AAP — Winter Car Seat Safety Tips",
+      "url": "https://www.healthychildren.org/English/safety-prevention/on-the-go/Pages/Winter-car-seat-safety-tips.aspx",
+      "tipo": "seguridad infantil"
+    },
+    {
+      "titulo": "AAP — Fever Without Fear",
+      "url": "https://www.healthychildren.org/English/health-issues/conditions/fever/pages/Fever-Without-Fear.aspx",
+      "tipo": "orientación pediátrica"
+    }
+  ]
+}
