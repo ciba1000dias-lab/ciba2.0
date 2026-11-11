@@ -225,7 +225,7 @@ function playClip(){
 playBtn.addEventListener("click",()=>{if(isPlaying)return;isPlaying=true;startMusic();if(ctx.state==="suspended")ctx.resume();if(currentAudio&&currentAudio.paused&&!currentAudio.ended){currentAudio.play();}else playClip();});
 pauseBtn.addEventListener("click",()=>{isPlaying=false;if(currentAudio)currentAudio.pause();stopMusic();status.textContent="Pausado.";});
 document.getElementById("restartpod").addEventListener("click",()=>{isPlaying=false;if(currentAudio){currentAudio.pause();currentAudio=null;}audioIndex=0;bar.style.width="0%";stopMusic();status.textContent="Listo para comenzar.";});
-document.getElementById("vol").addEventListener("input",e=>{if(musicGain)musicGain.gain.setTargetAtTime(Number(e.target.value)/1000,ctx.currentTime,.08);});
+document.getElementById("vol").addEventListener("input",e=>{if(musicGain)musicGain.gain.setTargetAtTime(Number(e.target.value)/200,ctx.currentTime,.08);});
 
 const roomData={
 sala:{title:"Sala",items:["Fijar televisores y muebles que puedan volcarse.","Retirar monedas, pilas, imanes, botones y piezas pequeñas.","Asegurar cables, enchufes y cordones de cortinas.","Evitar que el bebé quede solo en sofás, camas o superficies elevadas.","Mantener bebidas calientes y objetos cortantes lejos del borde."]},
