@@ -24,7 +24,30 @@
 <p>En muchas familias, la casa de los abuelos es un segundo hogar: allí hay brazos disponibles, historias, canciones, juegos y una memoria familiar que merece conservarse. Pero el cuidado de un bebé también exige acuerdos claros. Algunas recomendaciones han cambiado con los avances del conocimiento; actualizarlas no significa desautorizar a quienes criaron antes, sino sumar seguridad a ese cariño.</p>
 <div class="tip"><strong>La idea central:</strong> los abuelos no son cuidadores de segunda categoría ni los padres deben renunciar a sus decisiones para agradecer la ayuda. La familia necesita conversar, acordar y actuar como equipo.</div>
 
-<h2>1. Antes de la primera visita: conversar sin convertirlo en un examen</h2>
+<h2>Escucha: En casa de los abuelos</h2>
+<p>Una conversación dramatizada entre una abuela y un pediatra. Dos voces, música instrumental original de fondo y pequeños efectos sonoros acompañan este diálogo sobre confianza, sueño seguro, alimentación y acuerdos familiares.</p>
+<section class="audio-shell" aria-label="Reproductor del podcast CIBA">
+<div class="ey">Podcast CIBA · Conversaciones que cuidan</div>
+<h3>En casa de los abuelos</h3>
+<p>La abuela Elena y el pediatra conversan sobre cómo cuidar sin perder la confianza entre generaciones.</p>
+<div class="audio-controls">
+<button id="playpod" type="button">▶ Escuchar conversación</button>
+<button id="pausepod" class="secondary" type="button">Ⅱ Pausar</button>
+<button id="restartpod" class="secondary" type="button">↺ Volver al inicio</button>
+</div>
+<div class="progress"><span id="podbar"></span></div>
+<div id="podstatus" role="status" aria-live="polite">Duración aproximada: 2 minutos y 30 segundos · Pulsa reproducir para comenzar.</div>
+<label for="vol" style="display:block;margin-top:12px;font-size:12px">Volumen de la música de fondo</label>
+<input id="vol" type="range" min="0" max="60" value="26" style="width:100%">
+</section>
+<details class="transcript"><summary><strong>Leer la transcripción completa</strong></summary>
+<p><strong>ABUELA:</strong> Ay, doctor, yo lo quiero con la vida. He criado a mis hijos y ahora cuido a mi nieto. Pero mi hija me deja tantas indicaciones que a veces siento que no confía en mí. ¿De verdad hay que cambiar tantas cosas que antes hacíamos?</p>
+<p><strong>PEDIATRA:</strong> No se trata de borrar la experiencia de los abuelos. Se trata de conservar lo valioso y actualizar lo que hoy sabemos que protege al bebé. Para dormir, siempre boca arriba, sobre una superficie firme, plana y despejada. Nada de almohadas, nidos, cojines ni mantas sueltas. Y si tiene frío, ajustamos la ropa: no llenamos la cuna de objetos. Si llora, lo acompañamos y atendemos; el contacto y el cariño siguen siendo esenciales. Tampoco debe dormirse con el bebé en un sofá o sillón.</p>
+<p><strong>ABUELA:</strong> Ahora lo entiendo mejor. Puedo seguir cantándole, cargándolo y contándole cuentos, pero tengo que respetar esas reglas de seguridad. Con la comida también voy a preguntar antes de darle algo. No sabía que la miel estaba prohibida antes del primer año, ni que un remedio casero podía hacer daño. Quiero que mi hija me explique sus acuerdos y yo también poder preguntarle sin miedo.</p>
+<p><strong>PEDIATRA:</strong> Hay otra parte importante: preparar la casa. Antes de que el bebé llegue, recorran juntos la sala, la cocina, el baño y el patio. Los medicamentos y productos de limpieza deben quedar cerrados y fuera de su alcance. Mantengan líquidos calientes lejos de los bordes, vigilen escaleras, balcones y ventanas, retiren objetos pequeños y vacíen los recipientes con agua. Durante el baño, un adulto debe mantener siempre las manos y la atención en el niño. Unos segundos bastan para que ocurra un accidente.</p>
+<p><strong>ABUELA:</strong> Eso lo podemos hacer juntas. Mi hija conoce las indicaciones del pediatra y yo conozco cada rincón de mi casa. Si revisamos todo antes, no tenemos que discutir cuando el niño ya está aquí. ¿Y cómo hacemos para que no se nos olvide qué come, cómo duerme o a quién llamar si se enferma?</p>
+<p><strong>PEDIATRA:</strong> Para eso está el Pasaporte de Cuidados del Bebé de CIBA. Es un documento familiar simbólico, con apariencia de credencial, que pueden completar en el propio teléfono. Incluye datos de identificación, contactos, alimentación, alergias conocidas, rutinas, indicaciones vigentes y teléfonos de emergencia. La información queda guardada solo en el almacenamiento local de ese dispositivo; CIBA no la recibe ni la conserva en sus servidores. No es un documento de identidad, no sustituye la historia clínica y debe mantenerse actualizado por la familia. Si cambia una indicación médica, se confirma con el profesional que atiende al niño.</p>
+</details>\n<h2>1. Antes de la primera visita: conversar sin convertirlo en un examen</h2>
 <p>La conversación funciona mejor cuando ocurre antes de que el bebé llegue, con tiempo y sin reproches. Los padres pueden explicar las indicaciones actuales y los abuelos pueden expresar dudas, límites y necesidades. No se trata de entregar una lista interminable, sino de identificar aquello que no debe improvisarse.</p>
 <div class="grid">
 <div class="card"><h3>Lo que los padres deben compartir</h3><ul><li>Cómo se alimenta y qué alimentos no debe recibir.</li><li>Dónde y cómo duerme de forma segura.</li><li>Alergias conocidas y problemas de salud relevantes.</li><li>Medicamentos prescritos, dosis y horarios escritos por el profesional.</li><li>Contactos familiares y sanitarios.</li></ul></div>
@@ -194,7 +217,7 @@ function playClip(){
  if(!isPlaying)return;
  if(audioIndex>=clips.length){isPlaying=false;stopMusic();status.textContent="Conversación terminada. Puedes volver a escucharla.";bar.style.width="100%";sound("chime");return;}
  const c=clips[audioIndex];status.textContent=(c.who==="ABUELA"?"Habla la abuela":"Habla el pediatra")+" · intervención "+(audioIndex+1)+" de "+clips.length;
- if(audioIndex===0)sound("chime");else if(audioIndex===3)sound("page");
+ if(audioIndex===0)sound("chime");else if(audioIndex===2||audioIndex===4)sound("page");else if(audioIndex===3||audioIndex===5)sound("chime");
  currentAudio=new Audio(c.url);currentAudio.preload="auto";currentAudio.onended=()=>{audioIndex++;bar.style.width=(audioIndex/clips.length*100)+"%";setTimeout(playClip,420);};
  currentAudio.onerror=()=>{isPlaying=false;stopMusic();status.textContent="No se pudo cargar una pista de voz. Comprueba la conexión e inténtalo de nuevo.";};
  currentAudio.play().catch(()=>{isPlaying=false;stopMusic();status.textContent="Pulsa reproducir para permitir el audio en tu navegador.";});
@@ -202,7 +225,7 @@ function playClip(){
 playBtn.addEventListener("click",()=>{if(isPlaying)return;isPlaying=true;startMusic();if(ctx.state==="suspended")ctx.resume();if(currentAudio&&currentAudio.paused){currentAudio.play();}else playClip();});
 pauseBtn.addEventListener("click",()=>{isPlaying=false;if(currentAudio)currentAudio.pause();stopMusic();status.textContent="Pausado.";});
 document.getElementById("restartpod").addEventListener("click",()=>{isPlaying=false;if(currentAudio){currentAudio.pause();currentAudio=null;}audioIndex=0;bar.style.width="0%";stopMusic();status.textContent="Listo para comenzar.";});
-document.getElementById("vol").addEventListener("input",e=>{if(musicGain)musicGain.gain.value=Number(e.target.value)/1000;});
+document.getElementById("vol").addEventListener("input",e=>{if(musicGain)musicGain.gain.setTargetAtTime(Number(e.target.value)/1000,ctx.currentTime,.08);});
 
 const roomData={
 sala:{title:"Sala",items:["Fijar televisores y muebles que puedan volcarse.","Retirar monedas, pilas, imanes, botones y piezas pequeñas.","Asegurar cables, enchufes y cordones de cortinas.","Evitar que el bebé quede solo en sofás, camas o superficies elevadas.","Mantener bebidas calientes y objetos cortantes lejos del borde."]},
