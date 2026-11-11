@@ -44,9 +44,10 @@ jobs:
       - name: Construir sitio
         run: python scripts/build_catalog.py --src content --out dist
 
-      - name: Generar episodio completo Podcast CIBA C4-11
+      - name: Generar episodios completos Podcast CIBA C4-10 y C4-11
         run: |
           python -m pip install numpy imageio-ffmpeg mutagen
+          python scripts/build_podcast_c4_10.py --out dist/c/C4/C4-10/podcast-c4-10.mp3
           python scripts/build_podcast_c4_11.py --out dist/c/C4/C4-11/podcast-c4-11.mp3
 
       - name: Preparar imágenes locales de la biblioteca
