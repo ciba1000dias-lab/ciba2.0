@@ -1,0 +1,66 @@
+{
+  "id": "C4-02",
+  "titulo": "El juego en el suelo: más importante que los aparatos",
+  "descripcion": "Por qué el juego libre en el suelo favorece el movimiento y la exploración infantil, cómo preparar un espacio seguro y qué precauciones tomar con los dispositivos.",
+  "columna": "C",
+  "area": "C4",
+  "subseccion": "Juego y desarrollo",
+  "palabras_clave": [
+    "juego en el suelo",
+    "jugar en el suelo",
+    "tiempo boca abajo",
+    "tummy time",
+    "movimiento libre",
+    "desarrollo motor",
+    "estimulación motora",
+    "gateo",
+    "bebé no gatea",
+    "andador",
+    "caminador",
+    "silla mecedora",
+    "columpio para bebé",
+    "centro de actividades",
+    "juego seguro",
+    "espacio de juego",
+    "actividad física infantil",
+    "bebé 0 a 6 meses",
+    "bebé 6 a 12 meses",
+    "niño 1 a 2 años",
+    "sueño seguro",
+    "dormir boca arriba",
+    "supervisión del bebé",
+    "libertad de movimiento",
+    "suelo firme y seguro"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "enlaces_externos": [
+    {
+      "titulo": "OMS — Directrices sobre actividad física, sedentarismo y sueño en menores de cinco años",
+      "url": "https://www.who.int/publications/i/item/9789241550536",
+      "tipo": "recomendaciones oficiales"
+    },
+    {
+      "titulo": "OPS — Los niños necesitan sentarse menos y jugar más",
+      "url": "https://www.paho.org/en/news/24-4-2019-grow-healthy-children-need-sit-less-and-play-more",
+      "tipo": "resumen de recomendaciones"
+    },
+    {
+      "titulo": "AAP — Los andadores para bebés: una elección peligrosa",
+      "url": "https://www.healthychildren.org/spanish/safety-prevention/at-home/paginas/baby-walkers-a-dangerous-choice.aspx",
+      "tipo": "prevención de lesiones"
+    },
+    {
+      "titulo": "AAP — Back to Sleep, Tummy to Play",
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/back-to-sleep-tummy-to-play.aspx",
+      "tipo": "juego boca abajo y sueño seguro"
+    },
+    {
+      "titulo": "National Library of Medicine — Recomendaciones OMS",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK541173/",
+      "tipo": "resumen técnico"
+    }
+  ]
+}
