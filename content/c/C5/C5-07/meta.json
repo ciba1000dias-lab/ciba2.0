@@ -1,0 +1,42 @@
+{
+  "id": "C5-07",
+  "titulo": "Nombrar emociones desde bebés: cómo se enseña lo que aún no se dice",
+  "descripcion": "Cómo acompañar el desarrollo emocional entre los 6 y 24 meses mediante lenguaje, co-regulación y respuestas sensibles.",
+  "columna": "C",
+  "area": "C5",
+  "subseccion": "Desarrollo socioemocional",
+  "palabras_clave": [
+    "emociones",
+    "co-regulacion",
+    "lenguaje-emocional",
+    "desarrollo-socioemocional",
+    "frustracion",
+    "crianza-respetuosa"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "preview_publica": false,
+  "media": {
+    "imagenes": [
+      {
+        "proveedor": "pexels",
+        "fotografo": "Barbara Olsen",
+        "url": "https://www.pexels.com/photo/a-child-talking-to-her-parent-7880777/"
+      }
+    ]
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "Harvard University, Center on the Developing Child. Serve and Return.",
+      "url": "https://developingchild.harvard.edu/science/key-concepts/serve-and-return/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OMS: desarrollo infantil temprano",
+      "url": "https://www.who.int/health-topics/early-child-development",
+      "tipo": "fuente"
+    }
+  ]
+}
