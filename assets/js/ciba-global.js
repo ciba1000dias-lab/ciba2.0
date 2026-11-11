@@ -356,13 +356,13 @@
         const id = String(pagina.id || '');
         if (id === 'C1-01') return 'C4';
         if (id === 'C1-03') return 'C2';
-        if (/^C1-(?:1[6-9]|[2-3]\\d|40)$/.test(id)) return 'C1-LACTANCIA';
+        if (/^C1-(?:1[6-9]|[2-3]\d|40)$/.test(id)) return 'C1-LACTANCIA';
         return pagina.area;
       }
 
       function ordenarPaginas(a, b) {
-        const numeroA = Number((String(a.id || '').match(/-(\\d+)$/) || [])[1] || 0);
-        const numeroB = Number((String(b.id || '').match(/-(\\d+)$/) || [])[1] || 0);
+        const numeroA = Number((String(a.id || '').match(/-(\d+)$/) || [])[1] || 0);
+        const numeroB = Number((String(b.id || '').match(/-(\d+)$/) || [])[1] || 0);
         if (numeroA && numeroB && numeroA !== numeroB) return numeroA - numeroB;
         return String(a.titulo || '').localeCompare(String(b.titulo || ''), 'es');
       }
