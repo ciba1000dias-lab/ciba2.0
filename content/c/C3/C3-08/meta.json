@@ -16,10 +16,10 @@
     "higiene infantil",
     "primeros mil días"
   ],
-  "estado": "borrador",
-  "fecha_publicacion": null,
-  "mostrar_en_columna": false,
-  "mostrar_en_area": false,
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
   "subseccion": "Higiene bucal y corporal",
   "enlaces_externos": [
     {
