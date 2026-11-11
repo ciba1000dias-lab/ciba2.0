@@ -1479,3 +1479,11 @@ html[data-ciba-movimiento="reducido"] .ciba-vector-trazo{
   }
   .ciba-global-buscador{transition:none!important}
 }
+
+
+/* CIBA · Sueño y descanso: misma escala editorial que la serie reciente de Lactancia. */
+body.ciba-area-sueno-descanso .contenedor{width:min(850px,calc(100% - 36px))}
+body.ciba-area-sueno-descanso .hero h1{font-size:clamp(38px,6vw,58px)}
+body.ciba-area-sueno-descanso .ciba-articulo{font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.85}
+body.ciba-area-sueno-descanso .ciba-articulo h2{font-size:29px;line-height:1.2}
+@media(max-width:600px){body.ciba-area-sueno-descanso .contenedor{width:calc(100% - 36px)}body.ciba-area-sueno-descanso .ciba-articulo{font-size:15px}body.ciba-area-sueno-descanso .ciba-articulo h2{font-size:26px}}

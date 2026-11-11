@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-47', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-48', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -197,6 +197,7 @@
     const actual = resolverColumnaActual();
     const colores = { C:'#397653', I:'#287B9A', B:'#8C671F', A:'#A9443B' };
     if (actual.id) document.body.dataset.cibaColumna = actual.id.toLowerCase();
+    if (/\/c\/C2(?:\/|$)/i.test(window.location.pathname)) document.body.classList.add('ciba-area-sueno-descanso');
     const cabecera = elemento('header','ciba-global-cabecera');
     cabecera.dataset.columna = actual.id;
     cabecera.style.setProperty('--ciba-columna-color', colores[actual.id] || '#493A32');
@@ -330,7 +331,14 @@
           const paginas=(datos.paginas||[]).filter(p=>
             p.area===area.id&&p.columna===columna.id&&
             !(area.id==='C1'&&['C1-01','C1-02','C1-03'].includes(p.id))
-          ).sort((a,b)=>String(a.titulo||'').localeCompare(String(b.titulo||''),'es'));
+          ).sort((a,b)=>{
+            if(area.id==='C2'){
+              const numeroA=Number((a.id||'').match(/-(\d+)$/)?.[1]||0);
+              const numeroB=Number((b.id||'').match(/-(\d+)$/)?.[1]||0);
+              return numeroA-numeroB;
+            }
+            return String(a.titulo||'').localeCompare(String(b.titulo||''),'es');
+          });
           const subsecciones=new Map();
           paginas.forEach(p=>{
             const clave=p.subseccion||'Contenidos generales';
@@ -349,7 +357,6 @@
           if(area.id==='C1'){
             agregarEnlace(grupoArea.lista,'c/C1/lactancia/','Lactancia');
           }
-          if(area.id==='C2') agregarEnlace(grupoArea.lista,'c/C1/C1-03/','¿Cuántas horas debe dormir mi bebé según su edad?');
           if(area.id==='C4') agregarEnlace(grupoArea.lista,'c/C1/C1-01/','Comprender las etapas del desarrollo infantil');
           if(area.id==='C5') agregarEnlace(grupoArea.lista,'c/C1/C1-02/','El apego y la construcción de vínculos seguros');
           desplegable.lista.appendChild(grupoArea.grupo);
