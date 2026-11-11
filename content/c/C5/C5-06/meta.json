@@ -18,15 +18,6 @@
   "mostrar_en_columna": true,
   "mostrar_en_area": true,
   "preview_publica": false,
-  "media": {
-    "imagenes": [
-      {
-        "proveedor": "pexels",
-        "fotografo": "Kenneth Surillo",
-        "url": "https://www.pexels.com/photo/smiling-father-holding-baby-20152604/"
-      }
-    ]
-  },
   "enlaces_externos": [
     {
       "titulo": "UNICEF. Parenting and family support / Early childhood development.",
@@ -37,6 +28,11 @@
       "titulo": "OMS: desarrollo infantil temprano",
       "url": "https://www.who.int/health-topics/early-child-development",
       "tipo": "fuente"
+    },
+    {
+      "titulo": "Fotografía: Kenneth Surillo (Pexels)",
+      "url": "https://www.pexels.com/photo/smiling-father-holding-baby-20152604/",
+      "tipo": "imagen"
     }
   ]
 }
