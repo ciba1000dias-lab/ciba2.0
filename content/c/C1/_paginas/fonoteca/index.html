@@ -29,7 +29,7 @@
 <body>
 <header class="top"><div class="wrap topin"><a class="brand" href="../../../index.html">CIBA<small>CRECEMOS ACOMPAÑÁNDONOS</small></a><a class="back" href="../../../index.html#recursos-destacados">← Volver a CIBA</a></div></header>
 <main>
-<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Una memoria que se canta</div><h1>Fonoteca <em>infantil cubana</em></h1><p>Las canciones que acompañaron nuestra infancia, reunidas para compartirlas con quienes comienzan la suya. Descubre autores, intérpretes, historias y música para cada momento del crecimiento.</p><div class="hero-stats"><span>67 títulos documentados</span><span>3 creadoras esenciales</span><span>Listas familiares</span></div></div><div class="hero-art" aria-label="Disco ilustrado de la fonoteca"><div class="vinyl"><div class="vinyl-center">CIBA<span>FONOTECA</span></div></div></div></div></section>
+<section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Una memoria que se canta</div><h1>Fonoteca <em>infantil cubana</em></h1><p>Las canciones que acompañaron nuestra infancia, reunidas para compartirlas con quienes comienzan la suya. Descubre autores, intérpretes, historias y música para cada momento del crecimiento.</p><div class="hero-stats"><span>68 títulos documentados</span><span>3 creadoras esenciales</span><span>Listas familiares</span></div></div><div class="hero-art" aria-label="Disco ilustrado de la fonoteca"><div class="vinyl"><div class="vinyl-center">CIBA<span>FONOTECA</span></div></div></div></div></section>
 <section class="wrap intro"><div class="notice"><strong>Una fonoteca que respeta la música.</strong> CIBA organiza y recomienda las obras, pero la reproducción se realiza mediante reproductores oficiales o enlaces a sus fuentes originales. Los créditos identifican autores, intérpretes y titulares cuando la información está disponible. Una canción de acceso público no significa que su grabación pueda copiarse o descargarse libremente.</div>
 <div class="controls" aria-label="Filtros del catálogo">
 <div class="field"><label for="q">Buscar canción o creador</label><input id="q" type="search" placeholder="Ej. Vinagrito, Teresita…"></div>
@@ -43,7 +43,7 @@
 <article class="feature"><div class="feature-art"><svg viewBox="0 0 40 40" fill="none"><path d="M7 27h26M10 27l3-15h14l3 15M16 12V8h8v4M17 19h6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div><div><h3>Barquito de papel</h3><p>Enriqueta Almanza · Versión difundida por Radio Cadena Habana</p></div></article>
 <article class="feature"><div class="feature-art"><svg viewBox="0 0 40 40" fill="none"><path d="M20 5c-8 9-13 14-13 20a13 13 0 0 0 26 0C33 19 28 14 20 5Z" stroke="currentColor" stroke-width="2"/><path d="M13 26c2 4 5 6 9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><div><h3>Nanas para ti</h3><p>Kiki Corona · Álbum documentado en Apple Music; catálogo por ampliar</p></div></article>
 </div>
-<div class="section-head"><div><div class="kicker">Explora el repertorio</div><h2>El cancionero</h2></div><p id="count">67 registros</p></div>
+<div class="section-head"><div><div class="kicker">Explora el repertorio</div><h2>El cancionero</h2></div><p id="count">68 registros</p></div>
 <div class="tabs"><button class="tab active" data-tab="all">Todas</button><button class="tab" data-tab="Teresita Fernández">Teresita</button><button class="tab" data-tab="Enriqueta Almanza">Enriqueta</button><button class="tab" data-tab="Ada Elba Pérez">Ada Elba</button><button class="tab" data-tab="favorites">Mis favoritas ♥</button><button class="tab" data-tab="playlist">Mi lista</button></div>
 <div id="catalogue" class="catalogue" aria-live="polite"></div>
 <div class="section-head"><div><div class="kicker">Una guía para las familias</div><h2>Escuchar también es acompañar</h2></div></div>
@@ -127,7 +127,9 @@ const tracks = [
 {"id":64,"title":"Amanecer de la flor","artist":"Ada Elba Pérez","age":"2–6 años","theme":"Animales y naturaleza","platform":"","mediaId":"","credit":"","sourceStatus":"referencia documental; grabación pendiente de verificar"},
 {"id":65,"title":"El trencito y la hormiga","artist":"Ada Elba Pérez","age":"1–2 años","theme":"Juego y movimiento","platform":"","mediaId":"","credit":"","sourceStatus":"referencia documental; grabación pendiente de verificar"},
 {"id":66,"title":"Estela, granito de canela","artist":"Ada Elba Pérez","age":"2–6 años","theme":"Cuentos e imaginación","platform":"","mediaId":"","credit":"","sourceStatus":"referencia documental; grabación pendiente de verificar"}
-];
+,
+{"id":67,"title":"Es Camilo","artist":"Enriqueta Almanza","age":"2–6 años","theme":"Identidad y cultura","platform":"","mediaId":"","credit":"","sourceStatus":"referencia documental; grabación pendiente de verificar"},
+{"id":68,"title":"Lulú burulú","artist":"Enriqueta Almanza","age":"2–6 años","theme":"Cuentos e imaginación","platform":"","mediaId":"","credit":"","sourceStatus":"referencia documental; grabación pendiente de verificar"}];
 const $=id=>document.getElementById(id);
 const state={tab:"all",favorites:JSON.parse(localStorage.getItem("ciba-fonoteca-favs")||"[]"),playlist:JSON.parse(localStorage.getItem("ciba-fonoteca-list")||"[]"),current:null};
 function norm(s){return String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase()}
