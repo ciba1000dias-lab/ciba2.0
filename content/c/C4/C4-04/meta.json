@@ -1,0 +1,66 @@
+{
+  "id": "C4-04",
+  "titulo": "Juego simbólico temprano: cuándo aparece y cómo acompañarlo",
+  "descripcion": "Qué es el juego simbólico, cuándo aparece y cómo acompañar la imaginación infantil con objetos cotidianos, historias y seguridad.",
+  "columna": "C",
+  "area": "C4",
+  "subseccion": "Juego y desarrollo",
+  "palabras_clave": [
+    "juego simbólico",
+    "juego de ficción",
+    "juego imaginativo",
+    "imitación infantil",
+    "juegos de roles",
+    "juego de muñecas",
+    "desarrollo de la imaginación",
+    "juegos para bebés",
+    "desarrollo cognitivo",
+    "lenguaje infantil",
+    "juego 18 meses",
+    "juego 2 años",
+    "estimulación temprana",
+    "aprendizaje mediante el juego",
+    "acompañamiento parental"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "enlaces_externos": [
+    {
+      "titulo": "CDC — Hitos del desarrollo a los 18 meses",
+      "url": "https://www.cdc.gov/act-early/milestones/18-months.html",
+      "tipo": "hitos del desarrollo"
+    },
+    {
+      "titulo": "CDC — Milestones in Action: 18 meses",
+      "url": "https://www.cdc.gov/act-early/milestones-in-action/18-months.html",
+      "tipo": "videos y fotografías de hitos"
+    },
+    {
+      "titulo": "UNICEF — Desarrollo del niño pequeño: 18 meses",
+      "url": "https://www.unicef.org/parenting/child-development/your-toddlers-developmental-milestones-18-months",
+      "tipo": "desarrollo infantil"
+    },
+    {
+      "titulo": "UNICEF — Cómo aprenden los bebés mediante el juego",
+      "url": "https://www.unicef.org/parenting/child-development/how-babies-learn-through-play",
+      "tipo": "aprendizaje mediante el juego"
+    },
+    {
+      "titulo": "Harvard Center on the Developing Child — Brain-Building Through Play",
+      "url": "https://developingchild.harvard.edu/resources/handouts-tools/brainbuildingthroughplay/",
+      "tipo": "juego y desarrollo cerebral"
+    },
+    {
+      "titulo": "Lillard y colaboradores — Young Children’s Interactions with Objects",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10586717/",
+      "tipo": "investigación sobre juego infantil"
+    },
+    {
+      "titulo": "American Academy of Pediatrics — Cognitive Development in 2-Year-Olds",
+      "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/Cognitive-Development-Two-Year-Old.aspx",
+      "tipo": "desarrollo cognitivo"
+    }
+  ]
+}
