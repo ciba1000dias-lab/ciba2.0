@@ -1,0 +1,29 @@
+{
+  "id": "C3-06",
+  "titulo": "Higiene bucal desde el primer diente",
+  "descripcion": "Cómo limpiar la boca del bebé, iniciar el cepillado con pasta fluorada, prevenir las caries y reconocer cuándo acudir al estomatólogo.",
+  "columna": "C",
+  "area": "C3",
+  "palabras_clave": [
+    "higiene bucal bebé",
+    "primer diente",
+    "cepillado infantil",
+    "pasta fluorada",
+    "flúor",
+    "caries temprana",
+    "dientes de leche",
+    "estomatología infantil",
+    "salud bucal",
+    "primeros mil días"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "subseccion": "Higiene bucal y corporal",
+  "enlaces_externos": [
+    {"titulo":"AAPD — Early Childhood Caries: Preventive Strategies","url":"https://www.aapd.org/research/oral-health-policies--recommendations/early-childhood-caries-classifications-consequences-and-preventive-strategies/","tipo":"guía clínica"},
+    {"titulo":"NHS — Baby and toddler tooth care","url":"https://www.nhs.uk/best-start-in-life/how-to-take-care-of-your-baby-or-toddlers-teeth/","tipo":"guía para familias"},
+    {"titulo":"HealthyChildren — La buena salud bucal comienza temprano","url":"https://www.healthychildren.org/Spanish/healthy-living/oral-health/Paginas/brushing-up-on-oral-health-never-too-early-to-start.aspx","tipo":"orientación pediátrica"}
+  ]
+}
