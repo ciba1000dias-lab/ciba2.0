@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-51', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-52', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -311,74 +311,124 @@
     }
 
     async function construirNavegacionEditorial() {
-      const datos=await obtenerCatalogo();
-      columnas.forEach((columna)=>{
-        let areas=(datos.areas||[]).filter(a=>a.columna===columna.id)
-          .sort((a,b)=>(a.orden||0)-(b.orden||0));
-        // Taxonomía editorial institucional: todas las áreas son secciones hermanas.
-        const ordenAreas = {
-          C:['C1','C2','C3','C4','C5','C6','C7'],
-          I:['I1','I2','I3','I4','I5'],
-          B:['B1','B2','B3','B4','B5'],
-          A:['A1','A2','A3','A4','A5']
-        };
-        const titulosAreas = {
-          C:{C1:'Alimentación',C2:'Sueño y descanso',C3:'Cuidados básicos y autonomía',C4:'Juego, estimulación y aprendizaje',C5:'Vínculo, apego y desarrollo socioemocional',C6:'Prevención y seguridad en el hogar',C7:'Cultura, rutinas y vida cotidiana'},
-          I:{I1:'Alfabetización sanitaria digital',I2:'Desinformación y consejos virales',I3:'Privacidad y seguridad infantil',I4:'Pantallas y desarrollo',I5:'Inteligencia artificial y crianza'},
-          B:{B1:'Salud del bebé',B2:'Salud materna y posparto',B3:'Salud emocional perinatal',B4:'Nutrición y estado nutricional',B5:'Prevención clínica y vacunas'},
-          A:{A1:'Apoyo emocional a la familia',A2:'Corresponsabilidad y familia',A3:'Redes de apoyo y comunidad',A4:'Cuidado del cuidador',A5:'Acompañamiento práctico y seguimiento'}
-        };
-        const orden = ordenAreas[columna.id] || [];
-        areas = areas
-          .filter(area=>orden.includes(area.id))
-          .sort((a,b)=>orden.indexOf(a.id)-orden.indexOf(b.id));
-        const desplegable=crearDesplegable(columna.titulo,'ciba-global-columna ciba-global-columna-'+columna.id.toLowerCase(),areas[0]?.ruta_publica||null);
-        const letra=elemento('span','ciba-global-letra',columna.id);
-        desplegable.botonGrupo.prepend(letra);
-        areas.forEach(area=>{
-          if(columna.id==='C'&&area.id==='C1'){
-            agregarEnlace(desplegable.lista,'c/C1/alimentacion/','Alimentación');
-            agregarEnlace(desplegable.lista,'c/C1/lactancia/','Lactancia');
-            return;
-          }
-          const rutaMenuArea = area.id === 'C1' ? 'c/C1/alimentacion/' : area.ruta_publica;
-          const claseArea = 'ciba-global-area';
-          const tituloArea = (titulosAreas[columna.id] || {})[area.id] || area.titulo || area.id;
-          const grupoArea=crearDesplegable(tituloArea,claseArea,rutaMenuArea);
-          const paginas=(datos.paginas||[]).filter(p=>
-            p.area===area.id&&p.columna===columna.id&&
-            !(area.id==='C1'&&['C1-01','C1-02','C1-03'].includes(p.id))
-          ).sort((a,b)=>{
-            if(area.id==='C2'){
-              const numeroA=Number((a.id||'').match(/-(\d+)$/)?.[1]||0);
-              const numeroB=Number((b.id||'').match(/-(\d+)$/)?.[1]||0);
-              return numeroA-numeroB;
-            }
-            return String(a.titulo||'').localeCompare(String(b.titulo||''),'es');
-          });
-          const subsecciones=new Map();
-          paginas.forEach(p=>{
-            const clave=p.subseccion||'Contenidos generales';
-            if(!subsecciones.has(clave)) subsecciones.set(clave,[]);
-            subsecciones.get(clave).push(p);
-          });
-          subsecciones.forEach((items,nombre)=>{
-            if(subsecciones.size>1){
-              const grupoSub=crearDesplegable(nombre,'ciba-global-subarea');
-              items.forEach(p=>agregarEnlace(grupoSub.lista,p.ruta_publica,p.titulo));
-              grupoArea.lista.appendChild(grupoSub.grupo);
-            } else {
-              items.forEach(p=>agregarEnlace(grupoArea.lista,p.ruta_publica,p.titulo));
-            }
-          });
-          if(area.id==='C1'){
-            agregarEnlace(grupoArea.lista,'c/C1/lactancia/','Lactancia');
-          }
-          if(area.id==='C4') agregarEnlace(grupoArea.lista,'c/C1/C1-01/','Comprender las etapas del desarrollo infantil');
-          if(area.id==='C5') agregarEnlace(grupoArea.lista,'c/C1/C1-02/','El apego y la construcción de vínculos seguros');
-          desplegable.lista.appendChild(grupoArea.grupo);
+      const datos = await obtenerCatalogo();
+
+      // Taxonomía oficial: 23 áreas hermanas distribuidas en cuatro columnas.
+      // Alimentación y Lactancia comparten la carpeta fuente C1, pero tienen
+      // portadas y rutas públicas independientes.
+      const taxonomia = {
+        C: [
+          { id:'C1-ALIMENTACION', fuente:'C1', titulo:'Alimentación', ruta:'c/C1/alimentacion/' },
+          { id:'C1-LACTANCIA', fuente:'C1', titulo:'Lactancia', ruta:'c/C1/lactancia/' },
+          { id:'C2', titulo:'Sueño y descanso' },
+          { id:'C3', titulo:'Cuidados básicos y autonomía' },
+          { id:'C4', titulo:'Juego, estimulación y aprendizaje' },
+          { id:'C5', titulo:'Vínculo, apego y desarrollo socioemocional' },
+          { id:'C6', titulo:'Prevención y seguridad en el hogar' },
+          { id:'C7', titulo:'Cultura, rutinas y vida cotidiana' }
+        ],
+        I: [
+          { id:'I1', titulo:'Alfabetización sanitaria digital' },
+          { id:'I2', titulo:'Desinformación y consejos virales' },
+          { id:'I3', titulo:'Privacidad y seguridad infantil' },
+          { id:'I4', titulo:'Pantallas y desarrollo' },
+          { id:'I5', titulo:'Inteligencia artificial y crianza' }
+        ],
+        B: [
+          { id:'B1', titulo:'Salud del bebé' },
+          { id:'B2', titulo:'Salud materna y posparto' },
+          { id:'B3', titulo:'Salud emocional perinatal' },
+          { id:'B4', titulo:'Nutrición y estado nutricional' },
+          { id:'B5', titulo:'Prevención clínica y vacunas' }
+        ],
+        A: [
+          { id:'A1', titulo:'Apoyo emocional a la familia' },
+          { id:'A2', titulo:'Corresponsabilidad y familia' },
+          { id:'A3', titulo:'Redes de apoyo y comunidad' },
+          { id:'A4', titulo:'Cuidado del cuidador' },
+          { id:'A5', titulo:'Acompañamiento práctico y seguimiento' }
+        ]
+      };
+
+      // Corrige la ubicación de tres contenidos heredados de la clasificación
+      // inicial: desarrollo infantil, sueño y la serie de lactancia.
+      function resolverAreaEditorial(pagina) {
+        const id = String(pagina.id || '');
+        if (id === 'C1-01') return 'C4';
+        if (id === 'C1-03') return 'C2';
+        if (/^C1-(?:1[6-9]|[2-3]\\d|40)$/.test(id)) return 'C1-LACTANCIA';
+        return pagina.area;
+      }
+
+      function ordenarPaginas(a, b) {
+        const numeroA = Number((String(a.id || '').match(/-(\\d+)$/) || [])[1] || 0);
+        const numeroB = Number((String(b.id || '').match(/-(\\d+)$/) || [])[1] || 0);
+        if (numeroA && numeroB && numeroA !== numeroB) return numeroA - numeroB;
+        return String(a.titulo || '').localeCompare(String(b.titulo || ''), 'es');
+      }
+
+      function agregarPaginasDeArea(lista, paginas) {
+        const grupos = new Map();
+        paginas.forEach(pagina => {
+          const nombre = pagina.subseccion || 'Contenidos generales';
+          if (!grupos.has(nombre)) grupos.set(nombre, []);
+          grupos.get(nombre).push(pagina);
         });
-        panel.insertBefore(desplegable.grupo,tituloPlataforma);
+
+        grupos.forEach((items, nombre) => {
+          if (grupos.size > 1) {
+            const subgrupo = crearDesplegable(nombre, 'ciba-global-subarea');
+            items.forEach(pagina => {
+              agregarEnlace(subgrupo.lista, pagina.ruta_publica, pagina.titulo);
+            });
+            lista.appendChild(subgrupo.grupo);
+          } else {
+            items.forEach(pagina => {
+              agregarEnlace(lista, pagina.ruta_publica, pagina.titulo);
+            });
+          }
+        });
+      }
+
+      columnas.forEach(columna => {
+        const areasFuente = (datos.areas || []).filter(area => area.columna === columna.id);
+        const areasColumna = taxonomia[columna.id] || [];
+        const rutaColumna = areasFuente.sort((a, b) => (a.orden || 0) - (b.orden || 0))[0]?.ruta_publica || null;
+        const grupoColumna = crearDesplegable(
+          columna.titulo,
+          'ciba-global-columna ciba-global-columna-' + columna.id.toLowerCase(),
+          rutaColumna
+        );
+
+        const letra = elemento('span', 'ciba-global-letra', columna.id);
+        grupoColumna.botonGrupo.prepend(letra);
+
+        areasColumna.forEach(areaMenu => {
+          const areaFuente = areasFuente.find(area => area.id === (areaMenu.fuente || areaMenu.id));
+          const rutaArea = areaMenu.ruta || areaFuente?.ruta_publica ||
+            (columna.id.toLowerCase() + '/' + (areaMenu.fuente || areaMenu.id) + '/');
+
+          // Todas las áreas usan exactamente el mismo componente:
+          // enlace directo a la portada + control independiente para desplegar.
+          const grupoArea = crearDesplegable(
+            areaMenu.titulo,
+            'ciba-global-area',
+            rutaArea
+          );
+
+          const paginas = (datos.paginas || [])
+            .filter(pagina =>
+              pagina.columna === columna.id &&
+              resolverAreaEditorial(pagina) === areaMenu.id &&
+              pagina.mostrar_en_area !== false
+            )
+            .sort(ordenarPaginas);
+
+          agregarPaginasDeArea(grupoArea.lista, paginas);
+          grupoColumna.lista.appendChild(grupoArea.grupo);
+        });
+
+        panel.insertBefore(grupoColumna.grupo, tituloPlataforma);
       });
     }
 
