@@ -24,7 +24,7 @@ footer{padding:25px 18px;background:var(--d);color:#e4ddcf;font-size:12px;text-a
 button.print{border:0;border-radius:8px;background:var(--g);color:white;padding:11px 15px;font-weight:750;cursor:pointer}
 @media(max-width:720px){.layout{grid-template-columns:1fr}.aside{position:static;order:-1}.scale{grid-template-columns:repeat(2,1fr)}.agegrid,.options{grid-template-columns:1fr}.hero{padding:50px 0}.article h2{margin-top:34px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-@media print{.top,.aside,.tool select,.tool button,.podcast audio,.download,.share a{display:none!important}body{background:white}.layout{display:block;padding:0}.wrap{width:100%}.hero{padding:25px;color:#111;background:white}.hero p{color:#333}.article h2{break-after:avoid}.visual,.tool{break-inside:avoid}}
+@media print{body *{visibility:hidden!important}#acuerdos-card,#acuerdos-card *{visibility:visible!important}#acuerdos-card{position:absolute;left:0;top:0;width:100%;border:0;box-shadow:none}#acuerdos-card button{display:none!important}}
 </style>
 </head>
 <body>
@@ -136,7 +136,7 @@ button.print{border:0;border-radius:8px;background:var(--g);color:white;padding:
 <div class="result" id="recomendacion" aria-live="polite"><strong>Menor de 1 año:</strong> prioriza la interacción cara a cara, el juego en el suelo, las canciones y la exploración. La OMS no recomienda tiempo sedentario de pantalla. Si hay una videollamada familiar, acompaña al bebé y ayuda a mantener el intercambio.</div>
 <div class="options" id="alternativas"><div class="option">Cantar y conversar cara a cara.</div><div class="option">Juego en el suelo con objetos grandes y seguros.</div></div>
 </div>
-<div class="tool">
+<div class="tool" id="acuerdos-card">
 <h3 style="margin-top:0">Acuerdos sencillos para nuestra casa</h3>
 <div class="checks" id="acuerdos">
 <label><input type="checkbox"> Durante las comidas guardamos los teléfonos y apagamos la televisión.</label>
