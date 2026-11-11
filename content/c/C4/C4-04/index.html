@@ -126,7 +126,7 @@ function cue(){try{const AC=window.AudioContext||window.webkitAudioContext;const
 const narracion=document.getElementById("narracion"),btnMusica=document.getElementById("musica");
 narracion.addEventListener("play",()=>{if(!musicOn)startBed();cue();btnMusica.textContent="Detener música de fondo";});
 narracion.addEventListener("ended",()=>{stopBed();cue();btnMusica.textContent="Activar música de fondo suave";});
-narracion.addEventListener("pause",()=>{if(narracion.currentTime===0||narracion.ended)stopBed();});
+narracion.addEventListener("pause",()=>{stopBed();btnMusica.textContent="Activar música de fondo suave";});
 btnMusica.addEventListener("click",()=>{if(musicOn){stopBed();btnMusica.textContent="Activar música de fondo suave";}else{startBed();btnMusica.textContent="Detener música de fondo";}});
 document.getElementById("descargarSvg").addEventListener("click",()=>{const svg=document.getElementById("mapaJuego").cloneNode(true);svg.setAttribute("xmlns","http://www.w3.org/2000/svg");const blob=new Blob([new XMLSerializer().serializeToString(svg)],{type:"image/svg+xml;charset=utf-8"});const u=URL.createObjectURL(blob);const a=document.createElement("a");a.href=u;a.download="CIBA-C4-04-de-imitar-a-imaginar.svg";a.click();URL.revokeObjectURL(u);});
 const shareText="Una guía de CIBA para acompañar a las familias con información confiable sobre crianza, salud y desarrollo infantil.\n\nComparte este recurso con otras familias.\n\nSigue a CIBA en su canal de WhatsApp:\nhttps://whatsapp.com/channel/0029VbAOKuw2975HsSJutV32\n\nCIBA. Crecemos acompañándonos.";
