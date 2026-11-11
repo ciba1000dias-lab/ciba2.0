@@ -1,0 +1,43 @@
+{
+  "id": "C5-09",
+  "titulo": "Berrinches tempranos: qué son y cómo acompañarlos sin castigos",
+  "descripcion": "Comprende los berrinches entre 12 y 24 meses y aprende a responder con seguridad, límites claros y acompañamiento sin castigos físicos.",
+  "columna": "C",
+  "area": "C5",
+  "subseccion": "Desarrollo socioemocional",
+  "palabras_clave": [
+    "berrinches",
+    "rabietas",
+    "frustracion",
+    "limites",
+    "disciplina-positiva",
+    "crianza-respetuosa",
+    "12-24-meses"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "preview_publica": false,
+  "media": {
+    "imagenes": [
+      {
+        "proveedor": "pexels",
+        "fotografo": "PNW Production",
+        "url": "https://www.pexels.com/photo/photo-of-a-woman-carrying-a-toddler-7328065/"
+      }
+    ]
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "American Academy of Pediatrics, HealthyChildren.org. Temper tantrums.",
+      "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/Temper-Tantrums.aspx",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OMS: desarrollo infantil temprano",
+      "url": "https://www.who.int/health-topics/early-child-development",
+      "tipo": "fuente"
+    }
+  ]
+}
