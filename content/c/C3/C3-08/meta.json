@@ -1,0 +1,46 @@
+{
+  "id": "C3-08",
+  "titulo": "Cuidado del cabello y cuero cabelludo",
+  "descripcion": "Orientaciones sencillas para lavar, peinar y cuidar el cabello y el cuero cabelludo del bebé, reconocer la costra láctea y saber cuándo consultar.",
+  "columna": "C",
+  "area": "C3",
+  "palabras_clave": [
+    "cabello del bebé",
+    "cuero cabelludo",
+    "lavado del cabello infantil",
+    "costra láctea",
+    "dermatitis seborreica",
+    "peine suave",
+    "cuidado del pelo rizado",
+    "caída del cabello del recién nacido",
+    "higiene infantil",
+    "primeros mil días"
+  ],
+  "estado": "borrador",
+  "fecha_publicacion": null,
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "subseccion": "Higiene bucal y corporal",
+  "enlaces_externos": [
+    {
+      "titulo": "AAP HealthyChildren — What is Cradle Cap?",
+      "url": "https://www.healthychildren.org/english/ages-stages/baby/bathing-skin-care/pages/cradle-cap.aspx",
+      "tipo": "orientación pediátrica"
+    },
+    {
+      "titulo": "NHS — Cradle cap",
+      "url": "https://www.nhs.uk/conditions/cradle-cap/",
+      "tipo": "guía para familias"
+    },
+    {
+      "titulo": "American Academy of Dermatology — How to treat cradle cap",
+      "url": "https://www.aad.org/public/everyday-care/hair-scalp-care/scalp/treat-cradle-cap",
+      "tipo": "orientación dermatológica"
+    },
+    {
+      "titulo": "American Academy of Dermatology — How to care for your baby's skin, hair, and nails",
+      "url": "https://www.aad.org/public/everyday-care/skin-care-basics/care/baby-care-skin-hair-nails",
+      "tipo": "orientación dermatológica"
+    }
+  ]
+}
