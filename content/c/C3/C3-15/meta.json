@@ -1,0 +1,20 @@
+{
+  "id": "C3-15",
+  "titulo": "Cuidados básicos en casa de los abuelos",
+  "descripcion": "Guía intergeneracional para preparar el hogar de los abuelos, acordar cuidados seguros y compartir información del bebé. Incluye podcast dramatizado de dos voces y Pasaporte de Cuidados CIBA con almacenamiento local.",
+  "columna": "C",
+  "area": "C3",
+  "subseccion": "Organización y rutinas del cuidado",
+  "palabras_clave": ["abuelos y crianza", "cuidado del bebé con los abuelos", "sueño seguro", "seguridad en el hogar", "pasaporte de cuidados", "familia intergeneracional", "primeros mil días"],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "enlaces_externos": [
+    {"titulo":"CDC — Providing Care for Babies to Sleep Safely","url":"https://www.cdc.gov/sudden-infant-death/sleep-safely/index.html","tipo":"sueño seguro"},
+    {"titulo":"AAP / HealthyChildren — How to Keep Your Sleeping Baby Safe","url":"https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/a-parents-guide-to-safe-sleep.aspx","tipo":"sueño seguro"},
+    {"titulo":"CDC — Foods and Drinks to Avoid or Limit","url":"https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/foods-and-drinks-to-avoid-or-limit.html","tipo":"alimentación y miel antes de 12 meses"},
+    {"titulo":"OMS — Child Health","url":"https://www.who.int/health-topics/child-health","tipo":"salud infantil"},
+    {"titulo":"UNICEF — Parenting","url":"https://www.unicef.org/parenting","tipo":"acompañamiento familiar"}
+  ]
+}
