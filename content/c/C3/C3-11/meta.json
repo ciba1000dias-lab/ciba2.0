@@ -1,0 +1,55 @@
+{
+  "id": "C3-11",
+  "titulo": "Enseñar a guardar los juguetes",
+  "descripcion": "Cómo acompañar la participación del niño en la recogida de juguetes mediante imitación, juego y rutinas sencillas, con organización doméstica y seguridad adaptadas a cada edad.",
+  "columna": "C",
+  "area": "C3",
+  "subseccion": "Autonomía temprana",
+  "palabras_clave": [
+    "guardar juguetes",
+    "autonomía temprana",
+    "imitación",
+    "rutinas familiares",
+    "juego compartido",
+    "organización del hogar",
+    "desarrollo infantil",
+    "seguridad de juguetes",
+    "primeros mil días"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "enlaces_externos": [
+    {
+      "titulo": "CDC — Milestones by 18 Months",
+      "url": "https://www.cdc.gov/act-early/milestones/18-months.html",
+      "tipo": "indicadores del desarrollo e imitación de tareas"
+    },
+    {
+      "titulo": "NAEYC — Growing Independence: Tips for Parents of Toddlers and Twos",
+      "url": "https://www.naeyc.org/our-work/families/growing-independence-tips-parents-toddlers-and-twos",
+      "tipo": "orientaciones para autonomía y rutinas"
+    },
+    {
+      "titulo": "Harvard — A Guide to Serve & Return",
+      "url": "https://developingchild.harvard.edu/resource-guides/guide-serve-and-return/",
+      "tipo": "interacción sensible entre adulto y niño"
+    },
+    {
+      "titulo": "CDC — Tips for Relying on Routines and Rules",
+      "url": "https://www.cdc.gov/parenting-toddlers/structure-rules/index.html",
+      "tipo": "rutinas adaptadas a capacidades infantiles"
+    },
+    {
+      "titulo": "CPSC — Toys: Safety Education",
+      "url": "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Toys",
+      "tipo": "seguridad y prevención de lesiones por juguetes"
+    },
+    {
+      "titulo": "AAP — How to Buy Safe Toys",
+      "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/How-to-Buy-Safe-Toys.aspx",
+      "tipo": "recomendaciones de seguridad"
+    }
+  ]
+}
