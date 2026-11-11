@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-52', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-53', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -283,6 +283,18 @@
         control.setAttribute('aria-expanded','false');
         control.addEventListener('click',()=>{
           const abrir=lista.hidden;
+          if(abrir){
+            Array.from(grupo.parentElement.children).forEach(hermano=>{
+              if(hermano===grupo || !hermano.classList.contains('ciba-global-grupo')) return;
+              const submenu=Array.from(hermano.children).find(hijo=>hijo.classList.contains('ciba-global-submenu'));
+              const controlHermano=hermano.querySelector(':scope > .ciba-global-cabecera-grupo > .ciba-global-desplegable-control, :scope > .ciba-global-desplegable');
+              if(submenu && controlHermano){
+                submenu.hidden=true;
+                controlHermano.setAttribute('aria-expanded','false');
+                hermano.classList.remove('desplegado');
+              }
+            });
+          }
           lista.hidden=!abrir;
           control.setAttribute('aria-expanded',String(abrir));
           grupo.classList.toggle('desplegado',abrir);
@@ -296,6 +308,18 @@
         botonGrupo.setAttribute('aria-expanded','false');
         botonGrupo.addEventListener('click',()=>{
           const abrir=lista.hidden;
+          if(abrir){
+            Array.from(grupo.parentElement.children).forEach(hermano=>{
+              if(hermano===grupo || !hermano.classList.contains('ciba-global-grupo')) return;
+              const submenu=Array.from(hermano.children).find(hijo=>hijo.classList.contains('ciba-global-submenu'));
+              const controlHermano=hermano.querySelector(':scope > .ciba-global-cabecera-grupo > .ciba-global-desplegable-control, :scope > .ciba-global-desplegable');
+              if(submenu && controlHermano){
+                submenu.hidden=true;
+                controlHermano.setAttribute('aria-expanded','false');
+                hermano.classList.remove('desplegado');
+              }
+            });
+          }
           lista.hidden=!abrir;
           botonGrupo.setAttribute('aria-expanded',String(abrir));
           grupo.classList.toggle('desplegado',abrir);
@@ -357,6 +381,9 @@
         if (id === 'C1-01') return 'C4';
         if (id === 'C1-03') return 'C2';
         if (/^C1-(?:1[6-9]|[2-3]\d|40)$/.test(id)) return 'C1-LACTANCIA';
+        // El catálogo conserva C1 como área fuente compartida.
+        // Los demás contenidos se indexan bajo el área hermana Alimentación.
+        if (pagina.columna === 'C' && pagina.area === 'C1') return 'C1-ALIMENTACION';
         return pagina.area;
       }
 
