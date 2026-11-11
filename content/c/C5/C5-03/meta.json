@@ -26,15 +26,6 @@
   "mostrar_en_columna": true,
   "mostrar_en_area": true,
   "preview_publica": false,
-  "media": {
-    "imagenes": [
-      {
-        "proveedor": "pexels",
-        "fotografo": "Antoni Shkraba",
-        "url": "https://www.pexels.com/photo/mother-holding-crying-baby-6134675/"
-      }
-    ]
-  },
   "enlaces_externos": [
     {
       "titulo": "American Academy of Pediatrics: Qué hacer cuando su bebé llora mucho",
@@ -45,6 +36,11 @@
       "titulo": "NHS: Soothing a crying baby",
       "url": "https://www.nhs.uk/baby/caring-for-a-newborn/soothing-a-crying-baby/",
       "tipo": "fuente"
+    },
+    {
+      "titulo": "Fotografía: Antoni Shkraba (Pexels)",
+      "url": "https://www.pexels.com/photo/mother-holding-crying-baby-6134675/",
+      "tipo": "imagen"
     }
   ]
 }
