@@ -1,0 +1,42 @@
+{
+  "id": "C5-10",
+  "titulo": "Celos entre hermanos: estrategias desde el embarazo del segundo",
+  "descripcion": "Cómo preparar al hijo mayor para la llegada de un hermano y acompañar emociones, cambios y nuevas rutinas.",
+  "columna": "C",
+  "area": "C5",
+  "subseccion": "Vínculo, familia y contexto",
+  "palabras_clave": [
+    "celos-entre-hermanos",
+    "nuevo-bebe",
+    "hermano-mayor",
+    "embarazo",
+    "adaptacion-familiar",
+    "vinculo"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "preview_publica": false,
+  "media": {
+    "imagenes": [
+      {
+        "proveedor": "pexels",
+        "fotografo": "Rovshan Nazirli",
+        "url": "https://www.pexels.com/photo/son-hugging-his-pregnant-mother-23158498/"
+      }
+    ]
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "American Academy of Pediatrics, HealthyChildren.org. Preparing your child for a new baby.",
+      "url": "https://www.healthychildren.org/English/ages-stages/prenatal/Pages/Preparing-Your-Child-for-a-New-Baby.aspx",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OMS: desarrollo infantil temprano",
+      "url": "https://www.who.int/health-topics/early-child-development",
+      "tipo": "fuente"
+    }
+  ]
+}
