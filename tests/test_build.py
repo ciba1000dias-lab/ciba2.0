@@ -106,7 +106,8 @@ class TestBuild(unittest.TestCase):
         self.assertFalse((destino / "media" / "otra.png").exists())
 
     def test_pdf_valido_se_publica_y_se_conserva_la_allowlist(self) -> None:
-        añadir_area(self.content, "c", "C3")
+        area = añadir_area(self.content, "c", "C3")
+        (area / "index.html").write_text("<h1>Área</h1>", encoding="utf-8")
         pag = añadir_pagina(self.content, "c", "C3", "C3-01")
         pdf = self.content / "c" / "C3" / "guia-prueba.pdf"
         pdf.write_bytes(b"%PDF-1.4\\ncontenido de prueba")
