@@ -72,16 +72,11 @@ footer{padding:25px 18px;background:var(--d);color:#e4ddcf;font-size:12px;text-a
 <p>Una conversación entre mamá, papá y el pediatra sobre cómo compartir libros desde los primeros meses, sin presión ni exigencias.</p>
 <p><strong>Voces:</strong> Mamá — Rocío · Papá — Emiliano · Pediatra — Pelayo.</p>
 <div class="player" id="ciba-player">
-<div class="player-head"><span class="player-mark">CIBA</span><div><strong>Podcast CIBA</strong><small>Lectura compartida · C4-11</small></div><span class="player-duration" id="ciba-total">03:06</span></div>
-<div class="player-controls">
-<button type="button" id="ciba-play" aria-label="Reproducir episodio">▶</button>
-<div class="player-track"><div class="player-progress" id="ciba-progress"></div></div>
-<span class="player-time" id="ciba-time">00:00</span>
-</div>
-<div class="player-bottom"><span id="ciba-status">Listo para escuchar</span><label>Volumen <input id="ciba-volume" type="range" min="0" max="1" step="0.05" value="0.85"></label></div>
-<p class="player-note">La reproducción enlaza las intervenciones en orden y añade una base instrumental original y efectos sonoros discretos. Se necesita conexión para cargar las voces.</p>
-</div>
-<details class="transcript"><summary>Leer la transcripción completa</summary>
+<div class="player-head"><span class="player-mark">CIBA</span><div><strong>Podcast CIBA</strong><small>Lectura compartida · C4-11</small></div><span class="player-duration">03:06 aprox.</span></div>
+<audio controls preload="none" src="podcast-c4-11.mp3" aria-label="Podcast CIBA: Un cuento no tiene que terminarse"></audio>
+<p class="player-note">Episodio completo con tres voces diferenciadas, música instrumental original, efectos suaves de paso de página y mezcla con prioridad para el diálogo.</p>
+<a class="download-podcast" href="podcast-c4-11.mp3" download="Podcast-CIBA-C4-11-Un-cuento-no-tiene-que-terminarse.mp3">Descargar episodio completo · MP3</a>
+</div><details class="transcript"><summary>Leer la transcripción completa</summary>
 <div class="dialogo"><strong>Introducción · Rocío</strong><p>Podcast CIBA. Crecemos acompañándonos. Hoy conversamos sobre cómo introducir libros en la vida de nuestros hijos sin presión.</p></div>
 <div class="dialogo"><strong>Mamá · Rocío</strong><p>A veces intento leerle un cuento a nuestra niña y no llego ni a la segunda página. Mira para otro lado, quiere agarrar el libro, lo cierra... y yo termino pensando que todavía no le interesa. ¿Será mejor esperar a que hable un poco más?</p></div>
 <div class="dialogo"><strong>Papá · Emiliano</strong><p>A mí me pasa igual. Yo empiezo a leer y ella quiere pasar todas las páginas de golpe. Entonces le digo que espere, que todavía no hemos terminado. Pero parece que el cuento le interesa más para jugar que para escucharlo.</p></div>
@@ -96,41 +91,8 @@ footer{padding:25px 18px;background:var(--d);color:#e4ddcf;font-size:12px;text-a
 </details>
 </section>
 <style>
-.player{background:#213c32;color:#fff;border-radius:14px;padding:18px;margin:20px 0}.player-head{display:flex;align-items:center;gap:11px}.player-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:10px;background:#d8b878;color:#203a33;font-weight:900;font-size:13px}.player-head strong,.player-head small{display:block}.player-head small{color:#c7d5c9;font-size:11px}.player-duration{margin-left:auto;color:#d8b878;font-variant-numeric:tabular-nums;font-size:12px}.player-controls{display:flex;align-items:center;gap:12px;margin:18px 0 10px}.player-controls button{width:44px;height:44px;border:0;border-radius:50%;background:#d8b878;color:#203a33;font-size:18px;cursor:pointer}.player-track{height:6px;border-radius:8px;background:#607469;flex:1;overflow:hidden}.player-progress{height:100%;width:0;background:#e4c98e}.player-time{font-size:11px;min-width:36px;text-align:right;font-variant-numeric:tabular-nums}.player-bottom{display:flex;justify-content:space-between;gap:12px;align-items:center;color:#d5e0d6;font-size:11px}.player-bottom label{display:flex;align-items:center;gap:7px}.player-bottom input{width:75px}.player-note{font-size:11px!important;color:#c7d5c9;margin:12px 0 0}.transcript{background:#fffdf7;border:1px solid #e4ddcf;border-radius:10px;padding:13px 16px}.transcript summary{cursor:pointer;color:#397653;font-weight:700;font-size:13px}.transcript .dialogo{padding:12px 0}
+.player{background:#213c32;color:#fff;border-radius:14px;padding:18px;margin:20px 0}.player-head{display:flex;align-items:center;gap:11px;margin-bottom:15px}.player-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:10px;background:#d8b878;color:#203a33;font-weight:900;font-size:13px}.player-head strong,.player-head small{display:block}.player-head small{color:#c7d5c9;font-size:11px}.player-duration{margin-left:auto;color:#d8b878;font-variant-numeric:tabular-nums;font-size:12px}.player audio{display:block;width:100%;height:42px}.player-note{font-size:11px!important;color:#c7d5c9;margin:12px 0}.download-podcast{display:inline-block;color:#f1d89f;font-weight:750;font-size:12px;text-decoration:none;border-bottom:1px solid #bfa46b;padding-bottom:2px}.transcript{background:#fffdf7;border:1px solid #e4ddcf;border-radius:10px;padding:13px 16px}.transcript summary{cursor:pointer;color:#397653;font-weight:700;font-size:13px}.transcript .dialogo{padding:12px 0}
 </style>
-<script>
-(()=> {
- const clips=[
- {who:"Rocío",src:"https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/84854979e66846989bc6c5855f53268f/id=ed21665db47142ac8510903fb83c2fdc.mp3",dur:7.892},
- {who:"Mamá",src:"https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/84854979e66846989bc6c5855f53268f/id=e27378b9fee146c0858e43bb0838abc5.mp3",dur:13.725},
- {who:"Papá",src:"https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/70bc24b8126c446c8cf50fc1a01eb834/id=8fc1dc17af8d45b28dd3acde70bd0175.mp3",dur:11.345},
- {who:"Pediatra",src:"https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/40ded5e9651a43a58b77f72699b95688/id=641885725c7140b0b5f2afb3f500d8f8.mp3",dur:25.340},
- {who:"Mamá",src:"https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/84854979e66846989bc6c5855f53268f/id=fd304278847246a8b77aef60571e85e8.mp3",dur:7.288},
- {who:"Pediatra",src:"https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/40ded5e9651a43a58b77f72699b95688/id=151ec238bca2498ebebb7c3fb9ee8499.mp3",dur:27.732},
- {who:"Papá",src:"https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/70bc24b8126c446c8cf50fc1a01eb834/id=884e1423312a4eef8816351a8ce88c42.mp3",dur:9.459},
- {who:"Pediatra",src:"https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/40ded5e9651a43a58b77f72699b95688/id=8ca64af9c43445c08402b30ad7fe93fe.mp3",dur:28.672},
- {who:"Mamá",src:"https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/84854979e66846989bc6c5855f53268f/id=e11aededc7c14360b41275c6af403ddd.mp3",dur:6.986},
- {who:"Papá",src:"https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/70bc24b8126c446c8cf50fc1a01eb834/id=c5185ad7c2d14cd2804c9acc1d9cddfa.mp3",dur:7.033},
- {who:"Pediatra",src:"https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/40ded5e9651a43a58b77f72699b95688/id=83ff9cbca4964ae792beadb1897a6dd8.mp3",dur:41.024}
- ];
- const total=clips.reduce((s,c)=>s+c.dur,0), audio=new Audio();audio.preload="auto";
- const play=document.getElementById("ciba-play"),bar=document.getElementById("ciba-progress"),time=document.getElementById("ciba-time"),status=document.getElementById("ciba-status"),vol=document.getElementById("ciba-volume"),totalEl=document.getElementById("ciba-total");
- const fmt=n=>{n=Math.max(0,Math.floor(n));return String(Math.floor(n/60)).padStart(2,"0")+":"+String(n%60).padStart(2,"0")};
- totalEl.textContent=fmt(total);
- let idx=0,elapsed=0,playing=false,ctx=null,musicGain=null,musicTimer=null,sfxDone={};
- function tone(freq,duration,gain,when=0,type="sine"){const o=ctx.createOscillator(),g=ctx.createGain();o.type=type;o.frequency.value=freq;g.gain.setValueAtTime(.0001,ctx.currentTime+when);g.gain.exponentialRampToValueAtTime(gain,ctx.currentTime+when+.08);g.gain.exponentialRampToValueAtTime(.0001,ctx.currentTime+when+duration);o.connect(g).connect(musicGain);o.start(ctx.currentTime+when);o.stop(ctx.currentTime+when+duration+.04)}
- function chord(notes){notes.forEach((n,i)=>tone(n,2.7,.006,i*.07,"sine"))}
- function startMusic(){if(ctx)return;ctx=new(window.AudioContext||window.webkitAudioContext)();musicGain=ctx.createGain();musicGain.gain.value=.9;musicGain.connect(ctx.destination);const prog=[[261.63,329.63,392,493.88],[220,261.63,329.63,392],[174.61,220,261.63,349.23],[196,246.94,293.66,392]];let step=0;chord(prog[0]);musicTimer=setInterval(()=>{if(!playing)return;chord(prog[step%4]);step++},2600)}
- function pageTurn(){if(!ctx)return;const n=ctx.createBufferSource(),len=ctx.sampleRate*.45,b=ctx.createBuffer(1,len,ctx.sampleRate),d=b.getChannelData(0);for(let i=0;i<len;i++)d[i]=(Math.random()*2-1)*(1-i/len);n.buffer=b;const f=ctx.createBiquadFilter();f.type="lowpass";f.frequency.value=1800;const g=ctx.createGain();g.gain.setValueAtTime(.0001,ctx.currentTime);g.gain.linearRampToValueAtTime(.045,ctx.currentTime+.035);g.gain.exponentialRampToValueAtTime(.0001,ctx.currentTime+.42);n.connect(f).connect(g).connect(ctx.destination);n.start()}
- function chime(){if(!ctx)return;[523.25,659.25,783.99].forEach((f,i)=>{const o=ctx.createOscillator(),g=ctx.createGain();o.type="sine";o.frequency.value=f;g.gain.setValueAtTime(.0001,ctx.currentTime+i*.1);g.gain.linearRampToValueAtTime(.035,ctx.currentTime+i*.1+.05);g.gain.exponentialRampToValueAtTime(.0001,ctx.currentTime+1.5+i*.1);o.connect(g).connect(ctx.destination);o.start(ctx.currentTime+i*.1);o.stop(ctx.currentTime+1.6+i*.1)})}
- function load(i){idx=i;audio.src=clips[i].src;audio.volume=Number(vol.value);status.textContent="Ahora: "+clips[i].who;audio.load();audio.play().then(()=>{playing=true;play.textContent="Ⅱ";play.setAttribute("aria-label","Pausar episodio")}).catch(()=>{playing=false;status.textContent="Toca reproducir para iniciar el audio"})}
- function advance(){if(idx<clips.length-1){elapsed+=clips[idx].dur;load(idx+1)}else{playing=false;play.textContent="▶";status.textContent="Episodio terminado";bar.style.width="100%";time.textContent=fmt(total);if(ctx){tone(523.25,1.2,.012);tone(659.25,1.2,.012,.12);tone(783.99,1.5,.012,.24)}}}
- audio.addEventListener("ended",advance);
- audio.addEventListener("timeupdate",()=>{const t=elapsed+audio.currentTime;bar.style.width=Math.min(100,t/total*100)+"%";time.textContent=fmt(t);if(ctx&&t>25&&!sfxDone.a){pageTurn();sfxDone.a=true}if(ctx&&t>95&&!sfxDone.b){pageTurn();sfxDone.b=true}});
- play.addEventListener("click",async()=>{if(!playing){if(!ctx){startMusic();chime()}else await ctx.resume();if(audio.src){audio.play().then(()=>{playing=true;play.textContent="Ⅱ";status.textContent="Ahora: "+clips[idx].who}).catch(()=>status.textContent="No se pudo cargar esta intervención")}else{elapsed=0;idx=0;load(0)}}else{audio.pause();playing=false;if(ctx)ctx.suspend();play.textContent="▶";status.textContent="En pausa"}});
- vol.addEventListener("input",()=>audio.volume=Number(vol.value));
-})();
-</script>
 <h2 id="fuentes">Referencias y recursos</h2>
 <ol class="refs"><li>American Academy of Pediatrics. <em>How to Share Books With Your Baby</em>. <a href="https://www.healthychildren.org/English/ages-stages/baby/Pages/How-to-Share-Books-With-Your-Baby.aspx" target="_blank" rel="noopener">HealthyChildren.org</a>.</li><li>American Academy of Pediatrics. <em>Literacy Promotion: An Essential Component of Primary Care Pediatric Practice</em>. Pediatrics, 2024. <a href="https://doi.org/10.1542/peds.2024-069090" target="_blank" rel="noopener">DOI</a>.</li><li>Centers for Disease Control and Prevention. <em>Milestones by 1 Year</em>. <a href="https://www.cdc.gov/act-early/milestones/1-year.html" target="_blank" rel="noopener">CDC</a>.</li><li>Reach Out and Read. <em>Parent Resources</em>. <a href="https://reachoutandread.org/" target="_blank" rel="noopener">Sitio oficial</a>.</li></ol>
 <div class="share"><strong>CIBA · Crecemos acompañándonos</strong><p>Una guía de CIBA para acompañar a las familias con información confiable sobre crianza, salud y desarrollo infantil.</p><p>Comparte este recurso con otras familias.</p><p>Sigue a CIBA en su canal de WhatsApp:<br><a href="https://whatsapp.com/channel/0029VbAOKuw2975HsSJutV32">https://whatsapp.com/channel/0029VbAOKuw2975HsSJutV32</a></p></div>
