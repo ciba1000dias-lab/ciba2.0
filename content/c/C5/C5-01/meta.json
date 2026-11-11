@@ -27,13 +27,11 @@
   "fecha_publicacion": "2026-11-11",
   "mostrar_en_columna": true,
   "mostrar_en_area": true,
-  "media": {
-    "imagenes": [
-      {
-        "proveedor": "pexels",
-        "fotografo": "Amina Filkins",
-        "url": "https://www.pexels.com/photo/crop-couple-touching-pregnant-belly-with-hands-at-home-5424696/"
-      }
-    ]
-  }
+  "enlaces_externos": [
+    {
+      "titulo": "Fotografía: Amina Filkins (Pexels)",
+      "url": "https://www.pexels.com/photo/crop-couple-touching-pregnant-belly-with-hands-at-home-5424696/",
+      "tipo": "imagen"
+    }
+  ]
 }
