@@ -1,0 +1,53 @@
+{
+  "id": "C5-12",
+  "titulo": "El vínculo también se cuida: agotamiento y salud emocional del cuidador",
+  "descripcion": "Reconoce el agotamiento del cuidador, organiza apoyos y distingue cuándo el malestar emocional requiere atención profesional.",
+  "columna": "C",
+  "area": "C5",
+  "subseccion": "Vínculo, familia y contexto",
+  "palabras_clave": [
+    "agotamiento-del-cuidador",
+    "salud-mental-materna",
+    "salud-emocional",
+    "posparto",
+    "apoyo-familiar",
+    "depresion-posparto",
+    "bienestar"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-11",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "preview_publica": false,
+  "media": {
+    "imagenes": [
+      {
+        "proveedor": "pexels",
+        "fotografo": "Keira Burton",
+        "url": "https://www.pexels.com/photo/tired-mother-with-black-boy-6624312/"
+      }
+    ],
+    "podcast": {
+      "proveedor": "UNICEF Uruguay",
+      "titulo": "Hablemos de crianza — Episodio 1: La llegada de un bebé: ¿cómo nos preparamos?",
+      "url": "https://www.unicef.org/uruguay/crianza/hablemos-de-crianza-un-podcast-de-unicef"
+    }
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "World Health Organization. Guide for integration of perinatal mental health in maternal and child health services.",
+      "url": "https://www.who.int/publications/i/item/9789240057142",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OMS: desarrollo infantil temprano",
+      "url": "https://www.who.int/health-topics/early-child-development",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "Hablemos de crianza — Episodio 1: La llegada de un bebé: ¿cómo nos preparamos?",
+      "url": "https://www.unicef.org/uruguay/crianza/hablemos-de-crianza-un-podcast-de-unicef",
+      "tipo": "podcast"
+    }
+  ]
+}
