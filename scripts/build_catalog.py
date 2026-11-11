@@ -276,7 +276,7 @@ def _copiar_pagina_publica(
     for archivo in archivos_pagina:
         if archivo.suffix.lower() != ".pdf":
             continue
-        relativo = str(archivo.relative_to(origen_pagina)).replace("\\\\", "/")
+        relativo = archivo.relative_to(origen_pagina).as_posix()
         ok_pdf, motivo_pdf = es_ruta_segura(origen_pagina, archivo)
         if not ok_pdf:
             errores.append(ValidationError(rel_pagina, "PDF", f"ruta insegura: {motivo_pdf}"))
