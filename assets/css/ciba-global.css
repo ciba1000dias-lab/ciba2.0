@@ -1607,3 +1607,147 @@ html[data-ciba-movimiento="reducido"] .ciba-global-grupo>.ciba-global-submenu{
 body:not(.ciba-con-cabecera-global) > .ciba-global-menu{top:16px!important;left:16px!important;z-index:10051!important}
 body:not(.ciba-con-cabecera-global) > .ciba-global-menu .ciba-global-panel{position:fixed!important;inset:0 auto 0 0!important;width:min(85vw,380px)!important;max-width:85vw!important;max-height:100vh!important;max-height:100dvh!important;transform:translateX(-105%)!important;z-index:10052!important}
 body:not(.ciba-con-cabecera-global) > .ciba-global-menu .ciba-global-panel.abierto{transform:translateX(0)!important}
+
+
+/* CIBA · CABECERA VIDRIO BOTÁNICO Y PESTAÑA INTEGRADA DEL MENÚ
+   Capa exclusiva de identidad/navegación. El Oráculo no se modifica. */
+.ciba-global-cabecera{
+  position:sticky!important;
+  top:0!important;
+  z-index:10000!important;
+  min-height:76px!important;
+  overflow:visible!important;
+  isolation:isolate;
+  color:#fff9ef!important;
+  background:
+    radial-gradient(ellipse at 12% -35%,rgba(217,184,120,.34),transparent 42%),
+    radial-gradient(ellipse at 76% 120%,rgba(57,118,83,.38),transparent 46%),
+    linear-gradient(112deg,rgba(73,58,50,.94),rgba(92,70,57,.84) 48%,rgba(39,78,67,.88))!important;
+  border-bottom:1px solid rgba(240,211,155,.52)!important;
+  box-shadow:0 9px 30px rgba(48,36,29,.18),inset 0 1px 0 rgba(255,255,255,.18)!important;
+  -webkit-backdrop-filter:blur(24px) saturate(1.35)!important;
+  backdrop-filter:blur(24px) saturate(1.35)!important;
+}
+.ciba-global-cabecera::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  opacity:.7;
+  background:
+    linear-gradient(90deg,rgba(198,155,82,.12),transparent 24%,rgba(40,123,154,.12) 72%,rgba(169,68,59,.10)),
+    linear-gradient(180deg,rgba(255,255,255,.09),transparent 65%);
+}
+.ciba-global-cabecera::after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:-1px;height:2px;
+  pointer-events:none;
+  background:linear-gradient(90deg,rgba(57,118,83,.9),rgba(198,155,82,.9) 35%,rgba(40,123,154,.85) 68%,rgba(169,68,59,.8));
+  opacity:.8;
+}
+.ciba-global-marca{
+  color:#fff9ef!important;
+  text-shadow:0 2px 16px rgba(20,15,12,.25);
+  letter-spacing:.2em!important;
+}
+.ciba-global-contexto{
+  color:#fff9ef!important;
+  text-shadow:0 2px 15px rgba(20,15,12,.22)!important;
+}
+.ciba-global-contexto::after{
+  height:2px!important;
+  opacity:.85;
+  background:linear-gradient(90deg,var(--ciba-columna-color),rgba(240,211,155,.72),transparent)!important;
+}
+.ciba-global-cabecera > .ciba-global-menu,
+body:not(.ciba-con-cabecera-global) > .ciba-global-menu{
+  position:fixed!important;
+  top:57px!important;
+  left:14px!important;
+  right:auto!important;
+  bottom:auto!important;
+  width:76px!important;
+  height:68px!important;
+  z-index:10051!important;
+  transform:none!important;
+  isolation:isolate;
+}
+.ciba-global-menu::before{
+  content:"";
+  position:absolute;
+  left:1px;
+  top:8px;
+  width:70px;
+  height:57px;
+  z-index:-1;
+  border:1px solid rgba(240,211,155,.58);
+  border-top:0;
+  border-radius:0 0 36px 36px;
+  background:
+    radial-gradient(ellipse at 50% 0%,rgba(217,184,120,.28),transparent 72%),
+    linear-gradient(145deg,rgba(73,58,50,.94),rgba(49,91,73,.88));
+  box-shadow:0 9px 22px rgba(48,36,29,.2),inset 0 1px 0 rgba(255,255,255,.16);
+  -webkit-backdrop-filter:blur(22px) saturate(1.3);
+  backdrop-filter:blur(22px) saturate(1.3);
+}
+.ciba-global-menu-boton,
+.ciba-global-cabecera .ciba-global-menu-boton{
+  position:absolute!important;
+  top:9px!important;
+  left:12px!important;
+  width:48px!important;
+  height:48px!important;
+  border:1px solid rgba(240,211,155,.72)!important;
+  border-radius:50%!important;
+  background:
+    radial-gradient(circle at 30% 20%,rgba(217,184,120,.38),transparent 55%),
+    linear-gradient(145deg,rgba(42,91,70,.96),rgba(73,58,50,.96))!important;
+  color:#fff9ef!important;
+  box-shadow:0 5px 16px rgba(35,25,20,.22),inset 0 1px 0 rgba(255,255,255,.24)!important;
+  -webkit-backdrop-filter:blur(16px)!important;
+  backdrop-filter:blur(16px)!important;
+}
+.ciba-global-menu-boton span{
+  width:19px!important;
+  height:2px!important;
+  background:#fff8eb!important;
+  box-shadow:0 0 8px rgba(240,211,155,.28);
+}
+.ciba-global-menu-boton:hover{
+  transform:translateY(-1px) scale(1.035)!important;
+  background:linear-gradient(145deg,rgba(57,118,83,.98),rgba(102,80,68,.97))!important;
+}
+.ciba-global-panel{
+  position:fixed!important;
+  top:0!important;
+  left:0!important;
+  bottom:0!important;
+  z-index:10052!important;
+}
+.ciba-global-cabecera > .ciba-global-login{
+  z-index:10007!important;
+}
+@media(max-width:600px){
+  .ciba-global-cabecera{
+    min-height:68px!important;
+    padding-top:9px!important;
+    padding-bottom:9px!important;
+  }
+  .ciba-global-cabecera > .ciba-global-menu,
+  body:not(.ciba-con-cabecera-global) > .ciba-global-menu{
+    top:53px!important;
+    left:9px!important;
+  }
+  .ciba-global-menu::before{
+    width:66px;height:55px;border-radius:0 0 34px 34px;
+  }
+  .ciba-global-menu-boton,
+  .ciba-global-cabecera .ciba-global-menu-boton{
+    top:8px!important;left:10px!important;width:46px!important;height:46px!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .ciba-global-menu-boton{transition:none!important}
+}
