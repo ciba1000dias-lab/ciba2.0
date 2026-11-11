@@ -41,6 +41,21 @@
       "titulo": "AAPD — Perinatal and Infant Oral Health Care",
       "url": "https://www.aapd.org/research/oral-health-policies--recommendations/perinatal-and-infant-oral-health-care/",
       "tipo": "guía clínica"
+    },
+    {
+      "titulo": "OMS — Poner fin a la caries dental en la infancia",
+      "url": "https://iris.who.int/bitstream/handle/10665/340445/9789240016415-spa.pdf",
+      "tipo": "guía de salud pública"
+    },
+    {
+      "titulo": "MINSAP Cuba / OMS — Procedimientos para la atención a escolares (2018)",
+      "url": "https://platform.who.int/docs/default-source/mca-documents/policy-documents/operational-guidance/CUB-AD-17-01-OPERATIONAL-GUIDANCE-2018-esp-PROCEDIMIENTOS-PARA-AT-ESCOLARES.pdf",
+      "tipo": "documento técnico contextual; no es guía para lactantes"
+    },
+    {
+      "titulo": "ADA — Toothbrushes",
+      "url": "https://www.ada.org/resources/ada-library/oral-health-topics/toothbrushes",
+      "tipo": "orientación odontológica"
     }
   ]
 }
