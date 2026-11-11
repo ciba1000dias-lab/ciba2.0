@@ -205,7 +205,7 @@ g.gain.setValueAtTime(.0001,start);g.gain.exponentialRampToValueAtTime(gain,star
 osc.connect(g);g.connect(master);osc.start(start);osc.stop(start+duration+.04);
 }
 function chord(at,notes){
-notes.forEach((n,i)=>tone(n,at+i*.025,1.9,.018,'triangle'));
+notes.forEach((n,i)=>tone(n,at+i*.025,1.9,.038,'triangle'));
 }
 function startMusic(){
 const progression=[[261.63,329.63,392],[220,261.63,329.63],[174.61,220,261.63],[196,246.94,293.66]];
@@ -214,16 +214,16 @@ interval=setInterval(()=>{
 const now=ctx.currentTime;
 while(nextNote<now+.35){
 const c=progression[Math.floor(step/4)%4],n=c[step%3];
-tone(n,nextNote,.72,.013,'sine');
+tone(n,nextNote,.72,.026,'sine');
 if(step%4===0)chord(nextNote,c);
 nextNote+=.62;step++;
 }
 },160);
 }
 function effect(kind){
-if(kind==='tap'){tone(740,ctx.currentTime,.12,.025,'sine',410);}
-if(kind==='soft'){tone(520,ctx.currentTime,.34,.018,'sine',760);}
-if(kind==='chime'){tone(880,ctx.currentTime,.55,.018,'sine',660);tone(1174,ctx.currentTime+.08,.45,.012,'sine',880);}
+if(kind==='tap'){tone(740,ctx.currentTime,.12,.055,'sine',410);}
+if(kind==='soft'){tone(520,ctx.currentTime,.34,.045,'sine',760);}
+if(kind==='chime'){tone(880,ctx.currentTime,.55,.05,'sine',660);tone(1174,ctx.currentTime+.08,.45,.035,'sine',880);}
 }
 const cues=[{t:19,k:'tap'},{t:24,k:'soft'},{t:42,k:'tap'},{t:65,k:'chime'}];
 audio.addEventListener('timeupdate',()=>{for(const cue of cues){if(audio.currentTime>=cue.t&&!fxPlayed.has(cue.t)){fxPlayed.add(cue.t);effect(cue.k);}}});
