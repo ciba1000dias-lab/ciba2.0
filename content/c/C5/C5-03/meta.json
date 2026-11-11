@@ -1,0 +1,50 @@
+{
+  "id": "C5-03",
+  "titulo": "Responder al llanto no es malcriar: qué dice la evidencia",
+  "descripcion": "Comprende el llanto de los bebés de 0 a 6 meses, reconoce sus necesidades, aprende formas seguras de acompañarlos y distingue señales de alarma.",
+  "columna": "C",
+  "area": "C5",
+  "subseccion": "Embarazo y primeros meses",
+  "palabras_clave": [
+    "llanto-del-bebe",
+    "comunicacion-temprana",
+    "consuelo",
+    "crianza-sensible",
+    "apego",
+    "recien-nacido",
+    "primeros-seis-meses",
+    "colico-del-lactante",
+    "senales-de-hambre",
+    "seguridad-infantil",
+    "sindrome-del-bebe-sacudido",
+    "salud-del-cuidador",
+    "fiebre-menor-tres-meses",
+    "signos-de-alarma"
+  ],
+  "estado": "revision_editorial",
+  "fecha_publicacion": null,
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "media": {
+    "imagenes": [
+      {
+        "proveedor": "pexels",
+        "fotografo": "Antoni Shkraba",
+        "url": "https://www.pexels.com/photo/mother-holding-crying-baby-6134675/"
+      }
+    ]
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "American Academy of Pediatrics: Qué hacer cuando su bebé llora mucho",
+      "url": "https://www.healthychildren.org/Spanish/ages-stages/baby/crying-colic/Paginas/responding-to-your-babys-cries.aspx",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "NHS: Soothing a crying baby",
+      "url": "https://www.nhs.uk/baby/caring-for-a-newborn/soothing-a-crying-baby/",
+      "tipo": "fuente"
+    }
+  ]
+}
