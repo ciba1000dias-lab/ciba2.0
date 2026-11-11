@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-49', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261110-50', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -327,7 +327,8 @@
             return;
           }
           const rutaMenuArea = area.id === 'C1' ? 'c/C1/alimentacion/' : area.ruta_publica;
-          const grupoArea=crearDesplegable(area.titulo||area.id,'ciba-global-area',rutaMenuArea);
+          const claseArea = area.id === 'C2' ? 'ciba-global-area ciba-global-area-c2' : 'ciba-global-area';
+          const grupoArea=crearDesplegable(area.titulo||area.id,claseArea,rutaMenuArea);
           const paginas=(datos.paginas||[]).filter(p=>
             p.area===area.id&&p.columna===columna.id&&
             !(area.id==='C1'&&['C1-01','C1-02','C1-03'].includes(p.id))
