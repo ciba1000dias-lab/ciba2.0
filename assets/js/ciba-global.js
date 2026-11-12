@@ -765,9 +765,21 @@
           const datos = await obtenerCatalogo();
           const datosAlimentos = await obtenerAlimentos().catch(() => ({ alimentos: [] }));
           const paginas = datos.paginas || [];
+          // Entrada de área para que Oráculo encuentre la sección incluso antes
+          // de publicar sus diez guías individuales.
+          const paginasConAreas = [...paginas, {
+            id: 'C6',
+            titulo: 'Prevención y seguridad en el hogar',
+            descripcion: 'Guía de CIBA para prevenir accidentes domésticos y responder ante riesgos durante los primeros dos años: sueño seguro, atragantamiento, ahogamiento, quemaduras, caídas, electricidad, intoxicaciones, objetos pequeños, humo, monóxido y plan familiar de emergencia.',
+            columna: 'C',
+            area: 'C6',
+            subseccion: 'Prevención y seguridad en el hogar',
+            palabras_clave: ['prevencion', 'seguridad', 'accidentes', 'hogar', 'casa', 'riesgos', 'sueño seguro', 'muerte subita', 'atragantamiento', 'asfixia', 'ahogamiento', 'baño seguro', 'quemaduras', 'caidas', 'golpes', 'enchufes', 'electricidad', 'intoxicaciones', 'productos de limpieza', 'medicamentos', 'plantas toxicas', 'objetos pequeños', 'pilas', 'imanes', 'humo', 'monoxido de carbono', 'ventilacion', 'botiquin', 'emergencia', 'primeros auxilios', 'lactante', 'bebe'],
+            ruta_publica: 'c/C6/'
+          }];
 
           // Buscar tanto artículos como fichas de la biblioteca de alimentos.
-          const coincidencias = paginas.filter((pagina) => {
+          const coincidencias = paginasConAreas.filter((pagina) => {
             const contenido = normalizar([
               pagina.titulo,
               pagina.descripcion,
