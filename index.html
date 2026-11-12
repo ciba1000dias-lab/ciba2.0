@@ -1868,7 +1868,7 @@ grupo.innerHTML=arts.map(p=>'<a class="articulo-reciente" href="'+esc(p.ruta_pub
 function init(c,gs,ts,dir,speed){
 const t=c.querySelector(ts),g=t&&t.querySelector(gs);if(!t||!g||t.dataset.cibaReady==="true")return;
 const clone=g.cloneNode(true);clone.setAttribute("aria-hidden","true");clone.setAttribute("inert","");
-clone.querySelectorAll("a,button,[tabindex]").forEach(e=>e.setAttribute("tabindex","-1"));t.appendChild(clone);t.dataset.cibaReady="true";
+clone.querySelectorAll("a,button,[tabindex]").forEach(e=>e.setAttribute("tabindex","-1"));if(dir>0)t.insertBefore(clone,g);else t.appendChild(clone);t.dataset.cibaReady="true";
 let width=0,x=dir<0?0:-1,drag=false,sx=0,ox=0,moved=false,suppress=false,pause=false,last=0;
 function wrap(){if(!width)return;if(dir<0){while(x<=-width)x+=width;while(x>0)x-=width;}else{while(x>=0)x-=width;while(x< -width)x+=width;}}
 function paint(){t.style.transform="translate3d("+x+"px,0,0)";}
@@ -1884,9 +1884,8 @@ c.addEventListener("keydown",e=>{if(e.key!=="ArrowLeft"&&e.key!=="ArrowRight")re
 if("ResizeObserver"in window)new ResizeObserver(measure).observe(g);else window.addEventListener("resize",measure,{passive:true});
 measure();reducido.addEventListener?.("change",()=>last=0);requestAnimationFrame(tick);
 }
-catalogoPromesa.then(pintarRecientes).catch(err=>{console.warn("CIBA: artículos recientes no disponibles.",err);const g=document.getElementById("recientes-lista");if(g)g.innerHTML='<p class="reciente-cargando">No se pudo cargar la lista de publicaciones. Inténtalo de nuevo más tarde.</p>';});
+catalogoPromesa.then(cat=>{pintarRecientes(cat);document.querySelectorAll('[data-carrusel="recientes"]').forEach(e=>init(e,".recientes-grupo",".recientes-track",1,15));}).catch(err=>{console.warn("CIBA: artículos recientes no disponibles.",err);const g=document.getElementById("recientes-lista");if(g)g.innerHTML='<p class="reciente-cargando">No se pudo cargar la lista de publicaciones. Inténtalo de nuevo más tarde.</p>';});
 document.querySelectorAll('[data-carrusel="recursos"]').forEach(e=>init(e,".recursos-grupo",".recursos-track",-1,19));
-document.querySelectorAll('[data-carrusel="recientes"]').forEach(e=>init(e,".recientes-grupo",".recientes-track",1,15));
 })();
 </script><script type="module" src="assets/js/ciba-global.js?v=20261112-02"></script>
 
