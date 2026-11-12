@@ -1,0 +1,42 @@
+{
+  "columna": "C",
+  "area": "C6",
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "id": "C6-09",
+  "titulo": "Humo, monóxido y ventilación: riesgos invisibles en casa",
+  "descripcion": "Prevención de exposición infantil a humo de combustión, monóxido de carbono y humo de tabaco; seguridad durante apagones y respuesta ante sospecha de intoxicación.",
+  "subseccion": "Intoxicaciones y asfixia",
+  "palabras_clave": [
+    "humo",
+    "monoxido-de-carbono",
+    "co",
+    "braseros",
+    "carbon",
+    "generadores",
+    "apagones",
+    "ventilacion",
+    "humo-de-tabaco",
+    "combustion"
+  ],
+  "enlaces_externos": [
+    {
+      "titulo": "Fotografía: Mehmet Turgut Kirkgoz (Pexels)",
+      "url": "https://www.pexels.com/photo/woman-cooking-in-a-wooden-kitchen-15093357/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "CDC: Carbon Monoxide Poisoning Basics",
+      "url": "https://www.cdc.gov/carbon-monoxide/about/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OMS: Household air pollution and health",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/household-air-pollution-and-health",
+      "tipo": "fuente"
+    }
+  ]
+}
