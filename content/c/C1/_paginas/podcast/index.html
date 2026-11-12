@@ -35,6 +35,26 @@ footer{background:var(--noche);color:#eee2d2;padding:24px 0;font-size:11px}foote
 @media(max-width:760px){.anthem-premium{grid-template-columns:1fr;gap:18px}.anthem-copy{max-width:600px}.anthem-signature{margin-top:16px}.anthem-player{padding:16px}.anthem-visual{height:130px}.anthem-record{width:108px}}
 @media(max-width:380px){.anthem-player{padding:13px}.anthem-visual{gap:10px}.anthem-record{width:88px}.anthem-controls{gap:9px}.anthem-play{width:42px;height:42px}}
 
+
+/* Reproductor oficial Drive: reproducción gestionada por Google */
+.anthem-drive-player{position:relative;min-width:0;padding:18px 20px 14px;border-radius:17px;background:linear-gradient(145deg,#1d2924,#35473b 65%,#26352e);color:#fff5e4;box-shadow:0 18px 38px #1b29242c,inset 0 1px #ffffff24}
+.anthem-drive-player .anthem-player-top,.anthem-drive-player .anthem-bottom{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:8px;font-weight:850;letter-spacing:.14em;color:#d9c8a8}
+.anthem-drive-player .live-dot{width:7px;height:7px;border-radius:50%;background:#d7b878;box-shadow:0 0 0 4px #d7b87820;display:inline-block;margin-right:7px}
+.anthem-drive-player .anthem-duration{color:#a9b4a7}
+.anthem-artwork{height:142px;display:flex;align-items:center;justify-content:center;gap:24px;overflow:hidden}
+.anthem-record{width:clamp(95px,12vw,126px);aspect-ratio:1;border-radius:50%;flex:none;display:grid;place-items:center;background:repeating-radial-gradient(circle,#121b17 0 2px,#425047 3px 4px,#1e2b24 5px 7px);box-shadow:0 8px 22px #0006,0 0 0 5px #ffffff0c;animation:anthem-spin 13s linear infinite}
+.record-label{width:36%;aspect-ratio:1;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at 35% 30%,#f0d49b,#b98755);color:#47372a;font:italic 19px Georgia;box-shadow:0 0 0 4px #28362d}
+.record-label span{font:800 5px system-ui;letter-spacing:.16em;margin-top:2px}
+.anthem-wave-art{height:72px;display:flex;align-items:center;justify-content:center;gap:3px;flex:1;min-width:0}
+.anthem-wave-art span{width:3px;height:var(--h);border-radius:5px;background:linear-gradient(#f2dcae,#b98b54);opacity:.9}
+.anthem-drive-frame{position:relative;width:100%;height:180px;overflow:hidden;border-radius:11px;background:#111;box-shadow:0 5px 18px #0003}
+.anthem-drive-frame iframe{display:block;width:100%;height:100%;border:0;background:#111}
+.anthem-drive-player .anthem-bottom{padding-top:12px;margin-top:12px;border-top:1px solid #ffffff20;font-size:7px;color:#b7b19f}
+.anthem-drive-player .anthem-bottom a{color:#e6c98f;text-decoration:none;font-size:8px;letter-spacing:.05em}
+@media(max-width:760px){.anthem-premium{grid-template-columns:1fr;gap:18px}.anthem-copy{max-width:600px}.anthem-signature{margin-top:16px}.anthem-drive-player{padding:16px}.anthem-artwork{height:112px}.anthem-record{width:94px}.anthem-drive-frame{height:170px}}
+@media(max-width:380px){.anthem-drive-player{padding:13px}.anthem-artwork{gap:12px}.anthem-record{width:82px}.anthem-drive-frame{height:155px}}
+@media(prefers-reduced-motion:reduce){.anthem-record{animation:none}}
+
 </style></head>
 <body>
 <section class="hero"><div class="contenedor hero-grid"><div><span class="eyebrow">CIBA · Audio para acompañar</span><h1>Zona <em>Podcast</em></h1><p>Una biblioteca sonora para escuchar, aprender y conversar. Cada episodio tiene su propia portada, su pequeño movimiento y una historia que acompaña a las familias en los primeros años de vida.</p></div><div class="hero-disc" aria-hidden="true"><div class="hero-label">CIBA</div></div></div></section>
@@ -46,25 +66,16 @@ footer{background:var(--noche);color:#eee2d2;padding:24px 0;font-size:11px}foote
 <p>Una canción para las familias, para quienes cuidan y para quienes creen que la crianza se construye mejor cuando caminamos juntos.</p>
 <div class="anthem-signature"><span class="anthem-signature-line"></span><span>CRIANZA · INFORMÁTICA · BIENESTAR · ACOMPAÑAMIENTO</span></div>
 </div>
-<div class="anthem-player" id="anthem-player">
-<div class="anthem-player-top"><span><i class="live-dot"></i> CANCIÓN INSTITUCIONAL</span><span class="anthem-duration" id="anthem-duration">CIBA ORIGINAL</span></div>
-<div class="anthem-visual">
+<div class="anthem-player anthem-drive-player">
+<div class="anthem-player-top"><span><i class="live-dot"></i> CANCIÓN INSTITUCIONAL</span><span class="anthem-duration">CIBA ORIGINAL</span></div>
+<div class="anthem-artwork">
 <div class="anthem-record" aria-hidden="true"><div class="record-label">CIBA<span>CRECEMOS</span></div></div>
-<div class="wave-stage" id="anthem-wave" aria-label="Visualizador musical">
-<canvas id="anthem-canvas" aria-hidden="true"></canvas>
-<div class="wave-caption" id="anthem-state">LISTA PARA ESCUCHAR</div>
+<div class="anthem-wave-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
 </div>
+<div class="anthem-drive-frame">
+<iframe src="https://drive.google.com/file/d/1Eaz8VMyl84NBm6GlYnDO8xEuXnHfCPtz/preview" title="Reproductor oficial de la canción CIBA: Crecemos acompañándonos" loading="eager" allow="autoplay" allowfullscreen></iframe>
 </div>
-<div class="anthem-controls">
-<button class="anthem-play" id="anthem-play" type="button" aria-label="Reproducir canción"><span class="play-symbol">▶</span></button>
-<div class="anthem-track">
-<div class="anthem-track-title">Crecemos acompañándonos</div>
-<div class="anthem-progress-wrap"><input id="anthem-progress" type="range" min="0" max="1000" value="0" step="1" aria-label="Posición de la canción"><div class="anthem-times"><span id="anthem-current">0:00</span><span id="anthem-total">--:--</span></div></div>
-</div>
-<button class="anthem-volume" id="anthem-mute" type="button" aria-label="Silenciar audio">♫</button>
-</div>
-<audio id="anthem-audio" preload="metadata" src="https://drive.google.com/uc?export=download&amp;id=1Eaz8VMyl84NBm6GlYnDO8xEuXnHfCPtz"></audio>
-<div class="anthem-bottom"><span>UNA CANCIÓN. MUCHAS FAMILIAS. UN MISMO CAMINO.</span><a href="https://drive.google.com/file/d/1Eaz8VMyl84NBm6GlYnDO8xEuXnHfCPtz/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Abrir archivo original ↗</a></div>
+<div class="anthem-bottom"><span>UNA CANCIÓN. MUCHAS FAMILIAS. UN MISMO CAMINO.</span><a href="https://drive.google.com/file/d/1Eaz8VMyl84NBm6GlYnDO8xEuXnHfCPtz/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">Abrir en Google Drive ↗</a></div>
 </div>
 </section>
 <section class="library" aria-label="Colección de episodios CIBA">
@@ -109,33 +120,5 @@ document.querySelectorAll('.album audio:not(.tracks audio)').forEach(a=>{a.addEv
 })();
 </script>
 
-<script>
-(()=> {
- const audio=document.getElementById('anthem-audio'), player=document.getElementById('anthem-player');
- if(!audio||!player)return;
- const play=document.getElementById('anthem-play'), progress=document.getElementById('anthem-progress'), current=document.getElementById('anthem-current'), total=document.getElementById('anthem-total'), state=document.getElementById('anthem-state'), mute=document.getElementById('anthem-mute'), canvas=document.getElementById('anthem-canvas'), ctx=canvas.getContext('2d');
- let raf=0, analyser=null, source=null, audioCtx=null, bars=[];
- const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
- const fmt=n=>{if(!Number.isFinite(n))return'--:--';return Math.floor(n/60)+':'+String(Math.floor(n%60)).padStart(2,'0')};
- function size(){const dpr=Math.min(window.devicePixelRatio||1,2),r=canvas.getBoundingClientRect();canvas.width=Math.max(1,Math.floor(r.width*dpr));canvas.height=Math.max(1,Math.floor(r.height*dpr));ctx.setTransform(dpr,0,0,dpr,0,0);bars=new Uint8Array(analyser?analyser.frequencyBinCount:64)}
- function setupAudioGraph(){if(analyser)return;try{const mediaURL=new URL(audio.currentSrc||audio.src,location.href);if(mediaURL.origin!==location.origin){analyser=null;return}audioCtx=new(window.AudioContext||window.webkitAudioContext)();analyser=audioCtx.createAnalyser();analyser.fftSize=128;analyser.smoothingTimeConstant=.82;source=audioCtx.createMediaElementSource(audio);source.connect(analyser);analyser.connect(audioCtx.destination);size()}catch(e){analyser=null}}
- function draw(){const w=canvas.clientWidth,h=canvas.clientHeight;if(!w||!h)return;ctx.clearRect(0,0,w,h);const count=38,gap=3,bw=(w-gap*(count-1))/count;let data=null;if(analyser){analyser.getByteFrequencyData(bars);data=bars}
- for(let i=0;i<count;i++){let v;if(data){const k=Math.floor(i/count*data.length*.72);v=data[k]/255}else{const t=performance.now()/240;v=.12+.24*Math.abs(Math.sin(t+i*.42))+.12*Math.abs(Math.sin(t*.63+i*.17));if(!player.classList.contains('is-playing'))v=.08+.05*Math.abs(Math.sin(i*.5))}
- const bh=Math.max(3,v*(h*.88));const x=i*(bw+gap),y=(h-bh)/2;const grad=ctx.createLinearGradient(0,y,0,y+bh);grad.addColorStop(0,'#f2dcae');grad.addColorStop(1,'#b98b54');ctx.fillStyle=grad;ctx.beginPath();ctx.roundRect(x,y,bw,bh,bw/2);ctx.fill()}
- if(player.classList.contains('is-playing')&&!reduce)raf=requestAnimationFrame(draw)}
- function startVisual(){cancelAnimationFrame(raf);if(!reduce)draw()}
- function stopVisual(){cancelAnimationFrame(raf);if(!reduce)draw()}
- play.addEventListener('click',async()=>{if(audio.paused){try{setupAudioGraph();if(audioCtx&&audioCtx.state==='suspended')await audioCtx.resume();await audio.play()}catch(e){state.textContent='NO SE PUDO INICIAR · REVISA LA CONEXIÓN';}}else audio.pause()});
- audio.addEventListener('play',()=>{player.classList.add('is-playing');play.innerHTML='<span class="play-symbol">Ⅱ</span>';play.setAttribute('aria-label','Pausar canción');state.textContent='REPRODUCIENDO · CIBA';startVisual()});
- audio.addEventListener('pause',()=>{player.classList.remove('is-playing');play.innerHTML='<span class="play-symbol">▶</span>';play.setAttribute('aria-label','Reproducir canción');state.textContent=audio.ended?'GRACIAS POR ACOMPAÑARNOS':'EN PAUSA';stopVisual()});
- audio.addEventListener('ended',()=>{progress.value=0;current.textContent='0:00'});
- audio.addEventListener('loadedmetadata',()=>{total.textContent=fmt(audio.duration);document.getElementById('anthem-duration').textContent=fmt(audio.duration)});
- audio.addEventListener('timeupdate',()=>{current.textContent=fmt(audio.currentTime);if(Number.isFinite(audio.duration)&&audio.duration>0)progress.value=Math.round(audio.currentTime/audio.duration*1000)});
- progress.addEventListener('input',()=>{if(Number.isFinite(audio.duration))audio.currentTime=(Number(progress.value)/1000)*audio.duration});
- mute.addEventListener('click',()=>{audio.muted=!audio.muted;mute.textContent=audio.muted?'×':'♫';mute.setAttribute('aria-label',audio.muted?'Activar sonido':'Silenciar audio')});
- audio.addEventListener('error',()=>{state.textContent='AUDIO NO DISPONIBLE · ABRE EL ARCHIVO ORIGINAL';});
- if('ResizeObserver'in window)new ResizeObserver(size).observe(canvas);else window.addEventListener('resize',size);
- size();draw();
-})();
-</script>
+
 </body></html>
