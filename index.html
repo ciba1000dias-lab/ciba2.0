@@ -1402,10 +1402,48 @@
     .columnas > .columna .columna-numero,
     .columnas > .columna .columna-ir { color:rgba(255,255,255,.88) !important; }
 
-  </style>
+  
+/* CIBA 2.1 · Portada reorganizada y responsive */
+html{scroll-padding-top:82px}body{overflow-x:hidden}.contenedor{width:min(1220px,calc(100% - 48px))}
+.cabecera{position:sticky;top:0;z-index:10000}.cabecera .barra{min-height:76px;gap:18px}
+.hero{min-height:0;padding:0;isolation:isolate}.hero-contenido{grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);gap:clamp(28px,5vw,70px);padding-top:clamp(44px,6vw,76px);padding-bottom:clamp(72px,8vw,96px)}
+.hero-texto{max-width:590px}.hero h1{font-size:clamp(42px,5.2vw,70px);line-height:1.06;margin:20px 0}.hero-descripcion{font-size:clamp(14px,1.25vw,16px);line-height:1.8;max-width:510px}
+.hero-imagen-marco{min-height:clamp(340px,39vw,455px);max-width:600px;width:100%;justify-self:end}.hero-imagen{object-position:center 38%}.hero-pie .contenedor{padding-block:14px}
+.busqueda{padding:28px 0 34px}.busqueda-interior{padding:clamp(17px,2.5vw,27px);border-radius:17px}.busqueda h2{font-size:clamp(23px,2.6vw,29px)}.busqueda-caja{margin-top:17px;gap:clamp(10px,2vw,20px);min-width:0}.busqueda-caja input{min-width:0}.resultado-lista{grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+.seccion{padding:clamp(54px,6vw,78px) 0}.seccion-encabezado{margin-bottom:clamp(22px,3vw,34px)}.seccion h2.titulo{font-size:clamp(30px,3.6vw,45px)}
+.columnas-seccion{background:linear-gradient(180deg,#f7f1e6,#eee5d7);overflow:hidden}.columnas-encabezado{max-width:720px}.columnas{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.5vw,19px)}
+.columna-home{min-width:0;min-height:0;padding:0;border-radius:19px;display:flex;flex-direction:column;justify-content:flex-start;overflow:hidden;color:#fff;box-shadow:0 13px 32px rgba(73,58,50,.13);transition:transform .25s,box-shadow .25s}.columna-home:hover,.columna-home:focus-visible{transform:translateY(-5px);box-shadow:0 20px 38px rgba(73,58,50,.18)}
+.columna-foto{position:relative;height:clamp(135px,15vw,190px);overflow:hidden;background:#ddd}.columna-home .columna-imagen{width:100%;height:100%;margin:0;border-radius:0;object-fit:cover;object-position:center 36%;transition:transform .5s}.columna-home:hover .columna-imagen{transform:scale(1.045)}
+.columna-sigla{position:absolute;right:13px;bottom:10px;color:rgba(255,255,255,.86);font:400 clamp(42px,5vw,66px)/1 Georgia,serif;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+.columna-contenido{display:flex;flex:1;flex-direction:column;align-items:flex-start;padding:clamp(16px,2vw,23px);min-height:220px}.columna-numero{font-size:9px;letter-spacing:.16em;font-weight:850;color:rgba(255,255,255,.82)}.columna-home h3{margin:10px 0 8px;font:400 clamp(22px,2.3vw,29px)/1.15 Georgia,serif;color:#fff}.columna-home p{margin:0;color:rgba(255,255,255,.87);font-size:clamp(11px,1vw,13px);line-height:1.65}
+.columna-home .columna-ir{display:flex;align-items:center;gap:9px;margin-top:auto;padding-top:18px;font-size:9px;letter-spacing:.1em;color:#fff;font-weight:850;text-transform:uppercase}.columna-ir b{font-size:16px;line-height:1}.columna-crianza{background:#397653}.columna-informatica{background:#287B9A}.columna-bienestar{background:#8C671F}.columna-acompanamiento{background:#A9443B}
+.recursos-destacados{overflow:hidden;padding-block:clamp(52px,6vw,76px);background:radial-gradient(ellipse at 12% 0%,rgba(57,118,83,.12),transparent 38%),radial-gradient(ellipse at 92% 100%,rgba(40,123,154,.10),transparent 36%),linear-gradient(180deg,#f8f3e9,#eee5d7)}
+.recursos-carrusel,.recientes-carrusel{position:relative;overflow:hidden;touch-action:pan-y;overscroll-behavior-x:contain;cursor:grab;user-select:none;-webkit-user-select:none;outline-offset:5px}.recursos-carrusel.arrastrando,.recientes-carrusel.arrastrando{cursor:grabbing}
+.recursos-track,.recientes-track{display:flex;width:max-content;will-change:transform;animation:none;transform:translate3d(0,0,0)}.recursos-grupo,.recientes-grupo{display:flex;flex:none;align-items:stretch;gap:18px;padding:8px 18px 22px 0}
+.recurso-destacado{flex:0 0 clamp(255px,27vw,330px);min-height:300px;padding:20px 22px 22px;transform:none;animation:none;box-shadow:0 14px 32px rgba(73,58,50,.10);border-radius:17px}.recurso-destacado:hover,.recurso-destacado:focus-visible{transform:translateY(-4px);box-shadow:0 19px 35px rgba(73,58,50,.16)}.recurso-visual{height:100px;margin-bottom:15px}
+.recursos-ayuda,.recientes-ayuda{margin:4px 0 0;color:#776d61;font-size:12px;line-height:1.6}.recientes-seccion{overflow:hidden;background:#fffaf1}.recientes-encabezado{max-width:760px}.recientes-grupo{gap:15px;padding:8px 0 22px 18px}
+.articulo-reciente{position:relative;display:flex;flex:0 0 clamp(280px,29vw,345px);min-height:235px;flex-direction:column;align-items:flex-start;overflow:hidden;padding:21px 22px;border:1px solid #e5dac7;border-radius:16px;background:linear-gradient(145deg,#fffdf8,#f5eddf);box-shadow:0 12px 28px rgba(73,58,50,.075);color:#493a32;transition:transform .22s,box-shadow .22s}
+.articulo-reciente::after{content:"";position:absolute;right:-45px;bottom:-66px;width:150px;height:150px;border:1px solid rgba(57,118,83,.17);border-radius:50%;box-shadow:0 0 0 17px rgba(57,118,83,.035),0 0 0 35px rgba(40,123,154,.025);pointer-events:none}.articulo-reciente:hover,.articulo-reciente:focus-visible{transform:translateY(-4px);box-shadow:0 17px 34px rgba(73,58,50,.13)}
+.reciente-cabezal{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;color:#8d5742;font-size:9px;font-weight:850;letter-spacing:.12em;text-transform:uppercase}.reciente-cabezal time{color:#776d61;font-weight:650;letter-spacing:.04em}.reciente-id{display:inline-block;margin-top:18px;color:#397653;font:italic 13px Georgia,serif}
+.articulo-reciente strong{position:relative;z-index:1;margin:7px 0 8px;font:400 22px/1.2 Georgia,serif;color:#493a32}.reciente-descripcion{position:relative;z-index:1;display:-webkit-box;overflow:hidden;-webkit-line-clamp:3;-webkit-box-orient:vertical;color:#71675b;font-size:11px;line-height:1.6}.reciente-ir{position:relative;z-index:1;display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:13px;color:#397653;font-size:10px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+.reciente-cargando{flex:0 0 100%;padding:22px;color:#776d61;font-size:13px}.pie{padding:42px 0 25px;background:#493a32}.pie-grid{grid-template-columns:1.45fr 1fr 1fr;gap:clamp(22px,4vw,52px)}.pie-lema{color:#e6c98e!important;font-family:Georgia,serif;font-size:15px!important}.pie-final{margin-top:8px}.ciba-columnas-barra{display:none!important}
+@media(max-width:980px){.hero-contenido{grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:26px}.hero-imagen-marco{min-height:350px}.columnas{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.columna-contenido{min-height:195px}.pie-grid{grid-template-columns:1.2fr 1fr 1fr}}
+@media(max-width:680px){
+.contenedor{width:calc(100% - 34px);max-width:560px}.cabecera .barra{min-height:66px;gap:9px}.marca{gap:8px}.marca-simbolo{width:36px;height:36px}.marca-texto{font-size:21px;letter-spacing:.14em}.marca-texto small{font-size:7px;letter-spacing:.12em}
+.hero-contenido{grid-template-columns:1fr;gap:24px;padding:43px 0 80px}.hero h1{font-size:clamp(39px,10.7vw,55px);margin:17px 0}.hero-descripcion{font-size:14px;line-height:1.72}.hero-botones{gap:9px;margin-top:22px}.boton{min-height:45px;padding-inline:15px;font-size:9px}.hero-imagen-marco{min-height:clamp(245px,70vw,335px);margin:0 8px;max-width:none}.imagen-sello{width:88px;height:88px;right:-8px;bottom:20px;font-size:11px}.hero-pie .contenedor{gap:5px;padding-block:10px;font-size:8px;letter-spacing:.09em}
+.busqueda{padding:20px 0 26px}.busqueda-interior{padding:16px;border-radius:14px}.busqueda-caja{gap:8px;padding:6px 7px 6px 9px;margin-top:14px}.busqueda-oraculo{flex:0 0 48px;width:48px;height:48px}.busqueda-oraculo .busqueda-espiral{width:34px;height:34px}.busqueda-caja button{padding:11px 10px;font-size:9px}.busqueda-caja input{font-size:12px}
+.seccion{padding:48px 0}.seccion h2.titulo{font-size:clamp(29px,8vw,37px)}.columnas{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.columna-foto{height:clamp(105px,31vw,145px)}.columna-contenido{min-height:205px;padding:13px}.columna-numero{font-size:8px;letter-spacing:.1em}.columna-home h3{font-size:21px;margin:8px 0 7px}.columna-home p{font-size:10px;line-height:1.55}.columna-home .columna-ir{font-size:8px;letter-spacing:.06em;padding-top:14px}
+.recursos-destacados{padding-block:48px}.recursos-grupo{gap:12px;padding-right:12px}.recurso-destacado{flex-basis:80vw;min-height:285px;padding:17px 18px}.recurso-visual{height:90px}.recientes-seccion{padding-block:48px}.recientes-grupo{gap:12px;padding-left:17px;padding-right:12px}.articulo-reciente{flex-basis:82vw;min-height:220px;padding:18px}.articulo-reciente strong{font-size:21px}
+.pie-grid{grid-template-columns:1fr 1fr;gap:18px}.pie-grid>div:first-child{grid-column:1/-1}.pie-final{flex-direction:column;gap:7px}
+}
+@media(max-width:380px){.marca-texto{font-size:19px}.marca-simbolo{width:32px;height:32px}.columnas{gap:9px}.columna-contenido{padding:11px;min-height:210px}.columna-home h3{font-size:19px}.columna-home p{font-size:9.5px}.columna-home .columna-ir{font-size:7.5px}.busqueda-caja{gap:6px}.busqueda-oraculo{flex-basis:42px;width:42px;height:42px}.busqueda-oraculo .busqueda-espiral{width:30px;height:30px}.busqueda-caja button{padding-inline:8px}}
+@media(prefers-reduced-motion:reduce){.columna-home,.columna-home .columna-imagen,.recurso-destacado,.articulo-reciente{transition:none!important}}
+
+</style>
 </head>
 
 <body>
+
 
   <!-- CABECERA: SE CONSERVA LA IDENTIDAD CIBA.
        EL MENÚ PRINCIPAL LO INCORPORA ciba-global.js. -->
@@ -1426,7 +1464,7 @@
   </header>
 
   <main>
-    <section class="hero" id="inicio">
+<section class="hero" id="inicio">
       <div class="motivo-fondo" aria-hidden="true"></div>
       <svg class="ciba-paisaje" viewBox="0 0 1440 430" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
         <circle class="luz-sol" cx="1130" cy="125" r="76"/>
@@ -1501,20 +1539,17 @@
           <div class="sobrelinea">Una comunidad que crece</div>
 
           <h1>
-            Nuestras raíces.<br>
-            Nuestro presente.<br>
-            <em>Nuestro futuro.</em>
+            Crecer en familia.<br>
+            <em>Con raíces y conocimiento.</em>
           </h1>
 
           <p class="hero-descripcion">
-            Un espacio cubano para acompañar a las familias en la crianza,
-            comprender el mundo digital, cuidar el bienestar y encontrar
-            orientación. Con conocimiento, sensibilidad y comunidad.
+            Una plataforma cubana para acompañar a las familias durante los primeros mil días. Ciencia, cultura y herramientas prácticas para criar, aprender y cuidar.
           </p>
 
           <div class="hero-botones">
-            <a class="boton boton-dorado" href="#explorar">Explorar CIBA</a>
-            <a class="boton boton-contorno" href="#proyecto">Conocer el proyecto</a>
+            <a class="boton boton-dorado" href="#columnas">Explorar CIBA</a>
+            <a class="boton boton-contorno" href="#recursos-destacados">Recursos útiles</a>
           </div>
         </div>
 
@@ -1522,7 +1557,7 @@
           <img
             class="hero-imagen"
             src="assets/images/portada-ciba.webp"
-            alt="Familia cubana compartiendo un momento cotidiano en su hogar"
+            alt="Familia cubana compartiendo un momento cotidiano en su hogar" loading="eager" fetchpriority="high" decoding="async"
             onerror="this.style.display='none'">
           <div class="imagen-sello">De nuestras raíces nace el futuro</div>
         </div>
@@ -1536,7 +1571,7 @@
       </div>
     </section>
 
-    <section class="busqueda" aria-label="Buscador de contenidos">
+    <section class="busqueda" aria-label="Buscador de contenidos" id="buscador-ciba">
       <div class="contenedor">
         <div class="busqueda-interior">
 
@@ -1579,15 +1614,24 @@
       </div>
     </section>
 
-    <section class="seccion recursos-destacados" id="recursos-destacados" aria-labelledby="recursos-titulo">
+    
+<section class="seccion columnas-seccion" id="columnas" aria-labelledby="columnas-titulo">
+<div class="contenedor">
+<div class="seccion-encabezado columnas-encabezado"><span class="etiqueta">Cuatro caminos · Un mismo propósito</span><h2 class="titulo" id="columnas-titulo">Todo empieza por aquí.</h2><p>Explora cada espacio de CIBA y encuentra contenidos organizados para acompañar la vida familiar.</p></div>
+<div class="columnas">
+<a class="columna columna-home columna-crianza" href="c/C1/" aria-label="Entrar en Crianza"><div class="columna-foto"><img class="columna-imagen" src="assets/images/columna-crianza.webp" alt="Madre cubana jugando y aprendiendo con su hijo" loading="lazy" decoding="async"><span class="columna-sigla">C</span></div><div class="columna-contenido"><span class="columna-numero">01 / CRIANZA</span><h3>Crianza</h3><p>Comprender la infancia, educar con afecto y acompañar cada etapa del desarrollo.</p><span class="columna-ir">Entrar en Crianza <b aria-hidden="true">↗</b></span></div></a>
+<a class="columna columna-home columna-informatica" href="i/I1/" aria-label="Entrar en Informática"><div class="columna-foto"><img class="columna-imagen" src="assets/images/columna-internet.webp" alt="Joven cubana utilizando una computadora portátil" loading="lazy" decoding="async"><span class="columna-sigla">I</span></div><div class="columna-contenido"><span class="columna-numero">02 / INFORMÁTICA</span><h3>Informática</h3><p>Habitar el mundo digital con seguridad, pensamiento crítico y responsabilidad.</p><span class="columna-ir">Entrar en Informática <b aria-hidden="true">↗</b></span></div></a>
+<a class="columna columna-home columna-bienestar" href="b/B1/" aria-label="Entrar en Bienestar"><div class="columna-foto"><img class="columna-imagen" src="assets/images/columna-bienestar.webp" alt="Mujer cubana realizando ejercicios de estiramiento en un jardín" loading="lazy" decoding="async"><span class="columna-sigla">B</span></div><div class="columna-contenido"><span class="columna-numero">03 / BIENESTAR</span><h3>Bienestar</h3><p>Cuidar la salud física y emocional, los vínculos y la vida cotidiana.</p><span class="columna-ir">Entrar en Bienestar <b aria-hidden="true">↗</b></span></div></a>
+<a class="columna columna-home columna-acompanamiento" href="a/A1/" aria-label="Entrar en Acompañamiento"><div class="columna-foto"><img class="columna-imagen" src="assets/images/columna-acompanamiento.webp" alt="Profesional cubana escuchando y orientando a una madre" loading="lazy" decoding="async"><span class="columna-sigla">A</span></div><div class="columna-contenido"><span class="columna-numero">04 / ACOMPAÑAMIENTO</span><h3>Acompañamiento</h3><p>Encontrar orientación, herramientas y apoyo para los desafíos de cada familia.</p><span class="columna-ir">Entrar en Acompañamiento <b aria-hidden="true">↗</b></span></div></a>
+</div></div></section><section class="seccion recursos-destacados" id="recursos-destacados" aria-labelledby="recursos-titulo">
       <div class="contenedor">
         <div class="seccion-encabezado">
           <span class="etiqueta">Herramientas para la vida cotidiana</span>
-          <h2 class="titulo" id="recursos-titulo">Recursos que vale la pena tener a mano.</h2>
-          <p>Accede directamente a bibliotecas, guías y orientaciones prácticas de CIBA.</p>
+          <h2 class="titulo" id="recursos-titulo">Recursos que no te puedes perder.</h2>
+          <p>Bibliotecas, herramientas y guías prácticas para consultar, aprender y volver cuando las necesites.</p>
         </div>
 
-        <div class="recursos-carrusel" aria-label="Carrusel continuo de recursos destacados de CIBA">
+        <div class="recursos-carrusel" aria-label="Carrusel de recursos destacados de CIBA" tabindex="0" role="region" aria-roledescription="carrusel" data-carrusel="recursos">
           <div class="recursos-track">
             <div class="recursos-grupo" role="list"> 
           <a class="recurso-destacado" href="c/C1/fonoteca/" role="listitem">
@@ -1642,239 +1686,25 @@
             </div>
           </div>
         </div>
-        <p class="recursos-ayuda">Los recursos avanzan en un carrusel continuo. El recorrido se repite sin interrupciones; puedes abrir cualquier tarjeta para explorarla.</p>
+        <p class="recursos-ayuda">Los recursos avanzan lentamente. Desliza con el dedo o arrastra con el ratón para recorrerlos en cualquier dirección.</p>
       </div>
     </section>
 
-    <section class="seccion" id="explorar">
-      <div class="contenedor">
-        <div class="seccion-encabezado">
-          <span class="etiqueta">Cuatro caminos, un mismo propósito</span>
-          <h2 class="titulo">Todo lo que nos ayuda a crecer.</h2>
-          <p>
-            CIBA reúne cuatro grandes espacios de conocimiento y acompañamiento.
-            Cada uno aborda una dimensión esencial de la vida familiar.
-          </p>
-        </div>
+    
+<section class="seccion recientes-seccion" id="articulos-recientes" aria-labelledby="recientes-titulo"><div class="contenedor">
+<div class="seccion-encabezado recientes-encabezado"><span class="etiqueta">Nuevas lecturas · CIBA</span><h2 class="titulo" id="recientes-titulo">Lo último que hemos publicado.</h2><p>Cinco artículos recientes para seguir aprendiendo y acompañando cada etapa.</p></div>
+<div class="recientes-carrusel" tabindex="0" role="region" aria-label="Cinco artículos más recientes de CIBA" aria-roledescription="carrusel" data-carrusel="recientes"><div class="recientes-track"><div class="recientes-grupo" id="recientes-lista" aria-live="polite"><div class="reciente-cargando">Cargando las últimas publicaciones…</div></div></div></div>
+<p class="recientes-ayuda">Las novedades se actualizan automáticamente. Desliza o arrastra para leer los titulares.</p>
+</div></section></main>
 
-        <div class="columnas">
-
-          <a class="columna" href="#areas" style="background:#397653;background-image:none;box-shadow:0 10px 24px rgba(0,0,0,.10);">
-            <div>
-              <div class="columna-numero">01 / C</div>
-              <div class="columna-letra">C</div>
-              <img class="columna-imagen"
-                   src="assets/images/columna-crianza.webp"
-                   alt="Madre cubana jugando y aprendiendo con su hijo en el hogar">
-            </div>
-            <div>
-              <h3>Crianza</h3>
-              <p>Comprender la infancia, educar con afecto y acompañar cada etapa del desarrollo.</p>
-              <div class="columna-ir">Explorar espacio ↗</div>
-            </div>
-          </a>
-
-          <a class="columna" href="#areas" style="background:#287B9A;background-image:none;box-shadow:0 10px 24px rgba(0,0,0,.10);">
-            <div>
-              <div class="columna-numero">02 / I</div>
-              <div class="columna-letra">I</div>
-              <img class="columna-imagen"
-                   src="assets/images/columna-internet.webp"
-                   alt="Joven cubana utilizando una computadora portátil y un teléfono móvil">
-            </div>
-            <div>
-              <h3>Informática</h3>
-              <p>Habitar el mundo digital con seguridad, pensamiento crítico y responsabilidad.</p>
-              <div class="columna-ir">Explorar espacio ↗</div>
-            </div>
-          </a>
-
-          <a class="columna" href="#areas" style="background:#8C671F;background-image:none;box-shadow:0 10px 24px rgba(0,0,0,.10);">
-            <div>
-              <div class="columna-numero">03 / B</div>
-              <div class="columna-letra">B</div>
-              <img class="columna-imagen"
-                   src="assets/images/columna-bienestar.webp"
-                   alt="Mujer cubana realizando ejercicios de estiramiento en un jardín tropical">
-            </div>
-            <div>
-              <h3>Bienestar</h3>
-              <p>Cuidar la salud emocional, los vínculos y la vida cotidiana de las familias.</p>
-              <div class="columna-ir">Explorar espacio ↗</div>
-            </div>
-          </a>
-
-          <a class="columna" href="#areas" style="background:#A9443B;background-image:none;box-shadow:0 10px 24px rgba(0,0,0,.10);">
-            <div>
-              <div class="columna-numero">04 / A</div>
-              <div class="columna-letra">A</div>
-              <img class="columna-imagen"
-                   src="assets/images/columna-acompanamiento.webp"
-                   alt="Profesional cubana escuchando y orientando a una madre en un espacio comunitario">
-            </div>
-            <div>
-              <h3>Acompañamiento</h3>
-              <p>Encontrar orientación, herramientas y apoyo para los desafíos de cada día.</p>
-              <div class="columna-ir">Explorar espacio ↗</div>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="seccion areas" id="areas">
-      <div class="contenedor">
-        <div class="seccion-encabezado">
-          <span class="etiqueta">Conocimiento organizado para la vida real</span>
-          <h2 class="titulo">Entra en cada universo.</h2>
-          <p>
-            Las áreas y los contenidos publicados aparecerán aquí
-            automáticamente a medida que crezca la biblioteca de CIBA.
-          </p>
-        </div>
-
-        <div class="areas-lista" id="areas-lista">
-          <article class="area-card">
-            <small>CIBA · BIBLIOTECA</small>
-            <h3>Estamos preparando este espacio</h3>
-            <p>Pronto encontrarás aquí nuevas áreas y contenidos.</p>
-          </article>
-        </div>
-
-        <p class="estado-catalogo" id="estado-catalogo">
-          Biblioteca CIBA
-        </p>
-      </div>
-    </section>
-
-    <section class="seccion filosofia" id="proyecto">
-      <div class="contenedor filosofia-grid">
-        <div class="filosofia-frase">
-          <blockquote>
-            “Una familia acompañada tiene más herramientas para construir su propio camino”.
-          </blockquote>
-          <p>El espíritu de CIBA</p>
-        </div>
-
-        <div class="filosofia-texto">
-          <span class="etiqueta">Nuestra razón de ser</span>
-          <h2 class="titulo">Tecnología con raíces humanas.</h2>
-          <p>
-            CIBA nace de una convicción: las familias necesitan información
-            comprensible, orientación confiable y espacios donde sentirse
-            acompañadas.
-          </p>
-          <p>
-            Unimos conocimiento, cultura y herramientas digitales desde una
-            mirada cercana a nuestra realidad. No para sustituir a las familias,
-            sino para fortalecer sus capacidades y sus decisiones.
-          </p>
-          <p>
-            Creemos en una Cuba donde el conocimiento circule, las generaciones
-            dialoguen y cada niña, niño y adolescente encuentre mejores
-            oportunidades para desarrollarse.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="seccion personajes" id="nayara-turey">
-      <div class="contenedor">
-        <div class="seccion-encabezado">
-          <span class="etiqueta">Dos voces para acompañar</span>
-          <h2 class="titulo">Nayara y Turey.</h2>
-          <p>
-            Dos personajes simbólicos que representan a madres y padres.
-            Están aquí para ayudarte a explorar CIBA y acercarte a sus recursos.
-          </p>
-        </div>
-
-        <div class="personajes-grid">
-          <article class="personaje">
-            <div class="inicial">N.</div>
-            <h3>Nayara</h3>
-            <p>
-              Una voz cercana para explorar preguntas sobre crianza,
-              desarrollo, vínculos y vida familiar.
-            </p>
-            <a href="https://wa.me/5350861330?text=Hola%2C%20quiero%20orientaci%C3%B3n%20sobre%20un%20tema%20de%20CIBA">
-              Solicitar orientación ↗
-            </a>
-          </article>
-
-          <article class="personaje">
-            <div class="inicial">T.</div>
-            <h3>Turey</h3>
-            <p>
-              Un compañero para descubrir recursos, comprender el entorno
-              digital y encontrar caminos de acompañamiento.
-            </p>
-            <a href="https://wa.me/5350861330?text=Hola%2C%20quiero%20orientaci%C3%B3n%20sobre%20un%20tema%20de%20CIBA">
-              Solicitar orientación ↗
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="invitacion">
-      <div class="contenedor">
-        <span class="etiqueta">Este espacio también es tuyo</span>
-        <h2>Crecer es más hermoso cuando lo hacemos acompañados.</h2>
-        <p>
-          Explora, aprende, comparte y vuelve siempre que necesites
-          una orientación para tu familia.
-        </p>
-        <a class="boton" href="#explorar">Comenzar a explorar</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="pie">
-    <div class="contenedor">
-      <div class="pie-grid">
-        <div>
-          <h3>CIBA</h3>
-          <p>
-            Crianza · Informática · Bienestar · Acompañamiento.
-            Una plataforma para las familias, construida desde una mirada
-            humana, cubana y digital.
-          </p>
-        </div>
-
-        <div>
-          <h3>Explorar</h3>
-          <p><a href="#explorar">Las cuatro columnas</a></p>
-          <p><a href="#areas">Áreas y contenidos</a></p>
-          <p><a href="#proyecto">Sobre CIBA</a></p>
-        </div>
-
-        <div>
-          <h3>Contacto</h3>
-          <p><a href="https://wa.me/5350861330">Orientación por WhatsApp</a></p>
-          <p><a href="#nayara-turey">Nayara y Turey</a></p>
-        </div>
-      </div>
-
-      <div class="pie-final">
-        <span>© CIBA · Crecemos acompañándonos.</span>
-        <span>Hecho con raíces, conocimiento y futuro.</span>
-      </div>
-
-      <div class="aviso">
-        Los contenidos de CIBA son orientativos y no sustituyen la atención
-        profesional cuando esta sea necesaria.
-      </div>
-    </div>
-  </footer>
-
-  <script>
+<footer class="pie"><div class="contenedor"><div class="pie-grid">
+<div><h3>CIBA</h3><p>Crianza · Informática · Bienestar · Acompañamiento. Una plataforma cubana de educación parental para crecer en familia.</p><p class="pie-lema">Crecemos acompañándonos.</p></div>
+<div><h3>Explorar</h3><p><a href="c/C1/">Crianza</a></p><p><a href="i/I1/">Informática</a></p><p><a href="b/B1/">Bienestar</a></p><p><a href="a/A1/">Acompañamiento</a></p></div>
+<div><h3>Comunidad</h3><p><a href="https://whatsapp.com/channel/0029VbAOKuw2975HsSJutV32" target="_blank" rel="noopener noreferrer">Canal de WhatsApp</a></p><p><a href="mailto:ciba.1000dias@gmail.com">Contacto CIBA</a></p><p><a href="plataforma/sobre-ciba/">Sobre el proyecto</a></p><p><a href="plataforma/confianza-y-legal/privacidad/">Privacidad</a></p></div>
+</div><div class="pie-final"><span>© CIBA · Crecemos acompañándonos.</span><span>Hecho con raíces, conocimiento y futuro.</span></div><div class="aviso">Los contenidos de CIBA son orientativos y no sustituyen la valoración profesional cuando esta sea necesaria.</div></div></footer><script>
     (() => {
       "use strict";
 
-      const areasLista = document.getElementById("areas-lista");
-      const estadoCatalogo = document.getElementById("estado-catalogo");
       const formBusqueda = document.getElementById("form-busqueda");
       const consulta = document.getElementById("consulta");
       const resultados = document.getElementById("resultados");
@@ -1882,7 +1712,6 @@
       const resultadoLista = document.getElementById("resultado-lista");
 
       let paginas = [];
-      let areas = [];
       let alimentos = null;
 
       function normalizar(valor) {
@@ -1920,13 +1749,6 @@
         return reglas.find(regla => regla[2].some(patron => q.includes(patron)));
       }
 
-      const columnas = {
-        C: "Crianza",
-        I: "Informática",
-        B: "Bienestar",
-        A: "Acompañamiento"
-      };
-
       function escapar(valor) {
         return String(valor ?? "").replace(/[&<>"']/g, caracter => ({
           "&": "&amp;",
@@ -1937,50 +1759,11 @@
         })[caracter]);
       }
 
-      function mostrarAreas() {
-        if (!areas.length) {
-          estadoCatalogo.textContent =
-            "La biblioteca está creciendo. Pronto encontrarás nuevas áreas y contenidos.";
-          return;
-        }
-
-        areasLista.innerHTML = areas.map(area => {
-          const letra = String(area.columna || "").toUpperCase();
-          const columna = ["C", "I", "B", "A"].includes(letra) ? letra : "";
-          const titulo = escapar(area.titulo || "Área CIBA");
-          const descripcion = escapar(area.descripcion || "");
-          const ruta = escapar(area.ruta_publica || "#areas");
-          const nombreColumna = escapar(columnas[letra] || "CIBA");
-
-          return `
-            <a class="area-card" data-columna="${columna}" href="${ruta}">
-              <span class="area-card-cabezal">
-                <small>${nombreColumna} · ${escapar(area.id || "")}</small>
-                <strong>${titulo}</strong>
-              </span>
-              <span class="area-card-cuerpo">
-                <span class="area-card-motivos" aria-hidden="true">
-                  <svg viewBox="0 0 100 70" focusable="false">
-                    <path d="M31 23 C20 13 9 17 13 28 C17 37 24 37 31 33 M68 23 C79 13 91 17 87 28 C83 37 76 37 69 33 M31 48 C19 58 10 53 14 43 C18 35 25 37 32 43 M68 48 C81 58 90 53 86 43 C82 35 75 37 68 43 M31 24 C38 16 62 16 69 24 L73 45 C68 57 38 57 27 45 Z M42 21 C42 10 58 10 58 21 M50 20 L50 12 M37 30 C44 25 57 25 64 30 M38 43 C46 48 55 48 63 43"/>
-                  </svg>
-                  <svg viewBox="0 0 100 70" focusable="false">
-                    <path d="M13 49 C22 48 29 48 35 52 C43 58 59 56 66 49 C73 42 72 31 65 25 C56 17 42 20 39 30 C36 40 47 46 54 40 C59 36 55 29 50 31 C47 32 48 36 51 36 M13 49 C12 43 17 38 24 38 C31 38 34 43 35 50 M69 48 C77 50 83 47 87 42 M80 39 L82 31 M88 39 L92 33"/>
-                  </svg>
-                </span>
-                <span class="area-card-descripcion">${descripcion}</span>
-              </span>
-            </a>
-          `;
-        }).join("");
-
-        estadoCatalogo.textContent =
-          `${areas.length} áreas disponibles · ${paginas.length} contenidos publicados`;
-      }
-
       async function buscar(termino) {
+        try { const catalogo = await window.__CIBA_CATALOGO_PROMESA__; paginas = Array.isArray(catalogo.paginas) ? catalogo.paginas : paginas; } catch (error) { console.warn("CIBA: no se pudo cargar el catálogo.", error); }
         const consultaNormalizada = normalizar(termino);
         const ignoradas = new Set(["mi","mis","el","la","los","las","un","una","unos","unas","puede","pueden","puedo","podria","dar","darle","ofrecer","ofrecerle","comer","para","desde","cuando","como","que","es","de","del","y","a","esta","este","bebe","bebes","mes","meses","ano","anos"]);
-        const palabras = consultaNormalizada.split(/\\s+/).filter(p => p.length > 1 && !ignoradas.has(p) && !/^\\d+$/.test(p));
+        const palabras = consultaNormalizada.split(/\s+/).filter(p => p.length > 1 && !ignoradas.has(p) && !/^\d+$/.test(p));
         if (!consultaNormalizada) {
           resultados.classList.remove("visible");
           return;
@@ -2059,157 +1842,53 @@
         buscar(consulta.value.trim());
       });
 
-      fetch("data/catalogo.json")
-        .then(respuesta => {
-          if (!respuesta.ok) throw new Error("Catálogo no disponible");
-          return respuesta.json();
-        })
-        .then(catalogo => {
-          areas = Array.isArray(catalogo.areas) ? catalogo.areas : [];
-          paginas = Array.isArray(catalogo.paginas) ? catalogo.paginas : [];
-          mostrarAreas();
-        })
-        .catch(() => {
-          estadoCatalogo.textContent =
-            "La biblioteca se está preparando. Puedes explorar las cuatro columnas mientras tanto.";
-        });
+      window.__CIBA_CATALOGO_PROMESA__ = fetch("data/catalogo.json", { cache: "no-cache" })
+        .then(respuesta => { if (!respuesta.ok) throw new Error("Catálogo no disponible"); return respuesta.json(); });
+      window.__CIBA_CATALOGO_PROMESA__
+        .then(catalogo => { paginas = Array.isArray(catalogo.paginas) ? catalogo.paginas : []; })
+        .catch(error => console.warn("CIBA: catálogo de búsqueda no disponible.", error));
     })();
   </script>
 
-  <script>
-    (() => {
-      const carrusel = document.querySelector(".recursos-carrusel");
-      const track = carrusel?.querySelector(".recursos-track");
-      const grupo = track?.querySelector(".recursos-grupo");
-      if (!carrusel || !track || !grupo || track.dataset.inicializado === "true") return;
-      const copia = grupo.cloneNode(true);
-      copia.setAttribute("aria-hidden", "true");
-      copia.querySelectorAll("a").forEach(enlace => {
-        enlace.setAttribute("tabindex", "-1");
-        enlace.setAttribute("aria-hidden", "true");
-      });
-      track.appendChild(copia);
-      track.dataset.inicializado = "true";
-      const movimientoReducido = window.matchMedia("(prefers-reduced-motion: reduce)");
-      const actualizarMovimiento = () => {
-        track.style.animationPlayState = movimientoReducido.matches ? "paused" : "";
-      };
-      actualizarMovimiento();
-      movimientoReducido.addEventListener?.("change", actualizarMovimiento);
-    })();
-  </script>
-
-
-  <script>
-    (() => {
-      "use strict";
-      const iniciarCibaVisual = () => {
-        const track = document.querySelector(".recursos-track");
-        const grupo = track && track.querySelector(".recursos-grupo");
-        if (track && grupo && !track.querySelector('.recursos-grupo[aria-hidden="true"]')) {
-          const clon = grupo.cloneNode(true);
-          clon.setAttribute("aria-hidden", "true");
-          clon.setAttribute("inert", "");
-          clon.querySelectorAll("a").forEach(a => a.setAttribute("tabindex", "-1"));
-          track.appendChild(clon);
-        }
-
-        const columnas = document.querySelector(".columnas");
-        if (!columnas || document.querySelector(".ciba-columnas-barra")) return;
-
-        const barra = document.createElement("nav");
-        barra.className = "ciba-columnas-barra";
-        barra.setAttribute("aria-label", "Acceso rápido a las cuatro columnas de CIBA");
-        const nombres = [
-          {letra:"C",nombre:"Crianza",id:"columna-crianza"},
-          {letra:"I",nombre:"Informática",id:"columna-internet"},
-          {letra:"B",nombre:"Bienestar",id:"columna-bienestar"},
-          {letra:"A",nombre:"Acompañamiento",id:"columna-acompanamiento"}
-        ];
-        const tarjetas = Array.from(columnas.querySelectorAll(".columna"));
-        nombres.forEach((item, i) => {
-          const tarjeta = tarjetas[i];
-          if (tarjeta) tarjeta.id = item.id;
-          const enlace = document.createElement("a");
-          enlace.className = "ciba-columna-acceso";
-          enlace.href = "#" + item.id;
-          enlace.setAttribute("aria-label", "Ir a " + item.nombre);
-          enlace.innerHTML = '<span class="letra">' + item.letra + '</span><span>' + item.nombre + '</span>';
-          barra.appendChild(enlace);
-        });
-        document.body.appendChild(barra);
-
-        const esMovil = window.matchMedia("(max-width: 760px)");
-        let pendiente = false;
-        let observador = null;
-
-        const actualizarBarra = () => {
-          pendiente = false;
-          if (esMovil.matches) {
-            barra.style.display = "none";
-            barra.classList.remove("visible","en-movimiento","en-cima");
-            return;
-          }
-          barra.style.display = "grid";
-
-          barra.style.right = "auto";
-          const rect = columnas.getBoundingClientRect();
-          const cabecera = document.querySelector(".cabecera");
-          const limiteSuperior = Math.max(82, (cabecera?.getBoundingClientRect().bottom || 68) + 5);
-          barra.classList.add("visible");
-
-          if (rect.top > window.innerHeight - 24) {
-            barra.classList.remove("en-movimiento","en-cima");
-            barra.style.top = "auto";
-            barra.style.bottom = "18px";
-            barra.style.left = "50%";
-            barra.style.width = "min(1120px,calc(100% - 40px))";
-            barra.style.transform = "translateX(-50%)";
-            return;
-          }
-
-          const posicion = Math.max(limiteSuperior, Math.min(rect.top, window.innerHeight - 58));
-          barra.style.bottom = "auto";
-          barra.style.top = posicion + "px";
-          barra.style.left = rect.left + "px";
-          barra.style.width = rect.width + "px";
-          barra.style.transform = "none";
-          barra.classList.add("en-movimiento");
-          barra.classList.toggle("en-cima", rect.bottom <= limiteSuperior + 12);
-        };
-
-        const programar = () => {
-          if (!pendiente) {
-            pendiente = true;
-            window.requestAnimationFrame(actualizarBarra);
-          }
-        };
-
-        const activarMovil = () => {
-          if (esMovil.matches) {
-            barra.style.display = "none";
-            barra.classList.remove("visible");
-          } else {
-            barra.style.display = "grid";
-          }
-        };
-
-        window.addEventListener("scroll", programar, {passive:true});
-        window.addEventListener("resize", () => { programar(); activarMovil(); });
-        esMovil.addEventListener?.("change", () => { activarMovil(); programar(); });
-        activarMovil();
-        actualizarBarra();
-      };
-
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", iniciarCibaVisual, {once:true});
-      } else {
-        iniciarCibaVisual();
-      }
-    })();
-  </script>
-
-  <script type="module" src="assets/js/ciba-global.js?v=20261111-01"></script>
+<script>
+(() => {
+"use strict";
+const reducido=window.matchMedia("(prefers-reduced-motion: reduce)");
+const catalogoPromesa=window.__CIBA_CATALOGO_PROMESA__||fetch("data/catalogo.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("Catálogo no disponible");return r.json();});
+const nombres={C:"Crianza",I:"Informática",B:"Bienestar",A:"Acompañamiento"};
+function fechaCorta(v){if(!v)return"";const f=new Date(v+"T12:00:00");return Number.isNaN(f.getTime())?"":new Intl.DateTimeFormat("es",{day:"numeric",month:"short"}).format(f).replace(".","");}
+function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]);}
+function pintarRecientes(cat){
+const grupo=document.getElementById("recientes-lista");if(!grupo)return;
+const arts=(Array.isArray(cat.paginas)?cat.paginas:[]).filter(p=>p.estado==="publicado"&&p.mostrar_en_columna!==false&&p.ruta_publica&&p.titulo&&p.fecha_publicacion)
+.sort((a,b)=>{const d=String(b.fecha_publicacion).localeCompare(String(a.fecha_publicacion));return d||String(b.id||"").localeCompare(String(a.id||""),"es",{numeric:true});}).slice(0,5);
+if(!arts.length){grupo.innerHTML='<p class="reciente-cargando">Las nuevas publicaciones aparecerán aquí.</p>';return;}
+grupo.innerHTML=arts.map(p=>'<a class="articulo-reciente" href="'+esc(p.ruta_publica)+'"><span class="reciente-cabezal"><span>'+esc(nombres[p.columna]||"CIBA")+'</span><time datetime="'+esc(p.fecha_publicacion)+'">'+esc(fechaCorta(p.fecha_publicacion))+'</time></span><span class="reciente-id">'+esc(p.id||"CIBA")+'</span><strong>'+esc(p.titulo)+'</strong><span class="reciente-descripcion">'+esc(p.descripcion||"Una nueva lectura de CIBA para acompañar a las familias.")+'</span><span class="reciente-ir">Leer artículo <b aria-hidden="true">↗</b></span></a>').join("");
+}
+function init(c,gs,ts,dir,speed){
+const t=c.querySelector(ts),g=t&&t.querySelector(gs);if(!t||!g||t.dataset.cibaReady==="true")return;
+const clone=g.cloneNode(true);clone.setAttribute("aria-hidden","true");clone.setAttribute("inert","");
+clone.querySelectorAll("a,button,[tabindex]").forEach(e=>e.setAttribute("tabindex","-1"));t.appendChild(clone);t.dataset.cibaReady="true";
+let width=0,x=dir<0?0:-1,drag=false,sx=0,ox=0,moved=false,suppress=false,pause=false,last=0;
+function wrap(){if(!width)return;while(x<=-width)x+=width;while(x>0)x-=width;}
+function paint(){t.style.transform="translate3d("+x+"px,0,0)";}
+function measure(){width=g.getBoundingClientRect().width;if(width&&dir>0&&x===-1)x=-width;wrap();paint();}
+function tick(now){if(!last)last=now;const dt=Math.min((now-last)/1000,.05);last=now;if(!drag&&!pause&&!reducido.matches&&width){x+=dir*speed*dt;wrap();paint();}requestAnimationFrame(tick);}
+c.addEventListener("pointerdown",e=>{if(e.pointerType==="mouse"&&e.button!==0)return;drag=true;moved=false;sx=e.clientX;ox=x;last=0;c.classList.add("arrastrando");try{c.setPointerCapture(e.pointerId);}catch{}});
+c.addEventListener("pointermove",e=>{if(!drag)return;const dx=e.clientX-sx;if(Math.abs(dx)>7)moved=true;x=ox+dx;wrap();paint();});
+function end(e){if(!drag)return;drag=false;c.classList.remove("arrastrando");if(moved){suppress=true;setTimeout(()=>suppress=false,100);}last=0;if(e&&c.hasPointerCapture?.(e.pointerId)){try{c.releasePointerCapture(e.pointerId);}catch{}}}
+c.addEventListener("pointerup",end);c.addEventListener("pointercancel",end);c.addEventListener("lostpointercapture",()=>{drag=false;c.classList.remove("arrastrando");});
+c.addEventListener("click",e=>{if(!suppress)return;e.preventDefault();e.stopPropagation();suppress=false;},true);
+c.addEventListener("pointerenter",()=>pause=true);c.addEventListener("pointerleave",()=>{pause=false;last=0;});c.addEventListener("focusin",()=>pause=true);c.addEventListener("focusout",e=>{if(!c.contains(e.relatedTarget))pause=false;});
+c.addEventListener("keydown",e=>{if(e.key!=="ArrowLeft"&&e.key!=="ArrowRight")return;if(e.target.matches("input,textarea,button"))return;e.preventDefault();x+=e.key==="ArrowLeft"?180:-180;wrap();paint();pause=true;setTimeout(()=>{pause=false;last=0;},1600);});
+if("ResizeObserver"in window)new ResizeObserver(measure).observe(g);else window.addEventListener("resize",measure,{passive:true});
+measure();reducido.addEventListener?.("change",()=>last=0);requestAnimationFrame(tick);
+}
+catalogoPromesa.then(pintarRecientes).catch(err=>{console.warn("CIBA: artículos recientes no disponibles.",err);const g=document.getElementById("recientes-lista");if(g)g.innerHTML='<p class="reciente-cargando">No se pudo cargar la lista de publicaciones. Inténtalo de nuevo más tarde.</p>';});
+document.querySelectorAll('[data-carrusel="recursos"]').forEach(e=>init(e,".recursos-grupo",".recursos-track",-1,19));
+document.querySelectorAll('[data-carrusel="recientes"]').forEach(e=>init(e,".recientes-grupo",".recientes-track",1,15));
+})();
+</script><script type="module" src="assets/js/ciba-global.js?v=20261112-01"></script>
 
 </body>
 </html>
