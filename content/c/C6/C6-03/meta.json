@@ -20,7 +20,7 @@
   ],
   "estado": "publicado",
   "preview_publica": false,
-  "fecha_publicacion": "2026-11-12",
+  "fecha_publicacion": "2026-11-11",
   "mostrar_en_columna": true,
   "mostrar_en_area": true,
   "enlaces_externos": [
@@ -33,6 +33,11 @@
       "titulo": "OMS: Ahogamientos (2026)",
       "url": "https://www.who.int/es/news-room/fact-sheets/detail/drowning/",
       "tipo": "fuente"
+    },
+    {
+      "titulo": "Fotografía: RDNE Stock project (Pexels)",
+      "url": "https://www.pexels.com/photo/a-person-bathing-a-baby-in-a-baby-tub-6849414/",
+      "tipo": "imagen"
     }
   ]
 }
