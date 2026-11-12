@@ -1,0 +1,88 @@
+{
+  "columna": "C",
+  "area": "C7",
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "id": "C7-05",
+  "titulo": "Creencias familiares sobre crianza: cómo dialogar sin confrontar",
+  "descripcion": "Guía para conversar sobre consejos heredados, distinguir costumbres seguras de prácticas que requieren actualización, contrastar recomendaciones con evidencia y establecer acuerdos respetuosos entre madres, padres, abuelos y otras personas cuidadoras durante los primeros dos años.",
+  "subseccion": "Crianza en contexto cubano",
+  "palabras_clave": [
+    "creencias-familiares-crianza",
+    "consejos-de-abuelos",
+    "dialogo-familiar",
+    "acuerdos-de-crianza",
+    "crianza-compartida",
+    "abuelos-cuidadores",
+    "crianza-respetuosa",
+    "evidencia-cientifica",
+    "seguridad-infantil",
+    "primeros-1000-dias",
+    "crianza-cuba"
+  ],
+  "enlaces_externos": [
+    {
+      "titulo": "Fotografía: Tima Miroshnichenko / Pexels",
+      "url": "https://www.pexels.com/photo/a-family-in-a-living-room-5591277/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "Fotografía: Gustavo Fring / Pexels",
+      "url": "https://www.pexels.com/photo/a-family-sitting-on-a-couch-7489248/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "Fotografía: William Fortunato / Pexels",
+      "url": "https://www.pexels.com/photo/multiracial-parents-with-little-girl-speaking-on-sofa-at-home-6393113/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "Fotografía: SHVETS production / Pexels",
+      "url": "https://www.pexels.com/photo/grandfather-and-granddaughter-sitting-on-the-couch-8899955/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "Fotografía: William Fortunato / Pexels",
+      "url": "https://www.pexels.com/photo/multiracial-parents-with-unrecognizable-toddler-child-on-sofa-at-home-6393115/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "UNICEF Cuba: Crianza respetuosa",
+      "url": "https://www.unicef.org/cuba/midete-crianza-respetuosa",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "Sociedad Cubana de Pediatría: Del pediatra para la familia",
+      "url": "https://scpwpoffloadmedia.s3.amazonaws.com/wp-content/uploads/2023/02/03151802/DEL-PEDIATRA-PARA-LA-FAMILIA-1a-ED-2023-SCP.pdf",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "UNICEF Cuba: Inventario de soluciones para la crianza respetuosa",
+      "url": "https://www.unicef.org/cuba/informes/inventario-de-soluciones-para-la-crianza-respetuosa",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OMS: Marco para el cuidado cariñoso y sensible",
+      "url": "https://www.who.int/publications/i/item/9789241514064",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "AAP: Guía para un sueño seguro",
+      "url": "https://www.healthychildren.org/Spanish/ages-stages/baby/sleep/Paginas/A-Parents-Guide-to-Safe-Sleep.aspx",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "CDC: Prevención del botulismo infantil",
+      "url": "https://www.cdc.gov/botulism/prevention/infant-botulism.html",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "UNICEF: Portal de Crianza",
+      "url": "https://www.unicef.org/lac/crianza",
+      "tipo": "fuente"
+    }
+  ]
+}
