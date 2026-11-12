@@ -1,0 +1,65 @@
+{
+  "columna": "C",
+  "area": "C7",
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "id": "C7-06",
+  "titulo": "Crianza en la diáspora: mantener lo cubano sin perder lo nuevo",
+  "descripcion": "Orientación para familias cubanas que crían lejos de su país: transmitir identidad, idioma, canciones, relatos y tradiciones durante los primeros dos años, integrando prácticas saludables del nuevo entorno sin idealizar ni rechazar culturas.",
+  "subseccion": "Crianza en contexto cubano",
+  "palabras_clave": [
+    "crianza-en-la-diaspora",
+    "diaspora-cubana",
+    "familias-cubanas-en-el-exterior",
+    "identidad-cultural",
+    "identidad-cubana",
+    "crianza-transcultural",
+    "crianza-bicultural",
+    "transmision-cultural",
+    "lengua-materna",
+    "espanol-en-familia",
+    "bilinguismo-temprano",
+    "canciones-cubanas",
+    "nanas-tradicionales",
+    "abuelos-a-distancia",
+    "familia-transnacional",
+    "migracion-y-crianza",
+    "pertenencia-cultural",
+    "memoria-familiar",
+    "tradiciones-cubanas",
+    "primeros-1000-dias",
+    "primeros-dos-anos",
+    "adaptacion-cultural",
+    "familias-migrantes"
+  ],
+  "enlaces_externos": [
+    {
+      "titulo": "EP 38: ¿Qué le debemos a nuestras raíces? — Porque lo Dice tu Madre",
+      "url": "https://music.youtube.com/podcast/kIA8deYT9B4",
+      "tipo": "recurso audiovisual externo"
+    },
+    {
+      "titulo": "UNICEF: Desarrollo de la primera infancia",
+      "url": "https://www.unicef.org/early-childhood-development",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "UNICEF: Crianza",
+      "url": "https://www.unicef.org/lac/crianza",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "Organización Mundial de la Salud: Marco para el cuidado cariñoso y sensible",
+      "url": "https://www.who.int/publications/i/item/9789241514064",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "UNESCO: Educación multilingüe y lengua materna",
+      "url": "https://www.unesco.org/en/languages-education",
+      "tipo": "fuente"
+    }
+  ]
+}
