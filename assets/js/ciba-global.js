@@ -369,14 +369,24 @@
           { id:'B2', titulo:'Salud materna y posparto' },
           { id:'B3', titulo:'Salud emocional perinatal' },
           { id:'B4', titulo:'Nutrición y estado nutricional' },
-          { id:'B5', titulo:'Prevención clínica y vacunas' }
+          { id:'B5', titulo:'Prevención clínica y vacunas' },
+          { id:'B6', titulo:'Crecimiento y desarrollo', ruta:'b/#tema-06' },
+          { id:'B7', titulo:'Enfermedades frecuentes en la primera infancia', ruta:'b/#tema-07' },
+          { id:'B8', titulo:'Señales de alarma y urgencias', ruta:'b/#tema-08' },
+          { id:'B9', titulo:'Salud bucal y hábitos saludables', ruta:'b/#tema-09' },
+          { id:'B10', titulo:'Salud ambiental y prevención de riesgos clínicos', ruta:'b/#tema-10' }
         ],
         A: [
           { id:'A1', titulo:'Apoyo emocional a la familia' },
           { id:'A2', titulo:'Corresponsabilidad y familia' },
           { id:'A3', titulo:'Redes de apoyo y comunidad' },
           { id:'A4', titulo:'Cuidado del cuidador' },
-          { id:'A5', titulo:'Acompañamiento práctico y seguimiento' }
+          { id:'A5', titulo:'Acompañamiento práctico y seguimiento' },
+          { id:'A6', titulo:'Crianza a distancia y migración', ruta:'a/#tema-06' },
+          { id:'A7', titulo:'Abuelos y cuidadores', ruta:'a/#tema-07' },
+          { id:'A8', titulo:'Familias diversas y situaciones especiales', ruta:'a/#tema-08' },
+          { id:'A9', titulo:'Duelo, pérdida y situaciones difíciles', ruta:'a/#tema-09' },
+          { id:'A10', titulo:'Comunidad CIBA y acompañamiento entre familias', ruta:'a/#tema-10' }
         ]
       };
 
@@ -426,7 +436,7 @@
       columnas.forEach(columna => {
         const areasFuente = (datos.areas || []).filter(area => area.columna === columna.id);
         const areasColumna = taxonomia[columna.id] || [];
-        const rutaColumna = columna.id === 'I' ? 'i/' : (areasFuente.sort((a, b) => (a.orden || 0) - (b.orden || 0))[0]?.ruta_publica || null);
+        const rutaColumna = ({ I:'i/', B:'b/', A:'a/' })[columna.id] || (areasFuente.sort((a, b) => (a.orden || 0) - (b.orden || 0))[0]?.ruta_publica || null);
         const grupoColumna = crearDesplegable(
           columna.titulo,
           'ciba-global-columna ciba-global-columna-' + columna.id.toLowerCase(),
