@@ -19,11 +19,11 @@
     "primeros-1000-dias",
     "crianza-respetuosa"
   ],
-  "estado": "revision",
+  "estado": "publicado",
   "fecha_publicacion": "2026-11-12",
-  "mostrar_en_columna": false,
-  "mostrar_en_area": false,
-  "preview_publica": true,
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "preview_publica": false,
   "enlaces_externos": [
     {
       "titulo": "American Academy of Pediatrics: guía para el sueño seguro del bebé",
