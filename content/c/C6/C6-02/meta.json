@@ -20,7 +20,7 @@
   ],
   "estado": "publicado",
   "preview_publica": false,
-  "fecha_publicacion": "2026-11-12",
+  "fecha_publicacion": "2026-11-11",
   "mostrar_en_columna": true,
   "mostrar_en_area": true,
   "enlaces_externos": [
@@ -33,6 +33,16 @@
       "titulo": "AHA/AAP: Pediatric Basic Life Support, 2025",
       "url": "https://publications.aap.org/pediatrics/article/157/1/e2025074350/205235/Part-6-Pediatric-Basic-Life-Support-2025-American",
       "tipo": "fuente"
+    },
+    {
+      "titulo": "Fotografía: Aleson Padilha (Pexels)",
+      "url": "https://www.pexels.com/photo/women-practicing-cpr-on-dummies-in-training-session-34104789/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "Fotografía: Vanessa Loring (Pexels)",
+      "url": "https://www.pexels.com/photo/baby-girl-sitting-on-high-chair-5082042/",
+      "tipo": "imagen"
     }
   ]
 }
