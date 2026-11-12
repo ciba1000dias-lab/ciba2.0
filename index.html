@@ -1867,7 +1867,7 @@ grupo.innerHTML=arts.map(p=>'<a class="articulo-reciente" href="'+esc(p.ruta_pub
 }
 function init(c,gs,ts,dir,speed){
 const t=c.querySelector(ts),g=t&&t.querySelector(gs);if(!t||!g||t.dataset.cibaReady==="true")return;
-const clone=g.cloneNode(true);clone.setAttribute("aria-hidden","true");clone.setAttribute("inert","");
+const clone=g.cloneNode(true);clone.setAttribute("aria-hidden","true");
 clone.querySelectorAll("a,button,[tabindex]").forEach(e=>e.setAttribute("tabindex","-1"));if(dir>0)t.insertBefore(clone,g);else t.appendChild(clone);t.dataset.cibaReady="true";
 let width=0,x=dir<0?0:-1,drag=false,sx=0,ox=0,moved=false,suppress=false,pause=false,last=0;
 function wrap(){if(!width)return;if(dir<0){while(x<=-width)x+=width;while(x>0)x-=width;}else{while(x>=0)x-=width;while(x< -width)x+=width;}}
