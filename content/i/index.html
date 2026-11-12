@@ -3,52 +3,160 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#174f70">
-<meta name="description" content="INTERNET · CIBA: diez áreas para aprender a buscar información sanitaria fiable, proteger a la infancia y convivir con la tecnología de forma crítica, segura y saludable.">
+<meta name="theme-color" content="#12364d">
+<meta name="description" content="INTERNET · CIBA: información sanitaria fiable, protección de la infancia y ciudadanía digital para las familias.">
 <title>INTERNET | Información, tecnología y ciudadanía digital · CIBA</title>
 <style>
-:root{--azul-noche:#12364d;--azul-profundo:#174f70;--azul:#287b9a;--azul-claro:#dceef5;--cielo:#edf6f9;--oro:#d5b879;--marfil:#f5f3ec;--papel:#fffefa;--tinta:#273943;--suave:#63747c;--linea:#dce5e8}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--marfil);color:var(--tinta);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}.contenedor{width:min(1120px,calc(100% - 40px));margin:auto}
-.cabecera{position:sticky;top:0;z-index:10;min-height:68px;background:var(--azul-noche);color:#fff;display:flex;align-items:center;padding:0 max(20px,calc((100% - 1120px)/2));border-bottom:2px solid var(--azul)}.marca{font-weight:900;letter-spacing:.2em}.marca small{display:block;color:#b9dce9;font-size:9px;letter-spacing:.15em;margin-top:4px}
-.hero{position:relative;overflow:hidden;color:white;background:radial-gradient(circle at 78% 35%,#4ca0bd55,transparent 31%),linear-gradient(125deg,#12364d,#174f70 62%,#206b88);padding:clamp(55px,8vw,94px) 0 70px}.hero:before{content:"";position:absolute;inset:0;opacity:.12;background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(90deg,transparent,#000)}.hero-grid{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}.eyebrow{color:#c5e3ee;font-size:10px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.hero h1{max-width:760px;margin:18px 0;font:400 clamp(42px,6vw,70px)/1.04 Georgia,serif;letter-spacing:-.04em}.hero p{max-width:700px;color:#e2edf1;font-size:15px;line-height:1.85}.meta{display:flex;flex-wrap:wrap;gap:9px;margin-top:25px}.meta span{border:1px solid #ffffff45;border-radius:30px;padding:9px 12px;color:#e4f2f6;font-size:9px;font-weight:800;letter-spacing:.1em}
-.network{width:min(290px,90%);aspect-ratio:1;margin:auto;position:relative;display:grid;place-items:center;border:1px solid #b9dce977;border-radius:50%;box-shadow:0 0 0 18px #ffffff08,0 0 0 38px #ffffff06}.network svg{width:76%;height:auto;stroke:#c3e6f0;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.network:after,.network:before{content:"";position:absolute;inset:14%;border:1px dashed #c3e6f055;border-radius:50%;animation:orbita 24s linear infinite}.network:before{inset:28%;animation-direction:reverse}
-.intro{padding:55px 0 25px;display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:center}.intro h2{font:400 clamp(28px,4vw,40px)/1.15 Georgia,serif;margin:10px 0;color:var(--azul-noche)}.intro p{font-size:13px;line-height:1.85;color:var(--suave);margin:0}.principio{background:var(--papel);border-left:3px solid var(--azul);padding:23px 25px;border-radius:0 12px 12px 0;color:#536873;font-size:13px;line-height:1.8}.principio strong{color:var(--azul-noche)}
-.bloques{padding:25px 0 80px}.bloque{margin-top:42px}.bloque-head{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--linea);padding-bottom:14px}.bloque-head>div{display:flex;align-items:center;gap:13px}.letra{width:36px;height:36px;display:grid;place-items:center;background:var(--azul-profundo);color:#e4f2f6;border-radius:50%;font:18px Georgia,serif}.bloque h2{font:400 clamp(23px,3.4vw,32px) Georgia,serif;margin:0;color:var(--azul-noche)}.bloque-head small{font-size:9px;letter-spacing:.12em;font-weight:800;color:var(--azul);white-space:nowrap}.bloque-desc{font-size:12px;color:var(--suave);line-height:1.7;margin:13px 0 17px}.temas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.tema{display:grid;grid-template-columns:46px 1fr;gap:14px;padding:21px;border:1px solid var(--linea);border-radius:14px;background:var(--papel);box-shadow:0 7px 22px #174f7008;min-width:0;transition:transform .2s,border-color .2s}.tema:hover{transform:translateY(-3px);border-color:#9bc6d6}.numero{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--azul-claro);color:var(--azul-profundo);font:18px Georgia,serif}.tema h3{font:400 clamp(18px,2vw,22px)/1.22 Georgia,serif;margin:8px 0;color:var(--azul-noche)}.tema h3 a:hover{text-decoration:underline;text-decoration-color:var(--azul);text-underline-offset:4px}.tema p{font-size:12px;line-height:1.7;color:var(--suave);margin:0}.tema small{display:inline-block;margin-top:13px;color:var(--azul);font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.tema.proximo{background:#f9fbfb}.tema.proximo .numero{background:#edf1f2;color:#71828a}.tema.proximo small{color:#788991}
-.cierre{background:#e4f0f4;padding:55px 0;text-align:center}.cierre h2{font:400 clamp(28px,4vw,40px) Georgia,serif;color:var(--azul-noche);margin:0 0 12px}.cierre p{max-width:740px;margin:auto;color:#5e717b;font-size:13px;line-height:1.8}.volver{display:inline-block;margin-top:20px;padding:12px 17px;background:var(--azul-profundo);color:white;border-radius:5px;font-size:10px;font-weight:800;letter-spacing:.1em}
-footer{background:var(--azul-noche);color:#d9e7ec;padding:24px 0;font-size:11px}footer .contenedor{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}footer a{color:#c5e3ee}
+:root{
+ --noche:#12364d;--noche2:#174f70;--azul:#287b9a;--azulmedio:#438eaa;
+ --celeste:#b9dce9;--celestepalido:#dceef5;--oro:#d5b879;
+ --marfil:#f5f3ec;--papel:#fffefa;--tinta:#273943;--suave:#63747c;
+ --linea:#dce5e8;--ancho:1220px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{margin:0;background:var(--marfil);color:var(--tinta);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}
+.contenedor{width:min(var(--ancho),calc(100% - 48px));margin-inline:auto}
+.hero{position:relative;overflow:hidden;color:#fff;background:
+ radial-gradient(circle at 78% 22%,rgba(67,142,170,.32),transparent 34%),
+ linear-gradient(120deg,#12364d 0%,#174f70 58%,#206b88 100%)}
+.hero:before{content:"";position:absolute;inset:0;opacity:.12;pointer-events:none;
+ background-image:linear-gradient(rgba(255,255,255,.16) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.16) 1px,transparent 1px);
+ background-size:54px 54px;mask-image:linear-gradient(90deg,transparent,#000)}
+.hero-contenido{position:relative;display:grid;grid-template-columns:1fr .9fr;gap:58px;align-items:center;padding-top:82px;padding-bottom:105px}
+.sobrelinea{display:flex;align-items:center;gap:12px;color:var(--oro);font-size:10px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}
+.sobrelinea:before{content:"";width:35px;height:1px;background:var(--oro)}
+.hero h1{max-width:740px;margin:25px 0 22px;font:400 clamp(44px,5.8vw,76px)/1.04 Georgia,"Times New Roman",serif;letter-spacing:-.04em}
+.hero h1 em{color:var(--oro);font-weight:400}
+.hero-descripcion{max-width:610px;color:#dceaf0;font-size:15px;line-height:1.9}
+.hero-datos{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.hero-datos span{padding:10px 13px;border:1px solid rgba(255,255,255,.28);border-radius:4px;color:#e4f2f6;font-size:9px;font-weight:800;letter-spacing:.1em}
+.hero-visual{position:relative;min-height:420px;display:grid;place-items:center}
+.red-marco{position:relative;width:min(390px,90%);aspect-ratio:1;border:1px solid rgba(213,184,121,.55);border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,rgba(255,255,255,.08),transparent 62%);box-shadow:0 0 0 18px rgba(255,255,255,.035),0 0 0 38px rgba(255,255,255,.025)}
+.red-marco:before,.red-marco:after{content:"";position:absolute;inset:13%;border:1px dashed rgba(185,220,233,.45);border-radius:50%;animation:orbita 28s linear infinite}
+.red-marco:after{inset:28%;animation-direction:reverse}
+.red-marco svg{position:relative;z-index:1;width:75%;height:auto;filter:drop-shadow(0 0 12px rgba(185,220,233,.2))}
+.red-marco svg *{fill:none;stroke:#c3e6f0;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.sello{position:absolute;right:-7px;bottom:25px;width:116px;height:116px;display:grid;place-items:center;padding:16px;border-radius:50%;background:var(--oro);color:var(--noche);text-align:center;font:400 15px/1.25 Georgia,serif;transform:rotate(7deg);box-shadow:0 12px 30px rgba(0,0,0,.2)}
+.hero-pie{position:absolute;left:0;right:0;bottom:0;border-top:1px solid rgba(255,255,255,.14);color:#dceaf0;font-size:9px;letter-spacing:.15em;text-transform:uppercase}
+.hero-pie .contenedor{display:flex;justify-content:space-between;gap:15px;padding-top:17px;padding-bottom:17px}
+.seccion{padding:82px 0}
+.intro-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}
+.etiqueta{color:var(--azul);font-size:10px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+.titulo{margin:14px 0;font:400 clamp(33px,4vw,48px)/1.12 Georgia,serif;letter-spacing:-.03em;color:var(--noche)}
+.intro-texto p{color:var(--suave);font-size:14px;line-height:1.9}
+.frase{padding:34px;border-left:3px solid var(--oro);background:var(--papel);box-shadow:0 12px 35px rgba(23,79,112,.05)}
+.frase blockquote{margin:0;color:var(--noche);font:400 clamp(25px,3vw,36px)/1.3 Georgia,serif}
+.frase p{margin:20px 0 0;color:var(--azul);font-size:10px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.biblioteca{background:#e8f0f2}
+.encabezado-seccion{max-width:760px;margin-bottom:42px}
+.encabezado-seccion p{color:var(--suave);font-size:14px;line-height:1.85}
+.bloque{margin-top:42px}.bloque:first-of-type{margin-top:0}
+.grupo-titulo{display:flex;align-items:center;gap:13px;margin:0 0 12px;color:var(--noche);font:400 28px Georgia,serif}
+.grupo-titulo:before{content:"";width:28px;height:2px;background:var(--oro);flex-shrink:0}
+.grupo-desc{margin:0 0 19px;color:var(--suave);font-size:13px;line-height:1.8}
+.lista-temas{display:grid;gap:13px}
+.tema{display:grid;grid-template-columns:78px 1fr auto;align-items:center;gap:24px;padding:25px 28px;border:1px solid #d7e2e6;border-radius:12px;background:var(--papel);transition:transform .2s,box-shadow .2s,border-color .2s}
+.tema:hover{transform:translateY(-3px);border-color:#9bc6d6;box-shadow:0 13px 28px rgba(23,79,112,.08)}
+.tema-numero{width:66px;height:66px;display:grid;place-items:center;border-radius:50%;background:var(--noche);color:var(--oro);font:400 27px Georgia,serif}
+.tema small{color:var(--azul);font-size:9px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.tema h3{margin:8px 0;color:var(--noche);font:400 clamp(21px,2.4vw,27px)/1.2 Georgia,serif}
+.tema p{margin:0;color:var(--suave);font-size:13px;line-height:1.75}
+.tema-ir{color:var(--azul);font-size:10px;font-weight:800;letter-spacing:.1em;white-space:nowrap}
+.tema.proximo{background:#f8fbfb}
+.tema.proximo .tema-numero{background:#dce9ed;color:#53717e}
+.tema.proximo .tema-ir{color:#82949a}
+.cierre{padding:82px 0;text-align:center;background:linear-gradient(120deg,#dceef5,#eaf2f2)}
+.cierre .etiqueta{color:var(--azul)}
+.cierre h2{max-width:780px;margin:14px auto 18px;color:var(--noche);font:400 clamp(34px,4vw,49px)/1.15 Georgia,serif}
+.cierre p{max-width:690px;margin:0 auto;color:#5e717b;font-size:14px;line-height:1.9}
+.boton{display:inline-flex;align-items:center;justify-content:center;min-height:48px;margin-top:26px;padding:0 22px;background:var(--noche2);color:#fff;border-radius:4px;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;transition:transform .2s,background .2s}
+.boton:hover{transform:translateY(-2px);background:var(--azul)}
+.pie{padding:38px 0 24px;background:#102d40;color:#d6e5eb}
+.pie-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:35px;padding-bottom:28px}
+.pie h3{margin:0 0 12px;color:var(--oro);font:400 21px Georgia,serif}
+.pie p,.pie a{color:#bfd1d9;font-size:11px;line-height:1.9}
+.pie-final{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);font-size:10px;color:#9fb7c2}
+.pie a:hover{color:var(--oro)}
 @keyframes orbita{to{transform:rotate(360deg)}}
-@media(max-width:760px){.hero-grid{grid-template-columns:1fr;gap:30px}.network{width:180px}.intro{grid-template-columns:1fr;gap:18px;padding-top:40px}.temas{grid-template-columns:1fr}.bloque-head{align-items:flex-start}.bloque-head>div{align-items:flex-start}.bloque-head small{padding-top:10px}}
-@media(max-width:420px){.contenedor{width:calc(100% - 30px)}.tema{padding:17px;grid-template-columns:36px 1fr;gap:11px}.numero{width:34px;height:34px;font-size:15px}.bloque-head{flex-direction:column;gap:8px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.network:after,.network:before{animation:none}.tema{transition:none}}
+@media(max-width:760px){
+ .hero-contenido{grid-template-columns:1fr;gap:25px;padding-top:62px;padding-bottom:100px}
+ .hero-visual{min-height:290px}.red-marco{width:245px}.sello{right:-13px;bottom:12px;width:92px;height:92px;font-size:12px}
+ .intro-grid{grid-template-columns:1fr;gap:20px}
+ .seccion{padding:58px 0}
+ .tema{grid-template-columns:58px 1fr;gap:16px;padding:20px}
+ .tema-numero{width:54px;height:54px;font-size:23px}
+ .tema-ir{grid-column:2}
+ .pie-grid{grid-template-columns:1fr;gap:15px}
+}
+@media(max-width:430px){
+ .contenedor{width:calc(100% - 32px)}
+ .hero h1{font-size:43px}
+ .hero-datos span{font-size:8px}
+ .tema{grid-template-columns:44px 1fr;gap:12px;padding:16px}
+ .tema-numero{width:42px;height:42px;font-size:19px}
+ .tema h3{font-size:20px}
+ .hero-pie .contenedor{font-size:8px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.red-marco:before,.red-marco:after,.tema,.boton{animation:none;transition:none}}
 </style>
 </head>
 <body>
-<header class="cabecera"><a class="marca" href="../../">CIBA<small>INTERNET · INFORMACIÓN Y CIUDADANÍA DIGITAL</small></a></header>
 <main>
-<section class="hero"><div class="contenedor hero-grid"><div><span class="eyebrow">CIBA · INTERNET · CONOCIMIENTO Y CONEXIÓN</span><h1>INTERNET: comprender, proteger y conectar</h1><p>La tecnología ya forma parte de la vida familiar y de las decisiones sobre salud. Este espacio ayuda a madres, padres y cuidadores a reconocer información fiable, detectar riesgos, proteger a la infancia y aprovechar las herramientas digitales sin perder de vista lo esencial: el bienestar y los derechos de cada niño.</p><div class="meta"><span>10 ÁREAS TEMÁTICAS</span><span>CIENCIA Y PENSAMIENTO CRÍTICO</span><span>SEGURIDAD DIGITAL</span></div></div><div class="network" role="img" aria-label="Red de conexiones digitales"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="22"/><circle cx="42" cy="54" r="10"/><circle cx="158" cy="48" r="10"/><circle cx="42" cy="145" r="10"/><circle cx="160" cy="148" r="10"/><path d="M82 85 50 61M118 84l32-29M82 115l-32 24M118 115l32 25M100 78V28M100 122v48M78 100H22M122 100h56"/><circle cx="100" cy="28" r="5"/><circle cx="100" cy="170" r="5"/><circle cx="22" cy="100" r="5"/><circle cx="178" cy="100" r="5"/></svg></div></div></section>
-<section class="contenedor intro"><div><span class="eyebrow" style="color:#287b9a">Una brújula para el mundo conectado</span><h2>Estar conectados no significa estar siempre bien informados.</h2><p>En internet conviven conocimiento, experiencias valiosas, publicidad, errores y contenidos diseñados para captar nuestra atención. Aprender a distinguirlos es hoy una competencia para la salud y para la crianza.</p></div><aside class="principio"><strong>El principio de INTERNET:</strong> la tecnología debe estar al servicio de las personas. Promovemos decisiones informadas, protección de datos, pensamiento crítico, acompañamiento adulto y uso saludable de los recursos digitales.</aside></section>
-<section class="bloques contenedor">
-<section class="bloque" aria-labelledby="bloque-A"><div class="bloque-head"><div><span class="letra">A</span><h2>Comprender la información digital</h2></div><small>TEMAS 01–02</small></div><p class="bloque-desc">Buscar, interpretar y contrastar información sanitaria antes de compartirla o convertirla en una decisión.</p><div class="temas">
-<article class="tema"><div class="numero">01</div><div><h3><a href="I1/">Alfabetización sanitaria digital</a></h3><p>Cómo buscar información de salud, reconocer fuentes fiables, comprender recomendaciones y participar con criterio en el entorno sanitario digital.</p><small>Área temática I1 · Explorar</small></div></article>
-<article class="tema"><div class="numero">02</div><div><h3><a href="I2/">Desinformación y consejos virales</a></h3><p>Señales de alerta ante rumores, remedios virales, testimonios engañosos y publicaciones que prometen soluciones rápidas para la salud infantil.</p><small>Área temática I2 · Explorar</small></div></article>
-</div></section>
-<section class="bloque" aria-labelledby="bloque-B"><div class="bloque-head"><div><span class="letra">B</span><h2>Proteger el bienestar y la privacidad</h2></div><small>TEMAS 03–04–06</small></div><p class="bloque-desc">Acompañar la relación de niñas y niños con las pantallas y los espacios sociales, respetando su desarrollo y sus derechos.</p><div class="temas">
-<article class="tema"><div class="numero">03</div><div><h3><a href="I3/">Privacidad y seguridad infantil en redes</a></h3><p>Huella digital, fotografías, geolocalización, consentimiento, exposición de la infancia y medidas cotidianas para reducir riesgos.</p><small>Área temática I3 · Explorar</small></div></article>
-<article class="tema"><div class="numero">04</div><div><h3><a href="I4/">Pantallas y desarrollo</a></h3><p>Tiempo y calidad de exposición, sueño, juego, lenguaje, movimiento y acompañamiento adulto según la etapa del desarrollo.</p><small>Área temática I4 · Explorar</small></div></article>
-<article class="tema proximo" id="tema-06"><div class="numero">06</div><div><h3>Redes sociales y salud mental</h3><p>Comparación social, ciberacoso, autoestima, bienestar emocional y señales para buscar apoyo oportunamente.</p><small>Desarrollo editorial pendiente</small></div></article>
-</div></section>
-<section class="bloque" aria-labelledby="bloque-C"><div class="bloque-head"><div><span class="letra">C</span><h2>Usar la tecnología con criterio</h2></div><small>TEMAS 05–07–08</small></div><p class="bloque-desc">Conocer las posibilidades y los límites de las herramientas que ya están transformando la crianza y la atención sanitaria.</p><div class="temas">
-<article class="tema proximo" id="tema-05"><div class="numero">05</div><div><h3>Inteligencia artificial y crianza</h3><p>Usos responsables de la IA para aprender y organizarse; límites, errores, sesgos y por qué no sustituye la valoración profesional.</p><small>Desarrollo editorial pendiente</small></div></article>
-<article class="tema proximo" id="tema-07"><div class="numero">07</div><div><h3>Apps, plataformas y herramientas digitales</h3><p>Cómo evaluar aplicaciones, permisos, calidad, accesibilidad y utilidad real antes de incorporarlas a la vida familiar.</p><small>Desarrollo editorial pendiente</small></div></article>
-<article class="tema proximo" id="tema-08"><div class="numero">08</div><div><h3>Telemedicina y comunicación digital con el sistema de salud</h3><p>Preparar consultas, comunicar síntomas, compartir información de forma segura y reconocer cuándo la atención presencial es necesaria.</p><small>Desarrollo editorial pendiente</small></div></article>
-</div></section>
-<section class="bloque" aria-labelledby="bloque-D"><div class="bloque-head"><div><span class="letra">D</span><h2>Educar para participar en el futuro</h2></div><small>TEMAS 09–10</small></div><p class="bloque-desc">Construir hábitos audiovisuales saludables y formar personas capaces de convivir, crear y ejercer sus derechos en espacios digitales.</p><div class="temas">
-<article class="tema proximo" id="tema-09"><div class="numero">09</div><div><h3>Contenido infantil y consumo audiovisual</h3><p>Selección de contenidos, publicidad, recomendaciones automáticas, acompañamiento compartido y equilibrio entre lo digital y el juego real.</p><small>Desarrollo editorial pendiente</small></div></article>
-<article class="tema proximo" id="tema-10"><div class="numero">10</div><div><h3>Ciudadanía digital y futuro</h3><p>Derechos y responsabilidades en línea, convivencia, pensamiento crítico, creación segura y preparación para los cambios tecnológicos.</p><small>Desarrollo editorial pendiente</small></div></article>
-</div></section>
+<section class="hero">
+ <div class="contenedor hero-contenido">
+  <div>
+   <div class="sobrelinea">CIBA · INFORMACIÓN, TECNOLOGÍA Y CIUDADANÍA</div>
+   <h1>INTERNET: comprender, <em>proteger</em> y conectar</h1>
+   <p class="hero-descripcion">La tecnología ya forma parte de la vida familiar y de las decisiones sobre salud. Este espacio ayuda a madres, padres y cuidadores a reconocer información fiable, detectar riesgos, proteger a la infancia y aprovechar las herramientas digitales sin perder de vista lo esencial: el bienestar y los derechos de cada niño.</p>
+   <div class="hero-datos"><span>10 ÁREAS TEMÁTICAS</span><span>CIENCIA Y PENSAMIENTO CRÍTICO</span><span>SEGURIDAD DIGITAL</span></div>
+  </div>
+  <div class="hero-visual" role="img" aria-label="Red de conexiones que representa el conocimiento y la ciudadanía digital">
+   <div class="red-marco">
+    <svg viewBox="0 0 220 220" aria-hidden="true">
+     <circle cx="110" cy="110" r="28"/><circle cx="48" cy="54" r="11"/><circle cx="171" cy="48" r="11"/><circle cx="43" cy="164" r="11"/><circle cx="176" cy="163" r="11"/>
+     <path d="M88 91 57 63M132 90l28-31M88 130l-32 26M132 130l34 26M110 82V31M110 138v52M82 110H24M138 110h58"/>
+     <circle cx="110" cy="31" r="5"/><circle cx="110" cy="190" r="5"/><circle cx="24" cy="110" r="5"/><circle cx="196" cy="110" r="5"/>
+    </svg>
+   </div>
+   <div class="sello">Conocimiento<br>para cuidar<br>mejor</div>
+  </div>
+ </div>
+ <div class="hero-pie"><div class="contenedor"><span>Una brújula para el mundo conectado</span><span>INTERNET · CIBA</span></div></div>
 </section>
-<section class="cierre"><div class="contenedor"><h2>La mejor conexión sigue siendo la que nos ayuda a cuidar.</h2><p>INTERNET no propone desconectarse del mundo digital, sino aprender a habitarlo con conocimiento, prudencia y sentido humano. Cada tema se desarrollará con revisión editorial y fuentes verificables antes de su publicación.</p><a class="volver" href="../../">VOLVER A CIBA</a></div></section>
+<section class="seccion">
+ <div class="contenedor intro-grid">
+  <div class="intro-texto"><span class="etiqueta">Una competencia para la vida</span><h2 class="titulo">Estar conectados no significa estar siempre bien informados.</h2><p>En internet conviven conocimiento, experiencias valiosas, publicidad, errores y contenidos diseñados para captar nuestra atención. Aprender a distinguirlos es hoy una competencia para la salud y para la crianza.</p></div>
+  <div class="frase"><blockquote>La tecnología debe estar al servicio de las personas, nunca al revés.</blockquote><p>El principio de INTERNET · CIBA</p></div>
+ </div>
+</section>
+<section class="biblioteca seccion">
+ <div class="contenedor">
+  <div class="encabezado-seccion"><span class="etiqueta">Biblioteca temática</span><h2 class="titulo">Diez áreas para habitar el mundo digital con criterio.</h2><p>Recursos para buscar mejor, proteger la privacidad, acompañar a la infancia y aprovechar la tecnología de forma responsable. Cada tema se desarrolla con revisión editorial y fuentes verificables.</p></div>
+  <section class="bloque" aria-labelledby="grupo-a"><h3 class="grupo-titulo" id="grupo-a">Comprender la información digital</h3><p class="grupo-desc">Buscar, interpretar y contrastar información sanitaria antes de compartirla o convertirla en una decisión.</p><div class="lista-temas">
+   <article class="tema" id="tema-01"><div class="tema-numero">01</div><div><small>Área temática I1</small><h3><a href="I1/">Alfabetización sanitaria digital</a></h3><p>Cómo buscar información de salud, reconocer fuentes fiables, comprender recomendaciones y participar con criterio en el entorno sanitario digital.</p></div><a class="tema-ir" href="I1/">EXPLORAR ↗</a></article>
+   <article class="tema" id="tema-02"><div class="tema-numero">02</div><div><small>Área temática I2</small><h3><a href="I2/">Desinformación y consejos virales</a></h3><p>Señales de alerta ante rumores, remedios virales, testimonios engañosos y publicaciones que prometen soluciones rápidas para la salud infantil.</p></div><a class="tema-ir" href="I2/">EXPLORAR ↗</a></article>
+  </div></section>
+  <section class="bloque" aria-labelledby="grupo-b"><h3 class="grupo-titulo" id="grupo-b">Proteger el bienestar y la privacidad</h3><p class="grupo-desc">Acompañar la relación de niñas y niños con las pantallas y los espacios sociales, respetando su desarrollo y sus derechos.</p><div class="lista-temas">
+   <article class="tema" id="tema-03"><div class="tema-numero">03</div><div><small>Área temática I3</small><h3><a href="I3/">Privacidad y seguridad infantil en redes</a></h3><p>Huella digital, fotografías, geolocalización, consentimiento, exposición de la infancia y medidas cotidianas para reducir riesgos.</p></div><a class="tema-ir" href="I3/">EXPLORAR ↗</a></article>
+   <article class="tema" id="tema-04"><div class="tema-numero">04</div><div><small>Área temática I4</small><h3><a href="I4/">Pantallas y desarrollo</a></h3><p>Tiempo y calidad de exposición, sueño, juego, lenguaje, movimiento y acompañamiento adulto según la etapa del desarrollo.</p></div><a class="tema-ir" href="I4/">EXPLORAR ↗</a></article>
+   <article class="tema proximo" id="tema-06"><div class="tema-numero">06</div><div><small>Área temática I6 · Próximamente</small><h3>Redes sociales y salud mental</h3><p>Comparación social, ciberacoso, autoestima, bienestar emocional y señales para buscar apoyo oportunamente.</p></div><span class="tema-ir">EN DESARROLLO</span></article>
+  </div></section>
+  <section class="bloque" aria-labelledby="grupo-c"><h3 class="grupo-titulo" id="grupo-c">Usar la tecnología con criterio</h3><p class="grupo-desc">Conocer las posibilidades y los límites de las herramientas que ya están transformando la crianza y la atención sanitaria.</p><div class="lista-temas">
+   <article class="tema proximo" id="tema-05"><div class="tema-numero">05</div><div><small>Área temática I5 · Próximamente</small><h3>Inteligencia artificial y crianza</h3><p>Usos responsables de la IA para aprender y organizarse; límites, errores, sesgos y por qué no sustituye la valoración profesional.</p></div><span class="tema-ir">EN DESARROLLO</span></article>
+   <article class="tema proximo" id="tema-07"><div class="tema-numero">07</div><div><small>Área temática I7 · Próximamente</small><h3>Apps, plataformas y herramientas digitales</h3><p>Cómo evaluar aplicaciones, permisos, calidad, accesibilidad y utilidad real antes de incorporarlas a la vida familiar.</p></div><span class="tema-ir">EN DESARROLLO</span></article>
+   <article class="tema proximo" id="tema-08"><div class="tema-numero">08</div><div><small>Área temática I8 · Próximamente</small><h3>Telemedicina y comunicación digital con el sistema de salud</h3><p>Preparar consultas, comunicar síntomas, compartir información de forma segura y reconocer cuándo la atención presencial es necesaria.</p></div><span class="tema-ir">EN DESARROLLO</span></article>
+  </div></section>
+  <section class="bloque" aria-labelledby="grupo-d"><h3 class="grupo-titulo" id="grupo-d">Educar para participar en el futuro</h3><p class="grupo-desc">Construir hábitos audiovisuales saludables y formar personas capaces de convivir, crear y ejercer sus derechos en espacios digitales.</p><div class="lista-temas">
+   <article class="tema proximo" id="tema-09"><div class="tema-numero">09</div><div><small>Área temática I9 · Próximamente</small><h3>Contenido infantil y consumo audiovisual</h3><p>Selección de contenidos, publicidad, recomendaciones automáticas, acompañamiento compartido y equilibrio entre lo digital y el juego real.</p></div><span class="tema-ir">EN DESARROLLO</span></article>
+   <article class="tema proximo" id="tema-10"><div class="tema-numero">10</div><div><small>Área temática I10 · Próximamente</small><h3>Ciudadanía digital y futuro</h3><p>Derechos y responsabilidades en línea, convivencia, pensamiento crítico, creación segura y preparación para los cambios tecnológicos.</p></div><span class="tema-ir">EN DESARROLLO</span></article>
+  </div></section>
+ </div>
+</section>
+<section class="cierre"><div class="contenedor"><span class="etiqueta">Conocimiento que acompaña</span><h2>La mejor conexión sigue siendo la que nos ayuda a cuidar.</h2><p>INTERNET no propone desconectarse del mundo digital, sino aprender a habitarlo con conocimiento, prudencia y sentido humano. La tecnología puede acercarnos a mejores decisiones cuando la usamos con pensamiento crítico y responsabilidad.</p><a class="boton" href="../">Volver a CIBA</a></div></section>
 </main>
-<footer><div class="contenedor"><span>CIBA · Crianza, Informática, Bienestar y Acompañamiento.</span><span><a href="../../">Inicio</a> · <a href="https://whatsapp.com/channel/0029VbAOKuw2975HsSJutV32" target="_blank" rel="noopener noreferrer">Canal de WhatsApp</a></span></div></footer>
-<script type="module" src="../../assets/js/ciba-global.js?v=20261112-07"></script>
-</body></html>
+<footer class="pie"><div class="contenedor"><div class="pie-grid"><div><h3>INTERNET · CIBA</h3><p>Información, tecnología y ciudadanía digital para acompañar a las familias y proteger los derechos de la infancia.</p></div><div><h3>Explora</h3><p><a href="../">Inicio de CIBA</a><br><a href="#grupo-a">Biblioteca temática</a></p></div><div><h3>Comunidad</h3><p><a href="https://whatsapp.com/channel/0029VbAOKuw2975HsSJutV32" target="_blank" rel="noopener noreferrer">Canal de WhatsApp</a></p></div></div><div class="pie-final"><span>CIBA · Crianza, INTERNET, Bienestar y Acompañamiento.</span><span>Contenido educativo con revisión editorial.</span></div></div></footer>
+<script type="module" src="../assets/js/ciba-global.js?v=20261112-08"></script>
+</body>
+</html>
