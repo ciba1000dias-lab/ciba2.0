@@ -1,0 +1,62 @@
+{
+  "id": "C7-11",
+  "titulo": "Crianza y migración: cuando uno de los padres está lejos",
+  "descripcion": "Orientaciones para sostener el vínculo afectivo cuando un padre o una madre migra: comunicación a distancia, acuerdos de cuidado, acompañamiento emocional y reencuentros durante los primeros 1000 días.",
+  "columna": "C",
+  "area": "C7",
+  "subseccion": "Familia, comunidad y cotidianidad",
+  "palabras_clave": [
+    "crianza-a-distancia",
+    "migracion-parental",
+    "padre-a-distancia",
+    "madre-a-distancia",
+    "familia-transnacional",
+    "separacion-familiar",
+    "vinculo-afectivo",
+    "apego-infantil",
+    "videollamadas",
+    "comunicacion-familiar",
+    "cuidador-principal",
+    "abuelos-cuidadores",
+    "reencuentro-familiar",
+    "duelo-migratorio",
+    "primeros-1000-dias"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "preview_publica": false,
+  "enlaces_externos": [
+    {
+      "titulo": "UNICEF: Convención sobre los Derechos del Niño",
+      "url": "https://www.unicef.org/child-rights-convention/convention-text",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "UNICEF: Children Left Behind",
+      "url": "https://www.unicef.org/documents/children-left-behind",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "UNICEF Parenting: Displaced from home",
+      "url": "https://www.unicef.org/parenting/emergencies/displaced-from-home",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OMS: Care for Child Development",
+      "url": "https://www.who.int/docs/default-source/mca-documents/child/q-a-on-child-care.pdf",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "AAP: Tips for Video Chatting with Infants and Toddlers",
+      "url": "https://www.aap.org/en/patient-care/media-and-children/center-of-excellence-on-social-media-and-youth-mental-health/qa-portal/qa-portal-library/qa-portal-library-questions/tips-for-video-chatting-with-infants-and-toddlers/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "ZERO TO THREE: Considerations for Serving Immigrant Families With Young Children",
+      "url": "https://www.zerotothree.org/resource/considerations-for-serving-immigrant-families-with-young-children/",
+      "tipo": "fuente"
+    }
+  ]
+}

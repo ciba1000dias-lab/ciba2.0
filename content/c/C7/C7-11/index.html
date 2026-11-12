@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#304653">
+<meta name="description" content="Orientaciones para sostener el vínculo afectivo cuando uno de los padres migra: comunicación a distancia, acuerdos de cuidado, acompañamiento emocional y reencuentros durante los primeros 1000 días.">
+<title>Crianza y migración: cuando uno de los padres está lejos | CIBA</title>
+<style>
+:root{--night:#263944;--blue:#405e6d;--sage:#dce7e4;--gold:#c9ad7d;--cream:#f7f5ef;--paper:#fffefa;--ink:#343a3c;--muted:#6c777b;--line:#e1e5e1;--soft:#edf2ef;--rose:#f3e9e5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:82px;overflow-x:hidden}
+body{width:100%;min-width:0;margin:0;background:var(--cream);color:var(--ink);font:16px/1.8 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:#365c6c}
+.top{position:sticky;top:0;z-index:20;background:#263944ed;color:#fff;padding:12px max(18px,calc((100% - 1020px)/2));border-bottom:1px solid #c9ad7d66;backdrop-filter:blur(10px)}
+.top a{color:inherit;text-decoration:none;font-weight:900;letter-spacing:.2em}
+.top small{display:block;color:#e0c995;font-size:9px;letter-spacing:.17em}
+.wrap{width:min(1020px,calc(100% - 36px));margin:auto}
+.hero{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 82% 18%,#91b3b044,transparent 33%),linear-gradient(125deg,#263944,#405e6d 58%,#354c50);color:#fff;padding:clamp(48px,8vw,84px) 0 60px}
+.hero:before,.hero:after{content:"";position:absolute;z-index:-1;border-radius:50%;pointer-events:none}
+.hero:before{width:310px;height:310px;right:3%;top:-120px;border:1px solid #d8c18c44;box-shadow:0 0 0 22px #ffffff08,0 0 0 48px #ffffff05}
+.hero:after{width:210px;height:210px;left:4%;bottom:-145px;background:radial-gradient(circle,#c9ad7d28,transparent 70%)}
+.hero-grid{display:block;width:min(780px,calc(100% - 36px));max-width:780px;margin:0 auto}
+.kicker{color:#e4cf9f;font-size:10px;font-weight:850;letter-spacing:.18em}
+.hero h1{font:400 clamp(35px,5.5vw,58px)/1.1 Georgia,serif;max-width:780px;margin:17px 0;letter-spacing:-.025em}
+.hero p{max-width:760px;color:#e9eff0;font-size:16px;line-height:1.8}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.pills span{border:1px solid #ffffff45;border-radius:30px;padding:6px 11px;font-size:9px;letter-spacing:.1em;color:#f1e7d2}
+.layout{display:block;width:min(780px,calc(100% - 36px));max-width:780px;margin:0 auto;padding:34px 0 70px}
+.article{width:100%;max-width:100%;min-width:0}
+.article h2{font:400 clamp(27px,4vw,36px)/1.2 Georgia,serif;color:var(--night);margin:42px 0 13px}
+.article h3{font:400 21px/1.35 Georgia,serif;color:var(--blue);margin:22px 0 8px}
+.article p,.article li{font-size:15px}
+.article li{margin:7px 0}
+.lead{font-size:19px!important;line-height:1.75;color:#52636a}
+.note,.warning,.tip{padding:17px 19px;border-radius:0 12px 12px 0;margin:21px 0;font-size:14px;background:var(--soft);border-left:4px solid var(--blue)}
+.warning{background:var(--rose);border-color:#a86f5d}
+.tip{background:#f4f0e2;border-color:var(--gold)}
+.gallery{margin:30px 0 38px;padding:22px 20px 18px;background:#edf1ed;border:1px solid #dfe5df;border-radius:18px}
+.gallery-head{display:flex;justify-content:space-between;align-items:end;gap:14px;margin-bottom:15px}
+.gallery-head h2{font:400 27px/1.2 Georgia,serif;color:var(--night);margin:0}
+.gallery-head p{font-size:11px;color:var(--muted);margin:4px 0 0}
+.gallery-controls{display:flex;gap:7px;flex-shrink:0}
+.gallery-controls button{width:37px;height:37px;border:1px solid #b9c7c5;border-radius:50%;background:#fffefa;color:#365c6c;font-size:18px;cursor:pointer}
+.gallery-controls button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,min(280px,78%));gap:13px;overflow-x:auto;overscroll-behavior-x:contain;scroll-behavior:smooth;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#9eafaa transparent;padding:2px 2px 13px;touch-action:pan-x pan-y}
+.photo-card{scroll-snap-align:start;background:#fffefa;border:1px solid #e2e5df;border-radius:14px;overflow:hidden;min-width:0}
+.photo-card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#e6ece8}
+.photo-card div{padding:13px 15px 15px}
+.photo-card b{display:block;font:400 19px Georgia,serif;color:#344f5b;margin-bottom:5px}
+.photo-card p{font-size:12px;line-height:1.65;color:#697579;margin:0}
+.photo-credit{display:block;margin-top:8px;font-size:10px;color:#7c8586}
+.photo-credit a{color:#5a7079}
+.gallery-foot{font-size:10px;color:#748075;margin:5px 2px 0;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:17px}
+.card b{display:block;color:var(--blue);font:400 19px Georgia,serif;margin-bottom:6px}
+.card p{font-size:13px;margin:0;color:#625a66}
+.steps{counter-reset:step;display:grid;gap:10px;margin:18px 0}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:15px 17px 15px 54px;position:relative}
+.step:before{counter-increment:step;content:counter(step);position:absolute;left:15px;top:15px;width:26px;height:26px;display:grid;place-items:center;background:#dce7e4;color:#365c6c;border-radius:50%;font:14px Georgia,serif}
+.step b{color:var(--blue)}
+.checklist{background:var(--paper);border:1px dashed #aebfbb;border-radius:13px;padding:18px;margin:20px 0}
+.checklist ul{padding-left:20px;margin:0}
+.sources{font-size:13px}
+.sources li{margin:10px 0}
+.sources a{overflow-wrap:anywhere}
+.aside{margin:0 0 28px;position:static;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px}
+.aside b{font:400 18px Georgia,serif;color:var(--night)}
+.aside a{display:block;text-decoration:none;color:#365c6c;font-size:12px;padding:6px 0}
+.aside .small{font-size:11px;color:var(--muted);line-height:1.6;margin-top:12px}
+.share{margin-top:28px;padding:21px;border-radius:14px;background:#e6ece8;font-size:13px}
+.share a,.footer a{color:#365c6c}
+.disclaimer{font-size:12px;color:#6c777b;padding:16px 0;border-top:1px solid var(--line)}
+.footer{background:var(--night);color:#edf1f0;padding:23px 0;font-size:12px}
+.footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.footer a{color:#e0c995}
+@media(max-width:760px){
+ .layout{width:calc(100% - 28px);padding:25px 0 56px}
+ .aside{position:static;margin:0 0 22px}
+ .aside nav{display:flex;flex-wrap:wrap;gap:5px 13px}
+ .aside a{display:inline}
+ .grid{grid-template-columns:1fr}
+ .rail{grid-auto-columns:minmax(0,84%)}
+ .gallery{padding:17px 13px}
+ .gallery-head h2{font-size:23px}
+}
+@media(max-width:420px){
+ .gallery-head{align-items:center}
+ .gallery-head p{max-width:175px}
+ .hero{padding:42px 0}
+ .hero-grid{width:calc(100% - 32px)}
+ .hero h1{font-size:clamp(29px,8vw,38px);line-height:1.13}
+ .layout{width:calc(100% - 32px)}
+ .article p,.article li{font-size:16px;line-height:1.7}
+ .lead{font-size:17px!important}
+ .article h2{font-size:26px;margin:32px 0 11px}
+ .article h3{font-size:20px}
+ .gallery{padding:14px 12px}
+ .gallery-head h2{font-size:21px}
+ .rail{grid-auto-columns:88%}
+}
+@media print{.top,.aside,.footer,.gallery-controls{display:none}.layout{display:block;padding:0}.hero{background:white;color:#263944;padding:12px 0}.hero p{color:#333}.photo-card,.card,.checklist{break-inside:avoid}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rail{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><a href="../">CIBA<small>CRIANZA · C7 · FAMILIA, COMUNIDAD Y COTIDIANIDAD</small></a></header>
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div class="kicker">CIBA · CRIANZA · FAMILIA Y MIGRACIÓN · C7-11</div>
+  <h1>Crianza y migración: cuando uno de los padres está lejos</h1>
+  <p>La distancia cambia la vida familiar, pero no tiene por qué borrar el vínculo. Orientaciones para mantener una relación afectiva posible, organizar los cuidados cotidianos y acompañar al bebé sin falsas promesas ni culpas.</p>
+  <div class="pills"><span>0–24 MESES</span><span>VÍNCULO A DISTANCIA</span><span>FAMILIAS CUBANAS</span></div>
+ </div>
+</section>
+<div class="wrap layout">
+<main class="article">
+<p class="lead"><b>Un padre o una madre puede vivir en otro país y seguir formando parte de la vida de su hijo.</b> Pero el cariño no elimina las dificultades de la distancia: alguien se ocupa de las tomas, el sueño, las consultas y los días difíciles; otra persona intenta estar presente desde lejos, a veces con horarios complicados, conexión inestable y la tristeza de perderse momentos que no se repiten. Esta guía propone acuerdos realistas para cuidar al bebé y a los adultos que lo acompañan.</p>
+
+<section class="gallery" aria-label="Carrusel fotográfico sobre crianza y migración">
+ <div class="gallery-head"><div><h2>Siete maneras de cuidar el vínculo</h2><p>Desliza las tarjetas para recorrer ideas prácticas.</p></div><div class="gallery-controls"><button type="button" id="prev-card" aria-label="Ver tarjeta anterior">‹</button><button type="button" id="next-card" aria-label="Ver tarjeta siguiente">›</button></div></div>
+ <div class="rail" id="support-rail">
+  <article class="photo-card">
+   <img src="https://images.pexels.com/photos/4458253/pexels-photo-4458253.jpeg?cs=srgb&amp;dl=pexels-yankrukov-4458253.jpg&amp;fm=jpg" alt="Madre y niño pequeño comparten una videollamada desde casa" loading="lazy" decoding="async">
+   <div><b>1. Un encuentro breve y cercano</b><p>Una llamada puede ser un momento de intercambio: saludar, cantar, mirar un juguete o escuchar una voz conocida, sin exigir que el bebé permanezca atento.</p><small class="photo-credit">Fotografía: Yan Krukau · <a href="https://www.pexels.com/photo/son-watching-his-mom-having-a-video-call-4458253/" target="_blank" rel="noopener noreferrer">Pexels</a></small></div>
+  </article>
+  <article class="photo-card">
+   <img src="https://images.pexels.com/photos/27178165/pexels-photo-27178165.jpeg?cs=srgb&amp;dl=pexels-helenalopes-27178165.jpg&amp;fm=jpg" alt="Una madre sostiene a su hijo pequeño mientras se comunica por videollamada" loading="lazy" decoding="async">
+   <div><b>2. El adulto presente acompaña</b><p>La persona que está junto al niño puede nombrar quién aparece en la pantalla, ayudar a compartir la atención y terminar la llamada si el pequeño se cansa.</p><small class="photo-credit">Fotografía: Helena Lopes · <a href="https://www.pexels.com/photo/mother-and-child-video-calling-at-home-27178165/" target="_blank" rel="noopener noreferrer">Pexels</a></small></div>
+  </article>
+  <article class="photo-card">
+   <img src="https://images.pexels.com/photos/37495568/pexels-photo-37495568.jpeg?cs=srgb&amp;dl=pexels-kimymoto-37495568.jpg&amp;fm=jpg" alt="Un padre comparte un momento de juego y cercanía con su bebé" loading="lazy" decoding="async">
+   <div><b>3. Compartir pequeños rituales</b><p>Una canción, una rima, el mismo cuento o una frase cariñosa pueden convertirse en señales familiares que se repiten durante la semana.</p><small class="photo-credit">Fotografía: Kimy Moto · <a href="https://www.pexels.com/photo/happy-baby-playing-with-father-at-home-37495568/" target="_blank" rel="noopener noreferrer">Pexels</a></small></div>
+  </article>
+  <article class="photo-card">
+   <img src="https://images.pexels.com/photos/33653838/pexels-photo-33653838.jpeg?cs=srgb&amp;dl=pexels-fliqaindia-33653838.jpg&amp;fm=jpg" alt="Una abuela sostiene con cariño a su nieto pequeño" loading="lazy" decoding="async">
+   <div><b>4. Reconocer a quien cuida cada día</b><p>La abuela, el abuelo u otra persona cuidadora necesita apoyo, información y descanso. Su trabajo cotidiano merece respeto y reconocimiento.</p><small class="photo-credit">Fotografía: Fliqa India · <a href="https://www.pexels.com/photo/grandmother-holding-smiling-baby-outdoors-33653838/" target="_blank" rel="noopener noreferrer">Pexels</a></small></div>
+  </article>
+  <article class="photo-card">
+   <img src="https://images.pexels.com/photos/7983840/pexels-photo-7983840.jpeg?cs=srgb&amp;dl=pexels-george-pak-7983840.jpg&amp;fm=jpg" alt="Un padre juega con su hijo pequeño en casa" loading="lazy" decoding="async">
+   <div><b>5. No reducir la relación a enviar dinero</b><p>La ayuda económica puede ser importante, pero también cuentan las preguntas, los acuerdos, el interés por la salud y la participación respetuosa en las decisiones.</p><small class="photo-credit">Fotografía: George Pak · <a href="https://www.pexels.com/photo/a-father-playing-with-his-child-7983840/" target="_blank" rel="noopener noreferrer">Pexels</a></small></div>
+  </article>
+  <article class="photo-card">
+   <img src="https://images.pexels.com/photos/6249950/pexels-photo-6249950.jpeg?cs=srgb&amp;dl=pexels-kampus-6249950.jpg&amp;fm=jpg" alt="Un padre comparte un libro con su hija pequeña" loading="lazy" decoding="async">
+   <div><b>6. Mantener historias compartidas</b><p>El mismo cuento, una foto impresa o un audio breve pueden ayudar a mantener una memoria familiar, siempre acompañados por la interacción con quien está presente.</p><small class="photo-credit">Fotografía: Kampus Production · <a href="https://www.pexels.com/photo/photograph-of-a-father-reading-a-book-for-her-daughter-6249950/" target="_blank" rel="noopener noreferrer">Pexels</a></small></div>
+  </article>
+  <article class="photo-card">
+   <img src="https://images.pexels.com/photos/7938020/pexels-photo-7938020.jpeg?cs=srgb&amp;dl=pexels-pavel-danilyuk-7938020.jpg&amp;fm=jpg" alt="Una familia lee un cuento junto a un niño pequeño" loading="lazy" decoding="async">
+   <div><b>7. Preparar los reencuentros con calma</b><p>Volver a estar juntos requiere tiempo para reconocerse, recuperar rutinas y construir confianza. No hay que forzar abrazos ni reacciones perfectas.</p><small class="photo-credit">Fotografía: Pavel Danilyuk · <a href="https://www.pexels.com/photo/family-reading-a-book-7938020/" target="_blank" rel="noopener noreferrer">Pexels</a></small></div>
+  </article>
+ </div>
+ <p class="gallery-foot">Fotografías de uso libre de Pexels, utilizadas como imágenes ilustrativas. No representan a las familias protagonistas de esta guía. <a href="https://www.pexels.com/license/" target="_blank" rel="noopener noreferrer">Licencia de Pexels</a>.</p>
+</section>
+
+<h2 id="distancia">La distancia no es lo mismo que el abandono</h2>
+<p>En las familias cubanas, la migración puede estar relacionada con trabajo, estudios, reunificación familiar, proyectos personales o circunstancias difíciles. Cada historia es distinta. No conviene juzgar a una familia desde fuera ni asumir que todos los niños viven la separación de la misma manera.</p>
+<p>La distancia física sí modifica la crianza: el progenitor que está lejos no puede responder de inmediato a un llanto nocturno, acompañar una consulta o participar en cada rutina. Quien permanece con el bebé sostiene buena parte del cuidado directo. Ambos lugares son reales y merecen reconocimiento, aunque sus responsabilidades cotidianas no sean iguales.</p>
+<div class="note"><b>Una idea importante:</b> el vínculo no se mide por la cantidad de videollamadas, regalos o dinero enviado. Se construye con disponibilidad afectiva, constancia, respeto, responsabilidad y una relación segura con las personas que cuidan al niño.</div>
+<p>La investigación sobre niños que permanecen en su país mientras sus padres migran describe experiencias diversas. La continuidad de los cuidados, la estabilidad de la persona cuidadora, la calidad del contacto y las condiciones familiares influyen en cómo se vive la separación. No existe una consecuencia única ni inevitable para todos los niños.</p>
+
+<h2 id="primeros">¿Cómo vive la distancia un bebé de 0 a 24 meses?</h2>
+<h3>Durante el primer año</h3>
+<p>Un bebé pequeño no comprende la migración, los países ni el tiempo que falta para un regreso. Reconoce voces, rostros, olores, formas de sostenerlo y secuencias cotidianas. La seguridad se construye principalmente a través de las respuestas sensibles y repetidas de las personas que están disponibles en su entorno.</p>
+<p>La voz de quien vive lejos puede llegar a ser familiar, pero no sustituye los brazos, la alimentación, el consuelo ni la atención cotidiana. Si el bebé no muestra interés por el teléfono, se distrae o llora durante la llamada, no significa que rechace a su madre o padre. Puede estar cansado, hambriento, sobreestimulado o simplemente necesitar otra cosa.</p>
+<h3>Entre los 12 y los 24 meses</h3>
+<p>Con el desarrollo del lenguaje y la memoria, algunos niños comienzan a reconocer mejor a la persona que aparece en la pantalla y a anticipar ciertas rutinas. Aun así, su comprensión es concreta y variable. Pueden preguntar repetidamente por esa persona, buscarla al terminar la llamada o confundirse sobre dónde está.</p>
+<p>Conviene responder con palabras sencillas y repetir la misma explicación. No hace falta dar detalles sobre trámites, dinero, conflictos de adultos o dificultades migratorias que el niño no puede comprender ni resolver.</p>
+
+<h2 id="contacto">Cómo mantener el contacto sin convertirlo en una obligación</h2>
+<p>Las videollamadas en directo pueden apoyar la relación entre bebés y familiares que viven lejos cuando son breves, interactivas y acompañadas por una persona adulta. La Academia Estadounidense de Pediatría reconoce el videochat como una excepción útil a la recomendación de evitar el uso pasivo de pantallas en los menores de 18 meses. No es lo mismo conversar con un familiar que dejar al bebé mirando videos por su cuenta.</p>
+<div class="steps">
+ <div class="step"><b>Acuerden una frecuencia posible.</b> Es mejor una rutina realista que una promesa de llamadas diarias que luego no se puede cumplir. Tengan en cuenta los horarios, la conexión, el descanso y las necesidades del bebé.</div>
+ <div class="step"><b>Busquen momentos tranquilos.</b> Eviten interrumpir la comida, el sueño o el juego cuando el niño está concentrado. Una llamada de pocos minutos puede ser suficiente.</div>
+ <div class="step"><b>Hagan algo juntos.</b> Canten una canción conocida, jueguen a esconder y mostrar el rostro, nombren un objeto o lean el mismo cuento. La persona que está lejos debe responder a los gestos y sonidos del niño, no limitarse a hablarle sin pausa.</div>
+ <div class="step"><b>Dejen que el bebé marque el ritmo.</b> Si aparta la mirada, se inquieta o quiere irse, no lo obliguen a saludar, sonreír, mandar besos ni permanecer frente a la pantalla.</div>
+ <div class="step"><b>Expliquen los cortes.</b> Si la conexión se interrumpe, el adulto presente puede decir con calma: «Se fue la llamada. Hablaremos otro día». Eviten desaparecer de repente cuando sea posible.</div>
+</div>
+<div class="tip"><b>Una alternativa cuando no hay conexión:</b> una nota de voz corta, una canción grabada o una fotografía impresa pueden servir para compartir recuerdos. En los bebés, estos recursos deben estar acompañados por una persona adulta y nunca sustituir el juego, el contacto y la conversación cara a cara.</div>
+<p>En menores de dos años, la prioridad sigue siendo el juego activo, el movimiento, la exploración y la interacción con quienes están físicamente presentes. Las llamadas no deben ocupar el lugar de la atención cotidiana ni convertirse en una pantalla encendida durante largos períodos.</p>
+
+<h2 id="acuerdos">Dos hogares, una responsabilidad compartida</h2>
+<p>Cuando un progenitor vive lejos, es útil acordar cómo participará en la crianza y cómo se tomarán las decisiones. La persona que cuida cada día conoce de primera mano los horarios, las dificultades y las señales del bebé. Quien está fuera puede aportar información, afecto, recursos y apoyo, pero necesita escuchar y respetar esa realidad.</p>
+<div class="grid">
+ <div class="card"><b>Salud y consultas</b><p>Compartir información relevante, resultados, indicaciones profesionales y fechas de seguimiento. Evitar diagnósticos o cambios de tratamiento por mensajes sin valoración clínica.</p></div>
+ <div class="card"><b>Rutinas y cuidados</b><p>Conversar sobre sueño, alimentación, juego y nuevas habilidades. Los acuerdos deben ser seguros y adaptarse a la edad y al desarrollo del niño.</p></div>
+ <div class="card"><b>Comunicación entre adultos</b><p>Definir un canal y un momento para hablar de decisiones, gastos, preocupaciones y emergencias sin utilizar al niño como mensajero.</p></div>
+ <div class="card"><b>Apoyo a quien permanece</b><p>Reconocer el cansancio y las tareas de cuidado. Preguntar qué ayuda concreta necesita, en vez de limitarse a dar instrucciones desde lejos.</p></div>
+</div>
+<p>El dinero enviado puede aliviar necesidades importantes, pero no debe convertirse en la única forma de participación ni en una herramienta para controlar a quien cuida. Del mismo modo, la distancia no elimina las responsabilidades parentales ni autoriza a desentenderse de las decisiones que afectan al niño.</p>
+
+<h2 id="explicar">Qué decirle al niño y qué es mejor evitar</h2>
+<p>La explicación debe corresponder a su edad. Durante los primeros meses, el bebé necesita sobre todo rutinas estables y adultos sensibles. Cuando comienza a comprender palabras, conviene utilizar frases cortas, concretas y verdaderas.</p>
+<div class="tip">
+ <b>Una forma sencilla de explicarlo:</b><br>
+ «Mamá vive lejos y ahora no puede estar aquí. Te quiere y te llamará cuando pueda. Yo estoy aquí para cuidarte».<br><br>
+ <b>Si no se conoce cuándo será el regreso:</b><br>
+ «Todavía no sabemos cuándo podrá venir. Cuando tengamos información, te lo contaremos».
+</div>
+<p>Eviten decir que el padre o la madre se fue porque el niño se portó mal, que debe ser fuerte para no entristecer a los adultos o que pronto regresará si no existe una fecha segura. Tampoco conviene prometer regalos o viajes para conseguir que el pequeño acepte la separación.</p>
+<p>Si el niño pregunta muchas veces lo mismo, respondan con paciencia. Repetir una pregunta no significa que no haya escuchado: puede estar intentando comprender una realidad que todavía supera sus recursos emocionales y su lenguaje.</p>
+<div class="warning"><b>El niño no debe cargar con los problemas de los adultos.</b> No le pidan que consuele al progenitor que está lejos, que tome partido en una discusión, que transmita reclamos, que oculte información o que prometa cuidar a la persona adulta que permanece.</div>
+
+<h2 id="cuidador">Cuidar a quien cuida también protege al bebé</h2>
+<p>La persona que permanece con el niño puede experimentar cansancio, soledad, preocupación económica, incertidumbre y la responsabilidad de resolver cada imprevisto. A veces también recibe críticas de familiares que opinan desde lejos o siente que debe demostrar que puede con todo.</p>
+<p>Necesita una red concreta: alguien que pueda acompañarla a una consulta, ayudar con una compra, escuchar sin juzgar o permitirle descansar un rato. Si es posible, acuerden relevos y mantengan contacto con el consultorio del médico y la enfermera de la familia y los servicios de salud disponibles en la comunidad.</p>
+<p>Quien migró también puede vivir tristeza, culpa, ansiedad o frustración por no estar presente. Reconocer esas emociones es válido, pero no debe descargar sobre el niño la responsabilidad de aliviar su malestar. Si la angustia es persistente, afecta el sueño o el funcionamiento diario, o se vuelve difícil de manejar, buscar apoyo profesional puede ayudar.</p>
+
+<h2 id="reencuentro">Cuando llega el momento de reencontrarse</h2>
+<p>Un reencuentro puede ser emocionante para los adultos y, al mismo tiempo, extraño para un bebé o un niño pequeño que ha pasado meses sin contacto presencial. Puede acercarse enseguida, observar desde cierta distancia, llorar, aferrarse a su cuidador habitual o necesitar varios encuentros para sentirse cómodo. Todas esas respuestas pueden ocurrir.</p>
+<ul>
+ <li>Si es posible, anticipen la visita con fotografías, conversaciones sencillas y una fecha que el niño pueda comprender.</li>
+ <li>Permitan que el niño se acerque a su ritmo. No fuercen abrazos, besos ni que se quede a solas con una persona con la que todavía no se siente cómodo.</li>
+ <li>Mantengan las rutinas de sueño, alimentación y juego mientras se adapta a la presencia del progenitor.</li>
+ <li>Faciliten momentos compartidos y cotidianos: jugar en el suelo, leer un cuento, dar un paseo o participar en una rutina de cuidado.</li>
+ <li>Si el progenitor regresará para quedarse, organicen gradualmente los cambios de convivencia y de responsabilidades, escuchando las necesidades del niño y de su cuidador habitual.</li>
+</ul>
+<p>El reencuentro no es una prueba de amor ni una escena que el niño tenga que representar para tranquilizar a los adultos. La confianza se construye con tiempo, respeto y experiencias seguras repetidas.</p>
+
+<h2 id="senales">Cuándo conviene pedir orientación</h2>
+<p>Un cambio de conducta aislado no permite diagnosticar un problema emocional. Sin embargo, si durante un tiempo persisten dificultades importantes para dormir o alimentarse, irritabilidad intensa, retraimiento, pérdida de interés por el juego, angustia marcada ante las separaciones o cambios que preocupan a quienes lo cuidan, conviene conversar con el pediatra o el equipo de salud.</p>
+<p>También es importante pedir ayuda si la persona cuidadora se siente desbordada, no logra descansar, presenta tristeza o ansiedad persistentes, o si existen conflictos, amenazas, violencia o dudas sobre la seguridad del niño. En esas circunstancias, el contacto con el progenitor que está lejos debe organizarse siempre priorizando el bienestar y la protección infantil; no toda comunicación es adecuada cuando hay riesgos o restricciones legales.</p>
+
+<h2 id="acuerdo">Un acuerdo familiar para empezar</h2>
+<div class="checklist">
+ <ul>
+  <li>Definir quién es la persona adulta responsable del cuidado diario y quién puede apoyarla.</li>
+  <li>Elegir una frecuencia de comunicación que la familia pueda sostener.</li>
+  <li>Compartir información de salud y cambios importantes por un canal acordado.</li>
+  <li>Evitar discusiones, reproches y decisiones difíciles delante del niño.</li>
+  <li>Proteger las fotografías, los datos personales y la intimidad del bebé.</li>
+  <li>Preparar las visitas y los reencuentros sin forzar reacciones.</li>
+  <li>Revisar los acuerdos cuando cambien las necesidades del niño o las circunstancias familiares.</li>
+ </ul>
+</div>
+<div class="note"><b>Para recordar:</b> una familia puede estar repartida entre países y seguir compartiendo responsabilidades. La tecnología ayuda a acercar voces y rostros; la estabilidad, el cuidado sensible y los adultos que responden cada día sostienen la vida del bebé.</div>
+
+<h2 id="fuentes">Fuentes para ampliar</h2>
+<ul class="sources">
+ <li><a href="https://www.unicef.org/child-rights-convention/convention-text" target="_blank" rel="noopener noreferrer">UNICEF. Convención sobre los Derechos del Niño, artículos 9 y 10: relaciones personales y contacto regular con ambos progenitores, salvo cuando no responda al interés superior del niño.</a></li>
+ <li><a href="https://www.unicef.org/documents/children-left-behind" target="_blank" rel="noopener noreferrer">UNICEF. Children “Left Behind”: efectos familiares y necesidades de apoyo cuando los padres migran.</a></li>
+ <li><a href="https://www.unicef.org/parenting/emergencies/displaced-from-home" target="_blank" rel="noopener noreferrer">UNICEF Parenting. Displaced from home: explicaciones verdaderas y adecuadas a la edad, anticipación y continuidad de rutinas.</a></li>
+ <li><a href="https://www.who.int/docs/default-source/mca-documents/child/q-a-on-child-care.pdf" target="_blank" rel="noopener noreferrer">Organización Mundial de la Salud. Care for Child Development: cuidado sensible y apoyo a padres y cuidadores.</a></li>
+ <li><a href="https://www.aap.org/en/patient-care/media-and-children/center-of-excellence-on-social-media-and-youth-mental-health/qa-portal/qa-portal-library/qa-portal-library-questions/tips-for-video-chatting-with-infants-and-toddlers/" target="_blank" rel="noopener noreferrer">American Academy of Pediatrics. Tips for Video Chatting with Infants and Toddlers.</a></li>
+ <li><a href="https://www.zerotothree.org/resource/considerations-for-serving-immigrant-families-with-young-children/" target="_blank" rel="noopener noreferrer">ZERO TO THREE. Considerations for Serving Immigrant Families With Young Children.</a></li>
+</ul>
+<p class="disclaimer">Material educativo de CIBA. No sustituye la valoración individual por profesionales de salud, psicología o protección infantil. Las decisiones sobre contacto familiar deben considerar la seguridad, los derechos y el interés superior del niño.</p>
+<div class="share">Una guía de CIBA para acompañar a las familias con información confiable sobre crianza, salud y desarrollo infantil.<br><br>Comparte este recurso con otras familias.<br><br>Sigue a CIBA en su canal de WhatsApp:<br><a href="https://whatsapp.com/channel/0029VbAOKuw2975HsSJutV32" target="_blank" rel="noopener noreferrer">Canal de WhatsApp de CIBA</a><br><br><b>CIBA. Crecemos acompañándonos.</b></div>
+</main>
+<aside class="aside"><b>En este artículo</b><nav>
+ <a href="#distancia">Distancia y vínculo</a>
+ <a href="#primeros">Qué comprende el bebé</a>
+ <a href="#contacto">Contacto a distancia</a>
+ <a href="#acuerdos">Responsabilidad compartida</a>
+ <a href="#explicar">Qué decirle al niño</a>
+ <a href="#cuidador">Cuidar a quien cuida</a>
+ <a href="#reencuentro">Los reencuentros</a>
+ <a href="#senales">Cuándo pedir ayuda</a>
+ <a href="#acuerdo">Acuerdo familiar</a>
+ <a href="#fuentes">Fuentes</a>
+</nav><p class="small">Una lectura para madres, padres, cuidadores y profesionales que acompañan los primeros años de vida.</p></aside>
+</div>
+<footer class="footer"><div class="wrap"><span>CIBA · Crecemos acompañándonos.</span><span><a href="../../">Volver al inicio</a> · <a href="https://whatsapp.com/channel/0029VbAOKuw2975HsSJutV32" target="_blank" rel="noopener noreferrer">Canal de WhatsApp</a></span></div></footer>
+<script>
+(() => {
+ const rail=document.getElementById('support-rail');
+ const prev=document.getElementById('prev-card');
+ const next=document.getElementById('next-card');
+ if(!rail||!prev||!next)return;
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ let timer=null;
+ let paused=false;
+ const distance=()=>{const card=rail.querySelector('.photo-card');return card?card.getBoundingClientRect().width+13:260};
+ const move=(direction)=>rail.scrollBy({left:direction*distance(),behavior:reduced?'auto':'smooth'});
+ const advance=()=>{const end=rail.scrollWidth-rail.clientWidth;const target=rail.scrollLeft+distance();rail.scrollTo({left:target>=end-5?0:target,behavior:'smooth'});};
+ prev.addEventListener('click',()=>move(-1));
+ next.addEventListener('click',()=>move(1));
+ const stop=()=>{paused=true;if(timer){clearInterval(timer);timer=null;}};
+ const resume=()=>{paused=false;if(!reduced&&!timer)timer=setInterval(()=>{if(!paused&&!document.hidden)advance();},5200);};
+ rail.addEventListener('mouseenter',stop);
+ rail.addEventListener('mouseleave',resume);
+ rail.addEventListener('focusin',stop);
+ rail.addEventListener('focusout',resume);
+ rail.addEventListener('touchstart',stop,{passive:true});
+ rail.addEventListener('touchend',()=>setTimeout(resume,3500),{passive:true});
+ document.addEventListener('visibilitychange',()=>document.hidden?stop():resume());
+ resume();
+})();
+</script>
+<script type="module" src="../../../assets/js/ciba-global.js?v=20261112-04"></script>
+</body>
+</html>
