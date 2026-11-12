@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261112-06', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261112-07', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -358,12 +358,12 @@
           { id:'I2', titulo:'Desinformación y consejos virales' },
           { id:'I3', titulo:'Privacidad y seguridad infantil en redes' },
           { id:'I4', titulo:'Pantallas y desarrollo' },
-          { id:'I5', titulo:'Inteligencia artificial y crianza' },
-          { id:'I6', titulo:'Redes sociales y salud mental' },
-          { id:'I7', titulo:'Apps, plataformas y herramientas digitales' },
-          { id:'I8', titulo:'Telemedicina y comunicación digital con el sistema de salud' },
-          { id:'I9', titulo:'Contenido infantil y consumo audiovisual' },
-          { id:'I10', titulo:'Ciudadanía digital y futuro' }
+          { id:'I5', titulo:'Inteligencia artificial y crianza', ruta:'i/#tema-05' },
+          { id:'I6', titulo:'Redes sociales y salud mental', ruta:'i/#tema-06' },
+          { id:'I7', titulo:'Apps, plataformas y herramientas digitales', ruta:'i/#tema-07' },
+          { id:'I8', titulo:'Telemedicina y comunicación digital con el sistema de salud', ruta:'i/#tema-08' },
+          { id:'I9', titulo:'Contenido infantil y consumo audiovisual', ruta:'i/#tema-09' },
+          { id:'I10', titulo:'Ciudadanía digital y futuro', ruta:'i/#tema-10' }
         ],
         B: [
           { id:'B1', titulo:'Salud del bebé' },
