@@ -10,9 +10,13 @@ permissions:
 jobs:
   recover:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
-      - name: Download HeyGen voice tracks
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+      - name: Download HeyGen voices and official CIBA theme
         shell: bash
         run: |
           set -euo pipefail
@@ -21,11 +25,15 @@ jobs:
           curl -fL --retry 2 --connect-timeout 20 --max-time 180 'https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/4b49e50e44c84e99b0f960da7d434e95/id=056beb8dddef4cd6a163540a5151bed7.mp3' -o recovered/02-yadira.mp3
           curl -fL --retry 2 --connect-timeout 20 --max-time 180 'https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/70bc24b8126c446c8cf50fc1a01eb834/id=29249ececa014888bbcd6ed331f20211.mp3' -o recovered/03-emiliano.mp3
           curl -fL --retry 2 --connect-timeout 20 --max-time 180 'https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/1777080b7f574979875dc144b9fbf0de/id=74da5d23df3e4c668688f547a29d65cb.mp3' -o recovered/04-montserrat.mp3
-          for f in recovered/*.mp3; do test -s "$f"; ffprobe -v error -show_entries format=duration -of csv=p=0 "$f"; done
+          curl -fL --retry 2 --connect-timeout 20 --max-time 180 'https://resource2.heygen.ai/audio/ff68a232daf54185bc772350d86a7580/original.mp3' -o recovered/05-ciba-theme.mp3
+          for f in recovered/*.mp3; do
+            test -s "$f"
+            echo "$(basename "$f"): $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f") seconds"
+          done
       - name: Upload recovered source tracks
         uses: actions/upload-artifact@v4
         with:
-          name: ciba-c7-04-source-tracks
+          name: ciba-c7-04-source-audio
           path: recovered/*.mp3
           if-no-files-found: error
           retention-days: 7
