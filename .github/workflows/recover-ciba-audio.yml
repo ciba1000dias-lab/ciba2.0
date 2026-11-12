@@ -10,12 +10,14 @@ permissions:
 jobs:
   recover:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
-      - name: Install FFmpeg
+      - name: Install audio and transcription tools
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip
+          pip install faster-whisper
       - name: Download HeyGen voices and official CIBA theme
         shell: bash
         run: |
@@ -30,10 +32,26 @@ jobs:
             test -s "$f"
             echo "$(basename "$f"): $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f") seconds"
           done
-      - name: Upload recovered source tracks
+      - name: Transcribe each character track
+        shell: bash
+        run: |
+          python - <<'PY'
+          from faster_whisper import WhisperModel
+          from pathlib import Path
+          model = WhisperModel("small", device="cpu", compute_type="int8")
+          root = Path("recovered")
+          for name in ["01-rocio", "02-yadira", "03-emiliano", "04-montserrat"]:
+              segments, info = model.transcribe(str(root / f"{name}.mp3"), language="es", beam_size=5, vad_filter=True)
+              lines = [f"Idioma: {info.language}; duración: {info.duration:.2f}s", ""]
+              for seg in segments:
+                  lines.append(f"[{seg.start:07.2f}–{seg.end:07.2f}] {seg.text.strip()}")
+              (root / f"{name}.txt").write_text("\n".join(lines), encoding="utf-8")
+              print(f"Transcribed {name}")
+          PY
+      - name: Upload recovered audio and transcripts
         uses: actions/upload-artifact@v4
         with:
           name: ciba-c7-04-source-audio
-          path: recovered/*.mp3
+          path: recovered/*
           if-no-files-found: error
           retention-days: 7
