@@ -939,7 +939,7 @@
     nav.setAttribute('aria-label', 'Navegación principal de CIBA');
     const enlaces = [
       ['Crianza', 'c/C1/'],
-      ['Informática', 'i/'],
+      ['INTERNET', 'i/'],
       ['Bienestar', 'b/B1/'],
       ['Acompañamiento', 'a/A1/'],
       ['Configuración de la plataforma', 'plataforma/configuracion/']
