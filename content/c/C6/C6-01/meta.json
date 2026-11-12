@@ -25,19 +25,14 @@
   "mostrar_en_area": true,
   "enlaces_externos": [
     {
-      "titulo": "Fotografía: Helena Lopes (Pexels)",
-      "url": "https://www.pexels.com/photo/cute-baby-resting-in-crib-at-daytime-4339879/",
+      "titulo": "Fotografía: American Academy of Pediatrics, Safe Sleep Image Gallery",
+      "url": "https://www.aap.org/en/news-room/campaigns-and-toolkits/safe-sleep/safe-sleep-image-gallery/",
       "tipo": "imagen"
     },
     {
       "titulo": "AAP: Sleep-Related Infant Deaths, 2022",
       "url": "https://publications.aap.org/pediatrics/article/150/1/e2022057990/188304",
       "tipo": "fuente"
-    },
-    {
-      "titulo": "Fotografía: Polina Tankilevitch (Pexels)",
-      "url": "https://www.pexels.com/photo/crib-next-to-bed-in-bedroom-3875087/",
-      "tipo": "imagen"
     }
   ]
 }
