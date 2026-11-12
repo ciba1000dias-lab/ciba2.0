@@ -170,8 +170,8 @@
 
   function resolverColumnaActual() {
     const ruta = window.location.pathname;
-    const relativa = ruta.startsWith(RAIZ.pathname) ? ruta.slice(RAIZ.pathname.length) : ruta.replace(/^\\/+/, '');
-    const prefijo = relativa.match(/^([ciba])(?:\\/|$)/i);
+    const relativa = ruta.startsWith(RAIZ.pathname) ? ruta.slice(RAIZ.pathname.length) : ruta.replace(/^\/+/, '');
+    const prefijo = relativa.match(/^([ciba])(?:\/|$)/i);
     let id = prefijo ? prefijo[1].toUpperCase() : '';
     if (!id) {
       const articulo = document.querySelector('.ciba-articulo');
