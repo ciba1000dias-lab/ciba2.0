@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261112-05', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261112-06', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -29,7 +29,7 @@
 
   const columnas = [
     { id: 'C', titulo: 'Crianza' },
-    { id: 'I', titulo: 'Informática' },
+    { id: 'I', titulo: 'INTERNET' },
     { id: 'B', titulo: 'Bienestar' },
     { id: 'A', titulo: 'Acompañamiento' }
   ];
@@ -356,9 +356,14 @@
         I: [
           { id:'I1', titulo:'Alfabetización sanitaria digital' },
           { id:'I2', titulo:'Desinformación y consejos virales' },
-          { id:'I3', titulo:'Privacidad y seguridad infantil' },
+          { id:'I3', titulo:'Privacidad y seguridad infantil en redes' },
           { id:'I4', titulo:'Pantallas y desarrollo' },
-          { id:'I5', titulo:'Inteligencia artificial y crianza' }
+          { id:'I5', titulo:'Inteligencia artificial y crianza' },
+          { id:'I6', titulo:'Redes sociales y salud mental' },
+          { id:'I7', titulo:'Apps, plataformas y herramientas digitales' },
+          { id:'I8', titulo:'Telemedicina y comunicación digital con el sistema de salud' },
+          { id:'I9', titulo:'Contenido infantil y consumo audiovisual' },
+          { id:'I10', titulo:'Ciudadanía digital y futuro' }
         ],
         B: [
           { id:'B1', titulo:'Salud del bebé' },
@@ -422,7 +427,7 @@
       columnas.forEach(columna => {
         const areasFuente = (datos.areas || []).filter(area => area.columna === columna.id);
         const areasColumna = taxonomia[columna.id] || [];
-        const rutaColumna = areasFuente.sort((a, b) => (a.orden || 0) - (b.orden || 0))[0]?.ruta_publica || null;
+        const rutaColumna = columna.id === 'I' ? 'i/' : (areasFuente.sort((a, b) => (a.orden || 0) - (b.orden || 0))[0]?.ruta_publica || null);
         const grupoColumna = crearDesplegable(
           columna.titulo,
           'ciba-global-columna ciba-global-columna-' + columna.id.toLowerCase(),
