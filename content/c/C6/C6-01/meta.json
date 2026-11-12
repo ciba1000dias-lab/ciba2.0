@@ -20,7 +20,7 @@
   ],
   "estado": "publicado",
   "preview_publica": false,
-  "fecha_publicacion": "2026-11-12",
+  "fecha_publicacion": "2026-11-11",
   "mostrar_en_columna": true,
   "mostrar_en_area": true,
   "enlaces_externos": [
@@ -33,6 +33,11 @@
       "titulo": "AAP: Sleep-Related Infant Deaths, 2022",
       "url": "https://publications.aap.org/pediatrics/article/150/1/e2022057990/188304",
       "tipo": "fuente"
+    },
+    {
+      "titulo": "Fotografía: Polina Tankilevitch (Pexels)",
+      "url": "https://www.pexels.com/photo/crib-next-to-bed-in-bedroom-3875087/",
+      "tipo": "imagen"
     }
   ]
 }
