@@ -1,0 +1,38 @@
+{
+  "id": "C6-01",
+  "titulo": "Sueño seguro: las tres reglas que no se negocian",
+  "descripcion": "Recomendaciones para un sueño infantil seguro: posición boca arriba, superficie firme y plana, cuna despejada y habitación compartida con superficie separada.",
+  "columna": "C",
+  "area": "C6",
+  "subseccion": "Riesgos respiratorios y de atragantamiento",
+  "palabras_clave": [
+    "sueño-seguro",
+    "boca-arriba",
+    "muerte-subita",
+    "cuna-segura",
+    "superficie-firme",
+    "superficie-plana",
+    "cuna-despejada",
+    "asfixia",
+    "lactante",
+    "siestas",
+    "primeros-meses"
+  ],
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "enlaces_externos": [
+    {
+      "titulo": "Fotografía: Helena Lopes (Pexels)",
+      "url": "https://www.pexels.com/photo/cute-baby-resting-in-crib-at-daytime-4339879/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "AAP: Sleep-Related Infant Deaths, 2022",
+      "url": "https://publications.aap.org/pediatrics/article/150/1/e2022057990/188304",
+      "tipo": "fuente"
+    }
+  ]
+}
