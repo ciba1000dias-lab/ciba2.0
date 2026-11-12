@@ -1,0 +1,62 @@
+{
+  "id": "C7-07",
+  "titulo": "Canciones, rimas y juegos tradicionales cubanos para bebés",
+  "descripcion": "Orientaciones para compartir nanas, rimas, retahílas, juegos de falda y canciones tradicionales durante los primeros dos años, con énfasis en vínculo, comunicación, cultura familiar y seguridad. Incluye acceso destacado a la Fonoteca infantil CIBA.",
+  "columna": "C",
+  "area": "C7",
+  "subseccion": "Cultura, juego y tradiciones",
+  "palabras_clave": [
+    "canciones-cubanas-para-bebes",
+    "juegos-tradicionales-cubanos",
+    "nanas-y-arrullos",
+    "rimas-infantiles",
+    "retahilas",
+    "juegos-de-falda",
+    "juegos-de-palmas",
+    "fonoteca-infantil",
+    "musica-para-bebes",
+    "tradicion-oral-cubana",
+    "lenguaje-temprano",
+    "vinculo-afectivo",
+    "estimulación-musical",
+    "primeros-1000-dias",
+    "desarrollo-infantil"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": false,
+  "enlaces_externos": [
+    {
+      "titulo": "Fonoteca infantil CIBA",
+      "url": "https://ciba1000dias-lab.github.io/ciba2.0/c/C1/fonoteca/",
+      "tipo": "recurso principal"
+    },
+    {
+      "titulo": "CIBA C4-06: Fonoteca infantil",
+      "url": "https://ciba1000dias-lab.github.io/ciba2.0/c/C4/C4-06/",
+      "tipo": "presentación del recurso"
+    },
+    {
+      "titulo": "OMS: Marco para el cuidado cariñoso y sensible",
+      "url": "https://www.who.int/publications/i/item/9789241514064",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "UNICEF: Cómo aprenden los bebés mediante el juego",
+      "url": "https://www.unicef.org/parenting/child-development/how-babies-learn-through-play",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "Harvard Center on the Developing Child: Brain-Building Through Play",
+      "url": "https://developingchild.harvard.edu/resources/handouts-tools/brainbuildingthroughplay/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "UNESCO: Educación multilingüe y lengua materna",
+      "url": "https://www.unesco.org/en/languages-education",
+      "tipo": "fuente"
+    }
+  ]
+}
