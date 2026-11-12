@@ -1,0 +1,52 @@
+{
+  "columna": "C",
+  "area": "C7",
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "id": "C7-03",
+  "titulo": "Rutinas que se adaptan: cómo mantener la continuidad cuando el bebé está en casa de los abuelos",
+  "descripcion": "Guía para coordinar los cuidados del bebé entre el hogar de sus padres y el de sus abuelos: acuerdos entre generaciones, rutinas flexibles, sueño seguro, alimentación, medicamentos y una ficha práctica para cuidadores.",
+  "subseccion": "Rutinas y organización de la vida diaria",
+  "palabras_clave": [
+    "rutinas-bebe",
+    "abuelos-cuidadores",
+    "cuidado-compartido",
+    "acuerdos-familiares",
+    "sueño-seguro",
+    "alimentacion-infantil",
+    "seguridad-hogar",
+    "cuidado-receptivo",
+    "primeros-1000-dias",
+    "crianza-cuba"
+  ],
+  "enlaces_externos": [
+    {
+      "titulo": "Fotografía: René Terp / Pexels",
+      "url": "https://www.pexels.com/photo/grandmother-holding-and-kissing-a-baby-12774832/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "Podcast CIBA C7-03: En casa de los abuelos: cuidar juntos, crecer seguros",
+      "url": "https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/84854979e66846989bc6c5855f53268f/id=50760200122c403788f3b51c357b0fdf.mp3",
+      "tipo": "podcast"
+    },
+    {
+      "titulo": "OMS: Improving early childhood development — Evidence and Recommendations",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK555069/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "AAP: Childproofing Tips for Grandparents",
+      "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/A-Message-for-Grandparents-Keeping-Your-Grandchild-Safe-in-Your-Home.aspx",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "AAP: The Importance of Family Routines",
+      "url": "https://www.healthychildren.org/English/family-life/family-dynamics/Pages/the-importance-of-family-routines.aspx",
+      "tipo": "fuente"
+    }
+  ]
+}
