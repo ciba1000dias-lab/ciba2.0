@@ -1870,13 +1870,13 @@ const t=c.querySelector(ts),g=t&&t.querySelector(gs);if(!t||!g||t.dataset.cibaRe
 const clone=g.cloneNode(true);clone.setAttribute("aria-hidden","true");clone.setAttribute("inert","");
 clone.querySelectorAll("a,button,[tabindex]").forEach(e=>e.setAttribute("tabindex","-1"));t.appendChild(clone);t.dataset.cibaReady="true";
 let width=0,x=dir<0?0:-1,drag=false,sx=0,ox=0,moved=false,suppress=false,pause=false,last=0;
-function wrap(){if(!width)return;while(x<=-width)x+=width;while(x>0)x-=width;}
+function wrap(){if(!width)return;if(dir<0){while(x<=-width)x+=width;while(x>0)x-=width;}else{while(x>=0)x-=width;while(x< -width)x+=width;}}
 function paint(){t.style.transform="translate3d("+x+"px,0,0)";}
 function measure(){width=g.getBoundingClientRect().width;if(width&&dir>0&&x===-1)x=-width;wrap();paint();}
 function tick(now){if(!last)last=now;const dt=Math.min((now-last)/1000,.05);last=now;if(!drag&&!pause&&!reducido.matches&&width){x+=dir*speed*dt;wrap();paint();}requestAnimationFrame(tick);}
 c.addEventListener("pointerdown",e=>{if(e.pointerType==="mouse"&&e.button!==0)return;drag=true;moved=false;sx=e.clientX;ox=x;last=0;c.classList.add("arrastrando");try{c.setPointerCapture(e.pointerId);}catch{}});
 c.addEventListener("pointermove",e=>{if(!drag)return;const dx=e.clientX-sx;if(Math.abs(dx)>7)moved=true;x=ox+dx;wrap();paint();});
-function end(e){if(!drag)return;drag=false;c.classList.remove("arrastrando");if(moved){suppress=true;setTimeout(()=>suppress=false,100);}last=0;if(e&&c.hasPointerCapture?.(e.pointerId)){try{c.releasePointerCapture(e.pointerId);}catch{}}}
+function end(e){if(!drag)return;drag=false;c.classList.remove("arrastrando");if(e&&e.pointerType==="touch")pause=false;if(moved){suppress=true;setTimeout(()=>suppress=false,100);}last=0;if(e&&c.hasPointerCapture?.(e.pointerId)){try{c.releasePointerCapture(e.pointerId);}catch{}}}
 c.addEventListener("pointerup",end);c.addEventListener("pointercancel",end);c.addEventListener("lostpointercapture",()=>{drag=false;c.classList.remove("arrastrando");});
 c.addEventListener("click",e=>{if(!suppress)return;e.preventDefault();e.stopPropagation();suppress=false;},true);
 c.addEventListener("pointerenter",()=>pause=true);c.addEventListener("pointerleave",()=>{pause=false;last=0;});c.addEventListener("focusin",()=>pause=true);c.addEventListener("focusout",e=>{if(!c.contains(e.relatedTarget))pause=false;});
