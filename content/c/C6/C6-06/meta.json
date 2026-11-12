@@ -1,0 +1,41 @@
+{
+  "id": "C6-06",
+  "titulo": "Enchufes, cables y aparatos: seguridad eléctrica para bebés",
+  "descripcion": "Prevención de descargas y quemaduras eléctricas en bebés y niños pequeños; protección de enchufes, cables, extensiones y respuesta ante accidentes.",
+  "subseccion": "Riesgos térmicos y eléctricos",
+  "palabras_clave": [
+    "electricidad",
+    "enchufes",
+    "tomacorrientes",
+    "cables",
+    "descarga-electrica",
+    "electrocucion",
+    "regletas",
+    "extensiones",
+    "primeros-auxilios"
+  ],
+  "enlaces_externos": [
+    {
+      "titulo": "Fotografía: Micah Eleazar (Pexels)",
+      "url": "https://www.pexels.com/photo/boy-putting-electric-socket-10498533/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "Children's Hospital of Philadelphia: Electrical Safety",
+      "url": "https://www.chop.edu/centers-programs/injury-prevention-program/electrical-safety",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "CPSC: Childproofing Your Home",
+      "url": "https://www.cpsc.gov/safety-education/safety-guides/kids-and-babies/Childproofing-Your-Home",
+      "tipo": "fuente"
+    }
+  ],
+  "columna": "C",
+  "area": "C6",
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true
+}
