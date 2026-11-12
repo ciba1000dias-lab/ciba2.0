@@ -19,6 +19,47 @@
 @media(max-width:760px){.layout{width:min(780px,calc(100% - 28px));padding:25px 0 56px}.aside{position:static;margin:0 0 22px}.aside nav{display:flex;flex-wrap:wrap;gap:5px 13px}.aside a{display:inline}.grid{grid-template-columns:1fr}.rail{grid-auto-columns:minmax(220px,82%)}.gallery{padding:17px 13px}.gallery-head h2{font-size:23px}}
 @media(max-width:420px){.gallery-head{align-items:center}.gallery-head p{max-width:190px}}
 @media print{.top,.aside,.footer,.gallery-controls{display:none}.layout{display:block;padding:0}.hero{background:white;color:#293b35;padding:12px 0}.hero p{color:#333}.support-card,.card,.checklist{break-inside:avoid}}
+
+/* C7-10 · controles globales visibles y lectura adaptada a móvil */
+body.ciba-con-cabecera-global .ciba-global-cabecera>.ciba-global-menu{
+  position:fixed!important;top:82px!important;left:12px!important;right:auto!important;bottom:auto!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  width:44px!important;height:44px!important;flex:0 0 44px!important;z-index:10051!important;
+  visibility:visible!important;opacity:1!important;transform:none!important;
+}
+body.ciba-con-cabecera-global .ciba-global-cabecera>.ciba-global-menu>.ciba-global-menu-boton{
+  display:flex!important;visibility:visible!important;opacity:1!important;
+  width:42px!important;height:42px!important;position:relative!important;
+}
+body.ciba-con-cabecera-global .ciba-global-buscador:not(.ciba-oraculo-oculto){
+  position:fixed!important;right:14px!important;bottom:14px!important;z-index:10060!important;
+  display:block!important;visibility:visible!important;opacity:1!important;
+}
+@media(max-width:600px){
+  .hero{padding:40px 0 38px}
+  .hero-grid{width:calc(100% - 32px);max-width:560px}
+  .hero h1{font-size:clamp(29px,8vw,38px);line-height:1.13;margin:13px 0}
+  .hero p{font-size:15px;line-height:1.65}
+  .layout{width:calc(100% - 32px);max-width:560px;padding:22px 0 52px}
+  .article p,.article li{font-size:16px;line-height:1.7}
+  .lead{font-size:17px!important}
+  .article h2{font-size:26px;margin:32px 0 11px}
+  .article h3{font-size:20px}
+  .gallery{padding:14px 12px 13px;margin:24px 0 30px}
+  .gallery-head{align-items:center;gap:8px}
+  .gallery-head h2{font-size:21px}
+  .gallery-head p{font-size:11px;max-width:175px}
+  .gallery-controls button{width:34px;height:34px}
+  .rail{grid-auto-columns:minmax(0,84%);gap:11px}
+  body.ciba-con-cabecera-global .ciba-global-cabecera>.ciba-global-menu{top:72px!important;left:10px!important}
+}
+@media(max-width:360px){
+  .hero-grid,.layout{width:calc(100% - 28px)}
+  .hero h1{font-size:29px}
+  .gallery-head h2{font-size:19px}
+  .rail{grid-auto-columns:88%}
+}
+
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style></head>
 <body>
