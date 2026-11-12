@@ -1,0 +1,70 @@
+{
+  "columna": "C",
+  "area": "C7",
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "id": "C7-04",
+  "titulo": "Criar con recursos limitados: soluciones creativas para el día a día",
+  "descripcion": "Guía para criar con recursos limitados sin romantizar la escasez: juego gratuito, reutilización segura, alimentación sin improvisaciones, higiene, medicamentos y redes de apoyo durante los primeros dos años.",
+  "subseccion": "Crianza en contexto cubano",
+  "palabras_clave": [
+    "crianza-recursos-limitados",
+    "juego-seguro",
+    "juguetes-caseros-seguros",
+    "reutilizacion-responsable",
+    "alimentacion-infantil",
+    "formula-infantil",
+    "lactancia-materna",
+    "agua-segura",
+    "prevencion-atragantamiento",
+    "seguridad-infantil",
+    "apoyo-comunitario",
+    "primeros-1000-dias",
+    "crianza-cuba"
+  ],
+  "enlaces_externos": [
+    {
+      "titulo": "OMS: Alimentación del lactante y del niño pequeño",
+      "url": "https://www.who.int/es/news-room/fact-sheets/detail/infant-and-young-child-feeding",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OMS/UNICEF/Banco Mundial: Marco para el cuidado cariñoso y sensible",
+      "url": "https://www.who.int/publications/i/item/9789241514064",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "AAP: Consejos para comprar juguetes para bebés y niños pequeños",
+      "url": "https://www.healthychildren.org/Spanish/ages-stages/baby/Paginas/what-to-look-for-in-a-toy.aspx",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "AAP: Prevención de asfixia por atragantamiento",
+      "url": "https://www.healthychildren.org/Spanish/health-issues/injuries-emergencies/Paginas/choking-prevention.aspx",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "CDC: Preparación y almacenamiento de fórmula infantil",
+      "url": "https://cdc.gov/hygiene/media/pdfs/2024/04/preparar-y-almacenar-formula-508.pdf",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "AAP: Sueño seguro del bebé",
+      "url": "https://www.healthychildren.org/Spanish/ages-stages/baby/sleep/Paginas/A-Parents-Guide-to-Safe-Sleep.aspx",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "CPSC: Seguridad de las pilas de botón",
+      "url": "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Button-Cell-Coin-Battery-Information-Center",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "CPSC: Riesgos de los imanes",
+      "url": "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Magnets",
+      "tipo": "fuente"
+    }
+  ]
+}
