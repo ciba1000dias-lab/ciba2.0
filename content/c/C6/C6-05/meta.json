@@ -1,0 +1,41 @@
+{
+  "id": "C6-05",
+  "titulo": "Caídas y golpes: cómo proteger al bebé y reconocer las alarmas",
+  "descripcion": "Prevención de caídas en lactantes y niños pequeños, seguridad en camas, escaleras, ventanas y muebles, y señales de alarma tras un traumatismo.",
+  "subseccion": "Riesgos térmicos y eléctricos",
+  "palabras_clave": [
+    "caidas",
+    "golpes",
+    "traumatismo-craneal",
+    "conmocion",
+    "escaleras",
+    "ventanas",
+    "muebles",
+    "seguridad-infantil",
+    "primeros-auxilios"
+  ],
+  "enlaces_externos": [
+    {
+      "titulo": "Fotografía: Jep Gambardella (Pexels)",
+      "url": "https://www.pexels.com/photo/little-boy-trying-to-climb-a-stair-gate-6223621/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "CDC: Signos y síntomas de conmoción",
+      "url": "https://www.cdc.gov/heads-up/signs-symptoms/index.html",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "AAP: Golpes en la cabeza en bebés y niños pequeños",
+      "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/concussions-in-babies-what-to-do-if-your-infant-or-toddler-hits-their-head.aspx",
+      "tipo": "fuente"
+    }
+  ],
+  "columna": "C",
+  "area": "C6",
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true
+}
