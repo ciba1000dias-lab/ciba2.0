@@ -1732,3 +1732,50 @@ body:not(.ciba-con-cabecera-global)>.ciba-global-menu{
   .cabecera .barra>.ciba-global-menu{flex-basis:40px!important;width:40px!important;height:40px!important}
   .cabecera .barra>.ciba-global-menu>.ciba-global-menu-boton{width:38px!important;height:38px!important}
 }
+
+/* CIBA · PRIORIDAD ABSOLUTA DE LA NAVEGACIÓN Y EL ORÁCULO (2026-11-12)
+   Ambos controles se montan como hijos directos de body desde ciba-global.js.
+   Sus capas superan heroes, modales locales, cabeceras y transiciones editoriales. */
+body > .ciba-global-menu{
+  position:fixed!important;
+  top:14px!important;left:14px!important;right:auto!important;bottom:auto!important;
+  z-index:2147483000!important;
+  isolation:isolate!important;
+  transform:none!important;
+  visibility:visible!important;
+}
+body > .ciba-global-menu > .ciba-global-menu-boton{
+  position:relative!important;
+  z-index:2147483002!important;
+  visibility:visible!important;
+  opacity:1!important;
+  pointer-events:auto!important;
+}
+body > .ciba-global-panel,
+body > .ciba-global-menu > .ciba-global-panel{
+  z-index:2147483003!important;
+}
+body > .ciba-global-buscador{
+  position:fixed!important;
+  z-index:2147482990!important;
+  isolation:isolate!important;
+  pointer-events:auto!important;
+}
+body > .ciba-global-buscador .ciba-global-oraculo{
+  z-index:2147482991!important;
+  pointer-events:auto!important;
+}
+body > .ciba-global-buscador .ciba-global-panel-busqueda{
+  z-index:2147482992!important;
+}
+.ciba-global-cabecera{
+  padding-left:82px!important;
+}
+.cabecera .barra{
+  padding-left:76px!important;
+}
+@media(max-width:600px){
+  body > .ciba-global-menu{top:10px!important;left:10px!important}
+  .ciba-global-cabecera{padding-left:66px!important}
+  .cabecera .barra{padding-left:64px!important}
+}
