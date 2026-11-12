@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261111-59', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261112-05', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -537,15 +537,10 @@
     });
 
     contenedor.appendChild(boton);
-    if (cabeceraGlobal) {
-      cabeceraGlobal.appendChild(contenedor);
-    } else {
-      // En la portada, integrar el menú en la barra original sin superponer la marca.
-      const barraPortada = esPortada() ? document.querySelector('.cabecera .barra') : null;
-      if (barraPortada) barraPortada.appendChild(contenedor);
-      else document.body.appendChild(contenedor);
-    }
-    // El panel se monta en body para evitar recortes y contextos de apilamiento.
+    // Portal global: el botón y el panel viven directamente en body para
+    // escapar de stacking contexts creados por cabeceras, heroes o micrositios.
+    // Así la navegación conserva prioridad visual en todas las columnas.
+    document.body.appendChild(contenedor);
     document.body.appendChild(panel);
 
 
