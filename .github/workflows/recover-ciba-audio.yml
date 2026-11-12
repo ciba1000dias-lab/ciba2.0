@@ -1,0 +1,31 @@
+name: Recover CIBA podcast audio
+on:
+  push:
+    paths:
+      - ".github/workflows/recover-ciba-audio.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Download HeyGen voice tracks
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p recovered
+          curl -fL --retry 2 --connect-timeout 20 --max-time 180 'https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/84854979e66846989bc6c5855f53268f/id=84a57742b8ae4018838605df9f44fed2.mp3' -o recovered/01-rocio.mp3
+          curl -fL --retry 2 --connect-timeout 20 --max-time 180 'https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/4b49e50e44c84e99b0f960da7d434e95/id=056beb8dddef4cd6a163540a5151bed7.mp3' -o recovered/02-yadira.mp3
+          curl -fL --retry 2 --connect-timeout 20 --max-time 180 'https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/70bc24b8126c446c8cf50fc1a01eb834/id=29249ececa014888bbcd6ed331f20211.mp3' -o recovered/03-emiliano.mp3
+          curl -fL --retry 2 --connect-timeout 20 --max-time 180 'https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/1777080b7f574979875dc144b9fbf0de/id=74da5d23df3e4c668688f547a29d65cb.mp3' -o recovered/04-montserrat.mp3
+          for f in recovered/*.mp3; do test -s "$f"; ffprobe -v error -show_entries format=duration -of csv=p=0 "$f"; done
+      - name: Upload recovered source tracks
+        uses: actions/upload-artifact@v4
+        with:
+          name: ciba-c7-04-source-tracks
+          path: recovered/*.mp3
+          if-no-files-found: error
+          retention-days: 7
