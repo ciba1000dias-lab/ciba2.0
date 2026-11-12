@@ -1,0 +1,38 @@
+{
+  "id": "C6-02",
+  "titulo": "Atragantamiento: qué hacer en los primeros segundos",
+  "descripcion": "Reconocer la obstrucción de la vía aérea, actuar según la edad y prevenir el atragantamiento por alimentos y objetos pequeños.",
+  "columna": "C",
+  "area": "C6",
+  "subseccion": "Riesgos respiratorios y de atragantamiento",
+  "palabras_clave": [
+    "atragantamiento",
+    "obstruccion-via-aerea",
+    "cuerpo-extrano",
+    "maniobras-desobstruccion",
+    "golpes-espalda",
+    "compresiones-toracicas",
+    "compresiones-abdominales",
+    "alimentacion-segura",
+    "asfixia",
+    "primeros-auxilios",
+    "lactante"
+  ],
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "enlaces_externos": [
+    {
+      "titulo": "Fotografía: SHOX ART (Pexels)",
+      "url": "https://www.pexels.com/photo/cpr-first-aid-cardiopulmonary-resuscitation-child-kid-newborn-pierwsza-pomoc-ratowanie-zycia-28271057/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "AHA/AAP: Pediatric Basic Life Support, 2025",
+      "url": "https://publications.aap.org/pediatrics/article/157/1/e2025074350/205235/Part-6-Pediatric-Basic-Life-Support-2025-American",
+      "tipo": "fuente"
+    }
+  ]
+}
