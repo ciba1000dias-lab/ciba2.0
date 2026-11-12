@@ -1,0 +1,62 @@
+{
+  "columna": "C",
+  "area": "C7",
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "id": "C7-02",
+  "titulo": "Rutinas familiares que dan seguridad: baño, comida, sueño y juego",
+  "descripcion": "Guía práctica para construir rutinas flexibles de higiene, alimentación, sueño y juego durante los primeros dos años, con enfoque de cuidado receptivo y adaptación a la vida familiar cubana.",
+  "subseccion": "Rutinas y organización de la vida diaria",
+  "palabras_clave": [
+    "rutinas-familiares",
+    "baño-seguro",
+    "alimentacion-responsiva",
+    "sueño-seguro",
+    "juego-infantil",
+    "cuidado-receptivo",
+    "primeros-1000-dias",
+    "crianza-cuba",
+    "transiciones",
+    "familia"
+  ],
+  "enlaces_externos": [
+    {
+      "titulo": "Fotografía: Vanessa Loring / Pexels",
+      "url": "https://www.pexels.com/photo/parents-feeding-their-baby-5083232/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "Podcast CIBA C7-02: Cuatro momentos, una rutina que acompaña",
+      "url": "https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/84854979e66846989bc6c5855f53268f/id=86e1ad32da9244f38701db4a29c92fd3.mp3",
+      "tipo": "podcast"
+    },
+    {
+      "titulo": "OMS: Improving early childhood development",
+      "url": "https://www.who.int/publications/i/item/9789241550505",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "UNICEF: Parenting tips for the first two years",
+      "url": "https://www.unicef.org/parenting/child-development/baby-tips",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "UNICEF: Early childhood nutrition",
+      "url": "https://www.unicef.org/nutrition/early-childhood-nutrition",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "CDC: Tips for relying on routines and rules",
+      "url": "https://www.cdc.gov/parenting-toddlers/structure-rules/index.html",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "AAP: Infant parenting",
+      "url": "https://www.aap.org/en/patient-care/healthy-active-living-for-families/infant-parenting/",
+      "tipo": "fuente"
+    }
+  ]
+}
