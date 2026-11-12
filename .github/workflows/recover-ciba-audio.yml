@@ -1,27 +1,30 @@
-name: Recover CIBA podcast audio
+name: Build CIBA C7-04 podcast master
 on:
   push:
     paths:
       - ".github/workflows/recover-ciba-audio.yml"
+      - "scripts/build_ciba_c7_04_podcast.py"
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   actions: read
 jobs:
-  recover:
+  build-master:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 15
     steps:
+      - name: Checkout CIBA
+        uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install audio and transcription tools
+      - name: Install audio tools
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
           python -m pip install --upgrade pip
-          pip install faster-whisper
-      - name: Download HeyGen voices and official CIBA theme
+          pip install pydub
+      - name: Download HeyGen voices, CIBA theme and sound effects
         shell: bash
         run: |
           set -euo pipefail
@@ -34,30 +37,24 @@ jobs:
           curl -fL --retry 2 --connect-timeout 20 --max-time 180 'https://heygen-product.s3-accelerate.amazonaws.com/gen_os/sfx/f21dfc942d4165a2.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA3FLD4S3AS7WYJKBK%2F20261112%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20261112T043401Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=249adead12422f495c69105784275b4c576a505cc0132c8a2693893bf02fc19d' -o recovered/06-transition-whoosh.mp3
           curl -fL --retry 2 --connect-timeout 20 --max-time 180 'https://heygen-product.s3-accelerate.amazonaws.com/gen_os/sfx/d81327f4a910a146.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA3FLD4S3AS7WYJKBK%2F20261112%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20261112T043423Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3f857678c53116ce7db07537d84def91a01d46950183e73723b9444954b9e7cb' -o recovered/07-small-objects.mp3
           curl -fL --retry 2 --connect-timeout 20 --max-time 180 'https://heygen-product.s3-accelerate.amazonaws.com/gen_os/sfx/9b77ef762e4f45f2.mp3?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA3FLD4S3AS7WYJKBK%2F20261112%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20261112T043423Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e7520860da4944737b4e103f1bb148a50fb325ea439f3ec4f4feaa73365eab47' -o recovered/08-page-turn.mp3
-          for f in recovered/*.mp3; do
-            test -s "$f"
-            echo "$(basename "$f"): $(ffprobe -v error -show_entries format=duration -of csv=p=0 "$f") seconds"
-          done
-      - name: Transcribe each character track
+          for f in recovered/*.mp3; do test -s "$f"; done
+      - name: Assemble the single master MP3
+        run: python scripts/build_ciba_c7_04_podcast.py
+      - name: Commit master audio to CIBA
         shell: bash
         run: |
-          python - <<'PY'
-          from faster_whisper import WhisperModel
-          from pathlib import Path
-          model = WhisperModel("small", device="cpu", compute_type="int8")
-          root = Path("recovered")
-          for name in ["01-rocio", "02-yadira", "03-emiliano", "04-montserrat"]:
-              segments, info = model.transcribe(str(root / f"{name}.mp3"), language="es", beam_size=5, vad_filter=True)
-              lines = [f"Idioma: {info.language}; duración: {info.duration:.2f}s", ""]
-              for seg in segments:
-                  lines.append(f"[{seg.start:07.2f}–{seg.end:07.2f}] {seg.text.strip()}")
-              (root / f"{name}.txt").write_text("\n".join(lines), encoding="utf-8")
-              print(f"Transcribed {name}")
-          PY
-      - name: Upload recovered audio and transcripts
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/audio/c7-04-con-lo-que-tenemos.mp3
+          git commit -m "Add CIBA C7-04 podcast master audio"
+          git push
+      - name: Save source and master audio artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ciba-c7-04-source-audio
-          path: recovered/*
+          name: ciba-c7-04-master-and-sources
+          path: |
+            recovered/*.mp3
+            assets/audio/c7-04-con-lo-que-tenemos.mp3
           if-no-files-found: error
           retention-days: 7
