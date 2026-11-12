@@ -59,6 +59,26 @@ def _iter_paginas(area_dir: Path):
         yield pag_dir
 
 
+def _copiar_indices_columnas(src: Path, tmp: Path) -> list[ValidationError]:
+    """Publica la portada editorial de cada columna en su raíz /c/, /i/, /b/ o /a/."""
+    errores: list[ValidationError] = []
+    for letra in ("c", "i", "b", "a"):
+        origen = src / letra / "index.html"
+        if not origen.exists() and not origen.is_symlink():
+            continue
+        ok, motivo = es_ruta_segura(src, origen)
+        if not ok or not origen.is_file():
+            errores.append(ValidationError(f"{letra}/index.html", "portada de columna", motivo or "no es archivo"))
+            continue
+        destino = tmp / letra / "index.html"
+        destino.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            shutil.copy2(origen, destino)
+        except OSError as exc:
+            errores.append(ValidationError(f"{letra}/index.html", "portada de columna", f"copia fallida: {exc}"))
+    return errores
+
+
 def _copiar_paginas_estaticas(src: Path, tmp: Path) -> list[ValidationError]:
     """Publica páginas auxiliares de CIBA sin convertirlas en artículos."""
     errores: list[ValidationError] = []
@@ -707,6 +727,9 @@ def _construir_en_tmp(
 
     # Generar índice ligero del buscador a partir de las fichas fuente.
     errores.extend(_generar_indice_busqueda_alimentos(tmp))
+
+    # Portadas editoriales de las columnas en sus rutas raíz.
+    errores.extend(_copiar_indices_columnas(src, tmp))
 
     # Páginas auxiliares (bibliotecas y herramientas) fuera del catálogo editorial.
     errores.extend(_copiar_paginas_estaticas(src, tmp))
