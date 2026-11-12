@@ -365,7 +365,7 @@
           { id:'I10', titulo:'Ciudadanía digital y futuro', ruta:'i/#tema-10' }
         ],
         B: [
-          { id:'B1', titulo:'Salud del bebé' },
+          { id:'B1', titulo:'Salud del bebé', ruta:'b/#tema-01' },
           { id:'B2', titulo:'Salud materna y posparto', ruta:'b/#tema-02' },
           { id:'B3', titulo:'Salud emocional perinatal', ruta:'b/#tema-03' },
           { id:'B4', titulo:'Nutrición y estado nutricional', ruta:'b/#tema-04' },
@@ -377,7 +377,7 @@
           { id:'B10', titulo:'Salud ambiental y prevención de riesgos clínicos', ruta:'b/#tema-10' }
         ],
         A: [
-          { id:'A1', titulo:'Apoyo emocional a la familia' },
+          { id:'A1', titulo:'Apoyo emocional a la familia', ruta:'a/#tema-01' },
           { id:'A2', titulo:'Corresponsabilidad y familia', ruta:'a/#tema-02' },
           { id:'A3', titulo:'Redes de apoyo y comunidad', ruta:'a/#tema-03' },
           { id:'A4', titulo:'Cuidado del cuidador', ruta:'a/#tema-04' },
