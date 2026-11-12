@@ -1,0 +1,29 @@
+{
+  "columna": "C",
+  "area": "C6",
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "palabras_clave": [
+    "intoxicaciones",
+    "medicamentos",
+    "productos-de-limpieza",
+    "lejia",
+    "plaguicidas",
+    "combustibles",
+    "plantas-toxicas",
+    "exposicion-accidental"
+  ],
+  "enlaces_externos": [
+    {
+      "titulo": "Fotografía Ron Lach / Pexels",
+      "url": "https://www.pexels.com/photo/kitchen-cleaning-set-high-angle-view-10573262/",
+      "tipo": "imagen"
+    }
+  ],
+  "titulo": "Intoxicaciones en el hogar: productos, medicamentos y plantas",
+  "descripcion": "Prevención de intoxicaciones infantiles por medicamentos, productos de limpieza, combustibles, plaguicidas y plantas; primeros pasos ante una exposición.",
+  "subseccion": "Intoxicaciones y asfixia"
+}
