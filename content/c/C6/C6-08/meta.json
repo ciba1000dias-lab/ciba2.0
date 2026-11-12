@@ -1,0 +1,28 @@
+{
+  "columna": "C",
+  "area": "C6",
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "palabras_clave": [
+    "objetos-pequenos",
+    "atragantamiento",
+    "pilas-de-boton",
+    "imanes",
+    "cuerpos-extranos",
+    "asfixia",
+    "juguetes"
+  ],
+  "enlaces_externos": [
+    {
+      "titulo": "Fotografía Stephen Andrews / Pexels",
+      "url": "https://www.pexels.com/photo/toddler-on-a-floor-playing-with-magnetic-toys-9328014/",
+      "tipo": "imagen"
+    }
+  ],
+  "titulo": "Objetos pequeños: cómo evitar atragantamientos y accidentes graves",
+  "descripcion": "Prevención de obstrucción de la vía aérea y lesiones internas por objetos pequeños, pilas de botón, imanes y piezas de juguetes.",
+  "subseccion": "Intoxicaciones y asfixia"
+}
