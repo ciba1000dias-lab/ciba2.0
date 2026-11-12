@@ -1,0 +1,59 @@
+name: Publish CIBA C7-04 podcast master
+on:
+  push:
+    paths:
+      - ".github/workflows/publish-ciba-c7-04-audio.yml"
+      - "scripts/assemble_c7_04_podcast.py"
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  assemble-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Prepare Python and FFmpeg
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip
+          pip install pydub
+
+      - name: Recover the verified source tracks from the earlier run
+        uses: actions/download-artifact@v4
+        with:
+          name: ciba-c7-04-source-audio
+          path: source-audio
+          repository: ciba1000dias-lab/ciba2.0
+          run-id: 43155722547
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Assemble one complete MP3 master
+        run: |
+          python scripts/assemble_c7_04_podcast.py
+          ffprobe -v error -show_entries format=duration,bit_rate -of default=noprint_wrappers=1 assets/audio/c7-04-con-lo-que-tenemos.mp3
+          test -s assets/audio/c7-04-con-lo-que-tenemos.mp3
+
+      - name: Commit the podcast audio into the site assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/audio/c7-04-con-lo-que-tenemos.mp3
+          if git diff --cached --quiet; then
+            echo "Audio asset is already current."
+            exit 0
+          fi
+          git commit -m "Publish CIBA C7-04 complete podcast master"
+          git push origin main
