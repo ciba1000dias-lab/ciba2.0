@@ -1,0 +1,54 @@
+{
+  "columna": "C",
+  "area": "C7",
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "id": "C7-01",
+  "titulo": "Cómo organizar el día con un bebé en Cuba: rutinas realistas, no perfectas",
+  "descripcion": "Rutinas flexibles para organizar alimentación, sueño, higiene, juego y responsabilidades familiares durante los primeros dos años, con adaptación a las condiciones cotidianas de Cuba y atención al agotamiento de quienes cuidan.",
+  "subseccion": "Rutinas y organización de la vida diaria",
+  "palabras_clave": [
+    "rutinas-bebe",
+    "organizacion-diaria",
+    "crianza-cuba",
+    "agotamiento-cuidador",
+    "sueño-infantil",
+    "alimentacion-responsiva",
+    "apagones",
+    "falta-de-agua",
+    "apoyo-familiar",
+    "primeros-1000-dias"
+  ],
+  "sinonimos": [
+    "horarios del bebé",
+    "organizar el día",
+    "rutina diaria",
+    "vida familiar con bebé"
+  ],
+  "etapa": "0-24 meses",
+  "enlaces_externos": [
+    {
+      "titulo": "Fotografía: Sarah Chai / Pexels",
+      "url": "https://www.pexels.com/photo/mother-with-infant-in-arms-7282395/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "Podcast CIBA C7-01: Un día a la vez",
+      "url": "https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/84854979e66846989bc6c5855f53268f/id=bd3a6b12f94f4d66bde1c83f35f07744.mp3",
+      "tipo": "podcast"
+    },
+    {
+      "titulo": "OMS, UNICEF y Banco Mundial: Nurturing Care Framework",
+      "url": "https://www.who.int/publications/i/item/9789241514064",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "UNICEF: Parenting tips for the first two years",
+      "url": "https://www.unicef.org/parenting/child-development/baby-tips",
+      "tipo": "fuente"
+    }
+  ]
+}
