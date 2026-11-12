@@ -1,0 +1,52 @@
+{
+  "id": "C7-10",
+  "titulo": "Cómo construir una red de apoyo en el barrio o la comunidad",
+  "descripcion": "Identificar personas de confianza, pedir ayuda concreta, organizar relevos y construir apoyo sin exponer la privacidad del niño.",
+  "columna": "C",
+  "area": "C7",
+  "subseccion": "Familia, comunidad y cotidianidad",
+  "palabras_clave": [
+    "red-de-apoyo",
+    "apoyo-comunitario",
+    "crianza-en-comunidad",
+    "personas-de-confianza",
+    "cuidado-compartido",
+    "relevos-de-cuidado",
+    "apoyo-familiar",
+    "privacidad-infantil",
+    "seguridad-del-bebe",
+    "cuidadores",
+    "familias-cubanas",
+    "primeros-1000-dias",
+    "crianza-respetuosa",
+    "proteccion-infantil",
+    "acompanamiento-parental"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "preview_publica": false,
+  "enlaces_externos": [
+    {
+      "titulo": "OMS: recomendaciones de cuidados posnatales",
+      "url": "https://www.who.int/publications/i/item/9789240045989",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "UNICEF Parenting",
+      "url": "https://www.unicef.org/parenting",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "AAP: guía para un sueño seguro",
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/a-parents-guide-to-safe-sleep.aspx",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "CDC: seguridad infantil",
+      "url": "https://www.cdc.gov/children-and-school-preparedness/child-safety/index.html",
+      "tipo": "fuente"
+    }
+  ]
+}
