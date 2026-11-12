@@ -433,6 +433,21 @@
         });
       }
 
+      // RECURSOS DESTACADOS: accesos transversales disponibles desde cualquier página.
+      const tituloRecursos = elemento('h2','ciba-global-menu-titulo ciba-global-menu-separador','RECURSOS DESTACADOS');
+      const grupoRecursos = crearDesplegable('Herramientas y espacios útiles','ciba-global-recursos');
+      [
+        ['c/C1/alimentos/','Biblioteca de alimentos'],
+        ['c/C1/recetario/','¿Qué cocino hoy?'],
+        ['c/C1/fonoteca/','Fonoteca infantil'],
+        ['plataforma/recursos/descargables/','Recursos descargables'],
+        ['plataforma/comunidad/','Comunidad CIBA'],
+        ['c/C1/podcast/','Zona Podcast'],
+        ['c/C6/','Prevención y seguridad en el hogar']
+      ].forEach(([ruta,titulo]) => agregarEnlace(grupoRecursos.lista,ruta,titulo));
+      panel.insertBefore(tituloRecursos,tituloColumnas);
+      panel.insertBefore(grupoRecursos.grupo,tituloColumnas);
+
       columnas.forEach(columna => {
         const areasFuente = (datos.areas || []).filter(area => area.columna === columna.id);
         const areasColumna = taxonomia[columna.id] || [];
