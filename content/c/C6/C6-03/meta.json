@@ -1,0 +1,38 @@
+{
+  "id": "C6-03",
+  "titulo": "Ahogamiento y baño seguro: lo que no se puede dejar al descuido",
+  "descripcion": "Prevención del ahogamiento infantil en bañeras, cubos, palanganas, piscinas y depósitos de agua; supervisión y respuesta ante una emergencia.",
+  "columna": "C",
+  "area": "C6",
+  "subseccion": "Riesgos respiratorios y de atragantamiento",
+  "palabras_clave": [
+    "ahogamiento",
+    "sumersion",
+    "baño-seguro",
+    "supervision-activa",
+    "cubos",
+    "palanganas",
+    "piscinas",
+    "cisternas",
+    "depositos-agua",
+    "prevencion-accidentes",
+    "reanimacion"
+  ],
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "enlaces_externos": [
+    {
+      "titulo": "Fotografía: RDNE Stock project (Pexels)",
+      "url": "https://www.pexels.com/photo/a-woman-bathing-her-baby-6849430/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "OMS: Ahogamientos (2026)",
+      "url": "https://www.who.int/es/news-room/fact-sheets/detail/drowning/",
+      "tipo": "fuente"
+    }
+  ]
+}
