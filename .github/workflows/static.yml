@@ -53,8 +53,15 @@ jobs:
 
       - name: Verificar audio maestro CIBA C7-04
         run: |
-          test -s dist/assets/audio/c7-04-con-lo-que-tenemos.mp3
-          ffprobe -v error -show_entries format=duration,bit_rate -of default=noprint_wrappers=1 dist/assets/audio/c7-04-con-lo-que-tenemos.mp3
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("dist/assets/audio/c7-04-con-lo-que-tenemos.mp3")
+          assert p.is_file() and p.stat().st_size > 100000, f"Audio maestro ausente o incompleto: {p}"
+          with p.open("rb") as f:
+              header = f.read(3)
+          assert header == b"ID3" or header[0] == 0xFF, "El archivo no parece ser un MP3 válido"
+          print(f"Audio maestro verificado: {p.stat().st_size:,} bytes")
+          PY
 
       - name: Preparar imágenes locales de la biblioteca
         run: python scripts/optimize_alimento_images.py --src dist
