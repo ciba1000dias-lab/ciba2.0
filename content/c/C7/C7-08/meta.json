@@ -1,0 +1,54 @@
+{
+  "id": "C7-08",
+  "titulo": "Fiestas, visitas y celebraciones con bebés: qué hacer y qué evitar",
+  "descripcion": "Orientaciones para preparar fiestas y visitas con bebés, moderar estímulos, proteger el sueño, reconocer señales de sobrecarga y favorecer una participación segura y respetuosa.",
+  "columna": "C",
+  "area": "C7",
+  "subseccion": "Cultura, juego y tradiciones",
+  "palabras_clave": [
+    "fiestas-con-bebes",
+    "visitas-familiares",
+    "celebraciones-infantiles",
+    "sobrecarga-sensorial",
+    "estimulacion-bebe",
+    "sueno-seguro",
+    "ruido-y-bebes",
+    "fuegos-artificiales",
+    "higiene-visitas",
+    "alimentacion-infantil",
+    "primeros-1000-dias",
+    "crianza-respetuosa"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "enlaces_externos": [
+    {
+      "titulo": "American Academy of Pediatrics: guía para el sueño seguro del bebé",
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/a-parents-guide-to-safe-sleep.aspx",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "CDC: higiene de manos",
+      "url": "https://www.cdc.gov/clean-hands/about/index.html",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OMS: alimentación del lactante y del niño pequeño",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "AAP: seguridad con fuegos artificiales",
+      "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/Fireworks-Safety.aspx",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "UNICEF Parenting: cuidado y bienestar",
+      "url": "https://www.unicef.org/parenting/child-care",
+      "tipo": "fuente"
+    }
+  ]
+}
