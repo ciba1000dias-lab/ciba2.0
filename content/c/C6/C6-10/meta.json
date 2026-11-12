@@ -1,0 +1,35 @@
+{
+  "columna": "C",
+  "area": "C6",
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "id": "C6-10",
+  "titulo": "Botiquín básico y plan familiar de emergencia",
+  "descripcion": "Organización de un botiquín seguro, materiales sencillos de primeros auxilios, contactos, roles familiares y plan de respuesta ante emergencias infantiles en el contexto cubano.",
+  "subseccion": "Preparación y respuesta familiar",
+  "palabras_clave": [
+    "botiquin",
+    "primeros-auxilios",
+    "plan-familiar",
+    "emergencias",
+    "telefonos",
+    "contactos",
+    "prevencion",
+    "preparacion"
+  ],
+  "enlaces_externos": [
+    {
+      "titulo": "Fotografía: Marta Branco (Pexels)",
+      "url": "https://www.pexels.com/photo/comprehensive-first-aid-kit-with-medical-supplies-31837694/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "American Red Cross: Make a First Aid Kit",
+      "url": "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/anatomy-of-a-first-aid-kit.html",
+      "tipo": "fuente"
+    }
+  ]
+}
