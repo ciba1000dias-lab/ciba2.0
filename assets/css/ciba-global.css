@@ -1779,3 +1779,11 @@ body > .ciba-global-buscador .ciba-global-panel-busqueda{
   .ciba-global-cabecera{padding-left:66px!important}
   .cabecera .barra{padding-left:64px!important}
 }
+
+
+/* CIBA · INTERNET: cabecera institucional y Oráculo siempre visibles (v08). */
+.ciba-global-cabecera{padding-left:78px!important}
+@media(max-width:600px){.ciba-global-cabecera{padding-left:66px!important}}
+.ciba-global-buscador.ciba-oraculo-oculto{
+ opacity:1!important;visibility:visible!important;pointer-events:auto!important;transform:none!important
+}
