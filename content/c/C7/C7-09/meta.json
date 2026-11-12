@@ -1,0 +1,50 @@
+{
+  "id": "C7-09",
+  "titulo": "Creencias y prácticas populares: qué conservar y qué revisar",
+  "descripcion": "Una conversación respetuosa sobre azabaches, cuidado del ombligo, mal de ojo, diversidad espiritual y prácticas familiares: reconocer su significado cultural y distinguirlo de la evidencia y la seguridad infantil.",
+  "columna": "C",
+  "area": "C7",
+  "subseccion": "Cultura, juego y tradiciones",
+  "palabras_clave": [
+    "creencias-populares",
+    "tradiciones-familiares",
+    "diversidad-religiosa",
+    "espiritualidad-cubana",
+    "tradiciones-afrocubanas",
+    "azabaches",
+    "mal-de-ojo",
+    "cuidado-del-ombligo",
+    "seguridad-del-bebe",
+    "crianza-respetuosa",
+    "cultura-cubana",
+    "primeros-1000-dias",
+    "salud-infantil"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "preview_publica": false,
+  "enlaces_externos": [
+    {
+      "titulo": "OMS: recomendaciones de cuidados posnatales",
+      "url": "https://www.who.int/publications/i/item/9789240045989",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "AAP: cuidado del cordón umbilical",
+      "url": "https://www.healthychildren.org/English/ages-stages/baby/diapers-clothing/Pages/umbilical-cord-care.aspx",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "MedlinePlus: cuidado del cordón umbilical",
+      "url": "https://medlineplus.gov/ency/article/001926.htm",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "Departamento de Estado de EE. UU.: libertad religiosa en Cuba",
+      "url": "https://2021-2025.state.gov/reports/2022-report-on-international-religious-freedom/cuba/",
+      "tipo": "fuente"
+    }
+  ]
+}
