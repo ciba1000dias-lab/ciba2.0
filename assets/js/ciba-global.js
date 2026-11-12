@@ -187,10 +187,13 @@
   function crearCabeceraGlobal() {
     if (esPortada() || document.querySelector('.ciba-global-cabecera')) return null;
 
-    // Las páginas de sección conservaban su cabecera antigua además de la global.
-    // Retiramos solo esa cabecera superior para evitar que la marca aparezca duplicada.
-    document.querySelectorAll('header.cabecera').forEach((anterior) => {
+    // Retirar las antiguas barras de marca para que el menú global sea la única cabecera de navegación.
+    document.querySelectorAll('header.cabecera, header.top, header.cab, header.plataforma-top').forEach((anterior) => {
       anterior.remove();
+    });
+    // Algunas páginas auxiliares usan un header sin clase para mostrar solo el logotipo.
+    document.querySelectorAll('header:not(.hero):not(.cabecera-articulo)').forEach((anterior) => {
+      if (anterior.querySelector('a.marca')) anterior.remove();
     });
 
     const actual = resolverColumnaActual();
