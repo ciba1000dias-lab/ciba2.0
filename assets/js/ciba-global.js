@@ -11,7 +11,7 @@
   const RAIZ = new URL('../../', import.meta.url);
   const RUTA_CATALOGO = new URL('data/catalogo.json', RAIZ);
   const RUTA_ALIMENTOS = new URL('assets/data/alimentos-busqueda.json', RAIZ);
-  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261112-07', import.meta.url);
+  const RUTA_CSS = new URL('../css/ciba-global.css?v=20261112-08', import.meta.url);
 
   let catalogo = null;
   let alimentos = null;
@@ -21,10 +21,8 @@
   function actualizarVisibilidadBuscador() {
     const buscador = document.querySelector('.ciba-global-buscador');
     if (!buscador) return;
-    buscador.classList.toggle(
-      'ciba-oraculo-oculto',
-      menuAbierto || transicionActiva
-    );
+    // El Oráculo permanece visible incluso cuando se despliega el menú.
+    buscador.classList.remove('ciba-oraculo-oculto');
   }
 
   const columnas = [
@@ -172,8 +170,9 @@
 
   function resolverColumnaActual() {
     const ruta = window.location.pathname;
-    const coincidencia = ruta.match(/\/(?:c|i|b|a)\/([CIBA])\d?\//i);
-    let id = coincidencia ? coincidencia[1].toUpperCase() : '';
+    const relativa = ruta.startsWith(RAIZ.pathname) ? ruta.slice(RAIZ.pathname.length) : ruta.replace(/^\\/+/, '');
+    const prefijo = relativa.match(/^([ciba])(?:\\/|$)/i);
+    let id = prefijo ? prefijo[1].toUpperCase() : '';
     if (!id) {
       const articulo = document.querySelector('.ciba-articulo');
       const clase = articulo ? Array.from(articulo.classList).find(x => /^articulo-(crianza|internet|bienestar|acompanamiento)$/.test(x)) : '';
