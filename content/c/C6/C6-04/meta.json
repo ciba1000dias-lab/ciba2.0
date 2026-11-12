@@ -1,0 +1,41 @@
+{
+  "id": "C6-04",
+  "titulo": "Quemaduras en casa: cómo prevenirlas y qué hacer",
+  "descripcion": "Prevención de quemaduras y escaldaduras en bebés: cocina, agua caliente, planchas, primeros auxilios y señales para acudir a urgencias.",
+  "subseccion": "Riesgos térmicos y eléctricos",
+  "palabras_clave": [
+    "quemaduras",
+    "escaldaduras",
+    "agua-caliente",
+    "cocina",
+    "plancha",
+    "vapor",
+    "primeros-auxilios",
+    "enfriamiento",
+    "prevencion-accidentes"
+  ],
+  "enlaces_externos": [
+    {
+      "titulo": "Fotografía: Annushka Ahuja (Pexels)",
+      "url": "https://www.pexels.com/photo/kid-helping-her-mother-to-cook-8054742/",
+      "tipo": "imagen"
+    },
+    {
+      "titulo": "OMS: Quemaduras",
+      "url": "https://www.who.int/es/news-room/fact-sheets/detail/burns",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "NHS: Accidentes infantiles y quemaduras",
+      "url": "https://www.nhs.uk/baby/first-aid-and-safety/first-aid/what-to-do-if-your-child-has-an-accident/",
+      "tipo": "fuente"
+    }
+  ],
+  "columna": "C",
+  "area": "C6",
+  "estado": "publicado",
+  "preview_publica": false,
+  "fecha_publicacion": "2026-11-12",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true
+}
