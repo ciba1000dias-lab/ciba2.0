@@ -2,7 +2,7 @@
   "version": "1.0",
   "columna": "BIENESTAR",
   "limite_articulos": 100,
-  "nota": "Árbol editorial planificado. Los artículos no están publicados ni indexados. Las rutas están reservadas en esta planificación; no deben enlazarse hasta disponer de contenido revisado y publicado.",
+  "nota": "Árbol editorial planificado y en desarrollo. Los artículos se enlazan cuando disponen de contenido revisado y publicado.",
   "recursos": [
     {
       "id": "R-B8-01",
@@ -52,8 +52,8 @@
               "id": "B1-01-02",
               "titulo": "Evaluaciones neonatales antes del alta",
               "ruta": "/b/B1/B1-01/B1-01-02/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true
             },
             {
               "id": "B1-01-03",
