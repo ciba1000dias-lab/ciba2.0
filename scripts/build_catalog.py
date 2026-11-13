@@ -51,12 +51,27 @@ def _iter_areas(src: Path):
 
 
 def _iter_paginas(area_dir: Path):
-    subdirs, _ = listar_directorios_seguros(area_dir, str(area_dir.name))
+    """Recorre páginas directas y páginas dentro de contenedores archivados.
 
-    for pag_dir in subdirs:
-        if pag_dir.name == "_paginas":
-            continue
-        yield pag_dir
+    Una subsección con estado 'archivado' funciona como contenedor editorial:
+    no se publica como artículo, pero permite alojar artículos anidados.
+    """
+    def recorrer(padre: Path):
+        subdirs, _ = listar_directorios_seguros(padre, str(padre))
+        for pag_dir in subdirs:
+            if pag_dir.name == "_paginas":
+                continue
+            yield pag_dir
+            meta_path = pag_dir / "meta.json"
+            if meta_path.is_file() and not meta_path.is_symlink():
+                try:
+                    datos = _leer_json(meta_path)
+                except (OSError, json.JSONDecodeError):
+                    datos = {}
+                if datos.get("estado") == "archivado":
+                    yield from recorrer(pag_dir)
+
+    yield from recorrer(area_dir)
 
 
 def _copiar_indices_columnas(src: Path, tmp: Path) -> list[ValidationError]:
@@ -624,8 +639,9 @@ def _construir_en_tmp(
             if estado_pagina != "publicado" and not es_preview:
                 continue
 
+            ruta_relativa = pag_dir.relative_to(area_dir).as_posix()
             ruta_publica = (
-                f"{letra.lower()}/{area_dir.name}/{pag_dir.name}/"
+                f"{letra.lower()}/{area_dir.name}/{ruta_relativa}/"
             )
             destino_pagina = tmp / ruta_publica
 
