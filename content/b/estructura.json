@@ -1,0 +1,1150 @@
+{
+  "version": "1.0",
+  "columna": "BIENESTAR",
+  "limite_articulos": 100,
+  "nota": "Árbol editorial planificado. Los artículos no están publicados ni indexados. Las rutas están reservadas en esta planificación; no deben enlazarse hasta disponer de contenido revisado y publicado.",
+  "recursos": [
+    {
+      "id": "R-B8-01",
+      "title": "Guía rápida: ¿cuándo debo acudir al médico?",
+      "section": "B8",
+      "path": "/b/recursos/guia-urgencias/"
+    },
+    {
+      "id": "R-B6-01",
+      "title": "Mi bebé crece: seguimiento del crecimiento y desarrollo",
+      "section": "B6",
+      "path": "/b/recursos/seguimiento-crecimiento/"
+    },
+    {
+      "id": "R-B10-01",
+      "title": "Botiquín familiar y primeros auxilios",
+      "section": "B10",
+      "path": "/b/recursos/botiquin/"
+    },
+    {
+      "id": "R-B5-01",
+      "title": "Calendario de vacunación infantil de Cuba",
+      "section": "B5",
+      "path": "/b/recursos/calendario-vacunacion/"
+    }
+  ],
+  "secciones": [
+    {
+      "id": "B1",
+      "titulo": "Salud del bebé",
+      "descripcion": "Salud clínica neonatal y del lactante; los cuidados cotidianos ya desarrollados en CRIANZA no se duplican.",
+      "orden": 1,
+      "subsecciones": [
+        {
+          "id": "B1-01",
+          "titulo": "Adaptación y evaluación del recién nacido",
+          "orden": 1,
+          "articulos": [
+            {
+              "id": "B1-01-01",
+              "titulo": "Adaptación del recién nacido durante las primeras horas",
+              "ruta": "/b/B1/B1-01/B1-01-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B1-01-02",
+              "titulo": "Evaluaciones neonatales antes del alta",
+              "ruta": "/b/B1/B1-01/B1-01-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B1-01-03",
+              "titulo": "Ictericia neonatal: cuándo consultar",
+              "ruta": "/b/B1/B1-01/B1-01-03/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B1-02",
+          "titulo": "Salud y vigilancia del lactante",
+          "orden": 2,
+          "articulos": [
+            {
+              "id": "B1-02-01",
+              "titulo": "Cómo reconocer el estado general del bebé",
+              "ruta": "/b/B1/B1-02/B1-02-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B1-02-02",
+              "titulo": "Temperatura del bebé: medición e interpretación",
+              "ruta": "/b/B1/B1-02/B1-02-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B1-03",
+          "titulo": "Problemas clínicos de los primeros meses",
+          "orden": 3,
+          "articulos": [
+            {
+              "id": "B1-03-01",
+              "titulo": "Regurgitación y reflujo: diferencias y señales de alerta",
+              "ruta": "/b/B1/B1-03/B1-03-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B1-03-02",
+              "titulo": "Llanto persistente: causas clínicas que deben valorarse",
+              "ruta": "/b/B1/B1-03/B1-03-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B1-04",
+          "titulo": "Alimentación: aspectos clínicos",
+          "orden": 4,
+          "articulos": [
+            {
+              "id": "B1-04-01",
+              "titulo": "Valoración de la transferencia de leche y ganancia de peso",
+              "ruta": "/b/B1/B1-04/B1-04-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B1-05",
+          "titulo": "Condiciones especiales del recién nacido",
+          "orden": 5,
+          "articulos": [
+            {
+              "id": "B1-05-01",
+              "titulo": "Seguimiento del recién nacido prematuro o con bajo peso después del alta",
+              "ruta": "/b/B1/B1-05/B1-05-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "titulo": "Salud materna y posparto",
+      "descripcion": "Salud física, recuperación y seguimiento clínico de la madre durante el puerperio.",
+      "orden": 2,
+      "subsecciones": [
+        {
+          "id": "B2-01",
+          "titulo": "Recuperación física después del parto",
+          "orden": 1,
+          "articulos": [
+            {
+              "id": "B2-01-01",
+              "titulo": "Cambios fisiológicos del puerperio y evolución esperada",
+              "ruta": "/b/B2/B2-01/B2-01-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B2-02",
+          "titulo": "Salud materna y lactancia",
+          "orden": 2,
+          "articulos": [
+            {
+              "id": "B2-02-01",
+              "titulo": "Dolor mamario, grietas y congestión: evaluación y cuidados",
+              "ruta": "/b/B2/B2-02/B2-02-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B2-02-02",
+              "titulo": "Mastitis durante la lactancia: reconocimiento y atención",
+              "ruta": "/b/B2/B2-02/B2-02-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B2-03",
+          "titulo": "Salud reproductiva y anticoncepción",
+          "orden": 3,
+          "articulos": [
+            {
+              "id": "B2-03-01",
+              "titulo": "Anticoncepción después del parto y durante la lactancia",
+              "ruta": "/b/B2/B2-03/B2-03-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B2-04",
+          "titulo": "Complicaciones y señales de alarma maternas",
+          "orden": 4,
+          "articulos": [
+            {
+              "id": "B2-04-01",
+              "titulo": "Sangrado, fiebre y signos de infección puerperal",
+              "ruta": "/b/B2/B2-04/B2-04-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B2-04-02",
+              "titulo": "Cefalea intensa, hipertensión y otros signos de alarma",
+              "ruta": "/b/B2/B2-04/B2-04-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B2-04-03",
+              "titulo": "Trombosis y complicaciones cardiopulmonares después del parto",
+              "ruta": "/b/B2/B2-04/B2-04-03/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B3",
+      "titulo": "Salud emocional perinatal",
+      "descripcion": "Salud mental durante el embarazo y el posparto; vínculo y apego se desarrollan en CRIANZA.",
+      "orden": 3,
+      "subsecciones": [
+        {
+          "id": "B3-01",
+          "titulo": "Salud emocional durante el embarazo",
+          "orden": 1,
+          "articulos": [
+            {
+              "id": "B3-01-01",
+              "titulo": "Ansiedad, preocupaciones y malestar emocional durante el embarazo",
+              "ruta": "/b/B3/B3-01/B3-01-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B3-02",
+          "titulo": "Salud mental en el posparto",
+          "orden": 2,
+          "articulos": [
+            {
+              "id": "B3-02-01",
+              "titulo": "Tristeza posparto: evolución y señales para consultar",
+              "ruta": "/b/B3/B3-02/B3-02-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B3-02-02",
+              "titulo": "Depresión posparto: reconocimiento y búsqueda de ayuda",
+              "ruta": "/b/B3/B3-02/B3-02-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B3-02-03",
+              "titulo": "Ansiedad posparto y pensamientos intrusivos",
+              "ruta": "/b/B3/B3-02/B3-02-03/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B3-03",
+          "titulo": "Situaciones perinatales complejas",
+          "orden": 3,
+          "articulos": [
+            {
+              "id": "B3-03-01",
+              "titulo": "Duelo gestacional y pérdida perinatal",
+              "ruta": "/b/B3/B3-03/B3-03-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B3-03-02",
+              "titulo": "Experiencias traumáticas del parto y salud mental",
+              "ruta": "/b/B3/B3-03/B3-03-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B3-04",
+          "titulo": "Apoyo y atención profesional",
+          "orden": 4,
+          "articulos": [
+            {
+              "id": "B3-04-01",
+              "titulo": "Cuándo y cómo buscar ayuda por problemas de salud mental perinatal",
+              "ruta": "/b/B3/B3-04/B3-04-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B4",
+      "titulo": "Nutrición y estado nutricional",
+      "descripcion": "Evaluación y problemas clínicos nutricionales; las guías generales de alimentación se mantienen en CRIANZA.",
+      "orden": 4,
+      "subsecciones": [
+        {
+          "id": "B4-01",
+          "titulo": "Estado nutricional materno",
+          "orden": 1,
+          "articulos": [
+            {
+              "id": "B4-01-01",
+              "titulo": "Necesidades nutricionales y evaluación durante el embarazo",
+              "ruta": "/b/B4/B4-01/B4-01-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B4-02",
+          "titulo": "Evaluación nutricional infantil",
+          "orden": 2,
+          "articulos": [
+            {
+              "id": "B4-02-01",
+              "titulo": "Cómo valorar el estado nutricional durante los primeros dos años",
+              "ruta": "/b/B4/B4-02/B4-02-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B4-02-02",
+              "titulo": "Interpretación clínica de peso, longitud y perímetro cefálico",
+              "ruta": "/b/B4/B4-02/B4-02-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B4-03",
+          "titulo": "Deficiencias nutricionales",
+          "orden": 3,
+          "articulos": [
+            {
+              "id": "B4-03-01",
+              "titulo": "Anemia por deficiencia de hierro en la primera infancia",
+              "ruta": "/b/B4/B4-03/B4-03-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B4-03-02",
+              "titulo": "Deficiencia de vitamina D y raquitismo",
+              "ruta": "/b/B4/B4-03/B4-03-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B4-03-03",
+              "titulo": "Otras deficiencias de micronutrientes",
+              "ruta": "/b/B4/B4-03/B4-03-03/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B4-04",
+          "titulo": "Alteraciones de la nutrición",
+          "orden": 4,
+          "articulos": [
+            {
+              "id": "B4-04-01",
+              "titulo": "Desnutrición infantil: señales, causas y atención",
+              "ruta": "/b/B4/B4-04/B4-04-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B4-04-02",
+              "titulo": "Sobrepeso temprano: evaluación y prevención sin estigmas",
+              "ruta": "/b/B4/B4-04/B4-04-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B4-05",
+          "titulo": "Seguridad alimentaria y nutricional",
+          "orden": 5,
+          "articulos": [
+            {
+              "id": "B4-05-01",
+              "titulo": "Inocuidad de los alimentos infantiles en el hogar",
+              "ruta": "/b/B4/B4-05/B4-05-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B4-05-02",
+              "titulo": "Agua segura y riesgos de contaminación alimentaria",
+              "ruta": "/b/B4/B4-05/B4-05-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B5",
+      "titulo": "Prevención clínica y vacunas",
+      "descripcion": "Inmunización, seguimiento preventivo y medidas sanitarias respaldadas por evidencia y orientaciones oficiales cubanas.",
+      "orden": 5,
+      "subsecciones": [
+        {
+          "id": "B5-01",
+          "titulo": "Vacunación infantil",
+          "orden": 1,
+          "articulos": [
+            {
+              "id": "B5-01-01",
+              "titulo": "Por qué se vacunan los niños y cómo actúan las vacunas",
+              "ruta": "/b/B5/B5-01/B5-01-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B5-01-02",
+              "titulo": "Esquema cubano de vacunación: edades y protección",
+              "ruta": "/b/B5/B5-01/B5-01-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B5-01-03",
+              "titulo": "Reacciones posteriores a la vacunación y cuándo consultar",
+              "ruta": "/b/B5/B5-01/B5-01-03/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B5-02",
+          "titulo": "Vacunación materna",
+          "orden": 2,
+          "articulos": [
+            {
+              "id": "B5-02-01",
+              "titulo": "Vacunación durante el embarazo y protección del recién nacido",
+              "ruta": "/b/B5/B5-02/B5-02-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B5-03",
+          "titulo": "Puericultura y seguimiento preventivo",
+          "orden": 3,
+          "articulos": [
+            {
+              "id": "B5-03-01",
+              "titulo": "Consultas de puericultura: objetivos y periodicidad",
+              "ruta": "/b/B5/B5-03/B5-03-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B5-03-02",
+              "titulo": "Carné de salud infantil: cómo comprender sus registros",
+              "ruta": "/b/B5/B5-03/B5-03-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B5-04",
+          "titulo": "Prevención de infecciones",
+          "orden": 4,
+          "articulos": [
+            {
+              "id": "B5-04-01",
+              "titulo": "Medidas eficaces para reducir infecciones en el hogar",
+              "ruta": "/b/B5/B5-04/B5-04-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B5-04-02",
+              "titulo": "Uso responsable de antibióticos en la infancia",
+              "ruta": "/b/B5/B5-04/B5-04-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B5-05",
+          "titulo": "Prevención clínica según la edad",
+          "orden": 5,
+          "articulos": [
+            {
+              "id": "B5-05-01",
+              "titulo": "Suplementación preventiva: indicaciones y precauciones",
+              "ruta": "/b/B5/B5-05/B5-05-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B6",
+      "titulo": "Crecimiento y desarrollo",
+      "descripcion": "Vigilancia clínica del crecimiento y detección de alteraciones; estimulación y juego se abordan en CRIANZA.",
+      "orden": 6,
+      "subsecciones": [
+        {
+          "id": "B6-01",
+          "titulo": "Crecimiento físico y antropometría",
+          "orden": 1,
+          "articulos": [
+            {
+              "id": "B6-01-01",
+              "titulo": "Peso, longitud y perímetro cefálico: qué significan",
+              "ruta": "/b/B6/B6-01/B6-01-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B6-01-02",
+              "titulo": "Curvas de crecimiento: lectura e interpretación",
+              "ruta": "/b/B6/B6-01/B6-01-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B6-02",
+          "titulo": "Vigilancia del desarrollo",
+          "orden": 2,
+          "articulos": [
+            {
+              "id": "B6-02-01",
+              "titulo": "Hitos del desarrollo: cómo interpretarlos sin comparaciones",
+              "ruta": "/b/B6/B6-02/B6-02-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B6-02-02",
+              "titulo": "Señales de alerta del desarrollo durante los primeros dos años",
+              "ruta": "/b/B6/B6-02/B6-02-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B6-03",
+          "titulo": "Desarrollo motor y comunicación",
+          "orden": 3,
+          "articulos": [
+            {
+              "id": "B6-03-01",
+              "titulo": "Evaluación del desarrollo motor y sus variaciones",
+              "ruta": "/b/B6/B6-03/B6-03-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B6-03-02",
+              "titulo": "Desarrollo del lenguaje: señales para consultar",
+              "ruta": "/b/B6/B6-03/B6-03-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B6-04",
+          "titulo": "Desarrollo cognitivo y socioemocional",
+          "orden": 4,
+          "articulos": [
+            {
+              "id": "B6-04-01",
+              "titulo": "Vigilancia del desarrollo cognitivo y socioemocional",
+              "ruta": "/b/B6/B6-04/B6-04-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B6-04-02",
+              "titulo": "Variaciones del desarrollo: cuándo requieren evaluación",
+              "ruta": "/b/B6/B6-04/B6-04-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B6-05",
+          "titulo": "Seguimiento especializado",
+          "orden": 5,
+          "articulos": [
+            {
+              "id": "B6-05-01",
+              "titulo": "Prematuridad y seguimiento del neurodesarrollo",
+              "ruta": "/b/B6/B6-05/B6-05-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B6-05-02",
+              "titulo": "Detección temprana y rutas de atención",
+              "ruta": "/b/B6/B6-05/B6-05-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B7",
+      "titulo": "Enfermedades frecuentes en la primera infancia",
+      "descripcion": "Biblioteca clínica de enfermedades frecuentes: manifestaciones, evolución, cuidados generales y criterios de valoración médica.",
+      "orden": 7,
+      "subsecciones": [
+        {
+          "id": "B7-01",
+          "titulo": "Infecciones respiratorias",
+          "orden": 1,
+          "articulos": [
+            {
+              "id": "B7-01-01",
+              "titulo": "Catarro común y resfriado",
+              "ruta": "/b/B7/B7-01/B7-01-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-01-02",
+              "titulo": "Bronquiolitis: síntomas, evolución y cuidados",
+              "ruta": "/b/B7/B7-01/B7-01-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-01-03",
+              "titulo": "Neumonía infantil: manifestaciones y atención",
+              "ruta": "/b/B7/B7-01/B7-01-03/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-01-04",
+              "titulo": "Influenza y otras infecciones virales respiratorias",
+              "ruta": "/b/B7/B7-01/B7-01-04/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B7-02",
+          "titulo": "Problemas gastrointestinales",
+          "orden": 2,
+          "articulos": [
+            {
+              "id": "B7-02-01",
+              "titulo": "Diarrea aguda y gastroenteritis",
+              "ruta": "/b/B7/B7-02/B7-02-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-02-02",
+              "titulo": "Vómitos y reflujo gastroesofágico",
+              "ruta": "/b/B7/B7-02/B7-02-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-02-03",
+              "titulo": "Estreñimiento y dolor abdominal recurrente",
+              "ruta": "/b/B7/B7-02/B7-02-03/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B7-03",
+          "titulo": "Fiebre y enfermedades infecciosas",
+          "orden": 3,
+          "articulos": [
+            {
+              "id": "B7-03-01",
+              "titulo": "Fiebre infantil: causas y evaluación según la edad",
+              "ruta": "/b/B7/B7-03/B7-03-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-03-02",
+              "titulo": "Dengue en la infancia: manifestaciones y evolución",
+              "ruta": "/b/B7/B7-03/B7-03-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-03-03",
+              "titulo": "Infecciones urinarias en lactantes y niños pequeños",
+              "ruta": "/b/B7/B7-03/B7-03-03/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B7-04",
+          "titulo": "Problemas de piel",
+          "orden": 4,
+          "articulos": [
+            {
+              "id": "B7-04-01",
+              "titulo": "Dermatitis atópica y eccema infantil",
+              "ruta": "/b/B7/B7-04/B7-04-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-04-02",
+              "titulo": "Infecciones de la piel: impétigo y lesiones frecuentes",
+              "ruta": "/b/B7/B7-04/B7-04-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B7-05",
+          "titulo": "Oído, nariz y garganta",
+          "orden": 5,
+          "articulos": [
+            {
+              "id": "B7-05-01",
+              "titulo": "Otitis media aguda y dolor de oído",
+              "ruta": "/b/B7/B7-05/B7-05-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-05-02",
+              "titulo": "Rinitis, congestión nasal y secreciones persistentes",
+              "ruta": "/b/B7/B7-05/B7-05-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-05-03",
+              "titulo": "Faringitis y amigdalitis",
+              "ruta": "/b/B7/B7-05/B7-05-03/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B7-06",
+          "titulo": "Alergias y problemas inmunológicos",
+          "orden": 6,
+          "articulos": [
+            {
+              "id": "B7-06-01",
+              "titulo": "Alergia alimentaria: manifestaciones y evaluación",
+              "ruta": "/b/B7/B7-06/B7-06-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-06-02",
+              "titulo": "Urticaria y reacciones alérgicas frecuentes",
+              "ruta": "/b/B7/B7-06/B7-06-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B7-07",
+          "titulo": "Otros problemas prevalentes",
+          "orden": 7,
+          "articulos": [
+            {
+              "id": "B7-07-01",
+              "titulo": "Anemia y parasitosis intestinales: evaluación y tratamiento indicado",
+              "ruta": "/b/B7/B7-07/B7-07-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B8",
+      "titulo": "Señales de alarma y urgencias",
+      "descripcion": "Reconocimiento de gravedad y orientación para actuar sin demora; no sustituye la valoración profesional.",
+      "orden": 8,
+      "subsecciones": [
+        {
+          "id": "B8-01",
+          "titulo": "Dificultad respiratoria",
+          "orden": 1,
+          "articulos": [
+            {
+              "id": "B8-01-01",
+              "titulo": "Cómo reconocer la dificultad respiratoria en un bebé",
+              "ruta": "/b/B8/B8-01/B8-01-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B8-01-02",
+              "titulo": "Atragantamiento y obstrucción de la vía aérea: respuesta inmediata",
+              "ruta": "/b/B8/B8-01/B8-01-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B8-02",
+          "titulo": "Alteraciones neurológicas",
+          "orden": 2,
+          "articulos": [
+            {
+              "id": "B8-02-01",
+              "titulo": "Convulsiones infantiles: qué hacer y qué evitar",
+              "ruta": "/b/B8/B8-02/B8-02-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B8-02-02",
+              "titulo": "Pérdida de conciencia y dificultad para despertar",
+              "ruta": "/b/B8/B8-02/B8-02-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B8-03",
+          "titulo": "Deshidratación y deterioro general",
+          "orden": 3,
+          "articulos": [
+            {
+              "id": "B8-03-01",
+              "titulo": "Cómo reconocer la deshidratación",
+              "ruta": "/b/B8/B8-03/B8-03-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B8-03-02",
+              "titulo": "Signos de mala perfusión y deterioro del estado general",
+              "ruta": "/b/B8/B8-03/B8-03-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B8-04",
+          "titulo": "Fiebre y signos de gravedad",
+          "orden": 4,
+          "articulos": [
+            {
+              "id": "B8-04-01",
+              "titulo": "Fiebre en menores de tres meses: evaluación urgente",
+              "ruta": "/b/B8/B8-04/B8-04-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B8-04-02",
+              "titulo": "Manchas que no blanquean, rigidez de cuello y otros signos de alarma",
+              "ruta": "/b/B8/B8-04/B8-04-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B8-05",
+          "titulo": "Urgencias digestivas y alérgicas",
+          "orden": 5,
+          "articulos": [
+            {
+              "id": "B8-05-01",
+              "titulo": "Vómitos verdes, sangre en heces y dolor abdominal intenso",
+              "ruta": "/b/B8/B8-05/B8-05-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B8-05-02",
+              "titulo": "Anafilaxia: reconocimiento de una reacción alérgica grave",
+              "ruta": "/b/B8/B8-05/B8-05-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B8-06",
+          "titulo": "Actuación ante una urgencia",
+          "orden": 6,
+          "articulos": [
+            {
+              "id": "B8-06-01",
+              "titulo": "Qué hacer mientras llega la ayuda médica",
+              "ruta": "/b/B8/B8-06/B8-06-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B8-06-02",
+              "titulo": "Qué información comunicar al personal sanitario",
+              "ruta": "/b/B8/B8-06/B8-06-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B9",
+      "titulo": "Salud bucal y hábitos saludables",
+      "descripcion": "Prevención clínica de enfermedades bucales; la higiene cotidiana ya abordada en CRIANZA no se duplica.",
+      "orden": 9,
+      "subsecciones": [
+        {
+          "id": "B9-01",
+          "titulo": "Salud bucal y desarrollo dentario",
+          "orden": 1,
+          "articulos": [
+            {
+              "id": "B9-01-01",
+              "titulo": "Erupción dentaria: variaciones normales y molestias",
+              "ruta": "/b/B9/B9-01/B9-01-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B9-01-02",
+              "titulo": "Primera consulta odontológica y seguimiento preventivo",
+              "ruta": "/b/B9/B9-01/B9-01-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B9-02",
+          "titulo": "Caries de la primera infancia",
+          "orden": 2,
+          "articulos": [
+            {
+              "id": "B9-02-01",
+              "titulo": "Caries temprana: factores de riesgo y prevención",
+              "ruta": "/b/B9/B9-02/B9-02-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B9-02-02",
+              "titulo": "Flúor y protección de los dientes temporales",
+              "ruta": "/b/B9/B9-02/B9-02-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B9-03",
+          "titulo": "Alteraciones y atención odontológica",
+          "orden": 3,
+          "articulos": [
+            {
+              "id": "B9-03-01",
+              "titulo": "Traumatismos dentales en la primera infancia",
+              "ruta": "/b/B9/B9-03/B9-03-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B9-03-02",
+              "titulo": "Dolor, inflamación y otros problemas bucales que requieren consulta",
+              "ruta": "/b/B9/B9-03/B9-03-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B9-04",
+          "titulo": "Hábitos y salud",
+          "orden": 4,
+          "articulos": [
+            {
+              "id": "B9-04-01",
+              "titulo": "Azúcar, bebidas y riesgos para la salud bucal y general",
+              "ruta": "/b/B9/B9-04/B9-04-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B10",
+      "titulo": "Salud ambiental y prevención de riesgos clínicos",
+      "descripcion": "Factores ambientales y sanitarios del entorno; la prevención de accidentes domésticos ya desarrollada en CRIANZA no se duplica.",
+      "orden": 10,
+      "subsecciones": [
+        {
+          "id": "B10-01",
+          "titulo": "Agua, saneamiento e higiene ambiental",
+          "orden": 1,
+          "articulos": [
+            {
+              "id": "B10-01-01",
+              "titulo": "Agua segura para beber y preparar alimentos infantiles",
+              "ruta": "/b/B10/B10-01/B10-01-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B10-01-02",
+              "titulo": "Almacenamiento de agua, saneamiento y prevención de vectores",
+              "ruta": "/b/B10/B10-01/B10-01-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B10-02",
+          "titulo": "Aire y ambiente interior",
+          "orden": 2,
+          "articulos": [
+            {
+              "id": "B10-02-01",
+              "titulo": "Humo de tabaco y exposición al humo",
+              "ruta": "/b/B10/B10-02/B10-02-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B10-02-02",
+              "titulo": "Ventilación, humedad y calidad del aire en la vivienda",
+              "ruta": "/b/B10/B10-02/B10-02-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B10-03",
+          "titulo": "Clima y exposición ambiental",
+          "orden": 3,
+          "articulos": [
+            {
+              "id": "B10-03-01",
+              "titulo": "Calor, deshidratación y protección de los niños pequeños",
+              "ruta": "/b/B10/B10-03/B10-03-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B10-03-02",
+              "titulo": "Radiación solar y protección de la piel infantil",
+              "ruta": "/b/B10/B10-03/B10-03-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B10-04",
+          "titulo": "Vectores, animales y entorno",
+          "orden": 4,
+          "articulos": [
+            {
+              "id": "B10-04-01",
+              "titulo": "Mosquitos y prevención de enfermedades transmitidas por vectores",
+              "ruta": "/b/B10/B10-04/B10-04-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B10-04-02",
+              "titulo": "Convivencia con animales y prevención de zoonosis",
+              "ruta": "/b/B10/B10-04/B10-04-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        },
+        {
+          "id": "B10-05",
+          "titulo": "Sustancias y riesgos ambientales",
+          "orden": 5,
+          "articulos": [
+            {
+              "id": "B10-05-01",
+              "titulo": "Plaguicidas, productos químicos y exposición infantil",
+              "ruta": "/b/B10/B10-05/B10-05-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
