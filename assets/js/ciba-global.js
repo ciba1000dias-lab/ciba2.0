@@ -359,7 +359,7 @@
           { id:'I4', titulo:'Pantallas y desarrollo' },
           { id:'I5', titulo:'Inteligencia artificial e infancias', ruta:'i/I5/' },
           { id:'I6', titulo:'Redes sociales y salud mental familiar', ruta:'i/I6/' },
-          { id:'I7', titulo:'Apps, plataformas y herramientas digitales', ruta:'i/#tema-07' },
+          { id:'I7', titulo:'Apps, plataformas y herramientas digitales', ruta:'i/I7/' },
           { id:'I8', titulo:'Telemedicina y comunicación digital con el sistema de salud', ruta:'i/#tema-08' },
           { id:'I9', titulo:'Contenido infantil y consumo audiovisual', ruta:'i/#tema-09' },
           { id:'I10', titulo:'Ciudadanía digital y futuro', ruta:'i/#tema-10' }
@@ -443,7 +443,8 @@
         ['plataforma/recursos/descargables/','Recursos descargables'],
         ['plataforma/comunidad/','Comunidad CIBA'],
         ['c/C1/podcast/','Zona Podcast'],
-        ['c/C6/','Prevención y seguridad en el hogar']
+        ['c/C6/','Prevención y seguridad en el hogar'],
+        ['i/I7/#apps-10','Las 10 apps que no te pueden faltar']
       ].forEach(([ruta,titulo]) => agregarEnlace(grupoRecursos.lista,ruta,titulo));
       panel.insertBefore(tituloRecursos,tituloColumnas);
       panel.insertBefore(grupoRecursos.grupo,tituloColumnas);
