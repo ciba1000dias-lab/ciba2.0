@@ -1,0 +1,9 @@
+{
+  "id": "B10",
+  "titulo": "Salud ambiental y prevención de riesgos clínicos",
+  "descripcion": "Factores ambientales y sanitarios del entorno; la prevención de accidentes domésticos ya desarrollada en CRIANZA no se duplica.",
+  "columna": "B",
+  "orden": 10,
+  "estructura": "seccion-subsecciones-articulos",
+  "estado": "estructura-editorial"
+}
