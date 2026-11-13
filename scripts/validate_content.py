@@ -131,10 +131,12 @@ def validar(src: Path, *, hoy: date | None = None) -> list[ValidationError]:
             if isinstance(col_area, str) and col_area != letra.upper():
                 errores.append(ValidationError(rel_area, "columna", f"{col_area!r} ≠ {letra.upper()!r}"))
 
-            subdirs_pag, errs_pag_dir = listar_directorios_seguros(carpeta_area, rel_area)
+            pendientes = list(reversed(listar_directorios_seguros(carpeta_area, rel_area)[0]))
+            _, errs_pag_dir = listar_directorios_seguros(carpeta_area, rel_area)
             errores.extend(errs_pag_dir)
 
-            for carpeta_pag in subdirs_pag:
+            while pendientes:
+                carpeta_pag = pendientes.pop()
                 if carpeta_pag.name == "_paginas":
                     ok_aux, motivo_aux = es_ruta_segura(src, carpeta_pag)
                     if not ok_aux:
@@ -176,6 +178,13 @@ def validar(src: Path, *, hoy: date | None = None) -> list[ValidationError]:
                         errores.append(ValidationError(rel_pag, "index.html", motivo_idx))
                     elif not index.is_file() or index.stat().st_size < 200:
                         errores.append(ValidationError(rel_pag, "index.html", "publicado sin contenido suficiente"))
+
+                # Los contenedores archivados representan subsecciones, no artículos.
+                # Se inspeccionan sus hijos para encontrar páginas anidadas.
+                if pagina.datos.get("estado") == "archivado":
+                    hijos, errs_hijos = listar_directorios_seguros(carpeta_pag, rel_pag)
+                    errores.extend(errs_hijos)
+                    pendientes.extend(reversed(hijos))
 
     return errores
 
