@@ -1,0 +1,9 @@
+{
+  "id": "B8",
+  "titulo": "Señales de alarma y urgencias",
+  "descripcion": "Reconocimiento de gravedad y orientación para actuar sin demora; no sustituye la valoración profesional.",
+  "columna": "B",
+  "orden": 8,
+  "estructura": "seccion-subsecciones-articulos",
+  "estado": "estructura-editorial"
+}
