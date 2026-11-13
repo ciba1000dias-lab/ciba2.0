@@ -73,5 +73,5 @@ document.querySelectorAll('.question').forEach(q=>q.querySelectorAll('button').f
 const checks=[...document.querySelectorAll('#habits input')],bar=document.getElementById('habitProgress'),count=document.getElementById('habitCount');
 function update(){const n=checks.filter(x=>x.checked).length;bar.style.width=(n/checks.length*100)+'%';count.textContent=n+' de '+checks.length+' compromisos seleccionados.'}
 checks.forEach(x=>x.addEventListener('change',update));document.getElementById('resetHabits').addEventListener('click',()=>{checks.forEach(x=>x.checked=false);update()});
-</script><script type="module" src="../../../assets/js/ciba-global.js?v=20261113-01"></script>
+</script><script type="module" src="../../assets/js/ciba-global.js?v=20261113-02"></script>
 </body></html>
