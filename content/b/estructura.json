@@ -45,8 +45,8 @@
               "id": "B1-01-01",
               "titulo": "Adaptación del recién nacido durante las primeras horas",
               "ruta": "/b/B1/B1-01/B1-01-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true
             },
             {
               "id": "B1-01-02",
