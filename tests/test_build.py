@@ -251,5 +251,31 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(self._leer_catalogo()["paginas"], [])
 
 
+    def test_publica_articulo_anidado_en_subseccion(self) -> None:
+        añadir_area(self.content, "b", "B1")
+        subseccion = self.content / "b" / "B1" / "B1-01"
+        subseccion.mkdir(parents=True)
+        meta_sub = meta_ok("B1-01", "B", "B1", estado="archivado")
+        (subseccion / "meta.json").write_text(
+            json.dumps(meta_sub, ensure_ascii=False), encoding="utf-8"
+        )
+
+        articulo = subseccion / "B1-01-01"
+        articulo.mkdir()
+        meta_art = meta_ok("B1-01-01", "B", "B1")
+        (articulo / "meta.json").write_text(
+            json.dumps(meta_art, ensure_ascii=False), encoding="utf-8"
+        )
+        (articulo / "index.html").write_text("x" * 300, encoding="utf-8")
+
+        self.assertEqual(construir(self.content, self.out), 0)
+        ruta = self.out / "b" / "B1" / "B1-01" / "B1-01-01"
+        self.assertTrue((ruta / "index.html").is_file())
+        self.assertEqual(
+            self._leer_catalogo()["paginas"][0]["ruta_publica"],
+            "b/B1/B1-01/B1-01-01/",
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
