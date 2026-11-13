@@ -444,6 +444,7 @@
         ['plataforma/comunidad/','Comunidad CIBA'],
         ['c/C1/podcast/','Zona Podcast'],
         ['c/C6/','Prevención y seguridad en el hogar'],
+        ['i/I7/','Apps, plataformas y herramientas digitales'],
         ['i/I7/#apps-10','Las 10 apps que no te pueden faltar']
       ].forEach(([ruta,titulo]) => agregarEnlace(grupoRecursos.lista,ruta,titulo));
       panel.insertBefore(tituloRecursos,tituloColumnas);
