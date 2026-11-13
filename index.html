@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#493A32">
-  <meta name="description" content="CIBA es una plataforma cubana de educación parental digital en los primeros mil días de las infancias. Integra Crianza, Informática, Bienestar y Acompañamiento.">
+  <meta name="description" content="CIBA es una plataforma cubana de educación parental digital en los primeros mil días de las infancias. Integra Crianza, INTERNET, Bienestar y Acompañamiento.">
   <title>CIBA — Crecemos acompañándonos</title>
 
   <style>
@@ -569,7 +569,7 @@
     /* Identidad cromática permanente de las cuatro columnas CIBA.
        Tonos profundos para mantener contraste legible con texto blanco. */
     .columna:nth-child(1) { background: #397653; } /* Crianza · verde de la vida */
-    .columna:nth-child(2) { background: #287B9A; } /* Informática · azul del Caribe */
+    .columna:nth-child(2) { background: #287B9A; } /* INTERNET · azul del Caribe */
     .columna:nth-child(3) { background: #8C671F; } /* Bienestar · ocre del sol */
     .columna:nth-child(4) { background: #A9443B; } /* Acompañamiento · rojo coral */
 
@@ -1567,7 +1567,7 @@ html{scroll-padding-top:82px}body{overflow-x:hidden}.contenedor{width:min(1220px
 
       <div class="hero-pie">
         <div class="contenedor">
-          <span>Crianza · Informática · Bienestar · Acompañamiento</span>
+          <span>Crianza · INTERNET · Bienestar · Acompañamiento</span>
           <span>Una mirada humana en un mundo que cambia</span>
         </div>
       </div>
@@ -1799,7 +1799,7 @@ html{scroll-padding-top:82px}body{overflow-x:hidden}.contenedor{width:min(1220px
 "use strict";
 const reducido=window.matchMedia("(prefers-reduced-motion: reduce)");
 const catalogoPromesa=window.__CIBA_CATALOGO_PROMESA__||fetch("data/catalogo.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error("Catálogo no disponible");return r.json();});
-const nombres={C:"Crianza",I:"Informática",B:"Bienestar",A:"Acompañamiento"};
+const nombres={C:"Crianza",I:"INTERNET",B:"Bienestar",A:"Acompañamiento"};
 function fechaCorta(v){if(!v)return"";const f=new Date(v+"T12:00:00");return Number.isNaN(f.getTime())?"":new Intl.DateTimeFormat("es",{day:"numeric",month:"short"}).format(f).replace(".","");}
 function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]);}
 function pintarRecientes(cat){
