@@ -513,7 +513,7 @@
             .sort(ordenarPaginas);
 
           if (columna.id === 'I') {
-            await agregarApartadosDeSeccionInternet(grupoArea.lista, areaMenu);
+            agregarApartadosDeSeccionInternet(grupoArea.lista, areaMenu);
           } else {
             agregarPaginasDeArea(grupoArea.lista, paginas);
           }
