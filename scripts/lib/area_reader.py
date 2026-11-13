@@ -12,6 +12,7 @@ from .errors import ValidationError
 from .paths import RE_AREA, COLUMNAS_VALIDAS
 
 CAMPOS_OBLIGATORIOS = ("id", "titulo", "descripcion", "columna", "orden")
+CAMPOS_OPCIONALES = ("estructura", "estado")
 
 
 @dataclass
