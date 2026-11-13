@@ -40,9 +40,16 @@ def leer_area(ruta_area: Path, ruta_relativa: str) -> tuple[AreaMeta | None, lis
         errores.append(ValidationError(ruta_relativa, "area.json", "debe ser objeto JSON"))
         return None, errores
 
-    extra = set(datos.keys()) - set(CAMPOS_OBLIGATORIOS)
+    extra = set(datos.keys()) - set(CAMPOS_OBLIGATORIOS) - set(CAMPOS_OPCIONALES)
     if extra:
         errores.append(ValidationError(ruta_relativa, "area.json", f"campos desconocidos: {sorted(extra)}"))
+
+    for campo in CAMPOS_OPCIONALES:
+        if campo in datos:
+            valor = datos[campo]
+            limite = 80 if campo == "estructura" else 40
+            if not isinstance(valor, str) or not (3 <= len(valor) <= limite):
+                errores.append(ValidationError(ruta_relativa, campo, f"string de 3–{limite} caracteres"))
 
     for campo in CAMPOS_OBLIGATORIOS:
         if campo not in datos:
