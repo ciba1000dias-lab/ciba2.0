@@ -1,7 +1,9 @@
 {
   "id": "B3",
   "titulo": "Salud emocional perinatal",
-  "descripcion": "Área temática de bienestar dedicada a salud emocional perinatal, organizada para ofrecer información rigurosa y recursos útiles a las familias.",
+  "descripcion": "Salud mental durante el embarazo y el posparto; vínculo y apego se desarrollan en CRIANZA.",
   "columna": "B",
-  "orden": 3
+  "orden": 3,
+  "estructura": "seccion-subsecciones-articulos",
+  "estado": "estructura-editorial"
 }
