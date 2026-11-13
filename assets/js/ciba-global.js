@@ -335,6 +335,34 @@
       lista.appendChild(enlace(urlPublica(ruta),titulo,clase));
     }
 
+    async function agregarApartadosDeSeccionInternet(lista, area) {
+      const ruta = 'i/' + area.id + '/';
+      try {
+        const respuesta = await fetch(urlPublica(ruta), { cache: 'no-cache' });
+        if (!respuesta.ok) throw new Error('No se pudo cargar ' + ruta);
+        const html = await respuesta.text();
+        const documento = new DOMParser().parseFromString(html, 'text/html');
+        const apartados = Array.from(documento.querySelectorAll('section.block[id]'))
+          .map(seccion => ({
+            id: seccion.id,
+            titulo: seccion.querySelector('h2')?.textContent?.trim() || ''
+          }))
+          .filter(apartado => apartado.id && apartado.titulo);
+
+        if (!apartados.length) {
+          agregarEnlace(lista, ruta, 'Abrir sección completa');
+          return;
+        }
+
+        apartados.forEach(apartado => {
+          agregarEnlace(lista, ruta + '#' + encodeURIComponent(apartado.id), apartado.titulo);
+        });
+      } catch (error) {
+        console.warn('CIBA: no se pudieron cargar los apartados de ' + area.id, error);
+        agregarEnlace(lista, ruta, 'Abrir sección completa');
+      }
+    }
+
     async function construirNavegacionEditorial() {
       const datos = await obtenerCatalogo();
 
@@ -353,16 +381,16 @@
           { id:'C7', titulo:'Cultura, rutinas y vida cotidiana' }
         ],
         I: [
-          { id:'I1', titulo:'Alfabetización sanitaria digital' },
-          { id:'I2', titulo:'Desinformación y consejos virales' },
-          { id:'I3', titulo:'Privacidad y seguridad infantil en redes' },
-          { id:'I4', titulo:'Pantallas y desarrollo' },
+          { id:'I1', titulo:'Alfabetización sanitaria digital', ruta:'i/I1/' },
+          { id:'I2', titulo:'Desinformación y consejos virales', ruta:'i/I2/' },
+          { id:'I3', titulo:'Privacidad y seguridad infantil en redes', ruta:'i/I3/' },
+          { id:'I4', titulo:'Pantallas y desarrollo', ruta:'i/I4/' },
           { id:'I5', titulo:'Inteligencia artificial e infancias', ruta:'i/I5/' },
           { id:'I6', titulo:'Redes sociales y salud mental familiar', ruta:'i/I6/' },
           { id:'I7', titulo:'Apps, plataformas y herramientas digitales', ruta:'i/I7/' },
-          { id:'I8', titulo:'Telemedicina y comunicación digital con el sistema de salud', ruta:'i/#tema-08' },
-          { id:'I9', titulo:'Contenido infantil y consumo audiovisual', ruta:'i/#tema-09' },
-          { id:'I10', titulo:'Ciudadanía digital y futuro', ruta:'i/#tema-10' }
+          { id:'I8', titulo:'Telemedicina y comunicación digital con el sistema de salud', ruta:'i/I8/' },
+          { id:'I9', titulo:'Contenido infantil y consumo audiovisual', ruta:'i/I9/' },
+          { id:'I10', titulo:'Ciudadanía digital y futuro', ruta:'i/I10/' }
         ],
         B: [
           { id:'B1', titulo:'Salud del bebé', ruta:'b/#tema-01' },
@@ -484,7 +512,11 @@
             )
             .sort(ordenarPaginas);
 
-          agregarPaginasDeArea(grupoArea.lista, paginas);
+          if (columna.id === 'I') {
+            await agregarApartadosDeSeccionInternet(grupoArea.lista, areaMenu);
+          } else {
+            agregarPaginasDeArea(grupoArea.lista, paginas);
+          }
           grupoColumna.lista.appendChild(grupoArea.grupo);
         });
 
