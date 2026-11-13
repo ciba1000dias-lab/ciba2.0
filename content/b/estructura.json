@@ -73,8 +73,8 @@
               "id": "B1-02-01",
               "titulo": "Cómo reconocer el estado general del bebé",
               "ruta": "/b/B1/B1-02/B1-02-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true
             },
             {
               "id": "B1-02-02",
