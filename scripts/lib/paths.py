@@ -8,7 +8,7 @@ COLUMNAS_VALIDAS = ("C", "I", "B", "A")
 COLUMNAS_CARPETAS_OFICIALES = ("c", "i", "b", "a")
 RE_COLUMNA = r"^[CIBA]$"
 RE_AREA = r"^[CIBA][1-9][0-9]*$"
-RE_PAGINA = r"^[CIBA][1-9][0-9]*-[0-9]{2}$"
+RE_PAGINA = r"^[CIBA][1-9][0-9]*-[0-9]{2}(?:-[0-9]{2})*$"
 ESTADOS_VALIDOS = ("borrador", "revision", "publicado", "archivado")
 
 
