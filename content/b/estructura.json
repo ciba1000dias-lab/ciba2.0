@@ -115,8 +115,8 @@
               "id": "B1-04-01",
               "titulo": "Valoración de la transferencia de leche y ganancia de peso",
               "ruta": "/b/B1/B1-04/B1-04-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true
             }
           ]
         },
