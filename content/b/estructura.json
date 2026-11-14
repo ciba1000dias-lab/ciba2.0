@@ -80,8 +80,8 @@
               "id": "B1-02-02",
               "titulo": "Temperatura del bebé: medición e interpretación",
               "ruta": "/b/B1/B1-02/B1-02-02/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true
             }
           ]
         },
