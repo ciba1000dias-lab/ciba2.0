@@ -1,0 +1,17 @@
+{
+  "id": "B1-05",
+  "titulo": "Condiciones especiales del recién nacido",
+  "descripcion": "Subsección dedicada al seguimiento clínico de recién nacidos con condiciones que requieren vigilancia específica después del alta.",
+  "columna": "B",
+  "area": "B1",
+  "palabras_clave": [
+    "subseccion",
+    "prematuridad",
+    "bajopesoalnacer",
+    "seguimientoneonatal"
+  ],
+  "estado": "archivado",
+  "fecha_publicacion": "2026-11-14",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false
+}
