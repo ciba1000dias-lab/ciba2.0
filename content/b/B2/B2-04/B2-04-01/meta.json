@@ -1,0 +1,26 @@
+{
+  "id": "B2-04-01",
+  "titulo": "Sangrado, fiebre y signos de infección puerperal",
+  "descripcion": "Reconocimiento de sangrado excesivo, fiebre e infección durante el puerperio, con orientación sobre señales de alarma y búsqueda oportuna de atención.",
+  "columna": "B",
+  "area": "B2",
+  "palabras_clave": [
+    "sangrado",
+    "hemorragia",
+    "puerperio",
+    "loquios",
+    "fiebre",
+    "infeccion",
+    "endometritis",
+    "sepsis",
+    "saludmaterna",
+    "signosdealarma",
+    "cesarea",
+    "episiotomia"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-14",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "subseccion": "Complicaciones y señales de alarma maternas"
+}
