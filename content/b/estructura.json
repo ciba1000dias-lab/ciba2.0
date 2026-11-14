@@ -200,8 +200,8 @@
               "id": "B2-04-01",
               "titulo": "Sangrado, fiebre y signos de infección puerperal",
               "ruta": "/b/B2/B2-04/B2-04-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true
             },
             {
               "id": "B2-04-02",
