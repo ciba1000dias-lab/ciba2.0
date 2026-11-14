@@ -129,8 +129,8 @@
               "id": "B1-05-01",
               "titulo": "Seguimiento del recién nacido prematuro o con bajo peso después del alta",
               "ruta": "/b/B1/B1-05/B1-05-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true
             }
           ]
         }
