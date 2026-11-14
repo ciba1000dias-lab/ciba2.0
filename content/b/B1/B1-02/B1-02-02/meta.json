@@ -1,0 +1,23 @@
+{
+  "id": "B1-02-02",
+  "titulo": "Temperatura del bebé: medición e interpretación",
+  "descripcion": "Aprende a medir la temperatura del bebé correctamente, interpretar los resultados según la edad y reconocer cuándo buscar atención médica.",
+  "columna": "B",
+  "area": "B1",
+  "palabras_clave": [
+    "temperaturabebe",
+    "fiebrelactante",
+    "hipotermianeonatal",
+    "termometrodigital",
+    "medicionaxilar",
+    "fiebremenores3meses",
+    "termorregulacion",
+    "urgenciaspediatricas",
+    "primerosmil"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-13",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "subseccion": "Salud y vigilancia del lactante"
+}
