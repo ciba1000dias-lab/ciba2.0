@@ -207,8 +207,8 @@
               "id": "B2-04-02",
               "titulo": "Cefalea intensa, hipertensión y otros signos de alarma",
               "ruta": "/b/B2/B2-04/B2-04-02/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true
             },
             {
               "id": "B2-04-03",

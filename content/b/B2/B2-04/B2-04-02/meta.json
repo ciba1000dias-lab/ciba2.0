@@ -1,0 +1,26 @@
+{
+  "id": "B2-04-02",
+  "titulo": "Cefalea intensa, hipertensión y otros signos de alarma",
+  "descripcion": "Reconocimiento de cefalea intensa, hipertensión, preeclampsia posparto y otros signos de alarma materna, con orientación para buscar atención urgente.",
+  "columna": "B",
+  "area": "B2",
+  "palabras_clave": [
+    "cefalea",
+    "dolordecabeza",
+    "hipertension",
+    "preeclampsia",
+    "preeclampsiaposparto",
+    "presionarterial",
+    "eclampsia",
+    "visionborrosa",
+    "puerperio",
+    "saludmaterna",
+    "signosdealarma",
+    "urgencias"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-14",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "subseccion": "Complicaciones y señales de alarma maternas"
+}
