@@ -1,0 +1,37 @@
+{
+  "id": "B3-03-01",
+  "titulo": "Duelo gestacional y pérdida perinatal",
+  "descripcion": "Comprensión del duelo tras una pérdida gestacional o perinatal, manifestaciones posibles, acompañamiento familiar, seguimiento y señales para buscar ayuda profesional.",
+  "columna": "B",
+  "area": "B3",
+  "subseccion": "Situaciones perinatales complejas",
+  "palabras_clave": [
+    "duelo gestacional",
+    "pérdida perinatal",
+    "pérdida del embarazo",
+    "muerte fetal",
+    "muerte neonatal",
+    "duelo familiar",
+    "salud mental perinatal",
+    "acompañamiento",
+    "apoyo emocional",
+    "señales de alarma"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-17",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "enlaces_externos": [
+    {
+      "titulo": "OMS: recomendaciones de atención posnatal",
+      "url": "https://iris.who.int/bitstream/handle/10665/362880/9789240057142-eng.pdf",
+      "tipo": "guía"
+    },
+    {
+      "titulo": "ACOG: apoyo emocional después de una pérdida del embarazo",
+      "url": "https://www.acog.org/womens-health/experts-and-stories/the-latest/finding-emotional-support-after-pregnancy-loss",
+      "tipo": "orientación"
+    }
+  ]
+}
