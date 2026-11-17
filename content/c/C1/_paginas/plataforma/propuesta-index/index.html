@@ -138,6 +138,76 @@
 }
 @media(prefers-reduced-motion:reduce){.resource-row,.resource-arrow,.resource-bottom>a{transition:none!important}}
 
+
+/* Recorrido multimedia e interactivo por los primeros mil días */
+.timeline{background:#19382e;color:#f8f2e6;padding:92px 0 82px;position:relative;overflow:hidden}
+.timeline:after{content:"";position:absolute;width:540px;height:540px;border:1px solid #d6bd8150;border-radius:50%;right:-270px;top:70px;box-shadow:0 0 0 35px #d6bd8109,0 0 0 75px #d6bd8107;pointer-events:none}
+.timeline-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px;position:relative;z-index:1}
+.timeline-heading h2{font:normal clamp(2.4rem,4.8vw,4.2rem)/1.05 var(--serif);max-width:720px;margin:13px 0}
+.timeline-heading p{max-width:590px;color:#c4d0c5;font-size:13px;line-height:1.8;margin:0}
+.timeline-counter{white-space:nowrap;color:#d7c18c;font-size:10px;letter-spacing:.16em;padding-bottom:9px}
+.timeline-counter strong{font:normal 48px var(--serif);letter-spacing:0;color:#f5e7c6}
+.timeline-experience{position:relative;z-index:1}
+.timeline-rail{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid #d6bd8150;margin-bottom:28px}
+.timeline-stop{position:relative;display:flex;align-items:center;gap:12px;text-align:left;padding:0 12px 20px 0;background:none;border:0;color:#b8c6ba;cursor:pointer;min-width:0}
+.timeline-stop:after{content:"";position:absolute;bottom:-2px;left:0;width:0;height:3px;background:#e3c987;transition:width .4s}
+.timeline-stop.active{color:#fff4d9}.timeline-stop.active:after{width:100%}
+.stop-dot{width:36px;height:36px;flex:none;border:1px solid #8fa18f;border-radius:50%;display:grid;place-items:center;font-size:10px;color:#d7c18c;transition:background .3s,color .3s,transform .3s}
+.timeline-stop.active .stop-dot{background:#e4c987;color:#213d30;border-color:#e4c987;transform:scale(1.08)}
+.timeline-stop>span:last-child{display:flex;flex-direction:column;gap:4px}
+.timeline-stop b{font:normal 18px var(--serif);white-space:nowrap}
+.timeline-stop small{font-size:9px;letter-spacing:.08em;color:#aab9ac}
+.stage-panel{display:grid;grid-template-columns:.9fr 1.1fr;gap:6%;align-items:center;min-height:340px}
+.stage-visual{height:330px;position:relative;overflow:hidden;display:grid;place-items:center;background:radial-gradient(circle at 50% 48%,#54705a 0,#345544 40%,#294738 72%);isolation:isolate;transition:background .5s}
+.stage-visual:before{content:"";position:absolute;width:245px;height:245px;border:1px solid #f3e3bd65;border-radius:50%;z-index:-1}
+.stage-visual:after{content:"";position:absolute;width:310px;height:310px;border:1px dashed #f3e3bd45;border-radius:50%;z-index:-1;animation:orbitSpin 50s linear infinite}
+.visual-orbit{position:absolute;border-radius:50%;border:1px solid #f4e7c244}
+.orbit-a{width:190px;height:190px;transform:translate(-45px,20px)}
+.orbit-b{width:270px;height:270px;transform:translate(30px,-10px)}
+.visual-symbol{font-size:clamp(100px,15vw,160px);line-height:1;color:#f5e6c5;text-shadow:0 12px 35px #102a2380;filter:drop-shadow(0 4px 12px #102a2355);transition:transform .45s,opacity .3s}
+.stage-visual.changing .visual-symbol{transform:scale(.65) rotate(-12deg);opacity:0}
+.visual-caption{position:absolute;left:22px;bottom:20px;font-size:8px;letter-spacing:.2em;color:#f0dfb9}
+.visual-number{position:absolute;right:20px;top:17px;font:normal 37px var(--serif);color:#f0dfb9}
+.stage-visual.visual-birth{background:radial-gradient(circle at 50% 48%,#9a7664 0,#6e5145 43%,#3d4238 100%)}
+.stage-visual.visual-discover{background:radial-gradient(circle at 50% 48%,#9d8b56 0,#6c6840 43%,#354b3d 100%)}
+.stage-visual.visual-explore{background:radial-gradient(circle at 50% 48%,#a86d4e 0,#72513f 43%,#31483a 100%)}
+.stage-copy{padding:18px 0}
+.stage-meta{font-size:9px;letter-spacing:.18em;color:#e4c987;font-weight:800}
+.stage-copy h3{font:normal clamp(28px,3.5vw,43px)/1.12 var(--serif);margin:17px 0 14px;max-width:540px;color:#fff4e0}
+.stage-copy>p{font-size:13px;line-height:1.85;color:#c4d0c5;max-width:570px;margin:0}
+.stage-highlights{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}
+.stage-highlights span{border:1px solid #d6bd8155;border-radius:30px;padding:8px 12px;font-size:9px;letter-spacing:.04em;color:#e8d9b5}
+.stage-link{display:inline-flex;align-items:center;gap:22px;color:#f0d99e;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;text-decoration:none;border-bottom:1px solid #d6bd8170;padding:0 0 8px}
+.stage-link span{font-size:16px;transition:transform .25s}.stage-link:hover span{transform:translate(4px,-3px)}
+.timeline-controls{display:flex;align-items:center;gap:22px;margin-top:27px}
+.timeline-controls button{border:0;background:none;color:#e9d8b0;font-size:10px;letter-spacing:.08em;cursor:pointer;padding:8px 0}
+.timeline-controls button:disabled{opacity:.28;cursor:default}
+.timeline-progress{height:2px;background:#ffffff24;flex:1;overflow:hidden}
+.timeline-progress span{display:block;height:100%;width:25%;background:#e4c987;transition:width .45s}
+.timeline-footnote{position:relative;z-index:1;color:#aebdaf;font-size:10px;line-height:1.7;margin:28px 0 0;max-width:700px}
+@media(max-width:760px){
+ .timeline{padding:72px 0 65px}
+ .timeline-heading{align-items:start;margin-bottom:28px}
+ .timeline-counter strong{font-size:36px}
+ .timeline-rail{gap:4px}
+ .timeline-stop{flex-direction:column;align-items:flex-start;gap:8px;padding:0 2px 14px}
+ .timeline-stop b{font-size:14px}
+ .timeline-stop small{font-size:8px;letter-spacing:0}
+ .stop-dot{width:30px;height:30px;font-size:9px}
+ .stage-panel{grid-template-columns:1fr;gap:18px}
+ .stage-visual{height:250px}
+ .stage-visual:before{width:190px;height:190px}
+ .stage-visual:after{width:245px;height:245px}
+ .visual-symbol{font-size:120px}
+ .stage-copy{padding:0}
+ .stage-copy h3{font-size:31px;margin:12px 0}
+ .stage-copy>p{font-size:12px}
+ .timeline-controls{margin-top:18px;gap:12px}
+ .timeline-controls button{font-size:9px}
+}
+@media(max-width:390px){.timeline-stop b{font-size:12px}.timeline-stop small{font-size:7px}.timeline-heading{gap:10px}.timeline-counter strong{font-size:30px}}
+@media(prefers-reduced-motion:reduce){.stage-visual:after{animation:none!important}.timeline-stop,.stop-dot,.visual-symbol,.timeline-progress span,.stage-link span{transition:none!important}}
+
 </style>
 </head>
 <body><div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
@@ -206,7 +276,24 @@
 </div>
 </section>
 <section class="section latest-section" id="novedades"><div class="wrap"><div class="latest-head"><div class="section-head"><div class="kicker">Lecturas para acompañar</div><h2>Ideas que crecen contigo.</h2><p>Una selección de publicaciones recientes del catálogo de CIBA.</p></div><a class="simplelink" href="../../">PORTADA ACTUAL ↗</a></div><div class="latest-grid" id="latestGrid"><article class="story"><span class="story-tag">CIBA · LECTURAS</span><h3>Explora nuestros contenidos.</h3><p>Las publicaciones recientes aparecerán aquí al cargar el catálogo.</p></article><article class="story"><span class="story-tag">CIENCIA Y FAMILIA</span><h3>Información clara, decisiones acompañadas.</h3><p>Contenidos elaborados para orientar, no para sustituir la valoración profesional.</p></article><article class="story"><span class="story-tag">CRECEMOS ACOMPAÑÁNDONOS</span><h3>Un espacio para cada pregunta.</h3><p>Explora las cuatro columnas y encuentra recursos para tu familia.</p></article></div></div></section>
-<section class="timeline"><div class="wrap"><div class="kicker">Los primeros mil días</div><h2>Un comienzo que merece acompañamiento.</h2><div class="stages"><div class="stage"><small>Etapa 01</small><h3>Gestación</h3><p>Prepararse, cuidar la salud y construir vínculos desde el embarazo.</p></div><div class="stage"><small>Etapa 02</small><h3>Nacimiento</h3><p>Recibir, proteger y acompañar los primeros encuentros.</p></div><div class="stage"><small>Etapa 03</small><h3>Primer año</h3><p>Alimentación, desarrollo, apego y descubrimientos cotidianos.</p></div><div class="stage"><small>Etapa 04</small><h3>Segundo año</h3><p>Autonomía, lenguaje, juego y nuevas formas de explorar el mundo.</p></div></div></div></section>
+<section class="timeline" id="primeros-mil-dias">
+<div class="wrap">
+ <div class="timeline-heading"><div><div class="kicker">Un viaje de mil días</div><h2>Cada etapa trae un mundo nuevo.</h2><p>Elige un momento del recorrido. Descubre qué cambia, qué necesita la infancia y cómo podemos acompañarla.</p></div><div class="timeline-counter"><strong id="stageCounter">01</strong><span> / 04 ETAPAS</span></div></div>
+ <div class="timeline-experience">
+  <div class="timeline-rail" role="tablist" aria-label="Etapas de los primeros mil días">
+   <button class="timeline-stop active" type="button" role="tab" aria-selected="true" aria-controls="stagePanel" data-stage="0"><span class="stop-dot">01</span><span><b>Gestación</b><small>Antes de nacer</small></span></button>
+   <button class="timeline-stop" type="button" role="tab" aria-selected="false" aria-controls="stagePanel" data-stage="1"><span class="stop-dot">02</span><span><b>Nacimiento</b><small>0–6 meses</small></span></button>
+   <button class="timeline-stop" type="button" role="tab" aria-selected="false" aria-controls="stagePanel" data-stage="2"><span class="stop-dot">03</span><span><b>Descubrir</b><small>6–12 meses</small></span></button>
+   <button class="timeline-stop" type="button" role="tab" aria-selected="false" aria-controls="stagePanel" data-stage="3"><span class="stop-dot">04</span><span><b>Explorar</b><small>12–24 meses</small></span></button>
+  </div>
+  <div class="stage-panel" id="stagePanel" role="tabpanel" aria-live="polite">
+   <div class="stage-visual visual-pregnancy" id="stageVisual"><span class="visual-orbit orbit-a"></span><span class="visual-orbit orbit-b"></span><span class="visual-symbol" id="stageSymbol" aria-hidden="true">♡</span><span class="visual-caption" id="stageVisualCaption">EL COMIENZO DE UNA HISTORIA</span><span class="visual-number" id="stageVisualNumber">01</span></div>
+   <div class="stage-copy"><div class="stage-meta" id="stageMeta">ETAPA 01 · GESTACIÓN</div><h3 id="stageTitle">El vínculo también comienza antes de nacer.</h3><p id="stageDescription">Durante el embarazo se construyen condiciones para cuidar la salud, prepararse para la llegada y comenzar a reconocer a ese nuevo integrante de la familia.</p><div class="stage-highlights" id="stageHighlights"><span>Salud materna</span><span>Vínculo prenatal</span><span>Preparación familiar</span></div><a class="stage-link" id="stageLink" href="../../b/">Explorar contenidos de Bienestar <span>↗</span></a></div>
+  </div>
+  <div class="timeline-controls"><button type="button" id="stagePrev" aria-label="Etapa anterior" disabled>← <span>Anterior</span></button><div class="timeline-progress"><span id="timelineProgress"></span></div><button type="button" id="stageNext" aria-label="Etapa siguiente"><span>Siguiente</span> →</button></div>
+ </div>
+ <p class="timeline-footnote">Los primeros mil días abarcan desde la concepción hasta los dos años de vida. Cada familia los vive de una manera única.</p>
+</div></section>
 <section class="manifesto" id="proyecto"><div class="wrap manifesto-grid"><div><div class="kicker">Nuestra manera de acompañar</div><blockquote class="manifesto-quote">La crianza no se aprende en soledad. <em>Se construye en comunidad.</em></blockquote></div><div class="manifesto-copy"><p>CIBA es una plataforma digital cubana de educación parental en los primeros mil días de las infancias.</p><p>Integra conocimiento científico, cultura y herramientas prácticas para que madres, padres y cuidadores encuentren información comprensible y confiable. Promueve una educación parental respetuosa, basada en evidencias y sensible a las realidades de cada familia.</p><div class="pillars"><span>Crianza</span><span>INTERNET</span><span>Bienestar</span><span>Acompañamiento</span></div></div></div></section>
 <section class="cta"><div class="wrap"><div class="kicker">Crecemos acompañándonos</div><h2>El mejor comienzo se construye juntos.</h2><p>Explora CIBA, comparte sus recursos y vuelve siempre que aparezca una nueva pregunta en el camino de criar.</p><a class="btn" href="../../c/C1/">Comenzar a explorar ↗</a></div></section>
 </main>
@@ -224,6 +311,27 @@ const progress=document.getElementById("scrollProgress");let ticking=false;
 const updateProgress=()=>{const max=document.documentElement.scrollHeight-window.innerHeight;progress.style.width=(max>0?window.scrollY/max*100:0)+"%";ticking=false};
 window.addEventListener("scroll",()=>{if(!ticking){requestAnimationFrame(updateProgress);ticking=true}},{passive:true});updateProgress();
 form.addEventListener("submit",e=>{e.preventDefault();const q=norm(input.value.trim());if(!q){results.classList.remove("show");return}const words=q.split(/\s+/).filter(w=>w.length>1);const hits=pages.filter(p=>{const t=norm([p.titulo,p.descripcion,p.id,p.columna,p.area,...(p.palabras_clave||[])].join(" "));return words.length?words.some(w=>t.includes(w)):t.includes(q)}).slice(0,6);grid.innerHTML=hits.length?hits.map(p=>'<a class="result" href="../../'+esc(p.ruta_publica||"")+'"><b>'+esc(p.titulo)+'</b><small>'+esc(p.descripcion||"Contenido de CIBA")+'</small></a>').join(""):'<p>No encontramos resultados. Prueba otras palabras o explora las cuatro columnas.</p>';results.classList.add("show")})
+
+ // Navegación interactiva por las cuatro etapas de los primeros mil días.
+ const stageData=[
+  {name:"GESTACIÓN",period:"Antes de nacer",title:"El vínculo también comienza antes de nacer.",description:"Durante el embarazo se construyen condiciones para cuidar la salud, prepararse para la llegada y comenzar a reconocer a ese nuevo integrante de la familia.",tags:["Salud materna","Vínculo prenatal","Preparación familiar"],symbol:"♡",caption:"EL COMIENZO DE UNA HISTORIA",visual:"visual-pregnancy",link:"../../b/",linkText:"Explorar contenidos de Bienestar"},
+  {name:"NACIMIENTO",period:"0–6 meses",title:"Un mundo nuevo necesita brazos, calma y cuidado.",description:"Los primeros meses están marcados por el contacto, la alimentación, el sueño seguro y la respuesta sensible a las necesidades del bebé.",tags:["Lactancia y alimentación","Sueño seguro","Apego y cuidado"],symbol:"✿",caption:"LOS PRIMEROS ENCUENTROS",visual:"visual-birth",link:"../../c/C1/",linkText:"Explorar contenidos de Crianza"},
+  {name:"DESCUBRIR",period:"6–12 meses",title:"Cada pequeño descubrimiento abre una puerta.",description:"Aparecen nuevas formas de explorar: la alimentación complementaria, el movimiento, los sonidos y el intercambio activo con quienes cuidan.",tags:["Alimentación complementaria","Desarrollo motor","Juego y comunicación"],symbol:"❋",caption:"UN MUNDO POR DESCUBRIR",visual:"visual-discover",link:"../../b/",linkText:"Explorar contenidos de Bienestar"},
+  {name:"EXPLORAR",period:"12–24 meses",title:"Crece la autonomía. También la necesidad de acompañar.",description:"El lenguaje, el juego, la curiosidad y el deseo de hacer las cosas por sí mismo transforman la vida cotidiana. Los límites seguros y el afecto siguen siendo esenciales.",tags:["Lenguaje y comunicación","Autonomía progresiva","Juego y límites respetuosos"],symbol:"✧",caption:"PASOS HACIA EL MUNDO",visual:"visual-explore",link:"../../c/C1/",linkText:"Explorar contenidos de Crianza"}
+ ];
+ const stops=[...document.querySelectorAll(".timeline-stop")],visual=document.getElementById("stageVisual");
+ let activeStage=0;
+ function showStage(index){
+  activeStage=Math.max(0,Math.min(stageData.length-1,index));const s=stageData[activeStage];
+  stops.forEach((b,i)=>{b.classList.toggle("active",i===activeStage);b.setAttribute("aria-selected",String(i===activeStage));b.tabIndex=i===activeStage?0:-1});
+  visual.classList.add("changing");
+  const update=()=>{visual.className="stage-visual "+s.visual;document.getElementById("stageSymbol").textContent=s.symbol;document.getElementById("stageVisualCaption").textContent=s.caption;document.getElementById("stageVisualNumber").textContent=String(activeStage+1).padStart(2,"0");document.getElementById("stageCounter").textContent=String(activeStage+1).padStart(2,"0");document.getElementById("stageMeta").textContent="ETAPA "+String(activeStage+1).padStart(2,"0")+" · "+s.name+" · "+s.period;document.getElementById("stageTitle").textContent=s.title;document.getElementById("stageDescription").textContent=s.description;document.getElementById("stageHighlights").innerHTML=s.tags.map(t=>"<span>"+t+"</span>").join("");const link=document.getElementById("stageLink");link.href=s.link;link.innerHTML=s.linkText+" <span>↗</span>";document.getElementById("timelineProgress").style.width=((activeStage+1)/stageData.length*100)+"%";document.getElementById("stagePrev").disabled=activeStage===0;document.getElementById("stageNext").disabled=activeStage===stageData.length-1;};
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches){update();visual.classList.remove("changing")}else{setTimeout(()=>{update();visual.classList.remove("changing")},160)}
+ }
+ stops.forEach((b,i)=>{b.addEventListener("click",()=>showStage(i));b.addEventListener("keydown",e=>{if(e.key==="ArrowRight"){e.preventDefault();const n=Math.min(3,i+1);stops[n].focus();showStage(n)}if(e.key==="ArrowLeft"){e.preventDefault();const n=Math.max(0,i-1);stops[n].focus();showStage(n)}})});
+ document.getElementById("stagePrev").addEventListener("click",()=>showStage(activeStage-1));
+ document.getElementById("stageNext").addEventListener("click",()=>showStage(activeStage+1));
+
 // Microinteracciones de profundidad (solo puntero preciso y sin reducir movimiento).
 const reduceMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const finePointer=window.matchMedia("(hover: hover) and (pointer: fine)").matches;
