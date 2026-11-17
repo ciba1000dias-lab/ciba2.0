@@ -279,7 +279,7 @@
               "titulo": "Duelo gestacional y pérdida perinatal",
               "ruta": "/b/B3/B3-03/B3-03-01/",
               "estado": "publicado",
-              "enlace_activo": false,
+              "enlace_activo": true,
               "mostrar_en_columna": true,
               "mostrar_en_area": true
             },
@@ -287,8 +287,10 @@
               "id": "B3-03-02",
               "titulo": "Experiencias traumáticas del parto y salud mental",
               "ruta": "/b/B3/B3-03/B3-03-02/",
-              "estado": "revision",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true,
+              "mostrar_en_columna": true,
+              "mostrar_en_area": true
             }
           ]
         },
@@ -301,8 +303,11 @@
               "id": "B3-04-01",
               "titulo": "Cuándo y cómo buscar ayuda por problemas de salud mental perinatal",
               "ruta": "/b/B3/B3-04/B3-04-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "revision",
+              "enlace_activo": false,
+              "mostrar_en_columna": false,
+              "mostrar_en_area": false,
+              "preview_publica": true
             }
           ]
         }

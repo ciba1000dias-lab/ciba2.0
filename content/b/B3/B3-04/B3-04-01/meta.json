@@ -1,0 +1,43 @@
+{
+  "id": "B3-04-01",
+  "titulo": "Cuándo y cómo buscar ayuda por problemas de salud mental perinatal",
+  "descripcion": "Orientación práctica para reconocer cuándo pedir ayuda, identificar puertas de entrada a la atención, preparar una consulta, comprender la evaluación profesional y reconocer situaciones urgentes durante el embarazo y el primer año después del parto.",
+  "columna": "B",
+  "area": "B3",
+  "subseccion": "Apoyo y atención profesional",
+  "palabras_clave": [
+    "salud mental perinatal",
+    "buscar ayuda",
+    "atención primaria",
+    "consulta de salud mental",
+    "embarazo",
+    "posparto",
+    "psicoterapia",
+    "tratamiento",
+    "urgencia psiquiátrica",
+    "psicosis posparto",
+    "red de apoyo"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-17",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "enlaces_externos": [
+    {
+      "titulo": "OMS: guía para integrar la salud mental perinatal en los servicios maternoinfantiles",
+      "url": "https://www.who.int/publications/i/item/9789240057142",
+      "tipo": "guía"
+    },
+    {
+      "titulo": "NICE: salud mental antenatal y posnatal, manejo clínico y derivación",
+      "url": "https://www.nice.org.uk/guidance/cg192/chapter/Recommendations",
+      "tipo": "guía clínica"
+    },
+    {
+      "titulo": "ACOG: detección y diagnóstico de problemas de salud mental durante el embarazo y posparto",
+      "url": "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/06/screening-and-diagnosis-of-mental-health-conditions-during-pregnancy-and-postpartum",
+      "tipo": "guía clínica"
+    }
+  ]
+}
