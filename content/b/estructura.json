@@ -278,8 +278,10 @@
               "id": "B3-03-01",
               "titulo": "Duelo gestacional y pérdida perinatal",
               "ruta": "/b/B3/B3-03/B3-03-01/",
-              "estado": "revision",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": false,
+              "mostrar_en_columna": true,
+              "mostrar_en_area": true
             },
             {
               "id": "B3-03-02",
