@@ -1,0 +1,40 @@
+{
+  "id": "B3-03-02",
+  "titulo": "Experiencias traumáticas del parto y salud mental",
+  "descripcion": "Reconocimiento del impacto emocional de experiencias traumáticas durante el parto, señales relacionadas con estrés postraumático, atención profesional y acompañamiento respetuoso.",
+  "columna": "B",
+  "area": "B3",
+  "subseccion": "Situaciones perinatales complejas",
+  "palabras_clave": [
+    "trauma del parto",
+    "experiencia traumática del nacimiento",
+    "estrés postraumático",
+    "salud mental perinatal",
+    "parto respetuoso",
+    "apoyo psicológico",
+    "posparto",
+    "acompañamiento"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-17",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "enlaces_externos": [
+    {
+      "titulo": "OMS: recomendaciones de atención posnatal",
+      "url": "https://www.who.int/publications/i/item/9789240045989",
+      "tipo": "guía"
+    },
+    {
+      "titulo": "NICE: trastorno de estrés postraumático, evaluación y tratamiento",
+      "url": "https://www.nice.org.uk/guidance/ng116/chapter/recommendations",
+      "tipo": "guía clínica"
+    },
+    {
+      "titulo": "ACOG: detección y diagnóstico de condiciones de salud mental perinatal",
+      "url": "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2023/06/screening-and-diagnosis-of-mental-health-conditions-during-pregnancy-and-postpartum",
+      "tipo": "guía clínica"
+    }
+  ]
+}
