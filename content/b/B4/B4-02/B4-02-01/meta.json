@@ -1,0 +1,42 @@
+{
+  "id": "B4-02-01",
+  "titulo": "Cómo valorar el estado nutricional durante los primeros dos años",
+  "descripcion": "Guía para comprender las mediciones antropométricas, el uso de gráficas y el seguimiento del crecimiento y el estado nutricional durante los primeros dos años.",
+  "columna": "B",
+  "area": "B4",
+  "subseccion": "Evaluación nutricional infantil",
+  "palabras_clave": [
+    "evaluación nutricional infantil",
+    "crecimiento infantil",
+    "peso para la edad",
+    "longitud para la edad",
+    "peso para la longitud",
+    "perímetro cefálico",
+    "primeros dos años",
+    "edad corregida",
+    "curvas de crecimiento",
+    "puericultura"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-18",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "enlaces_externos": [
+    {
+      "titulo": "OMS: Child growth standards",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/child-growth-standards",
+      "tipo": "estándares internacionales"
+    },
+    {
+      "titulo": "OMS: WHO Child Growth Standards",
+      "url": "https://www.who.int/tools/child-growth-standards/",
+      "tipo": "gráficas y materiales"
+    },
+    {
+      "titulo": "MINSAP Cuba: Pediatría. Diagnóstico y tratamiento",
+      "url": "https://platform.who.int/docs/default-source/mca-documents/policy-documents/guideline/cub-ch-20-01-guideline-2016-esp-pediatria-completo.pdf",
+      "tipo": "referencia nacional"
+    }
+  ]
+}
