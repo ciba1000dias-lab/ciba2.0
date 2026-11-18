@@ -1,0 +1,47 @@
+{
+  "id": "B4-01-01",
+  "titulo": "Necesidades nutricionales y evaluación durante el embarazo",
+  "descripcion": "Orientación para comprender la evaluación del estado nutricional durante la gestación, los indicadores utilizados, el seguimiento del peso y las situaciones que requieren valoración profesional.",
+  "columna": "B",
+  "area": "B4",
+  "subseccion": "Estado nutricional materno",
+  "palabras_clave": [
+    "nutrición materna",
+    "embarazo",
+    "evaluación nutricional",
+    "estado nutricional",
+    "IMC gestacional",
+    "tablas antropométricas cubanas",
+    "ganancia de peso",
+    "hierro",
+    "ácido fólico",
+    "suplementación"
+  ],
+  "estado": "revision",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "fecha_revision": "2026-11-17",
+  "enlaces_externos": [
+    {
+      "titulo": "MINSAP Cuba / UNICEF: Tablas antropométricas de la embarazada",
+      "url": "https://www.unicef.org/cuba/informes/tablas-antropometricas-de-la-embarazada",
+      "tipo": "referencia nacional"
+    },
+    {
+      "titulo": "UNICEF Cuba: Manual para la atención alimentaria y nutricional a embarazadas en hogares maternos",
+      "url": "https://www.unicef.org/cuba/informes/manual-para-la-atencion-alimentaria-y-nutricional-embarazadas-en-hogares-maternos",
+      "tipo": "manual"
+    },
+    {
+      "titulo": "OMS: Nutrition counselling during pregnancy",
+      "url": "https://www.who.int/tools/elena/interventions/nutrition-counselling-pregnancy",
+      "tipo": "recomendación"
+    },
+    {
+      "titulo": "OMS: Daily iron and folic acid supplementation during pregnancy",
+      "url": "https://www.who.int/tools/elena/interventions/daily-iron-pregnancy",
+      "tipo": "recomendación"
+    }
+  ]
+}
