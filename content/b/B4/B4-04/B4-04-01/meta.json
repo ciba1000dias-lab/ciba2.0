@@ -1,0 +1,40 @@
+{
+  "id": "B4-04-01",
+  "titulo": "Desnutrición infantil: señales, causas y atención",
+  "descripcion": "Guía para familias sobre las formas de desnutrición infantil, señales de alerta, causas, evaluación del crecimiento y atención según la gravedad.",
+  "columna": "B",
+  "area": "B4",
+  "subseccion": "Alteraciones de la nutrición",
+  "palabras_clave": [
+    "desnutricion-infantil",
+    "desnutricion-aguda",
+    "emaciacion",
+    "retraso-del-crecimiento",
+    "bajo-peso",
+    "edema-nutricional",
+    "crecimiento-infantil",
+    "primeros-mil-dias"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-18",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "enlaces_externos": [
+    {
+      "titulo": "OMS: definiciones de malnutrición infantil",
+      "url": "https://www.who.int/data/nutrition/nlis/info/malnutrition-in-children",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "OMS: guía de prevención y manejo de emaciación y edema nutricional",
+      "url": "https://www.who.int/publications/i/item/9789240082830",
+      "tipo": "guía clínica 2023"
+    },
+    {
+      "titulo": "OMS/UNICEF: guía de implementación 2026",
+      "url": "https://www.who.int/publications/i/item/9789240122840",
+      "tipo": "guía de implementación"
+    }
+  ]
+}
