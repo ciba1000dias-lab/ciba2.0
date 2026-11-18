@@ -1,0 +1,54 @@
+{
+  "id": "B4-02-02",
+  "titulo": "Interpretación clínica de peso, longitud y perímetro cefálico",
+  "descripcion": "Guía para interpretar en conjunto el peso, la longitud y el perímetro cefálico durante los primeros dos años, reconocer patrones de crecimiento y detectar situaciones que requieren evaluación clínica.",
+  "columna": "B",
+  "area": "B4",
+  "subseccion": "Evaluación nutricional infantil",
+  "palabras_clave": [
+    "interpretación clínica del crecimiento",
+    "peso para la edad",
+    "peso para la longitud",
+    "longitud para la edad",
+    "perímetro cefálico",
+    "microcefalia",
+    "macrocefalia",
+    "velocidad de crecimiento",
+    "percentiles",
+    "puntuación Z",
+    "primeros dos años",
+    "crecimiento infantil"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-18",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "enlaces_externos": [
+    {
+      "titulo": "OMS: WHO Child Growth Standards",
+      "url": "https://www.who.int/tools/child-growth-standards/standards",
+      "tipo": "estándares de crecimiento"
+    },
+    {
+      "titulo": "OMS: Training Course on Child Growth Assessment",
+      "url": "https://www.who.int/publications/i/item/9789241595070",
+      "tipo": "manual de evaluación"
+    },
+    {
+      "titulo": "AAP: Growth Faltering in Newborns and Infants",
+      "url": "https://www.aap.org/en/patient-care/newborn-infant-and-early-childhood-nutrition/growth-faltering-in-newborns-and-infants/",
+      "tipo": "guía clínica"
+    },
+    {
+      "titulo": "AAP: Clinical Practice Guideline for Diagnosis and Management of Faltering Weight",
+      "url": "https://publications.aap.org/pediatrics/article/157/4/e2025075764/206901/Clinical-Practice-Guideline-for-Diagnosis-and",
+      "tipo": "guía clínica 2026"
+    },
+    {
+      "titulo": "OPS: WHO recommendations on child health: primary health care",
+      "url": "https://www.paho.org/sites/default/files/who_2022_phc_children_adolescents_1.pdf",
+      "tipo": "recomendaciones clínicas"
+    }
+  ]
+}
