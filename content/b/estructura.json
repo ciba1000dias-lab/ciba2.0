@@ -27,6 +27,14 @@
       "title": "Calendario de vacunación infantil de Cuba",
       "section": "B5",
       "path": "/b/recursos/calendario-vacunacion/"
+    },
+    {
+      "id": "R-B4-02-01",
+      "title": "Crecimiento y Nutrición: herramienta de seguimiento infantil",
+      "section": "B4",
+      "subsection": "B4-02",
+      "path": "/c/C1/crecimiento-nutricion/",
+      "tipo": "herramienta"
     }
   ],
   "secciones": [
