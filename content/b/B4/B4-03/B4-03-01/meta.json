@@ -1,0 +1,47 @@
+{
+  "id": "B4-03-01",
+  "titulo": "Anemia por deficiencia de hierro en la primera infancia",
+  "descripcion": "Guía para comprender los factores de riesgo, las señales, la evaluación clínica y la prevención de la deficiencia de hierro y la anemia durante los primeros años de vida.",
+  "columna": "B",
+  "area": "B4",
+  "subseccion": "Deficiencias nutricionales",
+  "palabras_clave": [
+    "anemia ferropénica",
+    "deficiencia de hierro",
+    "ferritina",
+    "hemoglobina",
+    "microcitosis",
+    "prematuridad",
+    "bajo peso al nacer",
+    "alimentación complementaria",
+    "hierro en lactantes",
+    "primera infancia"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-18",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "enlaces_externos": [
+    {
+      "titulo": "OMS: puntos de corte de hemoglobina para definir anemia",
+      "url": "https://www.who.int/publications/i/item/9789240088542",
+      "tipo": "guía"
+    },
+    {
+      "titulo": "OMS: uso de ferritina para evaluar el estado de hierro",
+      "url": "https://www.who.int/publications/i/item/9789240000124",
+      "tipo": "guía"
+    },
+    {
+      "titulo": "AAP: prevención, cribado, diagnóstico y tratamiento de la deficiencia de hierro y anemia ferropénica",
+      "url": "https://doi.org/10.1542/peds.2026-077414",
+      "tipo": "informe clínico 2026"
+    },
+    {
+      "titulo": "OMS: alimentación complementaria de 6 a 23 meses",
+      "url": "https://www.who.int/publications/i/item/9789240081864",
+      "tipo": "guía"
+    }
+  ]
+}
