@@ -33,7 +33,7 @@
       "title": "Crecimiento y Nutrición: herramienta de seguimiento infantil",
       "section": "B4",
       "subsection": "B4-02",
-      "path": "/c/C1/crecimiento-nutricion/",
+      "path": "/b/B4/B4-02/crecimiento-nutricion/",
       "tipo": "herramienta"
     }
   ],
@@ -349,8 +349,9 @@
               "id": "B4-02-01",
               "titulo": "Cómo valorar el estado nutricional durante los primeros dos años",
               "ruta": "/b/B4/B4-02/B4-02-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "revision",
+              "enlace_activo": true,
+              "vista_previa_publica": true
             },
             {
               "id": "B4-02-02",
