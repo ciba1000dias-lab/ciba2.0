@@ -372,8 +372,9 @@
               "id": "B4-03-01",
               "titulo": "Anemia por deficiencia de hierro en la primera infancia",
               "ruta": "/b/B4/B4-03/B4-03-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "revision",
+              "enlace_activo": true,
+              "vista_previa_publica": true
             },
             {
               "id": "B4-03-02",
