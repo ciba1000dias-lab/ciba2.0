@@ -380,8 +380,9 @@
               "id": "B4-03-02",
               "titulo": "Deficiencia de vitamina D y raquitismo",
               "ruta": "/b/B4/B4-03/B4-03-02/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "revision",
+              "enlace_activo": true,
+              "vista_previa_publica": true
             },
             {
               "id": "B4-03-03",
