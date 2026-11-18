@@ -95,40 +95,44 @@ def _copiar_indices_columnas(src: Path, tmp: Path) -> list[ValidationError]:
 
 
 def _copiar_paginas_estaticas(src: Path, tmp: Path) -> list[ValidationError]:
-    """Publica páginas auxiliares de CIBA sin convertirlas en artículos."""
+    """Publica páginas auxiliares de CIBA en la columna editorial que les corresponde."""
     errores: list[ValidationError] = []
-    raiz = src / "c" / "C1" / "_paginas"
+    raices = (
+        (src / "c" / "C1" / "_paginas", Path("c") / "C1"),
+        (src / "b" / "B4" / "B4-02" / "_paginas", Path("b") / "B4" / "B4-02"),
+    )
 
-    if not raiz.exists() and not raiz.is_symlink():
-        return errores
-
-    ok, motivo = es_ruta_segura(src, raiz)
-    if not ok or not raiz.is_dir():
-        errores.append(ValidationError("content/c/C1/_paginas", "ruta", motivo or "no es carpeta"))
-        return errores
-
-    archivos, errs_walk = iterar_arbol_seguro(raiz)
-    errores.extend(errs_walk)
-
-    for archivo in archivos:
-        relativo = archivo.relative_to(raiz)
-        if archivo.name != "index.html":
-            errores.append(ValidationError(str(relativo), "página auxiliar", "solo se permite index.html"))
+    for raiz, prefijo_destino in raices:
+        if not raiz.exists() and not raiz.is_symlink():
             continue
 
-        if relativo.parts and relativo.parts[0] == "plataforma":
-            destino = tmp / "plataforma" / relativo.parent.relative_to("plataforma")
-        else:
-            destino = tmp / "c" / "C1" / relativo.parent
-        destino.mkdir(parents=True, exist_ok=True)
+        rel_raiz = raiz.relative_to(src).as_posix()
+        ok, motivo = es_ruta_segura(src, raiz)
+        if not ok or not raiz.is_dir():
+            errores.append(ValidationError(rel_raiz, "ruta", motivo or "no es carpeta"))
+            continue
 
-        try:
-            shutil.copy2(archivo, destino / "index.html")
-        except OSError as exc:
-            errores.append(ValidationError(str(relativo), "página auxiliar", f"copia falló: {exc}"))
+        archivos, errs_walk = iterar_arbol_seguro(raiz)
+        errores.extend(errs_walk)
+
+        for archivo in archivos:
+            relativo = archivo.relative_to(raiz)
+            if archivo.name != "index.html":
+                errores.append(ValidationError(str(relativo), "página auxiliar", "solo se permite index.html"))
+                continue
+
+            if prefijo_destino == Path("c") / "C1" and relativo.parts and relativo.parts[0] == "plataforma":
+                destino = tmp / "plataforma" / relativo.parent.relative_to("plataforma")
+            else:
+                destino = tmp / prefijo_destino / relativo.parent
+            destino.mkdir(parents=True, exist_ok=True)
+
+            try:
+                shutil.copy2(archivo, destino / "index.html")
+            except OSError as exc:
+                errores.append(ValidationError(str(relativo), "página auxiliar", f"copia falló: {exc}"))
 
     return errores
-
 
 def _generar_indice_busqueda_alimentos(raiz_publica: Path) -> list[ValidationError]:
     """Genera el índice ligero del buscador desde las fichas completas."""
