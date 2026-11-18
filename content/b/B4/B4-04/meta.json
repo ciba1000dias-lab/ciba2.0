@@ -1,0 +1,20 @@
+{
+  "id": "B4-04",
+  "titulo": "Alteraciones de la nutrición",
+  "descripcion": "Reconocimiento de las alteraciones del estado nutricional durante los primeros mil días: desnutrición, exceso de peso, señales de alerta, evaluación y atención con enfoque familiar.",
+  "columna": "B",
+  "area": "B4",
+  "palabras_clave": [
+    "alteraciones-de-la-nutricion",
+    "desnutricion-infantil",
+    "emaciacion",
+    "retraso-del-crecimiento",
+    "bajo-peso",
+    "edema-nutricional",
+    "sobrepeso-infantil"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-18",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false
+}
