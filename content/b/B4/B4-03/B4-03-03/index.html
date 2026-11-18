@@ -144,15 +144,15 @@ function checkQuiz(){
  let score=0,missing=0,details=[];
  for(const [q,a] of Object.entries(answers)){
   const chosen=document.querySelector('input[name="'+q+'"]:checked');
-  if(!chosen)missing++;
-  else if(chosen.value===a)score++;
-  details.push((chosen&&chosen.value===a?'✓ ':'• ')+explanations[q]);
+  if(!chosen){missing++;details.push('🤐 Sin responder. '+explanations[q]);}
+  else if(chosen.value===a){score++;details.push('🎉 ¡Correcto! '+explanations[q]);}
+  else{details.push('😢 No es esa. '+explanations[q]);}
  }
  const result=document.getElementById('quizResult'),feedback=document.getElementById('quizFeedback');
  result.className='result '+(score===6&&missing===0?'good':'bad');
  result.textContent='Resultado: '+score+' de 6 respuestas correctas.'+(missing?' Te faltan '+missing+' por responder.':'');
  if(score===6&&missing===0){feedback.textContent='🎉 ¡Excelente! Has identificado las ideas clave. La mejor decisión sigue siendo consultar antes de suplementar.';celebrate();}
- else {feedback.textContent='😢 Vamos paso a paso. Revisa estas explicaciones y vuelve a intentarlo: '+details.join(' ');}
+ else {feedback.textContent=details.join(' ');}
  result.classList.remove('pulse');void result.offsetWidth;result.classList.add('pulse');
 }
 </script>
