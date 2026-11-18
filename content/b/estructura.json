@@ -303,11 +303,10 @@
               "id": "B3-04-01",
               "titulo": "Cuándo y cómo buscar ayuda por problemas de salud mental perinatal",
               "ruta": "/b/B3/B3-04/B3-04-01/",
-              "estado": "revision",
-              "enlace_activo": false,
-              "mostrar_en_columna": false,
-              "mostrar_en_area": false,
-              "preview_publica": true
+              "estado": "publicado",
+              "enlace_activo": true,
+              "mostrar_en_columna": true,
+              "mostrar_en_area": true
             }
           ]
         }
