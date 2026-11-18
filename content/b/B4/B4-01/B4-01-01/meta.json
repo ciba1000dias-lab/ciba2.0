@@ -10,7 +10,7 @@
     "embarazo",
     "evaluación nutricional",
     "estado nutricional",
-    "IMC gestacional",
+    "imc gestacional",
     "tablas antropométricas cubanas",
     "ganancia de peso",
     "hierro",
@@ -18,10 +18,10 @@
     "suplementación"
   ],
   "estado": "revision",
+  "fecha_publicacion": "2026-11-18",
   "mostrar_en_columna": false,
   "mostrar_en_area": false,
   "preview_publica": true,
-  "fecha_revision": "2026-11-17",
   "enlaces_externos": [
     {
       "titulo": "MINSAP Cuba / UNICEF: Tablas antropométricas de la embarazada",
