@@ -431,8 +431,10 @@
               "id": "B4-05-01",
               "titulo": "Inocuidad de los alimentos infantiles en el hogar",
               "ruta": "/b/B4/B4-05/B4-05-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "revision",
+              "enlace_activo": true,
+              "vista_previa_publica": true,
+              "mostrar_en_area": true
             },
             {
               "id": "B4-05-02",
