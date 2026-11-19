@@ -464,7 +464,7 @@
               "id": "B5-01-01",
               "titulo": "Por qué se vacunan los niños y cómo actúan las vacunas",
               "ruta": "/b/B5/B5-01/B5-01-01/",
-              "estado": "revision",
+              "estado": "publicado",
               "enlace_activo": true,
               "vista_previa_publica": true
             },
@@ -472,8 +472,9 @@
               "id": "B5-01-02",
               "titulo": "Esquema cubano de vacunación: edades y protección",
               "ruta": "/b/B5/B5-01/B5-01-02/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "revision",
+              "enlace_activo": true,
+              "vista_previa_publica": true
             },
             {
               "id": "B5-01-03",
