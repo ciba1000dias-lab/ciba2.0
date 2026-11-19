@@ -461,6 +461,79 @@
         });
       }
 
+      function agregarPaginasAlimentacion(lista, paginas) {
+        const subsecciones = [
+          { titulo: 'Gestación', clave: ['gestacion', 'gestación'] },
+          { titulo: 'Primer año de Vida', clave: ['primer año de vida', 'primer ano de vida'] },
+          { titulo: 'Segundo Año de Vida', clave: ['segundo año de vida', 'segundo ano de vida'] }
+        ];
+
+        subsecciones.forEach((subseccion) => {
+          const grupo = crearDesplegable(subseccion.titulo, 'ciba-global-subarea');
+          const articulos = paginas.filter((pagina) => {
+            const nombre = normalizar(pagina.subseccion || '');
+            return subseccion.clave.some((clave) => normalizar(clave) === nombre);
+          }).sort(ordenarPaginas);
+
+          articulos.forEach((pagina) => {
+            agregarEnlace(grupo.lista, pagina.ruta_publica, pagina.titulo);
+          });
+
+          if (!articulos.length) {
+            const pendiente = elemento('span', 'ciba-global-enlace ciba-global-subenlace', 'Contenidos en preparación');
+            pendiente.setAttribute('aria-disabled', 'true');
+            grupo.lista.appendChild(pendiente);
+          }
+
+          lista.appendChild(grupo.grupo);
+        });
+      }
+
+      function agregarPaginasNutricion(lista) {
+        const subsecciones = [
+          {
+            titulo: 'Estado nutricional materno',
+            articulos: [
+              ['B4-01-01', 'Necesidades nutricionales y evaluación durante el embarazo', 'b/B4/B4-01/B4-01-01/', 'Artículo publicado']
+            ]
+          },
+          {
+            titulo: 'Evaluación nutricional infantil',
+            articulos: [
+              ['B4-02-01', 'Cómo valorar el estado nutricional durante los primeros dos años', 'b/B4/B4-02/B4-02-01/', 'Vista previa pública · En revisión editorial'],
+              ['B4-02-02', 'Interpretación clínica de peso, longitud y perímetro cefálico', 'b/B4/B4-02/B4-02-02/', 'Vista previa pública · En revisión editorial']
+            ]
+          },
+          {
+            titulo: 'Deficiencias nutricionales',
+            articulos: [
+              ['B4-03-01', 'Anemia por deficiencia de hierro en la primera infancia', 'b/B4/B4-03/B4-03-01/', 'Artículo validado y publicado'],
+              ['B4-03-02', 'Deficiencia de vitamina D y raquitismo', 'b/B4/B4-03/B4-03-02/', 'Vista previa pública · En revisión editorial'],
+              ['B4-03-03', 'Otras deficiencias de micronutrientes', 'b/B4/B4-03/B4-03-03/', 'Vista previa pública · En revisión editorial']
+            ]
+          },
+          {
+            titulo: 'Alteraciones de la nutrición',
+            articulos: [
+              ['B4-04-01', 'Desnutrición infantil: señales, causas y atención', 'b/B4/B4-04/B4-04-01/', 'Artículo validado y publicado'],
+              ['B4-04-02', 'Sobrepeso temprano: evaluación y prevención sin estigmas', 'b/B4/B4-04/B4-04-02/', 'Vista previa pública · En revisión editorial']
+            ]
+          }
+        ];
+
+        subsecciones.forEach((subseccion) => {
+          const grupo = crearDesplegable(subseccion.titulo, 'ciba-global-subarea');
+          subseccion.articulos.forEach((articulo) => {
+            agregarEnlace(
+              grupo.lista,
+              articulo[2],
+              articulo[1] + ' · ' + articulo[3]
+            );
+          });
+          lista.appendChild(grupo.grupo);
+        });
+      }
+
       // RECURSOS DESTACADOS: accesos transversales disponibles desde cualquier página.
       const tituloRecursos = elemento('h2','ciba-global-menu-titulo ciba-global-menu-separador','RECURSOS DESTACADOS');
       const grupoRecursos = crearDesplegable('Herramientas y espacios útiles','ciba-global-recursos');
@@ -514,6 +587,10 @@
 
           if (columna.id === 'I') {
             agregarApartadosDeSeccionInternet(grupoArea.lista, areaMenu);
+          } else if (areaMenu.id === 'B4') {
+            agregarPaginasNutricion(grupoArea.lista);
+          } else if (areaMenu.id === 'C1-ALIMENTACION') {
+            agregarPaginasAlimentacion(grupoArea.lista, paginas);
           } else {
             agregarPaginasDeArea(grupoArea.lista, paginas);
           }
