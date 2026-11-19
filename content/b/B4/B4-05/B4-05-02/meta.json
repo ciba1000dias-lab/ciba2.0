@@ -1,0 +1,49 @@
+{
+  "id": "B4-05-02",
+  "titulo": "Agua segura y riesgos de contaminación alimentaria",
+  "descripcion": "Orientación para reconocer riesgos microbiológicos y químicos, tratar el agua cuando sea necesario, almacenarla sin recontaminación y utilizarla con seguridad en la alimentación infantil.",
+  "columna": "B",
+  "area": "B4",
+  "subseccion": "Seguridad alimentaria y nutricional",
+  "palabras_clave": [
+    "agua-segura",
+    "tratamiento-domestico-del-agua",
+    "almacenamiento-seguro",
+    "contaminacion-microbiologica",
+    "contaminacion-quimica",
+    "alimentacion-infantil",
+    "primeros-mil-dias"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-19",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": true,
+  "preview_publica": true,
+  "enlaces_externos": [
+    {
+      "titulo": "OMS: Salud infantil y medio ambiente",
+      "url": "https://iris.who.int/bitstream/handle/10665/372857/WHO-HEP-ECH-CHE-23.13-eng.pdf?sequence=1",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "CDC: Tratamiento de agua casero",
+      "url": "https://www.cdc.gov/global-water-sanitation-hygiene/es/about/about-household-water-treatment.html",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "CDC: Almacenamiento seguro del agua",
+      "url": "https://www.cdc.gov/global-water-sanitation-hygiene/es/about/about-safe-water-storage.html",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "CDC: Agua segura en emergencias",
+      "url": "https://www.cdc.gov/water-emergency/es/about/how-to-make-water-safe.html",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "OPS: Tratamiento y almacenamiento seguro del agua de uso doméstico",
+      "url": "https://iris.paho.org/bitstream/handle/10665.2/34458/9789275319789-spa.pdf?isAllowed=y&sequence=1",
+      "tipo": "referencia"
+    }
+  ]
+}
