@@ -405,16 +405,20 @@
               "id": "B4-04-01",
               "titulo": "Desnutrición infantil: señales, causas y atención",
               "ruta": "/b/B4/B4-04/B4-04-01/",
-              "estado": "revision",
+              "estado": "publicado",
               "enlace_activo": true,
-              "vista_previa_publica": true
+              "vista_previa_publica": true,
+              "mostrar_en_columna": true,
+              "mostrar_en_area": true
             },
             {
               "id": "B4-04-02",
               "titulo": "Sobrepeso temprano: evaluación y prevención sin estigmas",
               "ruta": "/b/B4/B4-04/B4-04-02/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "revision",
+              "enlace_activo": true,
+              "vista_previa_publica": true,
+              "mostrar_en_area": true
             }
           ]
         },
