@@ -1,0 +1,44 @@
+{
+  "id": "B4-04-02",
+  "titulo": "Sobrepeso temprano: evaluación y prevención sin estigmas",
+  "descripcion": "Guía para familias sobre la interpretación del crecimiento durante los primeros dos años, factores que influyen en el peso y prevención con alimentación responsiva, juego, descanso y acompañamiento sin estigmas.",
+  "columna": "B",
+  "area": "B4",
+  "subseccion": "Alteraciones de la nutrición",
+  "palabras_clave": [
+    "sobrepeso-temprano",
+    "peso-para-longitud",
+    "crecimiento-infantil",
+    "alimentacion-responsiva",
+    "prevencion-obesidad-infantil",
+    "primeros-mil-dias",
+    "habitos-saludables"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-18",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": true,
+  "preview_publica": true,
+  "enlaces_externos": [
+    {
+      "titulo": "OMS: patrones de crecimiento infantil",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/child-growth-standards",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "OMS: evaluación y manejo para prevenir sobrepeso y obesidad",
+      "url": "https://www.who.int/publications/i/item/9789241550123",
+      "tipo": "guía clínica 2017"
+    },
+    {
+      "titulo": "OMS: actividad física, sedentarismo y sueño en menores de cinco años",
+      "url": "https://www.who.int/publications/i/item/9789241550536",
+      "tipo": "guía 2019"
+    },
+    {
+      "titulo": "OMS: alimentación del lactante y del niño pequeño",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding",
+      "tipo": "referencia"
+    }
+  ]
+}
