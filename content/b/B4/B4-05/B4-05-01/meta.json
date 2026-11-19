@@ -1,0 +1,49 @@
+{
+  "id": "B4-05-01",
+  "titulo": "Inocuidad de los alimentos infantiles en el hogar",
+  "descripcion": "Medidas prácticas para reducir la contaminación de los alimentos de bebés y niños pequeños mediante higiene, separación, cocción, conservación y manipulación segura en el hogar.",
+  "columna": "B",
+  "area": "B4",
+  "subseccion": "Seguridad alimentaria y nutricional",
+  "palabras_clave": [
+    "inocuidad-alimentaria",
+    "higiene-de-alimentos",
+    "alimentacion-complementaria",
+    "conservacion-de-alimentos",
+    "formula-infantil",
+    "contaminacion-cruzada",
+    "primeros-mil-dias"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-18",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": true,
+  "preview_publica": true,
+  "enlaces_externos": [
+    {
+      "titulo": "OMS: Cinco claves para la inocuidad de los alimentos",
+      "url": "https://www.who.int/activities/promoting-safe-food-handling/five-key-to-safer-food",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "OMS: Alimentación del lactante y del niño pequeño",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "UNICEF: Improving Young Children’s Diets During the Complementary Feeding Period",
+      "url": "https://www.unicef.org/media/93981/file/Complementary-Feeding-Guidance-2020.pdf",
+      "tipo": "guía 2020"
+    },
+    {
+      "titulo": "OMS/FAO: Preparación y manipulación segura de fórmula infantil en polvo",
+      "url": "https://www.who.int/publications/i/item/9789241595414",
+      "tipo": "guía"
+    },
+    {
+      "titulo": "CDC: Preparación y conservación de fórmula infantil",
+      "url": "https://www.cdc.gov/infant-toddler-nutrition/formula-feeding/preparation-and-storage.html",
+      "tipo": "referencia 2026"
+    }
+  ]
+}
