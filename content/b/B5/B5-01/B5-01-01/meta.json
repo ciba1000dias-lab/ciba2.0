@@ -1,7 +1,7 @@
 {
   "id": "B5-01-01",
   "titulo": "Por qué se vacunan los niños y cómo actúan las vacunas",
-  "descripcion": "Explicación para familias sobre la importancia de la vacunación infantil, el reconocimiento de antígenos, los anticuerpos y la memoria inmunológica.",
+  "descripcion": "Explicación para familias sobre cómo actúan las vacunas, el Programa Nacional de Inmunización de Cuba, la producción nacional y la protección infantil.",
   "columna": "B",
   "area": "B5",
   "subseccion": "Vacunación infantil",
@@ -12,7 +12,11 @@
     "anticuerpos",
     "memoria-inmunologica",
     "prevencion-de-enfermedades",
-    "primeros-mil-dias"
+    "primeros-mil-dias",
+    "programa-nacional-inmunizacion-cuba",
+    "vacunas-cubanas",
+    "vacunacion-en-cuba",
+    "podcast-vacunas"
   ],
   "estado": "revision",
   "fecha_publicacion": "2026-11-19",
@@ -39,6 +43,21 @@
       "titulo": "OPS: Inmunización",
       "url": "https://www.paho.org/es/temas/inmunizacion",
       "tipo": "referencia"
+    },
+    {
+      "titulo": "UNICEF Cuba: Vacunas para crecer saludables",
+      "url": "https://www.unicef.org/cuba/vacunas-para-crecer-saludables-cuba",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "OPS/OMS: Avances del Programa Nacional de Inmunización de Cuba, junio de 2026",
+      "url": "https://www.paho.org/es/noticias/24-6-2026-cuba-evalua-avances-vacunas-retos-programa-nacional-inmunizacion",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "UNICEF Cuba: historias detrás de la inmunización en Cuba",
+      "url": "https://www.unicef.org/cuba/historias/vacuna-prs-triple-viral-en-cuba",
+      "tipo": "imagen y referencia"
     }
   ]
 }
