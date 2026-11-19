@@ -74,6 +74,11 @@ jobs:
           print(f"Audio maestro verificado: {p.stat().st_size:,} bytes")
           PY
 
+      - name: Generar cartilla de vacunación en PDF A4 desde el SVG aprobado
+        run: |
+          python -m pip install CairoSVG
+          python scripts/generate_cartilla_pdf.py --src assets/images/cartilla-vacunacion-interior.svg --out dist/assets/images/cartilla-vacunacion-interior.pdf
+
       - name: Preparar imágenes locales de la biblioteca
         run: python scripts/optimize_alimento_images.py --src dist
 
