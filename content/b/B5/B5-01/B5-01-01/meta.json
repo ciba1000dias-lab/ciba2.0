@@ -1,0 +1,44 @@
+{
+  "id": "B5-01-01",
+  "titulo": "Por qué se vacunan los niños y cómo actúan las vacunas",
+  "descripcion": "Explicación para familias sobre la importancia de la vacunación infantil, el reconocimiento de antígenos, los anticuerpos y la memoria inmunológica.",
+  "columna": "B",
+  "area": "B5",
+  "subseccion": "Vacunación infantil",
+  "palabras_clave": [
+    "vacunacion-infantil",
+    "vacunas",
+    "sistema-inmunitario",
+    "anticuerpos",
+    "memoria-inmunologica",
+    "prevencion-de-enfermedades",
+    "primeros-mil-dias"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-19",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": true,
+  "preview_publica": true,
+  "enlaces_externos": [
+    {
+      "titulo": "OMS: ¿Qué es la vacunación?",
+      "url": "https://www.who.int/es/news-room/questions-and-answers/item/vaccines-and-immunization-what-is-vaccination",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "OMS: ¿Cómo actúan las vacunas?",
+      "url": "https://www.who.int/es/news-room/feature-stories/detail/how-do-vaccines-work",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "OPS: Preguntas frecuentes sobre vacunación",
+      "url": "https://www.paho.org/es/temas/inmunizacion/preguntas-frecuentes-sobre-vacunacion",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "OPS: Inmunización",
+      "url": "https://www.paho.org/es/temas/inmunizacion",
+      "tipo": "referencia"
+    }
+  ]
+}
