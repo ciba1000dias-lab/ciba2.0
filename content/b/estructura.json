@@ -440,8 +440,10 @@
               "id": "B4-05-02",
               "titulo": "Agua segura y riesgos de contaminación alimentaria",
               "ruta": "/b/B4/B4-05/B4-05-02/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "revision",
+              "enlace_activo": true,
+              "vista_previa_publica": true,
+              "mostrar_en_area": true
             }
           ]
         }
