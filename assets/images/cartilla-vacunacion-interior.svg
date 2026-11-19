@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="794" height="1123" viewBox="0 0 794 1123">
-<rect width="794" height="1123" fill="#F7F2E8"/><rect x="12" y="12" width="770" height="1099" rx="12" fill="#FFFCF5" stroke="#E8D8BD" stroke-width="2"/>
+<rect width="794" height="1123" fill="#F7F2E8"/><g transform="translate(40 56) scale(.9)"><rect x="12" y="12" width="770" height="1099" rx="12" fill="#FFFCF5" stroke="#E8D8BD" stroke-width="2"/>
 <rect x="12" y="12" width="770" height="90" fill="#344B3A"/><rect x="12" y="98" width="770" height="5" fill="#B85C4A"/>
 <text x="32" y="36" font-family="Arial" font-size="11" font-weight="bold" fill="#DDE7D7">CIBA · BIENESTAR · VACUNACIÓN INFANTIL</text>
 <text x="32" y="66" font-family="Georgia" font-size="24" fill="#FFF8EB">Cartilla familiar de seguimiento</text>
@@ -19,4 +19,4 @@
 <text x="32" y="969" font-family="Arial" font-size="7.5" font-weight="bold" fill="#344B3A">ID: intradérmica · IM: intramuscular · SC: subcutánea · React.: reactivación · FV: fecha de vencimiento</text>
 <text x="32" y="1082" font-family="Arial" font-size="8" fill="#75695E">Registro complementario: no sustituye el carné oficial de salud infantil. Administración por personal sanitario.</text>
 <path d="M32 1092 H760" stroke="#B85C4A" stroke-width="2"/>
-<text x="32" y="1105" font-family="Arial" font-size="8.5" font-weight="bold" fill="#344B3A">CIBA · CRECEMOS ACOMPAÑÁNDONOS</text></svg>
+<text x="32" y="1105" font-family="Arial" font-size="8.5" font-weight="bold" fill="#344B3A">CIBA · CRECEMOS ACOMPAÑÁNDONOS</text></g></svg>
