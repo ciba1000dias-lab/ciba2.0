@@ -1,0 +1,19 @@
+{
+  "id": "B5-01-02",
+  "titulo": "Esquema cubano de vacunación: edades y protección",
+  "descripcion": "Guía familiar basada en el esquema nacional cubano aportado como referencia oficial, con edades, vacunas, dosis, vías, regiones y lugares de aplicación.",
+  "columna": "B",
+  "area": "B5",
+  "subseccion": "B5-01",
+  "palabras_clave": [
+    "esquema-vacunacion-cuba",
+    "vacunacion-infantil",
+    "carné-infantil",
+    "inmunizacion"
+  ],
+  "estado": "revision",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": true,
+  "preview_publica": true,
+  "ruta": "/b/B5/B5-01/B5-01-02/"
+}
