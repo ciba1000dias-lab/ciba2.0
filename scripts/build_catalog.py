@@ -1238,9 +1238,20 @@ def _conectar_sistema_global(
 
     if script_cargado:
         etiqueta_existente = script_cargado.group(0)
+        script = raiz_publica / "assets" / "js" / "ciba-global.js"
+        if not script.is_file():
+            errores.append(
+                ValidationError(
+                    str(archivo_html),
+                    "integración global",
+                    "no existe assets/js/ciba-global.js en la publicación",
+                )
+            )
+            return errores
+        ruta_relativa = Path(os.path.relpath(script, archivo_html.parent)).as_posix()
         etiqueta_actualizada = re.sub(
-            r'(\bsrc\s*=\s*["\'][^"\']*ciba-global\.js)(?:[?#][^"\']*)?(["\'])',
-            r'\1?v=20261119-01\2',
+            r'(\bsrc\s*=\s*["\'])[^"\']*ciba-global\.js(?:[?#][^"\']*)?(["\'])',
+            lambda m: f'{m.group(1)}{ruta_relativa}?v=20261119-01{m.group(2)}',
             etiqueta_existente,
             flags=re.IGNORECASE,
         )
