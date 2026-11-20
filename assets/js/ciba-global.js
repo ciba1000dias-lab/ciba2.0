@@ -554,9 +554,7 @@
       function agregarPaginasCrecimiento(lista) {
         const grupo = crearDesplegable('Crecimiento físico y antropometría', 'ciba-global-subarea');
         agregarEnlace(grupo.lista, 'b/B6/B6-01/B6-01-01/', 'Peso, longitud y perímetro cefálico: qué significan');
-        const pendiente = elemento('span', 'ciba-global-enlace ciba-global-subenlace', 'Curvas de crecimiento: lectura e interpretación · En preparación');
-        pendiente.setAttribute('aria-disabled', 'true');
-        grupo.lista.appendChild(pendiente);
+        agregarEnlace(grupo.lista, 'b/B6/B6-01/B6-01-02/', 'Curvas de crecimiento: lectura e interpretación · Vista previa pública · En revisión editorial');
         lista.appendChild(grupo.grupo);
       }
 
