@@ -19,7 +19,7 @@
   "estado": "revision",
   "fecha_publicacion": "2026-11-19",
   "mostrar_en_columna": false,
-  "mostrar_en_area": false,
+  "mostrar_en_area": true,
   "enlaces_externos": [
     {
       "titulo": "OPS: Cuba, vacunación en diferentes etapas de la vida (2026)",
