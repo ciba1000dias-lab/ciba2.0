@@ -653,6 +653,45 @@ nav.toc a,.article-nav a { color:#12364d !important; }
 .article-footer,footer { background:#12364d !important; color:#e5eff3 !important; }
 .article-footer a,footer a { color:#d5b879 !important; }
 :focus-visible { outline-color:#287b9a; outline-offset:3px; }
+body { font-family:Arial,Helvetica,sans-serif !important; line-height:1.75; }
+h1,h2,h3,h4 { font-family:Georgia,"Times New Roman",serif !important; line-height:1.2; }
+.hero h1, .hero h2, .hero h3 { color:#fff !important; }
+.hero p, .hero .lead { color:#e5eff3 !important; }
+:where(.grid,.grid2,.resources,.steps,.flow,.pillars,.alertlist) { min-width:0; }
+:where(.card,.tile,.resource,.step,.pillar,.interactive,.quiz,.scenario,.check,.checklist,.figure,.infographic,.callout,.note,.alert) {
+  max-width:100%; border-color:#dce5e8;
+}
+:where(.card,.tile,.resource,.step,.pillar,.interactive,.quiz,.scenario,.check,.checklist) {
+  border-radius:12px;
+}
+:where(.card,.tile,.resource,.step,.pillar) { background:#fffefa; }
+:where(.card h3,.tile h3,.resource h3,.interactive h3,.quiz h3,.scenario h3) { color:#12364d !important; }
+:where(.card p,.tile p,.resource p,.note,figcaption) { color:#63747c; }
+:where(.callout,.note,.interactive,.quiz,.scenario,.check,.checklist,.figure,.infographic) {
+  border-color:#b9dce9;
+}
+:where(button,.btn,.action,.boton,input[type="button"],input[type="submit"]) {
+  min-height:44px; font:inherit; cursor:pointer;
+}
+:where(button,.btn,.action,.boton) {
+  border-radius:8px; background:#174f70; color:#fff;
+}
+:where(input,select,textarea) {
+  max-width:100%; min-height:44px; border-color:#b9cbd2;
+}
+:where(audio,video,iframe,canvas,svg,img) { max-width:100%; }
+audio,video,iframe { width:auto; }
+img,video { height:auto; }
+table { max-width:100%; }
+@media (max-width:700px) {
+  .wrap { width:min(100% - 28px,1060px) !important; }
+  :where(.grid,.grid2,.resources,.steps,.flow,.pillars) { grid-template-columns:minmax(0,1fr) !important; }
+  :where(button,.btn,.action,.boton) { min-height:44px; }
+  table { display:block; overflow-x:auto; }
+}
+@media (prefers-reduced-motion:reduce) {
+  *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
+}
 @media (max-width:700px) {
   .hero { padding:46px 0 42px !important; }
   .wrap { width:min(100% - 28px,1060px) !important; }
