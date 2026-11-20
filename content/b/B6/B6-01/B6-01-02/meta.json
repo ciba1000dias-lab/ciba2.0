@@ -1,0 +1,55 @@
+{
+  "id": "B6-01-02",
+  "titulo": "Curvas de crecimiento: lectura e interpretación",
+  "descripcion": "Guía para familias sobre percentiles, puntuaciones Z y lectura de la trayectoria de crecimiento infantil, con énfasis en las normas nacionales cubanas y el uso complementario de las referencias de la OMS.",
+  "columna": "B",
+  "area": "B6",
+  "subseccion": "B6-01",
+  "palabras_clave": [
+    "curvas de crecimiento",
+    "percentiles",
+    "puntuaciones Z",
+    "crecimiento infantil",
+    "normas cubanas de crecimiento",
+    "referencias OMS",
+    "trayectoria de crecimiento",
+    "antropometría"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-20",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": true,
+  "preview_publica": true,
+  "enlaces_externos": [
+    {
+      "titulo": "Pediatría. Diagnóstico y tratamiento. Editorial Ciencias Médicas, 2016",
+      "url": "https://platform.who.int/docs/default-source/mca-documents/policy-documents/guideline/cub-ch-20-01-guideline-2016-esp-pediatria-completo.pdf",
+      "tipo": "referencia pediátrica cubana"
+    },
+    {
+      "titulo": "OMS: Patrones de crecimiento infantil",
+      "url": "https://www.who.int/es/news-room/questions-and-answers/item/child-growth-standards",
+      "tipo": "patrones y referencias por edad"
+    },
+    {
+      "titulo": "OMS: Child Growth Standards",
+      "url": "https://www.who.int/tools/child-growth-standards",
+      "tipo": "indicadores y gráficas"
+    },
+    {
+      "titulo": "OMS: Growth reference data 5–19 years",
+      "url": "https://www.who.int/tools/growth-reference-data-for-5to19-years",
+      "tipo": "referencias para escolares y adolescentes"
+    },
+    {
+      "titulo": "OMS: Training Course on Child Growth Assessment",
+      "url": "https://www.who.int/publications-detail-redirect/9789241595070",
+      "tipo": "curso de formación con licencia CC BY-NC-SA 3.0 IGO"
+    },
+    {
+      "titulo": "Claudia Reinhart: explicación de curvas de crecimiento",
+      "url": "https://www.youtube.com/watch?v=Ztqu_Z8tvqo",
+      "tipo": "video externo enlazado con atribución a su autora"
+    }
+  ]
+}
