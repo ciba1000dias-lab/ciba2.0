@@ -1,0 +1,20 @@
+{
+  "id": "I2-06",
+  "titulo": "Entrena tu pausa antes de compartir.",
+  "descripcion": "Lista interactiva, simuladores y casos prácticos para entrenar la verificación de publicaciones sanitarias antes de compartirlas.",
+  "columna": "I",
+  "area": "I2",
+  "estado": "publicado",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "subseccion": "Artículos de I2",
+  "palabras_clave": [
+    "informatica",
+    "i2",
+    "desinformacion",
+    "verificacion",
+    "interactivo",
+    "salud",
+    "familias"
+  ]
+}
