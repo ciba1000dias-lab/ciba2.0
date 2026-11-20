@@ -543,13 +543,21 @@ def _normalizar_migas_y_metadatos(
     reemplazar_meta("description", f'<meta name="description" content="{descripcion_html}">')
     reemplazar_meta("theme-color", f'<meta name="theme-color" content="{color_html}">')
 
-    tiene_migas = re.search(
-        r'class\s*=\s*["\'][^"\']*(?:breadcrumb|ciba-migas|migas|ruta-navegacion)',
+    # Reemplazar cualquier migas heredada por una ruta canónica. Conservar
+    # una ruta antigua impedía corregir jerarquías y duplicaba estilos.
+    contenido = re.sub(
+        r'<style\b(?=[^>]*\bdata-ciba-migas-style(?:\s|=|>))[^>]*>[\s\S]*?</style\s*>',
+        '',
         contenido,
+        flags=re.IGNORECASE,
+    )
+    patron_migas_existentes = re.compile(
+        r'<(?P<tag>nav|div|ol|ul)\b'
+        r'(?=[^>]*\bclass\s*=\s*["\'][^"\']*(?:breadcrumb|ciba-migas|migas|ruta-navegacion)[^"\']*["\'])'
+        r'[^>]*>[\s\S]*?</(?P=tag)\s*>',
         re.IGNORECASE,
     )
-    if tiene_migas:
-        return contenido
+    contenido = patron_migas_existentes.sub('', contenido)
 
     items: list[tuple[str, str | None]] = [("CIBA", "index.html")]
     if nivel == "columna":
