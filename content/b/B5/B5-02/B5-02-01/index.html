@@ -82,5 +82,5 @@
 const form=document.getElementById('quizForm'),btn=document.getElementById('checkQuiz'),out=document.getElementById('quizResult');
 btn.addEventListener('click',()=>{const key={q1:'b',q2:'c',q3:'a',q4:'b',q5:'c'};let score=0,answered=0;for(const [q,a] of Object.entries(key)){const v=form.querySelector('input[name="'+q+'"]:checked');if(v){answered++;if(v.value===a)score++;}}if(answered<5){out.className='result bad';out.textContent='Responde las cinco preguntas para comprobar el resultado.';return;}out.className='result'+(score===5?'':' bad');out.textContent=score===5?'¡Excelente! Has reconocido cómo la vacunación materna puede proteger a dos generaciones. 🎉🎀': 'Resultado: '+score+'/5. Revisa la guía y vuelve a intentarlo. Cada respuesta ayuda a reforzar lo aprendido.';});
 window.addEventListener('scroll',()=>{const d=document.documentElement;document.getElementById('bar').style.width=(d.scrollTop/(d.scrollHeight-d.clientHeight)*100)+'%'});
-</script><script type="module" src="../../../../assets/js/ciba-global.js?v=20261119-01"></script>
+</script><script type="module" src="../../../../assets/js/ciba-global.js?v=20261119-02"></script>
 </body></html>
