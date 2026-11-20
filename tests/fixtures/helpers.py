@@ -10,7 +10,7 @@ COLUMNAS_JSON = {
     "version": 1,
     "columnas": [
         {"id": "C", "titulo": "Crianza", "descripcion": "x" * 20, "orden": 1, "icono": "c"},
-        {"id": "I", "titulo": "Internet", "descripcion": "x" * 20, "orden": 2, "icono": "i"},
+        {"id": "I", "titulo": "Informática", "descripcion": "x" * 20, "orden": 2, "icono": "i"},
         {"id": "B", "titulo": "Bienestar", "descripcion": "x" * 20, "orden": 3, "icono": "b"},
         {"id": "A", "titulo": "Acompañamiento", "descripcion": "x" * 20, "orden": 4, "icono": "a"},
     ],
