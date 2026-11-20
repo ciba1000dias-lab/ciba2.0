@@ -50,7 +50,7 @@ class TestAuditoriaEnlaces(unittest.TestCase):
         self.assertEqual(resultado["errores"][0]["motivo"], "Fragmento no encontrado en destino")
 
     def test_omite_enlaces_externos_y_reconoce_base_github_pages(self) -> None:
-        self.escribir("index.html", '<a href="https://example.org">Externo</a><a href="https://ciba1000dias-lab.github.io/ciba2.0/c/">C</a>')
+        self.escribir("index.html", '<a href="https://example.org">Externo</a><a href="https://ciba1000dias-lab.github.io/ciba2.0/c/">C</a><a href="/ciba2.0/c/">Ruta raíz</a>')
         self.escribir("c/index.html", "<h1>C</h1>")
         resultado = auditar(self.root, "https://ciba1000dias-lab.github.io/ciba2.0/")
         self.assertEqual(resultado["total_errores"], 0)
