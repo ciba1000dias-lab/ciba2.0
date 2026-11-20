@@ -89,6 +89,8 @@ def auditar(root: Path, base_url: str | None = None) -> dict:
                     continue
             else:
                 ruta_url = unquote(parsed.path)
+                if base_path and (ruta_url == base_path or ruta_url.startswith(base_path + "/")):
+                    ruta_url = ruta_url[len(base_path):] or "/"
 
             if not ruta_url:
                 destino = pagina
