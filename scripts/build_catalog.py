@@ -598,6 +598,74 @@ def _normalizar_migas_y_metadatos(
     return contenido
 
 
+def _normalizar_estilo_informatica(contenido: str, archivo_html: Path, raiz_publica: Path) -> str:
+    """Unifica la identidad azul de las páginas interiores de INFORMÁTICA.
+
+    La portada principal conserva su diseño propio y actúa como referencia visual.
+    Los artículos y páginas temáticas mantienen intactos sus recursos y estructura.
+    """
+    try:
+        partes = archivo_html.relative_to(raiz_publica).parts
+    except ValueError:
+        return contenido
+    if len(partes) < 3 or partes[0].lower() != "i" or partes[-1].lower() != "index.html":
+        return contenido
+    if "data-ciba-informatica-unificacion" in contenido:
+        return contenido
+
+    estilos = """<style data-ciba-informatica-unificacion>
+:root {
+  --blue:#287b9a !important; --azul:#287b9a !important;
+  --deep:#12364d !important; --noche:#12364d !important;
+  --ink:#273943 !important; --tinta:#273943 !important;
+  --muted:#63747c !important; --suave:#63747c !important;
+  --cream:#f5f3ec !important; --crema:#f5f3ec !important;
+  --paper:#fffefa !important; --papel:#fffefa !important;
+  --line:#dce5e8 !important; --borde:#dce5e8 !important;
+  --gold:#d5b879 !important; --oro:#d5b879 !important;
+}
+body { background:#f5f3ec !important; color:#273943 !important; }
+a { color:#176783; text-underline-offset:3px; }
+.hero {
+  padding:62px 0 54px !important; color:#fff !important;
+  background:
+    radial-gradient(circle at 78% 22%,rgba(67,142,170,.32),transparent 34%),
+    linear-gradient(120deg,#12364d 0%,#174f70 58%,#206b88 100%) !important;
+}
+.hero h1 { color:#fff !important; font-family:Georgia,"Times New Roman",serif !important; font-weight:400 !important; letter-spacing:-.035em !important; }
+.hero p,.hero .lead { color:#e5eff3 !important; }
+.kicker,.hero .kicker { color:#e9d6ad !important; }
+.eyebrow,.tag { color:#287b9a !important; }
+.wrap { width:min(1060px,calc(100% - 36px)) !important; margin-inline:auto !important; }
+nav.toc,.article-nav {
+  background:rgba(255,254,250,.94) !important;
+  border-bottom:1px solid #dce5e8 !important;
+  backdrop-filter:blur(12px);
+}
+nav.toc a,.article-nav a { color:#12364d !important; }
+.block h2,.article h2,main h2 { color:#12364d !important; }
+.block h3,.article h3,main h3 { color:#176783 !important; }
+.card,.tile,.figure,.infographic {
+  background:#fffefa !important; border-color:#dce5e8 !important;
+  border-radius:12px !important;
+}
+.callout,.note { border-color:#438eaa !important; }
+.article-footer,footer { background:#12364d !important; color:#e5eff3 !important; }
+.article-footer a,footer a { color:#d5b879 !important; }
+:focus-visible { outline-color:#287b9a; outline-offset:3px; }
+@media (max-width:700px) {
+  .hero { padding:46px 0 42px !important; }
+  .wrap { width:min(100% - 28px,1060px) !important; }
+}
+</style>"""
+    cierre = re.search(r"</body\s*>", contenido, flags=re.IGNORECASE)
+    if cierre:
+        contenido = contenido[:cierre.start()] + estilos + "\n" + contenido[cierre.start():]
+    else:
+        contenido += "\n" + estilos
+    return contenido
+
+
 def _conectar_sistema_global(
     archivo_html: Path,
     raiz_publica: Path,
@@ -621,6 +689,7 @@ def _conectar_sistema_global(
     # Preparar primero la estructura HTML y la configuración para móviles.
     contenido = _asegurar_documento_responsivo(contenido)
     contenido = _normalizar_migas_y_metadatos(contenido, archivo_html, raiz_publica, catalogo)
+    contenido = _normalizar_estilo_informatica(contenido, archivo_html, raiz_publica)
 
     # Solo considera integrado el sistema si existe una etiqueta SCRIPT
     # real que cargue ciba-global.js. Los comentarios HTML no cuentan.
