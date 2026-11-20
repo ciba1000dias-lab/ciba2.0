@@ -87,10 +87,11 @@ table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--papel);
 </ol>
 <p><strong>Nota editorial:</strong> material educativo general para familias. Las mediciones, su interpretación y las decisiones de seguimiento corresponden al equipo de salud. Las referencias internacionales complementan, pero no sustituyen, las orientaciones nacionales cubanas.</p>
 </article></main>
-<footer class="foot"><div class="wrap">CIBA · Crecemos acompañándonos · <a href="../">Volver a Crecimiento y desarrollo</a></div></footer>
+<footer class="foot"><div class="wrap">CIBA · Crecemos acompañándonos · <a href="../../">Volver a Crecimiento y desarrollo</a></div></footer>
 <script>
 (function(){const bar=document.getElementById('readbar');function update(){const d=document.documentElement;const max=d.scrollHeight-innerHeight;bar.style.width=(max>0?Math.min(100,scrollY/max*100):0)+'%'}addEventListener('scroll',update,{passive:true});update();
 const form=document.getElementById('quizForm');if(form){form.addEventListener('submit',function(e){e.preventDefault();const keys={q1:'b',q2:'a',q3:'c',q4:'b'};const explanations={q1:'El peso expresa la masa corporal.',q2:'En menores de dos años se mide acostado, con un infantómetro.',q3:'El perímetro cefálico permite seguir el crecimiento craneal; no mide inteligencia.',q4:'Se confirma la técnica y se revisa el conjunto de mediciones con el equipo de salud.'};let score=0,answered=0;Object.keys(keys).forEach(k=>{const chosen=form.querySelector('input[name="'+k+'"]:checked');if(chosen){answered++;if(chosen.value===keys[k])score++;}});const out=document.getElementById('quizResult');if(answered<4){out.textContent='Has respondido '+answered+' de 4 preguntas. Completa las que faltan para revisar el resultado.';return;}out.textContent=score===4?'¡🎉🎂🎀 Excelente! 4 de 4. Has comprendido las ideas esenciales.': 'Has acertado '+score+' de 4. ¡Vas avanzando! '+Object.keys(keys).filter(k=>form.querySelector('input[name="'+k+'"]:checked')?.value!==keys[k]).map(k=>explanations[k]).join(' ');});}
 })();
 </script>
+<script type="module" src="../../../../assets/js/ciba-global.js?v=20261120-01"></script>
 </body></html>
