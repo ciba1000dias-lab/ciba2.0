@@ -528,6 +528,49 @@ class TestBuild(unittest.TestCase):
         bienestar = raiz / "b" / "B1" / "index.html"
         self.assertEqual(build_catalog._normalizar_acompanamiento(html, bienestar, raiz), html)
 
+    def test_migas_canonicas_en_las_cuatro_columnas_y_reemplazo_de_heredadas(self) -> None:
+        raiz = self.tmp / "dist"
+        columnas = []
+        areas = []
+        subsecciones = []
+        paginas = []
+        casos = []
+        for letra, nombre, area_id, sub_id, pagina_id in (
+            ("c", "Crianza", "C1", "C1-01", "C1-01-01"),
+            ("i", "INFORMÁTICA", "I1", "I1-01", "I1-01-01"),
+            ("b", "Bienestar", "B1", "B1-01", "B1-01-01"),
+            ("a", "Acompañamiento", "A1", "A1-01", "A1-01-01"),
+        ):
+            columnas.append({"id": letra, "titulo": nombre, "descripcion": "Descripción general de columna."})
+            areas.append({"id": area_id, "titulo": f"Área {area_id}", "ruta_publica": f"{letra}/{area_id}/"})
+            subsecciones.append({"id": sub_id, "titulo": f"Subsección {sub_id}", "ruta_publica": f"{letra}/{area_id}/{sub_id}/"})
+            ruta = f"{letra}/{area_id}/{sub_id}/{pagina_id}/"
+            paginas.append({"id": pagina_id, "titulo": f"Artículo {pagina_id}", "descripcion": "Descripción del artículo de prueba.", "ruta_publica": ruta})
+            casos.append((letra, nombre, area_id, sub_id, pagina_id, ruta))
+
+        catalogo = {"columnas": columnas, "areas": areas, "subsecciones": subsecciones, "paginas": paginas}
+        for letra, nombre, area_id, sub_id, pagina_id, ruta in casos:
+            pagina = raiz / ruta / "index.html"
+            pagina.parent.mkdir(parents=True, exist_ok=True)
+            html = (
+                '<!doctype html><html><head><style data-ciba-migas-style>.viejo{}</style></head><body>'
+                '<nav class="breadcrumb"><a href="/ruta-antigua">Ruta antigua</a></nav>'
+                '<main><h1>Contenido conservado</h1></main></body></html>'
+            )
+            primero = build_catalog._normalizar_migas_y_metadatos(html, pagina, raiz, catalogo)
+            segundo = build_catalog._normalizar_migas_y_metadatos(primero, pagina, raiz, catalogo)
+            self.assertEqual(primero, segundo)
+            self.assertNotIn("Ruta antigua", primero)
+            self.assertNotIn("ruta-antigua", primero)
+            self.assertEqual(primero.count("data-ciba-migas"), 1)
+            self.assertEqual(primero.count("data-ciba-migas-style"), 1)
+            self.assertIn("CIBA", primero)
+            self.assertIn(nombre, primero)
+            self.assertIn(f"Área {area_id}", primero)
+            self.assertIn(f"Subsección {sub_id}", primero)
+            self.assertIn(f"Artículo {pagina_id}", primero)
+            self.assertIn("Contenido conservado", primero)
+
 
 if __name__ == "__main__":
     unittest.main()
