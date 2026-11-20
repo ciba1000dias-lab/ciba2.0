@@ -495,8 +495,8 @@
               "id": "B5-02-01",
               "titulo": "Vacunación durante el embarazo y protección del recién nacido",
               "ruta": "/b/B5/B5-02/B5-02-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true
             }
           ]
         },
