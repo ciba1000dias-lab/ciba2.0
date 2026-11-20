@@ -15,11 +15,11 @@
     "juego y comunicación",
     "cuba"
   ],
-  "estado": "revision",
+  "estado": "publicado",
   "fecha_publicacion": "2026-11-20",
   "mostrar_en_columna": false,
   "mostrar_en_area": true,
-  "preview_publica": true,
+  "preview_publica": false,
   "enlaces_externos": [
     {
       "titulo": "Pediatría. Diagnóstico y tratamiento. Editorial Ciencias Médicas, 2016",
