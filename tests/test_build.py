@@ -316,7 +316,7 @@ class TestBuild(unittest.TestCase):
         articulo = añadir_pagina(self.content, "i", "I1", "I1-01")
         (articulo / "index.html").write_text(
             '<!doctype html><html><head><style>.hero{background:#493a32}</style></head>'
-            '<body><header class="hero">INFORMÁTICA</header></body></html>',
+            '<body><header class="hero">INFORMÁTICA</header><main>' + ('contenido de prueba ' * 30) + '</main></body></html>',
             encoding="utf-8",
         )
         portada = self.content / "i" / "index.html"
