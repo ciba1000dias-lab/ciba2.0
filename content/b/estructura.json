@@ -571,15 +571,17 @@
               "id": "B6-01-01",
               "titulo": "Peso, longitud y perímetro cefálico: qué significan",
               "ruta": "/b/B6/B6-01/B6-01-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true,
+              "vista_previa_publica": false
             },
             {
               "id": "B6-01-02",
               "titulo": "Curvas de crecimiento: lectura e interpretación",
               "ruta": "/b/B6/B6-01/B6-01-02/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "revision",
+              "enlace_activo": true,
+              "vista_previa_publica": true
             }
           ]
         },
