@@ -1,0 +1,26 @@
+{
+  "id": "I5-01",
+  "titulo": "¿Qué es la inteligencia artificial?",
+  "descripcion": "La inteligencia artificial (IA) es un conjunto de tecnologías capaces de realizar tareas que suelen requerir capacidades humanas, como reconocer patrones, interpretar lenguaje, clasificar imágenes o generar respuestas.",
+  "columna": "I",
+  "area": "I5",
+  "palabras_clave": [
+    "informatica",
+    "i5",
+    "inteligencia",
+    "artificial",
+    "conjunto",
+    "tecnologias",
+    "capaces",
+    "realizar",
+    "tareas",
+    "suelen",
+    "requerir",
+    "capacidades"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-20",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "subseccion": "Artículos de I5"
+}
