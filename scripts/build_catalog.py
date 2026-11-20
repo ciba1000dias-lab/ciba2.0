@@ -13,6 +13,7 @@ import re
 import shutil
 import sys
 import traceback
+from html import escape as html_escape
 from datetime import date
 from pathlib import Path
 
@@ -567,6 +568,180 @@ def _conectar_sistema_global(
     return errores
 
 
+
+
+def _paleta_columna(letra: str) -> dict[str, str]:
+    """Identidad visual estable para cada columna editorial."""
+    return {
+        "c": {"nombre": "CRIANZA", "oscuro": "#172b27", "medio": "#526e56", "acento": "#d9b878", "fondo": "#f5f0e5", "papel": "#fffdf7", "tinta": "#29332d"},
+        "i": {"nombre": "INFORMÁTICA", "oscuro": "#12364d", "medio": "#174f70", "acento": "#d5b879", "fondo": "#f5f3ec", "papel": "#fffefa", "tinta": "#273943"},
+        "b": {"nombre": "BIENESTAR", "oscuro": "#493a32", "medio": "#8c671f", "acento": "#d9b878", "fondo": "#f7f2e8", "papel": "#fffcf5", "tinta": "#493a32"},
+        "a": {"nombre": "ACOMPAÑAMIENTO", "oscuro": "#493a32", "medio": "#a9443b", "acento": "#e3b28b", "fondo": "#f7f2e8", "papel": "#fffcf5", "tinta": "#493a32"},
+    }.get(letra.lower(), {"nombre": "CIBA", "oscuro": "#172b27", "medio": "#526e56", "acento": "#d9b878", "fondo": "#f5f0e5", "papel": "#fffdf7", "tinta": "#29332d"})
+
+
+def _generar_indice_subseccion(
+    src: Path,
+    tmp: Path,
+    letra: str,
+    area_dir: Path,
+    subseccion_dir: Path,
+    datos: dict,
+) -> tuple[list[ValidationError], int]:
+    """Crea una página propia para cada subsección archivada que agrupa artículos."""
+    errores: list[ValidationError] = []
+    rel = str(subseccion_dir.relative_to(src))
+    hijos, errs_hijos = listar_directorios_seguros(subseccion_dir, rel)
+    errores.extend(errs_hijos)
+    destino = tmp / letra.lower() / area_dir.name / subseccion_dir.relative_to(area_dir)
+    destino.mkdir(parents=True, exist_ok=True)
+    paleta = _paleta_columna(letra)
+    area_meta = _leer_json(area_dir / "area.json")
+    titulo = html_escape(str(datos.get("titulo", subseccion_dir.name)))
+    descripcion = html_escape(str(datos.get("descripcion", "")))
+    id_sub = html_escape(str(datos.get("id", subseccion_dir.name)))
+    titulo_area = html_escape(str(area_meta.get("titulo", area_dir.name)))
+    tarjetas: list[str] = []
+    articulos_publicados = 0
+
+    for hijo in hijos:
+        if hijo.name == "_paginas":
+            continue
+        meta_path = hijo / "meta.json"
+        if not meta_path.is_file() or meta_path.is_symlink():
+            continue
+        try:
+            hijo_meta = _leer_json(meta_path)
+        except (OSError, json.JSONDecodeError):
+            continue
+        estado = hijo_meta.get("estado")
+        if estado not in ("publicado", "archivado"):
+            continue
+        ruta_destino = tmp / letra.lower() / area_dir.name / hijo.relative_to(area_dir)
+        href = os.path.relpath(ruta_destino, destino).replace(os.sep, "/").rstrip("/") + "/"
+        tipo = "Subsección" if estado == "archivado" else "Artículo"
+        if estado == "publicado":
+            articulos_publicados += 1
+        tarjetas.append(
+            '<a class="item" href="' + html_escape(href, quote=True) + '">'
+            '<span class="tipo">' + tipo + ' · ' + html_escape(str(hijo_meta.get("id", ""))) + '</span>'
+            '<h2>' + html_escape(str(hijo_meta.get("titulo", hijo.name))) + '</h2>'
+            '<p>' + html_escape(str(hijo_meta.get("descripcion", ""))) + '</p>'
+            '<span class="ir">Abrir contenido →</span></a>'
+        )
+
+    if not tarjetas:
+        tarjetas.append(
+            '<div class="vacio"><strong>Esta subsección está organizada.</strong>'
+            '<p>Los artículos se incorporarán aquí cuando estén aprobados para su difusión.</p></div>'
+        )
+
+    area_href = os.path.relpath(tmp / letra.lower() / area_dir.name, destino).replace(os.sep, "/").rstrip("/") + "/"
+    columna_href = os.path.relpath(tmp / letra.lower(), destino).replace(os.sep, "/").rstrip("/") + "/"
+    home_href = os.path.relpath(tmp, destino).replace(os.sep, "/").rstrip("/") + "/"
+    html = f"""<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="{paleta['oscuro']}">
+<meta name="description" content="{descripcion}">
+<title>{titulo} | {paleta['nombre']} · CIBA</title>
+<style>
+:root{{--oscuro:{paleta['oscuro']};--medio:{paleta['medio']};--acento:{paleta['acento']};--fondo:{paleta['fondo']};--papel:{paleta['papel']};--tinta:{paleta['tinta']}}}
+*{{box-sizing:border-box}}body{{margin:0;background:var(--fondo);color:var(--tinta);font-family:Arial,Helvetica,sans-serif}}
+.wrap{{width:min(1040px,calc(100% - 36px));margin:auto}}
+.hero{{padding:clamp(48px,8vw,82px) 0 58px;color:#fff;background:linear-gradient(120deg,var(--oscuro),var(--medio));border-bottom:4px solid var(--acento)}}
+.breadcrumb{{display:flex;flex-wrap:wrap;gap:9px;color:#ffffffc9;font-size:11px}}.breadcrumb a{{color:#fff;text-decoration:none}}
+.kicker{{margin:34px 0 12px;color:var(--acento);font-size:10px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}}
+h1{{max-width:850px;margin:0;font:400 clamp(36px,6vw,62px)/1.08 Georgia,serif}}
+.intro{{max-width:760px;margin:18px 0 0;color:#ffffffdf;font-size:15px;line-height:1.85}}
+main{{padding:38px 0 70px}}.resumen{{margin:0 0 25px;padding:17px 20px;border-left:3px solid var(--acento);background:var(--papel);font-size:13px;line-height:1.7}}
+.lista{{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:16px}}
+.item{{display:flex;flex-direction:column;min-height:220px;padding:24px;border:1px solid #00000012;border-radius:12px;background:var(--papel);color:inherit;text-decoration:none;box-shadow:0 8px 24px #00000008;transition:transform .18s,box-shadow .18s}}
+.item:hover{{transform:translateY(-3px);box-shadow:0 14px 30px #00000012}}
+.tipo{{color:var(--medio);font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}}
+.item h2{{margin:13px 0 9px;font:400 24px/1.2 Georgia,serif;color:var(--oscuro)}}
+.item p{{margin:0 0 18px;color:#68736e;font-size:13px;line-height:1.75}}
+.ir{{margin-top:auto;color:var(--medio);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}}
+.vacio{{grid-column:1/-1;padding:25px;background:var(--papel);border:1px solid #00000012;border-radius:12px;line-height:1.7}}
+.vacio p{{margin-bottom:0;color:#68736e;font-size:13px}}
+footer{{padding:24px 0;background:var(--oscuro);color:#ffffffd6;font-size:11px}}
+footer a{{color:var(--acento);text-decoration:none}}
+@media(max-width:600px){{.hero{{padding:48px 0 42px}}.item{{min-height:0;padding:20px}}}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<nav class="breadcrumb"><a href="{home_href}">CIBA</a><span>›</span><a href="{columna_href}">{paleta['nombre']}</a><span>›</span><a href="{area_href}">{titulo_area}</a></nav>
+<div class="kicker">SUBSECCIÓN · {id_sub}</div><h1>{titulo}</h1><p class="intro">{descripcion}</p>
+</div></header>
+<main class="wrap"><div class="resumen"><strong>Explora esta subsección.</strong> Aquí encontrarás sus artículos y recursos relacionados, organizados en páginas independientes.</div>
+<div class="lista">{''.join(tarjetas)}</div></main>
+<footer><div class="wrap">CIBA · Crecemos acompañándonos · <a href="{area_href}">Volver a {titulo_area}</a></div></footer>
+</body></html>"""
+    try:
+        (destino / "index.html").write_text(html, encoding="utf-8")
+    except OSError as exc:
+        errores.append(ValidationError(rel, "índice de subsección", f"no se pudo generar: {exc}"))
+    return errores, articulos_publicados
+
+
+def _generar_portadas_columnas_ausentes(
+    tmp: Path,
+    areas: list[dict],
+    columnas: list[dict],
+) -> list[ValidationError]:
+    """Completa portadas de columna ausentes sin alterar las portadas existentes."""
+    errores: list[ValidationError] = []
+    for columna in columnas:
+        letra = str(columna.get("id", "")).lower()
+        if letra not in ("c", "i", "b", "a"):
+            continue
+        destino = tmp / letra / "index.html"
+        if destino.is_file():
+            continue
+        propias = [a for a in areas if str(a.get("columna", "")).lower() == letra]
+        if not propias:
+            continue
+        paleta = _paleta_columna(letra)
+        tarjetas = []
+        for area in sorted(propias, key=lambda a: (a.get("orden", 0), a.get("id", ""))):
+            ruta = str(area.get("ruta_publica", ""))
+            ruta_destino = tmp / ruta
+            href = os.path.relpath(ruta_destino, tmp / letra).replace(os.sep, "/").rstrip("/") + "/"
+            titulo = html_escape(str(area.get("titulo", area.get("id", "Área"))))
+            descripcion = html_escape(str(area.get("descripcion", "")))
+            tarjetas.append(
+                '<a class="item" href="' + html_escape(href, quote=True) + '">'
+                '<span>' + html_escape(str(area.get("id", ""))) + '</span>'
+                '<h2>' + titulo + '</h2><p>' + descripcion + '</p><b>Explorar área →</b></a>'
+            )
+        nombre = html_escape(str(columna.get("titulo", paleta["nombre"])))
+        descripcion_col = html_escape(str(columna.get("descripcion", "")))
+        html = f"""<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="{paleta['oscuro']}"><meta name="description" content="{descripcion_col}">
+<title>{nombre} | CIBA · Crecemos acompañándonos</title>
+<style>
+:root{{--oscuro:{paleta['oscuro']};--medio:{paleta['medio']};--acento:{paleta['acento']};--fondo:{paleta['fondo']};--papel:{paleta['papel']};--tinta:{paleta['tinta']}}}
+*{{box-sizing:border-box}}body{{margin:0;background:var(--fondo);color:var(--tinta);font-family:Arial,Helvetica,sans-serif}}
+.wrap{{width:min(1120px,calc(100% - 40px));margin:auto}}.hero{{padding:76px 0 65px;color:white;background:linear-gradient(120deg,var(--oscuro),var(--medio));border-bottom:4px solid var(--acento)}}
+.kicker{{color:var(--acento);font-size:10px;font-weight:800;letter-spacing:.2em}}h1{{margin:20px 0 14px;font:400 clamp(42px,7vw,72px)/1.05 Georgia,serif}}.hero p{{max-width:720px;color:#ffffffdf;line-height:1.85;font-size:15px}}
+main{{padding:48px 0 75px}}.grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:17px}}
+.item{{display:block;padding:25px;border:1px solid #00000012;border-radius:12px;background:var(--papel);color:inherit;text-decoration:none;box-shadow:0 8px 25px #00000008}}
+.item span{{color:var(--medio);font-size:10px;font-weight:800;letter-spacing:.15em}}.item h2{{margin:12px 0 8px;color:var(--oscuro);font:400 25px Georgia,serif}}.item p{{color:#68736e;font-size:13px;line-height:1.75}}.item b{{color:var(--medio);font-size:10px;letter-spacing:.1em;text-transform:uppercase}}
+footer{{padding:24px 0;background:var(--oscuro);color:#ffffffd6;font-size:11px}}
+</style></head><body><header class="hero"><div class="wrap"><div class="kicker">CIBA · COLUMNA EDITORIAL</div><h1>{nombre}</h1><p>{descripcion_col}</p></div></header>
+<main class="wrap"><div class="grid">{''.join(tarjetas)}</div></main><footer><div class="wrap">CIBA · Crecemos acompañándonos</div></footer></body></html>"""
+        destino.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            destino.write_text(html, encoding="utf-8")
+        except OSError as exc:
+            errores.append(ValidationError(f"{letra}/index.html", "portada de columna", f"no se pudo generar: {exc}"))
+    return errores
+
+
 def _construir_en_tmp(
     src: Path,
     tmp: Path,
@@ -588,6 +763,7 @@ def _construir_en_tmp(
 
     areas_registradas: list[dict] = []
     paginas_publicadas: list[dict] = []
+    subsecciones_publicadas: list[dict] = []
 
     for letra, area_dir in _iter_areas(src):
         rel_area = str(area_dir.relative_to(src))
@@ -640,6 +816,24 @@ def _construir_en_tmp(
                 and pagina.datos.get("preview_publica") is True
             )
 
+            if estado_pagina == "archivado":
+                ruta_relativa = pag_dir.relative_to(area_dir).as_posix()
+                ruta_publica = f"{letra.lower()}/{area_dir.name}/{ruta_relativa}/"
+                errs_sub, total_articulos = _generar_indice_subseccion(
+                    src, tmp, letra.lower(), area_dir, pag_dir, pagina.datos
+                )
+                errores.extend(errs_sub)
+                subsecciones_publicadas.append({
+                    "id": pagina.datos.get("id", pag_dir.name),
+                    "titulo": pagina.datos.get("titulo", pag_dir.name),
+                    "descripcion": pagina.datos.get("descripcion", ""),
+                    "columna": letra,
+                    "area": area_meta.datos.get("id", area_dir.name),
+                    "ruta_publica": ruta_publica,
+                    "articulos_publicados_directos": total_articulos,
+                })
+                continue
+
             if estado_pagina != "publicado" and not es_preview:
                 continue
 
@@ -682,6 +876,10 @@ def _construir_en_tmp(
                 a.get("orden", 0),
                 a.get("id", ""),
             ),
+        ),
+        "subsecciones": sorted(
+            subsecciones_publicadas,
+            key=lambda s: (s.get("columna", ""), s.get("area", ""), s.get("id", "")),
         ),
         "paginas": sorted(
             paginas_publicadas,
@@ -750,6 +948,7 @@ def _construir_en_tmp(
 
     # Portadas editoriales de las columnas en sus rutas raíz.
     errores.extend(_copiar_indices_columnas(src, tmp))
+    errores.extend(_generar_portadas_columnas_ausentes(tmp, areas_registradas, columnas_cfg.columnas))
 
     # Páginas auxiliares (bibliotecas y herramientas) fuera del catálogo editorial.
     errores.extend(_copiar_paginas_estaticas(src, tmp))
