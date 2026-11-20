@@ -776,6 +776,159 @@ img, video {{ height: auto; }}
     return contenido
 
 
+
+
+def _normalizar_crianza(contenido: str, archivo_html: Path, raiz_publica: Path) -> str:
+    """Estandariza la presentación interior de CRIANZA sin alterar su contenido ni sus medios."""
+    try:
+        partes = archivo_html.relative_to(raiz_publica).parts
+    except ValueError:
+        return contenido
+    if len(partes) < 2 or partes[0].lower() != "c" or partes[-1].lower() != "index.html":
+        return contenido
+    if "data-ciba-crianza-estandar" in contenido:
+        return contenido
+
+    estilos = """<style data-ciba-crianza-estandar>
+:root {
+  --ciba-crianza-noche: #172b27;
+  --ciba-crianza-verde: #526e56;
+  --ciba-crianza-tierra: #a9583e;
+  --ciba-crianza-oro: #d9b878;
+  --ciba-crianza-marfil: #f5f0e5;
+  --ciba-crianza-papel: #fffdf7;
+  --ciba-crianza-tinta: #29332d;
+  --ciba-crianza-suave: #73776d;
+  --ciba-crianza-linea: #e4ddcf;
+}
+body {
+  background-color: var(--ciba-crianza-marfil);
+  color: var(--ciba-crianza-tinta);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+h1, h2, h3, h4 {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+a { text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--ciba-crianza-oro);
+  outline-offset: 3px;
+}
+.hero, .cabecera-articulo {
+  color: #fffdf7;
+  border-bottom: 3px solid var(--ciba-crianza-verde);
+}
+.hero h1, .cabecera-articulo h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+.hero p, .cabecera-articulo .bajada, .hero-descripcion {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.85;
+}
+.tag, .kicker, .eyebrow, .sobrelinea, .etiqueta {
+  letter-spacing: .16em;
+}
+.ciba-articulo {
+  box-sizing: border-box;
+  width: min(100% - 36px, 960px);
+  margin: 28px auto 58px;
+  padding: clamp(20px, 4vw, 48px);
+  border: 1px solid var(--ciba-crianza-linea);
+  border-top: 4px solid var(--ciba-crianza-verde);
+  border-radius: 14px;
+  background: var(--ciba-crianza-papel);
+  color: var(--ciba-crianza-tinta);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  box-shadow: 0 10px 30px rgba(23,43,39,.055);
+}
+.ciba-articulo h2, .articulo h2 {
+  color: var(--ciba-crianza-noche);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  line-height: 1.25;
+}
+.ciba-articulo h3, .articulo h3 {
+  color: var(--ciba-crianza-verde);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+}
+.ciba-articulo .cabecera-articulo {
+  border-radius: 12px;
+  border-bottom: 0;
+  background-color: var(--ciba-crianza-noche);
+}
+.ciba-articulo .navegacion-articulo {
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom-color: var(--ciba-crianza-linea);
+}
+.ciba-articulo .volver, .ciba-articulo .cita,
+.ciba-articulo .fuentes a, .tema, .volver {
+  color: var(--ciba-crianza-verde);
+}
+.nota, .respuesta, .alerta, .panel, .interactivo,
+.fuentes, .regla, .grupo, .tarjeta, .marco, .podcast,
+.video-panel, .infografia {
+  max-width: 100%;
+  border-radius: 12px;
+}
+img, video, iframe, svg, canvas {
+  max-width: 100%;
+}
+img, video {
+  height: auto;
+}
+table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+button, .boton, .acciones a, .acciones button,
+.acciones input[type="button"], .acciones input[type="submit"] {
+  min-height: 44px;
+}
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .ciba-articulo {
+    width: calc(100% - 20px);
+    margin: 16px auto 36px;
+    padding: 20px 18px 30px;
+    border-radius: 11px;
+  }
+  .hero { scroll-margin-top: 76px; }
+  .grupo ol { grid-template-columns: 1fr; }
+  .reglas, .semaforo { grid-template-columns: 1fr; }
+  .acciones { gap: 10px; }
+  .acciones a, .acciones button { width: 100%; justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+</style>"""
+    cierre = re.search(r"</body\\s*>", contenido, flags=re.IGNORECASE)
+    if cierre:
+        contenido = contenido[:cierre.start()] + estilos + "\n" + contenido[cierre.start():]
+    else:
+        contenido += "\n" + estilos
+    return contenido
+
+
 def _conectar_sistema_global(
     archivo_html: Path,
     raiz_publica: Path,
@@ -801,6 +954,7 @@ def _conectar_sistema_global(
     contenido = _normalizar_migas_y_metadatos(contenido, archivo_html, raiz_publica, catalogo)
     contenido = _normalizar_estilo_informatica(contenido, archivo_html, raiz_publica)
     contenido = _normalizar_sistema_editorial(contenido, archivo_html, raiz_publica)
+    contenido = _normalizar_crianza(contenido, archivo_html, raiz_publica)
 
     # Solo considera integrado el sistema si existe una etiqueta SCRIPT
     # real que cargue ciba-global.js. Los comentarios HTML no cuentan.
