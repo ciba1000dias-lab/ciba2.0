@@ -1,7 +1,7 @@
 {
   "id": "I2-02",
   "titulo": "Ocho señales para encender la alerta.",
-  "descripcion": "Ninguna señal aislada demuestra automáticamente que un contenido sea falso. Pero varias juntas indican que conviene detenerse y verificar.",
+  "descripcion": "Ocho señales para detectar publicaciones sanitarias engañosas y revisar mensajes, imágenes y vídeos antes de compartirlos.",
   "columna": "I",
   "area": "I2",
   "palabras_clave": [
@@ -16,7 +16,13 @@
     "aislada",
     "demuestra",
     "automaticamente",
-    "contenido"
+    "contenido",
+    "desinformacion",
+    "verificacion",
+    "fuentes",
+    "imagenes",
+    "videos",
+    "salud infantil"
   ],
   "estado": "publicado",
   "fecha_publicacion": "2026-11-20",
