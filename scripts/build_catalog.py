@@ -768,11 +768,11 @@ img, video {{ height: auto; }}
   }}
 }}
 </style>"""
-    cierre = re.search(r"</body\\s*>", contenido, flags=re.IGNORECASE)
+    cierre = re.search(r"</body\s*>", contenido, flags=re.IGNORECASE)
     if cierre:
         contenido = contenido[:cierre.start()] + estilos + "\\n" + contenido[cierre.start():]
     else:
-        contenido += "\\n" + estilos
+        contenido += "\n" + estilos
     return contenido
 
 
