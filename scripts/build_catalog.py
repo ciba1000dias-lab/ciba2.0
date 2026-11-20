@@ -666,6 +666,116 @@ nav.toc a,.article-nav a { color:#12364d !important; }
     return contenido
 
 
+def _normalizar_sistema_editorial(contenido: str, archivo_html: Path, raiz_publica: Path) -> str:
+    """Aplica el sistema tipográfico y los componentes comunes sin borrar la identidad cromática."""
+    try:
+        partes = archivo_html.relative_to(raiz_publica).parts
+    except ValueError:
+        return contenido
+    if len(partes) < 2 or partes[0].lower() not in ("c", "i", "b", "a") or partes[-1].lower() != "index.html":
+        return contenido
+    if "data-ciba-sistema-editorial" in contenido:
+        return contenido
+
+    paleta = _paleta_columna(partes[0])
+    estilos = f"""<style data-ciba-sistema-editorial>
+:root {{
+  --ciba-color-primario: {paleta['oscuro']};
+  --ciba-color-secundario: {paleta['medio']};
+  --ciba-color-acento: {paleta['acento']};
+  --ciba-color-fondo: {paleta['fondo']};
+  --ciba-color-papel: {paleta['papel']};
+  --ciba-color-texto: {paleta['tinta']};
+  --ciba-font-display: Georgia, "Times New Roman", serif;
+  --ciba-font-body: Arial, Helvetica, sans-serif;
+  --ciba-texto-base: 16px;
+  --ciba-linea-base: 1.75;
+}}
+body {{
+  font-family: var(--ciba-font-body);
+  font-size: var(--ciba-texto-base);
+  line-height: var(--ciba-linea-base);
+  -webkit-text-size-adjust: 100%;
+}}
+h1, h2, h3, h4 {{
+  font-family: var(--ciba-font-display);
+  line-height: 1.2;
+  text-wrap: balance;
+}}
+p, li {{ line-height: var(--ciba-linea-base); }}
+img, video, iframe, svg {{ max-width: 100%; }}
+img, video {{ height: auto; }}
+:where(button, input, select, textarea) {{ font: inherit; }}
+:where(button, a, input, select, textarea, summary) {{ -webkit-tap-highlight-color: transparent; }}
+:where(button, a, input, select, textarea, summary):focus-visible {{
+  outline: 3px solid var(--ciba-color-acento);
+  outline-offset: 3px;
+}}
+.ciba-estandar-kicker {{
+  color: var(--ciba-color-secundario);
+  font: 800 10px/1.4 var(--ciba-font-body);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}}
+.ciba-estandar-tarjeta {{
+  min-width: 0;
+  padding: clamp(18px, 3vw, 26px);
+  border: 1px solid color-mix(in srgb, var(--ciba-color-primario) 14%, transparent);
+  border-radius: 12px;
+  background: var(--ciba-color-papel);
+  color: var(--ciba-color-texto);
+  box-shadow: 0 8px 24px rgba(0,0,0,.055);
+}}
+.ciba-estandar-nota {{
+  padding: clamp(18px, 3vw, 26px);
+  border-left: 4px solid var(--ciba-color-acento);
+  background: var(--ciba-color-papel);
+  color: var(--ciba-color-texto);
+}}
+.ciba-estandar-boton {{
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--ciba-color-primario);
+  border-radius: 8px;
+  background: var(--ciba-color-primario);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}}
+.ciba-estandar-migas {{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font: 12px/1.5 var(--ciba-font-body);
+}}
+.ciba-estandar-migas a {{ color: var(--ciba-color-secundario); }}
+@media (max-width: 640px) {{
+  body {{ font-size: 16px; }}
+  :where(button, .ciba-estandar-boton) {{ min-height: 44px; }}
+  table {{ font-size: 14px; }}
+}}
+@media (prefers-reduced-motion: reduce) {{
+  *, *::before, *::after {{
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }}
+}}
+</style>"""
+    cierre = re.search(r"</body\s*>", contenido, flags=re.IGNORECASE)
+    if cierre:
+        contenido = contenido[:cierre.start()] + estilos + "\\n" + contenido[cierre.start():]
+    else:
+        contenido += "\n" + estilos
+    return contenido
+
+
 def _conectar_sistema_global(
     archivo_html: Path,
     raiz_publica: Path,
@@ -690,6 +800,7 @@ def _conectar_sistema_global(
     contenido = _asegurar_documento_responsivo(contenido)
     contenido = _normalizar_migas_y_metadatos(contenido, archivo_html, raiz_publica, catalogo)
     contenido = _normalizar_estilo_informatica(contenido, archivo_html, raiz_publica)
+    contenido = _normalizar_sistema_editorial(contenido, archivo_html, raiz_publica)
 
     # Solo considera integrado el sistema si existe una etiqueta SCRIPT
     # real que cargue ciba-global.js. Los comentarios HTML no cuentan.

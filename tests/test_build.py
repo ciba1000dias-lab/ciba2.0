@@ -356,5 +356,35 @@ class TestBuild(unittest.TestCase):
         self.assertIn("Crianza", portada)
 
 
+    def test_sistema_editorial_comun_respeta_paletas_de_las_cuatro_columnas(self) -> None:
+        raiz = self.tmp / "dist"
+        colores = {
+            "c": "#172b27",
+            "i": "#12364d",
+            "b": "#493a32",
+            "a": "#493a32",
+        }
+        for letra, color in colores.items():
+            pagina = raiz / letra / "AREA" / "index.html"
+            pagina.parent.mkdir(parents=True, exist_ok=True)
+            html = "<!doctype html><html><head></head><body><h1>Prueba</h1></body></html>"
+            normalizado = build_catalog._normalizar_sistema_editorial(html, pagina, raiz)
+            self.assertIn("data-ciba-sistema-editorial", normalizado)
+            self.assertIn(f"--ciba-color-primario: {color}", normalizado)
+            self.assertIn("--ciba-font-display: Georgia", normalizado)
+            self.assertIn("prefers-reduced-motion: reduce", normalizado)
+
+    def test_sistema_editorial_es_idempotente_y_no_afecta_paginas_externas(self) -> None:
+        raiz = self.tmp / "dist"
+        pagina = raiz / "i" / "I1" / "index.html"
+        pagina.parent.mkdir(parents=True, exist_ok=True)
+        html = "<html><body><h1>Prueba</h1></body></html>"
+        primero = build_catalog._normalizar_sistema_editorial(html, pagina, raiz)
+        segundo = build_catalog._normalizar_sistema_editorial(primero, pagina, raiz)
+        self.assertEqual(primero, segundo)
+        externa = raiz / "plataforma" / "index.html"
+        self.assertEqual(build_catalog._normalizar_sistema_editorial(html, externa, raiz), html)
+
+
 if __name__ == "__main__":
     unittest.main()
