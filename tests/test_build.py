@@ -386,5 +386,29 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(build_catalog._normalizar_sistema_editorial(html, externa, raiz), html)
 
 
+    def test_crianza_estandariza_paginas_interiores_y_conserva_contenido(self) -> None:
+        raiz = self.tmp / "dist"
+        articulo = raiz / "c" / "C3" / "C3-05" / "index.html"
+        articulo.parent.mkdir(parents=True)
+        html = '<!doctype html><html><head></head><body><article class="ciba-articulo"><h1>Contenido aprobado</h1><img src="foto.webp" alt="Foto"><div class="interactivo">Actividad</div></article></body></html>'
+        normalizado = build_catalog._normalizar_crianza(html, articulo, raiz)
+        self.assertIn("data-ciba-crianza-estandar", normalizado)
+        self.assertIn("--ciba-crianza-verde: #526e56", normalizado)
+        self.assertIn("Contenido aprobado", normalizado)
+        self.assertIn('src="foto.webp"', normalizado)
+        self.assertIn("Actividad", normalizado)
+        self.assertIn("prefers-reduced-motion: reduce", normalizado)
+
+    def test_crianza_estandar_es_idempotente_y_no_afecta_otras_columnas(self) -> None:
+        raiz = self.tmp / "dist"
+        pagina = raiz / "c" / "C1" / "index.html"
+        pagina.parent.mkdir(parents=True)
+        html = "<html><body><h1>Prueba</h1></body></html>"
+        primero = build_catalog._normalizar_crianza(html, pagina, raiz)
+        self.assertEqual(primero, build_catalog._normalizar_crianza(primero, pagina, raiz))
+        informatica = raiz / "i" / "I1" / "index.html"
+        self.assertEqual(build_catalog._normalizar_crianza(html, informatica, raiz), html)
+
+
 if __name__ == "__main__":
     unittest.main()
