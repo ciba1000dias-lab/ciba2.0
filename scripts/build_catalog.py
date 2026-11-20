@@ -597,14 +597,14 @@ def _normalizar_migas_y_metadatos(
 .ciba-migas-sep{{color:{paleta['medio']};opacity:.7}}
 .ciba-migas [aria-current="page"]{{font-weight:700}}
 </style>"""
-    cierre_head = re.search(r"</head\\s*>", contenido, re.IGNORECASE)
+    cierre_head = re.search(r"</head\s*>", contenido, re.IGNORECASE)
     if cierre_head:
         antes_head = contenido[:cierre_head.start()].rstrip()
-        contenido = antes_head + estilos + "\\n" + contenido[cierre_head.start():]
-    apertura_body = re.search(r"<body\\b[^>]*>", contenido, re.IGNORECASE)
+        contenido = antes_head + estilos + "\n" + contenido[cierre_head.start():]
+    apertura_body = re.search(r"<body\b[^>]*>", contenido, re.IGNORECASE)
     if apertura_body:
         despues_body = contenido[apertura_body.end():].lstrip()
-        contenido = contenido[:apertura_body.end()] + "\\n" + nav + "\\n" + despues_body
+        contenido = contenido[:apertura_body.end()] + "\n" + nav + "\n" + despues_body
     return contenido
 
 
