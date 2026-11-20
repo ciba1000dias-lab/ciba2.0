@@ -562,7 +562,7 @@ class TestBuild(unittest.TestCase):
             self.assertEqual(primero, segundo)
             self.assertNotIn("Ruta antigua", primero)
             self.assertNotIn("ruta-antigua", primero)
-            self.assertEqual(primero.count("data-ciba-migas"), 1)
+            self.assertEqual(primero.count("data-ciba-migas aria-label"), 1)
             self.assertEqual(primero.count("data-ciba-migas-style"), 1)
             self.assertIn("CIBA", primero)
             self.assertIn(nombre, primero)
