@@ -175,8 +175,8 @@
     let id = prefijo ? prefijo[1].toUpperCase() : '';
     if (!id) {
       const articulo = document.querySelector('.ciba-articulo');
-      const clase = articulo ? Array.from(articulo.classList).find(x => /^articulo-(crianza|internet|bienestar|acompanamiento)$/.test(x)) : '';
-      const equivalencias = { 'articulo-crianza':'C', 'articulo-internet':'I', 'articulo-bienestar':'B', 'articulo-acompanamiento':'A' };
+      const clase = articulo ? Array.from(articulo.classList).find(x => /^articulo-(crianza|informatica|internet|bienestar|acompanamiento)$/.test(x)) : '';
+      const equivalencias = { 'articulo-crianza':'C', 'articulo-informatica':'I', 'articulo-internet':'I', 'articulo-bienestar':'B', 'articulo-acompanamiento':'A' };
       id = equivalencias[clase] || '';
     }
     if (window.location.pathname.includes('/plataforma/')) return { id:'', titulo:'Plataforma' };
@@ -333,34 +333,6 @@
     function agregarEnlace(lista,ruta,titulo,clase='ciba-global-enlace ciba-global-subenlace') {
       if(!ruta) return;
       lista.appendChild(enlace(urlPublica(ruta),titulo,clase));
-    }
-
-    async function agregarApartadosDeSeccionInternet(lista, area) {
-      const ruta = 'i/' + area.id + '/';
-      try {
-        const respuesta = await fetch(urlPublica(ruta), { cache: 'no-cache' });
-        if (!respuesta.ok) throw new Error('No se pudo cargar ' + ruta);
-        const html = await respuesta.text();
-        const documento = new DOMParser().parseFromString(html, 'text/html');
-        const apartados = Array.from(documento.querySelectorAll('section.block[id]'))
-          .map(seccion => ({
-            id: seccion.id,
-            titulo: seccion.querySelector('h2')?.textContent?.trim() || ''
-          }))
-          .filter(apartado => apartado.id && apartado.titulo);
-
-        if (!apartados.length) {
-          agregarEnlace(lista, ruta, 'Abrir sección completa');
-          return;
-        }
-
-        apartados.forEach(apartado => {
-          agregarEnlace(lista, ruta + '#' + encodeURIComponent(apartado.id), apartado.titulo);
-        });
-      } catch (error) {
-        console.warn('CIBA: no se pudieron cargar los apartados de ' + area.id, error);
-        agregarEnlace(lista, ruta, 'Abrir sección completa');
-      }
     }
 
     async function construirNavegacionEditorial() {
@@ -616,7 +588,7 @@
             .sort(ordenarPaginas);
 
           if (columna.id === 'I') {
-            agregarApartadosDeSeccionInternet(grupoArea.lista, areaMenu);
+            agregarPaginasDeArea(grupoArea.lista, paginas);
           } else if (areaMenu.id === 'B4') {
             agregarPaginasNutricion(grupoArea.lista);
           } else if (areaMenu.id === 'B6') {

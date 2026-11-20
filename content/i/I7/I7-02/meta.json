@@ -1,0 +1,26 @@
+{
+  "id": "I7-02",
+  "titulo": "Registrar no es diagnosticar.",
+  "descripcion": "Las aplicaciones pueden ayudar a conservar fechas, medidas y observaciones para comentarlas en la consulta. Sin embargo, una cifra aislada de peso o talla no permite concluir si un niño está sano, desnutrido o creciendo adecuadamente.",
+  "columna": "I",
+  "area": "I7",
+  "palabras_clave": [
+    "informatica",
+    "i7",
+    "registrar",
+    "diagnosticar",
+    "aplicaciones",
+    "ayudar",
+    "conservar",
+    "fechas",
+    "medidas",
+    "observaciones",
+    "comentarlas",
+    "consulta"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-20",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "subseccion": "Artículos de I7"
+}

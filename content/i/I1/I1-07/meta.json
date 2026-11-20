@@ -1,0 +1,26 @@
+{
+  "id": "I1-07",
+  "titulo": "Tu lista de comprobación familiar.",
+  "descripcion": "Marca cada paso cuando evalúes una información sanitaria. La barra muestra tu progreso en esta actividad; no representa una puntuación clínica.",
+  "columna": "I",
+  "area": "I1",
+  "palabras_clave": [
+    "informatica",
+    "i1",
+    "lista",
+    "comprobacion",
+    "familiar",
+    "marca",
+    "cada",
+    "paso",
+    "evalues",
+    "informacion",
+    "sanitaria",
+    "barra"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-20",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "subseccion": "Artículos de I1"
+}

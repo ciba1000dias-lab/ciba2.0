@@ -66,4 +66,4 @@ Los siete alimentos que todavía no tienen imagen no impiden cumplir el umbral d
 
 ## Aplicación transversal
 
-Este estándar se aplicará progresivamente a Crianza, Internet, Bienestar y Acompañamiento, así como a los espacios transversales de la Plataforma cuando tengan contenidos susceptibles de estos recursos. En cada temática se hará un inventario propio y se corregirán primero los incumplimientos de los umbrales mínimos.
+Este estándar se aplicará progresivamente a Crianza, Informática, Bienestar y Acompañamiento, así como a los espacios transversales de la Plataforma cuando tengan contenidos susceptibles de estos recursos. En cada temática se hará un inventario propio y se corregirán primero los incumplimientos de los umbrales mínimos.

@@ -1,0 +1,26 @@
+{
+  "id": "I1-05",
+  "titulo": "La salud también necesita privacidad.",
+  "descripcion": "Los datos de salud son información especialmente delicada. Una fotografía de un informe, una receta, un resultado de laboratorio o una imagen donde se identifica a un niño puede revelar mucho más de lo que parece.",
+  "columna": "I",
+  "area": "I1",
+  "palabras_clave": [
+    "informatica",
+    "i1",
+    "salud",
+    "necesita",
+    "privacidad",
+    "datos",
+    "informacion",
+    "especialmente",
+    "delicada",
+    "fotografia",
+    "informe",
+    "receta"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-20",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "subseccion": "Artículos de I1"
+}

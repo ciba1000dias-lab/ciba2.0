@@ -1,0 +1,26 @@
+{
+  "id": "I10-03",
+  "titulo": "Tu identidad digital merece el mismo cuidado que la física.",
+  "descripcion": "La identidad digital se construye con datos, perfiles, credenciales, imágenes, publicaciones y registros vinculados a servicios digitales. No todo lo que aparece sobre una persona lo publicó ella misma, y parte de la información compartida puede ser difícil de recuperar o borrar.",
+  "columna": "I",
+  "area": "I10",
+  "palabras_clave": [
+    "informatica",
+    "i10",
+    "identidad",
+    "digital",
+    "merece",
+    "mismo",
+    "cuidado",
+    "fisica",
+    "construye",
+    "datos",
+    "perfiles",
+    "credenciales"
+  ],
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-20",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "subseccion": "Artículos de I10"
+}
