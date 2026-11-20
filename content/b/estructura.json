@@ -480,8 +480,9 @@
               "id": "B5-01-03",
               "titulo": "Reacciones posteriores a la vacunación y cuándo consultar",
               "ruta": "/b/B5/B5-01/B5-01-03/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true,
+              "vista_previa_publica": false
             }
           ]
         },
