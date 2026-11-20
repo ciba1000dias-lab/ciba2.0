@@ -44,6 +44,25 @@ jobs:
       - name: Construir sitio
         run: python scripts/build_catalog.py --src content --out dist
 
+      - name: Incorporar el tríptico original de vacunación de Cuba
+        run: |
+          mkdir -p dist/assets/descargables
+          curl --fail --location --retry 3 --retry-delay 3 \
+            "https://anondrop.io/whl3b5ct674x3646ibsa/Tr%C3%ADptico%20de%20vacunaci%C3%B3n%20de%20Cuba.pdf?download=true" \
+            --output dist/assets/descargables/triptico-vacunacion-cuba.pdf
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          p = Path("dist/assets/descargables/triptico-vacunacion-cuba.pdf")
+          data = p.read_bytes()
+          digest = hashlib.sha256(data).hexdigest()
+          expected = "455fc281fc17cc5d16cdc269917ab92bb47d600790285a494e429a4e0bce5397"
+          assert len(data) == 8640272, f"Tamaño inesperado: {len(data)} bytes"
+          assert data[:5] == b"%PDF-", "El archivo descargado no es un PDF"
+          assert digest == expected, f"El PDF no coincide con el original: {digest}"
+          print(f"Tríptico original verificado: {len(data):,} bytes · SHA-256 {digest}")
+          PY
+
       - name: Restaurar podcasts CIBA C4-10, C4-11 y C4-12
         id: podcast-cache
         uses: actions/cache@v4
