@@ -446,8 +446,25 @@
           grupos.get(nombre).push(pagina);
         });
 
+        const nombresSubseccionB = {
+          'B5-01': 'Vacunación infantil',
+          'B5-02': 'Vacunación materna',
+          'B5-03': 'Puericultura y seguimiento preventivo',
+          'B5-04': 'Prevención de infecciones',
+          'B5-05': 'Prevención clínica según la edad'
+        };
+
         grupos.forEach((items, nombre) => {
-          if (grupos.size > 1) {
+          // En BIENESTAR, las subsecciones se conservan visibles aunque
+          // solo tengan un artículo publicado. El código interno nunca
+          // sustituye al título editorial de la subsección.
+          if (paginas.some(pagina => pagina.area === 'B5') && nombresSubseccionB[nombre]) {
+            const subgrupo = crearDesplegable(nombresSubseccionB[nombre], 'ciba-global-subarea');
+            items.forEach(pagina => {
+              agregarEnlace(subgrupo.lista, pagina.ruta_publica, pagina.titulo);
+            });
+            lista.appendChild(subgrupo.grupo);
+          } else if (grupos.size > 1) {
             const subgrupo = crearDesplegable(nombre, 'ciba-global-subarea');
             items.forEach(pagina => {
               agregarEnlace(subgrupo.lista, pagina.ruta_publica, pagina.titulo);
