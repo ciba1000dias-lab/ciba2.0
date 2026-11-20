@@ -1182,11 +1182,11 @@ table { max-width: 100%; border-collapse: collapse; }
   }
 }
 </style>"""
-    cierre = re.search(r"</body\\s*>", contenido, flags=re.IGNORECASE)
+    cierre = re.search(r"</body\s*>", contenido, flags=re.IGNORECASE)
     if cierre:
-        contenido = contenido[:cierre.start()] + estilos + "\\n" + contenido[cierre.start():]
+        contenido = contenido[:cierre.start()] + estilos + "\n" + contenido[cierre.start():]
     else:
-        contenido += "\\n" + estilos
+        contenido += "\n" + estilos
     return contenido
 
 def _conectar_sistema_global(
