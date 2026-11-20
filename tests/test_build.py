@@ -327,6 +327,37 @@ class TestBuild(unittest.TestCase):
             contenido,
         )
 
+    def test_informatica_normaliza_area_y_articulo_sin_perder_recursos(self) -> None:
+        raiz = self.tmp / "dist"
+        contenido = (
+            '<!doctype html><html><head></head><body>'
+            '<header class="hero"><h1>Contenido aprobado</h1></header>'
+            '<figure><svg viewBox="0 0 10 10"><circle cx="5" cy="5" r="4"/></svg></figure>'
+            '<audio controls src="voz.mp3"></audio>'
+            '<div class="interactive">Actividad interactiva</div>'
+            '</body></html>'
+        )
+        for ruta in ("i/I3/index.html", "i/I3/I3-02/index.html"):
+            pagina = raiz / ruta
+            pagina.parent.mkdir(parents=True, exist_ok=True)
+            normalizado = build_catalog._normalizar_estilo_informatica(contenido, pagina, raiz)
+            self.assertIn("data-ciba-informatica-unificacion", normalizado)
+            self.assertIn("linear-gradient(120deg,#12364d 0%,#174f70 58%,#206b88 100%)", normalizado)
+            self.assertIn("Contenido aprobado", normalizado)
+            self.assertIn('src="voz.mp3"', normalizado)
+            self.assertIn("Actividad interactiva", normalizado)
+            self.assertIn("<svg", normalizado)
+            self.assertEqual(
+                normalizado,
+                build_catalog._normalizar_estilo_informatica(normalizado, pagina, raiz),
+            )
+
+        externa = raiz / "c/C1/C1-01/index.html"
+        self.assertEqual(
+            build_catalog._normalizar_estilo_informatica(contenido, externa, raiz),
+            contenido,
+        )
+
     def test_normaliza_migas_y_metadatos_de_articulos(self) -> None:
         añadir_area(self.content, "c", "C1")
         area = self.content / "c" / "C1"
