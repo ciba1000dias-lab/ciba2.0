@@ -975,7 +975,7 @@ def _normalizar_bienestar(contenido: str, archivo_html: Path, raiz_publica: Path
         partes = archivo_html.relative_to(raiz_publica).parts
     except ValueError:
         return contenido
-    if len(partes) < 2 or partes[0].lower() != "b" or partes[-1].lower() != "index.html":
+    if len(partes) < 3 or partes[0].lower() != "b" or partes[-1].lower() != "index.html":
         return contenido
     if "data-ciba-bienestar-estandar" in contenido:
         return contenido
