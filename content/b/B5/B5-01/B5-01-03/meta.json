@@ -1,0 +1,45 @@
+{
+  "id": "B5-01-03",
+  "titulo": "Reacciones posteriores a la vacunación y cuándo consultar",
+  "descripcion": "Guía para familias sobre reacciones habituales después de vacunar, cuidados en casa, señales de alarma, contraindicaciones y vigilancia de ESAVI.",
+  "columna": "B",
+  "area": "B5",
+  "subseccion": "B5-01",
+  "palabras_clave": [
+    "reacciones-vacunas",
+    "efectos-posteriores-vacunacion",
+    "ESAVI",
+    "seguridad-vacunas",
+    "fiebre-despues-vacuna",
+    "anafilaxia",
+    "contraindicaciones-vacunas",
+    "vacunacion-infantil-cuba"
+  ],
+  "estado": "revision",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": true,
+  "preview_publica": true,
+  "fecha_publicacion": "2026-11-19",
+  "enlaces_externos": [
+    {
+      "titulo": "OPS: Seguridad de vacunas",
+      "url": "https://www.paho.org/es/temas/seguridad-vacunas",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "OMS: Seguridad de las vacunas",
+      "url": "https://www.who.int/es/news-room/questions-and-answers/item/vaccines-and-immunization-vaccine-safety",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "OPS: Preguntas frecuentes sobre vacunación",
+      "url": "https://www.paho.org/es/temas/inmunizacion/preguntas-frecuentes-sobre-vacunacion",
+      "tipo": "referencia"
+    },
+    {
+      "titulo": "UNICEF Cuba: Vacunas para mantener la sonrisa",
+      "url": "https://www.unicef.org/cuba/historias/vacunas-para-mantener-la-sonrisa",
+      "tipo": "referencia"
+    }
+  ]
+}
