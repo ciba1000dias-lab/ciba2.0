@@ -58,6 +58,9 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(construir(self.content, self.out), 0)
         cat = self._leer_catalogo()
         self.assertEqual([a["id"] for a in cat["areas"]], ["C1"])
+        area_generada = self.out / "c" / "C1" / "index.html"
+        self.assertTrue(area_generada.is_file())
+        self.assertIn("Este espacio forma parte de CIBA", area_generada.read_text(encoding="utf-8"))
 
     def test_area_con_varias_paginas_no_duplicada(self) -> None:
         añadir_area(self.content, "c", "C1")

@@ -516,7 +516,7 @@ def _normalizar_migas_y_metadatos(
     titulo = str(registro.get("titulo", columna.get("titulo", "CIBA"))).strip()
     descripcion = str(registro.get("descripcion", columna.get("descripcion", ""))).strip()
     nombre_columna = str(columna.get("titulo", paleta["nombre"])).strip()
-    titulo_html = html_escape(f"{titulo} | {nombre_columna} · CIBA")
+    titulo_html = html_escape(f"{titulo} | CIBA" if nivel == "columna" else f"{titulo} | {nombre_columna} · CIBA")
     descripcion_html = html_escape(descripcion, quote=True)
     color_html = html_escape(paleta["oscuro"], quote=True)
 
@@ -708,6 +708,50 @@ def _paleta_columna(letra: str) -> dict[str, str]:
         "b": {"nombre": "BIENESTAR", "oscuro": "#493a32", "medio": "#8c671f", "acento": "#d9b878", "fondo": "#f7f2e8", "papel": "#fffcf5", "tinta": "#493a32"},
         "a": {"nombre": "ACOMPAÑAMIENTO", "oscuro": "#493a32", "medio": "#a9443b", "acento": "#e3b28b", "fondo": "#f7f2e8", "papel": "#fffcf5", "tinta": "#493a32"},
     }.get(letra.lower(), {"nombre": "CIBA", "oscuro": "#172b27", "medio": "#526e56", "acento": "#d9b878", "fondo": "#f5f0e5", "papel": "#fffdf7", "tinta": "#29332d"})
+
+
+
+
+def _generar_indice_area(
+    tmp: Path,
+    letra: str,
+    datos: dict,
+) -> list[ValidationError]:
+    """Genera una página de área coherente cuando existe metadata pero falta index.html."""
+    errores: list[ValidationError] = []
+    id_area = str(datos.get("id", ""))
+    destino = tmp / letra.lower() / id_area
+    destino.mkdir(parents=True, exist_ok=True)
+    paleta = _paleta_columna(letra)
+    titulo = html_escape(str(datos.get("titulo", id_area)))
+    descripcion = html_escape(str(datos.get("descripcion", "")), quote=True)
+    columna_href = os.path.relpath(tmp / letra.lower() / "index.html", destino).replace(os.sep, "/")
+    html = f"""<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="{paleta['oscuro']}"><meta name="description" content="{descripcion}">
+<title>{titulo} | {paleta['nombre']} · CIBA</title>
+<style>
+:root{{--oscuro:{paleta['oscuro']};--medio:{paleta['medio']};--acento:{paleta['acento']};--fondo:{paleta['fondo']};--papel:{paleta['papel']};--tinta:{paleta['tinta']}}}
+*{{box-sizing:border-box}}body{{margin:0;background:var(--fondo);color:var(--tinta);font-family:Arial,Helvetica,sans-serif}}
+.wrap{{width:min(1040px,calc(100% - 36px));margin:auto}}
+.hero{{padding:clamp(48px,8vw,82px) 0 58px;color:#fff;background:linear-gradient(120deg,var(--oscuro),var(--medio));border-bottom:4px solid var(--acento)}}
+.kicker{{color:var(--acento);font-size:10px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}}
+h1{{max-width:850px;margin:20px 0 14px;font:400 clamp(36px,6vw,62px)/1.08 Georgia,serif}}
+.intro{{max-width:760px;color:#ffffffdf;font-size:15px;line-height:1.85}}
+main{{padding:42px 0 72px}}.nota{{padding:28px;border-left:3px solid var(--acento);background:var(--papel);line-height:1.8;box-shadow:0 10px 28px #00000008}}
+.nota h2{{margin:0 0 10px;color:var(--oscuro);font:400 26px Georgia,serif}}
+.nota p{{margin:0;color:#68736e;font-size:14px}}
+footer{{padding:24px 0;background:var(--oscuro);color:#ffffffd6;font-size:11px}}footer a{{color:var(--acento);text-decoration:none}}
+</style></head><body>
+<header class="hero"><div class="wrap"><div class="kicker">ÁREA TEMÁTICA · {html_escape(id_area)}</div><h1>{titulo}</h1><p class="intro">{descripcion}</p></div></header>
+<main class="wrap"><section class="nota"><h2>Este espacio forma parte de CIBA</h2><p>La estructura temática ya está disponible. Los artículos y recursos propios de esta área se incorporarán cuando estén preparados y aprobados para su difusión.</p></section></main>
+<footer><div class="wrap">CIBA · Crecemos acompañándonos · <a href="{html_escape(columna_href, quote=True)}">Volver a {paleta['nombre']}</a></div></footer>
+</body></html>"""
+    try:
+        (destino / "index.html").write_text(html, encoding="utf-8")
+    except OSError as exc:
+        errores.append(ValidationError(f"{letra}/{id_area}", "índice de área", f"no se pudo generar: {exc}"))
+    return errores
 
 
 def _generar_indice_subseccion(
@@ -919,6 +963,8 @@ def _construir_en_tmp(
                 rel_area,
             )
             errores.extend(errs_copia_area)
+        else:
+            errores.extend(_generar_indice_area(tmp, letra.lower(), area_meta.datos))
 
         areas_registradas.append(
             {
