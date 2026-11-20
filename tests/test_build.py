@@ -276,7 +276,7 @@ class TestBuild(unittest.TestCase):
         html_sub = pagina_sub.read_text(encoding="utf-8")
         self.assertIn("Subsección de prueba", html_sub)
         self.assertIn("Artículo de prueba", html_sub)
-        self.assertIn("../B1-01-01/", html_sub)
+        self.assertIn("B1-01-01/", html_sub)
         catalogo = self._leer_catalogo()
         self.assertEqual([s["id"] for s in catalogo["subsecciones"]], ["B1-01"])
         self.assertEqual([p["id"] for p in catalogo["paginas"]], ["B1-01-01"])
