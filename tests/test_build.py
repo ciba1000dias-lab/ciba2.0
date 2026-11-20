@@ -441,5 +441,49 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(build_catalog._normalizar_crianza(html, informatica, raiz), html)
 
 
+    def test_bienestar_estandariza_portadas_interiores_y_conserva_recursos(self) -> None:
+        raiz = self.tmp / "dist"
+        html = (
+            '<!doctype html><html><head></head><body>'
+            '<header class="hero"><h1>Contenido aprobado</h1></header>'
+            '<img src="foto.webp" alt="Imagen aprobada">'
+            '<audio controls src="voz.mp3"></audio>'
+            '<video controls src="video.mp4"></video>'
+            '<iframe src="recurso.html"></iframe>'
+            '<div class="interactivo">Actividad interactiva</div>'
+            '</body></html>'
+        )
+        for ruta in ("b/B4/index.html", "b/B4/B4-03/index.html",
+                     "b/B4/B4-03/B4-03-01/index.html"):
+            pagina = raiz / ruta
+            pagina.parent.mkdir(parents=True, exist_ok=True)
+            normalizado = build_catalog._normalizar_bienestar(html, pagina, raiz)
+            self.assertIn("data-ciba-bienestar-estandar", normalizado)
+            self.assertIn("--ciba-bienestar-oro: #8C671F", normalizado)
+            self.assertIn("linear-gradient(120deg, #634916 0%, #8C671F 58%, #B58B3A 100%)", normalizado)
+            self.assertIn('src="foto.webp"', normalizado)
+            self.assertIn('src="voz.mp3"', normalizado)
+            self.assertIn('src="video.mp4"', normalizado)
+            self.assertIn('src="recurso.html"', normalizado)
+            self.assertIn("Actividad interactiva", normalizado)
+            self.assertIn("prefers-reduced-motion: reduce", normalizado)
+            self.assertIn("</style>", normalizado)
+            self.assertIn("</body>", normalizado)
+
+    def test_bienestar_es_idempotente_y_no_afecta_otras_columnas_ni_portada(self) -> None:
+        raiz = self.tmp / "dist"
+        pagina = raiz / "b" / "B1" / "index.html"
+        pagina.parent.mkdir(parents=True, exist_ok=True)
+        html = "<html><body><h1>Prueba</h1></body></html>"
+        primero = build_catalog._normalizar_bienestar(html, pagina, raiz)
+        self.assertEqual(primero, build_catalog._normalizar_bienestar(primero, pagina, raiz))
+        portada = raiz / "b" / "index.html"
+        self.assertEqual(build_catalog._normalizar_bienestar(html, portada, raiz), html)
+        crianza = raiz / "c" / "C1" / "index.html"
+        self.assertEqual(build_catalog._normalizar_bienestar(html, crianza, raiz), html)
+        informatica = raiz / "i" / "I1" / "index.html"
+        self.assertEqual(build_catalog._normalizar_bienestar(html, informatica, raiz), html)
+
+
 if __name__ == "__main__":
     unittest.main()
