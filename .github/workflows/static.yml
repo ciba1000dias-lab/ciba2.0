@@ -103,6 +103,13 @@ jobs:
       - name: Preparar imágenes locales de la biblioteca
         run: python scripts/optimize_alimento_images.py --src dist
 
+      - name: Auditar enlaces internos del sitio generado (diagnóstico inicial)
+        run: >-
+          python scripts/audit_internal_links.py
+          --root dist
+          --base-url https://ciba1000dias-lab.github.io/ciba2.0/
+          --json-out /tmp/ciba-internal-links-audit.json
+
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
 
