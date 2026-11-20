@@ -485,5 +485,49 @@ class TestBuild(unittest.TestCase):
         self.assertEqual(build_catalog._normalizar_bienestar(html, informatica, raiz), html)
 
 
+    def test_acompanamiento_estandariza_area_subseccion_y_articulo_conservando_recursos(self) -> None:
+        raiz = self.tmp / "dist"
+        html = (
+            '<!doctype html><html><head></head><body>'
+            '<header class="hero"><h1>Contenido aprobado</h1></header>'
+            '<img src="foto.webp" alt="Imagen aprobada">'
+            '<audio controls src="voz.mp3"></audio>'
+            '<video controls src="video.mp4"></video>'
+            '<iframe src="recurso.html"></iframe>'
+            '<div class="interactivo">Actividad interactiva</div>'
+            '</body></html>'
+        )
+        for ruta in ("a/A1/index.html", "a/A1/A1-01/index.html",
+                     "a/A1/A1-01/A1-01-01/index.html"):
+            pagina = raiz / ruta
+            pagina.parent.mkdir(parents=True, exist_ok=True)
+            normalizado = build_catalog._normalizar_acompanamiento(html, pagina, raiz)
+            self.assertIn("data-ciba-acompanamiento-estandar", normalizado)
+            self.assertIn("--ciba-acompanamiento-rojo: #A9443B", normalizado)
+            self.assertIn("linear-gradient(120deg, #493A32 0%, #77352F 58%, #A9443B 100%)", normalizado)
+            self.assertIn('src="foto.webp"', normalizado)
+            self.assertIn('src="voz.mp3"', normalizado)
+            self.assertIn('src="video.mp4"', normalizado)
+            self.assertIn('src="recurso.html"', normalizado)
+            self.assertIn("Actividad interactiva", normalizado)
+            self.assertIn("prefers-reduced-motion: reduce", normalizado)
+
+    def test_acompanamiento_es_idempotente_y_no_afecta_portada_ni_otras_columnas(self) -> None:
+        raiz = self.tmp / "dist"
+        pagina = raiz / "a" / "A1" / "index.html"
+        pagina.parent.mkdir(parents=True, exist_ok=True)
+        html = "<html><body><h1>Prueba</h1></body></html>"
+        primero = build_catalog._normalizar_acompanamiento(html, pagina, raiz)
+        self.assertEqual(primero, build_catalog._normalizar_acompanamiento(primero, pagina, raiz))
+        portada = raiz / "a" / "index.html"
+        self.assertEqual(build_catalog._normalizar_acompanamiento(html, portada, raiz), html)
+        crianza = raiz / "c" / "C1" / "index.html"
+        self.assertEqual(build_catalog._normalizar_acompanamiento(html, crianza, raiz), html)
+        informatica = raiz / "i" / "I1" / "index.html"
+        self.assertEqual(build_catalog._normalizar_acompanamiento(html, informatica, raiz), html)
+        bienestar = raiz / "b" / "B1" / "index.html"
+        self.assertEqual(build_catalog._normalizar_acompanamiento(html, bienestar, raiz), html)
+
+
 if __name__ == "__main__":
     unittest.main()
