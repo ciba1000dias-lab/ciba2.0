@@ -308,5 +308,34 @@ class TestBuild(unittest.TestCase):
         )
 
 
+    def test_normaliza_migas_y_metadatos_de_articulos(self) -> None:
+        añadir_area(self.content, "c", "C1")
+        area = self.content / "c" / "C1"
+        (area / "index.html").write_text("<html><body>" + ("a" * 250) + "</body></html>", encoding="utf-8")
+        articulo = añadir_pagina(self.content, "c", "C1", "C1-01")
+        (self.tmp / "index.html").write_text("<!doctype html><html><body>CIBA</body></html>", encoding="utf-8")
+        css = self.tmp / "assets" / "css" / "ciba-global.css"
+        js = self.tmp / "assets" / "js" / "ciba-global.js"
+        css.parent.mkdir(parents=True, exist_ok=True)
+        js.parent.mkdir(parents=True, exist_ok=True)
+        css.write_text("/* CSS global de prueba */", encoding="utf-8")
+        js.write_text('/* ciba-global.css?v=20261112-08 */', encoding="utf-8")
+
+        self.assertEqual(construir(self.content, self.out), 0)
+        pagina = self.out / "c" / "C1" / "C1-01" / "index.html"
+        html = pagina.read_text(encoding="utf-8")
+        self.assertIn("<title>Página C1-01 | Crianza · CIBA</title>", html)
+        self.assertIn('name="description" content="Descripción de página de prueba suficientemente larga."', html)
+        self.assertIn('data-ciba-migas', html)
+        self.assertIn("Página C1-01", html)
+        self.assertIn('href="../../../index.html"', html)
+        self.assertIn('href="../../index.html"', html)
+        self.assertIn('href="../index.html"', html)
+        self.assertIn("ciba-global.js?v=20261119-01", html)
+        portada = (self.out / "c" / "index.html").read_text(encoding="utf-8")
+        self.assertIn('data-ciba-migas', portada)
+        self.assertIn("Crianza", portada)
+
+
 if __name__ == "__main__":
     unittest.main()

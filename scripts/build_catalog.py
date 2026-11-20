@@ -470,9 +470,138 @@ def _asegurar_documento_responsivo(contenido: str) -> str:
     return contenido
 
 
+
+
+def _normalizar_migas_y_metadatos(
+    contenido: str,
+    archivo_html: Path,
+    raiz_publica: Path,
+    catalogo: dict | None,
+) -> str:
+    """Unifica SEO y ruta de navegación sin modificar el cuerpo editorial."""
+    if not isinstance(catalogo, dict):
+        return contenido
+    try:
+        partes = archivo_html.relative_to(raiz_publica).parts
+    except ValueError:
+        return contenido
+    if len(partes) < 2 or partes[0] not in ("c", "i", "b", "a") or partes[-1] != "index.html":
+        return contenido
+
+    letra = partes[0]
+    ruta = "/".join(partes[:-1]) + "/"
+    columnas = catalogo.get("columnas", [])
+    areas = catalogo.get("areas", [])
+    subsecciones = catalogo.get("subsecciones", [])
+    paginas = catalogo.get("paginas", [])
+    columna = next((x for x in columnas if str(x.get("id", "")).lower() == letra), None)
+    if not columna:
+        return contenido
+
+    area = next((x for x in areas if x.get("ruta_publica") == f"{letra}/{partes[1]}/"), None) if len(partes) >= 3 else None
+    subseccion = next((x for x in subsecciones if x.get("ruta_publica") == ruta), None)
+    pagina = next((x for x in paginas if x.get("ruta_publica") == ruta), None)
+    if ruta == f"{letra}/":
+        nivel, registro = "columna", columna
+    elif area and ruta == area.get("ruta_publica"):
+        nivel, registro = "seccion", area
+    elif subseccion:
+        nivel, registro = "subseccion", subseccion
+    elif pagina:
+        nivel, registro = "articulo", pagina
+    else:
+        return contenido
+
+    paleta = _paleta_columna(letra)
+    titulo = str(registro.get("titulo", columna.get("titulo", "CIBA"))).strip()
+    descripcion = str(registro.get("descripcion", columna.get("descripcion", ""))).strip()
+    nombre_columna = str(columna.get("titulo", paleta["nombre"])).strip()
+    titulo_html = html_escape(f"{titulo} | {nombre_columna} · CIBA")
+    descripcion_html = html_escape(descripcion, quote=True)
+    color_html = html_escape(paleta["oscuro"], quote=True)
+
+    def reemplazar_meta(nombre: str, etiqueta: str) -> None:
+        nonlocal contenido
+        patron = re.compile(
+            rf"<meta\b(?=[^>]*\bname\s*=\s*['\"]{re.escape(nombre)}['\"])[^>]*>",
+            re.IGNORECASE,
+        )
+        if patron.search(contenido):
+            contenido = patron.sub(etiqueta, contenido, count=1)
+        else:
+            cierre = re.search(r"</head\s*>", contenido, re.IGNORECASE)
+            if cierre:
+                contenido = contenido[:cierre.start()] + etiqueta + "\n" + contenido[cierre.start():]
+
+    patron_title = re.compile(r"<title\b[^>]*>[\s\S]*?</title\s*>", re.IGNORECASE)
+    if patron_title.search(contenido):
+        contenido = patron_title.sub(f"<title>{titulo_html}</title>", contenido, count=1)
+    else:
+        cierre = re.search(r"</head\s*>", contenido, re.IGNORECASE)
+        if cierre:
+            contenido = contenido[:cierre.start()] + f"<title>{titulo_html}</title>\n" + contenido[cierre.start():]
+    reemplazar_meta("description", f'<meta name="description" content="{descripcion_html}">')
+    reemplazar_meta("theme-color", f'<meta name="theme-color" content="{color_html}">')
+
+    tiene_migas = re.search(
+        r'class\s*=\s*["\'][^"\']*(?:breadcrumb|ciba-migas|migas|ruta-navegacion)',
+        contenido,
+        re.IGNORECASE,
+    )
+    if tiene_migas:
+        return contenido
+
+    items: list[tuple[str, str | None]] = [("CIBA", "index.html")]
+    if nivel == "columna":
+        items.append((titulo, None))
+    else:
+        items.append((nombre_columna, f"{letra}/index.html"))
+    if nivel in ("seccion", "subseccion", "articulo") and area:
+        items.append((str(area.get("titulo", area.get("id", "Sección"))), f"{area['ruta_publica']}index.html"))
+    if nivel == "articulo":
+        padres = [
+            x for x in subsecciones
+            if str(pagina.get("ruta_publica", "")).startswith(str(x.get("ruta_publica", "")))
+        ]
+        if padres:
+            padre = max(padres, key=lambda x: len(str(x.get("ruta_publica", ""))))
+            items.append((str(padre.get("titulo", padre.get("id", "Subsección"))), f"{padre['ruta_publica']}index.html"))
+    if nivel != "columna":
+        items.append((titulo, None))
+
+    enlaces: list[str] = []
+    for etiqueta, destino in items:
+        if destino is None:
+            enlaces.append('<span aria-current="page">' + html_escape(etiqueta) + '</span>')
+        else:
+            href = os.path.relpath(raiz_publica / destino, archivo_html.parent).replace(os.sep, "/")
+            enlaces.append('<a href="' + html_escape(href, quote=True) + '">' + html_escape(etiqueta) + '</a>')
+    nav = (
+        '<nav class="ciba-migas" data-ciba-migas aria-label="Ruta de navegación">'
+        + '<span class="ciba-migas-lista">' + '<span class="ciba-migas-sep">›</span>'.join(enlaces) + '</span>'
+        + '</nav>'
+    )
+    estilos = f"""<style data-ciba-migas-style>
+.ciba-migas{{position:relative;z-index:4;padding:11px max(18px,calc((100% - 1120px)/2));background:{paleta['fondo']};border-bottom:1px solid #00000012;color:{paleta['tinta']};font:11px/1.5 Arial,Helvetica,sans-serif}}
+.ciba-migas-lista{{display:flex;align-items:center;flex-wrap:wrap;gap:8px}}
+.ciba-migas a{{color:{paleta['medio']};font-weight:700;text-decoration:none}}
+.ciba-migas a:hover{{text-decoration:underline}}
+.ciba-migas-sep{{color:{paleta['medio']};opacity:.7}}
+.ciba-migas [aria-current="page"]{{font-weight:700}}
+</style>"""
+    cierre_head = re.search(r"</head\s*>", contenido, re.IGNORECASE)
+    if cierre_head:
+        contenido = contenido[:cierre_head.start()] + estilos + "\n" + contenido[cierre_head.start():]
+    apertura_body = re.search(r"<body\b[^>]*>", contenido, re.IGNORECASE)
+    if apertura_body:
+        contenido = contenido[:apertura_body.end()] + "\n" + nav + "\n" + contenido[apertura_body.end():]
+    return contenido
+
+
 def _conectar_sistema_global(
     archivo_html: Path,
     raiz_publica: Path,
+    catalogo: dict | None = None,
 ) -> list[ValidationError]:
     """Prepara el documento móvil y añade el módulo global a una página pública."""
     errores: list[ValidationError] = []
@@ -491,6 +620,7 @@ def _conectar_sistema_global(
 
     # Preparar primero la estructura HTML y la configuración para móviles.
     contenido = _asegurar_documento_responsivo(contenido)
+    contenido = _normalizar_migas_y_metadatos(contenido, archivo_html, raiz_publica, catalogo)
 
     # Solo considera integrado el sistema si existe una etiqueta SCRIPT
     # real que cargue ciba-global.js. Los comentarios HTML no cuentan.
@@ -969,11 +1099,13 @@ def _construir_en_tmp(
         # Incorporar el menú, el buscador y la configuración móvil
         # a todas las páginas generadas, incluida la portada.
         paginas_html = sorted(tmp.rglob("index.html"))
+        catalogo_global = _leer_json(tmp / "data" / "catalogo.json")
 
         for archivo_html in paginas_html:
             errs_global = _conectar_sistema_global(
                 archivo_html,
                 tmp,
+                catalogo_global,
             )
             errores.extend(errs_global)
 
