@@ -558,6 +558,12 @@
         lista.appendChild(grupo.grupo);
       }
 
+      function agregarPaginasVigilanciaDesarrollo(lista) {
+        const grupo = crearDesplegable('Vigilancia del desarrollo', 'ciba-global-subarea');
+        agregarEnlace(grupo.lista, 'b/B6/B6-02/B6-02-01/', 'Hitos del desarrollo: cómo interpretarlos sin comparaciones · Vista previa pública · En revisión editorial');
+        lista.appendChild(grupo.grupo);
+      }
+
       // RECURSOS DESTACADOS: accesos transversales disponibles desde cualquier página.
       const tituloRecursos = elemento('h2','ciba-global-menu-titulo ciba-global-menu-separador','RECURSOS DESTACADOS');
       const grupoRecursos = crearDesplegable('Herramientas y espacios útiles','ciba-global-recursos');
@@ -615,6 +621,7 @@
             agregarPaginasNutricion(grupoArea.lista);
           } else if (areaMenu.id === 'B6') {
             agregarPaginasCrecimiento(grupoArea.lista);
+            agregarPaginasVigilanciaDesarrollo(grupoArea.lista);
           } else if (areaMenu.id === 'C1-ALIMENTACION') {
             agregarPaginasAlimentacion(grupoArea.lista, paginas);
           } else {
