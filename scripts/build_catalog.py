@@ -968,6 +968,114 @@ button, .boton, .acciones a, .acciones button,
     return contenido
 
 
+
+def _normalizar_bienestar(contenido: str, archivo_html: Path, raiz_publica: Path) -> str:
+    """Estandariza páginas interiores de BIENESTAR con su identidad dorada."""
+    try:
+        partes = archivo_html.relative_to(raiz_publica).parts
+    except ValueError:
+        return contenido
+    if len(partes) < 2 or partes[0].lower() != "b" or partes[-1].lower() != "index.html":
+        return contenido
+    if "data-ciba-bienestar-estandar" in contenido:
+        return contenido
+
+    estilos = """<style data-ciba-bienestar-estandar>
+:root {
+  --ciba-bienestar-oro: #8C671F;
+  --ciba-bienestar-oscuro: #634916;
+  --ciba-bienestar-medio: #B58B3A;
+  --ciba-bienestar-acento: #D9B878;
+  --ciba-bienestar-marfil: #F7F2E8;
+  --ciba-bienestar-papel: #FFFCF5;
+  --ciba-bienestar-tinta: #493A32;
+  --ciba-bienestar-suave: #75695E;
+  --ciba-bienestar-linea: #E5D9C8;
+}
+body {
+  background: var(--ciba-bienestar-marfil) !important;
+  color: var(--ciba-bienestar-tinta);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-text-size-adjust: 100%;
+}
+h1, h2, h3, h4 {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+a { color: var(--ciba-bienestar-oscuro); text-underline-offset: 3px; }
+:where(a,button,input,select,textarea,summary):focus-visible {
+  outline: 3px solid var(--ciba-bienestar-medio);
+  outline-offset: 3px;
+}
+.hero {
+  color: #fffaf0 !important;
+  background:
+    radial-gradient(circle at 78% 22%, rgba(217,184,120,.34), transparent 34%),
+    linear-gradient(120deg, #634916 0%, #8C671F 58%, #B58B3A 100%) !important;
+  border-bottom: 4px solid var(--ciba-bienestar-acento);
+}
+.hero h1, .hero h2, .hero h3 { color: #fffaf0 !important; }
+.hero p, .hero .lead, .hero-descripcion { color: #F7F0E2 !important; }
+:where(.eyebrow,.sobrelinea,.kicker) { color: #F0DDBB; }
+:where(.wrap,.contenedor) { max-width: 1180px; }
+:where(.card,.tile,.tema,.tarjeta,.panel,.recurso,.interactivo,.quiz,.nota,.callout,.figure,.infographic) {
+  max-width: 100%;
+  border-color: var(--ciba-bienestar-linea);
+  border-radius: 12px;
+}
+:where(.card,.tile,.tema,.tarjeta,.panel,.recurso,.interactivo,.quiz,.figure,.infographic) {
+  background: var(--ciba-bienestar-papel);
+}
+:where(main h2,.seccion h2,.titulo,.grupo-titulo) { color: var(--ciba-bienestar-oscuro); }
+:where(main h3,.tema h3,.card h3,.tile h3) { color: var(--ciba-bienestar-oro); }
+:where(.nota,.callout,.alerta,.respuesta) { border-left-color: var(--ciba-bienestar-medio); }
+:where(.boton,button,.btn,.action,input[type="button"],input[type="submit"]) {
+  min-height: 44px;
+  border-radius: 8px;
+  font: inherit;
+}
+:where(.boton,.btn,.action,button) {
+  background: var(--ciba-bienestar-oscuro);
+  color: #fffaf0;
+}
+:where(input,select,textarea) {
+  max-width: 100%;
+  min-height: 44px;
+  border-color: #C9B58F;
+  font: inherit;
+}
+img,video,iframe,svg,canvas { max-width: 100%; }
+img,video { height: auto; }
+audio,video,iframe { width: 100%; }
+table { max-width: 100%; border-collapse: collapse; }
+@media (max-width: 700px) {
+  :where(.contenedor,.wrap) { width: min(100% - 28px, 1180px); }
+  :where(.grid,.grid2,.lista-temas,.intro-grid,.hero-contenido) {
+    grid-template-columns: minmax(0,1fr) !important;
+  }
+  .hero-contenido { gap: 24px; padding-top: 48px; padding-bottom: 64px; }
+  table { display: block; overflow-x: auto; }
+  :where(.boton,button,.btn,.action) { min-height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *,*::before,*::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+</style>"""
+    cierre = re.search(r"</body\\s*>", contenido, flags=re.IGNORECASE)
+    if cierre:
+        contenido = contenido[:cierre.start()] + estilos + "\\n" + contenido[cierre.start():]
+    else:
+        contenido += "\\n" + estilos
+    return contenido
+
 def _conectar_sistema_global(
     archivo_html: Path,
     raiz_publica: Path,
@@ -994,6 +1102,7 @@ def _conectar_sistema_global(
     contenido = _normalizar_estilo_informatica(contenido, archivo_html, raiz_publica)
     contenido = _normalizar_sistema_editorial(contenido, archivo_html, raiz_publica)
     contenido = _normalizar_crianza(contenido, archivo_html, raiz_publica)
+    contenido = _normalizar_bienestar(contenido, archivo_html, raiz_publica)
 
     # Solo considera integrado el sistema si existe una etiqueta SCRIPT
     # real que cargue ciba-global.js. Los comentarios HTML no cuentan.
