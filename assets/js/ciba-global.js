@@ -27,7 +27,7 @@
 
   const columnas = [
     { id: 'C', titulo: 'Crianza' },
-    { id: 'I', titulo: 'INTERNET' },
+    { id: 'I', titulo: 'INFORMÁTICA' },
     { id: 'B', titulo: 'Bienestar' },
     { id: 'A', titulo: 'Acompañamiento' }
   ];
@@ -1107,7 +1107,7 @@
     nav.setAttribute('aria-label', 'Navegación principal de CIBA');
     const enlaces = [
       ['Crianza', 'c/C1/'],
-      ['INTERNET', 'i/'],
+      ['INFORMÁTICA', 'i/'],
       ['Bienestar', 'b/B1/'],
       ['Acompañamiento', 'a/A1/'],
       ['Configuración de la plataforma', 'plataforma/configuracion/']
