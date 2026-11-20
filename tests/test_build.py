@@ -311,6 +311,30 @@ class TestBuild(unittest.TestCase):
         )
 
 
+    def test_unifica_identidad_azul_en_paginas_interiores_informatica(self) -> None:
+        añadir_area(self.content, "i", "I1")
+        articulo = añadir_pagina(self.content, "i", "I1", "I1-01")
+        (articulo / "index.html").write_text(
+            '<!doctype html><html><head><style>.hero{background:#493a32}</style></head>'
+            '<body><header class="hero">INFORMÁTICA</header></body></html>',
+            encoding="utf-8",
+        )
+        portada = self.content / "i" / "index.html"
+        portada.write_text("<!doctype html><html><body>Portada azul</body></html>", encoding="utf-8")
+        css = self.tmp / "assets" / "css" / "ciba-global.css"
+        js = self.tmp / "assets" / "js" / "ciba-global.js"
+        css.parent.mkdir(parents=True, exist_ok=True)
+        js.parent.mkdir(parents=True, exist_ok=True)
+        css.write_text("/* CSS global de prueba */", encoding="utf-8")
+        js.write_text("/* módulo global de prueba */", encoding="utf-8")
+
+        self.assertEqual(construir(self.content, self.out), 0)
+        pagina = (self.out / "i" / "I1" / "I1-01" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("data-ciba-informatica-unificacion", pagina)
+        self.assertIn("linear-gradient(120deg,#12364d 0%,#174f70 58%,#206b88 100%)", pagina)
+        portada_publica = (self.out / "i" / "index.html").read_text(encoding="utf-8")
+        self.assertNotIn("data-ciba-informatica-unificacion", portada_publica)
+
     def test_normaliza_migas_y_metadatos_de_articulos(self) -> None:
         añadir_area(self.content, "c", "C1")
         area = self.content / "c" / "C1"
