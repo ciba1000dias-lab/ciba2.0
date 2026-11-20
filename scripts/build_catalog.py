@@ -1076,6 +1076,119 @@ table { max-width: 100%; border-collapse: collapse; }
         contenido += "\n" + estilos
     return contenido
 
+
+def _normalizar_acompanamiento(contenido: str, archivo_html: Path, raiz_publica: Path) -> str:
+    """Estandariza las páginas interiores de ACOMPAÑAMIENTO con identidad roja."""
+    try:
+        partes = archivo_html.relative_to(raiz_publica).parts
+    except ValueError:
+        return contenido
+    # La portada de la columna (a/index.html) conserva su diseño de referencia.
+    if len(partes) < 3 or partes[0].lower() != "a" or partes[-1].lower() != "index.html":
+        return contenido
+    if "data-ciba-acompanamiento-estandar" in contenido:
+        return contenido
+
+    estilos = """<style data-ciba-acompanamiento-estandar>
+:root {
+  --ciba-acompanamiento-rojo: #A9443B;
+  --ciba-acompanamiento-oscuro: #77352F;
+  --ciba-acompanamiento-medio: #C66B5E;
+  --ciba-acompanamiento-acento: #D9B878;
+  --ciba-acompanamiento-marfil: #F7F2E8;
+  --ciba-acompanamiento-papel: #FFFCF5;
+  --ciba-acompanamiento-tinta: #493A32;
+  --ciba-acompanamiento-suave: #75695E;
+  --ciba-acompanamiento-linea: #E5D9C8;
+}
+body {
+  background: var(--ciba-acompanamiento-marfil) !important;
+  color: var(--ciba-acompanamiento-tinta);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  -webkit-text-size-adjust: 100%;
+}
+h1, h2, h3, h4 {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+a { color: var(--ciba-acompanamiento-oscuro); text-underline-offset: 3px; }
+:where(a,button,input,select,textarea,summary):focus-visible {
+  outline: 3px solid var(--ciba-acompanamiento-medio);
+  outline-offset: 3px;
+}
+.hero, .cabecera-articulo {
+  color: #fff8eb !important;
+  background:
+    radial-gradient(circle at 78% 22%, rgba(198,107,94,.32), transparent 34%),
+    linear-gradient(120deg, #493A32 0%, #77352F 58%, #A9443B 100%) !important;
+  border-bottom: 4px solid var(--ciba-acompanamiento-acento);
+}
+.hero h1, .hero h2, .hero h3, .cabecera-articulo h1 { color: #fff8eb !important; }
+.hero p, .hero .lead, .hero-descripcion { color: #F3E9DE !important; }
+:where(.eyebrow,.sobrelinea,.kicker) { color: #EAD8B5; }
+:where(.wrap,.contenedor) { max-width: 1180px; }
+:where(.card,.tile,.tema,.tarjeta,.panel,.recurso,.interactivo,.quiz,.nota,.callout,.figure,.infographic) {
+  max-width: 100%;
+  border-color: var(--ciba-acompanamiento-linea);
+  border-radius: 12px;
+}
+:where(.card,.tile,.tema,.tarjeta,.panel,.recurso,.interactivo,.quiz,.figure,.infographic) {
+  background: var(--ciba-acompanamiento-papel);
+}
+:where(main h2,.seccion h2,.titulo,.grupo-titulo,.ciba-articulo h2) {
+  color: var(--ciba-acompanamiento-oscuro);
+}
+:where(main h3,.tema h3,.card h3,.tile h3,.ciba-articulo h3) {
+  color: var(--ciba-acompanamiento-rojo);
+}
+:where(.nota,.callout,.alerta,.respuesta) { border-left-color: var(--ciba-acompanamiento-medio); }
+:where(.boton,button,.btn,.action,input[type="button"],input[type="submit"]) {
+  min-height: 44px;
+  border-radius: 8px;
+  font: inherit;
+}
+:where(.boton,.btn,.action,button) {
+  background: var(--ciba-acompanamiento-oscuro);
+  color: #fff8eb;
+}
+:where(input,select,textarea) {
+  max-width: 100%;
+  min-height: 44px;
+  border-color: #C9B5A8;
+  font: inherit;
+}
+img,video,iframe,svg,canvas { max-width: 100%; }
+img,video { height: auto; }
+audio,video,iframe { max-width: 100%; }
+table { max-width: 100%; border-collapse: collapse; }
+@media (max-width: 700px) {
+  :where(.contenedor,.wrap) { width: min(100% - 28px, 1180px); }
+  :where(.grid,.grid2,.lista-temas,.intro-grid,.hero-contenido) {
+    grid-template-columns: minmax(0,1fr) !important;
+  }
+  .hero-contenido { gap: 24px; padding-top: 48px; padding-bottom: 64px; }
+  table { display: block; overflow-x: auto; }
+  :where(.boton,button,.btn,.action) { min-height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *,*::before,*::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+</style>"""
+    cierre = re.search(r"</body\s*>", contenido, flags=re.IGNORECASE)
+    if cierre:
+        contenido = contenido[:cierre.start()] + estilos + "\n" + contenido[cierre.start():]
+    else:
+        contenido += "\n" + estilos
+    return contenido
+
 def _conectar_sistema_global(
     archivo_html: Path,
     raiz_publica: Path,
@@ -1103,6 +1216,7 @@ def _conectar_sistema_global(
     contenido = _normalizar_sistema_editorial(contenido, archivo_html, raiz_publica)
     contenido = _normalizar_crianza(contenido, archivo_html, raiz_publica)
     contenido = _normalizar_bienestar(contenido, archivo_html, raiz_publica)
+    contenido = _normalizar_acompanamiento(contenido, archivo_html, raiz_publica)
 
     # Solo considera integrado el sistema si existe una etiqueta SCRIPT
     # real que cargue ciba-global.js. Los comentarios HTML no cuentan.
