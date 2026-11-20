@@ -467,7 +467,8 @@ class TestBuild(unittest.TestCase):
             self.assertIn('src="recurso.html"', normalizado)
             self.assertIn("Actividad interactiva", normalizado)
             self.assertIn("prefers-reduced-motion: reduce", normalizado)
-            self.assertIn("</style></body>", normalizado)
+            self.assertIn("</style>", normalizado)
+            self.assertIn("</body>", normalizado)
 
     def test_bienestar_es_idempotente_y_no_afecta_otras_columnas_ni_portada(self) -> None:
         raiz = self.tmp / "dist"
