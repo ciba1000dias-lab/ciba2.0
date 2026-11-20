@@ -1,0 +1,18 @@
+{
+  "id": "B6-01",
+  "titulo": "Crecimiento físico y antropometría",
+  "descripcion": "Mediciones antropométricas básicas durante la primera infancia y herramientas para comprender cómo se vigila el crecimiento físico.",
+  "columna": "B",
+  "area": "B6",
+  "palabras_clave": [
+    "antropometría",
+    "peso infantil",
+    "longitud",
+    "perímetro cefálico",
+    "crecimiento físico",
+    "primeros dos años"
+  ],
+  "estado": "estructura-editorial",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": true
+}
