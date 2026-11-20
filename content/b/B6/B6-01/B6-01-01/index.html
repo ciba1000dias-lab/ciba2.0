@@ -23,7 +23,7 @@ table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--papel);
 </style>
 </head>
 <body>
-<div class="readbar" id="readbar"></div><div class="review">VISTA PREVIA PÚBLICA · EN REVISIÓN EDITORIAL</div>
+<div class="readbar" id="readbar"></div>
 <header class="hero"><div class="wrap"><div class="eyebrow">CIBA · BIENESTAR · B6 · B6-01-01</div><h1>Peso, longitud y perímetro cefálico: qué significan</h1><p>Tres medidas sencillas que, observadas a lo largo del tiempo, ayudan a conocer cómo crece tu bebé. Qué representa cada una, cómo se obtiene y qué conviene preguntar en la consulta.</p><div class="meta">CRECIMIENTO FÍSICO Y ANTROPOMETRÍA · LECTURA APROXIMADA: 7 MIN</div></div></header>
 <nav class="quicknav"><div class="wrap"><a href="#inicio">Inicio</a><a href="#peso">Peso</a><a href="#longitud">Longitud</a><a href="#cefalo">Perímetro cefálico</a><a href="#medicion">Medición fiable</a><a href="#consulta">En consulta</a><a href="#quiz">Comprueba</a><a href="#fuentes">Fuentes</a></div></nav>
 <main class="wrap main"><article class="article" id="inicio">
@@ -93,5 +93,5 @@ table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--papel);
 const form=document.getElementById('quizForm');if(form){form.addEventListener('submit',function(e){e.preventDefault();const keys={q1:'b',q2:'a',q3:'c',q4:'b'};const explanations={q1:'El peso expresa la masa corporal.',q2:'En menores de dos años se mide acostado, con un infantómetro.',q3:'El perímetro cefálico permite seguir el crecimiento craneal; no mide inteligencia.',q4:'Se confirma la técnica y se revisa el conjunto de mediciones con el equipo de salud.'};let score=0,answered=0;Object.keys(keys).forEach(k=>{const chosen=form.querySelector('input[name="'+k+'"]:checked');if(chosen){answered++;if(chosen.value===keys[k])score++;}});const out=document.getElementById('quizResult');if(answered<4){out.textContent='Has respondido '+answered+' de 4 preguntas. Completa las que faltan para revisar el resultado.';return;}out.textContent=score===4?'¡🎉🎂🎀 Excelente! 4 de 4. Has comprendido las ideas esenciales.': 'Has acertado '+score+' de 4. ¡Vas avanzando! '+Object.keys(keys).filter(k=>form.querySelector('input[name="'+k+'"]:checked')?.value!==keys[k]).map(k=>explanations[k]).join(' ');});}
 })();
 </script>
-<script type="module" src="../../../../assets/js/ciba-global.js?v=20261120-01"></script>
+<script type="module" src="../../../../assets/js/ciba-global.js?v=20261120-02"></script>
 </body></html>
