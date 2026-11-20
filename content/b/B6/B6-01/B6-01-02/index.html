@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#344B3A">
+<title>Curvas de crecimiento: lectura e interpretación | CIBA</title>
+<meta name="description" content="Guía familiar para comprender las curvas de crecimiento infantil, los percentiles, las puntuaciones Z y la importancia de observar la trayectoria en el contexto cubano.">
+<style>
+:root{--verde:#344B3A;--verde2:#526B55;--terracota:#B85C4A;--arena:#E8D8BD;--marfil:#F7F2E8;--papel:#FFFCF6;--tinta:#3D3932;--suave:#756D62;--linea:#E4D9C9;--alerta:#8E4037;--alertabg:#F8EAE5;--azul:#456A7B}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:68px}body{margin:0;background:var(--marfil);color:var(--tinta);font-family:Arial,Helvetica,sans-serif}.wrap{width:min(920px,calc(100% - 34px));margin:auto}a{color:#426047;text-underline-offset:3px}.readbar{height:3px;position:fixed;z-index:40;top:0;left:0;width:0;background:var(--terracota)}
+.review{padding:10px 14px;background:#F0E3CE;color:#5A4B37;text-align:center;font-size:10px;font-weight:800;letter-spacing:.1em}
+.hero{padding:54px 0 45px;background:linear-gradient(125deg,#344B3A,#26382B);color:#F9F4E9;border-bottom:5px solid var(--terracota)}.eyebrow{font-size:10px;font-weight:800;letter-spacing:.18em;color:#E8D8BD}.hero h1{max-width:850px;margin:18px 0 14px;font:400 clamp(35px,6vw,55px)/1.1 Georgia,serif}.hero p{max-width:760px;color:#E7E9DF;font-size:15px;line-height:1.8}.meta{margin-top:20px;color:#E8D8BD;font-size:10px;letter-spacing:.08em}
+.quicknav{position:sticky;top:0;z-index:30;background:#F7F2E8ed;border-bottom:1px solid var(--linea)}.quicknav .wrap{display:flex;gap:16px;overflow:auto;white-space:nowrap;padding:12px 0}.quicknav a{font-size:11px;font-weight:700;text-decoration:none;color:var(--verde)}
+.main{padding:34px 0 70px}.article{font-size:16px;line-height:1.82}.article h2{margin:39px 0 12px;font:400 28px/1.25 Georgia,serif;color:var(--verde)}.article h3{margin:23px 0 8px;font:400 20px/1.35 Georgia,serif}.article p{margin:0 0 16px}.article li{margin:0 0 9px}.lead{padding:0 0 23px;border-bottom:1px solid var(--linea);font:400 20px/1.65 Georgia,serif}
+.note,.alert,.remember,.blue{margin:23px 0;padding:18px 21px;border-radius:10px;font-size:14px;line-height:1.8}.note{border-left:4px solid var(--terracota);background:#F2E8D9}.remember{border-left:4px solid var(--verde2);background:#E9EFE6}.alert{border-left:4px solid var(--alerta);background:var(--alertabg)}.blue{border-left:4px solid var(--azul);background:#E8F0F2}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.mini{padding:17px;border:1px solid var(--linea);border-radius:11px;background:var(--papel)}.mini b{display:block;color:var(--terracota);font:400 23px Georgia,serif;margin-bottom:7px}.mini span{font-size:13px;line-height:1.6}
+figure{margin:25px 0;padding:18px;background:var(--papel);border:1px solid var(--linea);border-radius:12px}figure svg{display:block;width:100%;height:auto;max-height:390px}figcaption{padding-top:10px;color:var(--suave);font-size:12px;line-height:1.6}
+.chartbox{padding:16px;background:#FFFCF6;border:1px solid var(--linea);border-radius:12px;margin:22px 0}.chartbox svg{width:100%;height:auto;display:block}.chart-controls{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.chart-controls button,.quiz button,.video-button{border:0;border-radius:7px;padding:10px 14px;background:var(--verde);color:#fff;font-weight:700;cursor:pointer;font-size:13px}.chart-controls button[aria-pressed=true]{background:var(--terracota);outline:2px solid #E8D8BD;outline-offset:2px}.chart-caption{font-size:13px;color:var(--suave);line-height:1.6}.chart-legend{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;margin:9px 0}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}
+table{width:100%;border-collapse:collapse;margin:18px 0;background:var(--papel);font-size:13px}th,td{padding:12px;border:1px solid var(--linea);text-align:left;vertical-align:top}th{background:#EDE3D3;color:var(--verde)}
+.steps{counter-reset:step;list-style:none;padding:0}.steps li{counter-increment:step;position:relative;padding:3px 0 14px 46px}.steps li:before{content:counter(step);position:absolute;left:0;top:0;width:31px;height:31px;border-radius:50%;display:grid;place-items:center;background:#E8D8BD;color:var(--verde);font-weight:800}
+.quiz{margin:28px 0;padding:22px;background:var(--papel);border:1px solid var(--linea);border-radius:12px}.quiz fieldset{border:0;padding:0;margin:0 0 18px}.quiz legend{font-weight:700;margin-bottom:9px}.quiz label{display:block;padding:10px;margin:7px 0;border:1px solid var(--linea);border-radius:8px;font-size:14px;cursor:pointer}.quiz input{accent-color:var(--verde);margin-right:7px}.quiz button{border:0;border-radius:7px;padding:11px 16px;background:var(--verde);color:#fff;font-weight:700;cursor:pointer}.result{margin-top:13px;font-weight:700;line-height:1.6}.sources li{font-size:13px;overflow-wrap:anywhere}.video-card{margin:22px 0;padding:18px;background:#F1E8DA;border:1px solid var(--linea);border-radius:12px}.video-frame{position:relative;aspect-ratio:16/9;background:#26382B;border-radius:9px;overflow:hidden;display:grid;place-items:center;color:#fff;text-align:center}.video-frame iframe{width:100%;height:100%;border:0}.video-placeholder{padding:20px}.video-placeholder p{font-size:13px;color:#F4E8D3}.foot{padding:24px 0;background:#26382B;color:#E8E0D2;font-size:11px}.foot a{color:#F0D9B6}
+@media(max-width:650px){.hero{padding:46px 0 38px}.article{font-size:15px}.article h2{font-size:25px}.cards{grid-template-columns:1fr}table{font-size:12px}th,td{padding:9px}figure{padding:10px}.chartbox{padding:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+@media print{.quicknav,.readbar,.quiz,.review,.chart-controls,.video-button{display:none!important}body{background:white}.hero{padding:20px;background:white;color:#222;border-bottom:2px solid #888}.hero p,.eyebrow,.meta{color:#444}.main{padding:10px 0}.chartbox,.video-card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="review">VISTA PREVIA PÚBLICA · EN REVISIÓN EDITORIAL · NO ES UNA HERRAMIENTA DIAGNÓSTICA</div>
+<div class="readbar" id="readbar"></div>
+<header class="hero"><div class="wrap"><div class="eyebrow">CIBA · BIENESTAR · B6 · B6-01-02</div><h1>Curvas de crecimiento: lectura e interpretación</h1><p>Aprende qué significan los percentiles, cómo se lee una curva y por qué la evolución de tu niño importa mucho más que una cifra aislada.</p><div class="meta">CRECIMIENTO FÍSICO Y ANTROPOMETRÍA · LECTURA APROXIMADA: 9 MIN</div></div></header>
+<nav class="quicknav"><div class="wrap"><a href="#inicio">Inicio</a><a href="#que-son">Qué son</a><a href="#percentiles">Percentiles</a><a href="#leer">Cómo leer</a><a href="#trayectorias">Trayectorias</a><a href="#cuba">En Cuba</a><a href="#consultar">Cuándo consultar</a><a href="#quiz">Comprueba</a><a href="#fuentes">Fuentes</a></div></nav>
+<main class="wrap main"><article class="article" id="inicio">
+<p class="lead">La curva de crecimiento es como un mapa que reúne las medidas de un niño a lo largo del tiempo. No sirve para ponerle una nota ni para compararlo con el bebé de la vecina: ayuda al equipo de salud a observar si su crecimiento sigue una trayectoria esperada y si necesita una evaluación más detallada.</p>
+<div class="note"><strong>La idea clave:</strong> no se interpreta un punto por separado. Se revisan las mediciones sucesivas, la dirección de la curva, la edad, el sexo, el indicador utilizado y la historia de cada niño.</div>
+<figure aria-label="Infografía original sobre la lectura de una curva de crecimiento">
+<svg viewBox="0 0 820 300" role="img" aria-labelledby="heroChartTitle heroChartDesc">
+<title id="heroChartTitle">Una curva cuenta una historia</title><desc id="heroChartDesc">Gráfico esquemático con cinco líneas de referencia y una trayectoria individual que avanza entre mediciones sucesivas.</desc>
+<rect x="5" y="5" width="810" height="290" rx="16" fill="#F7F2E8"/>
+<g stroke="#DCCFBC" stroke-width="1"><path d="M85 50H770M85 95H770M85 140H770M85 185H770M85 230H770"/></g>
+<g fill="#756D62" font-family="Arial" font-size="13"><text x="27" y="54">P97</text><text x="27" y="99">P90</text><text x="27" y="144">P50</text><text x="27" y="189">P10</text><text x="27" y="234">P3</text><text x="420" y="278" text-anchor="middle">Edad y mediciones sucesivas →</text></g>
+<g fill="none" stroke-width="3"><path d="M85 63C220 61 315 56 420 50S640 43 770 39" stroke="#A6B69B"/><path d="M85 107C220 105 315 101 420 95S640 88 770 84" stroke="#B8C6AE"/><path d="M85 152C220 150 315 146 420 140S640 133 770 129" stroke="#8B9D82"/><path d="M85 197C220 195 315 191 420 185S640 178 770 174" stroke="#B8C6AE"/><path d="M85 242C220 240 315 236 420 230S640 223 770 219" stroke="#A6B69B"/></g>
+<path d="M95 166L220 158L345 154L470 150L595 143L720 138" fill="none" stroke="#B85C4A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#B85C4A" stroke="#FFFCF6" stroke-width="3"><circle cx="95" cy="166" r="7"/><circle cx="220" cy="158" r="7"/><circle cx="345" cy="154" r="7"/><circle cx="470" cy="150" r="7"/><circle cx="595" cy="143" r="7"/><circle cx="720" cy="138" r="7"/></g>
+<g fill="#344B3A" font-family="Arial" font-size="12" font-weight="bold"><text x="95" y="22">Medida</text><text x="720" y="22" text-anchor="end">Trayectoria</text></g>
+</svg>
+<figcaption>Ilustración original de CIBA. Las líneas son esquemáticas y no reproducen una tabla clínica ni sirven para ubicar o clasificar a un niño real.</figcaption>
+</figure>
+<h2 id="que-son">1. ¿Qué es una curva de crecimiento?</h2>
+<p>Es una gráfica que permite colocar las mediciones de un niño —por ejemplo, peso, longitud o talla— según su edad y compararlas con valores de referencia para niños del mismo sexo y grupo de edad. Al registrar varias mediciones y unir los puntos, se observa la trayectoria.</p>
+<p>Las curvas no predicen cuánto medirá una persona al llegar a adulta ni determinan por sí solas si está sana. Son herramientas de vigilancia: ayudan a reconocer patrones que merecen seguimiento y a decidir si hace falta estudiar alguna causa.</p>
+<div class="cards">
+<div class="mini"><b>Una medición</b><span>Indica dónde se sitúa el niño en esa fecha, si la técnica y la referencia son correctas.</span></div>
+<div class="mini"><b>Varias mediciones</b><span>Permiten observar la dirección y la estabilidad de la trayectoria.</span></div>
+<div class="mini"><b>El contexto</b><span>Edad, antecedentes, salud, alimentación y herencia completan la interpretación.</span></div>
+</div>
+<h2 id="percentiles">2. Percentiles: ¿qué significan esos números?</h2>
+<p>Un percentil indica la posición de una medida dentro de un grupo de referencia de igual edad y sexo. Imagina que ordenamos de menor a mayor las medidas de muchos niños de ese grupo: el percentil señala el lugar relativo que ocupa una medida.</p>
+<ul>
+<li><strong>Percentil 50 (P50):</strong> es la mediana. La mitad de los valores de referencia queda por debajo y la otra mitad por encima.</li>
+<li><strong>Percentil 25 (P25):</strong> alrededor del 25 % de los valores de referencia se sitúa en ese punto o por debajo.</li>
+<li><strong>Percentil 90 (P90):</strong> alrededor del 90 % de los valores de referencia queda en ese punto o por debajo.</li>
+</ul>
+<div class="remember"><strong>Un ejemplo sencillo:</strong> si una niña se encuentra en el percentil 25 de longitud para su edad, eso no significa que mida el 25 % de lo esperado ni que tenga un crecimiento deficiente. Significa que su medida ocupa esa posición en la población de referencia. Hay que revisar su trayectoria y el resto de la evaluación.</div>
+<figure>
+<svg viewBox="0 0 760 190" role="img" aria-labelledby="percentTitle percentDesc"><title id="percentTitle">Cómo entender los percentiles</title><desc id="percentDesc">Una línea horizontal con marcas en percentil 3, 10, 25, 50, 75, 90 y 97; el percentil 50 aparece en el centro.</desc>
+<rect x="5" y="5" width="750" height="180" rx="14" fill="#F2E8D9"/><path d="M70 85H690" stroke="#344B3A" stroke-width="5" stroke-linecap="round"/>
+<g stroke="#344B3A" stroke-width="3"><path d="M88 66v38M155 66v38M245 66v38M380 55v60M515 66v38M605 66v38M672 66v38"/></g>
+<g fill="#344B3A" font-family="Arial" font-size="14" text-anchor="middle"><text x="88" y="130">P3</text><text x="155" y="130">P10</text><text x="245" y="130">P25</text><text x="380" y="130" font-weight="bold" font-size="18">P50</text><text x="515" y="130">P75</text><text x="605" y="130">P90</text><text x="672" y="130">P97</text></g>
+<text x="380" y="31" text-anchor="middle" font-family="Arial" font-size="13" fill="#756D62">Posiciones relativas dentro de una población de referencia</text><text x="380" y="163" text-anchor="middle" font-family="Arial" font-size="12" fill="#756D62">No son calificaciones ni porcentajes de salud</text>
+</svg>
+<figcaption>Esquema conceptual original. Los percentiles se distribuyen según el indicador y la referencia utilizada; esta línea no sustituye una gráfica clínica.</figcaption>
+</figure>
+<h3>¿Estar en un percentil bajo o alto significa estar enfermo?</h3>
+<p>No necesariamente. Un niño puede mantenerse durante el tiempo en un canal bajo o alto y estar sano, especialmente si esa trayectoria concuerda con su historia familiar y su evaluación clínica. En cambio, un cambio importante o inesperado de trayectoria puede requerir revisión aunque los puntos sigan dentro de los límites habituales.</p>
+<div class="alert"><strong>Evita estas conclusiones:</strong> «P10 significa desnutrición», «P90 significa obesidad» o «P50 es el peso perfecto». Ninguna de esas frases es correcta sin identificar el indicador, la gráfica y el contexto clínico.</div>
+<h2 id="leer">3. Cómo leer una curva paso a paso</h2>
+<ol class="steps">
+<li><strong>Identificar la gráfica correcta.</strong> Debe corresponder al sexo, la edad y el indicador que se desea evaluar. No es lo mismo peso para la edad que peso para la longitud o IMC para la edad.</li>
+<li><strong>Comprobar la edad.</strong> Se calcula con la fecha de nacimiento y la fecha de medición. En prematuros, el equipo decide cómo considerar la edad corregida según la edad gestacional y el tiempo transcurrido.</li>
+<li><strong>Revisar la medida y su técnica.</strong> Un peso, una longitud o una talla mal obtenidos pueden colocar un punto en un sitio equivocado.</li>
+<li><strong>Localizar el punto.</strong> La edad se ubica en el eje horizontal y la medida en el eje vertical, siguiendo las unidades y escalas impresas en la gráfica.</li>
+<li><strong>Comparar con los puntos anteriores.</strong> La secuencia permite observar si el niño sigue una trayectoria parecida, cambia de canal o presenta una variación que debe confirmarse.</li>
+<li><strong>Interpretar en conjunto.</strong> El equipo considera antecedentes, enfermedades recientes, alimentación, talla familiar, desarrollo y examen físico.</li>
+</ol>
+<h2>4. ¿Qué indicador estamos mirando?</h2>
+<p>La misma medición puede tener significados diferentes según el indicador seleccionado. Por eso no basta con decir «está en el percentil 10»: hay que precisar de qué medida y de qué gráfica se habla.</p>
+<table><thead><tr><th>Indicador</th><th>Qué relaciona</th><th>Qué ayuda a observar</th></tr></thead><tbody>
+<tr><td><strong>Peso para la edad</strong></td><td>Peso y edad.</td><td>El peso alcanzado para la edad; no distingue por sí solo si un niño pesa poco porque es bajo o porque tiene poca masa para su longitud.</td></tr>
+<tr><td><strong>Longitud/talla para la edad</strong></td><td>Longitud o talla y edad.</td><td>El crecimiento lineal.</td></tr>
+<tr><td><strong>Peso para longitud/talla</strong></td><td>Peso y longitud o talla.</td><td>La relación entre peso y tamaño corporal, especialmente útil en menores de cinco años.</td></tr>
+<tr><td><strong>IMC para la edad</strong></td><td>Índice de masa corporal y edad.</td><td>La relación entre peso y talla ajustada a la edad y el sexo.</td></tr>
+<tr><td><strong>Perímetro cefálico para la edad</strong></td><td>Contorno de la cabeza y edad.</td><td>La trayectoria del crecimiento craneal.</td></tr>
+</tbody></table>
+<p>La OMS dispone de patrones para distintos indicadores desde el nacimiento hasta los 5 años y de referencias para niñas, niños y adolescentes de 5 a 19 años. La gráfica que corresponde debe ser la indicada por el equipo de salud. <a href="https://www.who.int/es/news-room/questions-and-answers/item/child-growth-standards" target="_blank" rel="noopener">Conoce cómo diferencia la OMS los patrones de 0 a 5 años y las referencias de 5 a 19 años</a>.</p>
+<h2 id="trayectorias">5. Lo más importante: observar la trayectoria</h2>
+<p>Al revisar varias mediciones, el equipo observa si los puntos avanzan de forma coherente, si se mantienen aproximadamente dentro de un mismo canal o si aparece un cambio que necesita explicación. La trayectoria no debe interpretarse de manera mecánica: durante los primeros dos años y en la adolescencia pueden ocurrir cambios de canal relacionados con etapas de crecimiento y maduración.</p>
+<div class="chartbox">
+<strong>Explora tres ejemplos esquemáticos</strong>
+<p class="chart-caption">Selecciona una trayectoria para ver cómo cambia la línea de un niño a lo largo de varias consultas. Son ejemplos inventados para aprender; no representan valores reales ni criterios diagnósticos.</p>
+<div class="chart-controls" role="group" aria-label="Seleccionar ejemplo de trayectoria">
+<button type="button" data-track="stable" aria-pressed="true">Trayectoria estable</button>
+<button type="button" data-track="down" aria-pressed="false">Cambio descendente</button>
+<button type="button" data-track="up" aria-pressed="false">Cambio ascendente</button>
+</div>
+<svg id="trackChart" viewBox="0 0 760 340" role="img" aria-labelledby="trackTitle trackDesc">
+<title id="trackTitle">Ejemplos de trayectorias de crecimiento</title><desc id="trackDesc">Gráfico esquemático de canales percentilares y una línea de mediciones individuales.</desc>
+<rect x="52" y="18" width="680" height="260" rx="8" fill="#F7F2E8"/>
+<g stroke="#D8CDBD" stroke-width="1"><path d="M75 48H710M75 98H710M75 148H710M75 198H710M75 248H710"/></g>
+<g fill="#756D62" font-family="Arial" font-size="13"><text x="20" y="52">P97</text><text x="20" y="102">P90</text><text x="20" y="152">P50</text><text x="20" y="202">P10</text><text x="20" y="252">P3</text><text x="390" y="320" text-anchor="middle">Consultas sucesivas →</text></g>
+<g fill="none" stroke="#9CAB91" stroke-width="3"><path d="M75 50Q390 45 710 38"/><path d="M75 100Q390 95 710 88"/><path d="M75 150Q390 145 710 138"/><path d="M75 200Q390 195 710 188"/><path d="M75 250Q390 245 710 238"/></g>
+<path id="trackLine" d="M95 165L215 160L335 156L455 150L575 146L695 140" fill="none" stroke="#B85C4A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="trackDots" fill="#B85C4A" stroke="#FFFCF6" stroke-width="3"><circle cx="95" cy="165" r="7"/><circle cx="215" cy="160" r="7"/><circle cx="335" cy="156" r="7"/><circle cx="455" cy="150" r="7"/><circle cx="575" cy="146" r="7"/><circle cx="695" cy="140" r="7"/></g>
+</svg>
+<p id="trackExplanation" class="chart-caption" aria-live="polite"><strong>Trayectoria estable:</strong> los puntos avanzan de manera parecida a los canales de referencia. El equipo confirma que las mediciones sean fiables y que el crecimiento concuerde con la historia del niño.</p>
+<div class="chart-legend"><span><i class="dot" style="background:#9CAB91"></i>Canales de referencia esquemáticos</span><span><i class="dot" style="background:#B85C4A"></i>Mediciones del ejemplo</span></div>
+</div>
+<h3>¿Qué puede significar un cambio?</h3>
+<ul>
+<li><strong>La curva se mantiene en un canal parecido:</strong> suele ser una señal tranquilizadora cuando las medidas son fiables y el niño está bien en la valoración general.</li>
+<li><strong>La curva desciende o asciende de forma marcada:</strong> conviene confirmar las mediciones y valorar qué ha cambiado. No significa automáticamente una enfermedad.</li>
+<li><strong>Hay un dato aislado muy diferente:</strong> puede existir un error de medición o registro. El equipo decide si debe repetirse y cuándo volver a evaluar.</li>
+</ul>
+<div class="blue"><strong>Un matiz importante:</strong> la guía pediátrica cubana explica que la estabilidad de la curva y su dirección son esenciales para la vigilancia. También señala que la canalización puede ser menos estable en los dos primeros años y durante la adolescencia. Por eso no se debe aplicar una regla rígida de «cruzó una línea = está enfermo».</div>
+<h2 id="cuba">6. ¿Qué debemos tener en cuenta en Cuba?</h2>
+<p>En Cuba se dispone de normas nacionales de crecimiento expresadas en percentiles, obtenidas en la primera Investigación Nacional sobre Crecimiento y Desarrollo. El texto <em>Pediatría. Diagnóstico y tratamiento</em> de Editorial Ciencias Médicas explica que los valores de referencia de la OMS, expresados en puntuaciones Z, se utilizan también como referencia internacional para comparar el crecimiento de los niños cubanos con el de otros países.</p>
+<p>En la práctica familiar, esto significa algo sencillo: lleva el carné de salud infantil a las consultas y permite que el equipo utilice la gráfica y las normas correspondientes. No mezcles percentiles de una gráfica con puntuaciones Z de otra ni compares resultados obtenidos con referencias diferentes como si fueran idénticos.</p>
+<div class="remember"><strong>Para las familias cubanas:</strong> la gráfica registrada por el personal de salud y las orientaciones nacionales son la referencia de seguimiento. Los recursos de la OMS ayudan a comprender los conceptos y aportan comparaciones internacionales; no sustituyen el criterio clínico ni las normas nacionales.</div>
+<h2 id="consultar">7. ¿Cuándo conviene pedir una explicación o una nueva valoración?</h2>
+<p>Pregunta al personal de salud cuando observes o te expliquen alguno de estos cambios:</p>
+<ul>
+<li>El peso deja de aumentar como venía haciéndolo o disminuye de manera inesperada.</li>
+<li>La longitud o la talla parece avanzar más lentamente en mediciones sucesivas.</li>
+<li>La curva cambia de canal de forma marcada o repetida.</li>
+<li>Hay diferencias grandes entre mediciones que no parecen concordar con el estado del niño.</li>
+<li>Se acompaña de dificultades para alimentarse, vómitos o diarreas persistentes, enfermedades repetidas, decaimiento u otros síntomas.</li>
+<li>El perímetro cefálico muestra una variación llamativa o se aparta de la trayectoria previa.</li>
+</ul>
+<p>No esperes a la próxima consulta programada si el niño presenta signos de enfermedad importante o deterioro de su estado general: busca atención médica según la urgencia. La curva no sustituye la valoración de un niño que está enfermo.</p>
+<h3>Preguntas útiles para la consulta</h3>
+<ul><li>¿Qué indicador estamos revisando: peso para la edad, talla para la edad o peso para la talla?</li><li>¿Se utilizaron las normas nacionales cubanas o una referencia internacional? ¿Por qué?</li><li>¿Cómo ha cambiado la trayectoria respecto a las mediciones anteriores?</li><li>¿Conviene repetir alguna medición o programar un seguimiento?</li><li>¿Qué aspectos de la alimentación, la salud o los antecedentes familiares debemos valorar?</li></ul>
+<h2>8. Recursos multimedia para ampliar</h2>
+<div class="video-card">
+<strong>Recurso audiovisual: cómo se evalúa el crecimiento infantil</strong>
+<p>La OMS ofrece un curso de evaluación del crecimiento con módulos sobre medición, interpretación de indicadores y orientación a cuidadores. Es material de formación sanitaria, no una consulta individual ni una calculadora para autodiagnóstico.</p>
+<a href="https://www.who.int/publications-detail-redirect/9789241595070" target="_blank" rel="noopener">Abrir el curso de la OMS y sus materiales audiovisuales y educativos ↗</a>
+<p class="chart-caption">Organización Mundial de la Salud. <em>WHO Child Growth Standards: Training Course on Child Growth Assessment</em>. 2008. Licencia indicada por la OMS: CC BY-NC-SA 3.0 IGO. Al reutilizar sus materiales, debe conservarse la atribución y respetarse las condiciones de la licencia.</p>
+</div>
+<div class="video-card">
+<strong>Video explicativo complementario</strong>
+<p>Este material de una creadora de contenido sanitario explica las curvas de la OMS y los percentiles mediante un ejemplo. Se ofrece como enlace externo, sin descargar ni republicar el video ni sus imágenes.</p>
+<a href="https://www.youtube.com/watch?v=Ztqu_Z8tvqo" target="_blank" rel="noopener">Ver «Tablas de crecimiento de la OMS para la valoración nutricional en pediatría» — canal Claudia Reinhart ↗</a>
+<p class="chart-caption">Autoría y publicación: Claudia Reinhart, YouTube, 2 de noviembre de 2022. El contenido y los derechos del video pertenecen a su creadora; CIBA solo facilita el enlace.</p>
+</div>
+<h2 id="quiz">Comprueba lo aprendido</h2>
+<p>Responde estas preguntas para comprobar si ya puedes reconocer las ideas principales.</p>
+<section class="quiz">
+<form id="quizForm">
+<fieldset><legend>1. ¿Qué indica el percentil 50?</legend><label><input type="radio" name="q1" value="a"> Que el niño tiene un crecimiento perfecto.</label><label><input type="radio" name="q1" value="b"> Que la mitad de los valores de referencia queda por debajo y la otra mitad por encima.</label><label><input type="radio" name="q1" value="c"> Que el niño creció un 50 %.</label></fieldset>
+<fieldset><legend>2. ¿Qué es más útil para vigilar el crecimiento?</legend><label><input type="radio" name="q2" value="a"> Una medición aislada.</label><label><input type="radio" name="q2" value="b"> Comparar al niño con otros de la familia.</label><label><input type="radio" name="q2" value="c"> Revisar varias mediciones fiables y su trayectoria.</label></fieldset>
+<fieldset><legend>3. ¿Un percentil bajo significa automáticamente enfermedad?</legend><label><input type="radio" name="q3" value="a"> No; debe interpretarse con la trayectoria y el contexto clínico.</label><label><input type="radio" name="q3" value="b"> Sí, siempre.</label><label><input type="radio" name="q3" value="c"> Solo si el niño es menor de un año.</label></fieldset>
+<fieldset><legend>4. En Cuba, ¿qué debe orientar el seguimiento habitual?</legend><label><input type="radio" name="q4" value="a"> Cualquier tabla descargada de internet.</label><label><input type="radio" name="q4" value="b"> Las normas nacionales y la gráfica que utiliza el equipo de salud; las referencias OMS complementan la comprensión.</label><label><input type="radio" name="q4" value="c"> La gráfica de otro niño de la misma edad.</label></fieldset>
+<button type="submit">Revisar mis respuestas</button><div class="result" id="quizResult" role="status" aria-live="polite"></div>
+</form></section>
+<h2 id="fuentes">Fuentes y lecturas recomendadas</h2>
+<ol class="sources">
+<li>Castro Pacheco BL, Machado Lubián MC, López González L del R, et al. <em>Pediatría. Diagnóstico y tratamiento</em>. 3.ª ed. La Habana: Editorial Ciencias Médicas; 2016. Capítulo sobre crecimiento y desarrollo físico. <a href="https://platform.who.int/docs/default-source/mca-documents/policy-documents/guideline/cub-ch-20-01-guideline-2016-esp-pediatria-completo.pdf" target="_blank" rel="noopener">Consultar texto completo</a>.</li>
+<li>Organización Mundial de la Salud. <a href="https://www.who.int/es/news-room/questions-and-answers/item/child-growth-standards" target="_blank" rel="noopener">Patrones de crecimiento infantil: preguntas y respuestas</a>. Actualización informativa, 12 de febrero de 2025.</li>
+<li>Organización Mundial de la Salud. <a href="https://www.who.int/tools/child-growth-standards" target="_blank" rel="noopener">Child Growth Standards</a>. Indicadores, gráficas y herramientas de evaluación para menores de cinco años.</li>
+<li>Organización Mundial de la Salud. <a href="https://www.who.int/tools/growth-reference-data-for-5to19-years" target="_blank" rel="noopener">Growth reference data for 5–19 years</a>. Referencias de crecimiento para escolares y adolescentes.</li>
+<li>Organización Mundial de la Salud. <a href="https://www.who.int/publications-detail-redirect/9789241595070" target="_blank" rel="noopener">WHO Child Growth Standards: Training Course on Child Growth Assessment</a>. 2008. Licencia CC BY-NC-SA 3.0 IGO.</li>
+</ol>
+<p><strong>Créditos visuales y derechos de autor:</strong> las ilustraciones y gráficas esquemáticas de esta página fueron creadas originalmente para CIBA y no reproducen curvas clínicas protegidas. El video externo se enlaza a su publicación original y conserva la autoría de su creadora. Los materiales de la OMS se ofrecen mediante enlaces a la fuente oficial y se identifica su licencia cuando corresponde. No se descargan ni republican fotografías de redes sociales sin autorización expresa o licencia que permita ese uso.</p>
+<p><strong>Nota editorial:</strong> vista previa pública para revisión. Material educativo general; no reemplaza la consulta, la medición profesional ni la interpretación individual del equipo de salud. Las referencias internacionales complementan, pero no sustituyen, las orientaciones y normas nacionales cubanas.</p>
+</article></main>
+<footer class="foot"><div class="wrap">CIBA · Crecemos acompañándonos · <a href="../../">Volver a Crecimiento y desarrollo</a></div></footer>
+<script>
+(function(){
+const bar=document.getElementById('readbar');
+function update(){const d=document.documentElement;const max=d.scrollHeight-innerHeight;bar.style.width=(max>0?Math.min(100,scrollY/max*100):0)+'%'}
+addEventListener('scroll',update,{passive:true});update();
+const tracks={
+stable:{points:[[95,165],[215,160],[335,156],[455,150],[575,146],[695,140]],text:'<strong>Trayectoria estable:</strong> los puntos avanzan de manera parecida a los canales de referencia. El equipo confirma que las mediciones sean fiables y que el crecimiento concuerde con la historia del niño.'},
+down:{points:[[95,145],[215,148],[335,163],[455,188],[575,215],[695,237]],text:'<strong>Cambio descendente:</strong> la línea se separa progresivamente de su trayectoria previa. Se deben confirmar las mediciones y valorar posibles explicaciones; el dibujo por sí solo no establece un diagnóstico.'},
+up:{points:[[95,220],[215,205],[335,180],[455,153],[575,123],[695,96]],text:'<strong>Cambio ascendente:</strong> la línea sube respecto a los canales del ejemplo. También merece contexto: puede corresponder a recuperación, variación individual u otra situación que el equipo debe interpretar.'}
+};
+const chart=document.getElementById('trackChart');
+function drawTrack(name){
+const t=tracks[name];const path='M'+t.points.map(p=>p.join(' ')).join('L');
+document.getElementById('trackLine').setAttribute('d',path);
+const dots=document.getElementById('trackDots');dots.innerHTML=t.points.map(p=>'<circle cx="'+p[0]+'" cy="'+p[1]+'" r="7"/>').join('');
+document.getElementById('trackExplanation').innerHTML=t.text;
+document.querySelectorAll('[data-track]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.track===name)));
+}
+document.querySelectorAll('[data-track]').forEach(b=>b.addEventListener('click',()=>drawTrack(b.dataset.track)));
+const form=document.getElementById('quizForm');
+if(form){form.addEventListener('submit',function(e){e.preventDefault();const keys={q1:'b',q2:'c',q3:'a',q4:'b'};const explanations={q1:'El P50 es la mediana: la mitad de los valores de referencia queda a cada lado.',q2:'Varias mediciones fiables permiten observar la trayectoria.',q3:'Un percentil aislado no establece enfermedad; hay que valorar el contexto.',q4:'En Cuba se utilizan normas nacionales; las referencias OMS complementan la comparación internacional.'};let score=0,answered=0;Object.keys(keys).forEach(k=>{const chosen=form.querySelector('input[name="'+k+'"]:checked');if(chosen){answered++;if(chosen.value===keys[k])score++;}});const out=document.getElementById('quizResult');if(answered<4){out.textContent='Has respondido '+answered+' de 4 preguntas. Completa las que faltan para revisar el resultado.';return;}out.textContent=score===4?'¡🎉🎂🎀 Excelente! 4 de 4. Has comprendido las ideas esenciales.': 'Has acertado '+score+' de 4. ¡Vas avanzando! '+Object.keys(keys).filter(k=>form.querySelector('input[name="'+k+'"]:checked')?.value!==keys[k]).map(k=>explanations[k]).join(' ');});}
+})();
+</script>
+<script type="module" src="../../../../assets/js/ciba-global.js?v=20261120-03"></script>
+</body></html>
