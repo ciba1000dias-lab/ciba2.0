@@ -560,7 +560,7 @@
 
       function agregarPaginasVigilanciaDesarrollo(lista) {
         const grupo = crearDesplegable('Vigilancia del desarrollo', 'ciba-global-subarea');
-        agregarEnlace(grupo.lista, 'b/B6/B6-02/B6-02-01/', 'Hitos del desarrollo: cómo interpretarlos sin comparaciones · Vista previa pública · En revisión editorial');
+        agregarEnlace(grupo.lista, 'b/B6/B6-02/B6-02-01/', 'Hitos del desarrollo: cómo interpretarlos sin comparaciones');
         lista.appendChild(grupo.grupo);
       }
 
