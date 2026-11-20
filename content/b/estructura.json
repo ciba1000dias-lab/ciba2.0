@@ -349,17 +349,15 @@
               "id": "B4-02-01",
               "titulo": "Cómo valorar el estado nutricional durante los primeros dos años",
               "ruta": "/b/B4/B4-02/B4-02-01/",
-              "estado": "revision",
-              "enlace_activo": true,
-              "vista_previa_publica": true
+              "estado": "publicado",
+              "enlace_activo": true
             },
             {
               "id": "B4-02-02",
               "titulo": "Interpretación clínica de peso, longitud y perímetro cefálico",
               "ruta": "/b/B4/B4-02/B4-02-02/",
-              "estado": "revision",
-              "enlace_activo": true,
-              "vista_previa_publica": true
+              "estado": "publicado",
+              "enlace_activo": true
             }
           ]
         },
@@ -382,17 +380,15 @@
               "id": "B4-03-02",
               "titulo": "Deficiencia de vitamina D y raquitismo",
               "ruta": "/b/B4/B4-03/B4-03-02/",
-              "estado": "revision",
-              "enlace_activo": true,
-              "vista_previa_publica": true
+              "estado": "publicado",
+              "enlace_activo": true
             },
             {
               "id": "B4-03-03",
               "titulo": "Otras deficiencias de micronutrientes",
               "ruta": "/b/B4/B4-03/B4-03-03/",
-              "estado": "revision",
-              "enlace_activo": true,
-              "vista_previa_publica": true
+              "estado": "publicado",
+              "enlace_activo": true
             }
           ]
         },
@@ -415,9 +411,8 @@
               "id": "B4-04-02",
               "titulo": "Sobrepeso temprano: evaluación y prevención sin estigmas",
               "ruta": "/b/B4/B4-04/B4-04-02/",
-              "estado": "revision",
+              "estado": "publicado",
               "enlace_activo": true,
-              "vista_previa_publica": true,
               "mostrar_en_area": true
             }
           ]
@@ -431,18 +426,16 @@
               "id": "B4-05-01",
               "titulo": "Inocuidad de los alimentos infantiles en el hogar",
               "ruta": "/b/B4/B4-05/B4-05-01/",
-              "estado": "revision",
+              "estado": "publicado",
               "enlace_activo": true,
-              "vista_previa_publica": true,
               "mostrar_en_area": true
             },
             {
               "id": "B4-05-02",
               "titulo": "Agua segura y riesgos de contaminación alimentaria",
               "ruta": "/b/B4/B4-05/B4-05-02/",
-              "estado": "revision",
+              "estado": "publicado",
               "enlace_activo": true,
-              "vista_previa_publica": true,
               "mostrar_en_area": true
             }
           ]
