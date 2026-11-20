@@ -1,7 +1,7 @@
 {
   "id": "I2-06",
   "titulo": "Entrena tu pausa antes de compartir.",
-  "descripcion": "Esta lista te ayuda a revisar una publicación dudosa. Marca los pasos que hayas completado; no es un diagnóstico ni una puntuación científica.",
+  "descripcion": "Lista interactiva, simuladores y casos prácticos para entrenar la verificación de publicaciones sanitarias antes de compartirlas.",
   "columna": "I",
   "area": "I2",
   "palabras_clave": [
@@ -16,7 +16,12 @@
     "publicacion",
     "dudosa",
     "marca",
-    "pasos"
+    "pasos",
+    "desinformacion",
+    "verificacion",
+    "interactivo",
+    "salud",
+    "familias"
   ],
   "estado": "publicado",
   "fecha_publicacion": "2026-11-20",
