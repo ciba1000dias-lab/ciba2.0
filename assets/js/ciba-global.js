@@ -551,6 +551,15 @@
         });
       }
 
+      function agregarPaginasCrecimiento(lista) {
+        const grupo = crearDesplegable('Crecimiento físico y antropometría', 'ciba-global-subarea');
+        agregarEnlace(grupo.lista, 'b/B6/B6-01/B6-01-01/', 'Peso, longitud y perímetro cefálico: qué significan · Vista previa pública');
+        const pendiente = elemento('span', 'ciba-global-enlace ciba-global-subenlace', 'Curvas de crecimiento: lectura e interpretación · En preparación');
+        pendiente.setAttribute('aria-disabled', 'true');
+        grupo.lista.appendChild(pendiente);
+        lista.appendChild(grupo.grupo);
+      }
+
       // RECURSOS DESTACADOS: accesos transversales disponibles desde cualquier página.
       const tituloRecursos = elemento('h2','ciba-global-menu-titulo ciba-global-menu-separador','RECURSOS DESTACADOS');
       const grupoRecursos = crearDesplegable('Herramientas y espacios útiles','ciba-global-recursos');
@@ -606,6 +615,8 @@
             agregarApartadosDeSeccionInternet(grupoArea.lista, areaMenu);
           } else if (areaMenu.id === 'B4') {
             agregarPaginasNutricion(grupoArea.lista);
+          } else if (areaMenu.id === 'B6') {
+            agregarPaginasCrecimiento(grupoArea.lista);
           } else if (areaMenu.id === 'C1-ALIMENTACION') {
             agregarPaginasAlimentacion(grupoArea.lista, paginas);
           } else {
