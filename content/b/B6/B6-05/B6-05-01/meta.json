@@ -16,18 +16,11 @@
     "intervencion-temprana",
     "primera-infancia"
   ],
-  "estado": "en_revision_editorial",
+  "estado": "revision",
   "preview_publica": false,
   "fecha_publicacion": "2026-11-21",
   "mostrar_en_columna": false,
   "mostrar_en_area": true,
-  "multimedia": {
-    "imagen": "Infografía SVG integrada: edad cronológica y corregida",
-    "video": "OMS: método madre canguro",
-    "podcast": "Acompañar el desarrollo después de la prematuridad",
-    "duracion_podcast_segundos": 177.8,
-    "interactivo": "Calculadora educativa de edad corregida"
-  },
   "enlaces_externos": [
     {
       "titulo": "OMS. WHO recommendations for care of the preterm or low-birth-weight infant (2022)",
@@ -49,5 +42,14 @@
       "url": "/b/B1/B1-05/B1-05-01/",
       "tipo": "contenido relacionado"
     }
-  ]
+  ],
+  "media": {
+    "videos": [
+      {
+        "proveedor": "youtube",
+        "id": "YfhWxMmBIW4",
+        "titulo": "OMS: cuidado madre canguro para bebés prematuros o pequeños"
+      }
+    ]
+  }
 }
