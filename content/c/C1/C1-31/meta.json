@@ -18,12 +18,11 @@
     "lactanciahospital",
     "alimentacioninfantil"
   ],
-  "estado": "revision",
+  "estado": "publicado",
   "fecha_publicacion": "2026-11-20",
   "mostrar_en_columna": true,
   "mostrar_en_area": true,
   "subseccion": "Lactancia materna",
-  "preview_publica": true,
   "media": {
     "videos": [
       {
