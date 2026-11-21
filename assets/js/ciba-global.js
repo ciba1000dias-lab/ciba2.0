@@ -257,15 +257,9 @@
     panel.id = 'ciba-menu-panel';
     panel.setAttribute('aria-label', 'Navegación principal');
 
-    panel.appendChild(
-      elemento('h2', 'ciba-global-menu-titulo', 'INICIO CIBA')
-    );
-
-    // ACCESO GENERAL
-    panel.appendChild(enlace(new URL('index.html', RAIZ).href,'Inicio CIBA','ciba-global-enlace'));
-
-    const tituloColumnas = elemento('h2','ciba-global-menu-titulo ciba-global-menu-separador','LAS CUATRO COLUMNAS');
-    panel.appendChild(tituloColumnas);
+    // Accesos directos de inicio.
+    panel.appendChild(enlace(new URL('index.html', RAIZ).href,'📌 Inicio CIBA','ciba-global-enlace ciba-global-acceso-principal'));
+    panel.appendChild(enlace(new URL('index.html#recursos-destacados', RAIZ).href,'⭐ Recursos imperdibles','ciba-global-enlace ciba-global-acceso-principal'));
 
     let secuenciaSubmenus = 0;
 
@@ -336,6 +330,56 @@
       if(!ruta) return;
       lista.appendChild(enlace(urlPublica(ruta),titulo,clase));
     }
+
+    // Supersecciones principales: solo Las cuatro columnas comienza desplegada.
+    const grupoColumnas = crearDesplegable('🏛️ Las cuatro columnas','ciba-global-superseccion');
+    grupoColumnas.lista.hidden = false;
+    grupoColumnas.botonGrupo.setAttribute('aria-expanded','true');
+    grupoColumnas.grupo.classList.add('desplegado');
+    panel.appendChild(grupoColumnas.grupo);
+
+    const grupoExplorar = crearDesplegable('🧭 Explorar CIBA','ciba-global-superseccion');
+    [
+      ['plataforma/navegacion/','Navegación'],
+      ['plataforma/navegacion/series/','Series'],
+      ['plataforma/navegacion/glosario/','Glosario'],
+      ['plataforma/navegacion/indice-tematico/','Índice temático']
+    ].forEach(([ruta,titulo]) => agregarEnlace(grupoExplorar.lista,ruta,titulo));
+    panel.appendChild(grupoExplorar.grupo);
+
+    const grupoPlataforma = crearDesplegable('⚙️ Plataforma','ciba-global-superseccion');
+    [
+      ['plataforma/sobre-ciba/','Sobre CIBA'],
+      ['plataforma/sobre-ciba/nuestro-equipo/','Equipo'],
+      ['plataforma/comunidad/','Comunidad'],
+      ['plataforma/configuracion/','Configuración'],
+      ['plataforma/confianza-y-legal/','Aspectos legales']
+    ].forEach(([ruta,titulo]) => agregarEnlace(grupoPlataforma.lista,ruta,titulo));
+    panel.appendChild(grupoPlataforma.grupo);
+
+    const grupoRecursosValiosos = crearDesplegable('📚 Recursos valiosos','ciba-global-superseccion');
+    [
+      ['plataforma/recursos/descargables/','Descargables'],
+      ['plataforma/recursos/multimedia/','Multimedia'],
+      ['plataforma/recursos/enlaces-recomendados/','Enlaces recomendados'],
+      ['plataforma/recursos/redes-sociales/','Nuestras redes']
+    ].forEach(([ruta,titulo]) => agregarEnlace(grupoRecursosValiosos.lista,ruta,titulo));
+
+    // Se conservan los accesos útiles que ya existían en el menú anterior.
+    const grupoHerramientas = crearDesplegable('Herramientas y espacios útiles','ciba-global-area');
+    [
+      ['c/C1/alimentos/','Biblioteca de alimentos'],
+      ['c/C1/recetario/','¿Qué cocino hoy?'],
+      ['c/C1/fonoteca/','Fonoteca infantil'],
+      ['plataforma/recursos/descargables/','Recursos descargables'],
+      ['plataforma/comunidad/','Comunidad CIBA'],
+      ['c/C1/podcast/','Zona Podcast'],
+      ['c/C6/','Prevención y seguridad en el hogar'],
+      ['i/I7/','Apps, plataformas y herramientas digitales'],
+      ['i/I7/#apps-10','Las 10 apps que no te pueden faltar']
+    ].forEach(([ruta,titulo]) => agregarEnlace(grupoHerramientas.lista,ruta,titulo));
+    grupoRecursosValiosos.lista.appendChild(grupoHerramientas.grupo);
+    panel.appendChild(grupoRecursosValiosos.grupo);
 
     async function construirNavegacionEditorial() {
       const datos = await obtenerCatalogo();
@@ -538,9 +582,6 @@
         lista.appendChild(grupo.grupo);
       }
 
-      const tituloPlataforma=elemento('h2','ciba-global-menu-titulo ciba-global-menu-separador','PLATAFORMA');
-      panel.appendChild(tituloPlataforma);
-
       columnas.forEach(columna => {
         const areasFuente = (datos.areas || []).filter(area => area.columna === columna.id);
         const areasColumna = taxonomia[columna.id] || [];
@@ -590,46 +631,13 @@
           grupoColumna.lista.appendChild(grupoArea.grupo);
         });
 
-        panel.insertBefore(grupoColumna.grupo, tituloPlataforma);
+        grupoColumnas.lista.appendChild(grupoColumna.grupo);
       });
     }
 
-    const seccionesPlataforma = [
-      ["sobre-ciba","Sobre CIBA",[["mision-y-lema","Misión y lema"],["nuestro-equipo","Nuestro equipo"],["declaracion-editorial","Declaración editorial"]]],
-      ["confianza-y-legal","Confianza y legal",[["aviso-medico","Aviso médico"],["privacidad","Privacidad"],["datos-de-menores","Datos de menores"],["terminos-de-uso","Términos de uso"],["como-citar","Cómo citar"]]],
-      ["configuracion","Configuración",[]],
-      ["navegacion","Navegación",[["buscar","Buscar"],["indice-tematico","Índice temático"],["recorrido-por-edad","Recorrido por edad"],["series","Series"],["glosario","Glosario"]]],
-      ["comunidad","Comunidad",[["preguntale-al-pediatra","Pregúntale al pediatra"],["reportar-error","Reportar un error"],["compartir","Compartir"],["unirse-al-equipo","Unirse al equipo"]]],
-      ["recursos","Recursos",[["descargables","Descargables"],["multimedia","Multimedia"],["enlaces-recomendados","Enlaces recomendados"],["redes-sociales","Nuestras redes"]]]
-    ];
-
-    const grupoPlataforma=crearDesplegable('🖥️ Plataforma','ciba-global-plataforma','plataforma/');
-
-    // Los recursos destacados pasan a formar parte de Plataforma.
-    // Se conserva su orden original y se mantienen todos sus enlaces.
-    const tituloRecursos = elemento('h2','ciba-global-menu-titulo ciba-global-menu-separador','RECURSOS DESTACADOS');
-    const grupoRecursos = crearDesplegable('Herramientas y espacios útiles','ciba-global-recursos');
-    [
-      ['c/C1/alimentos/','Biblioteca de alimentos'],
-      ['c/C1/recetario/','¿Qué cocino hoy?'],
-      ['c/C1/fonoteca/','Fonoteca infantil'],
-      ['plataforma/recursos/descargables/','Recursos descargables'],
-      ['plataforma/comunidad/','Comunidad CIBA'],
-      ['c/C1/podcast/','Zona Podcast'],
-      ['c/C6/','Prevención y seguridad en el hogar'],
-      ['i/I7/','Apps, plataformas y herramientas digitales'],
-      ['i/I7/#apps-10','Las 10 apps que no te pueden faltar']
-    ].forEach(([ruta,titulo]) => agregarEnlace(grupoRecursos.lista,ruta,titulo));
-    grupoPlataforma.lista.append(tituloRecursos, grupoRecursos.grupo);
-    seccionesPlataforma.forEach(seccion=>{
-      const grupo=crearDesplegable(seccion[1],'ciba-global-area','plataforma/'+seccion[0]+'/');
-      seccion[2].forEach(apartado=>agregarEnlace(grupo.lista,'plataforma/'+seccion[0]+'/'+apartado[0]+'/',apartado[1]));
-      grupoPlataforma.lista.appendChild(grupo.grupo);
-    });
-    panel.appendChild(grupoPlataforma.grupo);
-
-    // Herramienta transversal: buscador
-    const buscar=elemento('button','ciba-global-enlace ciba-global-herramienta','BUSCADOR CIBA');
+    // El buscador queda dentro de Explorar CIBA, junto a las herramientas
+    // de orientación del catálogo.
+    const buscar=elemento('button','ciba-global-enlace ciba-global-herramienta','Buscador CIBA');
     buscar.type='button';
     buscar.addEventListener('click',()=>{
       cerrarMenu(panel,boton);
@@ -637,7 +645,7 @@
       if(oraculo) oraculo.click();
       else if(esPortada()) abrirBuscadorDePortada();
     });
-    grupoPlataforma.lista.appendChild(buscar);
+    grupoExplorar.lista.appendChild(buscar);
 
     construirNavegacionEditorial().catch(error=>console.warn('CIBA: no se pudo construir el índice jerárquico del menú.',error));
 
