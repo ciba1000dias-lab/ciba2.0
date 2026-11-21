@@ -69,7 +69,18 @@ def _iter_paginas(area_dir: Path):
                     datos = _leer_json(meta_path)
                 except (OSError, json.JSONDecodeError):
                     datos = {}
-                if datos.get("estado") == "archivado":
+                hijos, _ = listar_directorios_seguros(pag_dir, str(pag_dir))
+                id_padre = datos.get("id")
+                tiene_hijos_editoriales = (
+                    isinstance(id_padre, str)
+                    and any(
+                        hijo.name.startswith(id_padre + "-")
+                        and (hijo / "meta.json").is_file()
+                        and not (hijo / "meta.json").is_symlink()
+                        for hijo in hijos
+                    )
+                )
+                if datos.get("estado") == "archivado" or tiene_hijos_editoriales:
                     yield from recorrer(pag_dir)
 
     yield from recorrer(area_dir)
