@@ -381,7 +381,7 @@ class TestBuild(unittest.TestCase):
         self.assertIn('href="../../../index.html"', html)
         self.assertIn('href="../../index.html"', html)
         self.assertIn('href="../index.html"', html)
-        self.assertIn("ciba-global.js?v=20261119-01", html)
+        self.assertIn("ciba-global.js?v=20261121-05", html)
         portada = (self.out / "c" / "index.html").read_text(encoding="utf-8")
         self.assertIn('data-ciba-migas', portada)
         self.assertIn("Crianza", portada)
