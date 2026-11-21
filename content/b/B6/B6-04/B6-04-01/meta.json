@@ -15,11 +15,11 @@
     "regulacion-emocional",
     "primera-infancia"
   ],
-  "estado": "revision",
-  "preview_publica": true,
+  "estado": "publicado",
+  "preview_publica": false,
   "fecha_publicacion": "2026-11-20",
-  "mostrar_en_columna": false,
-  "mostrar_en_area": false,
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
   "enlaces_externos": [
     {
       "titulo": "Pediatría. Diagnóstico y tratamiento. Editorial Ciencias Médicas, 2016",
