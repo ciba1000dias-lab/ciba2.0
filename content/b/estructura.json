@@ -1101,10 +1101,11 @@
           "articulos": [
             {
               "id": "B10-02-01",
-              "titulo": "Humo de tabaco y exposición al humo",
+              "titulo": "Humo de tabaco y exposición infantil",
               "ruta": "/b/B10/B10-02/B10-02-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "revision",
+              "enlace_activo": true,
+              "vista_previa_publica": true
             },
             {
               "id": "B10-02-02",
