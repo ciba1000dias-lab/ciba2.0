@@ -83,7 +83,7 @@ figure{margin:25px 0;padding:16px;background:var(--papel);border:1px solid var(-
 <div class="note"><strong>Nota editorial y clínica:</strong> artículo en versión de revisión, pendiente de validación clínica y editorial por el equipo responsable de CIBA. La información es educativa y no sustituye la consulta, la pesquisa con instrumentos validados ni la evaluación individual. Las referencias internacionales complementan, pero no reemplazan, las orientaciones nacionales cubanas.</div>
 <p><strong>Créditos visuales:</strong> las infografías vectoriales de esta página son originales y fueron creadas para CIBA. El video se reproduce desde el canal oficial del CDC mediante su enlace de inserción. No se redistribuyen materiales externos protegidos.</p>
 </article></main>
-<footer class="foot"><div class="wrap">CIBA · Crecemos acompañándonos · <a href="../">Volver a Vigilancia del desarrollo</a> · <a href="../../../">Volver a Crecimiento y desarrollo</a></div></footer>
+<footer class="foot"><div class="wrap">CIBA · Crecemos acompañándonos · <a href="../">Volver a Vigilancia del desarrollo</a> · <a href="../../">Volver a Crecimiento y desarrollo</a></div></footer>
 <script>
 (function(){
 const bar=document.getElementById('readbar');function update(){const d=document.documentElement;const max=d.scrollHeight-innerHeight;bar.style.width=(max>0?Math.min(100,scrollY/max*100):0)+'%'}addEventListener('scroll',update,{passive:true});update();
@@ -92,5 +92,5 @@ document.querySelectorAll('[data-topic]').forEach(b=>b.addEventListener('click',
 const form=document.getElementById('quizForm');form.addEventListener('submit',e=>{e.preventDefault();const keys={q1:'b',q2:'b',q3:'a',q4:'b'};const exp={q1:'La pérdida de habilidades requiere comunicarlo al equipo de salud.',q2:'Una señal no confirma un diagnóstico; necesita valoración contextual.',q3:'Los ejemplos concretos ayudan a orientar la evaluación.',q4:'Los cambios agudos graves requieren atención urgente.'};let score=0,answered=0;Object.keys(keys).forEach(k=>{const c=form.querySelector('input[name="'+k+'"]:checked');if(c){answered++;if(c.value===keys[k])score++;}});const out=document.getElementById('quizResult');if(answered<4){out.textContent='Has respondido '+answered+' de 4 preguntas. Completa las que faltan para revisar el resultado.';return;}out.textContent='Resultado: '+score+' de 4. '+(score===4?'Has comprendido las ideas esenciales. ':'Repasa estas ideas: ')+Object.keys(keys).filter(k=>form.querySelector('input[name="'+k+'"]:checked')?.value!==keys[k]).map(k=>exp[k]).join(' ');});
 })();
 </script>
-<script type="module" src="../../../../../assets/js/ciba-global.js?v=20261120-04"></script>
+<script type="module" src="../../../../assets/js/ciba-global.js?v=20261120-04"></script>
 </body></html>
