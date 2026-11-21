@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#203a33">
+<meta name="description" content="Mi bebé crece: herramienta familiar para registrar y acompañar el crecimiento y desarrollo durante los primeros 24 meses.">
+<title>Mi bebé crece | CIBA</title>
+<style>
+:root{--green:#294d3c;--sage:#71866b;--terra:#b86d50;--sand:#e8dcc6;--cream:#f7f3e9;--paper:#fffdf8;--ink:#28332d;--muted:#68736b;--line:#e4ddcf;--red:#9c4339}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.55 Arial,Helvetica,sans-serif}a{color:inherit}.wrap{width:min(1040px,calc(100% - 32px));margin:auto}
+header{background:var(--green);color:#fff;padding:18px 0 28px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-weight:800;letter-spacing:.16em;font-size:14px}.back{font-size:13px;color:#f2e7d4;text-decoration:none}
+.kicker{color:#e9c99e;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-top:28px}
+h1{font:400 clamp(34px,7vw,58px)/1.05 Georgia,serif;margin:8px 0}.lead{max-width:680px;color:#e6e9df;margin:12px 0 0}
+main{padding:24px 0 60px}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.mode{display:flex;gap:6px;background:#e9e3d7;padding:5px;border-radius:999px}.mode button,.tab{border:0;cursor:pointer;font:700 13px Arial;padding:10px 14px;border-radius:999px;background:transparent;color:var(--ink);min-height:44px}.mode button[aria-pressed=true],.tab[aria-selected=true]{background:var(--green);color:white}
+.tabs{display:flex;gap:7px;overflow:auto;padding-bottom:8px;margin-bottom:18px}.tab{white-space:nowrap;border:1px solid var(--line);background:var(--paper)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px;margin:14px 0;box-shadow:0 5px 22px #28332d08}
+h2{font:400 25px/1.2 Georgia,serif;margin:0 0 8px;color:var(--green)}h3{font-size:16px;margin:0 0 8px;color:var(--green)}
+.muted{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+label{display:block;font-size:13px;font-weight:700;margin:0 0 6px}input,select,textarea{width:100%;min-height:46px;border:1px solid #cfc8b9;border-radius:9px;padding:10px 12px;background:white;color:var(--ink);font:16px Arial}textarea{min-height:90px;resize:vertical}
+.field{margin:10px 0}.check{display:flex;gap:9px;align-items:center;font-size:13px}.check input{width:20px;min-height:20px}
+.btn{border:0;border-radius:9px;background:var(--green);color:white;padding:12px 18px;min-height:46px;font-weight:700;cursor:pointer}.btn.alt{background:#eee7da;color:var(--green);border:1px solid var(--line)}.btn.danger{background:#f5e6e2;color:var(--red)}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #c97855;outline-offset:2px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.notice{background:#f2eadb;border-left:4px solid var(--terra);padding:12px 14px;border-radius:8px;font-size:13px;margin:14px 0}.notice strong{color:var(--green)}.alert{background:#f8e9e5;border-left-color:var(--red)}
+.stat{background:#f4efe5;border-radius:12px;padding:14px}.stat b{display:block;font:24px Georgia,serif;color:var(--green)}.stat span{font-size:12px;color:var(--muted)}
+.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px}th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);white-space:nowrap}th{color:var(--green)}
+.chart{width:100%;height:auto;display:block;background:#faf7ef;border-radius:12px;margin-top:10px}.empty{padding:18px;text-align:center;color:var(--muted);font-size:13px}
+.hidden{display:none!important}.childline{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.pill{display:inline-block;background:#e7eddf;color:#345541;border-radius:999px;padding:5px 10px;font-size:11px;font-weight:700}
+footer{border-top:1px solid var(--line);padding:18px 0;color:var(--muted);font-size:12px}
+@media(max-width:640px){.wrap{width:min(100% - 24px,1040px)}.grid,.grid3{grid-template-columns:1fr}.card{padding:16px}.toolbar{align-items:flex-start}.mode{width:100%}.mode button{flex:1}.tabs{margin-right:-12px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="top"><div class="brand">CIBA · CRECEMOS ACOMPAÑÁNDONOS</div><a class="back" href="../../../index.html">← Volver a CIBA</a></div>
+<div class="kicker">Recurso especial · Bienestar</div>
+<h1>Mi bebé crece</h1>
+<p class="lead">Cada pequeño avance cuenta. Un espacio privado para registrar mediciones, recordar momentos y acompañar el crecimiento durante los primeros 24 meses.</p>
+</div></header>
+<main class="wrap">
+<div class="toolbar">
+<div id="profileSummary" class="muted">Crea un perfil para comenzar.</div>
+<div class="mode" role="group" aria-label="Modo de uso">
+<button id="familyMode" aria-pressed="true">Modo familiar</button><button id="advancedMode" aria-pressed="false">Modo avanzado</button>
+</div>
+</div>
+<nav class="tabs" aria-label="Secciones del recurso">
+<button class="tab" data-tab="profile" aria-selected="true">Mi bebé</button>
+<button class="tab" data-tab="growth" aria-selected="false">Crecimiento</button>
+<button class="tab" data-tab="development" aria-selected="false">Desarrollo</button>
+<button class="tab" data-tab="diary" aria-selected="false">Controles y logros</button>
+</nav>
+<section id="profile" class="panel">
+<div class="card">
+<h2>El perfil de tu bebé</h2><p class="muted">Los datos se guardan únicamente en este dispositivo. El nombre es opcional.</p>
+<form id="profileForm">
+<div class="grid">
+<div class="field"><label for="childName">Nombre o apodo (opcional)</label><input id="childName" maxlength="40" placeholder="¿Cómo le llaman en casa?"></div>
+<div class="field"><label for="birthDate">Fecha de nacimiento</label><input id="birthDate" type="date" required></div>
+<div class="field"><label for="sex">Sexo para seleccionar la curva de referencia</label><select id="sex" required><option value="">Seleccionar</option><option value="boy">Masculino</option><option value="girl">Femenino</option></select></div>
+<div class="field"><label class="check"><input id="premature" type="checkbox"> Nació antes de las 37 semanas</label><div class="muted">Si corresponde, registra la edad gestacional.</div></div>
+</div>
+<div id="gestationFields" class="grid hidden">
+<div class="field"><label for="gestWeeks">Semanas completas de gestación</label><input id="gestWeeks" type="number" min="22" max="36" value="34"></div>
+<div class="field"><label for="gestDays">Días adicionales</label><input id="gestDays" type="number" min="0" max="6" value="0"></div>
+</div>
+<div class="actions"><button class="btn" type="submit">Guardar perfil</button><button class="btn alt" type="button" id="newProfile">Añadir otro bebé</button></div>
+</form>
+<div id="profileList" class="muted" style="margin-top:14px"></div>
+</div>
+<div class="notice"><strong>Privacidad:</strong> esta herramienta no crea una historia clínica ni envía el perfil a CIBA. Si borras los datos del navegador o desinstalas la aplicación, podrías perderlos. La exportación de respaldo se incorporará en una etapa posterior.</div>
+</section>
+<section id="growth" class="panel hidden">
+<div class="card">
+<div class="childline"><div><h2>Registro de crecimiento</h2><p class="muted">Anota las mediciones realizadas durante los controles o en casa.</p></div><span class="pill">0–24 meses</span></div>
+<form id="measurementForm">
+<div class="grid3">
+<div class="field"><label for="measureDate">Fecha</label><input id="measureDate" type="date" required></div>
+<div class="field"><label for="measureType">Medición</label><select id="measureType"><option value="weight">Peso (kg)</option><option value="length">Longitud (cm)</option><option value="head">Perímetro cefálico (cm)</option></select></div>
+<div class="field"><label for="measureValue">Valor</label><input id="measureValue" type="number" min="0.01" step="0.01" required placeholder="Ej. 6.45"></div>
+</div>
+<div class="field"><label for="measureNote">Observación (opcional)</label><input id="measureNote" maxlength="160" placeholder="Ej. medición del control de salud"></div>
+<div class="actions"><button class="btn" type="submit">Guardar medición</button></div>
+</form>
+<div class="notice"><strong>Importante:</strong> para menores de 24 meses se utiliza longitud acostado. Una medición aislada no permite diagnosticar ni valorar por sí sola la salud del bebé.</div>
+</div>
+<div class="card"><h3>Tu trayectoria de mediciones</h3><p class="muted">Esta vista conecta tus registros en orden cronológico. No es una curva OMS ni una clasificación nutricional.</p><div id="chartArea" class="empty">Añade al menos dos mediciones del mismo tipo para ver su trayectoria.</div></div>
+<div class="card"><h3>Historial</h3><div id="measurementList" class="empty">Todavía no hay mediciones guardadas.</div></div>
+<div id="advancedInfo" class="card hidden"><h3>Panel avanzado</h3><div class="notice"><strong>Curvas OMS, puntuaciones Z y percentiles:</strong> se habilitarán cuando las tablas LMS oficiales y los cálculos hayan superado la verificación numérica independiente. No se mostrarán estimaciones ni percentiles aproximados.</div><p class="muted">Indicadores previstos: peso para la edad, longitud para la edad, peso para la longitud y perímetro cefálico para la edad.</p></div>
+</section>
+<section id="development" class="panel hidden">
+<div class="card"><h2>Su desarrollo, paso a paso</h2><p>El desarrollo no es una carrera. Cada niño combina sus habilidades y avances a su propio ritmo.</p>
+<div class="grid">
+<div class="stat"><b>Movimiento</b><span>Postura, desplazamiento y coordinación.</span></div>
+<div class="stat"><b>Comunicación</b><span>Gestos, sonidos, comprensión y lenguaje.</span></div>
+<div class="stat"><b>Exploración</b><span>Curiosidad, atención y resolución de pequeños problemas.</span></div>
+<div class="stat"><b>Vínculos</b><span>Interacción, expresión emocional y relación con otras personas.</span></div>
+</div>
+<div class="notice"><strong>En preparación editorial:</strong> las ventanas de desarrollo y sus fuentes se incorporarán tras revisión pediátrica. Esta versión no aplica pruebas, no puntúa habilidades y no descarta retrasos.</div>
+</div>
+</section>
+<section id="diary" class="panel hidden">
+<div class="card"><h2>Controles y pequeños logros</h2>
+<form id="diaryForm">
+<div class="grid">
+<div class="field"><label for="diaryDate">Fecha</label><input id="diaryDate" type="date" required></div>
+<div class="field"><label for="diaryKind">Tipo de nota</label><select id="diaryKind"><option value="control">Control pediátrico</option><option value="logro">Pequeño logro</option><option value="nota">Otra observación</option></select></div>
+</div>
+<div class="field"><label for="diaryText">¿Qué deseas recordar?</label><textarea id="diaryText" maxlength="500" required placeholder="Escribe una nota breve..."></textarea></div>
+<button class="btn" type="submit">Guardar nota</button>
+</form>
+<div id="diaryList" class="empty">Aún no hay notas.</div>
+</div>
+</section>
+<div class="notice alert"><strong>Alcance de esta versión:</strong> herramienta educativa en desarrollo. No sustituye controles de salud, evaluación pediátrica ni atención urgente. Si te preocupa el crecimiento, la alimentación o el desarrollo de tu bebé, consulta con su equipo de salud.</div>
+</main>
+<footer><div class="wrap">CIBA · Mi bebé crece · Recurso en revisión editorial. Referencia prevista: Estándares de Crecimiento Infantil de la OMS.</div></footer>
+<script>
+(()=> {
+"use strict";
+const DB="ciba-mi-bebe-crece",STORE="estado",KEY="principal";
+let state={profiles:[],activeId:null,measurements:[],diary:[],mode:"family"};
+let db;
+const $=id=>document.getElementById(id);
+const today=()=>new Date().toLocaleDateString("en-CA");
+function openDB(){return new Promise((resolve,reject)=>{const req=indexedDB.open(DB,1);req.onupgradeneeded=()=>req.result.createObjectStore(STORE);req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)})}
+function readState(){return new Promise((resolve,reject)=>{const tx=db.transaction(STORE,"readonly"),req=tx.objectStore(STORE).get(KEY);req.onsuccess=()=>resolve(req.result||null);req.onerror=()=>reject(req.error)})}
+function writeState(){return new Promise((resolve,reject)=>{const tx=db.transaction(STORE,"readwrite");tx.objectStore(STORE).put(state,KEY);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)})}
+function active(){return state.profiles.find(p=>p.id===state.activeId)||null}
+function age(date){const d=new Date(date+"T12:00:00"),n=new Date();let m=(n.getFullYear()-d.getFullYear())*12+n.getMonth()-d.getMonth();if(n.getDate()<d.getDate())m--;const days=Math.floor((new Date(n.getFullYear(),n.getMonth(),n.getDate())-new Date(d.getFullYear(),d.getMonth(),d.getDate()))/86400000);return {months:Math.max(0,m),days:Math.max(0,days)}}
+function escapeHTML(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function render(){
+const p=active();$("profileSummary").textContent=p?(p.name||"Mi bebé")+" · "+age(p.birth).months+" meses":"Crea un perfil para comenzar.";
+$("profileList").innerHTML=state.profiles.length?state.profiles.map(x=>'<button class="btn alt" data-profile="'+x.id+'">'+escapeHTML(x.name||"Mi bebé")+(x.id===state.activeId?" · activo":"")+'</button>').join(" "):"";
+document.querySelectorAll("[data-profile]").forEach(b=>b.onclick=async()=>{state.activeId=b.dataset.profile;await writeState();render()});
+const ms=state.measurements.filter(x=>x.profileId===state.activeId).sort((a,b)=>a.date.localeCompare(b.date));
+$("measurementList").innerHTML=ms.length?'<div class="table-wrap"><table><thead><tr><th>Fecha</th><th>Indicador</th><th>Valor</th><th>Nota</th><th></th></tr></thead><tbody>'+ms.map(x=>'<tr><td>'+x.date+'</td><td>'+({weight:"Peso",length:"Longitud",head:"Perímetro cefálico"}[x.type])+'</td><td>'+x.value+' '+(x.type==="weight"?"kg":"cm")+'</td><td>'+escapeHTML(x.note)+'</td><td><button class="btn danger" data-del="'+x.id+'" aria-label="Eliminar medición">Eliminar</button></td></tr>').join("")+'</tbody></table></div>':'<div class="empty">Todavía no hay mediciones guardadas.</div>';
+document.querySelectorAll("[data-del]").forEach(b=>b.onclick=async()=>{state.measurements=state.measurements.filter(x=>x.id!==b.dataset.del);await writeState();render()});
+drawChart(ms);
+$("diaryList").innerHTML=state.diary.filter(x=>x.profileId===state.activeId).sort((a,b)=>b.date.localeCompare(a.date)).map(x=>'<div class="stat" style="margin:10px 0"><b style="font-size:16px">'+escapeHTML(x.kind==="control"?"Control pediátrico":x.kind==="logro"?"Pequeño logro":"Observación")+' · '+x.date+'</b><span>'+escapeHTML(x.text)+'</span></div>').join("")||'<div class="empty">Aún no hay notas.</div>';
+$("advancedInfo").classList.toggle("hidden",state.mode!=="advanced");
+$("familyMode").setAttribute("aria-pressed",state.mode==="family");$("advancedMode").setAttribute("aria-pressed",state.mode==="advanced");
+}
+function drawChart(ms){
+const type=document.querySelector("#measureType").value,rows=ms.filter(x=>x.type===type);
+if(rows.length<2){$("chartArea").textContent="Añade al menos dos mediciones del mismo tipo para ver su trayectoria.";return}
+const vals=rows.map(x=>Number(x.value)),min=Math.min(...vals),max=Math.max(...vals),span=max-min||1;
+const pts=vals.map((v,i)=>[40+i*(300/(vals.length-1)),120-(v-min)/span*85]);
+const path=pts.map((p,i)=>(i?"L":"M")+p[0]+","+p[1]).join(" ");
+$("chartArea").innerHTML='<svg class="chart" viewBox="0 0 380 160" role="img" aria-label="Trayectoria de mediciones registradas, no representa percentiles"><path d="M30 120 H350" stroke="#d7d0c2" fill="none"/><path d="'+path+'" fill="none" stroke="#52765b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'+pts.map((p,i)=>'<circle cx="'+p[0]+'" cy="'+p[1]+'" r="4" fill="#b86d50"><title>'+rows[i].date+': '+rows[i].value+'</title></circle>').join("")+'<text x="30" y="148" font-size="10" fill="#68736b">'+rows[0].date+'</text><text x="350" y="148" text-anchor="end" font-size="10" fill="#68736b">'+rows[rows.length-1].date+'</text></svg><p class="muted">Valores registrados: '+min+'–'+max+' '+(type==="weight"?"kg":"cm")+'. Esta línea solo une tus mediciones; no compara con estándares de crecimiento.</p>';
+}
+document.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("[data-tab]").forEach(x=>x.setAttribute("aria-selected",String(x===b)));document.querySelectorAll(".panel").forEach(x=>x.classList.toggle("hidden",x.id!==b.dataset.tab))}));
+$("familyMode").onclick=async()=>{state.mode="family";await writeState();render()};
+$("advancedMode").onclick=async()=>{state.mode="advanced";await writeState();render()};
+$("premature").onchange=()=>$("gestationFields").classList.toggle("hidden",!$("premature").checked);
+$("newProfile").onclick=()=>{ $("profileForm").reset();$("gestationFields").classList.add("hidden");$("childName").focus() };
+$("profileForm").onsubmit=async e=>{e.preventDefault();const birth=$("birthDate").value;if(!birth||birth>today()){alert("Comprueba la fecha de nacimiento.");return}const pre=$("premature").checked,w=Number($("gestWeeks").value),d=Number($("gestDays").value);if(pre&&(w<22||w>36||d<0||d>6)){alert("Comprueba la edad gestacional.");return}const p={id:crypto.randomUUID(),name:$("childName").value.trim(),birth,sex:$("sex").value,premature:pre,gestWeeks:pre?w:null,gestDays:pre?d:null};state.profiles.push(p);state.activeId=p.id;await writeState();render();alert("Perfil guardado en este dispositivo.")};
+$("measurementForm").onsubmit=async e=>{e.preventDefault();if(!active()){alert("Primero crea o selecciona un perfil.");return}const date=$("measureDate").value,value=Number($("measureValue").value),type=$("measureType").value;if(!date||date>today()||!Number.isFinite(value)||value<=0){alert("Comprueba la fecha y el valor.");return}if(age(active().birth).months>24){alert("Este recurso está diseñado para el nacimiento hasta los 24 meses.");return}state.measurements.push({id:crypto.randomUUID(),profileId:state.activeId,date,value,type,note:$("measureNote").value.trim()});await writeState();$("measurementForm").reset();$("measureDate").value=today();render();alert("Medición guardada.")};
+$("measureType").onchange=()=>drawChart(state.measurements.filter(x=>x.profileId===state.activeId));
+$("diaryForm").onsubmit=async e=>{e.preventDefault();if(!active()){alert("Primero crea o selecciona un perfil.");return}const date=$("diaryDate").value;if(!date||date>today()){alert("Comprueba la fecha.");return}state.diary.push({id:crypto.randomUUID(),profileId:state.activeId,date,kind:$("diaryKind").value,text:$("diaryText").value.trim()});await writeState();$("diaryForm").reset();$("diaryDate").value=today();render();alert("Nota guardada.")};
+async function start(){try{db=await openDB();const saved=await readState();if(saved)state={...state,...saved};$("measureDate").value=today();$("diaryDate").value=today();$("birthDate").max=today();render()}catch(err){document.querySelector("main").insertAdjacentHTML("afterbegin",'<div class="notice alert">Este navegador no permite el almacenamiento local necesario. No introduzcas datos personales. Prueba con un navegador actualizado.</div>')}}
+start();
+})();
+</script>
+</body>
+</html>
