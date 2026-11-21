@@ -369,7 +369,7 @@ class TestBuild(unittest.TestCase):
         css.parent.mkdir(parents=True, exist_ok=True)
         js.parent.mkdir(parents=True, exist_ok=True)
         css.write_text("/* CSS global de prueba */", encoding="utf-8")
-        js.write_text('/* ciba-global.css?v=20261112-08 */', encoding="utf-8")
+        js.write_text('/* ciba-global.css?v=20261121-05 */', encoding="utf-8")
 
         self.assertEqual(construir(self.content, self.out), 0)
         pagina = self.out / "c" / "C1" / "C1-01" / "index.html"
