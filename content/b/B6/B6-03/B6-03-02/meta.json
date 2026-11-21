@@ -1,0 +1,44 @@
+{
+  "id": "B6-03-02",
+  "titulo": "Desarrollo del lenguaje: señales para consultar",
+  "descripcion": "Orientación para familias sobre comunicación temprana, comprensión, gestos, palabras y señales que justifican consultar al equipo de salud, con referencias científicas cubanas.",
+  "columna": "B",
+  "area": "B6",
+  "subseccion": "B6-03",
+  "palabras_clave": [
+    "desarrollo-del-lenguaje",
+    "comunicacion-infantil",
+    "lenguaje-expresivo",
+    "lenguaje-receptivo",
+    "gestos-comunicativos",
+    "audicion-infantil",
+    "primera-infancia",
+    "puericultura"
+  ],
+  "estado": "revision",
+  "preview_publica": true,
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "enlaces_externos": [
+    {
+      "titulo": "Desarrollo del lenguaje en el niño cubano menor de 18 meses",
+      "url": "https://paperity.org/p/188741717/desarrollo-del-lenguaje-en-el-nino-cubano-menor-de-18-meses",
+      "tipo": "investigación cubana en ocho provincias"
+    },
+    {
+      "titulo": "Factores biológicos asociados al retardo primario del lenguaje en niños menores de cinco años",
+      "url": "https://www.medigraphic.com/pdfs/revcubped/cup-2013/cup134g.pdf",
+      "tipo": "investigación original cubana"
+    },
+    {
+      "titulo": "Evaluación clínica de los gestos en la ontogénesis del lenguaje",
+      "url": "https://www.medigraphic.com/pdfs/correo/ccm-2021/ccm212g.pdf",
+      "tipo": "investigación cubana sobre comunicación gestual"
+    },
+    {
+      "titulo": "Instrumento para la pesquisa de los problemas del desarrollo psicomotor en niños menores de seis años",
+      "url": "https://www.medigraphic.com/pdfs/revcubped/cup-2019/cup194b.pdf",
+      "tipo": "instrumento cubano de pesquisa que incluye el área de lenguaje"
+    }
+  ]
+}
