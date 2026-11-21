@@ -15,10 +15,10 @@
     "primera-infancia",
     "puericultura"
   ],
-  "estado": "revision",
-  "preview_publica": true,
-  "mostrar_en_columna": false,
-  "mostrar_en_area": false,
+  "estado": "publicado",
+  "preview_publica": false,
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
   "enlaces_externos": [
     {
       "titulo": "Desarrollo del lenguaje en el niño cubano menor de 18 meses",
