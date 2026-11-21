@@ -109,6 +109,7 @@ jobs:
           --root dist
           --base-url https://ciba1000dias-lab.github.io/ciba2.0/
           --json-out /tmp/ciba-internal-links-audit.json
+          --strict
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
