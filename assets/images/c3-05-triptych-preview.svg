@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1300" role="img" aria-labelledby="t d">
+<title id="t">Manitas pequeñas, cuidados con calma</title>
+<desc id="d">Guía visual CIBA en tres paneles: recordatorios de seguridad, lema y contactos, y portada con una mano adulta sosteniendo suavemente la mano de un bebé.</desc>
+<defs>
+ <linearGradient id="wood" x2="1" y2="1"><stop stop-color="#d9ad7d"/><stop offset=".5" stop-color="#c99462"/><stop offset="1" stop-color="#e4bd91"/></linearGradient>
+ <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fffdf6"/><stop offset="1" stop-color="#f5ead8"/></linearGradient>
+</defs>
+<rect width="900" height="1300" fill="#eee6d8"/>
+<rect x="0" y="0" width="300" height="1300" fill="#173d32"/>
+<rect x="300" y="0" width="300" height="1300" fill="url(#wood)"/>
+<rect x="600" y="0" width="300" height="1300" fill="url(#paper)"/>
+<g fill="none" stroke="#d8c6a0" stroke-width="3" opacity=".9" stroke-linecap="round">
+ <path d="M20 110 Q80 60 110 20 M48 85 Q25 55 26 30 M63 70 Q94 52 115 57 M43 95 Q15 92 8 75 M74 55 Q74 28 88 12"/>
+ <path d="M30 1190 Q100 1120 180 1100 M78 1160 Q52 1125 45 1090 M105 1140 Q120 1090 148 1068 M130 1130 Q170 1130 195 1150"/>
+</g>
+<text x="150" y="205" fill="#fffaf0" font-family="Arial,sans-serif" font-size="43" font-weight="700" text-anchor="middle">Para</text>
+<text x="150" y="254" fill="#fffaf0" font-family="Arial,sans-serif" font-size="43" font-weight="700" text-anchor="middle">recordar</text>
+<g text-anchor="middle" font-family="Arial,sans-serif">
+ <circle cx="150" cy="365" r="66" fill="#bd6845"/><circle cx="150" cy="365" r="34" fill="none" stroke="#fff4e5" stroke-width="4"/>
+ <path d="M150 340 q-18 0 -18 18 q0 14 18 14 q18 0 18-14 q0-18-18-18 M120 395 q30-30 60 0" fill="none" stroke="#fff4e5" stroke-width="4" stroke-linecap="round"/>
+ <text x="150" y="470" fill="#fffaf0" font-size="24" font-weight="700">Elegir un</text><text x="150" y="500" fill="#fffaf0" font-size="24" font-weight="700">momento tranquilo</text>
+ <path d="M65 545 H235" stroke="#b8b69b" stroke-width="2"/>
+ <circle cx="150" cy="640" r="66" fill="#bd6845"/><circle cx="150" cy="640" r="37" fill="none" stroke="#fff4e5" stroke-width="4"/><path d="M150 612 V640 L174 656" fill="none" stroke="#fff4e5" stroke-width="4" stroke-linecap="round"/>
+ <text x="150" y="750" fill="#fffaf0" font-size="24" font-weight="700">No es necesario</text><text x="150" y="780" fill="#fffaf0" font-size="24" font-weight="700">terminar de una vez</text>
+ <path d="M65 825 H235" stroke="#b8b69b" stroke-width="2"/>
+ <circle cx="150" cy="920" r="66" fill="#bd6845"/><path d="M150 875 L190 892 V922 Q185 960 150 976 Q115 960 110 922 V892 Z" fill="none" stroke="#fff4e5" stroke-width="4"/><path d="M150 900 V945 M130 922 H170" stroke="#fff4e5" stroke-width="5"/>
+ <text x="150" y="1030" fill="#fffaf0" font-size="23" font-weight="700">Consultar ante</text><text x="150" y="1060" fill="#fffaf0" font-size="23" font-weight="700">sangrado persistente,</text><text x="150" y="1090" fill="#fffaf0" font-size="23" font-weight="700">herida profunda o</text><text x="150" y="1120" fill="#fffaf0" font-size="23" font-weight="700">signos de infección</text>
+</g>
+<g fill="none" stroke="#53614a" stroke-width="4" stroke-linecap="round">
+ <path d="M450 170 Q430 260 460 340 Q480 390 500 430 M455 280 Q405 240 390 195 Q440 210 455 280 M462 330 Q515 280 530 230 Q480 245 462 330 M470 370 Q410 350 380 315 Q430 300 470 370"/>
+ <path d="M350 1170 Q430 1080 510 1040 M400 1120 Q365 1075 365 1035 Q410 1050 400 1120 M435 1090 Q450 1030 490 1000 Q490 1050 435 1090 M460 1080 Q520 1060 550 1080 Q520 1120 460 1080"/>
+</g>
+<g text-anchor="middle" font-family="Arial,sans-serif" fill="#234337">
+ <text x="450" y="550" font-size="48" font-weight="700">CIBA ·</text>
+ <text x="450" y="610" font-size="38" font-weight="700">Crecemos</text><text x="450" y="655" font-size="38" font-weight="700">acompañándonos</text>
+ <path d="M390 730 Q450 780 510 730" fill="none" stroke="#b96843" stroke-width="8" stroke-linecap="round"/>
+ <text x="450" y="825" font-size="25" font-weight="700">¿Quieres contactarnos?</text>
+ <text x="450" y="875" font-size="23">ciba.1000dias@gmail.com</text>
+ <text x="450" y="925" font-size="25" font-weight="700">+53 5086 1330</text>
+</g>
+<g text-anchor="middle" font-family="Arial,sans-serif">
+ <text x="750" y="110" fill="#b56b4a" font-size="24" font-weight="700" letter-spacing="2">CIBA · CRIANZA</text>
+ <text x="750" y="230" fill="#234337" font-family="Georgia,serif" font-size="54" font-weight="700">Manitas</text>
+ <text x="750" y="292" fill="#234337" font-family="Georgia,serif" font-size="54" font-weight="700">pequeñas,</text>
+ <text x="750" y="354" fill="#234337" font-family="Georgia,serif" font-size="54" font-weight="700">cuidados</text>
+ <text x="750" y="416" fill="#234337" font-family="Georgia,serif" font-size="54" font-weight="700">con calma</text>
+ <path d="M665 475 H720 M780 475 H835" stroke="#bd8e70" stroke-width="3"/><path d="M750 464 C730 442 710 470 750 500 C790 470 770 442 750 464" fill="#b96843"/>
+ <text x="750" y="555" fill="#234337" font-size="27" font-weight="700">Cómo cuidar y cortar</text><text x="750" y="590" fill="#234337" font-size="27" font-weight="700">las uñas del bebé</text><text x="750" y="625" fill="#234337" font-size="27" font-weight="700">sin miedo</text>
+</g>
+<g transform="translate(620 690)" fill="none" stroke="#b98765" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+ <path d="M18 450 Q-10 385 22 310 L100 210 Q120 185 140 205 Q150 220 135 245 L100 300 Q85 325 115 335 Q145 345 175 315 L240 250 Q265 225 285 245 Q300 263 280 285 L220 350 Q195 380 160 405 Q115 440 90 505"/>
+ <path d="M100 300 Q130 270 150 285 Q170 300 155 320 M140 205 Q160 175 180 190 Q195 205 180 230 M180 190 Q205 160 225 180 Q240 200 220 225"/>
+ <path d="M85 470 Q150 520 225 500 Q280 485 300 445" stroke="#d4b28d" stroke-width="22"/>
+</g>
+<g fill="#53664b"><path d="M760 1220 Q790 1100 840 1010 Q845 1130 790 1220Z"/><path d="M805 1250 Q840 1140 890 1090 Q880 1190 830 1260Z"/><path d="M710 1260 Q725 1160 770 1100 Q780 1200 730 1270Z"/></g>
+<rect x="1.5" y="1.5" width="897" height="1297" fill="none" stroke="#e7d9c4" stroke-width="3"/>
+</svg>
