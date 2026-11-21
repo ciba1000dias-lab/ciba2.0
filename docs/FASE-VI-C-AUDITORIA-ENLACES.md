@@ -14,6 +14,16 @@ Base: compilación de la rama `fase-vi-c/auditoria-enlaces-2026-11-20`, con la n
 
 La auditoría se ejecutó sobre `dist`, es decir, sobre el artefacto construido que se publica, no solamente sobre los archivos fuente. Los enlaces externos no se consultaron ni se calificaron como correctos o incorrectos.
 
+## Evolución de la línea base
+
+| Hito | Incidencias detectadas |
+|---|---:|
+| Auditoría inicial | 50 |
+| Tras corregir las rutas del módulo global | 38 |
+| Tras corregir rutas editoriales, recursos y publicación de artículos anidados | 1 |
+
+La reducción se verificó en ejecuciones de CI sobre el artefacto construido. La única incidencia que permanece es `c/C1/lactancia/index.html` → `../C1-31/`: el índice de lactancia declara ese artículo como publicado, pero no existe `content/c/C1/C1-31/` en el repositorio. Se deja sin redirección automática porque no hay un artículo equivalente al que enviar a las familias. Su resolución requiere recuperar o redactar y aprobar el contenido C1-31.
+
 ## Tipos de incidencias observadas
 
 El primer informe detectó, entre otros:
