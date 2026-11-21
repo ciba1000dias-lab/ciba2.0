@@ -35,7 +35,7 @@ class TestRutasScriptGlobal(unittest.TestCase):
         errores = _conectar_sistema_global(pagina, self.root)
         self.assertEqual(errores, [])
         html = pagina.read_text(encoding="utf-8")
-        self.assertIn(f'src="{esperado}?v=20261119-01"', html)
+        self.assertIn(f'src="{esperado}?v=20261121-05"', html)
 
     def test_corrige_ruta_en_pagina_de_columna(self) -> None:
         self.comprobar("i/I1", "../../assets/js/ciba-global.js")
