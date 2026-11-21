@@ -1,0 +1,48 @@
+{
+  "id": "C1-31",
+  "titulo": "Lactancia y enfermedad del bebé: ¿se puede seguir amamantando?",
+  "descripcion": "Aprende cómo mantener la lactancia durante enfermedades habituales, qué hacer si el bebé mama menos y cuáles son las señales que requieren atención médica.",
+  "columna": "C",
+  "area": "C1",
+  "palabras_clave": [
+    "lactanciayenfermedad",
+    "bebe-enfermo",
+    "fiebreylactancia",
+    "diarreaylactancia",
+    "vomitosylactancia",
+    "lechematerna",
+    "lactanciacontinua",
+    "extracciondeleche",
+    "deshidratacion",
+    "senalesdealarma",
+    "lactanciahospital",
+    "alimentacioninfantil"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-20",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "subseccion": "Lactancia materna",
+  "preview_publica": true,
+  "media": {
+    "videos": [
+      {
+        "proveedor": "youtube",
+        "id": "9IW_Ax3qRSI",
+        "titulo": "UNICEF: Tips on feeding your child when they are ill"
+      }
+    ]
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "OMS: Alimentación del lactante y del niño pequeño",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding",
+      "tipo": "fuente científica"
+    },
+    {
+      "titulo": "UNICEF: Breastfeeding when sick",
+      "url": "https://www.unicef.org/parenting/health/breastfeeding-when-sick",
+      "tipo": "orientación para familias"
+    }
+  ]
+}
