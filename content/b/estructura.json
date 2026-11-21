@@ -609,15 +609,19 @@
               "id": "B6-03-01",
               "titulo": "Evaluación del desarrollo motor y sus variaciones",
               "ruta": "/b/B6/B6-03/B6-03-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true,
+              "mostrar_en_columna": true,
+              "mostrar_en_area": true
             },
             {
               "id": "B6-03-02",
               "titulo": "Desarrollo del lenguaje: señales para consultar",
               "ruta": "/b/B6/B6-03/B6-03-02/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true,
+              "mostrar_en_columna": true,
+              "mostrar_en_area": true
             }
           ]
         },
@@ -630,15 +634,19 @@
               "id": "B6-04-01",
               "titulo": "Vigilancia del desarrollo cognitivo y socioemocional",
               "ruta": "/b/B6/B6-04/B6-04-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true,
+              "mostrar_en_columna": true,
+              "mostrar_en_area": true
             },
             {
               "id": "B6-04-02",
               "titulo": "Variaciones del desarrollo: cuándo requieren evaluación",
               "ruta": "/b/B6/B6-04/B6-04-02/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true,
+              "mostrar_en_columna": true,
+              "mostrar_en_area": true
             }
           ]
         },
