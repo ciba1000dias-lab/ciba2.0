@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">Nayara junto a su bebé</title>
+<desc id="desc">Ilustración cálida de una madre sentada junto a la cuna de su bebé dormido, en un hogar tranquilo y libre de humo.</desc>
+<defs>
+ <linearGradient id="wall" x2="1" y2="1"><stop stop-color="#ead8bd"/><stop offset="1" stop-color="#f7ead5"/></linearGradient>
+ <linearGradient id="dress" x2="1" y2="1"><stop stop-color="#b96e58"/><stop offset="1" stop-color="#8f4f45"/></linearGradient>
+ <linearGradient id="blanket" x2="1" y2="1"><stop stop-color="#e4c58d"/><stop offset="1" stop-color="#c99b62"/></linearGradient>
+</defs>
+<rect width="1200" height="700" fill="url(#wall)"/>
+<circle cx="990" cy="135" r="78" fill="#e9c78c" opacity=".55"/>
+<path d="M0 565 Q250 520 500 570 T1200 550 V700 H0Z" fill="#c49b72"/>
+<rect x="72" y="88" width="270" height="330" rx="18" fill="#f8f1e5" stroke="#b88c65" stroke-width="12"/>
+<path d="M207 92 V412 M78 250 H336" stroke="#b88c65" stroke-width="10"/>
+<path d="M90 395 Q130 280 200 330 Q260 240 325 395Z" fill="#9ba889"/>
+<path d="M90 395 Q145 340 200 395 Q260 320 325 395Z" fill="#73866b"/>
+<path d="M710 590 V300 Q710 265 745 265 H1085 Q1120 265 1120 300 V590" fill="#d5b18a" stroke="#88684f" stroke-width="14"/>
+<path d="M735 315 H1095 M735 520 H1095" stroke="#88684f" stroke-width="12"/>
+<path d="M760 315 V520 M840 315 V520 M920 315 V520 M1000 315 V520 M1070 315 V520" stroke="#a17b5a" stroke-width="9"/>
+<path d="M735 520 Q910 470 1095 520 V570 H735Z" fill="#f2e6d2"/>
+<ellipse cx="905" cy="478" rx="122" ry="48" fill="#e5c28e"/>
+<path d="M820 470 Q865 420 920 445 Q980 420 1010 474 Q960 515 865 510Z" fill="#d9b77f"/>
+<circle cx="900" cy="445" r="39" fill="#a96f53"/>
+<path d="M865 440 Q868 394 916 403 Q950 410 944 444 Q920 422 900 429 Q880 440 865 440Z" fill="#59433a"/>
+<path d="M882 450 Q900 460 918 450" fill="none" stroke="#6b493d" stroke-width="5" stroke-linecap="round"/>
+<path d="M770 485 Q840 455 895 478 Q945 495 1010 475" fill="none" stroke="#c28e5c" stroke-width="8" stroke-linecap="round"/>
+<!-- Madre -->
+<path d="M350 610 Q360 480 420 400 Q470 335 550 355 Q640 380 665 480 L690 620Z" fill="url(#dress)"/>
+<path d="M430 398 Q470 350 525 365 Q570 380 590 430 Q550 480 480 470 Q430 450 430 398Z" fill="#d49a79"/>
+<ellipse cx="500" cy="270" rx="92" ry="112" fill="#b8795d"/>
+<path d="M408 268 Q385 150 500 145 Q615 150 590 280 Q565 235 535 226 Q480 215 450 258Z" fill="#3e302c"/>
+<path d="M410 250 Q380 295 425 350 Q450 370 475 372 Q430 330 435 285Z" fill="#3e302c"/>
+<path d="M480 285 Q495 295 510 285" fill="none" stroke="#583c34" stroke-width="6" stroke-linecap="round"/>
+<path d="M535 285 Q550 295 562 285" fill="none" stroke="#583c34" stroke-width="6" stroke-linecap="round"/>
+<path d="M510 310 Q525 320 540 310" fill="none" stroke="#87513f" stroke-width="5" stroke-linecap="round"/>
+<path d="M448 352 Q490 385 545 355" fill="none" stroke="#8e5847" stroke-width="8" stroke-linecap="round"/>
+<!-- Brazos sosteniendo al bebé -->
+<path d="M430 425 Q500 470 600 485 Q650 490 665 530" fill="none" stroke="#b8795d" stroke-width="32" stroke-linecap="round"/>
+<path d="M585 485 Q650 465 690 490" fill="none" stroke="#b8795d" stroke-width="30" stroke-linecap="round"/>
+<ellipse cx="690" cy="470" rx="78" ry="48" fill="#d6a27e" transform="rotate(-12 690 470)"/>
+<path d="M630 470 Q660 425 720 440 Q770 455 765 500 Q720 535 655 510Z" fill="#f1dfc4"/>
+<circle cx="690" cy="447" r="33" fill="#c98f70"/>
+<path d="M660 440 Q660 402 704 408 Q732 415 722 444 Q690 423 660 440Z" fill="#59433a"/>
+<path d="M680 451 Q692 458 704 451" fill="none" stroke="#815341" stroke-width="4" stroke-linecap="round"/>
+<path d="M650 490 Q705 520 755 487" fill="none" stroke="#d3b27f" stroke-width="18" stroke-linecap="round"/>
+<!-- detalles cálidos -->
+<path d="M110 610 Q180 570 250 610" fill="none" stroke="#8c765d" stroke-width="7" stroke-linecap="round"/>
+<path d="M1040 160 Q1080 120 1120 160 M1080 120 V195" fill="none" stroke="#a17b5a" stroke-width="8" stroke-linecap="round"/>
+<text x="600" y="660" text-anchor="middle" font-family="Georgia,serif" font-size="22" fill="#715541" letter-spacing="2">CIBA · CRECEMOS ACOMPAÑÁNDONOS</text>
+</svg>
