@@ -112,6 +112,8 @@ def _copiar_paginas_estaticas(src: Path, tmp: Path) -> list[ValidationError]:
     raices = (
         (src / "c" / "C1" / "_paginas", Path("c") / "C1"),
         (src / "b" / "B4" / "B4-02" / "_paginas", Path("b") / "B4" / "B4-02"),
+        # Recurso especial: se publica fuera del árbol de artículos B1–B10.
+        (src / "b" / "B6" / "_paginas" / "recursos", Path("b") / "recursos"),
     )
 
     for raiz, prefijo_destino in raices:
