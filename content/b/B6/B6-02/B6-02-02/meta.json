@@ -6,22 +6,22 @@
   "area": "B6",
   "subseccion": "B6-02",
   "palabras_clave": [
-    "desarrollo infantil",
-    "señales de alerta",
+    "desarrollo-infantil",
+    "senales-alerta",
     "neurodesarrollo",
-    "retraso del desarrollo",
-    "pérdida de habilidades",
-    "vigilancia del desarrollo",
-    "primeros dos años",
-    "audición infantil",
-    "comunicación temprana",
-    "desarrollo motor"
+    "retraso-desarrollo",
+    "perdida-habilidades",
+    "vigilancia-desarrollo",
+    "primeros-dos-anos",
+    "audicion-infantil",
+    "comunicacion-temprana",
+    "desarrollo-motor"
   ],
-  "estado": "revision",
+  "estado": "publicado",
   "fecha_publicacion": "2026-11-20",
   "mostrar_en_columna": false,
   "mostrar_en_area": true,
-  "preview_publica": true,
+  "preview_publica": false,
   "media": {
     "videos": [
       {
