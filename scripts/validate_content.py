@@ -181,10 +181,28 @@ def validar(src: Path, *, hoy: date | None = None) -> list[ValidationError]:
 
                 # Los contenedores archivados representan subsecciones, no artículos.
                 # Se inspeccionan sus hijos para encontrar páginas anidadas.
+                hijos, errs_hijos = listar_directorios_seguros(carpeta_pag, rel_pag)
+                errores.extend(errs_hijos)
+                tiene_hijos_editoriales = (
+                    isinstance(id_pag, str)
+                    and any(
+                        hijo.name.startswith(id_pag + "-")
+                        and (hijo / "meta.json").is_file()
+                        and not (hijo / "meta.json").is_symlink()
+                        for hijo in hijos
+                    )
+                )
                 if pagina.datos.get("estado") == "archivado":
-                    hijos, errs_hijos = listar_directorios_seguros(carpeta_pag, rel_pag)
-                    errores.extend(errs_hijos)
                     pendientes.extend(reversed(hijos))
+                elif tiene_hijos_editoriales:
+                    pendientes.extend(
+                        reversed([
+                            hijo for hijo in hijos
+                            if hijo.name.startswith(id_pag + "-")
+                            and (hijo / "meta.json").is_file()
+                            and not (hijo / "meta.json").is_symlink()
+                        ])
+                    )
 
     return errores
 
