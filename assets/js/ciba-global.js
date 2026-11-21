@@ -186,13 +186,15 @@
   function crearCabeceraGlobal() {
     if (esPortada() || document.querySelector('.ciba-global-cabecera')) return null;
 
-    // Retirar las antiguas barras de marca para que el menú global sea la única cabecera de navegación.
+    // Retirar las antiguas barras de marca, pero nunca cabeceras editoriales
+    // que formen parte del cuerpo de un artículo (p. ej. .ciba-articulo > .cabecera).
     document.querySelectorAll('header.cabecera, header.top, header.cab, header.plataforma-top').forEach((anterior) => {
-      anterior.remove();
+      if (!anterior.closest('.ciba-articulo')) anterior.remove();
     });
     // Algunas páginas auxiliares usan un header sin clase para mostrar solo el logotipo.
+    // Se conserva igualmente cualquier cabecera que pertenezca al contenido editorial.
     document.querySelectorAll('header:not(.hero):not(.cabecera-articulo)').forEach((anterior) => {
-      if (anterior.querySelector('a.marca')) anterior.remove();
+      if (!anterior.closest('.ciba-articulo') && anterior.querySelector('a.marca')) anterior.remove();
     });
 
     const actual = resolverColumnaActual();
