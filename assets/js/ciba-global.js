@@ -556,6 +556,7 @@
       panel.insertBefore(grupoRecursos.grupo,tituloColumnas);
 
       const tituloPlataforma=elemento('h2','ciba-global-menu-titulo ciba-global-menu-separador','PLATAFORMA');
+      panel.appendChild(tituloPlataforma);
 
       columnas.forEach(columna => {
         const areasFuente = (datos.areas || []).filter(area => area.columna === columna.id);
@@ -619,7 +620,6 @@
       ["recursos","Recursos",[["descargables","Descargables"],["multimedia","Multimedia"],["enlaces-recomendados","Enlaces recomendados"],["redes-sociales","Nuestras redes"]]]
     ];
 
-    panel.appendChild(tituloPlataforma);
     const grupoPlataforma=crearDesplegable('Plataforma','ciba-global-plataforma','plataforma/');
     seccionesPlataforma.forEach(seccion=>{
       const grupo=crearDesplegable(seccion[1],'ciba-global-area','plataforma/'+seccion[0]+'/');
