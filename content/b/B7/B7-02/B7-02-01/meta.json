@@ -31,8 +31,8 @@
     "videos": [
       {
         "titulo": "Video MKO sobre diarrea",
-        "url": "https://youtu.be/laWIoW8Dgnk",
-        "fuente": "MKO"
+        "proveedor": "YouTube",
+        "id": "laWIoW8Dgnk"
       }
     ],
     "mapas": []
