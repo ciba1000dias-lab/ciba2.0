@@ -647,58 +647,58 @@
         const letra = elemento('span', 'ciba-global-letra', columna.id);
         grupoColumna.botonGrupo.prepend(letra);
 
+        // Insertar cada columna antes de procesar sus contenidos. Un error en
+        // una subsección no puede hacer desaparecer esta columna ni las siguientes.
+        grupoColumnas.lista.appendChild(grupoColumna.grupo);
+
         for (const areaMenu of areasColumna) {
           const areaFuente = areasFuente.find(area => area.id === (areaMenu.fuente || areaMenu.id));
           const rutaArea = areaMenu.ruta || areaFuente?.ruta_publica ||
             (columna.id.toLowerCase() + '/' + (areaMenu.fuente || areaMenu.id) + '/');
 
-          // Todas las áreas usan exactamente el mismo componente:
-          // enlace directo a la portada + control independiente para desplegar.
           const grupoArea = crearDesplegable(
             areaMenu.titulo,
             'ciba-global-area',
             rutaArea
           );
 
-          const paginas = (datos.paginas || [])
-            .filter(pagina =>
-              pagina.columna === columna.id &&
-              resolverAreaEditorial(pagina) === areaMenu.id &&
-              pagina.mostrar_en_area !== false
-            )
-            .sort(ordenarPaginas);
-
-          if (columna.id === 'I') {
-            agregarPaginasDeArea(grupoArea.lista, paginas);
-          } else if (areaMenu.id === 'B4') {
-            agregarPaginasNutricion(grupoArea.lista);
-          } else if (areaMenu.id === 'B7') {
-            // Un fallo al consultar la estructura de B7 nunca debe interrumpir
-            // la construcción de las columnas Bienestar y Acompañamiento.
-            try {
-              await agregarSubseccionesB7(grupoArea.lista);
-            } catch (error) {
-              console.error('CIBA: no se pudo cargar el árbol de subsecciones B7.', error);
-              const aviso = elemento(
-                'span',
-                'ciba-global-enlace ciba-global-subenlace',
-                'Subsecciones temporalmente no disponibles'
-              );
-              aviso.setAttribute('aria-disabled', 'true');
-              grupoArea.lista.appendChild(aviso);
-            }
-          } else if (areaMenu.id === 'B6') {
-            agregarPaginasCrecimiento(grupoArea.lista);
-            agregarPaginasVigilanciaDesarrollo(grupoArea.lista);
-          } else if (areaMenu.id === 'C1-ALIMENTACION') {
-            agregarPaginasAlimentacion(grupoArea.lista, paginas);
-          } else {
-            agregarPaginasDeArea(grupoArea.lista, paginas);
-          }
+          // La entrada del área también se incorpora antes de construir su árbol.
           grupoColumna.lista.appendChild(grupoArea.grupo);
-        }
 
-        grupoColumnas.lista.appendChild(grupoColumna.grupo);
+          try {
+            const paginas = (datos.paginas || [])
+              .filter(pagina =>
+                pagina.columna === columna.id &&
+                resolverAreaEditorial(pagina) === areaMenu.id &&
+                pagina.mostrar_en_area !== false
+              )
+              .sort(ordenarPaginas);
+
+            if (columna.id === 'I') {
+              agregarPaginasDeArea(grupoArea.lista, paginas);
+            } else if (areaMenu.id === 'B4') {
+              agregarPaginasNutricion(grupoArea.lista);
+            } else if (areaMenu.id === 'B7') {
+              await agregarSubseccionesB7(grupoArea.lista);
+            } else if (areaMenu.id === 'B6') {
+              agregarPaginasCrecimiento(grupoArea.lista);
+              agregarPaginasVigilanciaDesarrollo(grupoArea.lista);
+            } else if (areaMenu.id === 'C1-ALIMENTACION') {
+              agregarPaginasAlimentacion(grupoArea.lista, paginas);
+            } else {
+              agregarPaginasDeArea(grupoArea.lista, paginas);
+            }
+          } catch (error) {
+            console.error('CIBA: error al construir el área ' + areaMenu.id + '.', error);
+            const aviso = elemento(
+              'span',
+              'ciba-global-enlace ciba-global-subenlace',
+              'Contenidos temporalmente no disponibles'
+            );
+            aviso.setAttribute('aria-disabled', 'true');
+            grupoArea.lista.appendChild(aviso);
+          }
+        }
       }
     }
 
