@@ -708,18 +708,21 @@
               "id": "B7-01-03",
               "titulo": "Neumonía infantil: manifestaciones y atención",
               "ruta": "/b/B7/B7-01/B7-01-03/",
-              "estado": "revision",
+              "estado": "publicado",
               "enlace_activo": true,
-              "vista_previa_publica": true,
-              "mostrar_en_columna": false,
-              "mostrar_en_area": false
+              "vista_previa_publica": false,
+              "mostrar_en_columna": true,
+              "mostrar_en_area": true
             },
             {
               "id": "B7-01-04",
               "titulo": "Influenza y otras infecciones virales respiratorias",
               "ruta": "/b/B7/B7-01/B7-01-04/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "revision",
+              "enlace_activo": true,
+              "vista_previa_publica": true,
+              "mostrar_en_columna": false,
+              "mostrar_en_area": false
             }
           ]
         },
