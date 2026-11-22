@@ -723,6 +723,16 @@
               "vista_previa_publica": true,
               "mostrar_en_columna": false,
               "mostrar_en_area": false
+            },
+            {
+              "id": "B7-01-05",
+              "titulo": "Crup o laringotraqueítis: tos perruna y dificultad respiratoria",
+              "ruta": "/b/B7/B7-01/B7-01-05/",
+              "estado": "revision",
+              "enlace_activo": true,
+              "vista_previa_publica": true,
+              "mostrar_en_columna": false,
+              "mostrar_en_area": false
             }
           ]
         },
