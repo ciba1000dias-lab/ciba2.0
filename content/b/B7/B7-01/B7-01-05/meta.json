@@ -19,8 +19,7 @@
     "parainfluenza",
     "infeccionviral",
     "prevencion",
-    "lactantes",
-    "primerosmil"
+    "lactantes"
   ],
   "estado": "revision",
   "fecha_publicacion": "2026-11-22",
@@ -30,15 +29,7 @@
   "subseccion": "Infecciones respiratorias",
   "media": {
     "videos": [],
-    "mapas": [],
-    "podcast": {
-      "titulo": "Síndrome crupal: reconocer sus formas y actuar a tiempo",
-      "url": "https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/84854979e66846989bc6c5855f53268f/id=57e0ea743ffe4d4e88da08dcf2cb1ffa.mp3",
-      "duracion_segundos": 227,
-      "formato": "audio/mpeg",
-      "voz": "Rocío",
-      "idioma": "es"
-    }
+    "mapas": []
   },
   "enlaces_externos": [
     {
