@@ -46,6 +46,22 @@ jobs:
       - name: Construir sitio
         run: python scripts/build_catalog.py --src content --out dist
 
+      - name: Publicar la estructura editorial de BIENESTAR para el menú global
+        run: |
+          mkdir -p dist/content/b
+          cp content/b/estructura.json dist/content/b/estructura.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("dist/content/b/estructura.json")
+          data = json.loads(p.read_text(encoding="utf-8"))
+          b7 = next((s for s in data.get("secciones", []) if s.get("id") == "B7"), None)
+          assert b7 is not None, "No se encontró B7 en la estructura publicada"
+          assert len(b7.get("subsecciones", [])) == 7, "B7 debe contener 7 subsecciones"
+          assert sum(len(x.get("articulos", [])) for x in b7["subsecciones"]) == 42, "B7 debe contener 42 artículos"
+          print("Estructura B7 copiada y verificada: 7 subsecciones · 42 artículos")
+          PY
+
       - name: Incorporar el tríptico original de vacunación de Cuba
         run: |
           mkdir -p dist/assets/descargables
