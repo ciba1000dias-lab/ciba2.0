@@ -1,14 +1,17 @@
 {
   "id": "B7-01-05",
-  "titulo": "Crup o laringotraqueítis: tos perruna y dificultad respiratoria",
-  "descripcion": "Cómo reconocer el crup infantil, identificar el estridor y otras señales de alarma, ofrecer cuidados seguros y prevenir infecciones respiratorias.",
+  "titulo": "Síndrome crupal: tos perruna y dificultad respiratoria",
+  "descripcion": "Qué es el síndrome crupal y cuáles son sus formas clínicas —laringitis, laringotraqueítis, laringotraqueobronquitis y laringitis espasmódica—, cómo reconocer el estridor y otras señales de alarma, ofrecer cuidados seguros y prevenir infecciones respiratorias.",
   "columna": "B",
   "area": "B7",
   "palabras_clave": [
+    "sindromecrupal",
     "crup",
     "croup",
+    "laringitis",
     "laringotraqueitis",
     "laringotraqueobronquitis",
+    "laringitisespasmodica",
     "tosperruna",
     "estridor",
     "ronquera",
@@ -29,9 +32,9 @@
     "videos": [],
     "mapas": [],
     "podcast": {
-      "titulo": "Crup infantil: reconocer las señales y actuar a tiempo",
-      "url": "https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/84854979e66846989bc6c5855f53268f/id=c3a017c8480248df80c61577e3e60d2f.mp3",
-      "duracion_segundos": 243,
+      "titulo": "Síndrome crupal: reconocer sus formas y actuar a tiempo",
+      "url": "https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/84854979e66846989bc6c5855f53268f/id=57e0ea743ffe4d4e88da08dcf2cb1ffa.mp3",
+      "duracion_segundos": 227,
       "formato": "audio/mpeg",
       "voz": "Rocío",
       "idioma": "es"
@@ -54,8 +57,13 @@
       "tipo": "fuente"
     },
     {
-      "titulo": "Médecins Sans Frontières · Croup clinical guidance",
-      "url": "https://medicalguidelines.msf.org/en/viewport/CG/english/laryngotracheitis-and-laryngotracheobronchitis-croup-16689220.html",
+      "titulo": "Médecins Sans Frontières · Paediatric care 2024: Croup",
+      "url": "https://medicalguidelines.msf.org/sites/default/files/2024-10/MSF_Paediatric%20care_2024.pdf",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "NCBI Bookshelf · Croup (Laryngotracheobronchitis)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK519531/",
       "tipo": "fuente"
     }
   ]
