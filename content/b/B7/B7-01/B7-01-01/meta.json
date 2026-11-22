@@ -1,0 +1,42 @@
+{
+  "id": "B7-01-01",
+  "titulo": "Catarro común y resfriado",
+  "descripcion": "Cómo reconocer el resfriado común en bebés y niños pequeños, qué cuidados pueden ayudar, cuándo buscar atención médica y cómo reducir los contagios en casa.",
+  "columna": "B",
+  "area": "B7",
+  "palabras_clave": [
+    "catarro",
+    "resfriado",
+    "rinovirus",
+    "congestion",
+    "secrecionnasal",
+    "tos",
+    "infeccionrespiratoria",
+    "prevencion",
+    "lavadodemanos",
+    "lactantes",
+    "fiebre",
+    "primerosmil"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-21",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "subseccion": "Infecciones respiratorias",
+  "media": {
+    "videos": [
+      {
+        "proveedor": "youtube",
+        "id": "fpXh2XHwMmE",
+        "titulo": "What you need to know about handwashing — CDC"
+      }
+    ]
+  },
+  "enlaces_externos": [
+    "https://www.cdc.gov/common-cold/about/",
+    "https://www.cdc.gov/common-cold/treatment/",
+    "https://www.cdc.gov/respiratory-viruses/prevention/hygiene.html",
+    "https://www.healthychildren.org/Spanish/tips-tools/symptom-checker/paginas/symptomviewer.aspx?symptom=Colds"
+  ]
+}
