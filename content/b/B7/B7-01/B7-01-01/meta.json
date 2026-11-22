@@ -18,11 +18,11 @@
     "fiebre",
     "primerosmil"
   ],
-  "estado": "revision",
+  "estado": "publicado",
   "fecha_publicacion": "2026-11-21",
   "mostrar_en_columna": true,
   "mostrar_en_area": true,
-  "preview_publica": true,
+  "preview_publica": false,
   "subseccion": "Infecciones respiratorias",
   "media": {
     "videos": [
