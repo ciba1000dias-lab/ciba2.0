@@ -285,6 +285,43 @@ class TestBuild(unittest.TestCase):
         self.assertEqual([p["id"] for p in catalogo["paginas"]], ["B1-01-01"])
         self.assertTrue((self.out / "b" / "index.html").is_file())
 
+    def test_subseccion_muestra_previews_publicas_en_orden_sin_catalogarlas(self) -> None:
+        añadir_area(self.content, "b", "B1")
+        subseccion = self.content / "b" / "B1" / "B1-01"
+        subseccion.mkdir(parents=True)
+        meta_sub = meta_ok("B1-01", "B", "B1", estado="archivado")
+        meta_sub["titulo"] = "Subsección de prueba"
+        meta_sub["descripcion"] = "Organiza artículos y vistas previas de una misma temática."
+        (subseccion / "meta.json").write_text(
+            json.dumps(meta_sub, ensure_ascii=False), encoding="utf-8"
+        )
+
+        # Se crean deliberadamente en orden inverso para comprobar el orden editorial.
+        for id_articulo in ("B1-01-02", "B1-01-01"):
+            articulo = subseccion / id_articulo
+            articulo.mkdir()
+            meta_art = meta_ok(id_articulo, "B", "B1", estado="revision")
+            meta_art["titulo"] = f"Vista previa {id_articulo}"
+            meta_art["preview_publica"] = True
+            (articulo / "meta.json").write_text(
+                json.dumps(meta_art, ensure_ascii=False), encoding="utf-8"
+            )
+            (articulo / "index.html").write_text(
+                "<!doctype html><html><body>" + ("x" * 300) + "</body></html>",
+                encoding="utf-8",
+            )
+
+        self.assertEqual(construir(self.content, self.out), 0)
+        pagina_sub = self.out / "b" / "B1" / "B1-01" / "index.html"
+        html_sub = pagina_sub.read_text(encoding="utf-8")
+        self.assertIn("Vista previa · B1-01-01", html_sub)
+        self.assertIn("Vista previa · B1-01-02", html_sub)
+        self.assertLess(html_sub.index("B1-01-01/"), html_sub.index("B1-01-02/"))
+        self.assertTrue(
+            (self.out / "b" / "B1" / "B1-01" / "B1-01-01" / "index.html").is_file()
+        )
+        self.assertEqual(self._leer_catalogo()["paginas"], [])
+
     def test_publica_articulo_anidado_en_subseccion(self) -> None:
         añadir_area(self.content, "b", "B1")
         subseccion = self.content / "b" / "B1" / "B1-01"
