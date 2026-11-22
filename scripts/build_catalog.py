@@ -1397,6 +1397,8 @@ def _generar_indice_subseccion(
     rel = str(subseccion_dir.relative_to(src))
     hijos, errs_hijos = listar_directorios_seguros(subseccion_dir, rel)
     errores.extend(errs_hijos)
+    # El orden editorial se conserva por identificador (NN con dos dígitos).
+    hijos = sorted(hijos, key=lambda hijo: hijo.name)
     destino = tmp / letra.lower() / area_dir.name / subseccion_dir.relative_to(area_dir)
     destino.mkdir(parents=True, exist_ok=True)
     paleta = _paleta_columna(letra)
@@ -1419,11 +1421,21 @@ def _generar_indice_subseccion(
         except (OSError, json.JSONDecodeError):
             continue
         estado = hijo_meta.get("estado")
-        if estado not in ("publicado", "archivado"):
+        es_preview = (
+            estado == "revision"
+            and hijo_meta.get("preview_publica") is True
+            and (hijo / "index.html").is_file()
+        )
+        if estado not in ("publicado", "archivado") and not es_preview:
             continue
         ruta_destino = tmp / letra.lower() / area_dir.name / hijo.relative_to(area_dir)
         href = os.path.relpath(ruta_destino, destino).replace(os.sep, "/").rstrip("/") + "/"
-        tipo = "Subsección" if estado == "archivado" else "Artículo"
+        if estado == "archivado":
+            tipo = "Subsección"
+        elif es_preview:
+            tipo = "Vista previa"
+        else:
+            tipo = "Artículo"
         if estado == "publicado":
             articulos_publicados += 1
         tarjetas.append(
