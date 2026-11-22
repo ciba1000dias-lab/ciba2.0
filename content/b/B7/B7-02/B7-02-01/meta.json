@@ -28,7 +28,13 @@
   "preview_publica": true,
   "subseccion": "Problemas gastrointestinales",
   "media": {
-    "videos": [],
+    "videos": [
+      {
+        "titulo": "Video MKO sobre diarrea",
+        "url": "https://youtu.be/laWIoW8Dgnk",
+        "fuente": "MKO"
+      }
+    ],
     "mapas": []
   },
   "enlaces_externos": [
