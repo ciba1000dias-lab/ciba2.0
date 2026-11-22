@@ -27,7 +27,15 @@
   "subseccion": "Infecciones respiratorias",
   "media": {
     "videos": [],
-    "mapas": []
+    "mapas": [],
+    "podcast": {
+      "titulo": "Crup infantil: reconocer las señales y actuar a tiempo",
+      "url": "https://resource2.heygen.ai/text_to_speech/bb9c33b9a4f246bfaad6f76f0b2e5310/84854979e66846989bc6c5855f53268f/id=c3a017c8480248df80c61577e3e60d2f.mp3",
+      "duracion_segundos": 243,
+      "formato": "audio/mpeg",
+      "voz": "Rocío",
+      "idioma": "es"
+    }
   },
   "enlaces_externos": [
     {
