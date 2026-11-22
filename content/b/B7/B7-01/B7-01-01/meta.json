@@ -34,9 +34,25 @@
     ]
   },
   "enlaces_externos": [
-    "https://www.cdc.gov/common-cold/about/",
-    "https://www.cdc.gov/common-cold/treatment/",
-    "https://www.cdc.gov/respiratory-viruses/prevention/hygiene.html",
-    "https://www.healthychildren.org/Spanish/tips-tools/symptom-checker/paginas/symptomviewer.aspx?symptom=Colds"
+    {
+      "titulo": "CDC · Información general sobre el resfriado común",
+      "url": "https://www.cdc.gov/common-cold/about/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "CDC · Cuidados y tratamiento del resfriado común",
+      "url": "https://www.cdc.gov/common-cold/treatment/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "CDC · Higiene y prevención de los virus respiratorios",
+      "url": "https://www.cdc.gov/respiratory-viruses/prevention/hygiene.html",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "American Academy of Pediatrics · Resfriados",
+      "url": "https://www.healthychildren.org/Spanish/tips-tools/symptom-checker/paginas/symptomviewer.aspx?symptom=Colds",
+      "tipo": "fuente"
+    }
   ]
 }
