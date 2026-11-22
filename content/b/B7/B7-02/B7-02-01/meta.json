@@ -1,0 +1,56 @@
+{
+  "id": "B7-02-01",
+  "titulo": "Diarrea aguda y gastroenteritis",
+  "descripcion": "Causas, manifestaciones, signos de deshidratación, rehidratación oral, alimentación, cuidados seguros, señales de alarma y prevención de la diarrea aguda en la infancia.",
+  "columna": "B",
+  "area": "B7",
+  "palabras_clave": [
+    "diarreaaguda",
+    "gastroenteritis",
+    "deshidratacion",
+    "rehidratacionoral",
+    "salesrehidratacionoral",
+    "SRO",
+    "vomitos",
+    "lactanciamaterna",
+    "diarreainfantil",
+    "rotavirus",
+    "higienealimentaria",
+    "aguasegura",
+    "prevencion",
+    "infancia",
+    "saludinfantil"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-22",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "subseccion": "Problemas gastrointestinales",
+  "media": {
+    "videos": [],
+    "mapas": []
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "OMS · Enfermedad diarreica",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OMS · Guía de neumonía y diarrea infantil, 2024",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK611549/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "MINSAP · Pediatría. Diagnóstico y tratamiento, 2016",
+      "url": "https://platform.who.int/docs/default-source/mca-documents/policy-documents/guideline/cub-ch-20-01-guideline-2016-esp-pediatria-completo.pdf",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "NICE · Gastroenteritis en menores de cinco años",
+      "url": "https://www.nice.org.uk/guidance/cg84/chapter/Recommendations",
+      "tipo": "fuente"
+    }
+  ]
+}
