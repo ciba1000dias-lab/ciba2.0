@@ -406,7 +406,7 @@ class TestBuild(unittest.TestCase):
         css.parent.mkdir(parents=True, exist_ok=True)
         js.parent.mkdir(parents=True, exist_ok=True)
         css.write_text("/* CSS global de prueba */", encoding="utf-8")
-        js.write_text('/* ciba-global.css?v=20261121-05 */', encoding="utf-8")
+        js.write_text('/* ciba-global.css?v=20261122-01 */', encoding="utf-8")
 
         self.assertEqual(construir(self.content, self.out), 0)
         pagina = self.out / "c" / "C1" / "C1-01" / "index.html"
@@ -418,7 +418,7 @@ class TestBuild(unittest.TestCase):
         self.assertIn('href="../../../index.html"', html)
         self.assertIn('href="../../index.html"', html)
         self.assertIn('href="../index.html"', html)
-        self.assertIn("ciba-global.js?v=20261121-05", html)
+        self.assertIn("ciba-global.js?v=20261122-01", html)
         portada = (self.out / "c" / "index.html").read_text(encoding="utf-8")
         self.assertIn('data-ciba-migas', portada)
         self.assertIn("Crianza", portada)
