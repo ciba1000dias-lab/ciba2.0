@@ -1,0 +1,55 @@
+{
+  "id": "B7-03-01",
+  "titulo": "Fiebre infantil: causas y evaluación según la edad",
+  "descripcion": "Qué es la fiebre infantil, cómo medirla, cuáles son sus causas frecuentes y qué señales de alarma requieren valoración médica según la edad.",
+  "columna": "B",
+  "area": "B7",
+  "palabras_clave": [
+    "fiebre",
+    "temperaturainfantil",
+    "termometro",
+    "lactante",
+    "reciénnacido",
+    "infeccion",
+    "dengue",
+    "señalesdealarma",
+    "prevencion"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-22",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "subseccion": "Fiebre y enfermedades infecciosas",
+  "media": {
+    "videos": [],
+    "mapas": []
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "NICE · Fiebre en menores de cinco años: evaluación y manejo inicial",
+      "url": "https://www.nice.org.uk/guidance/ng143/chapter/Recommendations",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "NHS · Fiebre en niños",
+      "url": "https://www.nhs.uk/symptoms/fever-in-children/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "American Academy of Pediatrics · Infant Fever",
+      "url": "https://www.aap.org/en/patient-care/infant-fever/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "CDC · Manejo del dengue",
+      "url": "https://www.cdc.gov/dengue/es/treatment/manejo-del-dengue.html",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OMS · Dengue y dengue grave",
+      "url": "https://www.who.int/en/news-room/fact-sheets/detail/dengue-and-severe-dengue",
+      "tipo": "fuente"
+    }
+  ]
+}
