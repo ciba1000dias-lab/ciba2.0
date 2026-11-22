@@ -699,8 +699,8 @@
               "id": "B7-01-02",
               "titulo": "Bronquiolitis: síntomas, evolución y cuidados",
               "ruta": "/b/B7/B7-01/B7-01-02/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "revision",
+              "enlace_activo": true
             },
             {
               "id": "B7-01-03",
