@@ -1,0 +1,52 @@
+{
+  "id": "B7-02-04",
+  "titulo": "Estreñimiento y dolor abdominal recurrente",
+  "descripcion": "Cómo reconocer el estreñimiento funcional en la infancia, acompañar hábitos intestinales sin castigos, comprender el dolor abdominal recurrente y detectar señales de alarma.",
+  "columna": "B",
+  "area": "B7",
+  "palabras_clave": [
+    "estrenimiento",
+    "dolorabdominal",
+    "dolorrecurrente",
+    "hecesduras",
+    "retencionfecal",
+    "disquecia",
+    "laxantes",
+    "habitosintestinales",
+    "saluddigestiva",
+    "infancia",
+    "RomaIV"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-22",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "subseccion": "Problemas gastrointestinales",
+  "media": {
+    "videos": [],
+    "mapas": []
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "ESPGHAN–NASPGHAN · Guía de tratamiento del estreñimiento funcional pediátrico 2026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42159193/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "NICE · Estreñimiento en niños y jóvenes",
+      "url": "https://www.nice.org.uk/guidance/cg99/chapter/Recommendations",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "Rome Foundation · Criterios Roma IV",
+      "url": "https://theromefoundation.org/Rome-Iv/Rome-Iv-Criteria/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "Dolor abdominal funcional pediátrico · Consenso 2025",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12108103/",
+      "tipo": "fuente"
+    }
+  ]
+}
