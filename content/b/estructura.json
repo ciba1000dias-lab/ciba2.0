@@ -692,8 +692,10 @@
               "id": "B7-01-01",
               "titulo": "Catarro común y resfriado",
               "ruta": "/b/B7/B7-01/B7-01-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "publicado",
+              "enlace_activo": true,
+              "mostrar_en_columna": true,
+              "mostrar_en_area": true
             },
             {
               "id": "B7-01-02",
@@ -733,6 +735,15 @@
               "vista_previa_publica": true,
               "mostrar_en_columna": false,
               "mostrar_en_area": false
+            },
+            {
+              "id": "B7-01-06",
+              "titulo": "Síndrome coqueluchoide y tosferina",
+              "ruta": "/b/B7/B7-01/B7-01-06/",
+              "estado": "publicado",
+              "enlace_activo": true,
+              "mostrar_en_columna": true,
+              "mostrar_en_area": true
             }
           ]
         },
@@ -793,7 +804,10 @@
               "titulo": "Cólico del lactante",
               "ruta": "/b/B7/B7-02/B7-02-06/",
               "estado": "revision",
-              "enlace_activo": true
+              "enlace_activo": true,
+              "vista_previa_publica": true,
+              "mostrar_en_columna": false,
+              "mostrar_en_area": false
             }
           ]
         },
