@@ -1,0 +1,50 @@
+{
+  "id": "B7-02-06",
+  "titulo": "Cólico del lactante",
+  "descripcion": "Cómo comprender el llanto persistente del lactante, acompañar al bebé sin culpas y reconocer señales de alarma.",
+  "columna": "B",
+  "area": "B7",
+  "palabras_clave": [
+    "colico",
+    "llantopersistente",
+    "lactante",
+    "llantoinfantil",
+    "consuelo",
+    "romaiv",
+    "suenoseguro",
+    "lactanciamaterna",
+    "primerosmeses"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-22",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "subseccion": "Problemas gastrointestinales",
+  "media": {
+    "videos": [],
+    "mapas": []
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "Royal Children’s Hospital · Unsettled or crying babies",
+      "url": "https://www.rch.org.au/clinicalguide/guideline_index/Crying_Baby_Infant_Distress/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "Rome Foundation · Rome IV Criteria",
+      "url": "https://theromefoundation.org/rome-iv/rome-iv-criteria/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "Zeevenhooven et al. · New Rome IV Criteria",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5385301/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "ESPGHAN · Infant formulas and functional gastrointestinal disorders",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/jpn3.12240",
+      "tipo": "fuente"
+    }
+  ]
+}
