@@ -770,13 +770,30 @@
             },
             {
               "id": "B7-02-04",
-              "titulo": "Estreñimiento y dolor abdominal recurrente",
+              "titulo": "Estreñimiento infantil",
               "ruta": "/b/B7/B7-02/B7-02-04/",
               "estado": "revision",
               "enlace_activo": true,
               "vista_previa_publica": true,
               "mostrar_en_columna": false,
               "mostrar_en_area": false
+            },
+            {
+              "id": "B7-02-05",
+              "titulo": "Dolor abdominal recurrente",
+              "ruta": "/b/B7/B7-02/B7-02-05/",
+              "estado": "revision",
+              "enlace_activo": true,
+              "vista_previa_publica": true,
+              "mostrar_en_columna": false,
+              "mostrar_en_area": false
+            },
+            {
+              "id": "B7-02-06",
+              "titulo": "Cólico del lactante",
+              "ruta": "/b/B7/B7-02/B7-02-06/",
+              "estado": "planificado",
+              "enlace_activo": false
             }
           ]
         },
