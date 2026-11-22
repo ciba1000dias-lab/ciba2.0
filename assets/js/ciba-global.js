@@ -496,6 +496,58 @@
         });
       }
 
+      async function agregarSubseccionesB7(lista) {
+        // B7 conserva su árbol editorial propio: área > subsección > artículo.
+        // Se consulta la estructura oficial para no duplicar títulos ni estados.
+        const respuesta = await fetch(new URL('content/b/estructura.json', RAIZ), {
+          cache: 'no-cache'
+        });
+        if (!respuesta.ok) throw new Error('No se pudo cargar la estructura editorial de BIENESTAR.');
+        const estructura = await respuesta.json();
+        const seccion = (estructura.secciones || []).find(item => item.id === 'B7');
+        if (!seccion) return;
+
+        (seccion.subsecciones || [])
+          .slice()
+          .sort((a, b) => (a.orden || 0) - (b.orden || 0))
+          .forEach(subseccion => {
+            const grupo = crearDesplegable(
+              subseccion.titulo,
+              'ciba-global-subarea',
+              'b/B7/' + subseccion.id + '/'
+            );
+
+            (subseccion.articulos || [])
+              .slice()
+              .sort((a, b) => (a.id || '').localeCompare(b.id || '', 'es', { numeric: true }))
+              .forEach(articulo => {
+                if (articulo.enlace_activo && articulo.ruta) {
+                  agregarEnlace(grupo.lista, articulo.ruta, articulo.titulo);
+                } else {
+                  const pendiente = elemento(
+                    'span',
+                    'ciba-global-enlace ciba-global-subenlace',
+                    articulo.titulo + ' · En preparación'
+                  );
+                  pendiente.setAttribute('aria-disabled', 'true');
+                  grupo.lista.appendChild(pendiente);
+                }
+              });
+
+            if (!subseccion.articulos || !subseccion.articulos.length) {
+              const pendiente = elemento(
+                'span',
+                'ciba-global-enlace ciba-global-subenlace',
+                'Contenidos en preparación'
+              );
+              pendiente.setAttribute('aria-disabled', 'true');
+              grupo.lista.appendChild(pendiente);
+            }
+
+            lista.appendChild(grupo.grupo);
+          });
+      }
+
       function agregarPaginasAlimentacion(lista, paginas) {
         const subsecciones = [
           { titulo: 'Gestación', clave: ['gestacion', 'gestación'] },
@@ -620,6 +672,8 @@
             agregarPaginasDeArea(grupoArea.lista, paginas);
           } else if (areaMenu.id === 'B4') {
             agregarPaginasNutricion(grupoArea.lista);
+          } else if (areaMenu.id === 'B7') {
+            await agregarSubseccionesB7(grupoArea.lista);
           } else if (areaMenu.id === 'B6') {
             agregarPaginasCrecimiento(grupoArea.lista);
             agregarPaginasVigilanciaDesarrollo(grupoArea.lista);
