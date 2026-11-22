@@ -647,7 +647,7 @@
         const letra = elemento('span', 'ciba-global-letra', columna.id);
         grupoColumna.botonGrupo.prepend(letra);
 
-        areasColumna.forEach(areaMenu => {
+        for (const areaMenu of areasColumna) {
           const areaFuente = areasFuente.find(area => area.id === (areaMenu.fuente || areaMenu.id));
           const rutaArea = areaMenu.ruta || areaFuente?.ruta_publica ||
             (columna.id.toLowerCase() + '/' + (areaMenu.fuente || areaMenu.id) + '/');
@@ -683,7 +683,7 @@
             agregarPaginasDeArea(grupoArea.lista, paginas);
           }
           grupoColumna.lista.appendChild(grupoArea.grupo);
-        });
+        }
 
         grupoColumnas.lista.appendChild(grupoColumna.grupo);
       });
