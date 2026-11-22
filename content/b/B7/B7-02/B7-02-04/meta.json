@@ -1,13 +1,11 @@
 {
   "id": "B7-02-04",
-  "titulo": "Estreñimiento y dolor abdominal recurrente",
-  "descripcion": "Cómo reconocer el estreñimiento funcional en la infancia, acompañar hábitos intestinales sin castigos, comprender el dolor abdominal recurrente y detectar señales de alarma.",
+  "titulo": "Estreñimiento infantil",
+  "descripcion": "Cómo reconocer el estreñimiento funcional en la infancia, acompañar hábitos intestinales sin castigos y detectar señales de alarma.",
   "columna": "B",
   "area": "B7",
   "palabras_clave": [
     "estrenimiento",
-    "dolorabdominal",
-    "dolorrecurrente",
     "hecesduras",
     "retencionfecal",
     "disquecia",
@@ -41,11 +39,6 @@
     {
       "titulo": "Rome Foundation · Criterios Roma IV",
       "url": "https://theromefoundation.org/Rome-Iv/Rome-Iv-Criteria/",
-      "tipo": "fuente"
-    },
-    {
-      "titulo": "Dolor abdominal funcional pediátrico · Consenso 2025",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12108103/",
       "tipo": "fuente"
     }
   ]
