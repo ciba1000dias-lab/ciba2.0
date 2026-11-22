@@ -634,7 +634,7 @@
         lista.appendChild(grupo.grupo);
       }
 
-      columnas.forEach(columna => {
+      for (const columna of columnas) {
         const areasFuente = (datos.areas || []).filter(area => area.columna === columna.id);
         const areasColumna = taxonomia[columna.id] || [];
         const rutaColumna = ({ I:'i/', B:'b/', A:'a/' })[columna.id] || (areasFuente.sort((a, b) => (a.orden || 0) - (b.orden || 0))[0]?.ruta_publica || null);
@@ -686,7 +686,7 @@
         }
 
         grupoColumnas.lista.appendChild(grupoColumna.grupo);
-      });
+      }
     }
 
     // El buscador queda dentro de Explorar CIBA, junto a las herramientas
