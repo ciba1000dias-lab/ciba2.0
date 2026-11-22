@@ -1,0 +1,61 @@
+{
+  "id": "B7-01-03",
+  "titulo": "Neumonía infantil: manifestaciones y atención",
+  "descripcion": "Cómo reconocer las manifestaciones de neumonía en bebés y niños pequeños, qué atención puede necesitar, cómo acompañar la recuperación y qué medidas ayudan a prevenirla.",
+  "columna": "B",
+  "area": "B7",
+  "palabras_clave": [
+    "neumonia",
+    "neumoniainfantil",
+    "infeccionpulmonar",
+    "alveolos",
+    "respiracionrapida",
+    "tiraje",
+    "dificultadrespiratoria",
+    "fiebre",
+    "tos",
+    "neumococo",
+    "hib",
+    "vacunacion",
+    "prevencion",
+    "lactantes",
+    "primerosmil"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-22",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "subseccion": "Infecciones respiratorias",
+  "media": {
+    "videos": [],
+    "mapas": []
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "OMS · Guía para el manejo de neumonía y diarrea en niños hasta 10 años (2025)",
+      "url": "https://www.who.int/publications/i/item/9789240103412",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OMS · Neumonía infantil",
+      "url": "https://www.who.int/es/news-room/fact-sheets/detail/pneumonia",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "NICE · Neumonía: diagnóstico y manejo (actualización 2025)",
+      "url": "https://www.nice.org.uk/guidance/NG250/chapter/recommendations",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "UNICEF · La neumonía infantil: todo lo que debes saber",
+      "url": "https://www.unicef.org/es/historias/neumonia-infantil-lo-que-debes-saber",
+      "tipo": "recurso_visual"
+    },
+    {
+      "titulo": "MedlinePlus · Neumonía en niños adquirida en la comunidad",
+      "url": "https://medlineplus.gov/spanish/ency/article/007690.htm",
+      "tipo": "fuente"
+    }
+  ]
+}
