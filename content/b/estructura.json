@@ -820,8 +820,11 @@
               "id": "B7-03-01",
               "titulo": "Fiebre infantil: causas y evaluación según la edad",
               "ruta": "/b/B7/B7-03/B7-03-01/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "revision",
+              "enlace_activo": true,
+              "vista_previa_publica": true,
+              "mostrar_en_columna": false,
+              "mostrar_en_area": false
             },
             {
               "id": "B7-03-02",
