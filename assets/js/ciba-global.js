@@ -673,7 +673,20 @@
           } else if (areaMenu.id === 'B4') {
             agregarPaginasNutricion(grupoArea.lista);
           } else if (areaMenu.id === 'B7') {
-            await agregarSubseccionesB7(grupoArea.lista);
+            // Un fallo al consultar la estructura de B7 nunca debe interrumpir
+            // la construcción de las columnas Bienestar y Acompañamiento.
+            try {
+              await agregarSubseccionesB7(grupoArea.lista);
+            } catch (error) {
+              console.error('CIBA: no se pudo cargar el árbol de subsecciones B7.', error);
+              const aviso = elemento(
+                'span',
+                'ciba-global-enlace ciba-global-subenlace',
+                'Subsecciones temporalmente no disponibles'
+              );
+              aviso.setAttribute('aria-disabled', 'true');
+              grupoArea.lista.appendChild(aviso);
+            }
           } else if (areaMenu.id === 'B6') {
             agregarPaginasCrecimiento(grupoArea.lista);
             agregarPaginasVigilanciaDesarrollo(grupoArea.lista);
