@@ -527,7 +527,7 @@
                   const pendiente = elemento(
                     'span',
                     'ciba-global-enlace ciba-global-subenlace',
-                    articulo.titulo + ' · En preparación''
+                    articulo.titulo + ' · En preparación'
                   );
                   pendiente.setAttribute('aria-disabled', 'true');
                   grupo.lista.appendChild(pendiente);
