@@ -792,8 +792,8 @@
               "id": "B7-02-06",
               "titulo": "Cólico del lactante",
               "ruta": "/b/B7/B7-02/B7-02-06/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "revision",
+              "enlace_activo": true
             }
           ]
         },
