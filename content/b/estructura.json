@@ -738,7 +738,7 @@
             },
             {
               "id": "B7-01-06",
-              "titulo": "Síndrome coqueluchoide y tosferina",
+              "titulo": "Tosferina: manifestaciones, prevención y vacunación",
               "ruta": "/b/B7/B7-01/B7-01-06/",
               "estado": "publicado",
               "enlace_activo": true,
@@ -761,7 +761,7 @@
             },
             {
               "id": "B7-02-02",
-              "titulo": "Vómitos en la infancia",
+              "titulo": "Vómitos en la infancia: causas frecuentes y cuidados",
               "ruta": "/b/B7/B7-02/B7-02-02/",
               "estado": "revision",
               "enlace_activo": true,
@@ -781,7 +781,7 @@
             },
             {
               "id": "B7-02-04",
-              "titulo": "Estreñimiento infantil",
+              "titulo": "Estreñimiento infantil: prevención y cuidados",
               "ruta": "/b/B7/B7-02/B7-02-04/",
               "estado": "revision",
               "enlace_activo": true,
@@ -791,7 +791,7 @@
             },
             {
               "id": "B7-02-05",
-              "titulo": "Dolor abdominal recurrente",
+              "titulo": "Dolor abdominal recurrente: causas y evaluación",
               "ruta": "/b/B7/B7-02/B7-02-05/",
               "estado": "revision",
               "enlace_activo": true,
@@ -801,7 +801,7 @@
             },
             {
               "id": "B7-02-06",
-              "titulo": "Cólico del lactante",
+              "titulo": "Cólico del lactante: manifestaciones y acompañamiento familiar",
               "ruta": "/b/B7/B7-02/B7-02-06/",
               "estado": "revision",
               "enlace_activo": true,
@@ -836,6 +836,27 @@
               "ruta": "/b/B7/B7-03/B7-03-03/",
               "estado": "planificado",
               "enlace_activo": false
+            },
+            {
+              "id": "B7-03-04",
+              "titulo": "Enfermedad mano-pie-boca: manifestaciones y prevención",
+              "ruta": "/b/B7/B7-03/B7-03-04/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-03-05",
+              "titulo": "Varicela: síntomas, evolución y prevención",
+              "ruta": "/b/B7/B7-03/B7-03-05/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-03-06",
+              "titulo": "Sarampión: manifestaciones, complicaciones y vacunación",
+              "ruta": "/b/B7/B7-03/B7-03-06/",
+              "estado": "planificado",
+              "enlace_activo": false
             }
           ]
         },
@@ -855,6 +876,34 @@
               "id": "B7-04-02",
               "titulo": "Infecciones de la piel: impétigo y lesiones frecuentes",
               "ruta": "/b/B7/B7-04/B7-04-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-04-03",
+              "titulo": "Dermatitis del pañal: prevención y cuidados",
+              "ruta": "/b/B7/B7-04/B7-04-03/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-04-04",
+              "titulo": "Escabiosis o sarna: transmisión, tratamiento indicado y prevención",
+              "ruta": "/b/B7/B7-04/B7-04-04/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-04-05",
+              "titulo": "Infecciones por hongos en la piel: candidiasis y otras micosis",
+              "ruta": "/b/B7/B7-04/B7-04-05/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-04-06",
+              "titulo": "Picaduras de insectos y reacciones locales en la infancia",
+              "ruta": "/b/B7/B7-04/B7-04-06/",
               "estado": "planificado",
               "enlace_activo": false
             }
@@ -885,6 +934,27 @@
               "ruta": "/b/B7/B7-05/B7-05-03/",
               "estado": "planificado",
               "enlace_activo": false
+            },
+            {
+              "id": "B7-05-04",
+              "titulo": "Conjuntivitis infantil: causas, cuidados y prevención",
+              "ruta": "/b/B7/B7-05/B7-05-04/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-05-05",
+              "titulo": "Otitis externa: inflamación e infección del conducto auditivo",
+              "ruta": "/b/B7/B7-05/B7-05-05/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-05-06",
+              "titulo": "Estomatitis y úlceras orales: causas y cuidados",
+              "ruta": "/b/B7/B7-05/B7-05-06/",
+              "estado": "planificado",
+              "enlace_activo": false
             }
           ]
         },
@@ -906,6 +976,34 @@
               "ruta": "/b/B7/B7-06/B7-06-02/",
               "estado": "planificado",
               "enlace_activo": false
+            },
+            {
+              "id": "B7-06-03",
+              "titulo": "Anafilaxia: cómo reconocer una reacción alérgica grave",
+              "ruta": "/b/B7/B7-06/B7-06-03/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-06-04",
+              "titulo": "Alergia a las proteínas de la leche de vaca",
+              "ruta": "/b/B7/B7-06/B7-06-04/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-06-05",
+              "titulo": "Rinitis alérgica: síntomas y control ambiental",
+              "ruta": "/b/B7/B7-06/B7-06-05/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-06-06",
+              "titulo": "Sibilancias recurrentes en lactantes: posibles causas y evaluación",
+              "ruta": "/b/B7/B7-06/B7-06-06/",
+              "estado": "planificado",
+              "enlace_activo": false
             }
           ]
         },
@@ -916,8 +1014,43 @@
           "articulos": [
             {
               "id": "B7-07-01",
-              "titulo": "Anemia y parasitosis intestinales: evaluación y tratamiento indicado",
+              "titulo": "Anemia infantil: causas, manifestaciones y prevención",
               "ruta": "/b/B7/B7-07/B7-07-01/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-07-02",
+              "titulo": "Parasitosis intestinales: transmisión, manifestaciones y prevención",
+              "ruta": "/b/B7/B7-07/B7-07-02/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-07-03",
+              "titulo": "Convulsiones febriles: qué son y cómo actuar",
+              "ruta": "/b/B7/B7-07/B7-07-03/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-07-04",
+              "titulo": "Ictericia neonatal: manifestaciones, seguimiento y señales de alarma",
+              "ruta": "/b/B7/B7-07/B7-07-04/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-07-05",
+              "titulo": "Infecciones del ombligo en el recién nacido: prevención y reconocimiento",
+              "ruta": "/b/B7/B7-07/B7-07-05/",
+              "estado": "planificado",
+              "enlace_activo": false
+            },
+            {
+              "id": "B7-07-06",
+              "titulo": "Caries de la primera infancia: prevención y cuidado bucal",
+              "ruta": "/b/B7/B7-07/B7-07-06/",
               "estado": "planificado",
               "enlace_activo": false
             }
