@@ -1,0 +1,54 @@
+{
+  "id": "B7-01-05",
+  "titulo": "Crup o laringotraqueítis: tos perruna y dificultad respiratoria",
+  "descripcion": "Cómo reconocer el crup infantil, identificar el estridor y otras señales de alarma, ofrecer cuidados seguros y prevenir infecciones respiratorias.",
+  "columna": "B",
+  "area": "B7",
+  "palabras_clave": [
+    "crup",
+    "croup",
+    "laringotraqueitis",
+    "laringotraqueobronquitis",
+    "tosperruna",
+    "estridor",
+    "ronquera",
+    "dificultadrespiratoria",
+    "parainfluenza",
+    "infeccionviral",
+    "prevencion",
+    "lactantes",
+    "primerosmil"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-22",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "subseccion": "Infecciones respiratorias",
+  "media": {
+    "videos": [],
+    "mapas": []
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "MedlinePlus · Crup",
+      "url": "https://medlineplus.gov/ency/article/000959.htm",
+      "tipo": "recurso_visual"
+    },
+    {
+      "titulo": "NHS · Croup",
+      "url": "https://www.nhs.uk/conditions/croup/",
+      "tipo": "recurso_visual"
+    },
+    {
+      "titulo": "American Academy of Pediatrics · Croup in Young Children",
+      "url": "https://www.healthychildren.org/English/health-issues/conditions/chest-lungs/Pages/Croup-Treatment.aspx",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "Médecins Sans Frontières · Croup clinical guidance",
+      "url": "https://medicalguidelines.msf.org/en/viewport/CG/english/laryngotracheitis-and-laryngotracheobronchitis-croup-16689220.html",
+      "tipo": "fuente"
+    }
+  ]
+}
