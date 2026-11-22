@@ -1,0 +1,62 @@
+{
+  "id": "B7-01-04",
+  "titulo": "Influenza y otras infecciones virales respiratorias",
+  "descripcion": "Qué virus pueden afectar las vías respiratorias infantiles, cómo reconocer los signos de alarma y qué cuidados ayudan a proteger a bebés y niños.",
+  "columna": "B",
+  "area": "B7",
+  "palabras_clave": [
+    "influenza",
+    "gripe",
+    "virusrespiratorios",
+    "vrs",
+    "rinovirus",
+    "adenovirus",
+    "parainfluenza",
+    "metapneumovirus",
+    "covid19",
+    "fiebre",
+    "tos",
+    "congestionnasal",
+    "dificultadrespiratoria",
+    "prevencion",
+    "vacunacion",
+    "lactantes"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-22",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "subseccion": "Infecciones respiratorias",
+  "media": {
+    "videos": [],
+    "mapas": []
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "OMS · Gripe estacional",
+      "url": "https://www.who.int/es/news-room/fact-sheets/detail/influenza-%28seasonal%29",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "OPS · Alerta epidemiológica: influenza y VRS · 17 noviembre 2026",
+      "url": "https://www.paho.org/sites/default/files/2026/11/2026-nov-17-phe-alertaepi-influenza-vsr-es-final.pdf",
+      "tipo": "recurso_visual"
+    },
+    {
+      "titulo": "OMS · Cómo evitar contraer la gripe · 4 marzo 2026",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/how-can-I-avoid-getting-the-flu",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "CDC · Signos y síntomas de la influenza",
+      "url": "https://www.cdc.gov/flu/signs-symptoms/index.html",
+      "tipo": "recurso_visual"
+    },
+    {
+      "titulo": "CDC · Información sobre virus respiratorios",
+      "url": "https://www.cdc.gov/respiratory-viruses/about/index.html",
+      "tipo": "fuente"
+    }
+  ]
+}
