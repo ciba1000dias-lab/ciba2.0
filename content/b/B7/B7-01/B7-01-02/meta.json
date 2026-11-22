@@ -20,11 +20,11 @@
     "lactantes",
     "primerosmil"
   ],
-  "estado": "revision",
-  "fecha_publicacion": "2026-11-21",
-  "mostrar_en_columna": false,
-  "mostrar_en_area": false,
-  "preview_publica": true,
+  "estado": "publicado",
+  "fecha_publicacion": "2026-11-22",
+  "mostrar_en_columna": true,
+  "mostrar_en_area": true,
+  "preview_publica": false,
   "subseccion": "Infecciones respiratorias",
   "media": {
     "videos": [],
