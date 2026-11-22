@@ -512,7 +512,7 @@
           .sort((a, b) => (a.orden || 0) - (b.orden || 0))
           .forEach(subseccion => {
             const grupo = crearDesplegable(
-              subseccion.id + ' · ' + subseccion.titulo,
+              subseccion.titulo,
               'ciba-global-subarea',
               'b/B7/' + subseccion.id + '/'
             );
@@ -522,12 +522,12 @@
               .sort((a, b) => (a.id || '').localeCompare(b.id || '', 'es', { numeric: true }))
               .forEach(articulo => {
                 if (articulo.enlace_activo && articulo.ruta) {
-                  agregarEnlace(grupo.lista, articulo.ruta, articulo.id + ' · ' + articulo.titulo);
+                  agregarEnlace(grupo.lista, articulo.ruta, articulo.titulo);
                 } else {
                   const pendiente = elemento(
                     'span',
                     'ciba-global-enlace ciba-global-subenlace',
-                    articulo.id + ' · ' + articulo.titulo + ' · En preparación'
+                    articulo.titulo + ' · En preparación''
                   );
                   pendiente.setAttribute('aria-disabled', 'true');
                   grupo.lista.appendChild(pendiente);
@@ -656,9 +656,7 @@
           const rutaArea = areaMenu.ruta || areaFuente?.ruta_publica ||
             (columna.id.toLowerCase() + '/' + (areaMenu.fuente || areaMenu.id) + '/');
 
-          const tituloArea = areaMenu.id === 'B7'
-            ? 'B7 · ' + areaMenu.titulo
-            : areaMenu.titulo;
+          const tituloArea = areaMenu.titulo;
           const grupoArea = crearDesplegable(
             tituloArea,
             'ciba-global-area',
