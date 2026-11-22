@@ -1,0 +1,51 @@
+{
+  "id": "B7-01-06",
+  "titulo": "Síndrome coqueluchoide y tosferina",
+  "descripcion": "Diferencias entre el síndrome coqueluchoide y la tosferina, sus posibles causas, manifestaciones, señales de alarma en lactantes, diagnóstico y prevención mediante vacunación.",
+  "columna": "B",
+  "area": "B7",
+  "palabras_clave": [
+    "sindromecoqueluchoide",
+    "tosferina",
+    "coqueluche",
+    "pertussis",
+    "Bordetellapertussis",
+    "tosparoxistica",
+    "tosquintosa",
+    "lactantes",
+    "apnea",
+    "galloinspiratorio",
+    "vacunacion",
+    "infeccionrespiratoria",
+    "prevencion",
+    "diagnostico",
+    "saludinfantil"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-22",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "subseccion": "Infecciones respiratorias",
+  "media": {
+    "videos": [],
+    "mapas": []
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "OMS · Tosferina",
+      "url": "https://www.who.int/health-topics/pertussis",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "CDC · Signos y síntomas de la tosferina",
+      "url": "https://www.cdc.gov/pertussis/hcp/clinical-signs/",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "MINSAP Cuba · Pediatría. Diagnóstico y tratamiento (2016), capítulo Síndrome coqueluchoide",
+      "url": "https://platform.who.int/docs/default-source/mca-documents/policy-documents/guideline/cub-ch-20-01-guideline-2016-esp-pediatria-completo.pdf",
+      "tipo": "fuente"
+    }
+  ]
+}
