@@ -51,9 +51,10 @@ Las carpetas de columna se llaman exactamente `c`, `i`, `b`, `a` (minúscula). U
 
 ## 7. Estados
 
-- `borrador`, `revision`: nunca se publican.
-- `publicado`: se publica; requiere `index.html` ≥ 200 bytes sin symlink.
-- `archivado`: fuera del catálogo.
+- `borrador`: nunca se publica.
+- `revision`: no se incorpora al catálogo. Si `preview_publica: true`, el generador copia la página como vista previa accesible por URL; las subsecciones pueden mostrarla identificada como «Vista previa».
+- `publicado`: se publica y se incorpora al catálogo; requiere `index.html` ≥ 200 bytes sin symlink.
+- `archivado`: funciona como contenedor editorial de subsecciones y queda fuera del catálogo de artículos.
 
 ## 8. Relación esquemas ↔ validadores
 
