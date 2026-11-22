@@ -1264,7 +1264,7 @@ def _conectar_sistema_global(
         ruta_relativa = Path(os.path.relpath(script, archivo_html.parent)).as_posix()
         etiqueta_actualizada = re.sub(
             r'(\bsrc\s*=\s*["\'])[^"\']*ciba-global\.js(?:[?#][^"\']*)?(["\'])',
-            lambda m: f'{m.group(1)}{ruta_relativa}?v=20261121-05{m.group(2)}',
+            lambda m: f'{m.group(1)}{ruta_relativa}?v=20261122-01{m.group(2)}',
             etiqueta_existente,
             flags=re.IGNORECASE,
         )
@@ -1824,25 +1824,25 @@ def _construir_en_tmp(
 
                 html_actualizado = re.sub(
                     r'(<script\b[^>]*\bsrc\s*=\s*["\'][^"\']*ciba-global\.js)(?:[?#][^"\']*)?(["\'][^>]*>)',
-                    r'\1?v=20261121-05\2',
+                    r'\1?v=20261122-01\2',
                     html,
                     flags=re.IGNORECASE,
                 )
                 html_actualizado = re.sub(
                     r'(<script\b[^>]*\bsrc\s*=\s*["\'][^"\']*ciba-plataforma\.js)(?:[?#][^"\']*)?(["\'][^>]*>)',
-                    r'\1?v=20261121-05\2',
+                    r'\1?v=20261122-01\2',
                     html_actualizado,
                     flags=re.IGNORECASE,
                 )
                 html_actualizado = re.sub(
                     r'(import\s*\(\s*["\'][^"\']*ciba-plataforma\.js)(?:[?#][^"\']*)?(["\']\s*\))',
-                    r'\1?v=20261121-05\2',
+                    r'\1?v=20261122-01\2',
                     html_actualizado,
                     flags=re.IGNORECASE,
                 )
                 html_actualizado = re.sub(
                     r'(root\s*\+\s*["\'][^"\']*ciba-plataforma\.js)(?:[?#][^"\']*)?(["\'])',
-                    r'\1?v=20261121-05\2',
+                    r'\1?v=20261122-01\2',
                     html_actualizado,
                     flags=re.IGNORECASE,
                 )
@@ -1871,7 +1871,7 @@ def _construir_en_tmp(
             )
             codigo_global = ""
 
-        if "ciba-global.css?v=20261121-05" not in codigo_global:
+        if "ciba-global.css?v=20261122-01" not in codigo_global:
             errores.append(
                 ValidationError(
                     "assets/js/ciba-global.js",
@@ -1902,7 +1902,7 @@ def _construir_en_tmp(
             version_correcta = (
                 len(referencias_globales) == 1
                 and re.search(
-                    r"""ciba-global\.js\?v=20261121-05(?:["']|\s)""",
+                    r"""ciba-global\.js\?v=20261122-01(?:["']|\s)""",
                     referencias_globales[0],
                     flags=re.IGNORECASE,
                 )
