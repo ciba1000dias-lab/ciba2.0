@@ -1,0 +1,88 @@
+name: CIBA daily public health check
+
+on:
+  schedule:
+    # 12:15 UTC (aprox. 07:15 en Cuba durante horario estándar)
+    - cron: "15 12 * * *"
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Build and deploy CIBA"]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: ciba-public-health-check
+  cancel-in-progress: true
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Informar resultado del despliegue que activó la revisión
+        if: github.event_name == 'workflow_run'
+        env:
+          DEPLOY_CONCLUSION: ${{ github.event.workflow_run.conclusion }}
+          DEPLOY_URL: ${{ github.event.workflow_run.html_url }}
+        run: |
+          echo "Workflow de publicación: ${DEPLOY_CONCLUSION}"
+          echo "Ejecución: ${DEPLOY_URL}"
+          if [ "${DEPLOY_CONCLUSION}" != "success" ]; then
+            echo "::error::La ejecución de publicación no terminó correctamente."
+            exit 1
+          fi
+
+      - name: Comprobar disponibilidad de la portada y páginas publicadas
+        env:
+          BASE: https://ciba1000dias-lab.github.io/ciba2.0
+        run: |
+          set -euo pipefail
+          urls=(
+            "${BASE}/"
+            "${BASE}/c/C3/C3-05/"
+            "${BASE}/b/B2/B2-03/B2-03-01/"
+            "${BASE}/c/C4/C4-12/"
+          )
+          for url in "${urls[@]}"; do
+            echo "Comprobando ${url}"
+            code=$(curl --silent --show-error --location --retry 3 --retry-delay 3 --output /tmp/ciba-page.html --write-out "%{http_code}" "${url}")
+            if [ "${code}" != "200" ]; then
+              echo "::error::HTTP ${code} en ${url}"
+              exit 1
+            fi
+            size=$(wc -c < /tmp/ciba-page.html)
+            if [ "${size}" -lt 200 ]; then
+              echo "::error::Respuesta demasiado pequeña en ${url}: ${size} bytes"
+              exit 1
+            fi
+            echo "OK HTTP ${code} · ${size} bytes"
+          done
+
+      - name: Verificar el índice público de BIENESTAR
+        env:
+          STRUCTURE_URL: https://ciba1000dias-lab.github.io/ciba2.0/content/b/estructura.json
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --location --retry 3 "${STRUCTURE_URL}" --output /tmp/estructura-bienestar.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          data = json.loads(Path("/tmp/estructura-bienestar.json").read_text(encoding="utf-8"))
+          sections = data.get("secciones", [])
+          b7 = next((item for item in sections if item.get("id") == "B7"), None)
+          assert b7 is not None, "No se encontró B7 en el índice público"
+          subsections = b7.get("subsecciones", [])
+          articles = sum(len(item.get("articulos", [])) for item in subsections)
+          assert len(subsections) == 7, f"B7 debe contener 7 subsecciones; contiene {len(subsections)}"
+          assert articles == 42, f"B7 debe contener 42 artículos; contiene {articles}"
+          print("OK: índice público BIENESTAR · B7: 7 subsecciones · 42 artículos")
+          PY
+
+      - name: Resumen de vigilancia
+        run: |
+          echo "Vigilancia pública de CIBA completada."
+          echo "Esta prueba comprueba disponibilidad HTTP y estructura publicada; no sustituye la revisión editorial ni la aprobación clínica."
