@@ -1470,6 +1470,56 @@ html{scroll-padding-top:82px}body{overflow-x:hidden}.contenedor{width:min(1220px
 @media(max-width:680px){.hero{min-height:calc(100svh - 68px)!important;background-position:58% center!important}.hero .hero-contenido{width:calc(100% - 36px);min-height:calc(100svh - 68px);padding:clamp(105px,16vh,145px) 0 105px!important}.hero h1{font-size:clamp(48px,13.2vw,72px)!important;max-width:540px}.hero .hero-descripcion{max-width:370px;font-size:13px}.hero .hero-pie .contenedor{width:calc(100% - 36px);gap:7px;flex-direction:column}.ciba-aves{width:145px;right:4%;top:15%}.ciba-avion{width:54px;right:5%;top:58%}.ciba-barquito{width:82px;right:8%;bottom:8%}}
 @media(prefers-reduced-motion:reduce){.ciba-aves path,.ciba-avion,.ciba-barquito{animation:none!important}}
 
+
+/* CIBA · AJUSTE FINO DE PORTADA: TRANSPARENCIA, ESPIRALES Y VUELO */
+.hero{background-image:url("assets/images/portada-ciba.webp")!important;background-position:center 42%!important;background-size:cover!important}
+.hero::before{
+  z-index:1!important;
+  background:
+    linear-gradient(90deg,rgba(12,35,29,.58) 0%,rgba(17,49,39,.34) 48%,rgba(17,49,39,.08) 100%),
+    linear-gradient(0deg,rgba(12,35,29,.30),transparent 43%,rgba(12,35,29,.08))!important;
+}
+.hero::after{z-index:1!important;pointer-events:none}
+.hero .ciba-hero-dibujos{z-index:2!important}
+.hero .ciba-paisaje{z-index:2!important;opacity:.24!important}
+.hero .hero-contenido{z-index:3!important}
+.hero .hero-pie{z-index:4!important}
+.ciba-espiral{position:absolute;fill:none;stroke:#efd8ac;stroke-width:1.45;stroke-linecap:round;stroke-dasharray:900;stroke-dashoffset:900;opacity:.68;filter:drop-shadow(0 1px 5px rgba(18,34,28,.18));animation:ciba-espiral-dibujo 12s ease-in-out infinite}
+.ciba-espiral-uno{width:clamp(160px,22vw,300px);right:6%;top:13%;transform:rotate(-18deg)}
+.ciba-espiral-dos{width:clamp(110px,14vw,190px);left:43%;bottom:5%;opacity:.42;animation-delay:2.2s}
+@keyframes ciba-espiral-dibujo{0%{stroke-dashoffset:900;opacity:.15}45%,75%{stroke-dashoffset:0;opacity:.72}100%{stroke-dashoffset:-900;opacity:.12}}
+.ciba-aves{animation:ciba-palomas-vuelo 19s ease-in-out infinite;transform-origin:center;will-change:transform,opacity}
+.ciba-aves path{stroke-dasharray:none!important;stroke-dashoffset:0!important;animation:ciba-alas-trazo 2.8s ease-in-out infinite alternate!important}
+@keyframes ciba-palomas-vuelo{
+  0%,100%{transform:translate3d(0,0,0) rotate(0);opacity:.72}
+  25%{transform:translate3d(-38px,-18px,0) rotate(-3deg);opacity:.94}
+  55%{transform:translate3d(-112px,-42px,0) rotate(2deg);opacity:.82}
+  80%{transform:translate3d(-160px,-15px,0) rotate(-2deg);opacity:.92}
+}
+@keyframes ciba-alas-trazo{from{stroke-width:1.7;opacity:.62}to{stroke-width:2.5;opacity:.96}}
+@media(min-width:1200px){
+ .hero .hero-contenido{width:min(1320px,calc(100% - 112px));padding-top:clamp(130px,17vh,190px)!important}
+ .hero h1{font-size:clamp(78px,7.2vw,116px)!important;max-width:900px}
+ .hero .hero-descripcion{font-size:17px;max-width:590px}
+ .ciba-aves{width:clamp(250px,23vw,360px);right:9%;top:17%}
+ .ciba-avion{right:17%;top:57%;width:92px}
+ .ciba-barquito{right:29%;bottom:7%;width:130px}
+}
+@media(min-width:681px) and (max-width:1199px){
+ .hero .hero-contenido{width:calc(100% - 72px)}
+ .hero h1{font-size:clamp(60px,7.5vw,90px)!important}
+ .ciba-aves{width:clamp(170px,24vw,260px);right:5%;top:18%}
+}
+@media(max-width:680px){
+ .hero::before{background:linear-gradient(90deg,rgba(12,35,29,.60),rgba(17,49,39,.28)),linear-gradient(0deg,rgba(12,35,29,.35),transparent 55%)!important}
+ .ciba-espiral-uno{width:145px;right:-22px;top:13%;opacity:.46}
+ .ciba-espiral-dos{width:112px;left:3%;bottom:10%;opacity:.30}
+ .ciba-aves{width:145px;right:4%;top:15%}
+}
+@media(prefers-reduced-motion:reduce){
+ .ciba-espiral,.ciba-aves,.ciba-aves path{animation:none!important;stroke-dashoffset:0!important}
+}
+
 </style>
 </head>
 
@@ -1497,7 +1547,13 @@ html{scroll-padding-top:82px}body{overflow-x:hidden}.contenedor{width:min(1220px
   <main>
 <section class="hero" id="inicio">
       <div class="motivo-fondo" aria-hidden="true"></div>
-      <div class="ciba-hero-dibujos" aria-hidden="true"><svg class="ciba-aves" viewBox="0 0 240 90"><path d="M5 48 Q28 19 52 48 Q76 19 100 48 M92 30 Q112 8 132 30 Q152 8 172 30 M155 62 Q173 42 191 62 Q209 42 227 62"/></svg><svg class="ciba-avion" viewBox="0 0 100 75"><path d="M8 37 91 7 59 67 48 44 8 37Z M48 44 91 7 M48 44 59 67"/></svg><svg class="ciba-barquito" viewBox="0 0 120 76"><path d="M10 49 110 49 91 67 31 67 10 49Z M59 8V49 M59 10 91 43 59 43Z M54 15 27 43 54 43Z M8 72 Q28 65 48 72 T88 72 T128 72"/></svg></div>
+      <div class="ciba-hero-dibujos" aria-hidden="true">
+        <svg class="ciba-espiral ciba-espiral-uno" viewBox="0 0 300 300"><path d="M150 150c-1-18 28-25 40-9 17 23-7 54-34 52-39-2-57-48-35-78 28-38 89-31 112 9 29 50-4 111-57 123-67 15-125-37-123-103 1-74 71-127 143-112"/></svg>
+        <svg class="ciba-espiral ciba-espiral-dos" viewBox="0 0 300 300"><path d="M150 150c-1-18 28-25 40-9 17 23-7 54-34 52-39-2-57-48-35-78 28-38 89-31 112 9"/></svg>
+        <svg class="ciba-aves" viewBox="0 0 240 90"><path d="M5 48 Q28 19 52 48 Q76 19 100 48 M92 30 Q112 8 132 30 Q152 8 172 30 M155 62 Q173 42 191 62 Q209 42 227 62"/></svg>
+        <svg class="ciba-avion" viewBox="0 0 100 75"><path d="M8 37 91 7 59 67 48 44 8 37Z M48 44 91 7 M48 44 59 67"/></svg>
+        <svg class="ciba-barquito" viewBox="0 0 120 76"><path d="M10 49 110 49 91 67 31 67 10 49Z M59 8V49 M59 10 91 43 59 43Z M54 15 27 43 54 43Z M8 72 Q28 65 48 72 T88 72 T128 72"/></svg>
+      </div>
       <svg class="ciba-paisaje" viewBox="0 0 1440 430" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
         <circle class="luz-sol" cx="1130" cy="125" r="76"/>
         <circle class="motivo trazo-ocre" cx="1130" cy="125" r="94" opacity=".7"/>
