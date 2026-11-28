@@ -1471,13 +1471,33 @@ html{scroll-padding-top:82px}body{overflow-x:hidden}.contenedor{width:min(1220px
 @media(prefers-reduced-motion:reduce){.ciba-aves path,.ciba-avion,.ciba-barquito{animation:none!important}}
 
 
+
+/* CIBA · bandadas vivas del paisaje antillano */
+.ciba-bandadas{position:absolute;z-index:2;inset:0;overflow:hidden;pointer-events:none}
+.ciba-bandada{position:absolute;overflow:visible;fill:rgba(247,237,211,.84);stroke:rgba(247,237,211,.84);stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 2px 5px rgba(20,36,27,.18));will-change:transform,opacity}
+.ciba-bandada .ave-voladora{transform-box:fill-box;transform-origin:center;animation:aleteo-natural 1.15s ease-in-out infinite alternate}
+.ciba-bandada .ave-voladora:nth-child(2){animation-delay:-.34s}
+.ciba-bandada .ave-voladora:nth-child(3){animation-delay:-.68s}
+.ciba-bandada .ave-voladora:nth-child(4){animation-delay:-.18s}
+.ciba-bandada .ave-voladora:nth-child(5){animation-delay:-.52s}
+.bandada-palomas{width:clamp(210px,27vw,370px);top:17%;left:-34%;animation:bandada-cruza 24s linear infinite}
+.bandada-garzas{width:clamp(180px,22vw,310px);top:35%;left:-38%;opacity:.68;animation:bandada-cruza 34s linear 7s infinite}
+.bandada-flamencos{width:clamp(190px,24vw,330px);top:12%;left:108%;opacity:.75;animation:bandada-regresa 31s linear 3s infinite}
+.bandada-cotorras{width:clamp(180px,22vw,300px);top:56%;left:112%;opacity:.62;animation:bandada-regresa 27s linear 13s infinite}
+@keyframes bandada-cruza{0%{transform:translate3d(0,0,0) rotate(-3deg);opacity:0}7%{opacity:.82}45%{transform:translate3d(58vw,-24px,0) rotate(1deg);opacity:.9}88%{opacity:.82}100%{transform:translate3d(145vw,20px,0) rotate(3deg);opacity:0}}
+@keyframes bandada-regresa{0%{transform:translate3d(0,0,0) rotate(2deg);opacity:0}8%{opacity:.78}52%{transform:translate3d(-65vw,26px,0) rotate(-2deg);opacity:.88}92%{opacity:.72}100%{transform:translate3d(-150vw,-10px,0) rotate(2deg);opacity:0}}
+@keyframes aleteo-natural{from{transform:scaleY(.88) rotate(-2deg)}to{transform:scaleY(1.08) rotate(2deg)}}
+@media(max-width:680px){.bandada-palomas{width:190px;top:13%}.bandada-garzas{width:155px;top:31%}.bandada-flamencos{width:175px;top:9%}.bandada-cotorras{width:155px;top:52%}.hero::before{background:radial-gradient(ellipse at 18% 42%,rgba(13,34,27,.55),rgba(13,34,27,.28) 42%,transparent 78%),linear-gradient(0deg,rgba(17,37,29,.3),transparent 44%)!important}}
+@media(prefers-reduced-motion:reduce){.ciba-bandada,.ciba-bandada .ave-voladora{animation:none!important}.ciba-bandada{opacity:.25}}
+
 /* CIBA · AJUSTE FINO DE PORTADA: TRANSPARENCIA, ESPIRALES Y VUELO */
 .hero{background-image:url("assets/images/portada-ciba.webp")!important;background-position:center 42%!important;background-size:cover!important}
 .hero::before{
   z-index:1!important;
   background:
-    linear-gradient(90deg,rgba(12,35,29,.58) 0%,rgba(17,49,39,.34) 48%,rgba(17,49,39,.08) 100%),
-    linear-gradient(0deg,rgba(12,35,29,.30),transparent 43%,rgba(12,35,29,.08))!important;
+    radial-gradient(ellipse at 13% 47%,rgba(13,34,27,.58) 0%,rgba(13,34,27,.34) 30%,transparent 67%),
+    radial-gradient(ellipse at 93% 18%,rgba(24,49,34,.19) 0%,transparent 42%),
+    linear-gradient(0deg,rgba(17,37,29,.30) 0%,transparent 36%,rgba(17,37,29,.06) 100%)!important;
 }
 .hero::after{z-index:1!important;pointer-events:none}
 .hero .ciba-hero-dibujos{z-index:2!important}
@@ -1550,7 +1570,30 @@ html{scroll-padding-top:82px}body{overflow-x:hidden}.contenedor{width:min(1220px
       <div class="ciba-hero-dibujos" aria-hidden="true">
         <svg class="ciba-espiral ciba-espiral-uno" viewBox="0 0 300 300"><path d="M150 150c-1-18 28-25 40-9 17 23-7 54-34 52-39-2-57-48-35-78 28-38 89-31 112 9 29 50-4 111-57 123-67 15-125-37-123-103 1-74 71-127 143-112"/></svg>
         <svg class="ciba-espiral ciba-espiral-dos" viewBox="0 0 300 300"><path d="M150 150c-1-18 28-25 40-9 17 23-7 54-34 52-39-2-57-48-35-78 28-38 89-31 112 9"/></svg>
-        <svg class="ciba-aves" viewBox="0 0 240 90"><path d="M5 48 Q28 19 52 48 Q76 19 100 48 M92 30 Q112 8 132 30 Q152 8 172 30 M155 62 Q173 42 191 62 Q209 42 227 62"/></svg>
+        <div class="ciba-bandadas" aria-hidden="true">
+        <svg class="ciba-bandada bandada-palomas" viewBox="0 0 360 130">
+          <g class="ave-voladora"><path d="M8 42 Q24 15 43 40 Q61 14 80 40 Q63 31 44 53 Q25 31 8 42Z"/></g>
+          <g class="ave-voladora" transform="translate(82 16) scale(.72)"><path d="M8 42 Q24 15 43 40 Q61 14 80 40 Q63 31 44 53 Q25 31 8 42Z"/></g>
+          <g class="ave-voladora" transform="translate(145 48) scale(.58)"><path d="M8 42 Q24 15 43 40 Q61 14 80 40 Q63 31 44 53 Q25 31 8 42Z"/></g>
+          <g class="ave-voladora" transform="translate(212 5) scale(.82)"><path d="M8 42 Q24 15 43 40 Q61 14 80 40 Q63 31 44 53 Q25 31 8 42Z"/></g>
+          <g class="ave-voladora" transform="translate(278 42) scale(.62)"><path d="M8 42 Q24 15 43 40 Q61 14 80 40 Q63 31 44 53 Q25 31 8 42Z"/></g>
+        </svg>
+        <svg class="ciba-bandada bandada-garzas" viewBox="0 0 360 150">
+          <g class="ave-voladora"><path d="M10 30 Q34 6 55 29 Q76 8 95 32 Q76 23 56 45 Q35 24 10 30Z M56 43 Q51 68 67 78 L64 112 M67 78 Q82 93 91 111" /></g>
+          <g class="ave-voladora" transform="translate(112 28) scale(.7)"><path d="M10 30 Q34 6 55 29 Q76 8 95 32 Q76 23 56 45 Q35 24 10 30Z M56 43 Q51 68 67 78 L64 112 M67 78 Q82 93 91 111"/></g>
+          <g class="ave-voladora" transform="translate(228 0) scale(.56)"><path d="M10 30 Q34 6 55 29 Q76 8 95 32 Q76 23 56 45 Q35 24 10 30Z M56 43 Q51 68 67 78 L64 112 M67 78 Q82 93 91 111"/></g>
+        </svg>
+        <svg class="ciba-bandada bandada-flamencos" viewBox="0 0 360 150">
+          <g class="ave-voladora"><path d="M8 50 Q35 5 72 43 Q89 23 108 42 Q85 39 72 59 Q39 28 8 50Z M65 49 Q52 72 63 89 Q74 101 67 119 M63 89 Q82 98 87 119 M65 49 Q50 26 61 17 Q77 10 80 28 Q81 39 69 40"/></g>
+          <g class="ave-voladora" transform="translate(135 15) scale(.72)"><path d="M8 50 Q35 5 72 43 Q89 23 108 42 Q85 39 72 59 Q39 28 8 50Z M65 49 Q52 72 63 89 Q74 101 67 119 M63 89 Q82 98 87 119 M65 49 Q50 26 61 17 Q77 10 80 28"/></g>
+          <g class="ave-voladora" transform="translate(250 35) scale(.56)"><path d="M8 50 Q35 5 72 43 Q89 23 108 42 Q85 39 72 59 Q39 28 8 50Z M65 49 Q52 72 63 89 Q74 101 67 119 M63 89 Q82 98 87 119 M65 49 Q50 26 61 17 Q77 10 80 28"/></g>
+        </svg>
+        <svg class="ciba-bandada bandada-cotorras" viewBox="0 0 360 140">
+          <g class="ave-voladora"><path d="M8 49 Q35 8 72 39 Q91 19 111 42 Q87 38 73 57 Q42 29 8 49Z M70 40 Q82 20 96 25 Q93 39 81 45Z M8 49 L-2 42 L2 54Z"/></g>
+          <g class="ave-voladora" transform="translate(125 12) scale(.72)"><path d="M8 49 Q35 8 72 39 Q91 19 111 42 Q87 38 73 57 Q42 29 8 49Z M70 40 Q82 20 96 25 Q93 39 81 45Z M8 49 L-2 42 L2 54Z"/></g>
+          <g class="ave-voladora" transform="translate(248 38) scale(.58)"><path d="M8 49 Q35 8 72 39 Q91 19 111 42 Q87 38 73 57 Q42 29 8 49Z M70 40 Q82 20 96 25 Q93 39 81 45Z M8 49 L-2 42 L2 54Z"/></g>
+        </svg>
+      </div>
         <svg class="ciba-avion" viewBox="0 0 100 75"><path d="M8 37 91 7 59 67 48 44 8 37Z M48 44 91 7 M48 44 59 67"/></svg>
         <svg class="ciba-barquito" viewBox="0 0 120 76"><path d="M10 49 110 49 91 67 31 67 10 49Z M59 8V49 M59 10 91 43 59 43Z M54 15 27 43 54 43Z M8 72 Q28 65 48 72 T88 72 T128 72"/></svg>
       </div>
