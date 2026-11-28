@@ -830,8 +830,9 @@
               "id": "B7-03-02",
               "titulo": "Dengue en la infancia: manifestaciones y evolución",
               "ruta": "/b/B7/B7-03/B7-03-02/",
-              "estado": "planificado",
-              "enlace_activo": false
+              "estado": "revision",
+              "enlace_activo": true,
+              "vista_previa_publica": true
             },
             {
               "id": "B7-03-03",
