@@ -124,6 +124,7 @@
     menuAbierto = false;
     actualizarVisibilidadBuscador();
     panel.classList.remove('abierto');
+    panel.setAttribute('aria-hidden', 'true');
     boton.setAttribute('aria-expanded', 'false');
     boton.setAttribute('aria-label', 'Abrir menú de navegación');
   }
@@ -256,6 +257,7 @@
     const panel = elemento('nav', 'ciba-global-panel');
     panel.id = 'ciba-menu-panel';
     panel.setAttribute('aria-label', 'Navegación principal');
+    panel.setAttribute('aria-hidden', 'true');
 
     // Accesos directos de inicio.
     panel.appendChild(enlace(new URL('index.html', RAIZ).href,'📌 Inicio CIBA','ciba-global-enlace ciba-global-acceso-principal'));
@@ -729,6 +731,7 @@
       }
       actualizarVisibilidadBuscador();
 
+      panel.setAttribute('aria-hidden', String(!abierto));
       boton.setAttribute('aria-expanded', String(abierto));
       boton.setAttribute(
         'aria-label',
@@ -764,7 +767,14 @@
     // Portal global: el botón y el panel viven directamente en body para
     // escapar de stacking contexts creados por cabeceras, heroes o micrositios.
     // Así la navegación conserva prioridad visual en todas las columnas.
-    document.body.appendChild(contenedor);
+    // Botón integrado a la izquierda de la cabecera; panel en body para evitar capas locales.
+    if (cabeceraGlobal) {
+      cabeceraGlobal.prepend(contenedor);
+    } else {
+      const barraPortada = document.querySelector('header.cabecera .barra');
+      if (barraPortada) barraPortada.prepend(contenedor);
+      else document.body.appendChild(contenedor);
+    }
     document.body.appendChild(panel);
 
 
