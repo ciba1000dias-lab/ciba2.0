@@ -20,6 +20,9 @@ python scripts/validate_content.py --src content
 echo "== CIBA: generación del sitio =="
 python scripts/build_catalog.py --src content --out dist
 
+echo "== CIBA: incluir portada alternativa sin reemplazar index.html =="
+cp index-alternativo.html dist/index-alternativo.html
+
 echo "== CIBA: generación de podcasts =="
 python scripts/build_podcast_c4_10.py --out dist/c/C4/C4-10/podcast-c4-10.mp3
 python scripts/build_podcast_c4_11.py --out dist/c/C4/C4-11/podcast-c4-11.mp3
