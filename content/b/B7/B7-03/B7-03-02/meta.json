@@ -1,0 +1,46 @@
+{
+  "id": "B7-03-02",
+  "titulo": "Dengue en la infancia: manifestaciones y evolución",
+  "descripcion": "Cómo reconocer los síntomas del dengue en niños, comprender sus fases, detectar signos de alarma y prevenir la transmisión en el hogar.",
+  "columna": "B",
+  "area": "B7",
+  "palabras_clave": [
+    "dengue",
+    "infancia",
+    "Aedes aegypti",
+    "fiebre",
+    "signos de alarma",
+    "fase crítica",
+    "hidratación",
+    "prevención",
+    "mosquitos",
+    "sangrado"
+  ],
+  "estado": "revision",
+  "fecha_publicacion": "2026-11-27",
+  "mostrar_en_columna": false,
+  "mostrar_en_area": false,
+  "preview_publica": true,
+  "subseccion": "Fiebre y enfermedades infecciosas",
+  "media": {
+    "videos": [],
+    "mapas": []
+  },
+  "enlaces_externos": [
+    {
+      "titulo": "CDC · Síntomas del dengue y pruebas de detección",
+      "url": "https://www.cdc.gov/dengue/es/signs-symptoms/sintomas-del-dengue-y-pruebas-de-deteccion.html",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "CDC · Manejo del dengue",
+      "url": "https://www.cdc.gov/dengue/es/treatment/manejo-del-dengue.html",
+      "tipo": "fuente"
+    },
+    {
+      "titulo": "CDC · Manejo clínico del dengue",
+      "url": "https://www.cdc.gov/dengue/es/hcp/clinical-care/manejo-clinico.html",
+      "tipo": "fuente"
+    }
+  ]
+}
