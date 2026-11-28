@@ -1441,6 +1441,35 @@ html{scroll-padding-top:82px}body{overflow-x:hidden}.contenedor{width:min(1220px
 
 /* Iconografía animada de los seis recursos */.recurso-visual{position:relative}.recurso-icono{width:78px;height:78px;position:relative;z-index:2;transform-origin:50% 50%}.icono-hoja{animation:recurso-balanceo 4.2s ease-in-out infinite}.icono-olla{animation:recurso-salto 3.4s ease-in-out infinite}.icono-disco{animation:recurso-giro 12s linear infinite}.icono-descarga{animation:recurso-flotar 3.8s ease-in-out infinite}.icono-comunidad{animation:recurso-pulso 3.2s ease-in-out infinite}.icono-podcast{animation:recurso-onda 1.8s ease-in-out infinite}.recurso-icono .relleno{fill:currentColor;stroke:none}.recurso-destello{position:absolute;z-index:1;width:8px;height:8px;right:23%;top:24%;border-radius:50%;background:#c69b52;box-shadow:0 0 0 5px #c69b5220;animation:recurso-destello 2.8s ease-in-out infinite}@keyframes recurso-balanceo{0%,100%{transform:rotate(-5deg) translateY(0)}50%{transform:rotate(7deg) translateY(-5px)}}@keyframes recurso-salto{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}@keyframes recurso-giro{to{transform:rotate(360deg)}}@keyframes recurso-flotar{0%,100%{transform:translateY(3px)}50%{transform:translateY(-6px)}}@keyframes recurso-pulso{0%,100%{transform:scale(.96)}50%{transform:scale(1.06)}}@keyframes recurso-onda{0%,100%{transform:scaleY(.82)}50%{transform:scaleY(1.08)}}@keyframes recurso-destello{0%,100%{opacity:.35;transform:scale(.75)}50%{opacity:1;transform:scale(1.25)}}@media(prefers-reduced-motion:reduce){.recurso-icono,.recurso-destello{animation:none!important}}
 .icono-seguridad{animation:recurso-seguro 3.6s ease-in-out infinite}@keyframes recurso-seguro{0%,100%{transform:scale(1) rotate(0);filter:drop-shadow(0 0 0 #c69b5200)}50%{transform:scale(1.07) rotate(-3deg);filter:drop-shadow(0 5px 9px #c69b5266)}}
+
+/* CIBA · PORTADA PRINCIPAL · IDENTIDAD INMERSIVA 2026-11-28 */
+.hero{min-height:calc(100svh - 76px)!important;position:relative!important;display:flex!important;align-items:center!important;overflow:hidden!important;isolation:isolate!important;color:#fff!important;background:#173c32 url("assets/images/portada-ciba.webp") center 42%/cover no-repeat!important}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,rgba(12,35,29,.86) 0%,rgba(17,49,39,.68) 48%,rgba(17,49,39,.20) 100%),linear-gradient(0deg,rgba(12,35,29,.54),transparent 42%,rgba(12,35,29,.16))}
+.hero::after{content:"";position:absolute;z-index:0;right:-180px;bottom:-300px;width:560px;height:560px;border:1px solid rgba(231,201,148,.34);border-radius:50%;box-shadow:0 0 0 34px rgba(231,201,148,.07),0 0 0 76px rgba(231,201,148,.045),0 0 0 120px rgba(231,201,148,.025);pointer-events:none}
+.hero .motivo-fondo{z-index:0;opacity:.12;pointer-events:none}
+.hero .ciba-paisaje{position:absolute;z-index:1;inset:auto 0 0;width:100%;height:52%;opacity:.20;pointer-events:none}
+.hero .hero-contenido{position:relative;z-index:3;display:block!important;width:min(1220px,calc(100% - 48px));min-height:calc(100svh - 76px);padding:clamp(100px,15vh,170px) 0 120px!important}
+.hero .hero-texto{max-width:760px}
+.hero .sobrelinea{color:#ead4a9}
+.hero h1{max-width:760px;color:#fff!important;font-size:clamp(56px,8.2vw,104px)!important;line-height:.94!important;text-shadow:0 4px 35px rgba(0,0,0,.32)}
+.hero h1 em{color:#e7c994!important}
+.hero .hero-descripcion{max-width:540px;color:#f3eee4!important;font-size:clamp(14px,1.25vw,17px);line-height:1.8}
+.hero .boton-dorado{background:#e6c994!important;color:#173c32!important}
+.hero .boton-contorno{border-color:rgba(255,255,255,.72)!important;color:#fff!important}
+.hero .hero-imagen-marco{display:none!important}
+.hero .hero-pie{z-index:4;color:#f4ead7;border-top-color:rgba(255,255,255,.25);background:rgba(12,35,29,.12)}
+.hero .hero-pie .contenedor{width:min(1220px,calc(100% - 48px))}
+.ciba-hero-dibujos{position:absolute;z-index:2;inset:0;overflow:hidden;pointer-events:none}
+.ciba-aves{position:absolute;right:8%;top:19%;width:min(270px,32vw);height:auto;overflow:visible}
+.ciba-aves path{fill:none;stroke:#fff4df;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round;opacity:.78;stroke-dasharray:180;stroke-dashoffset:0;animation:ciba-trazo-aves 8s ease-in-out infinite}
+.ciba-avion{position:absolute;right:13%;top:54%;width:82px;height:62px;fill:none;stroke:#f4dfb9;stroke-width:1.5;stroke-linejoin:round;opacity:.82;animation:ciba-avion-flota 13s ease-in-out infinite}
+.ciba-barquito{position:absolute;right:25%;bottom:8%;width:118px;height:74px;fill:none;stroke:#e7c994;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;opacity:.72;animation:ciba-barco-flota 5.5s ease-in-out infinite}
+@keyframes ciba-trazo-aves{0%,100%{opacity:.35;stroke-dashoffset:0}50%{opacity:.9;stroke-dashoffset:35}}
+@keyframes ciba-avion-flota{0%,100%{transform:translate(0,0) rotate(-8deg)}50%{transform:translate(-24px,-18px) rotate(3deg)}}
+@keyframes ciba-barco-flota{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-8px) rotate(1deg)}}
+@media(max-width:680px){.hero{min-height:calc(100svh - 68px)!important;background-position:58% center!important}.hero .hero-contenido{width:calc(100% - 36px);min-height:calc(100svh - 68px);padding:clamp(105px,16vh,145px) 0 105px!important}.hero h1{font-size:clamp(48px,13.2vw,72px)!important;max-width:540px}.hero .hero-descripcion{max-width:370px;font-size:13px}.hero .hero-pie .contenedor{width:calc(100% - 36px);gap:7px;flex-direction:column}.ciba-aves{width:145px;right:4%;top:15%}.ciba-avion{width:54px;right:5%;top:58%}.ciba-barquito{width:82px;right:8%;bottom:8%}}
+@media(prefers-reduced-motion:reduce){.ciba-aves path,.ciba-avion,.ciba-barquito{animation:none!important}}
+
 </style>
 </head>
 
@@ -1468,6 +1497,7 @@ html{scroll-padding-top:82px}body{overflow-x:hidden}.contenedor{width:min(1220px
   <main>
 <section class="hero" id="inicio">
       <div class="motivo-fondo" aria-hidden="true"></div>
+      <div class="ciba-hero-dibujos" aria-hidden="true"><svg class="ciba-aves" viewBox="0 0 240 90"><path d="M5 48 Q28 19 52 48 Q76 19 100 48 M92 30 Q112 8 132 30 Q152 8 172 30 M155 62 Q173 42 191 62 Q209 42 227 62"/></svg><svg class="ciba-avion" viewBox="0 0 100 75"><path d="M8 37 91 7 59 67 48 44 8 37Z M48 44 91 7 M48 44 59 67"/></svg><svg class="ciba-barquito" viewBox="0 0 120 76"><path d="M10 49 110 49 91 67 31 67 10 49Z M59 8V49 M59 10 91 43 59 43Z M54 15 27 43 54 43Z M8 72 Q28 65 48 72 T88 72 T128 72"/></svg></div>
       <svg class="ciba-paisaje" viewBox="0 0 1440 430" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
         <circle class="luz-sol" cx="1130" cy="125" r="76"/>
         <circle class="motivo trazo-ocre" cx="1130" cy="125" r="94" opacity=".7"/>
@@ -1541,8 +1571,8 @@ html{scroll-padding-top:82px}body{overflow-x:hidden}.contenedor{width:min(1220px
           <div class="sobrelinea">Una comunidad que crece</div>
 
           <h1>
-            Crecer en familia.<br>
-            <em>Con raíces y conocimiento.</em>
+            Los primeros pasos.<br>
+            <em>Toda una vida.</em>
           </h1>
 
           <p class="hero-descripcion">
