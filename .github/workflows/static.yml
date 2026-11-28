@@ -46,6 +46,9 @@ jobs:
       - name: Construir sitio
         run: python scripts/build_catalog.py --src content --out dist
 
+      - name: Incluir portada alternativa de evaluación sin sustituir la portada principal
+        run: cp index-alternativo.html dist/index-alternativo.html
+
       - name: Publicar la estructura editorial de BIENESTAR para el menú global
         run: |
           mkdir -p dist/content/b
